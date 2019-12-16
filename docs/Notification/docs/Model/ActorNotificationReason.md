@@ -1,0 +1,12 @@
+# ActorNotificationReason
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**notificationReasonType** | **string** |  | [optional] 
+**targetIdentities** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef[]**](IdentityRef.md) |  | [optional] 
+**matchedRoles** | **string[]** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

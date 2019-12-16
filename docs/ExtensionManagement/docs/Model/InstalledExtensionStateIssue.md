@@ -1,0 +1,12 @@
+# InstalledExtensionStateIssue
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**message** | **string** | The error message | [optional] 
+**source** | **string** | Source of the installation issue, for example  \&quot;Demands\&quot; | [optional] 
+**type** | **string** | Installation issue type (Warning, Error) | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

@@ -9,5 +9,10 @@
             "email": "fhouweling@senet.nl"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "AzureDevopsClient\\": "lib/AzureDevOpsClient"
+        }
+    },
     "require": {}
 }

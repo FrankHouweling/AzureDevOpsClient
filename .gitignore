@@ -15,6 +15,12 @@ data/sessions/
 data/tmp/
 temp/
 
+# IDE
+.idea
+
+# Swagger codegen
+.swagger*
+
 #Doctrine 2
 data/DoctrineORMModule/Proxy/
 data/DoctrineORMModule/cache/
