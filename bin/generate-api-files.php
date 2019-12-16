@@ -101,7 +101,7 @@ $start = $explode[0];
 foreach ($modules as $module)
 {
     $content .= sprintf(
-        PHP_EOL  . '[%s](docs/%s)',
+        PHP_EOL  . '* [%s](docs/%s)',
         $module['name'],
         $module['name']
     );
