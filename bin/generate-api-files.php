@@ -64,18 +64,30 @@ foreach ($modules as $module) {
 
     // Write swagger client generator config file
     $config = [
-        'modelPackage' => 'AzureDevOpsClient\\' . $moduleNamespace . '\\Model',
-        'apiPackage' => 'AzureDevOpsClient\\' . $moduleNamespace . '\\Client',
+        'modelPackage' => 'Model',
+        'apiPackage' => 'Api',
         'variableNamingConvention' => 'camelCase',
-        'invokerPackage' => 'AzureDevOpsClient\\' . $moduleNamespace,
+        'invokerPackage' => 'FrankHouweling\\AzureDevOpsClient\\' . $moduleNamespace,
         'srcBasePath' => 'lib/AzureDevOpsClient/' . $moduleNamespace
     ];
     file_put_contents('/tmp/config.json', json_encode($config));
 
+    // Find json file, because the specs are inconsistent.
+    $jsonFileIterator = new DirectoryIterator($module['path']);
+    foreach ($jsonFileIterator as $file)
+    {
+        if ($file->isDir() === false && $file->getExtension() === 'json')
+        {
+            $filePath = $file->getRealPath();
+            break;
+        }
+    }
+
+    // Generate!!
     shell_exec(sprintf(
         'java -jar %s generate -i %s -l php -c /tmp/config.json',
         $argv[1],
-        $module['path'] . '/' . lcfirst($module['name']) . '.json'
+        $filePath
     ));
     shell_exec(sprintf(
         'mv SwaggerClient-php/lib/AzureDevOpsClient/%s lib/AzureDevOpsClient/%s',
