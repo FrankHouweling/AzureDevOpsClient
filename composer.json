@@ -1,0 +1,13 @@
+{
+    "name": "frank-houweling/azure-dev-ops-client",
+    "description": "PHP client library for the Microsoft Azure DevOps REST API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frank Houweling",
+            "email": "fhouweling@senet.nl"
+        }
+    ],
+    "require": {}
+}
