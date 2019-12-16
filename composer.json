@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "AzureDevopsClient\\": "lib/AzureDevOpsClient"
+            "FrankHouweling\\AzureDevopsClient\\": "lib/AzureDevOpsClient"
         }
     },
     "require": {}
