@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**actionResultDeletes** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]**](TestActionResult.md) |  | [optional] 
-**actionResults** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]**](TestActionResult.md) |  | [optional] 
-**attachmentDeletes** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]**](TestResultAttachmentIdentity.md) |  | [optional] 
-**attachments** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]**](TestResultAttachment.md) |  | [optional] 
-**parameterDeletes** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]**](TestResultParameter.md) |  | [optional] 
-**parameters** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]**](TestResultParameter.md) |  | [optional] 
-**testCaseResult** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult**](LegacyTestCaseResult.md) |  | [optional] 
+**actionResultDeletes** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]**](TestActionResult.md) |  | [optional] 
+**actionResults** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]**](TestActionResult.md) |  | [optional] 
+**attachmentDeletes** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]**](TestResultAttachmentIdentity.md) |  | [optional] 
+**attachments** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]**](TestResultAttachment.md) |  | [optional] 
+**parameterDeletes** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]**](TestResultParameter.md) |  | [optional] 
+**parameters** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]**](TestResultParameter.md) |  | [optional] 
+**testCaseResult** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult**](LegacyTestCaseResult.md) |  | [optional] 
 **testResultId** | **int** |  | [optional] 
 **testRunId** | **int** |  | [optional] 
 

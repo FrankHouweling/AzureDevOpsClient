@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PolicyConfigurationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -99,9 +99,9 @@ class PolicyConfigurationsApi
      * @param  int $top Maximum number of policies to return. (optional)
      * @param  string $continuationToken Pass a policy configuration ID to fetch the next page of results, up to top number of results, for this endpoint. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[]
      */
     public function policyConfigurationsGet($organization, $project, $apiVersion, $repositoryId = null, $refName = null, $policyType = null, $top = null, $continuationToken = null)
     {
@@ -121,13 +121,13 @@ class PolicyConfigurationsApi
      * @param  int $top Maximum number of policies to return. (optional)
      * @param  string $continuationToken Pass a policy configuration ID to fetch the next page of results, up to top number of results, for this endpoint. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function policyConfigurationsGetWithHttpInfo($organization, $project, $apiVersion, $repositoryId = null, $refName = null, $policyType = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[]';
         $request = $this->policyConfigurationsGetRequest($organization, $project, $apiVersion, $repositoryId, $refName, $policyType, $top, $continuationToken);
 
         try {
@@ -179,7 +179,7 @@ class PolicyConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,7 +235,7 @@ class PolicyConfigurationsApi
      */
     public function policyConfigurationsGetAsyncWithHttpInfo($organization, $project, $apiVersion, $repositoryId = null, $refName = null, $policyType = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[]';
         $request = $this->policyConfigurationsGetRequest($organization, $project, $apiVersion, $repositoryId, $refName, $policyType, $top, $continuationToken);
 
         return $this->client

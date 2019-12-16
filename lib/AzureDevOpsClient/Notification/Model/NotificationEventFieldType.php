@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationEventFieldType Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of a field type. It describes the data type of a field, the operators it support and how to populate it in the UI
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'operatorConstraints' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\OperatorConstraint[]',
-        'operators' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[]',
+        'operatorConstraints' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\OperatorConstraint[]',
+        'operators' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[]',
         'subscriptionFieldType' => 'string',
-        'value' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ValueDefinition'
+        'value' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ValueDefinition'
     ];
 
     /**
@@ -305,7 +305,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Gets operatorConstraints
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\OperatorConstraint[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\OperatorConstraint[]
      */
     public function getOperatorConstraints()
     {
@@ -315,7 +315,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Sets operatorConstraints
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\OperatorConstraint[] $operatorConstraints operatorConstraints
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\OperatorConstraint[] $operatorConstraints operatorConstraints
      *
      * @return $this
      */
@@ -329,7 +329,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Gets operators
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[]
      */
     public function getOperators()
     {
@@ -339,7 +339,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Sets operators
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[] $operators Gets or sets the list of operators that this type supports.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldOperator[] $operators Gets or sets the list of operators that this type supports.
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ValueDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ValueDefinition
      */
     public function getValue()
     {
@@ -396,7 +396,7 @@ class NotificationEventFieldType implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ValueDefinition $value Gets or sets the value definition of this field like the getValuesMethod and template to display in the UI
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ValueDefinition $value Gets or sets the value definition of this field like the getValuesMethod and template to display in the UI
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\TemplatesApi
+# FrankHouweling\AzureDevOpsClient\Build\TemplatesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -23,9 +23,9 @@ Deletes a build definition template.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\TemplatesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **templatesGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate templatesGet($organization, $project, $templateId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate templatesGet($organization, $project, $templateId, $apiVersion)
 
 
 
@@ -81,9 +81,9 @@ Gets a specific build definition template.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\TemplatesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **templatesList**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[] templatesList($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[] templatesList($organization, $project, $apiVersion)
 
 
 
@@ -140,9 +140,9 @@ Gets all definition templates.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\TemplatesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]**](../Model/BuildDefinitionTemplate.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]**](../Model/BuildDefinitionTemplate.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **templatesSaveTemplate**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate templatesSaveTemplate($organization, $body, $project, $templateId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate templatesSaveTemplate($organization, $body, $project, $templateId, $apiVersion)
 
 
 
@@ -197,16 +197,16 @@ Updates an existing build definition template.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\TemplatesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\TemplatesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate | The new version of the template.
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate(); // \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate | The new version of the template.
 $project = "project_example"; // string | Project ID or project name
 $templateId = "templateId_example"; // string | The ID of the template.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -225,14 +225,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)| The new version of the template. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)| The new version of the template. |
  **project** | **string**| Project ID or project name |
  **templateId** | **string**| The ID of the template. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate**](../Model/BuildDefinitionTemplate.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PolicyConfigurationsApi
+# FrankHouweling\AzureDevOpsClient\Git\PolicyConfigurationsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **policyConfigurationsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[] policyConfigurationsGet($organization, $project, $apiVersion, $repositoryId, $refName, $policyType, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[] policyConfigurationsGet($organization, $project, $apiVersion, $repositoryId, $refName, $policyType, $top, $continuationToken)
 
 
 
@@ -20,9 +20,9 @@ Retrieve a list of policy configurations by a given set of scope/filtering crite
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PolicyConfigurationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PolicyConfigurationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyConfiguration[]**](../Model/PolicyConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyConfiguration[]**](../Model/PolicyConfiguration.md)
 
 ### Authorization
 

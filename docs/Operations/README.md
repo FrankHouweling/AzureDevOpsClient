@@ -57,11 +57,11 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Operations\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Operations\Configuration::getDefaultConfiguration()
     ->setUsername('YOUR_USERNAME')
     ->setPassword('YOUR_PASSWORD');
 
-$apiInstance = new AzureDevOpsClient\Operations\Api\OperationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Operations\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

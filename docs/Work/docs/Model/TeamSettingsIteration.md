@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks**](ReferenceLinks.md) | Collection of links relevant to resource | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks**](ReferenceLinks.md) | Collection of links relevant to resource | [optional] 
 **url** | **string** | Full http link to the resource | [optional] 
-**attributes** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamIterationAttributes**](TeamIterationAttributes.md) | Attributes of the iteration such as start and end date. | [optional] 
+**attributes** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamIterationAttributes**](TeamIterationAttributes.md) | Attributes of the iteration such as start and end date. | [optional] 
 **id** | **string** | Id of the iteration. | [optional] 
 **name** | **string** | Name of the iteration. | [optional] 
 **path** | **string** | Relative path of the iteration. | [optional] 

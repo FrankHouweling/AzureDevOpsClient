@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildCompletionTrigger Class Doc Comment
  *
  * @category Class
  * @description Represents a build completion trigger.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class BuildCompletionTrigger implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'triggerType' => 'string',
         'branchFilters' => 'string[]',
-        'definition' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference',
+        'definition' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference',
         'requiresSuccessfulBuild' => 'bool'
     ];
 
@@ -320,7 +320,7 @@ class BuildCompletionTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets definition
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference
      */
     public function getDefinition()
     {
@@ -330,7 +330,7 @@ class BuildCompletionTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets definition
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference $definition A reference to the definition that should trigger builds for this definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference $definition A reference to the definition that should trigger builds for this definition.
      *
      * @return $this
      */

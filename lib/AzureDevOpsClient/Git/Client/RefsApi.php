@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * RefsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -104,9 +104,9 @@ class RefsApi
      * @param  int $top [optional] Maximum number of refs to return. It cannot be bigger than 1000. If it is not provided but continuationToken is, top will default to 100. (optional)
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[]
      */
     public function refsList($organization, $repositoryId, $project, $apiVersion, $filter = null, $includeLinks = null, $includeStatuses = null, $includeMyBranches = null, $latestStatusesOnly = null, $peelTags = null, $filterContains = null, $top = null, $continuationToken = null)
     {
@@ -131,13 +131,13 @@ class RefsApi
      * @param  int $top [optional] Maximum number of refs to return. It cannot be bigger than 1000. If it is not provided but continuationToken is, top will default to 100. (optional)
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function refsListWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $filter = null, $includeLinks = null, $includeStatuses = null, $includeMyBranches = null, $latestStatusesOnly = null, $peelTags = null, $filterContains = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[]';
         $request = $this->refsListRequest($organization, $repositoryId, $project, $apiVersion, $filter, $includeLinks, $includeStatuses, $includeMyBranches, $latestStatusesOnly, $peelTags, $filterContains, $top, $continuationToken);
 
         try {
@@ -189,7 +189,7 @@ class RefsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class RefsApi
      */
     public function refsListAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $filter = null, $includeLinks = null, $includeStatuses = null, $includeMyBranches = null, $latestStatusesOnly = null, $peelTags = null, $filterContains = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[]';
         $request = $this->refsListRequest($organization, $repositoryId, $project, $apiVersion, $filter, $includeLinks, $includeStatuses, $includeMyBranches, $latestStatusesOnly, $peelTags, $filterContains, $top, $continuationToken);
 
         return $this->client
@@ -494,16 +494,16 @@ class RefsApi
      * Operation refsUpdateRef
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $filter The name of the branch to lock/unlock (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $projectId ID or name of the team project. Optional if specifying an ID for repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef
      */
     public function refsUpdateRef($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId = null)
     {
@@ -515,20 +515,20 @@ class RefsApi
      * Operation refsUpdateRefWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $filter The name of the branch to lock/unlock (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $projectId ID or name of the team project. Optional if specifying an ID for repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function refsUpdateRefWithHttpInfo($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef';
         $request = $this->refsUpdateRefRequest($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId);
 
         try {
@@ -580,7 +580,7 @@ class RefsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -596,7 +596,7 @@ class RefsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $filter The name of the branch to lock/unlock (required)
      * @param  string $project Project ID or project name (required)
@@ -622,7 +622,7 @@ class RefsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $filter The name of the branch to lock/unlock (required)
      * @param  string $project Project ID or project name (required)
@@ -634,7 +634,7 @@ class RefsApi
      */
     public function refsUpdateRefAsyncWithHttpInfo($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef';
         $request = $this->refsUpdateRefRequest($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId);
 
         return $this->client
@@ -678,7 +678,7 @@ class RefsApi
      * Create request for operation 'refsUpdateRef'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate $body The ref update action (lock/unlock) to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $filter The name of the branch to lock/unlock (required)
      * @param  string $project Project ID or project name (required)
@@ -854,15 +854,15 @@ class RefsApi
      * Operation refsUpdateRefs
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $projectId ID or name of the team project. Optional if specifying an ID for repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]
      */
     public function refsUpdateRefs($organization, $body, $repositoryId, $project, $apiVersion, $projectId = null)
     {
@@ -874,19 +874,19 @@ class RefsApi
      * Operation refsUpdateRefsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $projectId ID or name of the team project. Optional if specifying an ID for repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function refsUpdateRefsWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $projectId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]';
         $request = $this->refsUpdateRefsRequest($organization, $body, $repositoryId, $project, $apiVersion, $projectId);
 
         try {
@@ -938,7 +938,7 @@ class RefsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -954,7 +954,7 @@ class RefsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -979,7 +979,7 @@ class RefsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -990,7 +990,7 @@ class RefsApi
      */
     public function refsUpdateRefsAsyncWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $projectId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]';
         $request = $this->refsUpdateRefsRequest($organization, $body, $repositoryId, $project, $apiVersion, $projectId);
 
         return $this->client
@@ -1034,7 +1034,7 @@ class RefsApi
      * Create request for operation 'refsUpdateRefs'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $body List of ref updates to attempt to perform (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResetTestResultsRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ResetTestResultsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ids' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
+        'ids' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
         'projectName' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class ResetTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets ids
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
      */
     public function getIds()
     {
@@ -224,7 +224,7 @@ class ResetTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ids
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $ids ids
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $ids ids
      *
      * @return $this
      */

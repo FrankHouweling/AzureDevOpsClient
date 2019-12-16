@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ApprovalsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -102,9 +102,9 @@ class ApprovalsApi
      * @param  string $queryOrder Gets the results in the defined order of created approvals. Default is &#39;descending&#39;. (optional)
      * @param  bool $includeMyGroupApprovals &#39;true&#39; to include my group approvals. Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function approvalsList($organization, $project, $apiVersion, $assignedToFilter = null, $statusFilter = null, $releaseIdsFilter = null, $typeFilter = null, $top = null, $continuationToken = null, $queryOrder = null, $includeMyGroupApprovals = null)
     {
@@ -127,13 +127,13 @@ class ApprovalsApi
      * @param  string $queryOrder Gets the results in the defined order of created approvals. Default is &#39;descending&#39;. (optional)
      * @param  bool $includeMyGroupApprovals &#39;true&#39; to include my group approvals. Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[], HTTP status code, HTTP response headers (array of strings)
      */
     public function approvalsListWithHttpInfo($organization, $project, $apiVersion, $assignedToFilter = null, $statusFilter = null, $releaseIdsFilter = null, $typeFilter = null, $top = null, $continuationToken = null, $queryOrder = null, $includeMyGroupApprovals = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]';
         $request = $this->approvalsListRequest($organization, $project, $apiVersion, $assignedToFilter, $statusFilter, $releaseIdsFilter, $typeFilter, $top, $continuationToken, $queryOrder, $includeMyGroupApprovals);
 
         try {
@@ -185,7 +185,7 @@ class ApprovalsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class ApprovalsApi
      */
     public function approvalsListAsyncWithHttpInfo($organization, $project, $apiVersion, $assignedToFilter = null, $statusFilter = null, $releaseIdsFilter = null, $typeFilter = null, $top = null, $continuationToken = null, $queryOrder = null, $includeMyGroupApprovals = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]';
         $request = $this->approvalsListRequest($organization, $project, $apiVersion, $assignedToFilter, $statusFilter, $releaseIdsFilter, $typeFilter, $top, $continuationToken, $queryOrder, $includeMyGroupApprovals);
 
         return $this->client
@@ -466,14 +466,14 @@ class ApprovalsApi
      * Operation approvalsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $approvalId Id of the approval. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval
      */
     public function approvalsUpdate($organization, $body, $project, $approvalId, $apiVersion)
     {
@@ -485,18 +485,18 @@ class ApprovalsApi
      * Operation approvalsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $approvalId Id of the approval. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval, HTTP status code, HTTP response headers (array of strings)
      */
     public function approvalsUpdateWithHttpInfo($organization, $body, $project, $approvalId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval';
         $request = $this->approvalsUpdateRequest($organization, $body, $project, $approvalId, $apiVersion);
 
         try {
@@ -548,7 +548,7 @@ class ApprovalsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class ApprovalsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $approvalId Id of the approval. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -588,7 +588,7 @@ class ApprovalsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $approvalId Id of the approval. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -598,7 +598,7 @@ class ApprovalsApi
      */
     public function approvalsUpdateAsyncWithHttpInfo($organization, $body, $project, $approvalId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval';
         $request = $this->approvalsUpdateRequest($organization, $body, $project, $approvalId, $apiVersion);
 
         return $this->client
@@ -642,7 +642,7 @@ class ApprovalsApi
      * Create request for operation 'approvalsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $body ReleaseApproval object having status, approver and comments. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $approvalId Id of the approval. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

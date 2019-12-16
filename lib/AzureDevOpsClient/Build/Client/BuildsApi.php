@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class BuildsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -112,7 +112,7 @@ class BuildsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -381,9 +381,9 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  string $propertyFilters  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function buildsGet($organization, $project, $buildId, $apiVersion, $propertyFilters = null)
     {
@@ -400,13 +400,13 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  string $propertyFilters  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetWithHttpInfo($organization, $project, $buildId, $apiVersion, $propertyFilters = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsGetRequest($organization, $project, $buildId, $apiVersion, $propertyFilters);
 
         try {
@@ -458,7 +458,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -508,7 +508,7 @@ class BuildsApi
      */
     public function buildsGetAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion, $propertyFilters = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsGetRequest($organization, $project, $buildId, $apiVersion, $propertyFilters);
 
         return $this->client
@@ -714,9 +714,9 @@ class BuildsApi
      * @param  int $top The maximum number of changes to return (optional)
      * @param  bool $includeSourceChange  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Change[]
      */
     public function buildsGetBuildChanges($organization, $project, $buildId, $apiVersion, $continuationToken = null, $top = null, $includeSourceChange = null)
     {
@@ -735,13 +735,13 @@ class BuildsApi
      * @param  int $top The maximum number of changes to return (optional)
      * @param  bool $includeSourceChange  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Change[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetBuildChangesWithHttpInfo($organization, $project, $buildId, $apiVersion, $continuationToken = null, $top = null, $includeSourceChange = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]';
         $request = $this->buildsGetBuildChangesRequest($organization, $project, $buildId, $apiVersion, $continuationToken, $top, $includeSourceChange);
 
         try {
@@ -793,7 +793,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -847,7 +847,7 @@ class BuildsApi
      */
     public function buildsGetBuildChangesAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion, $continuationToken = null, $top = null, $includeSourceChange = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]';
         $request = $this->buildsGetBuildChangesRequest($organization, $project, $buildId, $apiVersion, $continuationToken, $top, $includeSourceChange);
 
         return $this->client
@@ -1063,7 +1063,7 @@ class BuildsApi
      * @param  int $startLine The start line. (optional)
      * @param  int $endLine The end line. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1084,7 +1084,7 @@ class BuildsApi
      * @param  int $startLine The start line. (optional)
      * @param  int $endLine The end line. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1419,9 +1419,9 @@ class BuildsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[]
      */
     public function buildsGetBuildLogs($organization, $project, $buildId, $apiVersion)
     {
@@ -1437,13 +1437,13 @@ class BuildsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetBuildLogsWithHttpInfo($organization, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[]';
         $request = $this->buildsGetBuildLogsRequest($organization, $project, $buildId, $apiVersion);
 
         try {
@@ -1495,7 +1495,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1543,7 +1543,7 @@ class BuildsApi
      */
     public function buildsGetBuildLogsAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[]';
         $request = $this->buildsGetBuildLogsRequest($organization, $project, $buildId, $apiVersion);
 
         return $this->client
@@ -1742,9 +1742,9 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]
      */
     public function buildsGetBuildWorkItemsRefs($organization, $project, $buildId, $apiVersion, $top = null)
     {
@@ -1761,13 +1761,13 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetBuildWorkItemsRefsWithHttpInfo($organization, $project, $buildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetBuildWorkItemsRefsRequest($organization, $project, $buildId, $apiVersion, $top);
 
         try {
@@ -1819,7 +1819,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1869,7 +1869,7 @@ class BuildsApi
      */
     public function buildsGetBuildWorkItemsRefsAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetBuildWorkItemsRefsRequest($organization, $project, $buildId, $apiVersion, $top);
 
         return $this->client
@@ -2074,9 +2074,9 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return, or the number of commits to consider if no commit IDs are specified. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]
      */
     public function buildsGetBuildWorkItemsRefsFromCommits($organization, $body, $project, $buildId, $apiVersion, $top = null)
     {
@@ -2094,13 +2094,13 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return, or the number of commits to consider if no commit IDs are specified. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetBuildWorkItemsRefsFromCommitsWithHttpInfo($organization, $body, $project, $buildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetBuildWorkItemsRefsFromCommitsRequest($organization, $body, $project, $buildId, $apiVersion, $top);
 
         try {
@@ -2152,7 +2152,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2204,7 +2204,7 @@ class BuildsApi
      */
     public function buildsGetBuildWorkItemsRefsFromCommitsAsyncWithHttpInfo($organization, $body, $project, $buildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetBuildWorkItemsRefsFromCommitsRequest($organization, $body, $project, $buildId, $apiVersion, $top);
 
         return $this->client
@@ -2419,9 +2419,9 @@ class BuildsApi
      * @param  int $toBuildId The ID of the last build. (optional)
      * @param  int $top The maximum number of changes to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Change[]
      */
     public function buildsGetChangesBetweenBuilds($organization, $project, $apiVersion, $fromBuildId = null, $toBuildId = null, $top = null)
     {
@@ -2439,13 +2439,13 @@ class BuildsApi
      * @param  int $toBuildId The ID of the last build. (optional)
      * @param  int $top The maximum number of changes to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Change[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetChangesBetweenBuildsWithHttpInfo($organization, $project, $apiVersion, $fromBuildId = null, $toBuildId = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]';
         $request = $this->buildsGetChangesBetweenBuildsRequest($organization, $project, $apiVersion, $fromBuildId, $toBuildId, $top);
 
         try {
@@ -2497,7 +2497,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2549,7 +2549,7 @@ class BuildsApi
      */
     public function buildsGetChangesBetweenBuildsAsyncWithHttpInfo($organization, $project, $apiVersion, $fromBuildId = null, $toBuildId = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]';
         $request = $this->buildsGetChangesBetweenBuildsRequest($organization, $project, $apiVersion, $fromBuildId, $toBuildId, $top);
 
         return $this->client
@@ -2749,9 +2749,9 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]
      */
     public function buildsGetWorkItemsBetweenBuilds($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top = null)
     {
@@ -2769,13 +2769,13 @@ class BuildsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $top The maximum number of work items to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsGetWorkItemsBetweenBuildsWithHttpInfo($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetWorkItemsBetweenBuildsRequest($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top);
 
         try {
@@ -2827,7 +2827,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2879,7 +2879,7 @@ class BuildsApi
      */
     public function buildsGetWorkItemsBetweenBuildsAsyncWithHttpInfo($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]';
         $request = $this->buildsGetWorkItemsBetweenBuildsRequest($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top);
 
         return $this->client
@@ -3108,9 +3108,9 @@ class BuildsApi
      * @param  string $repositoryId If specified, filters to builds that built from this repository. (optional)
      * @param  string $repositoryType If specified, filters to builds that built from repositories of this type. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build[]
      */
     public function buildsList($organization, $project, $apiVersion, $definitions = null, $queues = null, $buildNumber = null, $minTime = null, $maxTime = null, $requestedFor = null, $reasonFilter = null, $statusFilter = null, $resultFilter = null, $tagFilters = null, $properties = null, $top = null, $continuationToken = null, $maxBuildsPerDefinition = null, $deletedFilter = null, $queryOrder = null, $branchName = null, $buildIds = null, $repositoryId = null, $repositoryType = null)
     {
@@ -3145,13 +3145,13 @@ class BuildsApi
      * @param  string $repositoryId If specified, filters to builds that built from this repository. (optional)
      * @param  string $repositoryType If specified, filters to builds that built from repositories of this type. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Build[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsListWithHttpInfo($organization, $project, $apiVersion, $definitions = null, $queues = null, $buildNumber = null, $minTime = null, $maxTime = null, $requestedFor = null, $reasonFilter = null, $statusFilter = null, $resultFilter = null, $tagFilters = null, $properties = null, $top = null, $continuationToken = null, $maxBuildsPerDefinition = null, $deletedFilter = null, $queryOrder = null, $branchName = null, $buildIds = null, $repositoryId = null, $repositoryType = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]';
         $request = $this->buildsListRequest($organization, $project, $apiVersion, $definitions, $queues, $buildNumber, $minTime, $maxTime, $requestedFor, $reasonFilter, $statusFilter, $resultFilter, $tagFilters, $properties, $top, $continuationToken, $maxBuildsPerDefinition, $deletedFilter, $queryOrder, $branchName, $buildIds, $repositoryId, $repositoryType);
 
         try {
@@ -3203,7 +3203,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3289,7 +3289,7 @@ class BuildsApi
      */
     public function buildsListAsyncWithHttpInfo($organization, $project, $apiVersion, $definitions = null, $queues = null, $buildNumber = null, $minTime = null, $maxTime = null, $requestedFor = null, $reasonFilter = null, $statusFilter = null, $resultFilter = null, $tagFilters = null, $properties = null, $top = null, $continuationToken = null, $maxBuildsPerDefinition = null, $deletedFilter = null, $queryOrder = null, $branchName = null, $buildIds = null, $repositoryId = null, $repositoryType = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]';
         $request = $this->buildsListRequest($organization, $project, $apiVersion, $definitions, $queues, $buildNumber, $minTime, $maxTime, $requestedFor, $reasonFilter, $statusFilter, $resultFilter, $tagFilters, $properties, $top, $continuationToken, $maxBuildsPerDefinition, $deletedFilter, $queryOrder, $branchName, $buildIds, $repositoryId, $repositoryType);
 
         return $this->client
@@ -3568,16 +3568,16 @@ class BuildsApi
      * Operation buildsQueue
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $ignoreWarnings  (optional)
      * @param  string $checkInTicket  (optional)
      * @param  int $sourceBuildId  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function buildsQueue($organization, $body, $project, $apiVersion, $ignoreWarnings = null, $checkInTicket = null, $sourceBuildId = null)
     {
@@ -3589,20 +3589,20 @@ class BuildsApi
      * Operation buildsQueueWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $ignoreWarnings  (optional)
      * @param  string $checkInTicket  (optional)
      * @param  int $sourceBuildId  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsQueueWithHttpInfo($organization, $body, $project, $apiVersion, $ignoreWarnings = null, $checkInTicket = null, $sourceBuildId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsQueueRequest($organization, $body, $project, $apiVersion, $ignoreWarnings, $checkInTicket, $sourceBuildId);
 
         try {
@@ -3654,7 +3654,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3670,7 +3670,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $ignoreWarnings  (optional)
@@ -3696,7 +3696,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $ignoreWarnings  (optional)
@@ -3708,7 +3708,7 @@ class BuildsApi
      */
     public function buildsQueueAsyncWithHttpInfo($organization, $body, $project, $apiVersion, $ignoreWarnings = null, $checkInTicket = null, $sourceBuildId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsQueueRequest($organization, $body, $project, $apiVersion, $ignoreWarnings, $checkInTicket, $sourceBuildId);
 
         return $this->client
@@ -3752,7 +3752,7 @@ class BuildsApi
      * Create request for operation 'buildsQueue'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $ignoreWarnings  (optional)
@@ -3912,15 +3912,15 @@ class BuildsApi
      * Operation buildsUpdateBuild
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body The build. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body The build. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $retry  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function buildsUpdateBuild($organization, $body, $project, $buildId, $apiVersion, $retry = null)
     {
@@ -3932,19 +3932,19 @@ class BuildsApi
      * Operation buildsUpdateBuildWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body The build. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body The build. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      * @param  bool $retry  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Build, HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsUpdateBuildWithHttpInfo($organization, $body, $project, $buildId, $apiVersion, $retry = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsUpdateBuildRequest($organization, $body, $project, $buildId, $apiVersion, $retry);
 
         try {
@@ -3996,7 +3996,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4012,7 +4012,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body The build. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body The build. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -4037,7 +4037,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body The build. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body The build. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -4048,7 +4048,7 @@ class BuildsApi
      */
     public function buildsUpdateBuildAsyncWithHttpInfo($organization, $body, $project, $buildId, $apiVersion, $retry = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build';
         $request = $this->buildsUpdateBuildRequest($organization, $body, $project, $buildId, $apiVersion, $retry);
 
         return $this->client
@@ -4092,7 +4092,7 @@ class BuildsApi
      * Create request for operation 'buildsUpdateBuild'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $body The build. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build $body The build. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -4257,13 +4257,13 @@ class BuildsApi
      * Operation buildsUpdateBuilds
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build[]
      */
     public function buildsUpdateBuilds($organization, $body, $project, $apiVersion)
     {
@@ -4275,17 +4275,17 @@ class BuildsApi
      * Operation buildsUpdateBuildsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Build[], HTTP status code, HTTP response headers (array of strings)
      */
     public function buildsUpdateBuildsWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]';
         $request = $this->buildsUpdateBuildsRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -4337,7 +4337,7 @@ class BuildsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4353,7 +4353,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
@@ -4376,7 +4376,7 @@ class BuildsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
@@ -4385,7 +4385,7 @@ class BuildsApi
      */
     public function buildsUpdateBuildsAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]';
         $request = $this->buildsUpdateBuildsRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -4429,7 +4429,7 @@ class BuildsApi
      * Create request for operation 'buildsUpdateBuilds'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] $body The builds to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *

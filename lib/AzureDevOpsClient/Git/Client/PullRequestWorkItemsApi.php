@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestWorkItemsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class PullRequestWorkItemsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]
      */
     public function pullRequestWorkItemsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -115,13 +115,13 @@ class PullRequestWorkItemsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestWorkItemsListWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]';
         $request = $this->pullRequestWorkItemsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class PullRequestWorkItemsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class PullRequestWorkItemsApi
      */
     public function pullRequestWorkItemsListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]';
         $request = $this->pullRequestWorkItemsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestCaseReference Class Doc Comment
  *
  * @category Class
  * @description Test Case Reference
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestCaseReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'assignedTo' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef',
+        'assignedTo' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef',
         'id' => 'int',
         'name' => 'string',
         'state' => 'string'
@@ -226,7 +226,7 @@ class TestCaseReference implements ModelInterface, ArrayAccess
     /**
      * Gets assignedTo
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getAssignedTo()
     {
@@ -236,7 +236,7 @@ class TestCaseReference implements ModelInterface, ArrayAccess
     /**
      * Sets assignedTo
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $assignedTo Identity to whom the test case is assigned
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $assignedTo Identity to whom the test case is assigned
      *
      * @return $this
      */

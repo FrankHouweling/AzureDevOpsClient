@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * INotificationDiagnosticLog Class Doc Comment
  *
  * @category Class
  * @description Abstraction interface for the diagnostic log.  Primarily for deserialization.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class INotificationDiagnosticLog implements ModelInterface, ArrayAccess
         'endTime' => '\DateTime',
         'id' => 'string',
         'logType' => 'string',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
         'properties' => 'map[string,string]',
         'source' => 'string',
         'startTime' => '\DateTime'
@@ -376,7 +376,7 @@ class INotificationDiagnosticLog implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -386,7 +386,7 @@ class INotificationDiagnosticLog implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages List of log messages.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages List of log messages.
      *
      * @return $this
      */

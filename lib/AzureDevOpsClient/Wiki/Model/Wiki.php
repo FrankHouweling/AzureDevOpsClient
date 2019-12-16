@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * Wiki Class Doc Comment
  *
  * @category Class
  * @description Defines a wiki repository which encapsulates the git repository backing the wiki.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class Wiki implements ModelInterface, ArrayAccess
         'projectId' => 'string',
         'headCommit' => 'string',
         'id' => 'string',
-        'repository' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepository'
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepository'
     ];
 
     /**
@@ -328,7 +328,7 @@ class Wiki implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepository
      */
     public function getRepository()
     {
@@ -338,7 +338,7 @@ class Wiki implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepository $repository The git repository that backs up the wiki.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepository $repository The git repository that backs up the wiki.
      *
      * @return $this
      */

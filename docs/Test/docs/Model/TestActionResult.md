@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **dateStarted** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **duration** | **int** |  | [optional] 
 **errorMessage** | **string** |  | [optional] 
-**id** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier**](LegacyTestCaseResultIdentifier.md) |  | [optional] 
+**id** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier**](LegacyTestCaseResultIdentifier.md) |  | [optional] 
 **iterationId** | **int** |  | [optional] 
 **lastUpdated** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **lastUpdatedBy** | **string** |  | [optional] 

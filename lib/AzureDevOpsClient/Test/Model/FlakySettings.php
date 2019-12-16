@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * FlakySettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyDetection' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetection',
+        'flakyDetection' => '\FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetection',
         'flakyInSummaryReport' => 'bool',
         'isFlakyBugCreated' => 'bool',
         'manualMarkUnmarkFlaky' => 'bool'
@@ -226,7 +226,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
     /**
      * Gets flakyDetection
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetection
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetection
      */
     public function getFlakyDetection()
     {
@@ -236,7 +236,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
     /**
      * Sets flakyDetection
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetection $flakyDetection FlakyDetection defines types of detection.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetection $flakyDetection FlakyDetection defines types of detection.
      *
      * @return $this
      */

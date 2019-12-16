@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * ColumnsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class ColumnsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]
      */
     public function columnsList($organization, $project, $board, $team, $apiVersion)
     {
@@ -115,13 +115,13 @@ class ColumnsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[], HTTP status code, HTTP response headers (array of strings)
      */
     public function columnsListWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]';
         $request = $this->columnsListRequest($organization, $project, $board, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ColumnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class ColumnsApi
      */
     public function columnsListAsyncWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]';
         $request = $this->columnsListRequest($organization, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -432,15 +432,15 @@ class ColumnsApi
      * Operation columnsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Name or ID of the specific board (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]
      */
     public function columnsUpdate($organization, $body, $project, $board, $team, $apiVersion)
     {
@@ -452,19 +452,19 @@ class ColumnsApi
      * Operation columnsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Name or ID of the specific board (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[], HTTP status code, HTTP response headers (array of strings)
      */
     public function columnsUpdateWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]';
         $request = $this->columnsUpdateRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         try {
@@ -516,7 +516,7 @@ class ColumnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class ColumnsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Name or ID of the specific board (required)
      * @param  string $team Team ID or team name (required)
@@ -557,7 +557,7 @@ class ColumnsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Name or ID of the specific board (required)
      * @param  string $team Team ID or team name (required)
@@ -568,7 +568,7 @@ class ColumnsApi
      */
     public function columnsUpdateAsyncWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]';
         $request = $this->columnsUpdateRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -612,7 +612,7 @@ class ColumnsApi
      * Create request for operation 'columnsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $body List of board columns to update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Name or ID of the specific board (required)
      * @param  string $team Team ID or team name (required)

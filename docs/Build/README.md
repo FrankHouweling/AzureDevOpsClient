@@ -57,16 +57,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\ArtifactsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\ArtifactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact | The artifact.
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact(); // \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact | The artifact.
 $project = "project_example"; // string | Project ID or project name
 $buildId = 56; // int | The ID of the build.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.5' to use this version of the api.

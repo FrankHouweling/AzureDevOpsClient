@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * AgentPoolQueue Class Doc Comment
  *
  * @category Class
  * @description Represents a queue for running builds.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class AgentPoolQueue implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
         'id' => 'int',
         'name' => 'string',
-        'pool' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskAgentPoolReference',
+        'pool' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskAgentPoolReference',
         'url' => 'string'
     ];
 
@@ -232,7 +232,7 @@ class AgentPoolQueue implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -242,7 +242,7 @@ class AgentPoolQueue implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class AgentPoolQueue implements ModelInterface, ArrayAccess
     /**
      * Gets pool
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskAgentPoolReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskAgentPoolReference
      */
     public function getPool()
     {
@@ -314,7 +314,7 @@ class AgentPoolQueue implements ModelInterface, ArrayAccess
     /**
      * Sets pool
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskAgentPoolReference $pool The pool used by this queue.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskAgentPoolReference $pool The pool used by this queue.
      *
      * @return $this
      */

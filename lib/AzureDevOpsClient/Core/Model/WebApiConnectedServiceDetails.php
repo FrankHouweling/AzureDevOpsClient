@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * WebApiConnectedServiceDetails Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class WebApiConnectedServiceDetails implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'url' => 'string',
-        'connectedServiceMetaData' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiConnectedService',
+        'connectedServiceMetaData' => '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiConnectedService',
         'credentialsXml' => 'string',
         'endPoint' => 'string'
     ];
@@ -280,7 +280,7 @@ class WebApiConnectedServiceDetails implements ModelInterface, ArrayAccess
     /**
      * Gets connectedServiceMetaData
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiConnectedService
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiConnectedService
      */
     public function getConnectedServiceMetaData()
     {
@@ -290,7 +290,7 @@ class WebApiConnectedServiceDetails implements ModelInterface, ArrayAccess
     /**
      * Sets connectedServiceMetaData
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiConnectedService $connectedServiceMetaData Meta data for service connection
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiConnectedService $connectedServiceMetaData Meta data for service connection
      *
      * @return $this
      */

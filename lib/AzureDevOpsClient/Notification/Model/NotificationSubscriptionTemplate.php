@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationSubscriptionTemplate Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class NotificationSubscriptionTemplate implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'description' => 'string',
-        'filter' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
+        'filter' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
         'id' => 'string',
-        'notificationEventInformation' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType',
+        'notificationEventInformation' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType',
         'type' => 'string'
     ];
 
@@ -283,7 +283,7 @@ class NotificationSubscriptionTemplate implements ModelInterface, ArrayAccess
     /**
      * Gets filter
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
      */
     public function getFilter()
     {
@@ -293,7 +293,7 @@ class NotificationSubscriptionTemplate implements ModelInterface, ArrayAccess
     /**
      * Sets filter
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter filter
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter filter
      *
      * @return $this
      */
@@ -331,7 +331,7 @@ class NotificationSubscriptionTemplate implements ModelInterface, ArrayAccess
     /**
      * Gets notificationEventInformation
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType
      */
     public function getNotificationEventInformation()
     {
@@ -341,7 +341,7 @@ class NotificationSubscriptionTemplate implements ModelInterface, ArrayAccess
     /**
      * Sets notificationEventInformation
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType $notificationEventInformation notificationEventInformation
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType $notificationEventInformation notificationEventInformation
      *
      * @return $this
      */

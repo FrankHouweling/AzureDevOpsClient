@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\LeasesApi
+# FrankHouweling\AzureDevOpsClient\Build\LeasesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **leasesAdd**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[] leasesAdd($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[] leasesAdd($organization, $body, $project, $apiVersion)
 
 
 
@@ -23,19 +23,19 @@ Adds new leases for pipeline runs.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\LeasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\LeasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease()); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] | 
+$body = array(new \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease()); // \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] | 
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -53,13 +53,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[]**](../Model/NewRetentionLease.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[]**](../Model/NewRetentionLease.md)|  |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]**](../Model/RetentionLease.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]**](../Model/RetentionLease.md)
 
 ### Authorization
 
@@ -85,12 +85,12 @@ Removes specific retention leases.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\LeasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\LeasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **leasesGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease leasesGet($organization, $project, $leaseId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease leasesGet($organization, $project, $leaseId, $apiVersion)
 
 
 
@@ -146,12 +146,12 @@ Returns the details of the retention lease given a lease id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\LeasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\LeasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease**](../Model/RetentionLease.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease**](../Model/RetentionLease.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **leasesGetRetentionLeasesByUserId**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[] leasesGetRetentionLeasesByUserId($organization, $project, $userOwnerId, $apiVersion, $definitionId, $runId)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[] leasesGetRetentionLeasesByUserId($organization, $project, $userOwnerId, $apiVersion, $definitionId, $runId)
 
 
 
@@ -208,12 +208,12 @@ Returns any leases owned by the specified user, optionally scoped to a single pi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\LeasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\LeasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]**](../Model/RetentionLease.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]**](../Model/RetentionLease.md)
 
 ### Authorization
 

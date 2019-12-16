@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | ID of the approval or deploy step. | [optional] 
-**approver** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets and sets the approver. | [optional] 
+**approver** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets and sets the approver. | [optional] 
 **isAutomated** | **bool** | Indicates whether the approval automated. | [optional] 
 **isNotificationOn** | **bool** | Indicates whether the approval notification set. | [optional] 
 **rank** | **int** | Gets or sets the rank of approval step. | [optional] 

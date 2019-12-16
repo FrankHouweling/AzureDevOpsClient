@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointDetails Class Doc Comment
  *
  * @category Class
  * @description Represents details of the service endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ServiceEndpointDetails implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'authorization' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization',
+        'authorization' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization',
         'data' => 'map[string,string]',
         'type' => 'string',
         'url' => 'string'
@@ -226,7 +226,7 @@ class ServiceEndpointDetails implements ModelInterface, ArrayAccess
     /**
      * Gets authorization
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization
      */
     public function getAuthorization()
     {
@@ -236,7 +236,7 @@ class ServiceEndpointDetails implements ModelInterface, ArrayAccess
     /**
      * Sets authorization
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization $authorization Gets or sets the authorization of service endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization $authorization Gets or sets the authorization of service endpoint.
      *
      * @return $this
      */

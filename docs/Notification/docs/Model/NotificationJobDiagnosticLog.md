@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **errors** | **int** |  | [optional] 
 **id** | **string** | Unique instance identifier. | [optional] 
 **logType** | **string** |  | [optional] 
-**messages** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) |  | [optional] 
+**messages** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) |  | [optional] 
 **properties** | **map[string,string]** |  | [optional] 
 **source** | **string** | This identifier depends on the logType.  For notification jobs, this will be the job Id. For subscription tracing, this will be a special root Guid with the subscription Id encoded. | [optional] 
 **startTime** | [**\DateTime**](\DateTime.md) |  | [optional] 

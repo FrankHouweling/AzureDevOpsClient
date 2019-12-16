@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionDataCollection Class Doc Comment
  *
  * @category Class
  * @description Represents a single collection for extension data documents
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ExtensionDataCollection implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'collectionName' => 'string',
-        'documents' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject[]',
+        'documents' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject[]',
         'scopeType' => 'string',
         'scopeValue' => 'string'
     ];
@@ -250,7 +250,7 @@ class ExtensionDataCollection implements ModelInterface, ArrayAccess
     /**
      * Gets documents
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject[]
      */
     public function getDocuments()
     {
@@ -260,7 +260,7 @@ class ExtensionDataCollection implements ModelInterface, ArrayAccess
     /**
      * Sets documents
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject[] $documents A list of documents belonging to the collection
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject[] $documents A list of documents belonging to the collection
      *
      * @return $this
      */

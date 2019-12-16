@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * UserEntitlementOperationResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class UserEntitlementOperationResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'errors' => 'object[]',
         'isSuccess' => 'bool',
-        'result' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement',
+        'result' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement',
         'userId' => 'string'
     ];
 
@@ -274,7 +274,7 @@ class UserEntitlementOperationResult implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement
      */
     public function getResult()
     {
@@ -284,7 +284,7 @@ class UserEntitlementOperationResult implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $result Result of the MemberEntitlement after the operation.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $result Result of the MemberEntitlement after the operation.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * ResultsSummaryByOutcome Class Doc Comment
  *
  * @category Class
  * @description Result summary by the outcome of test results.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ResultsSummaryByOutcome implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'aggregatedResultDetailsByOutcome' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome]',
+        'aggregatedResultDetailsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome]',
         'duration' => 'string',
         'notReportedTestCount' => 'int',
         'totalTestCount' => 'int'
@@ -226,7 +226,7 @@ class ResultsSummaryByOutcome implements ModelInterface, ArrayAccess
     /**
      * Gets aggregatedResultDetailsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome]
      */
     public function getAggregatedResultDetailsByOutcome()
     {
@@ -236,7 +236,7 @@ class ResultsSummaryByOutcome implements ModelInterface, ArrayAccess
     /**
      * Sets aggregatedResultDetailsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome] $aggregatedResultDetailsByOutcome Aggregated result details for each test result outcome.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultDetailsByOutcome] $aggregatedResultDetailsByOutcome Aggregated result details for each test result outcome.
      *
      * @return $this
      */

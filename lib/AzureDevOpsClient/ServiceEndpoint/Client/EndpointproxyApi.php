@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Client;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\ServiceEndpoint\ApiException;
-use AzureDevOpsClient\ServiceEndpoint\Configuration;
-use AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
-use AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * EndpointproxyApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class EndpointproxyApi
      * Operation endpointproxyQuery
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string[]
      */
@@ -109,11 +109,11 @@ class EndpointproxyApi
      * Operation endpointproxyQueryWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -187,7 +187,7 @@ class EndpointproxyApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class EndpointproxyApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -263,7 +263,7 @@ class EndpointproxyApi
      * Create request for operation 'endpointproxyQuery'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding $body Describes the data source to fetch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

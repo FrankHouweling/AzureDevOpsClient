@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * DatedTestFieldData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class DatedTestFieldData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'date' => '\DateTime',
-        'value' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFieldData'
+        'value' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestFieldData'
     ];
 
     /**
@@ -238,7 +238,7 @@ class DatedTestFieldData implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFieldData
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestFieldData
      */
     public function getValue()
     {
@@ -248,7 +248,7 @@ class DatedTestFieldData implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFieldData $value value
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestFieldData $value value
      *
      * @return $this
      */

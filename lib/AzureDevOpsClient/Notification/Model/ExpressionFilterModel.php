@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ExpressionFilterModel Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ExpressionFilterModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'clauses' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[]',
-        'groups' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[]',
+        'clauses' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[]',
+        'groups' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[]',
         'maxGroupLevel' => 'int'
     ];
 
@@ -220,7 +220,7 @@ class ExpressionFilterModel implements ModelInterface, ArrayAccess
     /**
      * Gets clauses
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[]
      */
     public function getClauses()
     {
@@ -230,7 +230,7 @@ class ExpressionFilterModel implements ModelInterface, ArrayAccess
     /**
      * Sets clauses
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[] $clauses Flat list of clauses in this subscription
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterClause[] $clauses Flat list of clauses in this subscription
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ExpressionFilterModel implements ModelInterface, ArrayAccess
     /**
      * Gets groups
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[]
      */
     public function getGroups()
     {
@@ -254,7 +254,7 @@ class ExpressionFilterModel implements ModelInterface, ArrayAccess
     /**
      * Sets groups
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[] $groups Grouping of clauses in the subscription
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterGroup[] $groups Grouping of clauses in the subscription
      *
      * @return $this
      */

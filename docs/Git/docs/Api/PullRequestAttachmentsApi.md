@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestAttachmentsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestAttachmentsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestAttachmentsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Attachment pullRequestAttachmentsCreate($organization, $body, $fileName, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Attachment pullRequestAttachmentsCreate($organization, $body, $fileName, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -23,9 +23,9 @@ Attach a new file to a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Attachment**](../Model/Attachment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Attachment**](../Model/Attachment.md)
 
 ### Authorization
 
@@ -88,9 +88,9 @@ Delete a pull request attachment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,9 +150,9 @@ Get the file content of a pull request attachment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestAttachmentsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Attachment[] pullRequestAttachmentsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Attachment[] pullRequestAttachmentsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -213,9 +213,9 @@ Get a list of files attached to a given pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Attachment[]**](../Model/Attachment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Attachment[]**](../Model/Attachment.md)
 
 ### Authorization
 

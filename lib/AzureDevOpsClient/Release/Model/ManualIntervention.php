@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ManualIntervention Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class ManualIntervention implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'approver' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'approver' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'comments' => 'string',
         'createdOn' => '\DateTime',
         'id' => 'int',
         'instructions' => 'string',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
-        'releaseEnvironment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'releaseEnvironment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
         'status' => 'string',
         'taskInstanceId' => 'string',
         'url' => 'string'
@@ -309,7 +309,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Gets approver
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getApprover()
     {
@@ -319,7 +319,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Sets approver
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets or sets the identity who should approve.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets or sets the identity who should approve.
      *
      * @return $this
      */
@@ -477,7 +477,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference
      */
     public function getRelease()
     {
@@ -487,7 +487,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets releaseReference for manual intervention.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets releaseReference for manual intervention.
      *
      * @return $this
      */
@@ -501,7 +501,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -511,7 +511,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference for manual intervention.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference for manual intervention.
      *
      * @return $this
      */
@@ -525,7 +525,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Gets releaseEnvironment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
      */
     public function getReleaseEnvironment()
     {
@@ -535,7 +535,7 @@ class ManualIntervention implements ModelInterface, ArrayAccess
     /**
      * Sets releaseEnvironment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference for manual intervention.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference for manual intervention.
      *
      * @return $this
      */

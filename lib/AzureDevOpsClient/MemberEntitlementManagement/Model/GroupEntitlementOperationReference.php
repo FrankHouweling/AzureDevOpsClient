@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GroupEntitlementOperationReference Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class GroupEntitlementOperationReference implements ModelInterface, ArrayAccess
         'url' => 'string',
         'completed' => 'bool',
         'haveResultsSucceeded' => 'bool',
-        'results' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]'
+        'results' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]'
     ];
 
     /**
@@ -428,7 +428,7 @@ class GroupEntitlementOperationReference implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]
      */
     public function getResults()
     {
@@ -438,7 +438,7 @@ class GroupEntitlementOperationReference implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[] $results List of results for each operation.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[] $results List of results for each operation.
      *
      * @return $this
      */

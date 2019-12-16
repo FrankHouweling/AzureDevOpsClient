@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestPointsQuery Class Doc Comment
  *
  * @category Class
  * @description Test point query class.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class TestPointsQuery implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'orderBy' => 'string',
-        'points' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]',
-        'pointsFilter' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsFilter',
+        'points' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]',
+        'pointsFilter' => '\FrankHouweling\AzureDevOpsClient\Test\Model\PointsFilter',
         'witFields' => 'string[]'
     ];
 
@@ -250,7 +250,7 @@ class TestPointsQuery implements ModelInterface, ArrayAccess
     /**
      * Gets points
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]
      */
     public function getPoints()
     {
@@ -260,7 +260,7 @@ class TestPointsQuery implements ModelInterface, ArrayAccess
     /**
      * Sets points
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[] $points List of test points
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[] $points List of test points
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TestPointsQuery implements ModelInterface, ArrayAccess
     /**
      * Gets pointsFilter
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\PointsFilter
      */
     public function getPointsFilter()
     {
@@ -284,7 +284,7 @@ class TestPointsQuery implements ModelInterface, ArrayAccess
     /**
      * Sets pointsFilter
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsFilter $pointsFilter Filter
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\PointsFilter $pointsFilter Filter
      *
      * @return $this
      */

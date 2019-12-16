@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **changedDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**pointsResults** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsResults2[]**](PointsResults2.md) |  | [optional] 
+**pointsResults** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\PointsResults2[]**](PointsResults2.md) |  | [optional] 
 **resultId** | **int** |  | [optional] 
 **runId** | **int** |  | [optional] 
 

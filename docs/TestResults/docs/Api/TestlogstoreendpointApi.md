@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestResults\TestlogstoreendpointApi
+# FrankHouweling\AzureDevOpsClient\TestResults\TestlogstoreendpointApi
 
 All URIs are relative to *https://vstmr.dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLog**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLog($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLog($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion)
 
 
 
@@ -23,9 +23,9 @@ Get SAS Uri of a test results attachment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLog**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLog($organization, $project, $runId, $type, $filePath, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLog($organization, $project, $runId, $type, $filePath, $apiVersion)
 
 
 
@@ -88,9 +88,9 @@ Get SAS Uri of a test run attachment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testlogstoreendpointTestLogStoreEndpointDetailsForResult**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointTestLogStoreEndpointDetailsForResult($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointTestLogStoreEndpointDetailsForResult($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion)
 
 
 
@@ -151,9 +151,9 @@ Create empty file for a result and Get Sas uri for the file
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testlogstoreendpointTestLogStoreEndpointDetailsForRun**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointTestLogStoreEndpointDetailsForRun($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath, $type)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails testlogstoreendpointTestLogStoreEndpointDetailsForRun($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath, $type)
 
 
 
@@ -218,9 +218,9 @@ Create empty file for a run and Get Sas uri for the file
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogstoreendpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails**](../Model/TestLogStoreEndpointDetails.md)
 
 ### Authorization
 

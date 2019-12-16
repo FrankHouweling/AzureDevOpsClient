@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\SourceProvidersApi
+# FrankHouweling\AzureDevOpsClient\Build\SourceProvidersApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -27,12 +27,12 @@ Gets the contents of a file in the given source code repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sourceProvidersGetPathContents**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[] sourceProvidersGetPathContents($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $commitOrBranch, $path)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[] sourceProvidersGetPathContents($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $commitOrBranch, $path)
 
 
 
@@ -97,12 +97,12 @@ Gets the contents of a directory in the given source code repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]**](../Model/SourceRepositoryItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]**](../Model/SourceRepositoryItem.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sourceProvidersGetPullRequest**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest sourceProvidersGetPullRequest($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId, $serviceEndpointId)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest sourceProvidersGetPullRequest($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId, $serviceEndpointId)
 
 
 
@@ -167,12 +167,12 @@ Gets a pull request object from source provider.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest**](../Model/PullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest**](../Model/PullRequest.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sourceProvidersList**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[] sourceProvidersList($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[] sourceProvidersList($organization, $project, $apiVersion)
 
 
 
@@ -235,12 +235,12 @@ Get a list of source providers and their capabilities.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]**](../Model/SourceProviderAttributes.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]**](../Model/SourceProviderAttributes.md)
 
 ### Authorization
 
@@ -295,12 +295,12 @@ Gets a list of branches for the given source code repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sourceProvidersListRepositories**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories sourceProvidersListRepositories($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $resultSet, $pageResults, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories sourceProvidersListRepositories($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $resultSet, $pageResults, $continuationToken)
 
 
 
@@ -363,12 +363,12 @@ Gets a list of source code repositories.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories**](../Model/SourceRepositories.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories**](../Model/SourceRepositories.md)
 
 ### Authorization
 
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sourceProvidersListWebhooks**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[] sourceProvidersListWebhooks($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[] sourceProvidersListWebhooks($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository)
 
 
 
@@ -435,12 +435,12 @@ Gets a list of webhooks installed in the given source code repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -475,7 +475,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[]**](../Model/RepositoryWebhook.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[]**](../Model/RepositoryWebhook.md)
 
 ### Authorization
 
@@ -501,19 +501,19 @@ Recreates the webhooks for the specified triggers in the given source code repos
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\SourceProvidersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\SourceProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\string[]()); // string[] | The types of triggers to restore webhooks for.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Build\Model\string[]()); // string[] | The types of triggers to restore webhooks for.
 $project = "project_example"; // string | Project ID or project name
 $providerName = "providerName_example"; // string | The name of the source provider.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.

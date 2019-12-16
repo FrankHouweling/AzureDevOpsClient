@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PushesApi
+# FrankHouweling\AzureDevOpsClient\Git\PushesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **pushesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush pushesCreate($organization, $body, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush pushesCreate($organization, $body, $repositoryId, $project, $apiVersion)
 
 
 
@@ -22,16 +22,16 @@ Push changes to the repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PushesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PushesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush | 
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush | 
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.2' to use this version of the api.
@@ -50,14 +50,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)|  |
  **repositoryId** | **string**| The name or ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pushesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush pushesGet($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits, $includeRefUpdates)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush pushesGet($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits, $includeRefUpdates)
 
 
 
@@ -83,9 +83,9 @@ Retrieves a particular push.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PushesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PushesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush**](../Model/GitPush.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pushesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[] pushesList($organization, $repositoryId, $project, $apiVersion, $skip, $top, $searchCriteriaFromDate, $searchCriteriaIncludeLinks, $searchCriteriaIncludeRefUpdates, $searchCriteriaPusherId, $searchCriteriaRefName, $searchCriteriaToDate)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[] pushesList($organization, $repositoryId, $project, $apiVersion, $skip, $top, $searchCriteriaFromDate, $searchCriteriaIncludeLinks, $searchCriteriaIncludeRefUpdates, $searchCriteriaPusherId, $searchCriteriaRefName, $searchCriteriaToDate)
 
 
 
@@ -148,9 +148,9 @@ Retrieves pushes associated with the specified repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PushesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PushesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[]**](../Model/GitPush.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[]**](../Model/GitPush.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ReviewerVoteUpdatedEvent Class Doc Comment
  *
  * @category Class
  * @description Real time event (SignalR) for a reviewer vote update on a pull request
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

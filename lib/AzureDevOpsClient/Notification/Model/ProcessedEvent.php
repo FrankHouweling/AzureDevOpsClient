@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ProcessedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actors' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]',
+        'actors' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]',
         'allowedChannels' => 'string',
         'artifactUri' => 'string',
-        'deliveryIdentities' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities',
-        'evaluations' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation]',
+        'deliveryIdentities' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities',
+        'evaluations' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation]',
         'eventId' => 'int',
-        'exclusions' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]',
-        'inclusions' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]',
-        'notifications' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\GeneratedNotification[]'
+        'exclusions' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]',
+        'inclusions' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]',
+        'notifications' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\GeneratedNotification[]'
     ];
 
     /**
@@ -256,7 +256,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets actors
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]
      */
     public function getActors()
     {
@@ -266,7 +266,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets actors
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[] $actors All of the users that were associated with this event and their role.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[] $actors All of the users that were associated with this event and their role.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryIdentities
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities
      */
     public function getDeliveryIdentities()
     {
@@ -338,7 +338,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryIdentities
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities $deliveryIdentities deliveryIdentities
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities $deliveryIdentities deliveryIdentities
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets evaluations
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation]
      */
     public function getEvaluations()
     {
@@ -362,7 +362,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets evaluations
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation] $evaluations Evaluations for each user
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluation] $evaluations Evaluations for each user
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets exclusions
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]
      */
     public function getExclusions()
     {
@@ -410,7 +410,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets exclusions
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[] $exclusions Which members were excluded from evaluation (only applies to ActorMatcher subscriptions)
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[] $exclusions Which members were excluded from evaluation (only applies to ActorMatcher subscriptions)
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets inclusions
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]
      */
     public function getInclusions()
     {
@@ -434,7 +434,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets inclusions
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[] $inclusions Which members were included for evaluation (only applies to ActorMatcher subscriptions)
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[] $inclusions Which members were included for evaluation (only applies to ActorMatcher subscriptions)
      *
      * @return $this
      */
@@ -448,7 +448,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets notifications
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\GeneratedNotification[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\GeneratedNotification[]
      */
     public function getNotifications()
     {
@@ -458,7 +458,7 @@ class ProcessedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets notifications
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\GeneratedNotification[] $notifications notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\GeneratedNotification[] $notifications notifications
      *
      * @return $this
      */

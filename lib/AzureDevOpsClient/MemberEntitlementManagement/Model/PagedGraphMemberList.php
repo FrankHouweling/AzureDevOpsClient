@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * PagedGraphMemberList Class Doc Comment
  *
  * @category Class
  * @description A page of users
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class PagedGraphMemberList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'members' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]'
+        'members' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class PagedGraphMemberList implements ModelInterface, ArrayAccess
     /**
      * Gets members
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]
      */
     public function getMembers()
     {
@@ -218,7 +218,7 @@ class PagedGraphMemberList implements ModelInterface, ArrayAccess
     /**
      * Sets members
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[] $members members
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[] $members members
      *
      * @return $this
      */

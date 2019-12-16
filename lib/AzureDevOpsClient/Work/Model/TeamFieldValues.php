@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamFieldValues Class Doc Comment
  *
  * @category Class
  * @description Essentially a collection of team field values
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
         'defaultValue' => 'string',
-        'field' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference',
-        'values' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]'
+        'field' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference',
+        'values' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]'
     ];
 
     /**
@@ -232,7 +232,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -242,7 +242,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Gets field
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference
      */
     public function getField()
     {
@@ -314,7 +314,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Sets field
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference $field Shallow ref to the field being used as a team field
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference $field Shallow ref to the field being used as a team field
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]
      */
     public function getValues()
     {
@@ -338,7 +338,7 @@ class TeamFieldValues implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[] $values Collection of all valid team field values
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[] $values Collection of all valid team field values
      *
      * @return $this
      */

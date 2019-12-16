@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TokenAdmin\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TokenAdmin\ObjectSerializer;
 
 /**
  * TokenAdminRevocationRule Class Doc Comment
  *
  * @category Class
  * @description A rule which is applied to disable any incoming delegated authorization which matches the given properties.
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

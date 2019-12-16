@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * VersionControlProjectInfo Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class VersionControlProjectInfo implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'defaultSourceControlType' => 'string',
-        'project' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference',
         'supportsGit' => 'bool',
         'supportsTFVC' => 'bool'
     ];
@@ -282,7 +282,7 @@ class VersionControlProjectInfo implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -292,7 +292,7 @@ class VersionControlProjectInfo implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BacklogsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class BacklogsApi
      * @param  string $id The id of the backlog level (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
      */
     public function backlogsGetBacklog($organization, $project, $team, $id, $apiVersion)
     {
@@ -115,13 +115,13 @@ class BacklogsApi
      * @param  string $id The id of the backlog level (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function backlogsGetBacklogWithHttpInfo($organization, $project, $team, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration';
         $request = $this->backlogsGetBacklogRequest($organization, $project, $team, $id, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class BacklogsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class BacklogsApi
      */
     public function backlogsGetBacklogAsyncWithHttpInfo($organization, $project, $team, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration';
         $request = $this->backlogsGetBacklogRequest($organization, $project, $team, $id, $apiVersion);
 
         return $this->client
@@ -437,9 +437,9 @@ class BacklogsApi
      * @param  string $backlogId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems
      */
     public function backlogsGetBacklogLevelWorkItems($organization, $project, $team, $backlogId, $apiVersion)
     {
@@ -456,13 +456,13 @@ class BacklogsApi
      * @param  string $backlogId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems, HTTP status code, HTTP response headers (array of strings)
      */
     public function backlogsGetBacklogLevelWorkItemsWithHttpInfo($organization, $project, $team, $backlogId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems';
         $request = $this->backlogsGetBacklogLevelWorkItemsRequest($organization, $project, $team, $backlogId, $apiVersion);
 
         try {
@@ -514,7 +514,7 @@ class BacklogsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -564,7 +564,7 @@ class BacklogsApi
      */
     public function backlogsGetBacklogLevelWorkItemsAsyncWithHttpInfo($organization, $project, $team, $backlogId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems';
         $request = $this->backlogsGetBacklogLevelWorkItemsRequest($organization, $project, $team, $backlogId, $apiVersion);
 
         return $this->client
@@ -777,9 +777,9 @@ class BacklogsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]
      */
     public function backlogsList($organization, $project, $team, $apiVersion)
     {
@@ -795,13 +795,13 @@ class BacklogsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function backlogsListWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]';
         $request = $this->backlogsListRequest($organization, $project, $team, $apiVersion);
 
         try {
@@ -853,7 +853,7 @@ class BacklogsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -901,7 +901,7 @@ class BacklogsApi
      */
     public function backlogsListAsyncWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]';
         $request = $this->backlogsListRequest($organization, $project, $team, $apiVersion);
 
         return $this->client

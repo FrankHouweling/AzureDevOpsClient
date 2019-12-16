@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\CodeCoverageApi
+# FrankHouweling\AzureDevOpsClient\Test\CodeCoverageApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **codeCoverageGetBuildCodeCoverage**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[] codeCoverageGetBuildCodeCoverage($organization, $project, $buildId, $flags, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[] codeCoverageGetBuildCodeCoverage($organization, $project, $buildId, $flags, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Get code coverage data for a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\CodeCoverageApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\CodeCoverageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[]**](../Model/BuildCoverage.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[]**](../Model/BuildCoverage.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **codeCoverageGetTestRunCodeCoverage**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[] codeCoverageGetTestRunCodeCoverage($organization, $project, $runId, $flags, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[] codeCoverageGetTestRunCodeCoverage($organization, $project, $runId, $flags, $apiVersion)
 
 
 
@@ -82,9 +82,9 @@ Get code coverage data for a test run
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\CodeCoverageApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\CodeCoverageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[]**](../Model/TestRunCoverage.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[]**](../Model/TestRunCoverage.md)
 
 ### Authorization
 

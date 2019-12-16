@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * IdentityRef Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks',
         'descriptor' => 'string',
         'displayName' => 'string',
         'url' => 'string',
@@ -280,7 +280,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -290,7 +290,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
      *
      * @return $this
      */

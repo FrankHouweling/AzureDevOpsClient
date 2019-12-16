@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * Comment Class Doc Comment
  *
  * @category Class
  * @description Represents a comment which is one of potentially many in a comment thread.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Comment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'commentType' => 'string',
         'content' => 'string',
         'id' => 'int',
@@ -68,7 +68,7 @@ class Comment implements ModelInterface, ArrayAccess
         'lastUpdatedDate' => '\DateTime',
         'parentCommentId' => 'int',
         'publishedDate' => '\DateTime',
-        'usersLiked' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]'
+        'usersLiked' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -305,7 +305,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -329,7 +329,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $author The author of the comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $author The author of the comment.
      *
      * @return $this
      */
@@ -544,7 +544,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets usersLiked
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]
      */
     public function getUsersLiked()
     {
@@ -554,7 +554,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets usersLiked
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $usersLiked A list of the users who have liked this comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $usersLiked A list of the users who have liked this comment.
      *
      * @return $this
      */

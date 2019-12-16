@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * FileDiff Class Doc Comment
  *
  * @category Class
  * @description Provides properties that describe file differences
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FileDiff implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lineDiffBlocks' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\LineDiffBlock[]',
+        'lineDiffBlocks' => '\FrankHouweling\AzureDevOpsClient\Git\Model\LineDiffBlock[]',
         'originalPath' => 'string',
         'path' => 'string'
     ];
@@ -220,7 +220,7 @@ class FileDiff implements ModelInterface, ArrayAccess
     /**
      * Gets lineDiffBlocks
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\LineDiffBlock[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\LineDiffBlock[]
      */
     public function getLineDiffBlocks()
     {
@@ -230,7 +230,7 @@ class FileDiff implements ModelInterface, ArrayAccess
     /**
      * Sets lineDiffBlocks
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\LineDiffBlock[] $lineDiffBlocks The collection of line diff blocks
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\LineDiffBlock[] $lineDiffBlocks The collection of line diff blocks
      *
      * @return $this
      */

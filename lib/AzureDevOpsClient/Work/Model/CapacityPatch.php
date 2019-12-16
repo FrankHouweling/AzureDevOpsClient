@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CapacityPatch Class Doc Comment
  *
  * @category Class
  * @description Expected data from PATCH
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class CapacityPatch implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'activities' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[]',
-        'daysOff' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]'
+        'activities' => '\FrankHouweling\AzureDevOpsClient\Work\Model\Activity[]',
+        'daysOff' => '\FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class CapacityPatch implements ModelInterface, ArrayAccess
     /**
      * Gets activities
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Activity[]
      */
     public function getActivities()
     {
@@ -224,7 +224,7 @@ class CapacityPatch implements ModelInterface, ArrayAccess
     /**
      * Sets activities
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[] $activities activities
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\Activity[] $activities activities
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class CapacityPatch implements ModelInterface, ArrayAccess
     /**
      * Gets daysOff
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]
      */
     public function getDaysOff()
     {
@@ -248,7 +248,7 @@ class CapacityPatch implements ModelInterface, ArrayAccess
     /**
      * Sets daysOff
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[] $daysOff daysOff
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[] $daysOff daysOff
      *
      * @return $this
      */

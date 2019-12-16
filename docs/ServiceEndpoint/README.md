@@ -57,16 +57,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointproxyApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointproxyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding(); // \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding | Describes the data source to fetch.
+$body = new \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding(); // \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding | Describes the data source to fetch.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 

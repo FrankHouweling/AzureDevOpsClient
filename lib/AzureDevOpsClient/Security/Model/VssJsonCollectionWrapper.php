@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * VssJsonCollectionWrapper Class Doc Comment
  *
  * @category Class
  * @description This class is used to serialized collections as a single JSON object on the wire, to avoid serializing JSON arrays directly to the client, which can be a security hole
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Operations\OperationsApi
+# FrankHouweling\AzureDevOpsClient\Operations\OperationsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **operationsGet**
-> \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation operationsGet($operationId, $organization, $apiVersion, $pluginId)
+> \FrankHouweling\AzureDevOpsClient\Operations\Model\Operation operationsGet($operationId, $organization, $apiVersion, $pluginId)
 
 
 
@@ -20,12 +20,12 @@ Gets an operation from the the operationId using the given pluginId.  Some scena
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Operations\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Operations\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Operations\Api\OperationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Operations\Api\OperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation**](../Model/Operation.md)
+[**\FrankHouweling\AzureDevOpsClient\Operations\Model\Operation**](../Model/Operation.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\SubjectLookupApi
+# FrankHouweling\AzureDevOpsClient\Graph\SubjectLookupApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **subjectLookupLookupSubjects**
-> map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject] subjectLookupLookupSubjects($organization, $body, $apiVersion)
+> map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject] subjectLookupLookupSubjects($organization, $body, $apiVersion)
 
 
 
@@ -20,16 +20,16 @@ Resolve descriptors to users, groups or scopes (Subjects) in a batch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\SubjectLookupApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\SubjectLookupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup | A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time.
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup | A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -46,12 +46,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup**](../Model/GraphSubjectLookup.md)| A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup**](../Model/GraphSubjectLookup.md)| A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject]**](../Model/GraphSubject.md)
+[**map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject]**](../Model/GraphSubject.md)
 
 ### Authorization
 

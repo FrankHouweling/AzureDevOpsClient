@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * SubjectQueryApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class SubjectQueryApi
      * Operation subjectQueryQuery
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject[]
      */
     public function subjectQueryQuery($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class SubjectQueryApi
      * Operation subjectQueryQueryWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject[], HTTP status code, HTTP response headers (array of strings)
      */
     public function subjectQueryQueryWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject[]';
         $request = $this->subjectQueryQueryRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class SubjectQueryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject[]',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class SubjectQueryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class SubjectQueryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class SubjectQueryApi
      */
     public function subjectQueryQueryAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject[]';
         $request = $this->subjectQueryQueryRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class SubjectQueryApi
      * Create request for operation 'subjectQueryQuery'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectQuery $body The query that we&#39;ll be using to search includes the following: Query: the search term. The search will be prefix matching only. SubjectKind: \&quot;User\&quot; or \&quot;Group\&quot; can be specified, both or either ScopeDescriptor: Non-default scope can be specified, i.e. project scope descriptor (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

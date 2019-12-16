@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpoint Class Doc Comment
  *
  * @category Class
  * @description Represents an endpoint which may be used by an orchestration job.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'administratorsGroup' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
-        'authorization' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization',
-        'createdBy' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
+        'administratorsGroup' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
+        'authorization' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
         'data' => 'map[string,string]',
         'description' => 'string',
         'groupScopeId' => 'string',
@@ -68,10 +68,10 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
         'isReady' => 'bool',
         'isShared' => 'bool',
         'name' => 'string',
-        'operationStatus' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JObject',
+        'operationStatus' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JObject',
         'owner' => 'string',
-        'readersGroup' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
-        'serviceEndpointProjectReferences' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]',
+        'readersGroup' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
+        'serviceEndpointProjectReferences' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]',
         'type' => 'string',
         'url' => 'string'
     ];
@@ -298,7 +298,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets administratorsGroup
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
      */
     public function getAdministratorsGroup()
     {
@@ -308,7 +308,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets administratorsGroup
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $administratorsGroup Gets or sets the identity reference for the administrators group of the service endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $administratorsGroup Gets or sets the identity reference for the administrators group of the service endpoint.
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets authorization
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization
      */
     public function getAuthorization()
     {
@@ -332,7 +332,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets authorization
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization $authorization Gets or sets the authorization data for talking to the endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointAuthorization $authorization Gets or sets the authorization data for talking to the endpoint.
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -356,7 +356,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $createdBy Gets or sets the identity reference for the user who created the Service endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $createdBy Gets or sets the identity reference for the user who created the Service endpoint.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets operationStatus
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JObject
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JObject
      */
     public function getOperationStatus()
     {
@@ -548,7 +548,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets operationStatus
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JObject $operationStatus Error message during creation/deletion of endpoint
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JObject $operationStatus Error message during creation/deletion of endpoint
      *
      * @return $this
      */
@@ -586,7 +586,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets readersGroup
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
      */
     public function getReadersGroup()
     {
@@ -596,7 +596,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets readersGroup
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $readersGroup Gets or sets the identity reference for the readers group of the service endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $readersGroup Gets or sets the identity reference for the readers group of the service endpoint.
      *
      * @return $this
      */
@@ -610,7 +610,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Gets serviceEndpointProjectReferences
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]
      */
     public function getServiceEndpointProjectReferences()
     {
@@ -620,7 +620,7 @@ class ServiceEndpoint implements ModelInterface, ArrayAccess
     /**
      * Sets serviceEndpointProjectReferences
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $serviceEndpointProjectReferences All other project references where the service endpoint is shared.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $serviceEndpointProjectReferences All other project references where the service endpoint is shared.
      *
      * @return $this
      */

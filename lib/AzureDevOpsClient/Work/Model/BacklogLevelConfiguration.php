@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BacklogLevelConfiguration Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,17 +58,17 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'addPanelFields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference[]',
+        'addPanelFields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference[]',
         'color' => 'string',
-        'columnFields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogColumn[]',
-        'defaultWorkItemType' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference',
+        'columnFields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogColumn[]',
+        'defaultWorkItemType' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference',
         'id' => 'string',
         'isHidden' => 'bool',
         'name' => 'string',
         'rank' => 'int',
         'type' => 'string',
         'workItemCountLimit' => 'int',
-        'workItemTypes' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]'
+        'workItemTypes' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets addPanelFields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference[]
      */
     public function getAddPanelFields()
     {
@@ -303,7 +303,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets addPanelFields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference[] $addPanelFields List of fields to include in Add Panel
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference[] $addPanelFields List of fields to include in Add Panel
      *
      * @return $this
      */
@@ -341,7 +341,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets columnFields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogColumn[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogColumn[]
      */
     public function getColumnFields()
     {
@@ -351,7 +351,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets columnFields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogColumn[] $columnFields Default list of columns for the backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogColumn[] $columnFields Default list of columns for the backlog
      *
      * @return $this
      */
@@ -365,7 +365,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets defaultWorkItemType
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference
      */
     public function getDefaultWorkItemType()
     {
@@ -375,7 +375,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets defaultWorkItemType
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference $defaultWorkItemType Default Work Item Type for the backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference $defaultWorkItemType Default Work Item Type for the backlog
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets workItemTypes
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]
      */
     public function getWorkItemTypes()
     {
@@ -552,7 +552,7 @@ class BacklogLevelConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets workItemTypes
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[] $workItemTypes Work Item types participating in this backlog as known by the project/Process, can be overridden by team settings for bugs
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[] $workItemTypes Work Item types participating in this backlog as known by the project/Process, can be overridden by team settings for bugs
      *
      * @return $this
      */

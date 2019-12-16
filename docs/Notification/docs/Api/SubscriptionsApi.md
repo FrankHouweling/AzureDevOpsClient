@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Notification\SubscriptionsApi
+# FrankHouweling\AzureDevOpsClient\Notification\SubscriptionsApi
 
 All URIs are relative to *https://{service}.dev.azure.com*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **subscriptionsCreate**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsCreate($body, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsCreate($body, $organization, $apiVersion)
 
 
 
@@ -27,15 +27,15 @@ Create a new subscription.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters(); // \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters | 
+$body = new \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters(); // \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters | 
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -52,13 +52,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters**](../Model/NotificationSubscriptionCreateParameters.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters**](../Model/NotificationSubscriptionCreateParameters.md)|  |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
 
 ### Authorization
 
@@ -84,9 +84,9 @@ Delete a subscription.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsGet**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsGet($subscriptionId, $organization, $apiVersion, $queryFlags)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsGet($subscriptionId, $organization, $apiVersion, $queryFlags)
 
 
 
@@ -140,9 +140,9 @@ Get a notification subscription by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsGetSubscriptionTemplates**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[] subscriptionsGetSubscriptionTemplates($organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[] subscriptionsGetSubscriptionTemplates($organization, $apiVersion)
 
 
 
@@ -199,9 +199,9 @@ Get available subscription templates.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]**](../Model/NotificationSubscriptionTemplate.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]**](../Model/NotificationSubscriptionTemplate.md)
 
 ### Authorization
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsList**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[] subscriptionsList($organization, $apiVersion, $targetId, $ids, $queryFlags)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[] subscriptionsList($organization, $apiVersion, $targetId, $ids, $queryFlags)
 
 
 
@@ -254,9 +254,9 @@ Get a list of notification subscriptions, either by subscription IDs or by all s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]**](../Model/NotificationSubscription.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]**](../Model/NotificationSubscription.md)
 
 ### Authorization
 
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsQuery**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[] subscriptionsQuery($body, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[] subscriptionsQuery($body, $organization, $apiVersion)
 
 
 
@@ -315,15 +315,15 @@ Query for subscriptions. A subscription is returned if it matches one or more of
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery(); // \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery | 
+$body = new \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery(); // \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery | 
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -340,13 +340,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery**](../Model/SubscriptionQuery.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery**](../Model/SubscriptionQuery.md)|  |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]**](../Model/NotificationSubscription.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]**](../Model/NotificationSubscription.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsUpdate**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsUpdate($body, $subscriptionId, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription subscriptionsUpdate($body, $subscriptionId, $organization, $apiVersion)
 
 
 
@@ -372,15 +372,15 @@ Update an existing subscription. Depending on the type of subscription and permi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters(); // \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters | 
+$body = new \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters | 
 $subscriptionId = "subscriptionId_example"; // string | 
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -398,14 +398,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters**](../Model/NotificationSubscriptionUpdateParameters.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters**](../Model/NotificationSubscriptionUpdateParameters.md)|  |
  **subscriptionId** | **string**|  |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription**](../Model/NotificationSubscription.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **subscriptionsUpdateSubscriptionUserSettings**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings subscriptionsUpdateSubscriptionUserSettings($body, $subscriptionId, $userId, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings subscriptionsUpdateSubscriptionUserSettings($body, $subscriptionId, $userId, $organization, $apiVersion)
 
 
 
@@ -431,15 +431,15 @@ Update the specified user's settings for the specified subscription. This API is
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SubscriptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings(); // \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings | 
+$body = new \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings(); // \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings | 
 $subscriptionId = "subscriptionId_example"; // string | 
 $userId = "userId_example"; // string | ID of the user
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
@@ -458,7 +458,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings**](../Model/SubscriptionUserSettings.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings**](../Model/SubscriptionUserSettings.md)|  |
  **subscriptionId** | **string**|  |
  **userId** | [**string**](../Model/.md)| ID of the user |
  **organization** | **string**| The name of the Azure DevOps organization. |
@@ -466,7 +466,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings**](../Model/SubscriptionUserSettings.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings**](../Model/SubscriptionUserSettings.md)
 
 ### Authorization
 

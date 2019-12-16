@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * Phase Class Doc Comment
  *
  * @category Class
  * @description Represents a phase of a build definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,15 +59,15 @@ class Phase implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'condition' => 'string',
-        'dependencies' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Dependency[]',
+        'dependencies' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Dependency[]',
         'jobAuthorizationScope' => 'string',
         'jobCancelTimeoutInMinutes' => 'int',
         'jobTimeoutInMinutes' => 'int',
         'name' => 'string',
         'refName' => 'string',
-        'steps' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionStep[]',
-        'target' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseTarget',
-        'variables' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]'
+        'steps' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionStep[]',
+        'target' => '\FrankHouweling\AzureDevOpsClient\Build\Model\PhaseTarget',
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]'
     ];
 
     /**
@@ -309,7 +309,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Gets dependencies
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Dependency[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Dependency[]
      */
     public function getDependencies()
     {
@@ -319,7 +319,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Sets dependencies
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Dependency[] $dependencies dependencies
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Dependency[] $dependencies dependencies
      *
      * @return $this
      */
@@ -462,7 +462,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Gets steps
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionStep[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionStep[]
      */
     public function getSteps()
     {
@@ -472,7 +472,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Sets steps
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionStep[] $steps steps
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionStep[] $steps steps
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Gets target
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseTarget
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PhaseTarget
      */
     public function getTarget()
     {
@@ -496,7 +496,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Sets target
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseTarget $target The target (agent, server, etc.) for this phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\PhaseTarget $target The target (agent, server, etc.) for this phase.
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]
      */
     public function getVariables()
     {
@@ -520,7 +520,7 @@ class Phase implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable] $variables variables
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable] $variables variables
      *
      * @return $this
      */

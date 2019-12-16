@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
-**assignedTo** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | Identity ref for the person that the work item is assigned to. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**assignedTo** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | Identity ref for the person that the work item is assigned to. | [optional] 
 **currentState** | **string** | Current state of the work item, e.g. Active, Resolved, Closed, etc. | [optional] 
 **description** | **string** | Long description for the work item. | [optional] 
 **id** | **string** | Unique identifier for the work item | [optional] 

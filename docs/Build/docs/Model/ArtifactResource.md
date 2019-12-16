@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **data** | **string** | Type-specific data about the artifact. | [optional] 
 **downloadUrl** | **string** | A link to download the resource. | [optional] 
 **properties** | **map[string,string]** | Type-specific properties of the artifact. | [optional] 

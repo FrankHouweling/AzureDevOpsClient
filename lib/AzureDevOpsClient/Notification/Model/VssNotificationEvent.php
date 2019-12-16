@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * VssNotificationEvent Class Doc Comment
  *
  * @category Class
  * @description This is the type used for firing notifications intended for the subsystem in the Notifications SDK. For components that can&#39;t take a dependency on the Notifications SDK directly, they can use ITeamFoundationEventService.PublishNotification and the Notifications SDK ISubscriber implementation will get it.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,14 +58,14 @@ class VssNotificationEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actors' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]',
+        'actors' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]',
         'artifactUris' => 'string[]',
         'data' => 'object',
         'eventType' => 'string',
         'expiresIn' => 'string',
         'itemId' => 'string',
         'processDelay' => 'string',
-        'scopes' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventScope[]',
+        'scopes' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventScope[]',
         'sourceEventCreatedTime' => '\DateTime'
     ];
 
@@ -256,7 +256,7 @@ class VssNotificationEvent implements ModelInterface, ArrayAccess
     /**
      * Gets actors
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[]
      */
     public function getActors()
     {
@@ -266,7 +266,7 @@ class VssNotificationEvent implements ModelInterface, ArrayAccess
     /**
      * Sets actors
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventActor[] $actors Optional: A list of actors which are additional identities with corresponding roles that are relevant to the event.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventActor[] $actors Optional: A list of actors which are additional identities with corresponding roles that are relevant to the event.
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class VssNotificationEvent implements ModelInterface, ArrayAccess
     /**
      * Gets scopes
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventScope[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventScope[]
      */
     public function getScopes()
     {
@@ -434,7 +434,7 @@ class VssNotificationEvent implements ModelInterface, ArrayAccess
     /**
      * Sets scopes
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventScope[] $scopes Optional: A list of scopes which are are relevant to the event.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventScope[] $scopes Optional: A list of scopes which are are relevant to the event.
      *
      * @return $this
      */

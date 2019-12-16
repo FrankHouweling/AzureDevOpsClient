@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Core\ProcessesApi
+# FrankHouweling\AzureDevOpsClient\Core\ProcessesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **processesGet**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process processesGet($organization, $processId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\Process processesGet($organization, $processId, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Get a process by ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProcessesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process**](../Model/Process.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\Process**](../Model/Process.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **processesList**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[] processesList($organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\Process[] processesList($organization, $apiVersion)
 
 
 
@@ -78,9 +78,9 @@ Get a list of processes.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProcessesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[]**](../Model/Process.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\Process[]**](../Model/Process.md)
 
 ### Authorization
 

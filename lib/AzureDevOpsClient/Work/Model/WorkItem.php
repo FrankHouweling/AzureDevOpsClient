@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * WorkItem Class Doc Comment
  *
  * @category Class
  * @description Describes a work item.
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class WorkItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
-        'commentVersionRef' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef',
+        'commentVersionRef' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef',
         'fields' => 'map[string,object]',
         'id' => 'int',
-        'relations' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemRelation[]',
+        'relations' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemRelation[]',
         'rev' => 'int'
     ];
 
@@ -244,7 +244,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -254,7 +254,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Link references to related REST resources.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Link references to related REST resources.
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets commentVersionRef
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef
      */
     public function getCommentVersionRef()
     {
@@ -302,7 +302,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets commentVersionRef
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef $commentVersionRef Reference to a specific version of the comment added/edited/deleted in this revision.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemCommentVersionRef $commentVersionRef Reference to a specific version of the comment added/edited/deleted in this revision.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets relations
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemRelation[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemRelation[]
      */
     public function getRelations()
     {
@@ -374,7 +374,7 @@ class WorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets relations
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemRelation[] $relations Relations of the work item.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemRelation[] $relations Relations of the work item.
      *
      * @return $this
      */

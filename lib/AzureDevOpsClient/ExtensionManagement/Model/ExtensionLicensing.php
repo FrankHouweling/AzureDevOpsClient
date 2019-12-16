@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionLicensing Class Doc Comment
  *
  * @category Class
  * @description How an extension should handle including contributions based on licensing
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ExtensionLicensing implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'overrides' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[]'
+        'overrides' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ExtensionLicensing implements ModelInterface, ArrayAccess
     /**
      * Gets overrides
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[]
      */
     public function getOverrides()
     {
@@ -218,7 +218,7 @@ class ExtensionLicensing implements ModelInterface, ArrayAccess
     /**
      * Sets overrides
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[] $overrides A list of contributions which deviate from the default licensing behavior
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\LicensingOverride[] $overrides A list of contributions which deviate from the default licensing behavior
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement;
 
 use \Exception;
 
@@ -34,7 +34,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

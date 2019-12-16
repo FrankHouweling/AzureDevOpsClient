@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Wiki\PageMovesApi
+# FrankHouweling\AzureDevOpsClient\Wiki\PageMovesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pageMovesCreate**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMove pageMovesCreate($organization, $body, $project, $wikiIdentifier, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMove pageMovesCreate($organization, $body, $project, $wikiIdentifier, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -20,16 +20,16 @@ Creates a page move operation that updates the path and order of the page as pro
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PageMovesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PageMovesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters(); // \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters | Page more operation parameters.
+$body = new \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters(); // \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters | Page more operation parameters.
 $project = "project_example"; // string | Project ID or project name
 $wikiIdentifier = "wikiIdentifier_example"; // string | Wiki ID or wiki name.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -52,7 +52,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters**](../Model/WikiPageMoveParameters.md)| Page more operation parameters. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMoveParameters**](../Model/WikiPageMoveParameters.md)| Page more operation parameters. |
  **project** | **string**| Project ID or project name |
  **wikiIdentifier** | **string**| Wiki ID or wiki name. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMove**](../Model/WikiPageMove.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMove**](../Model/WikiPageMove.md)
 
 ### Authorization
 

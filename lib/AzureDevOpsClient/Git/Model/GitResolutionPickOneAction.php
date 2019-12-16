@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitResolutionPickOneAction Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GitResolutionPickOneAction implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'action' => 'string'
     ];
 
@@ -239,7 +239,7 @@ class GitResolutionPickOneAction implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -249,7 +249,7 @@ class GitResolutionPickOneAction implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $author User who created the resolution.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $author User who created the resolution.
      *
      * @return $this
      */

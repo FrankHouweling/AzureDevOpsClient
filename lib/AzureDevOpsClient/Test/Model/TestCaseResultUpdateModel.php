@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestCaseResultUpdateModel Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,19 +63,19 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
         'comment' => 'string',
         'completedDate' => 'string',
         'computerName' => 'string',
-        'customFields' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CustomTestField[]',
+        'customFields' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CustomTestField[]',
         'durationInMs' => 'string',
         'errorMessage' => 'string',
         'failureType' => 'string',
         'outcome' => 'string',
-        'owner' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'resolutionState' => 'string',
-        'runBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'runBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'stackTrace' => 'string',
         'startedDate' => 'string',
         'state' => 'string',
         'testCasePriority' => 'string',
-        'testResult' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference'
+        'testResult' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference'
     ];
 
     /**
@@ -430,7 +430,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets customFields
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CustomTestField[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CustomTestField[]
      */
     public function getCustomFields()
     {
@@ -440,7 +440,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets customFields
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CustomTestField[] $customFields customFields
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CustomTestField[] $customFields customFields
      *
      * @return $this
      */
@@ -550,7 +550,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -560,7 +560,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $owner owner
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $owner owner
      *
      * @return $this
      */
@@ -598,7 +598,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets runBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getRunBy()
     {
@@ -608,7 +608,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets runBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $runBy runBy
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $runBy runBy
      *
      * @return $this
      */
@@ -718,7 +718,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets testResult
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getTestResult()
     {
@@ -728,7 +728,7 @@ class TestCaseResultUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets testResult
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $testResult testResult
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $testResult testResult
      *
      * @return $this
      */

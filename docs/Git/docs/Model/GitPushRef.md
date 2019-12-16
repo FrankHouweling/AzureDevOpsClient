@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **date** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**pushedBy** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
+**pushedBy** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
 **pushId** | **int** |  | [optional] 
 **url** | **string** |  | [optional] 
 

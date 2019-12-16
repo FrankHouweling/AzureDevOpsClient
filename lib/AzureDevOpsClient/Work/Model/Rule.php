@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * Rule Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class Rule implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'clauses' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[]',
+        'clauses' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[]',
         'filter' => 'string',
         'isEnabled' => 'string',
         'name' => 'string',
-        'settings' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Attribute'
+        'settings' => '\FrankHouweling\AzureDevOpsClient\Work\Model\Attribute'
     ];
 
     /**
@@ -232,7 +232,7 @@ class Rule implements ModelInterface, ArrayAccess
     /**
      * Gets clauses
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[]
      */
     public function getClauses()
     {
@@ -242,7 +242,7 @@ class Rule implements ModelInterface, ArrayAccess
     /**
      * Sets clauses
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[] $clauses clauses
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[] $clauses clauses
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class Rule implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Attribute
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Attribute
      */
     public function getSettings()
     {
@@ -338,7 +338,7 @@ class Rule implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Attribute $settings settings
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\Attribute $settings settings
      *
      * @return $this
      */

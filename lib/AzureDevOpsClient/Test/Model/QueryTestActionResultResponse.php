@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * QueryTestActionResultResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'testActionResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]',
-        'testAttachments' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
-        'testResultParameters' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]'
+        'testActionResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]',
+        'testAttachments' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
+        'testResultParameters' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Gets testActionResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]
      */
     public function getTestActionResults()
     {
@@ -230,7 +230,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Sets testActionResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[] $testActionResults testActionResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[] $testActionResults testActionResults
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Gets testAttachments
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]
      */
     public function getTestAttachments()
     {
@@ -254,7 +254,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Sets testAttachments
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[] $testAttachments testAttachments
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[] $testAttachments testAttachments
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Gets testResultParameters
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]
      */
     public function getTestResultParameters()
     {
@@ -278,7 +278,7 @@ class QueryTestActionResultResponse implements ModelInterface, ArrayAccess
     /**
      * Sets testResultParameters
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[] $testResultParameters testResultParameters
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[] $testResultParameters testResultParameters
      *
      * @return $this
      */

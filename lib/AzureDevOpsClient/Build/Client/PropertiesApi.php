@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * PropertiesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class PropertiesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filter A comma-delimited list of properties. If specified, filters to these specific properties. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function propertiesGetBuildProperties($organization, $project, $buildId, $apiVersion, $filter = null)
     {
@@ -115,13 +115,13 @@ class PropertiesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filter A comma-delimited list of properties. If specified, filters to these specific properties. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function propertiesGetBuildPropertiesWithHttpInfo($organization, $project, $buildId, $apiVersion, $filter = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesGetBuildPropertiesRequest($organization, $project, $buildId, $apiVersion, $filter);
 
         try {
@@ -173,7 +173,7 @@ class PropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class PropertiesApi
      */
     public function propertiesGetBuildPropertiesAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion, $filter = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesGetBuildPropertiesRequest($organization, $project, $buildId, $apiVersion, $filter);
 
         return $this->client
@@ -427,9 +427,9 @@ class PropertiesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filter A comma-delimited list of properties. If specified, filters to these specific properties. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function propertiesGetDefinitionProperties($organization, $project, $definitionId, $apiVersion, $filter = null)
     {
@@ -446,13 +446,13 @@ class PropertiesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filter A comma-delimited list of properties. If specified, filters to these specific properties. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function propertiesGetDefinitionPropertiesWithHttpInfo($organization, $project, $definitionId, $apiVersion, $filter = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesGetDefinitionPropertiesRequest($organization, $project, $definitionId, $apiVersion, $filter);
 
         try {
@@ -504,7 +504,7 @@ class PropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class PropertiesApi
      */
     public function propertiesGetDefinitionPropertiesAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion, $filter = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesGetDefinitionPropertiesRequest($organization, $project, $definitionId, $apiVersion, $filter);
 
         return $this->client
@@ -753,14 +753,14 @@ class PropertiesApi
      * Operation propertiesUpdateBuildProperties
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function propertiesUpdateBuildProperties($organization, $body, $project, $buildId, $apiVersion)
     {
@@ -772,18 +772,18 @@ class PropertiesApi
      * Operation propertiesUpdateBuildPropertiesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function propertiesUpdateBuildPropertiesWithHttpInfo($organization, $body, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesUpdateBuildPropertiesRequest($organization, $body, $project, $buildId, $apiVersion);
 
         try {
@@ -835,7 +835,7 @@ class PropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -851,7 +851,7 @@ class PropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -875,7 +875,7 @@ class PropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -885,7 +885,7 @@ class PropertiesApi
      */
     public function propertiesUpdateBuildPropertiesAsyncWithHttpInfo($organization, $body, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesUpdateBuildPropertiesRequest($organization, $body, $project, $buildId, $apiVersion);
 
         return $this->client
@@ -929,7 +929,7 @@ class PropertiesApi
      * Create request for operation 'propertiesUpdateBuildProperties'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1089,14 +1089,14 @@ class PropertiesApi
      * Operation propertiesUpdateDefinitionProperties
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function propertiesUpdateDefinitionProperties($organization, $body, $project, $definitionId, $apiVersion)
     {
@@ -1108,18 +1108,18 @@ class PropertiesApi
      * Operation propertiesUpdateDefinitionPropertiesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function propertiesUpdateDefinitionPropertiesWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesUpdateDefinitionPropertiesRequest($organization, $body, $project, $definitionId, $apiVersion);
 
         try {
@@ -1171,7 +1171,7 @@ class PropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1187,7 +1187,7 @@ class PropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1211,7 +1211,7 @@ class PropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1221,7 +1221,7 @@ class PropertiesApi
      */
     public function propertiesUpdateDefinitionPropertiesAsyncWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection';
         $request = $this->propertiesUpdateDefinitionPropertiesRequest($organization, $body, $project, $definitionId, $apiVersion);
 
         return $this->client
@@ -1265,7 +1265,7 @@ class PropertiesApi
      * Create request for operation 'propertiesUpdateDefinitionProperties'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument $body A json-patch document describing the properties to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

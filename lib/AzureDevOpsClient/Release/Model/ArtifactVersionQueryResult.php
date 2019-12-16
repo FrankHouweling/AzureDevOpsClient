@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactVersionQueryResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ArtifactVersionQueryResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactVersions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactVersion[]'
+        'artifactVersions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactVersion[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ArtifactVersionQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets artifactVersions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactVersion[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactVersion[]
      */
     public function getArtifactVersions()
     {
@@ -218,7 +218,7 @@ class ArtifactVersionQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets artifactVersions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactVersion[] $artifactVersions Gets or sets the list for artifact versions of artifact version query result.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactVersion[] $artifactVersions Gets or sets the list for artifact versions of artifact version query result.
      *
      * @return $this
      */

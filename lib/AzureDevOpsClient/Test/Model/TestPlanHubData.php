@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestPlanHubData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'selectedSuiteId' => 'int',
-        'testPlan' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan',
-        'testPoints' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]',
-        'testSuites' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSuite[]',
+        'testPlan' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan',
+        'testPoints' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]',
+        'testSuites' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSuite[]',
         'totalTestPoints' => 'int'
     ];
 
@@ -256,7 +256,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Gets testPlan
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan
      */
     public function getTestPlan()
     {
@@ -266,7 +266,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Sets testPlan
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan $testPlan testPlan
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan $testPlan testPlan
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Gets testPoints
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]
      */
     public function getTestPoints()
     {
@@ -290,7 +290,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Sets testPoints
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[] $testPoints testPoints
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[] $testPoints testPoints
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Gets testSuites
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSuite[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSuite[]
      */
     public function getTestSuites()
     {
@@ -314,7 +314,7 @@ class TestPlanHubData implements ModelInterface, ArrayAccess
     /**
      * Sets testSuites
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSuite[] $testSuites testSuites
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestSuite[] $testSuites testSuites
      *
      * @return $this
      */

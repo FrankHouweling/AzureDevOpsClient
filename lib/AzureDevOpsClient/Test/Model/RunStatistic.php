@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * RunStatistic Class Doc Comment
  *
  * @category Class
  * @description Test run statistics per outcome.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'count' => 'int',
         'outcome' => 'string',
-        'resolutionState' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState',
+        'resolutionState' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState',
         'resultMetadata' => 'string',
         'state' => 'string'
     ];
@@ -303,7 +303,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets resolutionState
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState
      */
     public function getResolutionState()
     {
@@ -313,7 +313,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets resolutionState
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState $resolutionState Test run Resolution State.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState $resolutionState Test run Resolution State.
      *
      * @return $this
      */

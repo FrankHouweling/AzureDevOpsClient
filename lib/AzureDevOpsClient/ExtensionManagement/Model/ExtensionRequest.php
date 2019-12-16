@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionRequest Class Doc Comment
  *
  * @category Class
  * @description A request for an extension (to be installed or have a license assigned)
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,11 +60,11 @@ class ExtensionRequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'rejectMessage' => 'string',
         'requestDate' => '\DateTime',
-        'requestedBy' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef',
+        'requestedBy' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef',
         'requestMessage' => 'string',
         'requestState' => 'string',
         'resolveDate' => '\DateTime',
-        'resolvedBy' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef'
+        'resolvedBy' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef'
     ];
 
     /**
@@ -317,7 +317,7 @@ class ExtensionRequest implements ModelInterface, ArrayAccess
     /**
      * Gets requestedBy
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
      */
     public function getRequestedBy()
     {
@@ -327,7 +327,7 @@ class ExtensionRequest implements ModelInterface, ArrayAccess
     /**
      * Sets requestedBy
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $requestedBy Represents the user who made the request
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $requestedBy Represents the user who made the request
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class ExtensionRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resolvedBy
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
      */
     public function getResolvedBy()
     {
@@ -432,7 +432,7 @@ class ExtensionRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resolvedBy
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $resolvedBy Represents the user who resolved the request
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $resolvedBy Represents the user who resolved the request
      *
      * @return $this
      */

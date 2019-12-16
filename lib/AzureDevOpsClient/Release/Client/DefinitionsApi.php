@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DefinitionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class DefinitionsApi
      * Operation definitionsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition
      */
     public function definitionsCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class DefinitionsApi
      * Operation definitionsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class DefinitionsApi
      */
     public function definitionsCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class DefinitionsApi
      * Create request for operation 'definitionsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body release definition object to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -414,7 +414,7 @@ class DefinitionsApi
      * @param  string $comment Comment for deleting a release definition. (optional)
      * @param  bool $forceDelete &#39;true&#39; to automatically cancel any in-progress release deployments and proceed with release definition deletion . Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -433,7 +433,7 @@ class DefinitionsApi
      * @param  string $comment Comment for deleting a release definition. (optional)
      * @param  bool $forceDelete &#39;true&#39; to automatically cancel any in-progress release deployments and proceed with release definition deletion . Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -716,9 +716,9 @@ class DefinitionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      * @param  string $propertyFilters A comma-delimited list of extended properties to be retrieved. If set, the returned Release Definition will contain values for the specified property Ids (if they exist). If not set, properties will not be included. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition
      */
     public function definitionsGet($organization, $project, $definitionId, $apiVersion, $propertyFilters = null)
     {
@@ -735,13 +735,13 @@ class DefinitionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      * @param  string $propertyFilters A comma-delimited list of extended properties to be retrieved. If set, the returned Release Definition will contain values for the specified property Ids (if they exist). If not set, properties will not be included. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsGetWithHttpInfo($organization, $project, $definitionId, $apiVersion, $propertyFilters = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsGetRequest($organization, $project, $definitionId, $apiVersion, $propertyFilters);
 
         try {
@@ -793,7 +793,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -843,7 +843,7 @@ class DefinitionsApi
      */
     public function definitionsGetAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion, $propertyFilters = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsGetRequest($organization, $project, $definitionId, $apiVersion, $propertyFilters);
 
         return $this->client
@@ -1047,7 +1047,7 @@ class DefinitionsApi
      * @param  int $revision Id of the revision. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1066,7 +1066,7 @@ class DefinitionsApi
      * @param  int $revision Id of the revision. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1387,9 +1387,9 @@ class DefinitionsApi
      * @param  int $definitionId Id of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]
      */
     public function definitionsGetReleaseDefinitionHistory($organization, $project, $definitionId, $apiVersion)
     {
@@ -1405,13 +1405,13 @@ class DefinitionsApi
      * @param  int $definitionId Id of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[], HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsGetReleaseDefinitionHistoryWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]';
         $request = $this->definitionsGetReleaseDefinitionHistoryRequest($organization, $project, $definitionId, $apiVersion);
 
         try {
@@ -1463,7 +1463,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1511,7 +1511,7 @@ class DefinitionsApi
      */
     public function definitionsGetReleaseDefinitionHistoryAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]';
         $request = $this->definitionsGetReleaseDefinitionHistoryRequest($organization, $project, $definitionId, $apiVersion);
 
         return $this->client
@@ -1722,9 +1722,9 @@ class DefinitionsApi
      * @param  bool $isDeleted &#39;true&#39; to get release definitions that has been deleted. Default is &#39;false&#39; (optional)
      * @param  bool $searchTextContainsFolderName &#39;true&#39; to get the release definitions under the folder with name as specified in searchText. Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[]
      */
     public function definitionsList($organization, $project, $apiVersion, $searchText = null, $expand = null, $artifactType = null, $artifactSourceId = null, $top = null, $continuationToken = null, $queryOrder = null, $path = null, $isExactNameMatch = null, $tagFilter = null, $propertyFilters = null, $definitionIdFilter = null, $isDeleted = null, $searchTextContainsFolderName = null)
     {
@@ -1753,13 +1753,13 @@ class DefinitionsApi
      * @param  bool $isDeleted &#39;true&#39; to get release definitions that has been deleted. Default is &#39;false&#39; (optional)
      * @param  bool $searchTextContainsFolderName &#39;true&#39; to get the release definitions under the folder with name as specified in searchText. Default is &#39;false&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[], HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsListWithHttpInfo($organization, $project, $apiVersion, $searchText = null, $expand = null, $artifactType = null, $artifactSourceId = null, $top = null, $continuationToken = null, $queryOrder = null, $path = null, $isExactNameMatch = null, $tagFilter = null, $propertyFilters = null, $definitionIdFilter = null, $isDeleted = null, $searchTextContainsFolderName = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[]';
         $request = $this->definitionsListRequest($organization, $project, $apiVersion, $searchText, $expand, $artifactType, $artifactSourceId, $top, $continuationToken, $queryOrder, $path, $isExactNameMatch, $tagFilter, $propertyFilters, $definitionIdFilter, $isDeleted, $searchTextContainsFolderName);
 
         try {
@@ -1811,7 +1811,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1885,7 +1885,7 @@ class DefinitionsApi
      */
     public function definitionsListAsyncWithHttpInfo($organization, $project, $apiVersion, $searchText = null, $expand = null, $artifactType = null, $artifactSourceId = null, $top = null, $continuationToken = null, $queryOrder = null, $path = null, $isExactNameMatch = null, $tagFilter = null, $propertyFilters = null, $definitionIdFilter = null, $isDeleted = null, $searchTextContainsFolderName = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[]';
         $request = $this->definitionsListRequest($organization, $project, $apiVersion, $searchText, $expand, $artifactType, $artifactSourceId, $top, $continuationToken, $queryOrder, $path, $isExactNameMatch, $tagFilter, $propertyFilters, $definitionIdFilter, $isDeleted, $searchTextContainsFolderName);
 
         return $this->client
@@ -2134,13 +2134,13 @@ class DefinitionsApi
      * Operation definitionsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition
      */
     public function definitionsUpdate($organization, $body, $project, $apiVersion)
     {
@@ -2152,17 +2152,17 @@ class DefinitionsApi
      * Operation definitionsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsUpdateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsUpdateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -2214,7 +2214,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2230,7 +2230,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -2253,7 +2253,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -2262,7 +2262,7 @@ class DefinitionsApi
      */
     public function definitionsUpdateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition';
         $request = $this->definitionsUpdateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -2306,7 +2306,7 @@ class DefinitionsApi
      * Create request for operation 'definitionsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition $body Release definition object to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *

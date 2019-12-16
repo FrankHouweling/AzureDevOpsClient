@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * UpdateProjectRetentionSettingModel Class Doc Comment
  *
  * @category Class
  * @description Contains members for updating the retention settings values. All fields are optional.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactsRetention' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
-        'pullRequestRunRetention' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
-        'retainRunsPerProtectedBranch' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
-        'runRetention' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel'
+        'artifactsRetention' => '\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
+        'pullRequestRunRetention' => '\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
+        'retainRunsPerProtectedBranch' => '\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel',
+        'runRetention' => '\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel'
     ];
 
     /**
@@ -226,7 +226,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Gets artifactsRetention
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
      */
     public function getArtifactsRetention()
     {
@@ -236,7 +236,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Sets artifactsRetention
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $artifactsRetention artifactsRetention
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $artifactsRetention artifactsRetention
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Gets pullRequestRunRetention
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
      */
     public function getPullRequestRunRetention()
     {
@@ -260,7 +260,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Sets pullRequestRunRetention
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $pullRequestRunRetention pullRequestRunRetention
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $pullRequestRunRetention pullRequestRunRetention
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Gets retainRunsPerProtectedBranch
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
      */
     public function getRetainRunsPerProtectedBranch()
     {
@@ -284,7 +284,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Sets retainRunsPerProtectedBranch
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $retainRunsPerProtectedBranch retainRunsPerProtectedBranch
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $retainRunsPerProtectedBranch retainRunsPerProtectedBranch
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Gets runRetention
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel
      */
     public function getRunRetention()
     {
@@ -308,7 +308,7 @@ class UpdateProjectRetentionSettingModel implements ModelInterface, ArrayAccess
     /**
      * Sets runRetention
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $runRetention runRetention
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateRetentionSettingModel $runRetention runRetention
      *
      * @return $this
      */

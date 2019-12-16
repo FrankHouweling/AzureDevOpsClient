@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * TeamProjectReference Class Doc Comment
  *
  * @category Class
  * @description Represents a shallow reference to a TeamProject.
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

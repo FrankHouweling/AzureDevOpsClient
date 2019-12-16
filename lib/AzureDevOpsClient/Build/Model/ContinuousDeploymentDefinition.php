@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ContinuousDeploymentDefinition Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'connectedService' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef',
-        'definition' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlDefinitionReference',
+        'connectedService' => '\FrankHouweling\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef',
+        'definition' => '\FrankHouweling\AzureDevOpsClient\Build\Model\XamlDefinitionReference',
         'gitBranch' => 'string',
         'hostedServiceName' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
         'repositoryId' => 'string',
         'storageAccountName' => 'string',
         'subscriptionId' => 'string',
@@ -262,7 +262,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets connectedService
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef
      */
     public function getConnectedService()
     {
@@ -272,7 +272,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets connectedService
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef $connectedService The connected service associated with the continuous deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef $connectedService The connected service associated with the continuous deployment
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets definition
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\XamlDefinitionReference
      */
     public function getDefinition()
     {
@@ -296,7 +296,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets definition
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlDefinitionReference $definition The definition associated with the continuous deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\XamlDefinitionReference $definition The definition associated with the continuous deployment
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -368,7 +368,7 @@ class ContinuousDeploymentDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project project
      *
      * @return $this
      */

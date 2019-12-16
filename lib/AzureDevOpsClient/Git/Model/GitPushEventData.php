@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPushEventData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GitPushEventData implements ModelInterface, ArrayAccess
         'afterId' => 'string',
         'beforeId' => 'string',
         'branch' => 'string',
-        'commits' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit[]',
-        'repository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository'
+        'commits' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit[]',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository'
     ];
 
     /**
@@ -304,7 +304,7 @@ class GitPushEventData implements ModelInterface, ArrayAccess
     /**
      * Gets commits
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit[]
      */
     public function getCommits()
     {
@@ -314,7 +314,7 @@ class GitPushEventData implements ModelInterface, ArrayAccess
     /**
      * Sets commits
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit[] $commits commits
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit[] $commits commits
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class GitPushEventData implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getRepository()
     {
@@ -338,7 +338,7 @@ class GitPushEventData implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $repository repository
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $repository repository
      *
      * @return $this
      */

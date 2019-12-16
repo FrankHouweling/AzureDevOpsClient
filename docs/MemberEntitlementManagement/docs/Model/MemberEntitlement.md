@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**accessLevel** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel**](AccessLevel.md) | User&#39;s access level denoted by a license. | [optional] 
+**accessLevel** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel**](AccessLevel.md) | User&#39;s access level denoted by a license. | [optional] 
 **dateCreated** | [**\DateTime**](\DateTime.md) | [Readonly] Date the user was added to the collection. | [optional] 
-**groupAssignments** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]**](GroupEntitlement.md) | [Readonly] GroupEntitlements that this user belongs to. | [optional] 
+**groupAssignments** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]**](GroupEntitlement.md) | [Readonly] GroupEntitlements that this user belongs to. | [optional] 
 **id** | **string** | The unique identifier which matches the Id of the Identity associated with the GraphMember. | [optional] 
 **lastAccessedDate** | [**\DateTime**](\DateTime.md) | [Readonly] Date the user last accessed the collection. | [optional] 
-**projectEntitlements** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]**](ProjectEntitlement.md) | Relation between a project and the user&#39;s effective permissions in that project. | [optional] 
-**user** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser**](GraphUser.md) | User reference. | [optional] 
-**member** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphMember**](GraphMember.md) | Member reference | [optional] 
+**projectEntitlements** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]**](ProjectEntitlement.md) | Relation between a project and the user&#39;s effective permissions in that project. | [optional] 
+**user** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser**](GraphUser.md) | User reference. | [optional] 
+**member** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphMember**](GraphMember.md) | Member reference | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

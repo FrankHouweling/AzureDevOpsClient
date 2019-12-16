@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPointUpdateParams Class Doc Comment
  *
  * @category Class
  * @description Test Point Update Parameters
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class TestPointUpdateParams implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'isActive' => 'bool',
-        'results' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Results',
-        'tester' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef'
+        'results' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\Results',
+        'tester' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef'
     ];
 
     /**
@@ -274,7 +274,7 @@ class TestPointUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Results
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\Results
      */
     public function getResults()
     {
@@ -284,7 +284,7 @@ class TestPointUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Results $results Results of the test point
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\Results $results Results of the test point
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class TestPointUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Gets tester
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getTester()
     {
@@ -308,7 +308,7 @@ class TestPointUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Sets tester
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester Tester of the Test Point
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester Tester of the Test Point
      *
      * @return $this
      */

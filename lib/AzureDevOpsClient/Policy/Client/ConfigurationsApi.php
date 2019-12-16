@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Client;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Policy\ApiException;
-use AzureDevOpsClient\Policy\Configuration;
-use AzureDevOpsClient\Policy\HeaderSelector;
-use AzureDevOpsClient\Policy\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Policy\ApiException;
+use FrankHouweling\AzureDevOpsClient\Policy\Configuration;
+use FrankHouweling\AzureDevOpsClient\Policy\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * ConfigurationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class ConfigurationsApi
      * Operation configurationsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration
      */
     public function configurationsCreate($organization, $body, $project, $configurationId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class ConfigurationsApi
      * Operation configurationsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsCreateWithHttpInfo($organization, $body, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsCreateRequest($organization, $body, $project, $configurationId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class ConfigurationsApi
      */
     public function configurationsCreateAsyncWithHttpInfo($organization, $body, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsCreateRequest($organization, $body, $project, $configurationId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class ConfigurationsApi
      * Create request for operation 'configurationsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -431,7 +431,7 @@ class ConfigurationsApi
      * @param  int $configurationId ID of the policy configuration to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -448,7 +448,7 @@ class ConfigurationsApi
      * @param  int $configurationId ID of the policy configuration to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -716,9 +716,9 @@ class ConfigurationsApi
      * @param  int $configurationId ID of the policy configuration (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration
      */
     public function configurationsGet($organization, $project, $configurationId, $apiVersion)
     {
@@ -734,13 +734,13 @@ class ConfigurationsApi
      * @param  int $configurationId ID of the policy configuration (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsGetWithHttpInfo($organization, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsGetRequest($organization, $project, $configurationId, $apiVersion);
 
         try {
@@ -792,7 +792,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -840,7 +840,7 @@ class ConfigurationsApi
      */
     public function configurationsGetAsyncWithHttpInfo($organization, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsGetRequest($organization, $project, $configurationId, $apiVersion);
 
         return $this->client
@@ -1041,9 +1041,9 @@ class ConfigurationsApi
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      * @param  string $policyType Filter returned policies to only this type (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]
      */
     public function configurationsList($organization, $project, $apiVersion, $scope = null, $top = null, $continuationToken = null, $policyType = null)
     {
@@ -1062,13 +1062,13 @@ class ConfigurationsApi
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      * @param  string $policyType Filter returned policies to only this type (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsListWithHttpInfo($organization, $project, $apiVersion, $scope = null, $top = null, $continuationToken = null, $policyType = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
         $request = $this->configurationsListRequest($organization, $project, $apiVersion, $scope, $top, $continuationToken, $policyType);
 
         try {
@@ -1120,7 +1120,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class ConfigurationsApi
      */
     public function configurationsListAsyncWithHttpInfo($organization, $project, $apiVersion, $scope = null, $top = null, $continuationToken = null, $policyType = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
         $request = $this->configurationsListRequest($organization, $project, $apiVersion, $scope, $top, $continuationToken, $policyType);
 
         return $this->client
@@ -1373,14 +1373,14 @@ class ConfigurationsApi
      * Operation configurationsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId ID of the existing policy configuration to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration
      */
     public function configurationsUpdate($organization, $body, $project, $configurationId, $apiVersion)
     {
@@ -1392,18 +1392,18 @@ class ConfigurationsApi
      * Operation configurationsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId ID of the existing policy configuration to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsUpdateWithHttpInfo($organization, $body, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsUpdateRequest($organization, $body, $project, $configurationId, $apiVersion);
 
         try {
@@ -1455,7 +1455,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1471,7 +1471,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId ID of the existing policy configuration to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1495,7 +1495,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId ID of the existing policy configuration to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1505,7 +1505,7 @@ class ConfigurationsApi
      */
     public function configurationsUpdateAsyncWithHttpInfo($organization, $body, $project, $configurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->configurationsUpdateRequest($organization, $body, $project, $configurationId, $apiVersion);
 
         return $this->client
@@ -1549,7 +1549,7 @@ class ConfigurationsApi
      * Create request for operation 'configurationsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $body The policy configuration to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $configurationId ID of the existing policy configuration to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdByIdentity** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity of the creator of the plan | [optional] 
+**createdByIdentity** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity of the creator of the plan | [optional] 
 **description** | **string** | Description of plan | [optional] 
 **modifiedDate** | [**\DateTime**](\DateTime.md) | Last modified date of the plan | [optional] 
 **userPermissions** | **string** | Bit flag indicating set of permissions a user has to the plan. | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ClientContribution Class Doc Comment
  *
  * @category Class
  * @description Representation of a ContributionNode that can be used for serialized to clients.
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ClientContribution implements ModelInterface, ArrayAccess
         'description' => 'string',
         'id' => 'string',
         'includes' => 'string[]',
-        'properties' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject',
         'targets' => 'string[]',
         'type' => 'string'
     ];
@@ -310,7 +310,7 @@ class ClientContribution implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject
      */
     public function getProperties()
     {
@@ -320,7 +320,7 @@ class ClientContribution implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject $properties Properties/attributes of this contribution
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject $properties Properties/attributes of this contribution
      *
      * @return $this
      */

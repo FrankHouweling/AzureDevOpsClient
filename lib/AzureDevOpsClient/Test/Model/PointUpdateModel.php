@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * PointUpdateModel Class Doc Comment
  *
  * @category Class
  * @description Model to update test point.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class PointUpdateModel implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'outcome' => 'string',
         'resetToActive' => 'bool',
-        'tester' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef'
+        'tester' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef'
     ];
 
     /**
@@ -268,7 +268,7 @@ class PointUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets tester
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getTester()
     {
@@ -278,7 +278,7 @@ class PointUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets tester
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $tester Tester to update. Type IdentityRef.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $tester Tester to update. Type IdentityRef.
      *
      * @return $this
      */

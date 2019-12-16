@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\BuildsApi
+# FrankHouweling\AzureDevOpsClient\Build\BuildsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -32,9 +32,9 @@ Deletes a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,7 +78,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build buildsGet($organization, $project, $buildId, $apiVersion, $propertyFilters)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build buildsGet($organization, $project, $buildId, $apiVersion, $propertyFilters)
 
 
 
@@ -90,9 +90,9 @@ Gets a build
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetBuildChanges**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[] buildsGetBuildChanges($organization, $project, $buildId, $apiVersion, $continuationToken, $top, $includeSourceChange)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Change[] buildsGetBuildChanges($organization, $project, $buildId, $apiVersion, $continuationToken, $top, $includeSourceChange)
 
 
 
@@ -151,9 +151,9 @@ Gets the changes associated with a build
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]**](../Model/Change.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]**](../Model/Change.md)
 
 ### Authorization
 
@@ -216,9 +216,9 @@ Gets an individual log file for a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetBuildLogs**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[] buildsGetBuildLogs($organization, $project, $buildId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[] buildsGetBuildLogs($organization, $project, $buildId, $apiVersion)
 
 
 
@@ -281,9 +281,9 @@ Gets the logs for a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLog[]**](../Model/BuildLog.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLog[]**](../Model/BuildLog.md)
 
 ### Authorization
 
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetBuildWorkItemsRefs**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetBuildWorkItemsRefs($organization, $project, $buildId, $apiVersion, $top)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetBuildWorkItemsRefs($organization, $project, $buildId, $apiVersion, $top)
 
 
 
@@ -340,9 +340,9 @@ Gets the work items associated with a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -375,7 +375,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
 
 ### Authorization
 
@@ -389,7 +389,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetBuildWorkItemsRefsFromCommits**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetBuildWorkItemsRefsFromCommits($organization, $body, $project, $buildId, $apiVersion, $top)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetBuildWorkItemsRefsFromCommits($organization, $body, $project, $buildId, $apiVersion, $top)
 
 
 
@@ -401,16 +401,16 @@ Gets the work items associated with a build, filtered to specific commits.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\string[]()); // string[] | A comma-delimited list of commit IDs.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Build\Model\string[]()); // string[] | A comma-delimited list of commit IDs.
 $project = "project_example"; // string | Project ID or project name
 $buildId = 56; // int | The ID of the build.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.2' to use this version of the api.
@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
 
 ### Authorization
 
@@ -452,7 +452,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetChangesBetweenBuilds**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[] buildsGetChangesBetweenBuilds($organization, $project, $apiVersion, $fromBuildId, $toBuildId, $top)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Change[] buildsGetChangesBetweenBuilds($organization, $project, $apiVersion, $fromBuildId, $toBuildId, $top)
 
 
 
@@ -464,9 +464,9 @@ Gets the changes made to the repository between two given builds.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -501,7 +501,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]**](../Model/Change.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]**](../Model/Change.md)
 
 ### Authorization
 
@@ -515,7 +515,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsGetWorkItemsBetweenBuilds**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetWorkItemsBetweenBuilds($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[] buildsGetWorkItemsBetweenBuilds($organization, $project, $fromBuildId, $toBuildId, $apiVersion, $top)
 
 
 
@@ -527,12 +527,12 @@ Gets all the work items between two builds.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -567,7 +567,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\ResourceRef[]**](../Model/ResourceRef.md)
 
 ### Authorization
 
@@ -581,7 +581,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsList**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] buildsList($organization, $project, $apiVersion, $definitions, $queues, $buildNumber, $minTime, $maxTime, $requestedFor, $reasonFilter, $statusFilter, $resultFilter, $tagFilters, $properties, $top, $continuationToken, $maxBuildsPerDefinition, $deletedFilter, $queryOrder, $branchName, $buildIds, $repositoryId, $repositoryType)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] buildsList($organization, $project, $apiVersion, $definitions, $queues, $buildNumber, $minTime, $maxTime, $requestedFor, $reasonFilter, $statusFilter, $resultFilter, $tagFilters, $properties, $top, $continuationToken, $maxBuildsPerDefinition, $deletedFilter, $queryOrder, $branchName, $buildIds, $repositoryId, $repositoryType)
 
 
 
@@ -593,9 +593,9 @@ Gets a list of builds.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -664,7 +664,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)
 
 ### Authorization
 
@@ -678,7 +678,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsQueue**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build buildsQueue($organization, $body, $project, $apiVersion, $ignoreWarnings, $checkInTicket, $sourceBuildId)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build buildsQueue($organization, $body, $project, $apiVersion, $ignoreWarnings, $checkInTicket, $sourceBuildId)
 
 
 
@@ -690,16 +690,16 @@ Queues a build
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build | 
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\Build(); // \FrankHouweling\AzureDevOpsClient\Build\Model\Build | 
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.5' to use this version of the api.
 $ignoreWarnings = true; // bool | 
@@ -720,7 +720,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)|  |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. |
  **ignoreWarnings** | **bool**|  | [optional]
@@ -729,7 +729,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
 
 ### Authorization
 
@@ -743,7 +743,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsUpdateBuild**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build buildsUpdateBuild($organization, $body, $project, $buildId, $apiVersion, $retry)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build buildsUpdateBuild($organization, $body, $project, $buildId, $apiVersion, $retry)
 
 
 
@@ -755,16 +755,16 @@ Updates a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build | The build.
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\Build(); // \FrankHouweling\AzureDevOpsClient\Build\Model\Build | The build.
 $project = "project_example"; // string | Project ID or project name
 $buildId = 56; // int | The ID of the build.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.5' to use this version of the api.
@@ -784,7 +784,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)| The build. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)| The build. |
  **project** | **string**| Project ID or project name |
  **buildId** | **int**| The ID of the build. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. |
@@ -792,7 +792,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
 
 ### Authorization
 
@@ -806,7 +806,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **buildsUpdateBuilds**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] buildsUpdateBuilds($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] buildsUpdateBuilds($organization, $body, $project, $apiVersion)
 
 
 
@@ -818,16 +818,16 @@ Updates multiple builds.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BuildsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BuildsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build()); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[] | The builds to update.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Build\Model\Build()); // \FrankHouweling\AzureDevOpsClient\Build\Model\Build[] | The builds to update.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.5' to use this version of the api.
 
@@ -845,13 +845,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)| The builds to update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)| The builds to update. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build[]**](../Model/Build.md)
 
 ### Authorization
 

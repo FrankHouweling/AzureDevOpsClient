@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * DiagnosticNotification Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class DiagnosticNotification implements ModelInterface, ArrayAccess
         'eventId' => 'int',
         'eventType' => 'string',
         'id' => 'int',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
-        'recipients' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticRecipient]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'recipients' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticRecipient]',
         'result' => 'string',
         'stats' => 'map[string,int]',
         'subscriptionId' => 'string'
@@ -322,7 +322,7 @@ class DiagnosticNotification implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -332,7 +332,7 @@ class DiagnosticNotification implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class DiagnosticNotification implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticRecipient]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticRecipient]
      */
     public function getRecipients()
     {
@@ -356,7 +356,7 @@ class DiagnosticNotification implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticRecipient] $recipients recipients
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticRecipient] $recipients recipients
      *
      * @return $this
      */

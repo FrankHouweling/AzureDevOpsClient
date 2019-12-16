@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **canDelete** | **bool** | Indicates whether template can be deleted or not. | [optional] 
 **category** | **string** | Category of the ReleaseDefinition environment template. | [optional] 
 **description** | **string** | Description of the ReleaseDefinition environment template. | [optional] 
-**environment** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironment**](ReleaseDefinitionEnvironment.md) | ReleaseDefinition environment data which used to create this template. | [optional] 
+**environment** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironment**](ReleaseDefinitionEnvironment.md) | ReleaseDefinition environment data which used to create this template. | [optional] 
 **iconTaskId** | **string** | ID of the task which used to display icon used for this template. | [optional] 
 **iconUri** | **string** | Icon uri of the template. | [optional] 
 **id** | **string** | ID of the ReleaseDefinition environment template. | [optional] 

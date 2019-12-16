@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestLog Class Doc Comment
  *
  * @category Class
  * @description Represents Test Log Result object.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestLog implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'logReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestLogReference',
+        'logReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestLogReference',
         'metaData' => 'map[string,string]',
         'modifiedOn' => '\DateTime',
         'size' => 'int'
@@ -226,7 +226,7 @@ class TestLog implements ModelInterface, ArrayAccess
     /**
      * Gets logReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestLogReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestLogReference
      */
     public function getLogReference()
     {
@@ -236,7 +236,7 @@ class TestLog implements ModelInterface, ArrayAccess
     /**
      * Sets logReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestLogReference $logReference Test Log Context run, build
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestLogReference $logReference Test Log Context run, build
      *
      * @return $this
      */

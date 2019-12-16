@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Security\AccessControlListsApi
+# FrankHouweling\AzureDevOpsClient\Security\AccessControlListsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **accessControlListsQuery**
-> \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[] accessControlListsQuery($securityNamespaceId, $organization, $apiVersion, $token, $descriptors, $includeExtendedInfo, $recurse)
+> \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[] accessControlListsQuery($securityNamespaceId, $organization, $apiVersion, $token, $descriptors, $includeExtendedInfo, $recurse)
 
 
 
@@ -22,12 +22,12 @@ Return a list of access control lists for the specified security namespace and t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Security\Api\AccessControlListsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\AccessControlListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[]**](../Model/AccessControlList.md)
+[**\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[]**](../Model/AccessControlList.md)
 
 ### Authorization
 
@@ -90,9 +90,9 @@ Remove access control lists under the specfied security namespace.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Security\Api\AccessControlListsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\AccessControlListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -151,15 +151,15 @@ Create or update one or more access control lists. All data that currently exist
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Security\Api\AccessControlListsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\AccessControlListsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper(); // \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper | A list of ACLs to create or update.
+$body = new \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper(); // \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper | A list of ACLs to create or update.
 $securityNamespaceId = "securityNamespaceId_example"; // string | Security namespace identifier.
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -176,7 +176,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper**](../Model/VssJsonCollectionWrapper.md)| A list of ACLs to create or update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper**](../Model/VssJsonCollectionWrapper.md)| A list of ACLs to create or update. |
  **securityNamespaceId** | [**string**](../Model/.md)| Security namespace identifier. |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |

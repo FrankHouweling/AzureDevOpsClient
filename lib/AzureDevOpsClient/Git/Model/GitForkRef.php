@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitForkRef Class Doc Comment
  *
  * @category Class
  * @description Information about a fork ref.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class GitForkRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'creator' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'creator' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'isLocked' => 'bool',
-        'isLockedBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'isLockedBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'name' => 'string',
         'objectId' => 'string',
         'peeledObjectId' => 'string',
-        'statuses' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]',
+        'statuses' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]',
         'url' => 'string',
-        'repository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository'
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository'
     ];
 
     /**
@@ -262,7 +262,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -272,7 +272,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Gets creator
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getCreator()
     {
@@ -296,7 +296,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Sets creator
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $creator creator
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $creator creator
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Gets isLockedBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getIsLockedBy()
     {
@@ -344,7 +344,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Sets isLockedBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $isLockedBy isLockedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $isLockedBy isLockedBy
      *
      * @return $this
      */
@@ -430,7 +430,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Gets statuses
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]
      */
     public function getStatuses()
     {
@@ -440,7 +440,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Sets statuses
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[] $statuses statuses
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[] $statuses statuses
      *
      * @return $this
      */
@@ -478,7 +478,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getRepository()
     {
@@ -488,7 +488,7 @@ class GitForkRef implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $repository The repository ID of the fork.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $repository The repository ID of the fork.
      *
      * @return $this
      */

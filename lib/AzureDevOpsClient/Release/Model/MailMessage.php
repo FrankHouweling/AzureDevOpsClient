@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * MailMessage Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,15 +59,15 @@ class MailMessage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'body' => 'string',
-        'cc' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients',
+        'cc' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients',
         'inReplyTo' => 'string',
         'messageId' => 'string',
         'replyBy' => '\DateTime',
-        'replyTo' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients',
+        'replyTo' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients',
         'sections' => 'object[]',
         'senderType' => 'string',
         'subject' => 'string',
-        'to' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients'
+        'to' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients'
     ];
 
     /**
@@ -309,7 +309,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Gets cc
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients
      */
     public function getCc()
     {
@@ -319,7 +319,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Sets cc
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients $cc Mail CC recipients.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients $cc Mail CC recipients.
      *
      * @return $this
      */
@@ -405,7 +405,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Gets replyTo
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients
      */
     public function getReplyTo()
     {
@@ -415,7 +415,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Sets replyTo
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients $replyTo Reply to Email recipients.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients $replyTo Reply to Email recipients.
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Gets to
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients
      */
     public function getTo()
     {
@@ -520,7 +520,7 @@ class MailMessage implements ModelInterface, ArrayAccess
     /**
      * Sets to
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EmailRecipients $to Mail To recipients.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EmailRecipients $to Mail To recipients.
      *
      * @return $this
      */

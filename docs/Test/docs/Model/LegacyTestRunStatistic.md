@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  | [optional] 
 **outcome** | **string** |  | [optional] 
-**resolutionState** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState**](TestResolutionState.md) |  | [optional] 
+**resolutionState** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState**](TestResolutionState.md) |  | [optional] 
 **state** | **string** |  | [optional] 
 **testRunId** | **int** |  | [optional] 
 

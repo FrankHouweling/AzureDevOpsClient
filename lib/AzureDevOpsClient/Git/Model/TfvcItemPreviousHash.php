@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcItemPreviousHash Class Doc Comment
  *
  * @category Class
  * @description Metadata for an item including the previous hash value for files.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,9 +66,9 @@ class TfvcItemPreviousHash implements ModelInterface, ArrayAccess
         'isPendingChange' => 'bool',
         'size' => 'int',
         'version' => 'int',
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'content' => 'string',
-        'contentMetadata' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata',
+        'contentMetadata' => '\FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata',
         'isFolder' => 'bool',
         'isSymLink' => 'bool',
         'path' => 'string',
@@ -490,7 +490,7 @@ class TfvcItemPreviousHash implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -500,7 +500,7 @@ class TfvcItemPreviousHash implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class TfvcItemPreviousHash implements ModelInterface, ArrayAccess
     /**
      * Gets contentMetadata
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata
      */
     public function getContentMetadata()
     {
@@ -548,7 +548,7 @@ class TfvcItemPreviousHash implements ModelInterface, ArrayAccess
     /**
      * Sets contentMetadata
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata $contentMetadata contentMetadata
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata $contentMetadata contentMetadata
      *
      * @return $this
      */

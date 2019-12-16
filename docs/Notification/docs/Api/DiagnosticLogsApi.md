@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Notification\DiagnosticLogsApi
+# FrankHouweling\AzureDevOpsClient\Notification\DiagnosticLogsApi
 
 All URIs are relative to *https://{service}.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **diagnosticLogsList**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[] diagnosticLogsList($source, $organization, $entryId, $apiVersion, $startTime, $endTime)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[] diagnosticLogsList($source, $organization, $entryId, $apiVersion, $startTime, $endTime)
 
 
 
@@ -20,9 +20,9 @@ Get a list of diagnostic logs for this service.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\DiagnosticLogsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\DiagnosticLogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]**](../Model/INotificationDiagnosticLog.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]**](../Model/INotificationDiagnosticLog.md)
 
 ### Authorization
 

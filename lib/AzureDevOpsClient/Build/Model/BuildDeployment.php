@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDeployment Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class BuildDeployment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deployment' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildSummary',
-        'sourceBuild' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference'
+        'deployment' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildSummary',
+        'sourceBuild' => '\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference'
     ];
 
     /**
@@ -214,7 +214,7 @@ class BuildDeployment implements ModelInterface, ArrayAccess
     /**
      * Gets deployment
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildSummary
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildSummary
      */
     public function getDeployment()
     {
@@ -224,7 +224,7 @@ class BuildDeployment implements ModelInterface, ArrayAccess
     /**
      * Sets deployment
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildSummary $deployment deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildSummary $deployment deployment
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class BuildDeployment implements ModelInterface, ArrayAccess
     /**
      * Gets sourceBuild
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference
      */
     public function getSourceBuild()
     {
@@ -248,7 +248,7 @@ class BuildDeployment implements ModelInterface, ArrayAccess
     /**
      * Sets sourceBuild
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference $sourceBuild sourceBuild
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference $sourceBuild sourceBuild
      *
      * @return $this
      */

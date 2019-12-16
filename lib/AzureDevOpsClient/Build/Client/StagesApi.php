@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * StagesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class StagesApi
      * Operation stagesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
      * @param  int $buildId  (required)
      * @param  string $stageRefName  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,13 +110,13 @@ class StagesApi
      * Operation stagesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
      * @param  int $buildId  (required)
      * @param  string $stageRefName  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -168,7 +168,7 @@ class StagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
      * @param  int $buildId  (required)
      * @param  string $stageRefName  (required)
      * @param  string $project Project ID or project name (required)
@@ -193,7 +193,7 @@ class StagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
      * @param  int $buildId  (required)
      * @param  string $stageRefName  (required)
      * @param  string $project Project ID or project name (required)
@@ -234,7 +234,7 @@ class StagesApi
      * Create request for operation 'stagesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters $body  (required)
      * @param  int $buildId  (required)
      * @param  string $stageRefName  (required)
      * @param  string $project Project ID or project name (required)

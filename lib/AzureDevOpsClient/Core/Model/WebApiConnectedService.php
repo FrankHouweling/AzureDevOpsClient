@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * WebApiConnectedService Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,11 +60,11 @@ class WebApiConnectedService implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'url' => 'string',
-        'authenticatedBy' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef',
+        'authenticatedBy' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef',
         'description' => 'string',
         'friendlyName' => 'string',
         'kind' => 'string',
-        'project' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference',
         'serviceUri' => 'string'
     ];
 
@@ -298,7 +298,7 @@ class WebApiConnectedService implements ModelInterface, ArrayAccess
     /**
      * Gets authenticatedBy
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef
      */
     public function getAuthenticatedBy()
     {
@@ -308,7 +308,7 @@ class WebApiConnectedService implements ModelInterface, ArrayAccess
     /**
      * Sets authenticatedBy
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef $authenticatedBy The user who did the OAuth authentication to created this service
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef $authenticatedBy The user who did the OAuth authentication to created this service
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class WebApiConnectedService implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -404,7 +404,7 @@ class WebApiConnectedService implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference $project The project associated with this service
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference $project The project associated with this service
      *
      * @return $this
      */

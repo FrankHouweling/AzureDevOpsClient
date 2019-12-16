@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointAuthenticationScheme Class Doc Comment
  *
  * @category Class
  * @description Represents the authentication scheme used to authenticate the endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'authorizationHeaders' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]',
+        'authorizationHeaders' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]',
         'authorizationUrl' => 'string',
-        'clientCertificates' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[]',
-        'dataSourceBindings' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[]',
+        'clientCertificates' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[]',
+        'dataSourceBindings' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[]',
         'displayName' => 'string',
-        'inputDescriptors' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]',
+        'inputDescriptors' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]',
         'properties' => 'map[string,string]',
         'requiresOAuth2Configuration' => 'bool',
         'scheme' => 'string'
@@ -256,7 +256,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Gets authorizationHeaders
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]
      */
     public function getAuthorizationHeaders()
     {
@@ -266,7 +266,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Sets authorizationHeaders
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[] $authorizationHeaders Gets or sets the authorization headers of service endpoint authentication scheme.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[] $authorizationHeaders Gets or sets the authorization headers of service endpoint authentication scheme.
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Gets clientCertificates
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[]
      */
     public function getClientCertificates()
     {
@@ -314,7 +314,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Sets clientCertificates
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[] $clientCertificates Gets or sets the certificates of service endpoint authentication scheme.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ClientCertificate[] $clientCertificates Gets or sets the certificates of service endpoint authentication scheme.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Gets dataSourceBindings
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[]
      */
     public function getDataSourceBindings()
     {
@@ -338,7 +338,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Sets dataSourceBindings
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[] $dataSourceBindings Gets or sets the data source bindings of the endpoint.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceBinding[] $dataSourceBindings Gets or sets the data source bindings of the endpoint.
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Gets inputDescriptors
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]
      */
     public function getInputDescriptors()
     {
@@ -386,7 +386,7 @@ class ServiceEndpointAuthenticationScheme implements ModelInterface, ArrayAccess
     /**
      * Sets inputDescriptors
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[] $inputDescriptors Gets or sets the input descriptors for the service endpoint authentication scheme.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[] $inputDescriptors Gets or sets the input descriptors for the service endpoint authentication scheme.
      *
      * @return $this
      */

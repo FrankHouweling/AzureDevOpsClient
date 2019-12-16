@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dataSource** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[]**](InputValue.md) | Gets or sets the data source. | [optional] 
+**dataSource** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[]**](InputValue.md) | Gets or sets the data source. | [optional] 
 **endPoint** | **string** | Gets or sets the rest end point. | [optional] 
 **resultTemplate** | **string** | Gets or sets the result template. | [optional] 
 

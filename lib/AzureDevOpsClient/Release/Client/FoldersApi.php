@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * FoldersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class FoldersApi
      * Operation foldersCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Folder
      */
     public function foldersCreate($organization, $body, $project, $path, $apiVersion)
     {
@@ -110,18 +110,18 @@ class FoldersApi
      * Operation foldersCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Folder, HTTP status code, HTTP response headers (array of strings)
      */
     public function foldersCreateWithHttpInfo($organization, $body, $project, $path, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder';
         $request = $this->foldersCreateRequest($organization, $body, $project, $path, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class FoldersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class FoldersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class FoldersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class FoldersApi
      */
     public function foldersCreateAsyncWithHttpInfo($organization, $body, $project, $path, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder';
         $request = $this->foldersCreateRequest($organization, $body, $project, $path, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class FoldersApi
      * Create request for operation 'foldersCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -431,7 +431,7 @@ class FoldersApi
      * @param  string $path Path of the folder to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -448,7 +448,7 @@ class FoldersApi
      * @param  string $path Path of the folder to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -717,9 +717,9 @@ class FoldersApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $queryOrder Gets the results in the defined order. Default is &#39;None&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Folder[]
      */
     public function foldersList($organization, $project, $path, $apiVersion, $queryOrder = null)
     {
@@ -736,13 +736,13 @@ class FoldersApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $queryOrder Gets the results in the defined order. Default is &#39;None&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Folder[], HTTP status code, HTTP response headers (array of strings)
      */
     public function foldersListWithHttpInfo($organization, $project, $path, $apiVersion, $queryOrder = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder[]';
         $request = $this->foldersListRequest($organization, $project, $path, $apiVersion, $queryOrder);
 
         try {
@@ -794,7 +794,7 @@ class FoldersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class FoldersApi
      */
     public function foldersListAsyncWithHttpInfo($organization, $project, $path, $apiVersion, $queryOrder = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder[]';
         $request = $this->foldersListRequest($organization, $project, $path, $apiVersion, $queryOrder);
 
         return $this->client
@@ -1043,14 +1043,14 @@ class FoldersApi
      * Operation foldersUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Folder
      */
     public function foldersUpdate($organization, $body, $project, $path, $apiVersion)
     {
@@ -1062,18 +1062,18 @@ class FoldersApi
      * Operation foldersUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Folder, HTTP status code, HTTP response headers (array of strings)
      */
     public function foldersUpdateWithHttpInfo($organization, $body, $project, $path, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder';
         $request = $this->foldersUpdateRequest($organization, $body, $project, $path, $apiVersion);
 
         try {
@@ -1125,7 +1125,7 @@ class FoldersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1141,7 +1141,7 @@ class FoldersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -1165,7 +1165,7 @@ class FoldersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -1175,7 +1175,7 @@ class FoldersApi
      */
     public function foldersUpdateAsyncWithHttpInfo($organization, $body, $project, $path, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Folder';
         $request = $this->foldersUpdateRequest($organization, $body, $project, $path, $apiVersion);
 
         return $this->client
@@ -1219,7 +1219,7 @@ class FoldersApi
      * Create request for operation 'foldersUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Folder $body folder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $path Path of the folder to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)

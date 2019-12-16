@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiPageMove Class Doc Comment
  *
  * @category Class
  * @description Request contract for Wiki Page Move.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class WikiPageMove implements ModelInterface, ArrayAccess
         'newOrder' => 'int',
         'newPath' => 'string',
         'path' => 'string',
-        'page' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage'
+        'page' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage'
     ];
 
     /**
@@ -298,7 +298,7 @@ class WikiPageMove implements ModelInterface, ArrayAccess
     /**
      * Gets page
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function getPage()
     {
@@ -308,7 +308,7 @@ class WikiPageMove implements ModelInterface, ArrayAccess
     /**
      * Sets page
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage $page Resultant page of this page move operation.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage $page Resultant page of this page move operation.
      *
      * @return $this
      */

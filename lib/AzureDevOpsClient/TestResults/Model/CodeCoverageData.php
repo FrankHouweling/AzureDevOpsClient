@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * CodeCoverageData Class Doc Comment
  *
  * @category Class
  * @description Represents the build configuration (platform, flavor) and coverage data for the build
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'buildFlavor' => 'string',
         'buildPlatform' => 'string',
-        'coverageStats' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[]'
+        'coverageStats' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     /**
      * Gets coverageStats
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[]
      */
     public function getCoverageStats()
     {
@@ -278,7 +278,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     /**
      * Sets coverageStats
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[] $coverageStats List of coverage data for the build
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageStatistics[] $coverageStats List of coverage data for the build
      *
      * @return $this
      */

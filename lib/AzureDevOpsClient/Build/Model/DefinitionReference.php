@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DefinitionReference Class Doc Comment
  *
  * @category Class
  * @description Represents a reference to a definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class DefinitionReference implements ModelInterface, ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
         'queueStatus' => 'string',
         'revision' => 'int',
         'type' => 'string',
@@ -406,7 +406,7 @@ class DefinitionReference implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -416,7 +416,7 @@ class DefinitionReference implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
      *
      * @return $this
      */

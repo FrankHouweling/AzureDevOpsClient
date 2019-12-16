@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultFailuresAnalysis Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'existingFailures' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
-        'fixedTests' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
-        'newFailures' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails'
+        'existingFailures' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
+        'fixedTests' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
+        'newFailures' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails'
     ];
 
     /**
@@ -220,7 +220,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets existingFailures
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getExistingFailures()
     {
@@ -230,7 +230,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets existingFailures
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $existingFailures existingFailures
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $existingFailures existingFailures
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets fixedTests
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getFixedTests()
     {
@@ -254,7 +254,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets fixedTests
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $fixedTests fixedTests
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $fixedTests fixedTests
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets newFailures
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getNewFailures()
     {
@@ -278,7 +278,7 @@ class TestResultFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets newFailures
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $newFailures newFailures
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $newFailures newFailures
      *
      * @return $this
      */

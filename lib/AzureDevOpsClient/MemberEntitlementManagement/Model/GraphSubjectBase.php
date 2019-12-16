@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GraphSubjectBase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GraphSubjectBase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks',
         'descriptor' => 'string',
         'displayName' => 'string',
         'url' => 'string'
@@ -226,7 +226,7 @@ class GraphSubjectBase implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -236,7 +236,7 @@ class GraphSubjectBase implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
      *
      * @return $this
      */

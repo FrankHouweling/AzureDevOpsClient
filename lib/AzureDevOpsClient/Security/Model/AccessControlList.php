@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * AccessControlList Class Doc Comment
  *
  * @category Class
  * @description The AccessControlList class is meant to associate a set of AccessControlEntries with a security token and its inheritance settings.
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class AccessControlList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'acesDictionary' => 'map[string,\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry]',
+        'acesDictionary' => 'map[string,\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry]',
         'includeExtendedInfo' => 'bool',
         'inheritPermissions' => 'bool',
         'token' => 'string'
@@ -226,7 +226,7 @@ class AccessControlList implements ModelInterface, ArrayAccess
     /**
      * Gets acesDictionary
      *
-     * @return map[string,\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry]
      */
     public function getAcesDictionary()
     {
@@ -236,7 +236,7 @@ class AccessControlList implements ModelInterface, ArrayAccess
     /**
      * Sets acesDictionary
      *
-     * @param map[string,\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry] $acesDictionary Storage of permissions keyed on the identity the permission is for.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry] $acesDictionary Storage of permissions keyed on the identity the permission is for.
      *
      * @return $this
      */

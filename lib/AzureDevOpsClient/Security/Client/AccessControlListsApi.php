@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Client;
+namespace FrankHouweling\AzureDevOpsClient\Security\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Security\ApiException;
-use AzureDevOpsClient\Security\Configuration;
-use AzureDevOpsClient\Security\HeaderSelector;
-use AzureDevOpsClient\Security\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Security\ApiException;
+use FrankHouweling\AzureDevOpsClient\Security\Configuration;
+use FrankHouweling\AzureDevOpsClient\Security\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * AccessControlListsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class AccessControlListsApi
      * @param  bool $includeExtendedInfo If true, populate the extended information properties for the access control entries contained in the returned lists. (optional)
      * @param  bool $recurse If true and this is a hierarchical namespace, return child ACLs of the specified token. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[]
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[]
      */
     public function accessControlListsQuery($securityNamespaceId, $organization, $apiVersion, $token = null, $descriptors = null, $includeExtendedInfo = null, $recurse = null)
     {
@@ -119,13 +119,13 @@ class AccessControlListsApi
      * @param  bool $includeExtendedInfo If true, populate the extended information properties for the access control entries contained in the returned lists. (optional)
      * @param  bool $recurse If true and this is a hierarchical namespace, return child ACLs of the specified token. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[], HTTP status code, HTTP response headers (array of strings)
      */
     public function accessControlListsQueryWithHttpInfo($securityNamespaceId, $organization, $apiVersion, $token = null, $descriptors = null, $includeExtendedInfo = null, $recurse = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[]';
         $request = $this->accessControlListsQueryRequest($securityNamespaceId, $organization, $apiVersion, $token, $descriptors, $includeExtendedInfo, $recurse);
 
         try {
@@ -177,7 +177,7 @@ class AccessControlListsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[]',
+                        '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class AccessControlListsApi
      */
     public function accessControlListsQueryAsyncWithHttpInfo($securityNamespaceId, $organization, $apiVersion, $token = null, $descriptors = null, $includeExtendedInfo = null, $recurse = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlList[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlList[]';
         $request = $this->accessControlListsQueryRequest($securityNamespaceId, $organization, $apiVersion, $token, $descriptors, $includeExtendedInfo, $recurse);
 
         return $this->client
@@ -435,7 +435,7 @@ class AccessControlListsApi
      * @param  string $tokens One or more comma-separated security tokens (optional)
      * @param  bool $recurse If true and this is a hierarchical namespace, also remove child ACLs of the specified tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return bool
      */
@@ -454,7 +454,7 @@ class AccessControlListsApi
      * @param  string $tokens One or more comma-separated security tokens (optional)
      * @param  bool $recurse If true and this is a hierarchical namespace, also remove child ACLs of the specified tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of bool, HTTP status code, HTTP response headers (array of strings)
      */
@@ -750,12 +750,12 @@ class AccessControlListsApi
     /**
      * Operation accessControlListsSetAccessControlLists
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -767,12 +767,12 @@ class AccessControlListsApi
     /**
      * Operation accessControlListsSetAccessControlListsWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -823,7 +823,7 @@ class AccessControlListsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -846,7 +846,7 @@ class AccessControlListsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -885,7 +885,7 @@ class AccessControlListsApi
     /**
      * Create request for operation 'accessControlListsSetAccessControlLists'
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\VssJsonCollectionWrapper $body A list of ACLs to create or update. (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

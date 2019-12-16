@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * FileCoverage Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FileCoverage implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lineBlocksCoverage' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LineBlockCoverage[]',
+        'lineBlocksCoverage' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LineBlockCoverage[]',
         'path' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class FileCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets lineBlocksCoverage
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LineBlockCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LineBlockCoverage[]
      */
     public function getLineBlocksCoverage()
     {
@@ -224,7 +224,7 @@ class FileCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets lineBlocksCoverage
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LineBlockCoverage[] $lineBlocksCoverage List of line blocks along with their coverage status
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LineBlockCoverage[] $lineBlocksCoverage List of line blocks along with their coverage status
      *
      * @return $this
      */

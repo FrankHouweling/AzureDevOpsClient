@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * AggregatedDataForResultTrend Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'duration' => 'string',
-        'resultsByOutcome' => 'map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]',
-        'runSummaryByState' => 'map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedRunsByState]',
-        'testResultsContext' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext',
+        'resultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]',
+        'runSummaryByState' => 'map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedRunsByState]',
+        'testResultsContext' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext',
         'totalTests' => 'int'
     ];
 
@@ -256,7 +256,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets resultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]
      */
     public function getResultsByOutcome()
     {
@@ -266,7 +266,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets resultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets runSummaryByState
      *
-     * @return map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedRunsByState]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedRunsByState]
      */
     public function getRunSummaryByState()
     {
@@ -290,7 +290,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets runSummaryByState
      *
-     * @param map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets testResultsContext
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext
      */
     public function getTestResultsContext()
     {
@@ -314,7 +314,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets testResultsContext
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
      *
      * @return $this
      */

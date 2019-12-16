@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Client;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Audit\ApiException;
-use AzureDevOpsClient\Audit\Configuration;
-use AzureDevOpsClient\Audit\HeaderSelector;
-use AzureDevOpsClient\Audit\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Audit\ApiException;
+use FrankHouweling\AzureDevOpsClient\Audit\Configuration;
+use FrankHouweling\AzureDevOpsClient\Audit\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * ActionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ActionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $areaName Optional. Get actions scoped to area (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[]
      */
     public function actionsList($organization, $apiVersion, $areaName = null)
     {
@@ -111,13 +111,13 @@ class ActionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $areaName Optional. Get actions scoped to area (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[], HTTP status code, HTTP response headers (array of strings)
      */
     public function actionsListWithHttpInfo($organization, $apiVersion, $areaName = null)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[]';
         $request = $this->actionsListRequest($organization, $apiVersion, $areaName);
 
         try {
@@ -169,7 +169,7 @@ class ActionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[]',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ActionsApi
      */
     public function actionsListAsyncWithHttpInfo($organization, $apiVersion, $areaName = null)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[]';
         $request = $this->actionsListRequest($organization, $apiVersion, $areaName);
 
         return $this->client

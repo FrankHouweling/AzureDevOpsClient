@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Search\RepositoriesApi
+# FrankHouweling\AzureDevOpsClient\Search\RepositoriesApi
 
 All URIs are relative to *https://almsearch.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **repositoriesGet**
-> \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse repositoriesGet($organization, $project, $repository, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse repositoriesGet($organization, $project, $repository, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Provides status of Repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Search\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Search\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Search\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Search\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse**](../Model/RepositoryStatusResponse.md)
+[**\FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse**](../Model/RepositoryStatusResponse.md)
 
 ### Authorization
 

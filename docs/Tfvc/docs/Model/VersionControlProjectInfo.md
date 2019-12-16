@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **defaultSourceControlType** | **string** |  | [optional] 
-**project** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
 **supportsGit** | **bool** |  | [optional] 
 **supportsTFVC** | **bool** |  | [optional] 
 

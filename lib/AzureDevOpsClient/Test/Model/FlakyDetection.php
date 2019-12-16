@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * FlakyDetection Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyDetectionPipelines' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines',
+        'flakyDetectionPipelines' => '\FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines',
         'flakyDetectionType' => 'string'
     ];
 
@@ -237,7 +237,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
     /**
      * Gets flakyDetectionPipelines
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines
      */
     public function getFlakyDetectionPipelines()
     {
@@ -247,7 +247,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
     /**
      * Sets flakyDetectionPipelines
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines $flakyDetectionPipelines FlakyDetectionPipelines defines Pipelines for Detection.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\FlakyDetectionPipelines $flakyDetectionPipelines FlakyDetectionPipelines defines Pipelines for Detection.
      *
      * @return $this
      */

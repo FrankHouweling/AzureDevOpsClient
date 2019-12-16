@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Client;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Notification\ApiException;
-use AzureDevOpsClient\Notification\Configuration;
-use AzureDevOpsClient\Notification\HeaderSelector;
-use AzureDevOpsClient\Notification\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Notification\ApiException;
+use FrankHouweling\AzureDevOpsClient\Notification\Configuration;
+use FrankHouweling\AzureDevOpsClient\Notification\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscribersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class SubscribersApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber
      */
     public function subscribersGet($subscriberId, $organization, $apiVersion)
     {
@@ -111,13 +111,13 @@ class SubscribersApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscribersGetWithHttpInfo($subscriberId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
         $request = $this->subscribersGetRequest($subscriberId, $organization, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class SubscribersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class SubscribersApi
      */
     public function subscribersGetAsyncWithHttpInfo($subscriberId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
         $request = $this->subscribersGetRequest($subscriberId, $organization, $apiVersion);
 
         return $this->client
@@ -393,14 +393,14 @@ class SubscribersApi
     /**
      * Operation subscribersUpdate
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
      * @param  string $subscriberId ID of the user or group. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber
      */
     public function subscribersUpdate($body, $subscriberId, $organization, $apiVersion)
     {
@@ -411,18 +411,18 @@ class SubscribersApi
     /**
      * Operation subscribersUpdateWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
      * @param  string $subscriberId ID of the user or group. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscribersUpdateWithHttpInfo($body, $subscriberId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
         $request = $this->subscribersUpdateRequest($body, $subscriberId, $organization, $apiVersion);
 
         try {
@@ -474,7 +474,7 @@ class SubscribersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -489,7 +489,7 @@ class SubscribersApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
      * @param  string $subscriberId ID of the user or group. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -512,7 +512,7 @@ class SubscribersApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
      * @param  string $subscriberId ID of the user or group. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -522,7 +522,7 @@ class SubscribersApi
      */
     public function subscribersUpdateAsyncWithHttpInfo($body, $subscriberId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriber';
         $request = $this->subscribersUpdateRequest($body, $subscriberId, $organization, $apiVersion);
 
         return $this->client
@@ -565,7 +565,7 @@ class SubscribersApi
     /**
      * Create request for operation 'subscribersUpdate'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriberUpdateParameters $body  (required)
      * @param  string $subscriberId ID of the user or group. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

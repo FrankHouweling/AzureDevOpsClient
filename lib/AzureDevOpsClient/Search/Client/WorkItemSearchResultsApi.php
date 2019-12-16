@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Client;
+namespace FrankHouweling\AzureDevOpsClient\Search\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Search\ApiException;
-use AzureDevOpsClient\Search\Configuration;
-use AzureDevOpsClient\Search\HeaderSelector;
-use AzureDevOpsClient\Search\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Search\ApiException;
+use FrankHouweling\AzureDevOpsClient\Search\Configuration;
+use FrankHouweling\AzureDevOpsClient\Search\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * WorkItemSearchResultsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class WorkItemSearchResultsApi
      * Operation workItemSearchResultsFetchWorkItemSearchResults
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchResponse
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchResponse
      */
     public function workItemSearchResultsFetchWorkItemSearchResults($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class WorkItemSearchResultsApi
      * Operation workItemSearchResultsFetchWorkItemSearchResultsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function workItemSearchResultsFetchWorkItemSearchResultsWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchResponse';
         $request = $this->workItemSearchResultsFetchWorkItemSearchResultsRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class WorkItemSearchResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchResponse',
+                        '\FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class WorkItemSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class WorkItemSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class WorkItemSearchResultsApi
      */
     public function workItemSearchResultsFetchWorkItemSearchResultsAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchResponse';
         $request = $this->workItemSearchResultsFetchWorkItemSearchResultsRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class WorkItemSearchResultsApi
      * Create request for operation 'workItemSearchResultsFetchWorkItemSearchResults'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemSearchRequest $body The Work Item Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

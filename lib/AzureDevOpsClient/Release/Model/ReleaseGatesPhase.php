@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseGatesPhase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deploymentJobs' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[]',
+        'deploymentJobs' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[]',
         'errorLog' => 'string',
-        'manualInterventions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]',
+        'manualInterventions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]',
         'name' => 'string',
         'phaseId' => 'string',
         'phaseType' => 'string',
@@ -68,7 +68,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
         'runPlanId' => 'string',
         'startedOn' => '\DateTime',
         'status' => 'string',
-        'ignoredGates' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IgnoredGate[]',
+        'ignoredGates' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IgnoredGate[]',
         'stabilizationCompletedOn' => '\DateTime',
         'succeedingSince' => '\DateTime'
     ];
@@ -346,7 +346,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Gets deploymentJobs
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[]
      */
     public function getDeploymentJobs()
     {
@@ -356,7 +356,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Sets deploymentJobs
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[] $deploymentJobs Deployment jobs of the phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[] $deploymentJobs Deployment jobs of the phase.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Gets manualInterventions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]
      */
     public function getManualInterventions()
     {
@@ -404,7 +404,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Sets manualInterventions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[] $manualInterventions List of manual intervention tasks execution information in phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[] $manualInterventions List of manual intervention tasks execution information in phase.
      *
      * @return $this
      */
@@ -604,7 +604,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Gets ignoredGates
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IgnoredGate[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IgnoredGate[]
      */
     public function getIgnoredGates()
     {
@@ -614,7 +614,7 @@ class ReleaseGatesPhase implements ModelInterface, ArrayAccess
     /**
      * Sets ignoredGates
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IgnoredGate[] $ignoredGates List of ignored gates.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IgnoredGate[] $ignoredGates List of ignored gates.
      *
      * @return $this
      */

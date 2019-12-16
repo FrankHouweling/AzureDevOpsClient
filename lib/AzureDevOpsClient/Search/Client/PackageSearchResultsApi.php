@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Client;
+namespace FrankHouweling\AzureDevOpsClient\Search\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Search\ApiException;
-use AzureDevOpsClient\Search\Configuration;
-use AzureDevOpsClient\Search\HeaderSelector;
-use AzureDevOpsClient\Search\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Search\ApiException;
+use FrankHouweling\AzureDevOpsClient\Search\Configuration;
+use FrankHouweling\AzureDevOpsClient\Search\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * PackageSearchResultsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class PackageSearchResultsApi
      * Operation packageSearchResultsFetchPackageSearchResults
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent
      */
     public function packageSearchResultsFetchPackageSearchResults($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class PackageSearchResultsApi
      * Operation packageSearchResultsFetchPackageSearchResultsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent, HTTP status code, HTTP response headers (array of strings)
      */
     public function packageSearchResultsFetchPackageSearchResultsWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent';
         $request = $this->packageSearchResultsFetchPackageSearchResultsRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class PackageSearchResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent',
+                        '\FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class PackageSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class PackageSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class PackageSearchResultsApi
      */
     public function packageSearchResultsFetchPackageSearchResultsAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent';
         $request = $this->packageSearchResultsFetchPackageSearchResultsRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class PackageSearchResultsApi
      * Create request for operation 'packageSearchResultsFetchPackageSearchResults'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchRequest $body The Package Search Request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Client;
+namespace FrankHouweling\AzureDevOpsClient\Search\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Search\ApiException;
-use AzureDevOpsClient\Search\Configuration;
-use AzureDevOpsClient\Search\HeaderSelector;
-use AzureDevOpsClient\Search\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Search\ApiException;
+use FrankHouweling\AzureDevOpsClient\Search\Configuration;
+use FrankHouweling\AzureDevOpsClient\Search\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * RepositoriesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class RepositoriesApi
      * @param  string $repository Repository ID or repository name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse
      */
     public function repositoriesGet($organization, $project, $repository, $apiVersion)
     {
@@ -113,13 +113,13 @@ class RepositoriesApi
      * @param  string $repository Repository ID or repository name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesGetWithHttpInfo($organization, $project, $repository, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse';
         $request = $this->repositoriesGetRequest($organization, $project, $repository, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse',
+                        '\FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class RepositoriesApi
      */
     public function repositoriesGetAsyncWithHttpInfo($organization, $project, $repository, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\RepositoryStatusResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\RepositoryStatusResponse';
         $request = $this->repositoriesGetRequest($organization, $project, $repository, $apiVersion);
 
         return $this->client

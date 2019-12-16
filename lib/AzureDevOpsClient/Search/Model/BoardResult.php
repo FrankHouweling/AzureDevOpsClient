@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * BoardResult Class Doc Comment
  *
  * @category Class
  * @description Defines the Board result that matched a Board search request.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class BoardResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'boardtype' => 'string',
-        'collection' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection',
-        'project' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project',
-        'team' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Team'
+        'collection' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Collection',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Project',
+        'team' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Team'
     ];
 
     /**
@@ -250,7 +250,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Gets collection
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Collection
      */
     public function getCollection()
     {
@@ -260,7 +260,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Sets collection
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection $collection Collection details of the baord document.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Collection $collection Collection details of the baord document.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Project
      */
     public function getProject()
     {
@@ -284,7 +284,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project $project Project details of the board document.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Project $project Project details of the board document.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Gets team
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Team
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Team
      */
     public function getTeam()
     {
@@ -308,7 +308,7 @@ class BoardResult implements ModelInterface, ArrayAccess
     /**
      * Sets team
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Team $team Team details of the board document.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Team $team Team details of the board document.
      *
      * @return $this
      */

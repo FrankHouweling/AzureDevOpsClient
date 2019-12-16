@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**issue** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue**](Issue.md) |  | [optional] 
+**issue** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\Issue**](Issue.md) |  | [optional] 
 **issueSource** | **string** |  | [optional] 
-**project** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference**](ProjectReference.md) |  | [optional] 
-**releaseDefinitionReference** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference**](ReleaseDefinitionShallowReference.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference**](ProjectReference.md) |  | [optional] 
+**releaseDefinitionReference** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference**](ReleaseDefinitionShallowReference.md) |  | [optional] 
 **releaseTriggerType** | **string** |  | [optional] 
 **artifactType** | **string** | Artifact type. | [optional] 
 **artifactVersionId** | **string** | ArtifactVersion ID. | [optional] 

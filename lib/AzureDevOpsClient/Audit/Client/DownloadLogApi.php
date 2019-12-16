@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Client;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Audit\ApiException;
-use AzureDevOpsClient\Audit\Configuration;
-use AzureDevOpsClient\Audit\HeaderSelector;
-use AzureDevOpsClient\Audit\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Audit\ApiException;
+use FrankHouweling\AzureDevOpsClient\Audit\Configuration;
+use FrankHouweling\AzureDevOpsClient\Audit\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * DownloadLogApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,7 +96,7 @@ class DownloadLogApi
      * @param  \DateTime $startTime Start time of download window. Optional (optional)
      * @param  \DateTime $endTime End time of download window. Optional (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -115,7 +115,7 @@ class DownloadLogApi
      * @param  \DateTime $startTime Start time of download window. Optional (optional)
      * @param  \DateTime $endTime End time of download window. Optional (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

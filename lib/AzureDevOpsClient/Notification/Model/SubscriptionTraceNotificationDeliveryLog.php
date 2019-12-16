@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionTraceNotificationDeliveryLog Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,12 +67,12 @@ class SubscriptionTraceNotificationDeliveryLog implements ModelInterface, ArrayA
         'errors' => 'int',
         'id' => 'string',
         'logType' => 'string',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
         'properties' => 'map[string,string]',
         'source' => 'string',
         'startTime' => '\DateTime',
         'warnings' => 'int',
-        'notifications' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]'
+        'notifications' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]'
     ];
 
     /**
@@ -508,7 +508,7 @@ class SubscriptionTraceNotificationDeliveryLog implements ModelInterface, ArrayA
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -518,7 +518,7 @@ class SubscriptionTraceNotificationDeliveryLog implements ModelInterface, ArrayA
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
      *
      * @return $this
      */
@@ -628,7 +628,7 @@ class SubscriptionTraceNotificationDeliveryLog implements ModelInterface, ArrayA
     /**
      * Gets notifications
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]
      */
     public function getNotifications()
     {
@@ -638,7 +638,7 @@ class SubscriptionTraceNotificationDeliveryLog implements ModelInterface, ArrayA
     /**
      * Sets notifications
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[] $notifications notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[] $notifications notifications
      *
      * @return $this
      */

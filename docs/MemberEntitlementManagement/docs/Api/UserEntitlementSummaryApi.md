@@ -1,4 +1,4 @@
-# AzureDevOpsClient\MemberEntitlementManagement\UserEntitlementSummaryApi
+# FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\UserEntitlementSummaryApi
 
 All URIs are relative to *https://vsaex.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **userEntitlementSummaryGet**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UsersSummary userEntitlementSummaryGet($organization, $apiVersion, $select)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UsersSummary userEntitlementSummaryGet($organization, $apiVersion, $select)
 
 
 
@@ -20,9 +20,9 @@ Get summary of Licenses, Extension, Projects, Groups and their assignments in th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementSummaryApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementSummaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UsersSummary**](../Model/UsersSummary.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UsersSummary**](../Model/UsersSummary.md)
 
 ### Authorization
 

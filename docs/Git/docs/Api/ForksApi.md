@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\ForksApi
+# FrankHouweling\AzureDevOpsClient\Git\ForksApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **forksCreateForkSyncRequest**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest forksCreateForkSyncRequest($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest forksCreateForkSyncRequest($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks)
 
 
 
@@ -23,16 +23,16 @@ Request that another repository's refs be fetched into this one. It syncs two ex
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ForksApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ForksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters | Source repository and ref mapping.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters | Source repository and ref mapping.
 $repositoryNameOrId = "repositoryNameOrId_example"; // string | The name or ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -52,7 +52,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters**](../Model/GitForkSyncRequestParameters.md)| Source repository and ref mapping. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters**](../Model/GitForkSyncRequestParameters.md)| Source repository and ref mapping. |
  **repositoryNameOrId** | **string**| The name or ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest**](../Model/GitForkSyncRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest**](../Model/GitForkSyncRequest.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forksGetForkSyncRequest**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest forksGetForkSyncRequest($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest forksGetForkSyncRequest($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks)
 
 
 
@@ -86,9 +86,9 @@ Get a specific fork sync operation's details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ForksApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ForksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest**](../Model/GitForkSyncRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest**](../Model/GitForkSyncRequest.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forksGetForkSyncRequests**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[] forksGetForkSyncRequests($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[] forksGetForkSyncRequests($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned, $includeLinks)
 
 
 
@@ -149,9 +149,9 @@ Retrieve all requested fork sync operations on this repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ForksApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ForksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]**](../Model/GitForkSyncRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]**](../Model/GitForkSyncRequest.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **forksList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[] forksList($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[] forksList($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks)
 
 
 
@@ -212,9 +212,9 @@ Retrieve all forks of a repository in the collection.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ForksApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ForksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[]**](../Model/GitRepositoryRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[]**](../Model/GitRepositoryRef.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Audit\ActionsApi
+# FrankHouweling\AzureDevOpsClient\Audit\ActionsApi
 
 All URIs are relative to *https://auditservice.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **actionsList**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[] actionsList($organization, $apiVersion, $areaName)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[] actionsList($organization, $apiVersion, $areaName)
 
 
 
@@ -20,12 +20,12 @@ Get all auditable actions filterable by area.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\ActionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\ActionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditActionInfo[]**](../Model/AuditActionInfo.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditActionInfo[]**](../Model/AuditActionInfo.md)
 
 ### Authorization
 

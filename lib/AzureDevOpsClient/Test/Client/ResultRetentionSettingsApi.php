@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultRetentionSettingsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ResultRetentionSettingsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings
      */
     public function resultRetentionSettingsGet($organization, $project, $apiVersion)
     {
@@ -111,13 +111,13 @@ class ResultRetentionSettingsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function resultRetentionSettingsGetWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
         $request = $this->resultRetentionSettingsGetRequest($organization, $project, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class ResultRetentionSettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ResultRetentionSettingsApi
      */
     public function resultRetentionSettingsGetAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
         $request = $this->resultRetentionSettingsGetRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -394,13 +394,13 @@ class ResultRetentionSettingsApi
      * Operation resultRetentionSettingsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings
      */
     public function resultRetentionSettingsUpdate($organization, $body, $project, $apiVersion)
     {
@@ -412,17 +412,17 @@ class ResultRetentionSettingsApi
      * Operation resultRetentionSettingsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function resultRetentionSettingsUpdateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
         $request = $this->resultRetentionSettingsUpdateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -474,7 +474,7 @@ class ResultRetentionSettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class ResultRetentionSettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -513,7 +513,7 @@ class ResultRetentionSettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -522,7 +522,7 @@ class ResultRetentionSettingsApi
      */
     public function resultRetentionSettingsUpdateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings';
         $request = $this->resultRetentionSettingsUpdateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -566,7 +566,7 @@ class ResultRetentionSettingsApi
      * Create request for operation 'resultRetentionSettingsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\ResultRetentionSettings $body Test result retention settings details to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

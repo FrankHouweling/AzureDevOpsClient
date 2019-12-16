@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * PointAssignment Class Doc Comment
  *
  * @category Class
  * @description Adding test cases to a suite creates one of more test points based on the default configurations and testers assigned to the test suite. PointAssignment is the list of test points that were created for each of the test cases that were added to the test suite.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class PointAssignment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'configuration' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'tester' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef'
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'tester' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef'
     ];
 
     /**
@@ -214,7 +214,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getConfiguration()
     {
@@ -224,7 +224,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $configuration Configuration that was assigned to the test case.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $configuration Configuration that was assigned to the test case.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Gets tester
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getTester()
     {
@@ -248,7 +248,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Sets tester
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $tester Tester that was assigned to the test case
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $tester Tester that was assigned to the test case
      *
      * @return $this
      */

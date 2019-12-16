@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPlanCloneApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class TestPlanCloneApi
      * Operation testPlanCloneCloneTestPlan
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  bool $deepClone Clones all the associated test cases as well (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation
      */
     public function testPlanCloneCloneTestPlan($organization, $body, $project, $apiVersion, $deepClone = null)
     {
@@ -110,18 +110,18 @@ class TestPlanCloneApi
      * Operation testPlanCloneCloneTestPlanWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  bool $deepClone Clones all the associated test cases as well (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlanCloneCloneTestPlanWithHttpInfo($organization, $body, $project, $apiVersion, $deepClone = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
         $request = $this->testPlanCloneCloneTestPlanRequest($organization, $body, $project, $apiVersion, $deepClone);
 
         try {
@@ -173,7 +173,7 @@ class TestPlanCloneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class TestPlanCloneApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  bool $deepClone Clones all the associated test cases as well (optional)
@@ -213,7 +213,7 @@ class TestPlanCloneApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  bool $deepClone Clones all the associated test cases as well (optional)
@@ -223,7 +223,7 @@ class TestPlanCloneApi
      */
     public function testPlanCloneCloneTestPlanAsyncWithHttpInfo($organization, $body, $project, $apiVersion, $deepClone = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
         $request = $this->testPlanCloneCloneTestPlanRequest($organization, $body, $project, $apiVersion, $deepClone);
 
         return $this->client
@@ -267,7 +267,7 @@ class TestPlanCloneApi
      * Create request for operation 'testPlanCloneCloneTestPlan'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanParams $body Plan Clone Request Body detail TestPlanCloneRequest (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  bool $deepClone Clones all the associated test cases as well (optional)
@@ -421,9 +421,9 @@ class TestPlanCloneApi
      * @param  int $cloneOperationId Operation ID returned when we queue a clone operation (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation
      */
     public function testPlanCloneGet($organization, $project, $cloneOperationId, $apiVersion)
     {
@@ -439,13 +439,13 @@ class TestPlanCloneApi
      * @param  int $cloneOperationId Operation ID returned when we queue a clone operation (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlanCloneGetWithHttpInfo($organization, $project, $cloneOperationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
         $request = $this->testPlanCloneGetRequest($organization, $project, $cloneOperationId, $apiVersion);
 
         try {
@@ -497,7 +497,7 @@ class TestPlanCloneApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -545,7 +545,7 @@ class TestPlanCloneApi
      */
     public function testPlanCloneGetAsyncWithHttpInfo($organization, $project, $cloneOperationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestPlanOperationInformation';
         $request = $this->testPlanCloneGetRequest($organization, $project, $cloneOperationId, $apiVersion);
 
         return $this->client

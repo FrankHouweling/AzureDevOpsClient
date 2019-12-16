@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * DiagnosticRecipient Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class DiagnosticRecipient implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'recipient' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity',
+        'recipient' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity',
         'status' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class DiagnosticRecipient implements ModelInterface, ArrayAccess
     /**
      * Gets recipient
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity
      */
     public function getRecipient()
     {
@@ -224,7 +224,7 @@ class DiagnosticRecipient implements ModelInterface, ArrayAccess
     /**
      * Sets recipient
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity $recipient recipient
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity $recipient recipient
      *
      * @return $this
      */

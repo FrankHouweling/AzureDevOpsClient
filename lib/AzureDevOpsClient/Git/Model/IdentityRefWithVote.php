@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * IdentityRefWithVote Class Doc Comment
  *
  * @category Class
  * @description Identity information including a vote on a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,7 +67,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
         'isDeletedInOrigin' => 'bool',
         'profileUrl' => 'string',
         'uniqueName' => 'string',
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'descriptor' => 'string',
         'displayName' => 'string',
         'url' => 'string',
@@ -75,7 +75,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
         'isRequired' => 'bool',
         'reviewerUrl' => 'string',
         'vote' => 'int',
-        'votedFor' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]'
+        'votedFor' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]'
     ];
 
     /**
@@ -526,7 +526,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -536,7 +536,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject.
      *
      * @return $this
      */
@@ -718,7 +718,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
     /**
      * Gets votedFor
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
      */
     public function getVotedFor()
     {
@@ -728,7 +728,7 @@ class IdentityRefWithVote implements ModelInterface, ArrayAccess
     /**
      * Sets votedFor
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $votedFor Groups or teams that that this reviewer contributed to. <br /> Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list of such votes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $votedFor Groups or teams that that this reviewer contributed to. <br /> Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list of such votes.
      *
      * @return $this
      */

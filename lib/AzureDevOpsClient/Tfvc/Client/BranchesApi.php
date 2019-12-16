@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Client;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Tfvc\ApiException;
-use AzureDevOpsClient\Tfvc\Configuration;
-use AzureDevOpsClient\Tfvc\HeaderSelector;
-use AzureDevOpsClient\Tfvc\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ApiException;
+use FrankHouweling\AzureDevOpsClient\Tfvc\Configuration;
+use FrankHouweling\AzureDevOpsClient\Tfvc\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * BranchesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class BranchesApi
      * @param  bool $includeDeleted Return deleted branches. Default: False (optional)
      * @param  bool $includeLinks Return links. Default: False (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]
      */
     public function branchesGetBranchRefs($organization, $scopePath, $project, $apiVersion, $includeDeleted = null, $includeLinks = null)
     {
@@ -117,13 +117,13 @@ class BranchesApi
      * @param  bool $includeDeleted Return deleted branches. Default: False (optional)
      * @param  bool $includeLinks Return links. Default: False (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function branchesGetBranchRefsWithHttpInfo($organization, $scopePath, $project, $apiVersion, $includeDeleted = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]';
         $request = $this->branchesGetBranchRefsRequest($organization, $scopePath, $project, $apiVersion, $includeDeleted, $includeLinks);
 
         try {
@@ -175,7 +175,7 @@ class BranchesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class BranchesApi
      */
     public function branchesGetBranchRefsAsyncWithHttpInfo($organization, $scopePath, $project, $apiVersion, $includeDeleted = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]';
         $request = $this->branchesGetBranchRefsRequest($organization, $scopePath, $project, $apiVersion, $includeDeleted, $includeLinks);
 
         return $this->client

@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authenticationScheme** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference**](AuthenticationSchemeReference.md) | Gets or sets the authentication scheme for the endpoint request. | [optional] 
+**authenticationScheme** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference**](AuthenticationSchemeReference.md) | Gets or sets the authentication scheme for the endpoint request. | [optional] 
 **callbackContextTemplate** | **string** | Gets or sets the pagination format supported by this data source(ContinuationToken/SkipTop). | [optional] 
 **callbackRequiredTemplate** | **string** | Gets or sets the template to check if subsequent call is needed. | [optional] 
 **endpointUrl** | **string** | Gets or sets the endpoint url of the data source. | [optional] 
-**headers** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]**](AuthorizationHeader.md) | Gets or sets the authorization headers of the request. | [optional] 
+**headers** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]**](AuthorizationHeader.md) | Gets or sets the authorization headers of the request. | [optional] 
 **initialContextTemplate** | **string** | Gets or sets the initial value of the query params. | [optional] 
 **name** | **string** | Gets or sets the name of the data source. | [optional] 
 **requestContent** | **string** | Gets or sets the request content of the endpoint request. | [optional] 

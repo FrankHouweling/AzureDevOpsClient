@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * PermissionEvaluationBatch Class Doc Comment
  *
  * @category Class
  * @description Represents a set of evaluated permissions.
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PermissionEvaluationBatch implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'alwaysAllowAdministrators' => 'bool',
-        'evaluations' => '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluation[]'
+        'evaluations' => '\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluation[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PermissionEvaluationBatch implements ModelInterface, ArrayAccess
     /**
      * Gets evaluations
      *
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluation[]
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluation[]
      */
     public function getEvaluations()
     {
@@ -248,7 +248,7 @@ class PermissionEvaluationBatch implements ModelInterface, ArrayAccess
     /**
      * Sets evaluations
      *
-     * @param \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluation[] $evaluations Array of permission evaluations to evaluate.
+     * @param \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluation[] $evaluations Array of permission evaluations to evaluate.
      *
      * @return $this
      */

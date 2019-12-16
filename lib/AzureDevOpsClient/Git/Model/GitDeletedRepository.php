@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitDeletedRepository Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,11 +59,11 @@ class GitDeletedRepository implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'createdDate' => '\DateTime',
-        'deletedBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'deletedBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'deletedDate' => '\DateTime',
         'id' => 'string',
         'name' => 'string',
-        'project' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference'
+        'project' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference'
     ];
 
     /**
@@ -262,7 +262,7 @@ class GitDeletedRepository implements ModelInterface, ArrayAccess
     /**
      * Gets deletedBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getDeletedBy()
     {
@@ -272,7 +272,7 @@ class GitDeletedRepository implements ModelInterface, ArrayAccess
     /**
      * Sets deletedBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $deletedBy deletedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $deletedBy deletedBy
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class GitDeletedRepository implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -368,7 +368,7 @@ class GitDeletedRepository implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
      *
      * @return $this
      */

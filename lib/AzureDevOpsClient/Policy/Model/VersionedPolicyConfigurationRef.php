@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Policy\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * VersionedPolicyConfigurationRef Class Doc Comment
  *
  * @category Class
  * @description A particular revision for a policy configuration.
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class VersionedPolicyConfigurationRef implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'type' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef',
+        'type' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef',
         'url' => 'string',
         'revision' => 'int'
     ];
@@ -250,7 +250,7 @@ class VersionedPolicyConfigurationRef implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef
      */
     public function getType()
     {
@@ -260,7 +260,7 @@ class VersionedPolicyConfigurationRef implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef $type The policy configuration type.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef $type The policy configuration type.
      *
      * @return $this
      */

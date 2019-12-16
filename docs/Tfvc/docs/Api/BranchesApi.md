@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Tfvc\BranchesApi
+# FrankHouweling\AzureDevOpsClient\Tfvc\BranchesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **branchesGetBranchRefs**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[] branchesGetBranchRefs($organization, $scopePath, $project, $apiVersion, $includeDeleted, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[] branchesGetBranchRefs($organization, $scopePath, $project, $apiVersion, $includeDeleted, $includeLinks)
 
 
 
@@ -20,9 +20,9 @@ Get branch hierarchies below the specified scopePath
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\BranchesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\BranchesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]**](../Model/TfvcBranchRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchRef[]**](../Model/TfvcBranchRef.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\MembershipsApi
+# FrankHouweling\AzureDevOpsClient\Graph\MembershipsApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **membershipsAdd**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership membershipsAdd($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership membershipsAdd($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
 
 
 
@@ -24,9 +24,9 @@ Create a new membership between a container and subject.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\MembershipsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\MembershipsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership**](../Model/GraphMembership.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership**](../Model/GraphMembership.md)
 
 ### Authorization
 
@@ -83,9 +83,9 @@ Check to see if a membership relationship between a container and subject exists
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\MembershipsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\MembershipsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **membershipsGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership membershipsGet($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership membershipsGet($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
 
 
 
@@ -141,9 +141,9 @@ Get a membership relationship between a container and subject.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\MembershipsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\MembershipsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership**](../Model/GraphMembership.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership**](../Model/GraphMembership.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **membershipsList**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[] membershipsList($organization, $subjectDescriptor, $apiVersion, $direction, $depth)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[] membershipsList($organization, $subjectDescriptor, $apiVersion, $direction, $depth)
 
 
 
@@ -200,9 +200,9 @@ Get all the memberships where this descriptor is a member in the relationship.  
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\MembershipsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\MembershipsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[]**](../Model/GraphMembership.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[]**](../Model/GraphMembership.md)
 
 ### Authorization
 
@@ -261,9 +261,9 @@ Deletes a membership between a container and subject.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\MembershipsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\MembershipsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

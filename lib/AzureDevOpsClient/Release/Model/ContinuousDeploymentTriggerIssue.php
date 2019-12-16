@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ContinuousDeploymentTriggerIssue Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'issue' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue',
+        'issue' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Issue',
         'issueSource' => 'string',
-        'project' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
-        'releaseDefinitionReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
+        'releaseDefinitionReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
         'releaseTriggerType' => 'string',
         'artifactType' => 'string',
         'artifactVersionId' => 'string',
@@ -308,7 +308,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Gets issue
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Issue
      */
     public function getIssue()
     {
@@ -318,7 +318,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Sets issue
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue $issue issue
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Issue $issue issue
      *
      * @return $this
      */
@@ -365,7 +365,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProject()
     {
@@ -375,7 +375,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $project project
      *
      * @return $this
      */
@@ -389,7 +389,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinitionReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinitionReference()
     {
@@ -399,7 +399,7 @@ class ContinuousDeploymentTriggerIssue implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinitionReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinitionReference releaseDefinitionReference
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinitionReference releaseDefinitionReference
      *
      * @return $this
      */

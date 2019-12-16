@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CodeCoverageSummary Class Doc Comment
  *
  * @category Class
  * @description Represents the code coverage summary results Used to publish or retrieve code coverage summary against a build
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'coverageData' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageData[]',
-        'deltaBuild' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'coverageData' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageData[]',
+        'deltaBuild' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'status' => 'string'
     ];
 
@@ -255,7 +255,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getBuild()
     {
@@ -265,7 +265,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $build Uri of build for which data is retrieved/published
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $build Uri of build for which data is retrieved/published
      *
      * @return $this
      */
@@ -279,7 +279,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets coverageData
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageData[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageData[]
      */
     public function getCoverageData()
     {
@@ -289,7 +289,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets coverageData
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageData[] $coverageData List of coverage data and details for the build
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageData[] $coverageData List of coverage data and details for the build
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets deltaBuild
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDeltaBuild()
     {
@@ -313,7 +313,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets deltaBuild
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $deltaBuild Uri of build against which difference in coverage is computed
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $deltaBuild Uri of build against which difference in coverage is computed
      *
      * @return $this
      */

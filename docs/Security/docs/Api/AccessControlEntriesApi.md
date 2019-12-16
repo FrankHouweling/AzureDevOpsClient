@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Security\AccessControlEntriesApi
+# FrankHouweling\AzureDevOpsClient\Security\AccessControlEntriesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -21,9 +21,9 @@ Remove the specified ACEs from the ACL belonging to the specified token.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Security\Api\AccessControlEntriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\AccessControlEntriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **accessControlEntriesSetAccessControlEntries**
-> \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[] accessControlEntriesSetAccessControlEntries($body, $securityNamespaceId, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[] accessControlEntriesSetAccessControlEntries($body, $securityNamespaceId, $organization, $apiVersion)
 
 
 
@@ -82,15 +82,15 @@ Add or update ACEs in the ACL for the provided token. The request body contains 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Security\Api\AccessControlEntriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\AccessControlEntriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject(); // \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject | 
+$body = new \FrankHouweling\AzureDevOpsClient\Security\Model\JObject(); // \FrankHouweling\AzureDevOpsClient\Security\Model\JObject | 
 $securityNamespaceId = "securityNamespaceId_example"; // string | Security namespace identifier.
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -108,14 +108,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject**](../Model/JObject.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Security\Model\JObject**](../Model/JObject.md)|  |
  **securityNamespaceId** | [**string**](../Model/.md)| Security namespace identifier. |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[]**](../Model/AccessControlEntry.md)
+[**\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[]**](../Model/AccessControlEntry.md)
 
 ### Authorization
 

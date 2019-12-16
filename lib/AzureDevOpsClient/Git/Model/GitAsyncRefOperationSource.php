@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitAsyncRefOperationSource Class Doc Comment
  *
  * @category Class
  * @description GitAsyncRefOperationSource specifies the pull request or list of commits to use when making a cherry pick and revert operation request. Only one should be provided.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GitAsyncRefOperationSource implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'commitList' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+        'commitList' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
         'pullRequestId' => 'int'
     ];
 
@@ -214,7 +214,7 @@ class GitAsyncRefOperationSource implements ModelInterface, ArrayAccess
     /**
      * Gets commitList
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function getCommitList()
     {
@@ -224,7 +224,7 @@ class GitAsyncRefOperationSource implements ModelInterface, ArrayAccess
     /**
      * Sets commitList
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] $commitList A list of commits to cherry pick or revert
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] $commitList A list of commits to cherry pick or revert
      *
      * @return $this
      */

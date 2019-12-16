@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestCommitsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestCommitsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestCommitsGetPullRequestCommits**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] pullRequestCommitsGetPullRequestCommits($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] pullRequestCommitsGetPullRequestCommits($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top, $continuationToken)
 
 
 
@@ -21,9 +21,9 @@ Get the commits for the specified pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestCommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestCommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestCommitsGetPullRequestIterationCommits**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] pullRequestCommitsGetPullRequestIterationCommits($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] pullRequestCommitsGetPullRequestIterationCommits($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip)
 
 
 
@@ -86,9 +86,9 @@ Get the commits for the specified iteration of a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestCommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestCommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
 
 ### Authorization
 

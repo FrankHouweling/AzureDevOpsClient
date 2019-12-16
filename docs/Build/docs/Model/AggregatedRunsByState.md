@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**resultsByOutcome** | [**map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]**](AggregatedResultsByOutcome.md) |  | [optional] 
+**resultsByOutcome** | [**map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]**](AggregatedResultsByOutcome.md) |  | [optional] 
 **runsCount** | **int** |  | [optional] 
 **state** | **string** |  | [optional] 
 

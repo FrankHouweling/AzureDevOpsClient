@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\PropertiesApi
+# FrankHouweling\AzureDevOpsClient\Build\PropertiesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **propertiesGetBuildProperties**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesGetBuildProperties($organization, $project, $buildId, $apiVersion, $filter)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesGetBuildProperties($organization, $project, $buildId, $apiVersion, $filter)
 
 
 
@@ -23,9 +23,9 @@ Gets properties for a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\PropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\PropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **propertiesGetDefinitionProperties**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesGetDefinitionProperties($organization, $project, $definitionId, $apiVersion, $filter)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesGetDefinitionProperties($organization, $project, $definitionId, $apiVersion, $filter)
 
 
 
@@ -84,9 +84,9 @@ Gets properties for a definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\PropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\PropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **propertiesUpdateBuildProperties**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesUpdateBuildProperties($organization, $body, $project, $buildId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesUpdateBuildProperties($organization, $body, $project, $buildId, $apiVersion)
 
 
 
@@ -145,16 +145,16 @@ Updates properties for a build.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\PropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\PropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument | A json-patch document describing the properties to update.
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument | A json-patch document describing the properties to update.
 $project = "project_example"; // string | Project ID or project name
 $buildId = 56; // int | The ID of the build.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -173,14 +173,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A json-patch document describing the properties to update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A json-patch document describing the properties to update. |
  **project** | **string**| Project ID or project name |
  **buildId** | **int**| The ID of the build. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **propertiesUpdateDefinitionProperties**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesUpdateDefinitionProperties($organization, $body, $project, $definitionId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection propertiesUpdateDefinitionProperties($organization, $body, $project, $definitionId, $apiVersion)
 
 
 
@@ -206,16 +206,16 @@ Updates properties for a definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\PropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\PropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument | A json-patch document describing the properties to update.
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument | A json-patch document describing the properties to update.
 $project = "project_example"; // string | Project ID or project name
 $definitionId = 56; // int | The ID of the definition.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -234,14 +234,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A json-patch document describing the properties to update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A json-patch document describing the properties to update. |
  **project** | **string**| Project ID or project name |
  **definitionId** | **int**| The ID of the definition. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Security\PermissionsApi
+# FrankHouweling\AzureDevOpsClient\Security\PermissionsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -22,12 +22,12 @@ Evaluates whether the caller has the specified permissions on the specified set 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Security\Api\PermissionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\PermissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **permissionsHasPermissionsBatch**
-> \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch permissionsHasPermissionsBatch($body, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch permissionsHasPermissionsBatch($body, $organization, $apiVersion)
 
 
 
@@ -90,18 +90,18 @@ Evaluates multiple permissions for the calling user.  Note: This method does not
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Security\Api\PermissionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\PermissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch(); // \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch | The set of evaluation requests.
+$body = new \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch(); // \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch | The set of evaluation requests.
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -118,13 +118,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch**](../Model/PermissionEvaluationBatch.md)| The set of evaluation requests. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch**](../Model/PermissionEvaluationBatch.md)| The set of evaluation requests. |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch**](../Model/PermissionEvaluationBatch.md)
+[**\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch**](../Model/PermissionEvaluationBatch.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **permissionsRemovePermission**
-> \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry permissionsRemovePermission($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token)
+> \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry permissionsRemovePermission($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token)
 
 
 
@@ -150,9 +150,9 @@ Removes the specified permissions on a security token for a user or group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Security\Api\PermissionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\PermissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry**](../Model/AccessControlEntry.md)
+[**\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry**](../Model/AccessControlEntry.md)
 
 ### Authorization
 

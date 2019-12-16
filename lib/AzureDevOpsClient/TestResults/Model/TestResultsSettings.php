@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultsSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestResultsSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakySettings' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakySettings'
+        'flakySettings' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakySettings'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestResultsSettings implements ModelInterface, ArrayAccess
     /**
      * Gets flakySettings
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakySettings
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakySettings
      */
     public function getFlakySettings()
     {
@@ -218,7 +218,7 @@ class TestResultsSettings implements ModelInterface, ArrayAccess
     /**
      * Sets flakySettings
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakySettings $flakySettings IsRequired and EmitDefaultValue are passed as false as if users doesn't pass anything, should not come for serialisation and deserialisation.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakySettings $flakySettings IsRequired and EmitDefaultValue are passed as false as if users doesn't pass anything, should not come for serialisation and deserialisation.
      *
      * @return $this
      */

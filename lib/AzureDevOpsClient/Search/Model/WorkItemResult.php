@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * WorkItemResult Class Doc Comment
  *
  * @category Class
  * @description Defines the work item result that matched a work item search request.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class WorkItemResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'fields' => 'map[string,string]',
-        'hits' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemHit[]',
-        'project' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project',
+        'hits' => '\FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemHit[]',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Project',
         'url' => 'string'
     ];
 
@@ -250,7 +250,7 @@ class WorkItemResult implements ModelInterface, ArrayAccess
     /**
      * Gets hits
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemHit[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemHit[]
      */
     public function getHits()
     {
@@ -260,7 +260,7 @@ class WorkItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets hits
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WorkItemHit[] $hits Highlighted snippets of fields that match the search request. The list is sorted by relevance of the snippets.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\WorkItemHit[] $hits Highlighted snippets of fields that match the search request. The list is sorted by relevance of the snippets.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class WorkItemResult implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Project
      */
     public function getProject()
     {
@@ -284,7 +284,7 @@ class WorkItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project $project Project details of the work item.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Project $project Project details of the work item.
      *
      * @return $this
      */

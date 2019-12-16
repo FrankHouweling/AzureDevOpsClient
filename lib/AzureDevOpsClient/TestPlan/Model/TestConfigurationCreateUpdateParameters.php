@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestConfigurationCreateUpdateParameters Class Doc Comment
  *
  * @category Class
  * @description Test Configuration Create or Update Parameters
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class TestConfigurationCreateUpdateParameters implements ModelInterface, ArrayAc
         'isDefault' => 'bool',
         'name' => 'string',
         'state' => 'string',
-        'values' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[]'
+        'values' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[]'
     ];
 
     /**
@@ -360,7 +360,7 @@ class TestConfigurationCreateUpdateParameters implements ModelInterface, ArrayAc
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[]
      */
     public function getValues()
     {
@@ -370,7 +370,7 @@ class TestConfigurationCreateUpdateParameters implements ModelInterface, ArrayAc
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **id** | **int** | Gets or sets the Id of service endpoint execution owner. | [optional] 
 **name** | **string** | Gets or sets the name of service endpoint execution owner. | [optional] 
 

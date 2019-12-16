@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GroupOperationResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class GroupOperationResult implements ModelInterface, ArrayAccess
         'errors' => 'object[]',
         'isSuccess' => 'bool',
         'groupId' => 'string',
-        'result' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement'
+        'result' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement'
     ];
 
     /**
@@ -298,7 +298,7 @@ class GroupOperationResult implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement
      */
     public function getResult()
     {
@@ -308,7 +308,7 @@ class GroupOperationResult implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $result Result of the Groupentitlement after the operation
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $result Result of the Groupentitlement after the operation
      *
      * @return $this
      */

@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**agents** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildAgentReference[]**](BuildAgentReference.md) |  | [optional] 
-**controller** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildControllerReference**](XamlBuildControllerReference.md) |  | [optional] 
+**agents** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildAgentReference[]**](BuildAgentReference.md) |  | [optional] 
+**controller** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildControllerReference**](XamlBuildControllerReference.md) |  | [optional] 
 **id** | **int** |  | [optional] 
 **isVirtual** | **bool** |  | [optional] 
 **messageQueueUrl** | **string** |  | [optional] 

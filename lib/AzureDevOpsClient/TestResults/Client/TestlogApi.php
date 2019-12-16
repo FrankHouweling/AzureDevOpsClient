@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestResults\ApiException;
-use AzureDevOpsClient\TestResults\Configuration;
-use AzureDevOpsClient\TestResults\HeaderSelector;
-use AzureDevOpsClient\TestResults\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestResults\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestResults\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestResults\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestlogApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -102,9 +102,9 @@ class TestlogApi
      * @param  int $top Numbe of attachments reference to return (optional)
      * @param  string $continuationToken Header to pass the continuationToken (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]
      */
     public function testlogGetTestResultLogs($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
@@ -127,13 +127,13 @@ class TestlogApi
      * @param  int $top Numbe of attachments reference to return (optional)
      * @param  string $continuationToken Header to pass the continuationToken (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogGetTestResultLogsWithHttpInfo($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]';
         $request = $this->testlogGetTestResultLogsRequest($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken);
 
         try {
@@ -185,7 +185,7 @@ class TestlogApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class TestlogApi
      */
     public function testlogGetTestResultLogsAsyncWithHttpInfo($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]';
         $request = $this->testlogGetTestResultLogsRequest($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken);
 
         return $this->client
@@ -502,9 +502,9 @@ class TestlogApi
      * @param  int $top Number of attachments reference to return (optional)
      * @param  string $continuationToken Header to pass the continuationToken (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]
      */
     public function testlogGetTestRunLogs($organization, $project, $runId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
@@ -526,13 +526,13 @@ class TestlogApi
      * @param  int $top Number of attachments reference to return (optional)
      * @param  string $continuationToken Header to pass the continuationToken (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogGetTestRunLogsWithHttpInfo($organization, $project, $runId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]';
         $request = $this->testlogGetTestRunLogsRequest($organization, $project, $runId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken);
 
         try {
@@ -584,7 +584,7 @@ class TestlogApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class TestlogApi
      */
     public function testlogGetTestRunLogsAsyncWithHttpInfo($organization, $project, $runId, $type, $apiVersion, $directoryPath = null, $fileNamePrefix = null, $fetchMetaData = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]';
         $request = $this->testlogGetTestRunLogsRequest($organization, $project, $runId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken);
 
         return $this->client

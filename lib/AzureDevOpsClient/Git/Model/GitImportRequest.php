@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitImportRequest Class Doc Comment
  *
  * @category Class
  * @description A request to import data from a remote source control system.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class GitImportRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'detailedStatus' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportStatusDetail',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'detailedStatus' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportStatusDetail',
         'importRequestId' => 'int',
-        'parameters' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequestParameters',
-        'repository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
+        'parameters' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequestParameters',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
         'status' => 'string',
         'url' => 'string'
     ];
@@ -273,7 +273,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -283,7 +283,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to related resources.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to related resources.
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Gets detailedStatus
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportStatusDetail
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportStatusDetail
      */
     public function getDetailedStatus()
     {
@@ -307,7 +307,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Sets detailedStatus
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportStatusDetail $detailedStatus Detailed status of the import, including the current step and an error message, if applicable.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportStatusDetail $detailedStatus Detailed status of the import, including the current step and an error message, if applicable.
      *
      * @return $this
      */
@@ -345,7 +345,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Gets parameters
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequestParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequestParameters
      */
     public function getParameters()
     {
@@ -355,7 +355,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Sets parameters
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequestParameters $parameters Parameters for creating the import request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequestParameters $parameters Parameters for creating the import request.
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getRepository()
     {
@@ -379,7 +379,7 @@ class GitImportRequest implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $repository The target repository for this import.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $repository The target repository for this import.
      *
      * @return $this
      */

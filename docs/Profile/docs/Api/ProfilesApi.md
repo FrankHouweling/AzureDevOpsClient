@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Profile\ProfilesApi
+# FrankHouweling\AzureDevOpsClient\Profile\ProfilesApi
 
 All URIs are relative to *https://app.vssps.visualstudio.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **profilesGet**
-> \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile profilesGet($id, $apiVersion, $details, $withAttributes, $partition, $coreAttributes, $forceRefresh)
+> \FrankHouweling\AzureDevOpsClient\Profile\Model\Profile profilesGet($id, $apiVersion, $details, $withAttributes, $partition, $coreAttributes, $forceRefresh)
 
 
 
@@ -20,9 +20,9 @@ Gets a user profile.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Profile\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Profile\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Profile\Api\ProfilesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Profile\Api\ProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile**](../Model/Profile.md)
+[**\FrankHouweling\AzureDevOpsClient\Profile\Model\Profile**](../Model/Profile.md)
 
 ### Authorization
 

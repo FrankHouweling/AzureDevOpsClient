@@ -1,4 +1,4 @@
-# AzureDevOpsClient\ServiceEndpoint\TypesApi
+# FrankHouweling\AzureDevOpsClient\ServiceEndpoint\TypesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **typesList**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[] typesList($organization, $apiVersion, $type, $scheme)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[] typesList($organization, $apiVersion, $type, $scheme)
 
 
 
@@ -20,9 +20,9 @@ Get service endpoint types.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\TypesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\TypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]**](../Model/ServiceEndpointType.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]**](../Model/ServiceEndpointType.md)
 
 ### Authorization
 

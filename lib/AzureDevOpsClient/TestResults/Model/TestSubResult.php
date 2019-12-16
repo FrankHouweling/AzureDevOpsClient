@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestSubResult Class Doc Comment
  *
  * @category Class
  * @description Represents a sub result of a test result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class TestSubResult implements ModelInterface, ArrayAccess
         'comment' => 'string',
         'completedDate' => '\DateTime',
         'computerName' => 'string',
-        'configuration' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'customFields' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[]',
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'customFields' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[]',
         'displayName' => 'string',
         'durationInMs' => 'int',
         'errorMessage' => 'string',
@@ -74,8 +74,8 @@ class TestSubResult implements ModelInterface, ArrayAccess
         'sequenceId' => 'int',
         'stackTrace' => 'string',
         'startedDate' => '\DateTime',
-        'subResults' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[]',
-        'testResult' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier',
+        'subResults' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[]',
+        'testResult' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier',
         'url' => 'string'
     ];
 
@@ -417,7 +417,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getConfiguration()
     {
@@ -427,7 +427,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $configuration Reference to test configuration.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $configuration Reference to test configuration.
      *
      * @return $this
      */
@@ -441,7 +441,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Gets customFields
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[]
      */
     public function getCustomFields()
     {
@@ -451,7 +451,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Sets customFields
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[] $customFields Additional properties of sub result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[] $customFields Additional properties of sub result.
      *
      * @return $this
      */
@@ -738,7 +738,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Gets subResults
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[]
      */
     public function getSubResults()
     {
@@ -748,7 +748,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Sets subResults
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[] $subResults List of sub results inside a sub result, if ResultGroupType is not None, it holds corresponding type sub results.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[] $subResults List of sub results inside a sub result, if ResultGroupType is not None, it holds corresponding type sub results.
      *
      * @return $this
      */
@@ -762,7 +762,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Gets testResult
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier
      */
     public function getTestResult()
     {
@@ -772,7 +772,7 @@ class TestSubResult implements ModelInterface, ArrayAccess
     /**
      * Sets testResult
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier $testResult Reference to test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier $testResult Reference to test result.
      *
      * @return $this
      */

@@ -57,16 +57,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Policy\Api\ConfigurationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Policy\Api\ConfigurationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration(); // \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration | The policy configuration to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration(); // \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration | The policy configuration to create.
 $project = "project_example"; // string | Project ID or project name
 $configurationId = 56; // int | 
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.

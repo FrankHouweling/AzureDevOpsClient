@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Tfvc\LabelsApi
+# FrankHouweling\AzureDevOpsClient\Tfvc\LabelsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **labelsGet**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel labelsGet($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel labelsGet($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner)
 
 
 
@@ -22,9 +22,9 @@ Get a single deep label.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\LabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\LabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel**](../Model/TfvcLabel.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel**](../Model/TfvcLabel.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **labelsGetLabelItems**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[] labelsGetLabelItems($organization, $labelId, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[] labelsGetLabelItems($organization, $labelId, $apiVersion, $top, $skip)
 
 
 
@@ -93,9 +93,9 @@ Get items under a label.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\LabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\LabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]**](../Model/TfvcItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]**](../Model/TfvcItem.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **labelsList**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[] labelsList($organization, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[] labelsList($organization, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner, $top, $skip)
 
 
 
@@ -154,9 +154,9 @@ Get a collection of shallow label references.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\LabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\LabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]**](../Model/TfvcLabelRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]**](../Model/TfvcLabelRef.md)
 
 ### Authorization
 

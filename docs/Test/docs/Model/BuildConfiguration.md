@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **id** | **int** | BuildConfiguration Id. | [optional] 
 **number** | **string** | Build Number. | [optional] 
 **platform** | **string** | BuildConfiguration Platform. | [optional] 
-**project** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference**](ShallowReference.md) | Project associated with this BuildConfiguration. | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference**](ShallowReference.md) | Project associated with this BuildConfiguration. | [optional] 
 **repositoryGuid** | **string** | Repository Guid for the Build. | [optional] 
 **repositoryType** | **string** | Repository Type (eg. TFSGit). | [optional] 
 **sourceVersion** | **string** | Source Version(/first commit) for the build was triggered. | [optional] 

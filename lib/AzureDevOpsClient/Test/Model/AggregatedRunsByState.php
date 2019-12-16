@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * AggregatedRunsByState Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resultsByOutcome' => 'map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]',
+        'resultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]',
         'runsCount' => 'int',
         'state' => 'string'
     ];
@@ -253,7 +253,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
     /**
      * Gets resultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome]
      */
     public function getResultsByOutcome()
     {
@@ -263,7 +263,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
     /**
      * Sets resultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
      *
      * @return $this
      */

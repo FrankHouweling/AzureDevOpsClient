@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionQueryCondition Class Doc Comment
  *
  * @category Class
  * @description Conditions a subscription must match to qualify for the query result set. Not all fields are required. A subscription must match all conditions specified in order to qualify for the result set.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SubscriptionQueryCondition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'filter' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
+        'filter' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
         'flags' => 'string',
         'scope' => 'string',
         'subscriberId' => 'string',
@@ -263,7 +263,7 @@ class SubscriptionQueryCondition implements ModelInterface, ArrayAccess
     /**
      * Gets filter
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
      */
     public function getFilter()
     {
@@ -273,7 +273,7 @@ class SubscriptionQueryCondition implements ModelInterface, ArrayAccess
     /**
      * Sets filter
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Filter conditions that matching subscriptions must have. Typically only the filter's type and event type are used for matching.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Filter conditions that matching subscriptions must have. Typically only the filter's type and event type are used for matching.
      *
      * @return $this
      */

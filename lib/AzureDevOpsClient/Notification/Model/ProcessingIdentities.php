@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ProcessingIdentities Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'excludedIdentities' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]',
-        'includedIdentities' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'excludedIdentities' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]',
+        'includedIdentities' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
         'missingIdentities' => 'string[]',
         'properties' => 'map[string,string]'
     ];
@@ -232,7 +232,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Gets excludedIdentities
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]
      */
     public function getExcludedIdentities()
     {
@@ -242,7 +242,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Sets excludedIdentities
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity] $excludedIdentities excludedIdentities
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity] $excludedIdentities excludedIdentities
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Gets includedIdentities
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]
      */
     public function getIncludedIdentities()
     {
@@ -266,7 +266,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Sets includedIdentities
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity] $includedIdentities includedIdentities
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity] $includedIdentities includedIdentities
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -290,7 +290,7 @@ class ProcessingIdentities implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
      *
      * @return $this
      */

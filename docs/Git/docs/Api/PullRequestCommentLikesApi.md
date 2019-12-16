@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestCommentLikesApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestCommentLikesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -22,9 +22,9 @@ Add a like on a comment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -86,9 +86,9 @@ Delete a like on a comment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -138,7 +138,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestCommentLikesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] pullRequestCommentLikesList($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] pullRequestCommentLikesList($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
 
 
 
@@ -150,9 +150,9 @@ Get likes for a comment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestCommentLikesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]**](../Model/IdentityRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]**](../Model/IdentityRef.md)
 
 ### Authorization
 

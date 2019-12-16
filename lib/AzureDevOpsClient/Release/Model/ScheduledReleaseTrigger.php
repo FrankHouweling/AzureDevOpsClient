@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ScheduledReleaseTrigger Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ScheduledReleaseTrigger implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'triggerType' => 'string',
-        'schedule' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule'
+        'schedule' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule'
     ];
 
     /**
@@ -280,7 +280,7 @@ class ScheduledReleaseTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets schedule
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule
      */
     public function getSchedule()
     {
@@ -290,7 +290,7 @@ class ScheduledReleaseTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets schedule
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule $schedule Release schedule for Scheduled Release trigger type.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule $schedule Release schedule for Scheduled Release trigger type.
      *
      * @return $this
      */

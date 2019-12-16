@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultHistoryForGroup Class Doc Comment
  *
  * @category Class
  * @description List of test results filtered on the basis of GroupByValue
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'displayName' => 'string',
         'groupByValue' => 'string',
-        'results' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]'
+        'results' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]
      */
     public function getResults()
     {
@@ -278,7 +278,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $results List of results for GroupByValue
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $results List of results for GroupByValue
      *
      * @return $this
      */

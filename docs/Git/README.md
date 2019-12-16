@@ -57,16 +57,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag | Object containing details of tag to be created.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag | Object containing details of tag to be created.
 $project = "project_example"; // string | Project ID or project name
 $repositoryId = "repositoryId_example"; // string | ID or name of the repository.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.

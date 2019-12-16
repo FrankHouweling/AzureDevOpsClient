@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Client;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Dashboard\ApiException;
-use AzureDevOpsClient\Dashboard\Configuration;
-use AzureDevOpsClient\Dashboard\HeaderSelector;
-use AzureDevOpsClient\Dashboard\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ApiException;
+use FrankHouweling\AzureDevOpsClient\Dashboard\Configuration;
+use FrankHouweling\AzureDevOpsClient\Dashboard\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetTypesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class WidgetTypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse
      */
     public function widgetTypesGetWidgetMetadata($organization, $contributionId, $project, $apiVersion)
     {
@@ -113,13 +113,13 @@ class WidgetTypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetTypesGetWidgetMetadataWithHttpInfo($organization, $contributionId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse';
         $request = $this->widgetTypesGetWidgetMetadataRequest($organization, $contributionId, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class WidgetTypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class WidgetTypesApi
      */
     public function widgetTypesGetWidgetMetadataAsyncWithHttpInfo($organization, $contributionId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse';
         $request = $this->widgetTypesGetWidgetMetadataRequest($organization, $contributionId, $project, $apiVersion);
 
         return $this->client
@@ -417,9 +417,9 @@ class WidgetTypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse
      */
     public function widgetTypesGetWidgetTypes($organization, $scope, $project, $apiVersion)
     {
@@ -435,13 +435,13 @@ class WidgetTypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetTypesGetWidgetTypesWithHttpInfo($organization, $scope, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse';
         $request = $this->widgetTypesGetWidgetTypesRequest($organization, $scope, $project, $apiVersion);
 
         try {
@@ -493,7 +493,7 @@ class WidgetTypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -541,7 +541,7 @@ class WidgetTypesApi
      */
     public function widgetTypesGetWidgetTypesAsyncWithHttpInfo($organization, $scope, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse';
         $request = $this->widgetTypesGetWidgetTypesRequest($organization, $scope, $project, $apiVersion);
 
         return $this->client

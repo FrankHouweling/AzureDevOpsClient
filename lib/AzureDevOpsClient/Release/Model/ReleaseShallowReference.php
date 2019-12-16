@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseShallowReference Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ReleaseShallowReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks',
         'id' => 'int',
         'name' => 'string',
         'url' => 'string'
@@ -226,7 +226,7 @@ class ReleaseShallowReference implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -236,7 +236,7 @@ class ReleaseShallowReference implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets the links to related resources, APIs, and views for the release.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets the links to related resources, APIs, and views for the release.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * WebApiTeam Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class WebApiTeam implements ModelInterface, ArrayAccess
         'name' => 'string',
         'url' => 'string',
         'description' => 'string',
-        'identity' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Identity',
+        'identity' => '\FrankHouweling\AzureDevOpsClient\Core\Model\Identity',
         'identityUrl' => 'string',
         'projectId' => 'string',
         'projectName' => 'string'
@@ -346,7 +346,7 @@ class WebApiTeam implements ModelInterface, ArrayAccess
     /**
      * Gets identity
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Identity
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\Identity
      */
     public function getIdentity()
     {
@@ -356,7 +356,7 @@ class WebApiTeam implements ModelInterface, ArrayAccess
     /**
      * Sets identity
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Identity $identity Team identity.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\Identity $identity Team identity.
      *
      * @return $this
      */

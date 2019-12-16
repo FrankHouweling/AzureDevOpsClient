@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationBatch Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class NotificationBatch implements ModelInterface, ArrayAccess
         'endTime' => 'string',
         'notificationCount' => 'int',
         'notificationIds' => 'string',
-        'problematicNotifications' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]',
+        'problematicNotifications' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]',
         'startTime' => 'string'
     ];
 
@@ -304,7 +304,7 @@ class NotificationBatch implements ModelInterface, ArrayAccess
     /**
      * Gets problematicNotifications
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[]
      */
     public function getProblematicNotifications()
     {
@@ -314,7 +314,7 @@ class NotificationBatch implements ModelInterface, ArrayAccess
     /**
      * Sets problematicNotifications
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticNotification[] $problematicNotifications problematicNotifications
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticNotification[] $problematicNotifications problematicNotifications
      *
      * @return $this
      */

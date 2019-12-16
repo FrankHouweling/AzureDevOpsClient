@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestFailureDetails Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'count' => 'int',
-        'testResults' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[]'
+        'testResults' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
     /**
      * Gets testResults
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[]
      */
     public function getTestResults()
     {
@@ -248,7 +248,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
     /**
      * Sets testResults
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[] $testResults testResults
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultIdentifier[] $testResults testResults
      *
      * @return $this
      */

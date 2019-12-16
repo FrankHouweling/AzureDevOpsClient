@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestPointsUpdatedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestPointsUpdatedEvent implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'projectName' => 'string',
-        'testPoints' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointReference[]'
+        'testPoints' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPointReference[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestPointsUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets testPoints
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointReference[]
      */
     public function getTestPoints()
     {
@@ -248,7 +248,7 @@ class TestPointsUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets testPoints
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointReference[] $testPoints testPoints
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointReference[] $testPoints testPoints
      *
      * @return $this
      */

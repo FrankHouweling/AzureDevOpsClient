@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestSuiteEntryApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class TestSuiteEntryApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $suiteEntryType  (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]
      */
     public function testSuiteEntryList($organization, $project, $suiteId, $apiVersion, $suiteEntryType = null)
     {
@@ -115,13 +115,13 @@ class TestSuiteEntryApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $suiteEntryType  (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuiteEntryListWithHttpInfo($organization, $project, $suiteId, $apiVersion, $suiteEntryType = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
         $request = $this->testSuiteEntryListRequest($organization, $project, $suiteId, $apiVersion, $suiteEntryType);
 
         try {
@@ -173,7 +173,7 @@ class TestSuiteEntryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class TestSuiteEntryApi
      */
     public function testSuiteEntryListAsyncWithHttpInfo($organization, $project, $suiteId, $apiVersion, $suiteEntryType = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
         $request = $this->testSuiteEntryListRequest($organization, $project, $suiteId, $apiVersion, $suiteEntryType);
 
         return $this->client
@@ -422,14 +422,14 @@ class TestSuiteEntryApi
      * Operation testSuiteEntryReorderSuiteEntries
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $suiteId Id of the parent test suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]
      */
     public function testSuiteEntryReorderSuiteEntries($organization, $body, $project, $suiteId, $apiVersion)
     {
@@ -441,18 +441,18 @@ class TestSuiteEntryApi
      * Operation testSuiteEntryReorderSuiteEntriesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $suiteId Id of the parent test suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuiteEntryReorderSuiteEntriesWithHttpInfo($organization, $body, $project, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
         $request = $this->testSuiteEntryReorderSuiteEntriesRequest($organization, $body, $project, $suiteId, $apiVersion);
 
         try {
@@ -504,7 +504,7 @@ class TestSuiteEntryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -520,7 +520,7 @@ class TestSuiteEntryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $suiteId Id of the parent test suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -544,7 +544,7 @@ class TestSuiteEntryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $suiteId Id of the parent test suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -554,7 +554,7 @@ class TestSuiteEntryApi
      */
     public function testSuiteEntryReorderSuiteEntriesAsyncWithHttpInfo($organization, $body, $project, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]';
         $request = $this->testSuiteEntryReorderSuiteEntriesRequest($organization, $body, $project, $suiteId, $apiVersion);
 
         return $this->client
@@ -598,7 +598,7 @@ class TestSuiteEntryApi
      * Create request for operation 'testSuiteEntryReorderSuiteEntries'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] $body List of SuiteEntry to reorder. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $suiteId Id of the parent test suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

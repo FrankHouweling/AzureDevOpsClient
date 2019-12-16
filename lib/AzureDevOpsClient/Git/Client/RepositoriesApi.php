@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * RepositoriesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class RepositoriesApi
      * Operation repositoriesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $sourceRef [optional] Specify the source refs to use while creating a fork repo (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function repositoriesCreate($organization, $body, $project, $apiVersion, $sourceRef = null)
     {
@@ -110,18 +110,18 @@ class RepositoriesApi
      * Operation repositoriesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $sourceRef [optional] Specify the source refs to use while creating a fork repo (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesCreateWithHttpInfo($organization, $body, $project, $apiVersion, $sourceRef = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesCreateRequest($organization, $body, $project, $apiVersion, $sourceRef);
 
         try {
@@ -173,7 +173,7 @@ class RepositoriesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $sourceRef [optional] Specify the source refs to use while creating a fork repo (optional)
@@ -213,7 +213,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $sourceRef [optional] Specify the source refs to use while creating a fork repo (optional)
@@ -223,7 +223,7 @@ class RepositoriesApi
      */
     public function repositoriesCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion, $sourceRef = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesCreateRequest($organization, $body, $project, $apiVersion, $sourceRef);
 
         return $this->client
@@ -267,7 +267,7 @@ class RepositoriesApi
      * Create request for operation 'repositoriesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions $body Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $sourceRef [optional] Specify the source refs to use while creating a fork repo (optional)
@@ -421,7 +421,7 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -438,7 +438,7 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -706,7 +706,7 @@ class RepositoriesApi
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -723,7 +723,7 @@ class RepositoriesApi
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -990,9 +990,9 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]
      */
     public function repositoriesGetDeletedRepositories($organization, $project, $apiVersion)
     {
@@ -1007,13 +1007,13 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[], HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesGetDeletedRepositoriesWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
         $request = $this->repositoriesGetDeletedRepositoriesRequest($organization, $project, $apiVersion);
 
         try {
@@ -1065,7 +1065,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1111,7 +1111,7 @@ class RepositoriesApi
      */
     public function repositoriesGetDeletedRepositoriesAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
         $request = $this->repositoriesGetDeletedRepositoriesRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1293,9 +1293,9 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]
      */
     public function repositoriesGetRecycleBinRepositories($organization, $project, $apiVersion)
     {
@@ -1310,13 +1310,13 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[], HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesGetRecycleBinRepositoriesWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
         $request = $this->repositoriesGetRecycleBinRepositoriesRequest($organization, $project, $apiVersion);
 
         try {
@@ -1368,7 +1368,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1414,7 +1414,7 @@ class RepositoriesApi
      */
     public function repositoriesGetRecycleBinRepositoriesAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]';
         $request = $this->repositoriesGetRecycleBinRepositoriesRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1597,9 +1597,9 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function repositoriesGetRepository($organization, $repositoryId, $project, $apiVersion)
     {
@@ -1615,13 +1615,13 @@ class RepositoriesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesGetRepositoryWithHttpInfo($organization, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesGetRepositoryRequest($organization, $repositoryId, $project, $apiVersion);
 
         try {
@@ -1673,7 +1673,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1721,7 +1721,7 @@ class RepositoriesApi
      */
     public function repositoriesGetRepositoryAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesGetRepositoryRequest($organization, $repositoryId, $project, $apiVersion);
 
         return $this->client
@@ -1921,9 +1921,9 @@ class RepositoriesApi
      * @param  bool $includeAllUrls [optional] True to include all remote URLs. The default value is false. (optional)
      * @param  bool $includeHidden [optional] True to include hidden repositories. The default value is false. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[]
      */
     public function repositoriesList($organization, $project, $apiVersion, $includeLinks = null, $includeAllUrls = null, $includeHidden = null)
     {
@@ -1941,13 +1941,13 @@ class RepositoriesApi
      * @param  bool $includeAllUrls [optional] True to include all remote URLs. The default value is false. (optional)
      * @param  bool $includeHidden [optional] True to include hidden repositories. The default value is false. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[], HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesListWithHttpInfo($organization, $project, $apiVersion, $includeLinks = null, $includeAllUrls = null, $includeHidden = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[]';
         $request = $this->repositoriesListRequest($organization, $project, $apiVersion, $includeLinks, $includeAllUrls, $includeHidden);
 
         try {
@@ -1999,7 +1999,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2051,7 +2051,7 @@ class RepositoriesApi
      */
     public function repositoriesListAsyncWithHttpInfo($organization, $project, $apiVersion, $includeLinks = null, $includeAllUrls = null, $includeHidden = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[]';
         $request = $this->repositoriesListRequest($organization, $project, $apiVersion, $includeLinks, $includeAllUrls, $includeHidden);
 
         return $this->client
@@ -2245,14 +2245,14 @@ class RepositoriesApi
      * Operation repositoriesRestoreRepositoryFromRecycleBin
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function repositoriesRestoreRepositoryFromRecycleBin($organization, $body, $project, $repositoryId, $apiVersion)
     {
@@ -2264,18 +2264,18 @@ class RepositoriesApi
      * Operation repositoriesRestoreRepositoryFromRecycleBinWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesRestoreRepositoryFromRecycleBinWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesRestoreRepositoryFromRecycleBinRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         try {
@@ -2327,7 +2327,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2343,7 +2343,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2367,7 +2367,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2377,7 +2377,7 @@ class RepositoriesApi
      */
     public function repositoriesRestoreRepositoryFromRecycleBinAsyncWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesRestoreRepositoryFromRecycleBinRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         return $this->client
@@ -2421,7 +2421,7 @@ class RepositoriesApi
      * Create request for operation 'repositoriesRestoreRepositoryFromRecycleBin'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2581,14 +2581,14 @@ class RepositoriesApi
      * Operation repositoriesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function repositoriesUpdate($organization, $body, $repositoryId, $project, $apiVersion)
     {
@@ -2600,18 +2600,18 @@ class RepositoriesApi
      * Operation repositoriesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository, HTTP status code, HTTP response headers (array of strings)
      */
     public function repositoriesUpdateWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesUpdateRequest($organization, $body, $repositoryId, $project, $apiVersion);
 
         try {
@@ -2663,7 +2663,7 @@ class RepositoriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2679,7 +2679,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2703,7 +2703,7 @@ class RepositoriesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2713,7 +2713,7 @@ class RepositoriesApi
      */
     public function repositoriesUpdateAsyncWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository';
         $request = $this->repositoriesUpdateRequest($organization, $body, $repositoryId, $project, $apiVersion);
 
         return $this->client
@@ -2757,7 +2757,7 @@ class RepositoriesApi
      * Create request for operation 'repositoriesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $body Specify a new repo name or a new default branch of the repository (required)
      * @param  string $repositoryId The ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

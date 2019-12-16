@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\AttachmentsApi
+# FrankHouweling\AzureDevOpsClient\Test\AttachmentsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **attachmentsCreateTestResultAttachment**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference attachmentsCreateTestResultAttachment($organization, $body, $project, $runId, $testCaseResultId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference attachmentsCreateTestResultAttachment($organization, $body, $project, $runId, $testCaseResultId, $apiVersion)
 
 
 
@@ -25,16 +25,16 @@ Attach a file to a test result.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel(); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel | Attachment details TestAttachmentRequestModel
+$body = new \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel(); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel | Attachment details TestAttachmentRequestModel
 $project = "project_example"; // string | Project ID or project name
 $runId = 56; // int | ID of the test run that contains the result.
 $testCaseResultId = 56; // int | ID of the test result against which attachment has to be uploaded.
@@ -54,7 +54,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel**](../Model/TestAttachmentRequestModel.md)| Attachment details TestAttachmentRequestModel |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel**](../Model/TestAttachmentRequestModel.md)| Attachment details TestAttachmentRequestModel |
  **project** | **string**| Project ID or project name |
  **runId** | **int**| ID of the test run that contains the result. |
  **testCaseResultId** | **int**| ID of the test result against which attachment has to be uploaded. |
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference**](../Model/TestAttachmentReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference**](../Model/TestAttachmentReference.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **attachmentsCreateTestRunAttachment**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference attachmentsCreateTestRunAttachment($organization, $body, $project, $runId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference attachmentsCreateTestRunAttachment($organization, $body, $project, $runId, $apiVersion)
 
 
 
@@ -88,16 +88,16 @@ Attach a file to a test run.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel(); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel | Attachment details TestAttachmentRequestModel
+$body = new \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel(); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel | Attachment details TestAttachmentRequestModel
 $project = "project_example"; // string | Project ID or project name
 $runId = 56; // int | ID of the test run against which attachment has to be uploaded.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -116,14 +116,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel**](../Model/TestAttachmentRequestModel.md)| Attachment details TestAttachmentRequestModel |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel**](../Model/TestAttachmentRequestModel.md)| Attachment details TestAttachmentRequestModel |
  **project** | **string**| Project ID or project name |
  **runId** | **int**| ID of the test run against which attachment has to be uploaded. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference**](../Model/TestAttachmentReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference**](../Model/TestAttachmentReference.md)
 
 ### Authorization
 
@@ -149,9 +149,9 @@ Download a test result attachment by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **attachmentsGetTestResultAttachments**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[] attachmentsGetTestResultAttachments($organization, $project, $runId, $testCaseResultId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[] attachmentsGetTestResultAttachments($organization, $project, $runId, $testCaseResultId, $apiVersion)
 
 
 
@@ -212,9 +212,9 @@ Get list of test result attachments reference.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]**](../Model/TestAttachment.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]**](../Model/TestAttachment.md)
 
 ### Authorization
 
@@ -273,9 +273,9 @@ Download a test run attachment by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **attachmentsGetTestRunAttachments**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[] attachmentsGetTestRunAttachments($organization, $project, $runId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[] attachmentsGetTestRunAttachments($organization, $project, $runId, $apiVersion)
 
 
 
@@ -334,9 +334,9 @@ Get list of test run attachments reference.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -367,7 +367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]**](../Model/TestAttachment.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]**](../Model/TestAttachment.md)
 
 ### Authorization
 

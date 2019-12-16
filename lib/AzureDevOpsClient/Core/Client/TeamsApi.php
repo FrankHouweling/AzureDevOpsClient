@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Client;
+namespace FrankHouweling\AzureDevOpsClient\Core\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Core\ApiException;
-use AzureDevOpsClient\Core\Configuration;
-use AzureDevOpsClient\Core\HeaderSelector;
-use AzureDevOpsClient\Core\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Core\ApiException;
+use FrankHouweling\AzureDevOpsClient\Core\Configuration;
+use FrankHouweling\AzureDevOpsClient\Core\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * TeamsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class TeamsApi
      * Operation teamsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
      * @param  string $projectId The name or ID (GUID) of the team project in which to create the team. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam
      */
     public function teamsCreate($organization, $body, $projectId, $apiVersion)
     {
@@ -109,17 +109,17 @@ class TeamsApi
      * Operation teamsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
      * @param  string $projectId The name or ID (GUID) of the team project in which to create the team. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsCreateWithHttpInfo($organization, $body, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsCreateRequest($organization, $body, $projectId, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class TeamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
      * @param  string $projectId The name or ID (GUID) of the team project in which to create the team. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class TeamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
      * @param  string $projectId The name or ID (GUID) of the team project in which to create the team. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class TeamsApi
      */
     public function teamsCreateAsyncWithHttpInfo($organization, $body, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsCreateRequest($organization, $body, $projectId, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class TeamsApi
      * Create request for operation 'teamsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body The team data used to create the team. (required)
      * @param  string $projectId The name or ID (GUID) of the team project in which to create the team. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class TeamsApi
      * @param  string $teamId The name or ID of the team to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class TeamsApi
      * @param  string $teamId The name or ID of the team to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -698,9 +698,9 @@ class TeamsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam
      */
     public function teamsGet($organization, $projectId, $teamId, $apiVersion, $expandIdentity = null)
     {
@@ -717,13 +717,13 @@ class TeamsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsGetWithHttpInfo($organization, $projectId, $teamId, $apiVersion, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsGetRequest($organization, $projectId, $teamId, $apiVersion, $expandIdentity);
 
         try {
@@ -775,7 +775,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -825,7 +825,7 @@ class TeamsApi
      */
     public function teamsGetAsyncWithHttpInfo($organization, $projectId, $teamId, $apiVersion, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsGetRequest($organization, $projectId, $teamId, $apiVersion, $expandIdentity);
 
         return $this->client
@@ -1030,9 +1030,9 @@ class TeamsApi
      * @param  int $skip Number of teams to skip. (optional)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]
      */
     public function teamsGetAllTeams($organization, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
@@ -1050,13 +1050,13 @@ class TeamsApi
      * @param  int $skip Number of teams to skip. (optional)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsGetAllTeamsWithHttpInfo($organization, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]';
         $request = $this->teamsGetAllTeamsRequest($organization, $apiVersion, $mine, $top, $skip, $expandIdentity);
 
         try {
@@ -1108,7 +1108,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1160,7 +1160,7 @@ class TeamsApi
      */
     public function teamsGetAllTeamsAsyncWithHttpInfo($organization, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]';
         $request = $this->teamsGetAllTeamsRequest($organization, $apiVersion, $mine, $top, $skip, $expandIdentity);
 
         return $this->client
@@ -1350,9 +1350,9 @@ class TeamsApi
      * @param  int $top  (optional)
      * @param  int $skip  (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[]
      */
     public function teamsGetTeamMembersWithExtendedProperties($organization, $projectId, $teamId, $apiVersion, $top = null, $skip = null)
     {
@@ -1370,13 +1370,13 @@ class TeamsApi
      * @param  int $top  (optional)
      * @param  int $skip  (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsGetTeamMembersWithExtendedPropertiesWithHttpInfo($organization, $projectId, $teamId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[]';
         $request = $this->teamsGetTeamMembersWithExtendedPropertiesRequest($organization, $projectId, $teamId, $apiVersion, $top, $skip);
 
         try {
@@ -1428,7 +1428,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1480,7 +1480,7 @@ class TeamsApi
      */
     public function teamsGetTeamMembersWithExtendedPropertiesAsyncWithHttpInfo($organization, $projectId, $teamId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[]';
         $request = $this->teamsGetTeamMembersWithExtendedPropertiesRequest($organization, $projectId, $teamId, $apiVersion, $top, $skip);
 
         return $this->client
@@ -1691,9 +1691,9 @@ class TeamsApi
      * @param  int $skip Number of teams to skip. (optional)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]
      */
     public function teamsGetTeams($organization, $projectId, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
@@ -1712,13 +1712,13 @@ class TeamsApi
      * @param  int $skip Number of teams to skip. (optional)
      * @param  bool $expandIdentity A value indicating whether or not to expand Identity information in the result WebApiTeam object. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[], HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsGetTeamsWithHttpInfo($organization, $projectId, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]';
         $request = $this->teamsGetTeamsRequest($organization, $projectId, $apiVersion, $mine, $top, $skip, $expandIdentity);
 
         try {
@@ -1770,7 +1770,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1824,7 +1824,7 @@ class TeamsApi
      */
     public function teamsGetTeamsAsyncWithHttpInfo($organization, $projectId, $apiVersion, $mine = null, $top = null, $skip = null, $expandIdentity = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]';
         $request = $this->teamsGetTeamsRequest($organization, $projectId, $apiVersion, $mine, $top, $skip, $expandIdentity);
 
         return $this->client
@@ -2023,14 +2023,14 @@ class TeamsApi
      * Operation teamsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
      * @param  string $projectId The name or ID (GUID) of the team project containing the team to update. (required)
      * @param  string $teamId The name of ID of the team to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam
      */
     public function teamsUpdate($organization, $body, $projectId, $teamId, $apiVersion)
     {
@@ -2042,18 +2042,18 @@ class TeamsApi
      * Operation teamsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
      * @param  string $projectId The name or ID (GUID) of the team project containing the team to update. (required)
      * @param  string $teamId The name of ID of the team to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam, HTTP status code, HTTP response headers (array of strings)
      */
     public function teamsUpdateWithHttpInfo($organization, $body, $projectId, $teamId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsUpdateRequest($organization, $body, $projectId, $teamId, $apiVersion);
 
         try {
@@ -2105,7 +2105,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2121,7 +2121,7 @@ class TeamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
      * @param  string $projectId The name or ID (GUID) of the team project containing the team to update. (required)
      * @param  string $teamId The name of ID of the team to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -2145,7 +2145,7 @@ class TeamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
      * @param  string $projectId The name or ID (GUID) of the team project containing the team to update. (required)
      * @param  string $teamId The name of ID of the team to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -2155,7 +2155,7 @@ class TeamsApi
      */
     public function teamsUpdateAsyncWithHttpInfo($organization, $body, $projectId, $teamId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam';
         $request = $this->teamsUpdateRequest($organization, $body, $projectId, $teamId, $apiVersion);
 
         return $this->client
@@ -2199,7 +2199,7 @@ class TeamsApi
      * Create request for operation 'teamsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam $body  (required)
      * @param  string $projectId The name or ID (GUID) of the team project containing the team to update. (required)
      * @param  string $teamId The name of ID of the team to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

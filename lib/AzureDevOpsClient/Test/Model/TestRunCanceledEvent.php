@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestRunCanceledEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestRunCanceledEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'testRun' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun'
+        'testRun' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestRunCanceledEvent implements ModelInterface, ArrayAccess
     /**
      * Gets testRun
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun
      */
     public function getTestRun()
     {
@@ -218,7 +218,7 @@ class TestRunCanceledEvent implements ModelInterface, ArrayAccess
     /**
      * Sets testRun
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun $testRun testRun
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun $testRun testRun
      *
      * @return $this
      */

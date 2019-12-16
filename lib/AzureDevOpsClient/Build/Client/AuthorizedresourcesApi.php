@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * AuthorizedresourcesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class AuthorizedresourcesApi
      * Operation authorizedresourcesAuthorizeProjectResources
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
      */
     public function authorizedresourcesAuthorizeProjectResources($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class AuthorizedresourcesApi
      * Operation authorizedresourcesAuthorizeProjectResourcesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function authorizedresourcesAuthorizeProjectResourcesWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->authorizedresourcesAuthorizeProjectResourcesRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class AuthorizedresourcesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class AuthorizedresourcesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class AuthorizedresourcesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class AuthorizedresourcesApi
      */
     public function authorizedresourcesAuthorizeProjectResourcesAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->authorizedresourcesAuthorizeProjectResourcesRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class AuthorizedresourcesApi
      * Create request for operation 'authorizedresourcesAuthorizeProjectResources'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -413,9 +413,9 @@ class AuthorizedresourcesApi
      * @param  string $type  (optional)
      * @param  string $id  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
      */
     public function authorizedresourcesList($organization, $project, $apiVersion, $type = null, $id = null)
     {
@@ -432,13 +432,13 @@ class AuthorizedresourcesApi
      * @param  string $type  (optional)
      * @param  string $id  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function authorizedresourcesListWithHttpInfo($organization, $project, $apiVersion, $type = null, $id = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->authorizedresourcesListRequest($organization, $project, $apiVersion, $type, $id);
 
         try {
@@ -490,7 +490,7 @@ class AuthorizedresourcesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,7 +540,7 @@ class AuthorizedresourcesApi
      */
     public function authorizedresourcesListAsyncWithHttpInfo($organization, $project, $apiVersion, $type = null, $id = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->authorizedresourcesListRequest($organization, $project, $apiVersion, $type, $id);
 
         return $this->client

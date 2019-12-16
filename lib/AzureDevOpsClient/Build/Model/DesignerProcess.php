@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DesignerProcess Class Doc Comment
  *
  * @category Class
  * @description Represents a build process supported by the build definition designer.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class DesignerProcess implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'int',
-        'phases' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Phase[]',
-        'target' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DesignerProcessTarget'
+        'phases' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Phase[]',
+        'target' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DesignerProcessTarget'
     ];
 
     /**
@@ -244,7 +244,7 @@ class DesignerProcess implements ModelInterface, ArrayAccess
     /**
      * Gets phases
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Phase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Phase[]
      */
     public function getPhases()
     {
@@ -254,7 +254,7 @@ class DesignerProcess implements ModelInterface, ArrayAccess
     /**
      * Sets phases
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Phase[] $phases phases
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Phase[] $phases phases
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class DesignerProcess implements ModelInterface, ArrayAccess
     /**
      * Gets target
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DesignerProcessTarget
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DesignerProcessTarget
      */
     public function getTarget()
     {
@@ -278,7 +278,7 @@ class DesignerProcess implements ModelInterface, ArrayAccess
     /**
      * Sets target
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DesignerProcessTarget $target The target for the build process.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DesignerProcessTarget $target The target for the build process.
      *
      * @return $this
      */

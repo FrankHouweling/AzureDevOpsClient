@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **id** | **string** | The id of the project. | [optional] 
 **lastUpdateTime** | [**\DateTime**](\DateTime.md) | The time that this project was last updated. | [optional] 
 **name** | **string** | The name of the project. | [optional] 
-**properties** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]**](ProjectProperty.md) | A set of name-value pairs storing additional property data related to the project. | [optional] 
+**properties** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]**](ProjectProperty.md) | A set of name-value pairs storing additional property data related to the project. | [optional] 
 **revision** | **int** | The current revision of the project. | [optional] 
 **state** | **string** | The current state of the project. | [optional] 
 **uri** | **string** | A Uri that can be used to refer to this project. | [optional] 

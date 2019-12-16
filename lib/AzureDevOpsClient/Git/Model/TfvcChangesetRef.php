@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcChangesetRef Class Doc Comment
  *
  * @category Class
  * @description Metadata for a changeset.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'changesetId' => 'int',
-        'checkedInBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'checkedInBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'createdDate' => '\DateTime',
@@ -250,7 +250,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -260,7 +260,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of REST reference links.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -284,7 +284,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $author Alias or display name of user.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $author Alias or display name of user.
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Gets checkedInBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getCheckedInBy()
     {
@@ -332,7 +332,7 @@ class TfvcChangesetRef implements ModelInterface, ArrayAccess
     /**
      * Sets checkedInBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $checkedInBy Alias or display name of user.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $checkedInBy Alias or display name of user.
      *
      * @return $this
      */

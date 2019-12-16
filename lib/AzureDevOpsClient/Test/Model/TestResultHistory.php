@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultHistory Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestResultHistory implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'groupByField' => 'string',
-        'resultsForGroup' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[]'
+        'resultsForGroup' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestResultHistory implements ModelInterface, ArrayAccess
     /**
      * Gets resultsForGroup
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[]
      */
     public function getResultsForGroup()
     {
@@ -248,7 +248,7 @@ class TestResultHistory implements ModelInterface, ArrayAccess
     /**
      * Sets resultsForGroup
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[] $resultsForGroup resultsForGroup
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultHistoryDetailsForGroup[] $resultsForGroup resultsForGroup
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fieldType** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldType**](NotificationEventFieldType.md) | Gets or sets the type of this field. | [optional] 
+**fieldType** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldType**](NotificationEventFieldType.md) | Gets or sets the type of this field. | [optional] 
 **id** | **string** | Gets or sets the unique identifier of this field. | [optional] 
 **name** | **string** | Gets or sets the name of this field. | [optional] 
 **path** | **string** | Gets or sets the path to the field in the event object. This path can be either Json Path or XPath, depending on if the event will be serialized into Json or XML | [optional] 

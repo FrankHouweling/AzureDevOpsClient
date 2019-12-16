@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**testRun** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun**](TestRun.md) |  | [optional] 
+**testRun** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun**](TestRun.md) |  | [optional] 
 **configurationIds** | **int[]** |  | [optional] 
 **mappedTestRunEventType** | **string** |  | [optional] 
 **runTimeout** | **string** |  | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcItem Class Doc Comment
  *
  * @category Class
  * @description Metadata for an item.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class TfvcItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
         'content' => 'string',
-        'contentMetadata' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\FileContentMetadata',
+        'contentMetadata' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\FileContentMetadata',
         'isFolder' => 'bool',
         'isSymLink' => 'bool',
         'path' => 'string',
@@ -292,7 +292,7 @@ class TfvcItem implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -302,7 +302,7 @@ class TfvcItem implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class TfvcItem implements ModelInterface, ArrayAccess
     /**
      * Gets contentMetadata
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\FileContentMetadata
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\FileContentMetadata
      */
     public function getContentMetadata()
     {
@@ -350,7 +350,7 @@ class TfvcItem implements ModelInterface, ArrayAccess
     /**
      * Sets contentMetadata
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\FileContentMetadata $contentMetadata contentMetadata
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\FileContentMetadata $contentMetadata contentMetadata
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestRunCoverage Class Doc Comment
  *
  * @category Class
  * @description Test Run Code Coverage Details
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class TestRunCoverage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'lastError' => 'string',
-        'modules' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ModuleCoverage[]',
+        'modules' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ModuleCoverage[]',
         'state' => 'string',
-        'testRun' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference'
+        'testRun' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference'
     ];
 
     /**
@@ -250,7 +250,7 @@ class TestRunCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets modules
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ModuleCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ModuleCoverage[]
      */
     public function getModules()
     {
@@ -260,7 +260,7 @@ class TestRunCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets modules
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ModuleCoverage[] $modules List of Modules Coverage
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ModuleCoverage[] $modules List of Modules Coverage
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class TestRunCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets testRun
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getTestRun()
     {
@@ -308,7 +308,7 @@ class TestRunCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets testRun
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $testRun Reference of test Run.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $testRun Reference of test Run.
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestIterationStatusesApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestIterationStatusesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestIterationStatusesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus pullRequestIterationStatusesCreate($organization, $body, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus pullRequestIterationStatusesCreate($organization, $body, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
 
 
 
@@ -24,16 +24,16 @@ Create a pull request status on the iteration. This operation will have the same
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus | Pull request status to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus | Pull request status to create.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $iterationId = 56; // int | ID of the pull request iteration.
@@ -54,7 +54,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)| Pull request status to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)| Pull request status to create. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **iterationId** | **int**| ID of the pull request iteration. |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)
 
 ### Authorization
 
@@ -89,9 +89,9 @@ Delete pull request iteration status.  You can remove multiple statuses in one c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestIterationStatusesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus pullRequestIterationStatusesGet($organization, $repositoryId, $pullRequestId, $iterationId, $statusId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus pullRequestIterationStatusesGet($organization, $repositoryId, $pullRequestId, $iterationId, $statusId, $project, $apiVersion)
 
 
 
@@ -153,9 +153,9 @@ Get the specific pull request iteration status by ID. The status ID is unique wi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus**](../Model/GitPullRequestStatus.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestIterationStatusesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus[] pullRequestIterationStatusesList($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus[] pullRequestIterationStatusesList($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
 
 
 
@@ -218,9 +218,9 @@ Get all the statuses associated with a pull request iteration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestStatus[]**](../Model/GitPullRequestStatus.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestStatus[]**](../Model/GitPullRequestStatus.md)
 
 ### Authorization
 
@@ -281,16 +281,16 @@ Update pull request iteration statuses collection. The only supported operation 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationStatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument | Operations to apply to the pull request statuses in JSON Patch format.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument | Operations to apply to the pull request statuses in JSON Patch format.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $iterationId = 56; // int | ID of the pull request iteration.
@@ -310,7 +310,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| Operations to apply to the pull request statuses in JSON Patch format. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| Operations to apply to the pull request statuses in JSON Patch format. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **iterationId** | **int**| ID of the pull request iteration. |

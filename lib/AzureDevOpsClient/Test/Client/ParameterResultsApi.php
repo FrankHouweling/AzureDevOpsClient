@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ParameterResultsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class ParameterResultsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  string $paramName Name of the parameter. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
      */
     public function parameterResultsList($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName = null)
     {
@@ -119,13 +119,13 @@ class ParameterResultsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  string $paramName Name of the parameter. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[], HTTP status code, HTTP response headers (array of strings)
      */
     public function parameterResultsListWithHttpInfo($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]';
         $request = $this->parameterResultsListRequest($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName);
 
         try {
@@ -177,7 +177,7 @@ class ParameterResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class ParameterResultsApi
      */
     public function parameterResultsListAsyncWithHttpInfo($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]';
         $request = $this->parameterResultsListRequest($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName);
 
         return $this->client

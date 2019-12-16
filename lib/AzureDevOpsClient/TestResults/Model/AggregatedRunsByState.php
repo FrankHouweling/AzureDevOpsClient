@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * AggregatedRunsByState Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resultsByOutcome' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
+        'resultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
         'runsCount' => 'int',
         'state' => 'string'
     ];
@@ -253,7 +253,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
     /**
      * Gets resultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
      */
     public function getResultsByOutcome()
     {
@@ -263,7 +263,7 @@ class AggregatedRunsByState implements ModelInterface, ArrayAccess
     /**
      * Sets resultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
      *
      * @return $this
      */

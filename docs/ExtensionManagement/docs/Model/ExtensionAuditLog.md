@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entries** | [**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionAuditLogEntry[]**](ExtensionAuditLogEntry.md) | Collection of audit log entries | [optional] 
+**entries** | [**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionAuditLogEntry[]**](ExtensionAuditLogEntry.md) | Collection of audit log entries | [optional] 
 **extensionName** | **string** | Extension that the change was made for | [optional] 
 **publisherName** | **string** | Publisher that the extension is part of | [optional] 
 

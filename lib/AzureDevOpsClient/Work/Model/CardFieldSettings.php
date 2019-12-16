@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CardFieldSettings Class Doc Comment
  *
  * @category Class
  * @description Card settings, such as fields and rules
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class CardFieldSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'additionalFields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[]',
+        'additionalFields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[]',
         'assignedToDisplayFormat' => 'string',
-        'coreFields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[]',
+        'coreFields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[]',
         'showAssignedTo' => 'bool',
         'showEmptyFields' => 'bool',
         'showId' => 'bool',
@@ -275,7 +275,7 @@ class CardFieldSettings implements ModelInterface, ArrayAccess
     /**
      * Gets additionalFields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[]
      */
     public function getAdditionalFields()
     {
@@ -285,7 +285,7 @@ class CardFieldSettings implements ModelInterface, ArrayAccess
     /**
      * Sets additionalFields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[] $additionalFields A collection of field information of additional fields on cards. The index in the collection signifies the order of the field among the additional fields. Currently unused. Should be used with User Story 691539: Card setting: additional fields
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[] $additionalFields A collection of field information of additional fields on cards. The index in the collection signifies the order of the field among the additional fields. Currently unused. Should be used with User Story 691539: Card setting: additional fields
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class CardFieldSettings implements ModelInterface, ArrayAccess
     /**
      * Gets coreFields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[]
      */
     public function getCoreFields()
     {
@@ -342,7 +342,7 @@ class CardFieldSettings implements ModelInterface, ArrayAccess
     /**
      * Sets coreFields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldInfo[] $coreFields A collection of field information of rendered core fields on cards.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldInfo[] $coreFields A collection of field information of rendered core fields on cards.
      *
      * @return $this
      */

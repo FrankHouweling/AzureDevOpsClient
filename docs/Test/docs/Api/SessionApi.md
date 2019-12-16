@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\SessionApi
+# FrankHouweling\AzureDevOpsClient\Test\SessionApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **sessionCreate**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession sessionCreate($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession sessionCreate($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -22,16 +22,16 @@ Create a test session
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\SessionApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession(); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession | Test session details for creation
+$body = new \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession(); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession | Test session details for creation
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -50,14 +50,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)| Test session details for creation |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)| Test session details for creation |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sessionList**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[] sessionList($organization, $project, $team, $apiVersion, $period, $allSessions, $includeAllProperties, $source, $includeOnlyCompletedSessions)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[] sessionList($organization, $project, $team, $apiVersion, $period, $allSessions, $includeAllProperties, $source, $includeOnlyCompletedSessions)
 
 
 
@@ -83,9 +83,9 @@ Get a list of test sessions
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\SessionApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[]**](../Model/TestSession.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[]**](../Model/TestSession.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sessionUpdate**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession sessionUpdate($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession sessionUpdate($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -152,16 +152,16 @@ Update a test session
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\SessionApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession(); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession | Test session details for update
+$body = new \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession(); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession | Test session details for update
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -180,14 +180,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)| Test session details for update |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)| Test session details for update |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession**](../Model/TestSession.md)
 
 ### Authorization
 

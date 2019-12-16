@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestTagSummary Class Doc Comment
  *
  * @category Class
  * @description Test tag summary for build or release grouped by test run.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagsGroupByTestArtifact' => 'map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestTag[]]'
+        'tagsGroupByTestArtifact' => 'map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\TestTag[]]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
     /**
      * Gets tagsGroupByTestArtifact
      *
-     * @return map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestTag[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\TestTag[]]
      */
     public function getTagsGroupByTestArtifact()
     {
@@ -218,7 +218,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
     /**
      * Sets tagsGroupByTestArtifact
      *
-     * @param map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestTag[]] $tagsGroupByTestArtifact Dictionary which contains tags associated with a test run.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\TestTag[]] $tagsGroupByTestArtifact Dictionary which contains tags associated with a test run.
      *
      * @return $this
      */

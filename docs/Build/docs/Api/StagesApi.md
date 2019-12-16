@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\StagesApi
+# FrankHouweling\AzureDevOpsClient\Build\StagesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -20,16 +20,16 @@ Update a build stage
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\StagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\StagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters | 
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters(); // \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters | 
 $buildId = 56; // int | 
 $stageRefName = "stageRefName_example"; // string | 
 $project = "project_example"; // string | Project ID or project name
@@ -48,7 +48,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateStageParameters**](../Model/UpdateStageParameters.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateStageParameters**](../Model/UpdateStageParameters.md)|  |
  **buildId** | **int**|  |
  **stageRefName** | **string**|  |
  **project** | **string**| Project ID or project name |

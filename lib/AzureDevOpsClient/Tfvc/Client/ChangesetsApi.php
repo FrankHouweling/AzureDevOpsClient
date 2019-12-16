@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Client;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Tfvc\ApiException;
-use AzureDevOpsClient\Tfvc\Configuration;
-use AzureDevOpsClient\Tfvc\HeaderSelector;
-use AzureDevOpsClient\Tfvc\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ApiException;
+use FrankHouweling\AzureDevOpsClient\Tfvc\Configuration;
+use FrankHouweling\AzureDevOpsClient\Tfvc\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * ChangesetsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class ChangesetsApi
      * Operation changesetsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef
      */
     public function changesetsCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class ChangesetsApi
      * Operation changesetsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef';
         $request = $this->changesetsCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class ChangesetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class ChangesetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class ChangesetsApi
      */
     public function changesetsCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef';
         $request = $this->changesetsCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class ChangesetsApi
      * Create request for operation 'changesetsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -429,9 +429,9 @@ class ChangesetsApi
      * @param  string $searchCriteriaToDate If provided, only include changesets created before this date (string). (optional)
      * @param  int $searchCriteriaToId If provided, a version descriptor for the latest change list to include. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset
      */
     public function changesetsGet($organization, $id, $project, $apiVersion, $maxChangeCount = null, $includeDetails = null, $includeWorkItems = null, $maxCommentLength = null, $includeSourceRename = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
@@ -464,13 +464,13 @@ class ChangesetsApi
      * @param  string $searchCriteriaToDate If provided, only include changesets created before this date (string). (optional)
      * @param  int $searchCriteriaToId If provided, a version descriptor for the latest change list to include. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset, HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsGetWithHttpInfo($organization, $id, $project, $apiVersion, $maxChangeCount = null, $includeDetails = null, $includeWorkItems = null, $maxCommentLength = null, $includeSourceRename = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset';
         $request = $this->changesetsGetRequest($organization, $id, $project, $apiVersion, $maxChangeCount, $includeDetails, $includeWorkItems, $maxCommentLength, $includeSourceRename, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId);
 
         try {
@@ -522,7 +522,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class ChangesetsApi
      */
     public function changesetsGetAsyncWithHttpInfo($organization, $id, $project, $apiVersion, $maxChangeCount = null, $includeDetails = null, $includeWorkItems = null, $maxCommentLength = null, $includeSourceRename = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset';
         $request = $this->changesetsGetRequest($organization, $id, $project, $apiVersion, $maxChangeCount, $includeDetails, $includeWorkItems, $maxCommentLength, $includeSourceRename, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId);
 
         return $this->client
@@ -883,12 +883,12 @@ class ChangesetsApi
      * Operation changesetsGetBatchedChangesets
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]
      */
     public function changesetsGetBatchedChangesets($organization, $body, $apiVersion)
     {
@@ -900,16 +900,16 @@ class ChangesetsApi
      * Operation changesetsGetBatchedChangesetsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsGetBatchedChangesetsWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
         $request = $this->changesetsGetBatchedChangesetsRequest($organization, $body, $apiVersion);
 
         try {
@@ -961,7 +961,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class ChangesetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -999,7 +999,7 @@ class ChangesetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1007,7 +1007,7 @@ class ChangesetsApi
      */
     public function changesetsGetBatchedChangesetsAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
         $request = $this->changesetsGetBatchedChangesetsRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -1051,7 +1051,7 @@ class ChangesetsApi
      * Create request for operation 'changesetsGetBatchedChangesets'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData $body List of changeset IDs. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1187,9 +1187,9 @@ class ChangesetsApi
      * @param  int $top The maximum number of results to return. Default: null (optional)
      * @param  string $continuationToken Return the next page of results. Default: null (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
      */
     public function changesetsGetChangesetChanges($organization, $id, $apiVersion, $skip = null, $top = null, $continuationToken = null)
     {
@@ -1207,13 +1207,13 @@ class ChangesetsApi
      * @param  int $top The maximum number of results to return. Default: null (optional)
      * @param  string $continuationToken Return the next page of results. Default: null (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[], HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsGetChangesetChangesWithHttpInfo($organization, $id, $apiVersion, $skip = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
         $request = $this->changesetsGetChangesetChangesRequest($organization, $id, $apiVersion, $skip, $top, $continuationToken);
 
         try {
@@ -1265,7 +1265,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1317,7 +1317,7 @@ class ChangesetsApi
      */
     public function changesetsGetChangesetChangesAsyncWithHttpInfo($organization, $id, $apiVersion, $skip = null, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
         $request = $this->changesetsGetChangesetChangesRequest($organization, $id, $apiVersion, $skip, $top, $continuationToken);
 
         return $this->client
@@ -1514,9 +1514,9 @@ class ChangesetsApi
      * @param  int $id ID of the changeset. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
      */
     public function changesetsGetChangesetWorkItems($organization, $id, $apiVersion)
     {
@@ -1531,13 +1531,13 @@ class ChangesetsApi
      * @param  int $id ID of the changeset. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsGetChangesetWorkItemsWithHttpInfo($organization, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
         $request = $this->changesetsGetChangesetWorkItemsRequest($organization, $id, $apiVersion);
 
         try {
@@ -1589,7 +1589,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1635,7 +1635,7 @@ class ChangesetsApi
      */
     public function changesetsGetChangesetWorkItemsAsyncWithHttpInfo($organization, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
         $request = $this->changesetsGetChangesetWorkItemsRequest($organization, $id, $apiVersion);
 
         return $this->client
@@ -1830,9 +1830,9 @@ class ChangesetsApi
      * @param  string $searchCriteriaToDate If provided, only include changesets created before this date (string). (optional)
      * @param  int $searchCriteriaToId If provided, a version descriptor for the latest change list to include. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]
      */
     public function changesetsGetChangesets($organization, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
@@ -1860,13 +1860,13 @@ class ChangesetsApi
      * @param  string $searchCriteriaToDate If provided, only include changesets created before this date (string). (optional)
      * @param  int $searchCriteriaToId If provided, a version descriptor for the latest change list to include. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function changesetsGetChangesetsWithHttpInfo($organization, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
         $request = $this->changesetsGetChangesetsRequest($organization, $project, $apiVersion, $maxCommentLength, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId);
 
         try {
@@ -1918,7 +1918,7 @@ class ChangesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1990,7 +1990,7 @@ class ChangesetsApi
      */
     public function changesetsGetChangesetsAsyncWithHttpInfo($organization, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $orderby = null, $searchCriteriaAuthor = null, $searchCriteriaFollowRenames = null, $searchCriteriaFromDate = null, $searchCriteriaFromId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaItemPath = null, $searchCriteriaMappings = null, $searchCriteriaToDate = null, $searchCriteriaToId = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]';
         $request = $this->changesetsGetChangesetsRequest($organization, $project, $apiVersion, $maxCommentLength, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId);
 
         return $this->client

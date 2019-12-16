@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * StatusesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class StatusesApi
      * Operation statusesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
      * @param  string $commitId ID of the Git commit. (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus
      */
     public function statusesCreate($organization, $body, $commitId, $repositoryId, $project, $apiVersion)
     {
@@ -111,19 +111,19 @@ class StatusesApi
      * Operation statusesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
      * @param  string $commitId ID of the Git commit. (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function statusesCreateWithHttpInfo($organization, $body, $commitId, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus';
         $request = $this->statusesCreateRequest($organization, $body, $commitId, $repositoryId, $project, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class StatusesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class StatusesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
      * @param  string $commitId ID of the Git commit. (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
@@ -216,7 +216,7 @@ class StatusesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
      * @param  string $commitId ID of the Git commit. (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
@@ -227,7 +227,7 @@ class StatusesApi
      */
     public function statusesCreateAsyncWithHttpInfo($organization, $body, $commitId, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus';
         $request = $this->statusesCreateRequest($organization, $body, $commitId, $repositoryId, $project, $apiVersion);
 
         return $this->client
@@ -271,7 +271,7 @@ class StatusesApi
      * Create request for operation 'statusesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus $body Git commit status object to create. (required)
      * @param  string $commitId ID of the Git commit. (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
@@ -454,9 +454,9 @@ class StatusesApi
      * @param  int $skip Optional. The number of statuses to ignore. Default is 0. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  bool $latestOnly The flag indicates whether to get only latest statuses grouped by &#x60;Context.Name&#x60; and &#x60;Context.Genre&#x60;. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]
      */
     public function statusesList($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null, $latestOnly = null)
     {
@@ -476,13 +476,13 @@ class StatusesApi
      * @param  int $skip Optional. The number of statuses to ignore. Default is 0. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  bool $latestOnly The flag indicates whether to get only latest statuses grouped by &#x60;Context.Name&#x60; and &#x60;Context.Genre&#x60;. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[], HTTP status code, HTTP response headers (array of strings)
      */
     public function statusesListWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null, $latestOnly = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]';
         $request = $this->statusesListRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip, $latestOnly);
 
         try {
@@ -534,7 +534,7 @@ class StatusesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class StatusesApi
      */
     public function statusesListAsyncWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null, $latestOnly = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]';
         $request = $this->statusesListRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip, $latestOnly);
 
         return $this->client

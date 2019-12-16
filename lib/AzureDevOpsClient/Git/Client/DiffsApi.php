@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * DiffsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -104,9 +104,9 @@ class DiffsApi
      * @param  string $targetVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $targetVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs
      */
     public function diffsGet($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit = null, $top = null, $skip = null, $baseVersion = null, $baseVersionOptions = null, $baseVersionType = null, $targetVersion = null, $targetVersionOptions = null, $targetVersionType = null)
     {
@@ -131,13 +131,13 @@ class DiffsApi
      * @param  string $targetVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $targetVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs, HTTP status code, HTTP response headers (array of strings)
      */
     public function diffsGetWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit = null, $top = null, $skip = null, $baseVersion = null, $baseVersionOptions = null, $baseVersionType = null, $targetVersion = null, $targetVersionOptions = null, $targetVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs';
         $request = $this->diffsGetRequest($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit, $top, $skip, $baseVersion, $baseVersionOptions, $baseVersionType, $targetVersion, $targetVersionOptions, $targetVersionType);
 
         try {
@@ -189,7 +189,7 @@ class DiffsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class DiffsApi
      */
     public function diffsGetAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit = null, $top = null, $skip = null, $baseVersion = null, $baseVersionOptions = null, $baseVersionType = null, $targetVersion = null, $targetVersionOptions = null, $targetVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs';
         $request = $this->diffsGetRequest($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit, $top, $skip, $baseVersion, $baseVersionOptions, $baseVersionType, $targetVersion, $targetVersionOptions, $targetVersionType);
 
         return $this->client

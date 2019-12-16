@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\IterationsApi
+# FrankHouweling\AzureDevOpsClient\Work\IterationsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -24,9 +24,9 @@ Delete a team's iteration by iterationId
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\IterationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\IterationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -72,7 +72,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **iterationsGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration iterationsGet($organization, $project, $id, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration iterationsGet($organization, $project, $id, $team, $apiVersion)
 
 
 
@@ -84,9 +84,9 @@ Get team's iteration by iterationId
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\IterationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\IterationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **iterationsGetIterationWorkItems**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems iterationsGetIterationWorkItems($organization, $project, $iterationId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems iterationsGetIterationWorkItems($organization, $project, $iterationId, $team, $apiVersion)
 
 
 
@@ -145,9 +145,9 @@ Get work items for iteration
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\IterationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\IterationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems**](../Model/IterationWorkItems.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems**](../Model/IterationWorkItems.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **iterationsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[] iterationsList($organization, $project, $team, $apiVersion, $timeframe)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[] iterationsList($organization, $project, $team, $apiVersion, $timeframe)
 
 
 
@@ -206,9 +206,9 @@ Get a team's iterations using timeframe filter
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\IterationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\IterationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]**](../Model/TeamSettingsIteration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]**](../Model/TeamSettingsIteration.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **iterationsPostTeamIteration**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration iterationsPostTeamIteration($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration iterationsPostTeamIteration($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -267,16 +267,16 @@ Add an iteration to the team
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\IterationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\IterationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration | Iteration to add
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration(); // \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration | Iteration to add
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -295,14 +295,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)| Iteration to add |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)| Iteration to add |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration**](../Model/TeamSettingsIteration.md)
 
 ### Authorization
 

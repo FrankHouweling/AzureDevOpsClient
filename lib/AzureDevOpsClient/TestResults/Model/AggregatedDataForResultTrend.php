@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * AggregatedDataForResultTrend Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'duration' => 'string',
-        'resultsByOutcome' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
-        'runSummaryByState' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState]',
-        'testResultsContext' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext',
+        'resultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
+        'runSummaryByState' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState]',
+        'testResultsContext' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext',
         'totalTests' => 'int'
     ];
 
@@ -256,7 +256,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets resultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
      */
     public function getResultsByOutcome()
     {
@@ -266,7 +266,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets resultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets runSummaryByState
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState]
      */
     public function getRunSummaryByState()
     {
@@ -290,7 +290,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets runSummaryByState
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Gets testResultsContext
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext
      */
     public function getTestResultsContext()
     {
@@ -314,7 +314,7 @@ class AggregatedDataForResultTrend implements ModelInterface, ArrayAccess
     /**
      * Sets testResultsContext
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext $testResultsContext testResultsContext
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext $testResultsContext testResultsContext
      *
      * @return $this
      */

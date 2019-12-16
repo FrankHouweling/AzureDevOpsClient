@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * AggregatedResultsAnalysis Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,12 +59,12 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'duration' => 'string',
-        'notReportedResultsByOutcome' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]',
-        'previousContext' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TestResultsContext',
-        'resultsByOutcome' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]',
-        'resultsDifference' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsDifference',
-        'runSummaryByOutcome' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome]',
-        'runSummaryByState' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByState]',
+        'notReportedResultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]',
+        'previousContext' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TestResultsContext',
+        'resultsByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]',
+        'resultsDifference' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsDifference',
+        'runSummaryByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome]',
+        'runSummaryByState' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByState]',
         'totalTests' => 'int'
     ];
 
@@ -274,7 +274,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets notReportedResultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]
      */
     public function getNotReportedResultsByOutcome()
     {
@@ -284,7 +284,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets notReportedResultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome] $notReportedResultsByOutcome notReportedResultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome] $notReportedResultsByOutcome notReportedResultsByOutcome
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets previousContext
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TestResultsContext
      */
     public function getPreviousContext()
     {
@@ -308,7 +308,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets previousContext
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TestResultsContext $previousContext previousContext
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TestResultsContext $previousContext previousContext
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets resultsByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome]
      */
     public function getResultsByOutcome()
     {
@@ -332,7 +332,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets resultsByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsByOutcome] $resultsByOutcome resultsByOutcome
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets resultsDifference
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsDifference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsDifference
      */
     public function getResultsDifference()
     {
@@ -356,7 +356,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets resultsDifference
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsDifference $resultsDifference resultsDifference
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsDifference $resultsDifference resultsDifference
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets runSummaryByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome]
      */
     public function getRunSummaryByOutcome()
     {
@@ -380,7 +380,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets runSummaryByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome] $runSummaryByOutcome runSummaryByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByOutcome] $runSummaryByOutcome runSummaryByOutcome
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets runSummaryByState
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByState]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByState]
      */
     public function getRunSummaryByState()
     {
@@ -404,7 +404,7 @@ class AggregatedResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets runSummaryByState
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedRunsByState] $runSummaryByState runSummaryByState
      *
      * @return $this
      */

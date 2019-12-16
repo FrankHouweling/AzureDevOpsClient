@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ItemsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class ItemsApi
      * Operation itemsGetItemsBatch
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
      * @param  string $repositoryId The name or ID of the repository (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return null[][]
      */
@@ -110,12 +110,12 @@ class ItemsApi
      * Operation itemsGetItemsBatchWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
      * @param  string $repositoryId The name or ID of the repository (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null[][], HTTP status code, HTTP response headers (array of strings)
      */
@@ -189,7 +189,7 @@ class ItemsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
      * @param  string $repositoryId The name or ID of the repository (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ItemsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
      * @param  string $repositoryId The name or ID of the repository (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -267,7 +267,7 @@ class ItemsApi
      * Create request for operation 'itemsGetItemsBatch'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData $body Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. (required)
      * @param  string $repositoryId The name or ID of the repository (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -441,9 +441,9 @@ class ItemsApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]
      */
     public function itemsList($organization, $repositoryId, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeContentMetadata = null, $latestProcessedChange = null, $download = null, $includeLinks = null, $format = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
@@ -469,13 +469,13 @@ class ItemsApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function itemsListWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeContentMetadata = null, $latestProcessedChange = null, $download = null, $includeLinks = null, $format = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]';
         $request = $this->itemsListRequest($organization, $repositoryId, $project, $apiVersion, $scopePath, $recursionLevel, $includeContentMetadata, $latestProcessedChange, $download, $includeLinks, $format, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         try {
@@ -527,7 +527,7 @@ class ItemsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -595,7 +595,7 @@ class ItemsApi
      */
     public function itemsListAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeContentMetadata = null, $latestProcessedChange = null, $download = null, $includeLinks = null, $format = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]';
         $request = $this->itemsListRequest($organization, $repositoryId, $project, $apiVersion, $scopePath, $recursionLevel, $includeContentMetadata, $latestProcessedChange, $download, $includeLinks, $format, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         return $this->client

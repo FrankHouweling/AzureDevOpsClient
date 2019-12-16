@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcShelveset Class Doc Comment
  *
  * @category Class
  * @description Metadata for a shelveset.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,18 +58,18 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'createdDate' => '\DateTime',
         'id' => 'string',
         'name' => 'string',
-        'owner' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'url' => 'string',
-        'changes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChange[]',
-        'notes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[]',
-        'policyOverride' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo',
-        'workItems' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\AssociatedWorkItem[]'
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChange[]',
+        'notes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[]',
+        'policyOverride' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo',
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Git\Model\AssociatedWorkItem[]'
     ];
 
     /**
@@ -274,7 +274,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -284,7 +284,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links List of reference links for the shelveset.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links List of reference links for the shelveset.
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -428,7 +428,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $owner Shelveset Owner.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $owner Shelveset Owner.
      *
      * @return $this
      */
@@ -466,7 +466,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChange[]
      */
     public function getChanges()
     {
@@ -476,7 +476,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChange[] $changes List of changes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChange[] $changes List of changes.
      *
      * @return $this
      */
@@ -490,7 +490,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets notes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[]
      */
     public function getNotes()
     {
@@ -500,7 +500,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets notes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[] $notes List of checkin notes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[] $notes List of checkin notes.
      *
      * @return $this
      */
@@ -514,7 +514,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets policyOverride
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo
      */
     public function getPolicyOverride()
     {
@@ -524,7 +524,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets policyOverride
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo $policyOverride Policy override information if applicable.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyOverrideInfo $policyOverride Policy override information if applicable.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\AssociatedWorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\AssociatedWorkItem[]
      */
     public function getWorkItems()
     {
@@ -548,7 +548,7 @@ class TfvcShelveset implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\AssociatedWorkItem[] $workItems List of associated workitems.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\AssociatedWorkItem[] $workItems List of associated workitems.
      *
      * @return $this
      */

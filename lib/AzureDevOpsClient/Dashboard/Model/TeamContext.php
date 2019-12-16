@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * TeamContext Class Doc Comment
  *
  * @category Class
  * @description The Team Context for an operation.
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

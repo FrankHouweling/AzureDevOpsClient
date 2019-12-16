@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy;
+namespace FrankHouweling\AzureDevOpsClient\Policy;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -393,7 +393,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (AzureDevOpsClient\Policy) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (FrankHouweling\AzureDevOpsClient\Policy) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 6.0-preview' . PHP_EOL;

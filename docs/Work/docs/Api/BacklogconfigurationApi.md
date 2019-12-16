@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\BacklogconfigurationApi
+# FrankHouweling\AzureDevOpsClient\Work\BacklogconfigurationApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **backlogconfigurationGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogConfiguration backlogconfigurationGet($organization, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogConfiguration backlogconfigurationGet($organization, $project, $team, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Gets backlog configuration for a team
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BacklogconfigurationApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BacklogconfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogConfiguration**](../Model/BacklogConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogConfiguration**](../Model/BacklogConfiguration.md)
 
 ### Authorization
 

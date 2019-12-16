@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * BuildCoverage Class Doc Comment
  *
  * @category Class
  * @description Build Coverage Detail
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class BuildCoverage implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'codeCoverageFileUrl' => 'string',
-        'configuration' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildConfiguration',
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildConfiguration',
         'lastError' => 'string',
-        'modules' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ModuleCoverage[]',
+        'modules' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ModuleCoverage[]',
         'state' => 'string'
     ];
 
@@ -256,7 +256,7 @@ class BuildCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildConfiguration
      */
     public function getConfiguration()
     {
@@ -266,7 +266,7 @@ class BuildCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildConfiguration $configuration Build Configuration
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildConfiguration $configuration Build Configuration
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class BuildCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets modules
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ModuleCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ModuleCoverage[]
      */
     public function getModules()
     {
@@ -314,7 +314,7 @@ class BuildCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets modules
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ModuleCoverage[] $modules List of Modules
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ModuleCoverage[] $modules List of Modules
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiPageMoveResponse Class Doc Comment
  *
  * @category Class
  * @description Response contract for the Wiki Page Move API.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class WikiPageMoveResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'eTag' => 'string[]',
-        'pageMove' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMove'
+        'pageMove' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMove'
     ];
 
     /**
@@ -238,7 +238,7 @@ class WikiPageMoveResponse implements ModelInterface, ArrayAccess
     /**
      * Gets pageMove
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMove
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMove
      */
     public function getPageMove()
     {
@@ -248,7 +248,7 @@ class WikiPageMoveResponse implements ModelInterface, ArrayAccess
     /**
      * Sets pageMove
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageMove $pageMove Defines properties for wiki page move.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageMove $pageMove Defines properties for wiki page move.
      *
      * @return $this
      */

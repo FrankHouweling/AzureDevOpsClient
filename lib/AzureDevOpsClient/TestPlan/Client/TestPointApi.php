@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPointApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -99,9 +99,9 @@ class TestPointApi
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]
      */
     public function testPointGetPoints($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef = null, $includePointDetails = null)
     {
@@ -121,13 +121,13 @@ class TestPointApi
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testPointGetPointsWithHttpInfo($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef = null, $includePointDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointGetPointsRequest($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef, $includePointDetails);
 
         try {
@@ -179,7 +179,7 @@ class TestPointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,7 +235,7 @@ class TestPointApi
      */
     public function testPointGetPointsAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef = null, $includePointDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointGetPointsRequest($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef, $includePointDetails);
 
         return $this->client
@@ -479,9 +479,9 @@ class TestPointApi
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]
      */
     public function testPointGetPointsList($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds = null, $testCaseId = null, $continuationToken = null, $returnIdentityRef = null, $includePointDetails = null)
     {
@@ -503,13 +503,13 @@ class TestPointApi
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testPointGetPointsListWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds = null, $testCaseId = null, $continuationToken = null, $returnIdentityRef = null, $includePointDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointGetPointsListRequest($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds, $testCaseId, $continuationToken, $returnIdentityRef, $includePointDetails);
 
         try {
@@ -561,7 +561,7 @@ class TestPointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -621,7 +621,7 @@ class TestPointApi
      */
     public function testPointGetPointsListAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds = null, $testCaseId = null, $continuationToken = null, $returnIdentityRef = null, $includePointDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointGetPointsListRequest($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds, $testCaseId, $continuationToken, $returnIdentityRef, $includePointDetails);
 
         return $this->client
@@ -855,7 +855,7 @@ class TestPointApi
      * Operation testPointUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan for which test points are requested. (required)
      * @param  int $suiteId ID of the test suite for which test points are requested. (required)
@@ -863,9 +863,9 @@ class TestPointApi
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]
      */
     public function testPointUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails = null, $returnIdentityRef = null)
     {
@@ -877,7 +877,7 @@ class TestPointApi
      * Operation testPointUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan for which test points are requested. (required)
      * @param  int $suiteId ID of the test suite for which test points are requested. (required)
@@ -885,13 +885,13 @@ class TestPointApi
      * @param  bool $includePointDetails If set to false, will get a smaller payload containing only basic details about the test point object (optional)
      * @param  bool $returnIdentityRef If set to true, returns the AssignedTo field in TestCaseReference as IdentityRef object. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testPointUpdateWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails = null, $returnIdentityRef = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails, $returnIdentityRef);
 
         try {
@@ -943,7 +943,7 @@ class TestPointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -959,7 +959,7 @@ class TestPointApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan for which test points are requested. (required)
      * @param  int $suiteId ID of the test suite for which test points are requested. (required)
@@ -986,7 +986,7 @@ class TestPointApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan for which test points are requested. (required)
      * @param  int $suiteId ID of the test suite for which test points are requested. (required)
@@ -999,7 +999,7 @@ class TestPointApi
      */
     public function testPointUpdateAsyncWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails = null, $returnIdentityRef = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]';
         $request = $this->testPointUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails, $returnIdentityRef);
 
         return $this->client
@@ -1043,7 +1043,7 @@ class TestPointApi
      * Create request for operation 'testPointUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] $body A TestPointUpdateParams Object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan for which test points are requested. (required)
      * @param  int $suiteId ID of the test suite for which test points are requested. (required)

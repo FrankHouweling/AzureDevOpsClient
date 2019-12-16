@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamSetting Class Doc Comment
  *
  * @category Class
  * @description Data contract for TeamSettings
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class TeamSetting implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
-        'backlogIteration' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
+        'backlogIteration' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
         'backlogVisibilities' => 'map[string,bool]',
         'bugsBehavior' => 'string',
-        'defaultIteration' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
+        'defaultIteration' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
         'defaultIterationMacro' => 'string',
         'workingDays' => 'object[]'
     ];
@@ -275,7 +275,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -285,7 +285,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
      *
      * @return $this
      */
@@ -323,7 +323,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Gets backlogIteration
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration
      */
     public function getBacklogIteration()
     {
@@ -333,7 +333,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Sets backlogIteration
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $backlogIteration Backlog Iteration
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $backlogIteration Backlog Iteration
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Gets defaultIteration
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration
      */
     public function getDefaultIteration()
     {
@@ -414,7 +414,7 @@ class TeamSetting implements ModelInterface, ArrayAccess
     /**
      * Sets defaultIteration
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $defaultIteration Default Iteration, the iteration used when creating a new work item on the queries page.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $defaultIteration Default Iteration, the iteration used when creating a new work item on the queries page.
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * AvatarsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AvatarsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class AvatarsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -362,9 +362,9 @@ class AvatarsApi
      * @param  string $size  (optional)
      * @param  string $format  (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar
      */
     public function avatarsGet($subjectDescriptor, $organization, $apiVersion, $size = null, $format = null)
     {
@@ -381,13 +381,13 @@ class AvatarsApi
      * @param  string $size  (optional)
      * @param  string $format  (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar, HTTP status code, HTTP response headers (array of strings)
      */
     public function avatarsGetWithHttpInfo($subjectDescriptor, $organization, $apiVersion, $size = null, $format = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar';
         $request = $this->avatarsGetRequest($subjectDescriptor, $organization, $apiVersion, $size, $format);
 
         try {
@@ -439,7 +439,7 @@ class AvatarsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -489,7 +489,7 @@ class AvatarsApi
      */
     public function avatarsGetAsyncWithHttpInfo($subjectDescriptor, $organization, $apiVersion, $size = null, $format = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar';
         $request = $this->avatarsGetRequest($subjectDescriptor, $organization, $apiVersion, $size, $format);
 
         return $this->client
@@ -677,12 +677,12 @@ class AvatarsApi
     /**
      * Operation avatarsSetAvatar
      *
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
      * @param  string $subjectDescriptor  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -694,12 +694,12 @@ class AvatarsApi
     /**
      * Operation avatarsSetAvatarWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
      * @param  string $subjectDescriptor  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -750,7 +750,7 @@ class AvatarsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
      * @param  string $subjectDescriptor  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -773,7 +773,7 @@ class AvatarsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
      * @param  string $subjectDescriptor  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -812,7 +812,7 @@ class AvatarsApi
     /**
      * Create request for operation 'avatarsSetAvatar'
      *
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar $body  (required)
      * @param  string $subjectDescriptor  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

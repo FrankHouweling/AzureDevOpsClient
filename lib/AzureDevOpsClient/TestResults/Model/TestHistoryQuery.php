@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestHistoryQuery Class Doc Comment
  *
  * @category Class
  * @description Filter to get TestCase result history.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,7 +65,7 @@ class TestHistoryQuery implements ModelInterface, ArrayAccess
         'groupBy' => 'string',
         'maxCompleteDate' => '\DateTime',
         'releaseEnvDefinitionId' => 'int',
-        'resultsForGroup' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]',
+        'resultsForGroup' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]',
         'testCaseId' => 'int',
         'trendDays' => 'int'
     ];
@@ -462,7 +462,7 @@ class TestHistoryQuery implements ModelInterface, ArrayAccess
     /**
      * Gets resultsForGroup
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]
      */
     public function getResultsForGroup()
     {
@@ -472,7 +472,7 @@ class TestHistoryQuery implements ModelInterface, ArrayAccess
     /**
      * Sets resultsForGroup
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[] $resultsForGroup List of TestResultHistoryForGroup which are grouped by GroupBy
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[] $resultsForGroup List of TestResultHistoryForGroup which are grouped by GroupBy
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultSummary Class Doc Comment
  *
  * @category Class
  * @description Summary of results for a pipeline instance.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ResultSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'resultSummaryByRunState' => 'map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome]'
+        'resultSummaryByRunState' => 'map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ResultSummary implements ModelInterface, ArrayAccess
     /**
      * Gets resultSummaryByRunState
      *
-     * @return map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome]
      */
     public function getResultSummaryByRunState()
     {
@@ -218,7 +218,7 @@ class ResultSummary implements ModelInterface, ArrayAccess
     /**
      * Sets resultSummaryByRunState
      *
-     * @param map[string,\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome] $resultSummaryByRunState Result summary of pipeline, group by TestRun state.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Test\Model\ResultsSummaryByOutcome] $resultSummaryByRunState Result summary of pipeline, group by TestRun state.
      *
      * @return $this
      */

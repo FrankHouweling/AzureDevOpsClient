@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Client;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Notification\ApiException;
-use AzureDevOpsClient\Notification\Configuration;
-use AzureDevOpsClient\Notification\HeaderSelector;
-use AzureDevOpsClient\Notification\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Notification\ApiException;
+use FrankHouweling\AzureDevOpsClient\Notification\Configuration;
+use FrankHouweling\AzureDevOpsClient\Notification\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * DiagnosticLogsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class DiagnosticLogsApi
      * @param  \DateTime $startTime Start time for the time range to query in. (optional)
      * @param  \DateTime $endTime End time for the time range to query in. (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]
      */
     public function diagnosticLogsList($source, $organization, $entryId, $apiVersion, $startTime = null, $endTime = null)
     {
@@ -117,13 +117,13 @@ class DiagnosticLogsApi
      * @param  \DateTime $startTime Start time for the time range to query in. (optional)
      * @param  \DateTime $endTime End time for the time range to query in. (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[], HTTP status code, HTTP response headers (array of strings)
      */
     public function diagnosticLogsListWithHttpInfo($source, $organization, $entryId, $apiVersion, $startTime = null, $endTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]';
         $request = $this->diagnosticLogsListRequest($source, $organization, $entryId, $apiVersion, $startTime, $endTime);
 
         try {
@@ -175,7 +175,7 @@ class DiagnosticLogsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class DiagnosticLogsApi
      */
     public function diagnosticLogsListAsyncWithHttpInfo($source, $organization, $entryId, $apiVersion, $startTime = null, $endTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\INotificationDiagnosticLog[]';
         $request = $this->diagnosticLogsListRequest($source, $organization, $entryId, $apiVersion, $startTime, $endTime);
 
         return $this->client

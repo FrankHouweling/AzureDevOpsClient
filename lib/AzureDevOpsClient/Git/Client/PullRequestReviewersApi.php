@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestReviewersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,16 +91,16 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersCreatePullRequestReviewer
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote
      */
     public function pullRequestReviewersCreatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
@@ -112,20 +112,20 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersCreatePullRequestReviewerWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestReviewersCreatePullRequestReviewerWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersCreatePullRequestReviewerRequest($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         try {
@@ -177,7 +177,7 @@ class PullRequestReviewersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -219,7 +219,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -231,7 +231,7 @@ class PullRequestReviewersApi
      */
     public function pullRequestReviewersCreatePullRequestReviewerAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersCreatePullRequestReviewerRequest($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         return $this->client
@@ -275,7 +275,7 @@ class PullRequestReviewersApi
      * Create request for operation 'pullRequestReviewersCreatePullRequestReviewer'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -465,15 +465,15 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersCreatePullRequestReviewers
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
      */
     public function pullRequestReviewersCreatePullRequestReviewers($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -485,19 +485,19 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersCreatePullRequestReviewersWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestReviewersCreatePullRequestReviewersWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
         $request = $this->pullRequestReviewersCreatePullRequestReviewersRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -549,7 +549,7 @@ class PullRequestReviewersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -565,7 +565,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -590,7 +590,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -601,7 +601,7 @@ class PullRequestReviewersApi
      */
     public function pullRequestReviewersCreatePullRequestReviewersAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
         $request = $this->pullRequestReviewersCreatePullRequestReviewersRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -645,7 +645,7 @@ class PullRequestReviewersApi
      * Create request for operation 'pullRequestReviewersCreatePullRequestReviewers'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $body Reviewers to add to the pull request. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -826,7 +826,7 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -845,7 +845,7 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1149,9 +1149,9 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote
      */
     public function pullRequestReviewersGet($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
@@ -1169,13 +1169,13 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestReviewersGetWithHttpInfo($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersGetRequest($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         try {
@@ -1227,7 +1227,7 @@ class PullRequestReviewersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1279,7 +1279,7 @@ class PullRequestReviewersApi
      */
     public function pullRequestReviewersGetAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersGetRequest($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         return $this->client
@@ -1508,9 +1508,9 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
      */
     public function pullRequestReviewersList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -1527,13 +1527,13 @@ class PullRequestReviewersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestReviewersListWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
         $request = $this->pullRequestReviewersListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -1585,7 +1585,7 @@ class PullRequestReviewersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1635,7 +1635,7 @@ class PullRequestReviewersApi
      */
     public function pullRequestReviewersListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]';
         $request = $this->pullRequestReviewersListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -1844,16 +1844,16 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersUpdatePullRequestReviewer
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote
      */
     public function pullRequestReviewersUpdatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
@@ -1865,20 +1865,20 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersUpdatePullRequestReviewerWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestReviewersUpdatePullRequestReviewerWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersUpdatePullRequestReviewerRequest($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         try {
@@ -1930,7 +1930,7 @@ class PullRequestReviewersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1946,7 +1946,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -1972,7 +1972,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -1984,7 +1984,7 @@ class PullRequestReviewersApi
      */
     public function pullRequestReviewersUpdatePullRequestReviewerAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote';
         $request = $this->pullRequestReviewersUpdatePullRequestReviewerRequest($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion);
 
         return $this->client
@@ -2028,7 +2028,7 @@ class PullRequestReviewersApi
      * Create request for operation 'pullRequestReviewersUpdatePullRequestReviewer'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote $body Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $reviewerId ID of the reviewer. (required)
@@ -2218,13 +2218,13 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersUpdatePullRequestReviewers
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2237,13 +2237,13 @@ class PullRequestReviewersApi
      * Operation pullRequestReviewersUpdatePullRequestReviewersWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2295,7 +2295,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request (required)
      * @param  string $project Project ID or project name (required)
@@ -2320,7 +2320,7 @@ class PullRequestReviewersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request (required)
      * @param  string $project Project ID or project name (required)
@@ -2361,7 +2361,7 @@ class PullRequestReviewersApi
      * Create request for operation 'pullRequestReviewersUpdatePullRequestReviewers'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $body IDs of the reviewers whose votes will be reset to zero (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request (required)
      * @param  string $project Project ID or project name (required)

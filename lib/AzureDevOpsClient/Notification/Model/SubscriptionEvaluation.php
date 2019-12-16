@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionEvaluation Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class SubscriptionEvaluation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'clauses' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[]',
-        'user' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity'
+        'clauses' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[]',
+        'user' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity'
     ];
 
     /**
@@ -214,7 +214,7 @@ class SubscriptionEvaluation implements ModelInterface, ArrayAccess
     /**
      * Gets clauses
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[]
      */
     public function getClauses()
     {
@@ -224,7 +224,7 @@ class SubscriptionEvaluation implements ModelInterface, ArrayAccess
     /**
      * Sets clauses
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[] $clauses clauses
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionEvaluationClause[] $clauses clauses
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class SubscriptionEvaluation implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity
      */
     public function getUser()
     {
@@ -248,7 +248,7 @@ class SubscriptionEvaluation implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity $user user
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity $user user
      *
      * @return $this
      */

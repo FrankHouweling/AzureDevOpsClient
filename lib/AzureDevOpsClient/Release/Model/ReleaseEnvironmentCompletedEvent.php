@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseEnvironmentCompletedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class ReleaseEnvironmentCompletedEvent implements ModelInterface, ArrayAccess
         'createdByName' => 'string',
         'definitionId' => 'int',
         'definitionName' => 'string',
-        'environment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
+        'environment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
         'environmentId' => 'int',
         'projectName' => 'string',
         'reason' => 'string',
-        'releaseCreatedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'releaseCreatedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'releaseLogsUri' => 'string',
         'releaseName' => 'string',
         'status' => 'string',
@@ -381,7 +381,7 @@ class ReleaseEnvironmentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets environment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment
      */
     public function getEnvironment()
     {
@@ -391,7 +391,7 @@ class ReleaseEnvironmentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets environment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment $environment environment
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment $environment environment
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ class ReleaseEnvironmentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets releaseCreatedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getReleaseCreatedBy()
     {
@@ -496,7 +496,7 @@ class ReleaseEnvironmentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets releaseCreatedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $releaseCreatedBy releaseCreatedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $releaseCreatedBy releaseCreatedBy
      *
      * @return $this
      */

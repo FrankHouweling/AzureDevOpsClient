@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequestIterationChanges Class Doc Comment
  *
  * @category Class
  * @description Collection of changes made in a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GitPullRequestIterationChanges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changeEntries' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[]',
+        'changeEntries' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[]',
         'nextSkip' => 'int',
         'nextTop' => 'int'
     ];
@@ -220,7 +220,7 @@ class GitPullRequestIterationChanges implements ModelInterface, ArrayAccess
     /**
      * Gets changeEntries
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[]
      */
     public function getChangeEntries()
     {
@@ -230,7 +230,7 @@ class GitPullRequestIterationChanges implements ModelInterface, ArrayAccess
     /**
      * Sets changeEntries
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[] $changeEntries Changes made in the iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[] $changeEntries Changes made in the iteration.
      *
      * @return $this
      */

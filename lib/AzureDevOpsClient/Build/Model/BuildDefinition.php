@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinition Class Doc Comment
  *
  * @category Class
  * @description Represents a build definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,20 +58,20 @@ class BuildDefinition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
-        'authoredBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
-        'draftOf' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference',
-        'drafts' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[]',
-        'latestBuild' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
-        'latestCompletedBuild' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
-        'metrics' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'authoredBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
+        'draftOf' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference',
+        'drafts' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[]',
+        'latestBuild' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
+        'latestCompletedBuild' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
+        'metrics' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]',
         'quality' => 'string',
-        'queue' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue',
+        'queue' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue',
         'createdDate' => '\DateTime',
         'id' => 'int',
         'name' => 'string',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
         'queueStatus' => 'string',
         'revision' => 'int',
         'type' => 'string',
@@ -80,22 +80,22 @@ class BuildDefinition implements ModelInterface, ArrayAccess
         'badgeEnabled' => 'bool',
         'buildNumberFormat' => 'string',
         'comment' => 'string',
-        'demands' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]',
+        'demands' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]',
         'description' => 'string',
         'dropLocation' => 'string',
         'jobAuthorizationScope' => 'string',
         'jobCancelTimeoutInMinutes' => 'int',
         'jobTimeoutInMinutes' => 'int',
-        'options' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOption[]',
-        'process' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildProcess',
-        'processParameters' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProcessParameters',
-        'properties' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
-        'repository' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository',
-        'retentionRules' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy[]',
+        'options' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOption[]',
+        'process' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildProcess',
+        'processParameters' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ProcessParameters',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository',
+        'retentionRules' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy[]',
         'tags' => 'string[]',
-        'triggers' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildTrigger[]',
-        'variableGroups' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroup[]',
-        'variables' => 'map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]'
+        'triggers' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildTrigger[]',
+        'variableGroups' => '\FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroup[]',
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]'
     ];
 
     /**
@@ -524,7 +524,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -534,7 +534,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets authoredBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getAuthoredBy()
     {
@@ -558,7 +558,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets authoredBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $authoredBy The author of the definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $authoredBy The author of the definition.
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets draftOf
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference
      */
     public function getDraftOf()
     {
@@ -582,7 +582,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets draftOf
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference $draftOf A reference to the definition that this definition is a draft of, if this is a draft definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference $draftOf A reference to the definition that this definition is a draft of, if this is a draft definition.
      *
      * @return $this
      */
@@ -596,7 +596,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets drafts
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[]
      */
     public function getDrafts()
     {
@@ -606,7 +606,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets drafts
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[] $drafts The list of drafts associated with this definition, if this is not a draft definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[] $drafts The list of drafts associated with this definition, if this is not a draft definition.
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets latestBuild
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function getLatestBuild()
     {
@@ -630,7 +630,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets latestBuild
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $latestBuild latestBuild
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Build $latestBuild latestBuild
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets latestCompletedBuild
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function getLatestCompletedBuild()
     {
@@ -654,7 +654,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets latestCompletedBuild
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $latestCompletedBuild latestCompletedBuild
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Build $latestCompletedBuild latestCompletedBuild
      *
      * @return $this
      */
@@ -668,7 +668,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets metrics
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]
      */
     public function getMetrics()
     {
@@ -678,7 +678,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets metrics
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[] $metrics metrics
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[] $metrics metrics
      *
      * @return $this
      */
@@ -725,7 +725,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets queue
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue
      */
     public function getQueue()
     {
@@ -735,7 +735,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets queue
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The default queue for builds run against this definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The default queue for builds run against this definition.
      *
      * @return $this
      */
@@ -845,7 +845,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -855,7 +855,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
      *
      * @return $this
      */
@@ -1079,7 +1079,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets demands
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]
      */
     public function getDemands()
     {
@@ -1089,7 +1089,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets demands
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[] $demands demands
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[] $demands demands
      *
      * @return $this
      */
@@ -1232,7 +1232,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOption[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOption[]
      */
     public function getOptions()
     {
@@ -1242,7 +1242,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOption[] $options options
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOption[] $options options
      *
      * @return $this
      */
@@ -1256,7 +1256,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets process
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildProcess
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildProcess
      */
     public function getProcess()
     {
@@ -1266,7 +1266,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets process
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildProcess $process The build process.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildProcess $process The build process.
      *
      * @return $this
      */
@@ -1280,7 +1280,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets processParameters
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProcessParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ProcessParameters
      */
     public function getProcessParameters()
     {
@@ -1290,7 +1290,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets processParameters
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProcessParameters $processParameters The process parameters for this definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ProcessParameters $processParameters The process parameters for this definition.
      *
      * @return $this
      */
@@ -1304,7 +1304,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -1314,7 +1314,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection $properties properties
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection $properties properties
      *
      * @return $this
      */
@@ -1328,7 +1328,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository
      */
     public function getRepository()
     {
@@ -1338,7 +1338,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository.
      *
      * @return $this
      */
@@ -1352,7 +1352,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets retentionRules
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy[]
      */
     public function getRetentionRules()
     {
@@ -1362,7 +1362,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets retentionRules
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy[] $retentionRules retentionRules
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy[] $retentionRules retentionRules
      *
      * @return $this
      */
@@ -1400,7 +1400,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets triggers
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildTrigger[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildTrigger[]
      */
     public function getTriggers()
     {
@@ -1410,7 +1410,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets triggers
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildTrigger[] $triggers triggers
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildTrigger[] $triggers triggers
      *
      * @return $this
      */
@@ -1424,7 +1424,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets variableGroups
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroup[]
      */
     public function getVariableGroups()
     {
@@ -1434,7 +1434,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets variableGroups
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroup[] $variableGroups variableGroups
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroup[] $variableGroups variableGroups
      *
      * @return $this
      */
@@ -1448,7 +1448,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]
      */
     public function getVariables()
     {
@@ -1458,7 +1458,7 @@ class BuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable] $variables variables
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable] $variables variables
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dataSourceDetails' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails',
-        'resultTransformationDetails' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails',
-        'serviceEndpointDetails' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails'
+        'dataSourceDetails' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails',
+        'resultTransformationDetails' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails',
+        'serviceEndpointDetails' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Gets dataSourceDetails
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails
      */
     public function getDataSourceDetails()
     {
@@ -230,7 +230,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Sets dataSourceDetails
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails $dataSourceDetails Gets or sets the data source details for the service endpoint request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSourceDetails $dataSourceDetails Gets or sets the data source details for the service endpoint request.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resultTransformationDetails
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails
      */
     public function getResultTransformationDetails()
     {
@@ -254,7 +254,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resultTransformationDetails
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails $resultTransformationDetails Gets or sets the result transformation details for the service endpoint request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ResultTransformationDetails $resultTransformationDetails Gets or sets the result transformation details for the service endpoint request.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Gets serviceEndpointDetails
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails
      */
     public function getServiceEndpointDetails()
     {
@@ -278,7 +278,7 @@ class ServiceEndpointRequest implements ModelInterface, ArrayAccess
     /**
      * Sets serviceEndpointDetails
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails $serviceEndpointDetails Gets or sets the service endpoint details for the service endpoint request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointDetails $serviceEndpointDetails Gets or sets the service endpoint details for the service endpoint request.
      *
      * @return $this
      */

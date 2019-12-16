@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BacklogColumn Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BacklogColumn implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'columnFieldReference' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference',
+        'columnFieldReference' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference',
         'width' => 'int'
     ];
 
@@ -214,7 +214,7 @@ class BacklogColumn implements ModelInterface, ArrayAccess
     /**
      * Gets columnFieldReference
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference
      */
     public function getColumnFieldReference()
     {
@@ -224,7 +224,7 @@ class BacklogColumn implements ModelInterface, ArrayAccess
     /**
      * Sets columnFieldReference
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference $columnFieldReference columnFieldReference
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference $columnFieldReference columnFieldReference
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestConfiguration Class Doc Comment
  *
  * @category Class
  * @description Test configuration
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,9 +62,9 @@ class TestConfiguration implements ModelInterface, ArrayAccess
         'isDefault' => 'bool',
         'name' => 'string',
         'state' => 'string',
-        'values' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[]',
+        'values' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[]',
         'id' => 'int',
-        'project' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference'
+        'project' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference'
     ];
 
     /**
@@ -372,7 +372,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[]
      */
     public function getValues()
     {
@@ -382,7 +382,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
      *
      * @return $this
      */
@@ -420,7 +420,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -430,7 +430,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Id of the test configuration variable
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Id of the test configuration variable
      *
      * @return $this
      */

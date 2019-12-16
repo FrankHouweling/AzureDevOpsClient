@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PolicyConfiguration Class Doc Comment
  *
  * @category Class
  * @description The full policy configuration with settings.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'revision' => 'int',
         'id' => 'int',
-        'type' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef',
+        'type' => '\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'createdBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'isBlocking' => 'bool',
         'isDeleted' => 'bool',
@@ -322,7 +322,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef
      */
     public function getType()
     {
@@ -332,7 +332,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef $type The policy configuration type.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef $type The policy configuration type.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -380,7 +380,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links The links to other objects related to this object.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links The links to other objects related to this object.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -404,7 +404,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $createdBy A reference to the identity that created the policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $createdBy A reference to the identity that created the policy.
      *
      * @return $this
      */

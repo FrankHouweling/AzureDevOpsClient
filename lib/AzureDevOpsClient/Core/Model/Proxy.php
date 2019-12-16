@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * Proxy Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class Proxy implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'authorization' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProxyAuthorization',
+        'authorization' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ProxyAuthorization',
         'description' => 'string',
         'friendlyName' => 'string',
         'globalDefault' => 'bool',
@@ -244,7 +244,7 @@ class Proxy implements ModelInterface, ArrayAccess
     /**
      * Gets authorization
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProxyAuthorization
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ProxyAuthorization
      */
     public function getAuthorization()
     {
@@ -254,7 +254,7 @@ class Proxy implements ModelInterface, ArrayAccess
     /**
      * Sets authorization
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProxyAuthorization $authorization authorization
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ProxyAuthorization $authorization authorization
      *
      * @return $this
      */

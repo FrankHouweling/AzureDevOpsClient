@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\ActionResultsApi
+# FrankHouweling\AzureDevOpsClient\Test\ActionResultsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **actionResultsList**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[] actionResultsList($organization, $project, $runId, $testCaseResultId, $iterationId, $actionPath, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[] actionResultsList($organization, $project, $runId, $testCaseResultId, $iterationId, $actionPath, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Gets the action results for an iteration in a test result.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ActionResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ActionResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[]**](../Model/TestActionResultModel.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[]**](../Model/TestActionResultModel.md)
 
 ### Authorization
 

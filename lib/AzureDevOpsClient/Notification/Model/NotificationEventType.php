@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationEventType Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of an event type. It defines the fields, that can be used for filtering, for that event type.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class NotificationEventType implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'category' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory',
+        'category' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory',
         'color' => 'string',
         'customSubscriptionsAllowed' => 'bool',
-        'eventPublisher' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventPublisher',
-        'fields' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventField]',
+        'eventPublisher' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventPublisher',
+        'fields' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventField]',
         'hasInitiator' => 'bool',
         'icon' => 'string',
         'id' => 'string',
         'name' => 'string',
-        'roles' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventRole[]',
+        'roles' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventRole[]',
         'supportedScopes' => 'string[]',
         'url' => 'string'
     ];
@@ -274,7 +274,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Gets category
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory
      */
     public function getCategory()
     {
@@ -284,7 +284,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory $category category
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventTypeCategory $category category
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Gets eventPublisher
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventPublisher
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventPublisher
      */
     public function getEventPublisher()
     {
@@ -356,7 +356,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Sets eventPublisher
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventPublisher $eventPublisher eventPublisher
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventPublisher $eventPublisher eventPublisher
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventField]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventField]
      */
     public function getFields()
     {
@@ -380,7 +380,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventField] $fields fields
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventField] $fields fields
      *
      * @return $this
      */
@@ -490,7 +490,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Gets roles
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventRole[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventRole[]
      */
     public function getRoles()
     {
@@ -500,7 +500,7 @@ class NotificationEventType implements ModelInterface, ArrayAccess
     /**
      * Sets roles
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventRole[] $roles roles
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventRole[] $roles roles
      *
      * @return $this
      */

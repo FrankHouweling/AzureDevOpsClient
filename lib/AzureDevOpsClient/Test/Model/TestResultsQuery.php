@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultsQuery Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class TestResultsQuery implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'fields' => 'string[]',
-        'results' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]',
-        'resultsFilter' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsFilter'
+        'results' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]',
+        'resultsFilter' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultsFilter'
     ];
 
     /**
@@ -244,7 +244,7 @@ class TestResultsQuery implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]
      */
     public function getResults()
     {
@@ -254,7 +254,7 @@ class TestResultsQuery implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $results results
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $results results
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class TestResultsQuery implements ModelInterface, ArrayAccess
     /**
      * Gets resultsFilter
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ResultsFilter
      */
     public function getResultsFilter()
     {
@@ -278,7 +278,7 @@ class TestResultsQuery implements ModelInterface, ArrayAccess
     /**
      * Sets resultsFilter
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsFilter $resultsFilter resultsFilter
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ResultsFilter $resultsFilter resultsFilter
      *
      * @return $this
      */

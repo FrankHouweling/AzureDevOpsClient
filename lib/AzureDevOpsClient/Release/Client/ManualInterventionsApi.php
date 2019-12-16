@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ManualInterventionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class ManualInterventionsApi
      * @param  int $manualInterventionId Id of the manual intervention. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention
      */
     public function manualInterventionsGet($organization, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
@@ -115,13 +115,13 @@ class ManualInterventionsApi
      * @param  int $manualInterventionId Id of the manual intervention. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention, HTTP status code, HTTP response headers (array of strings)
      */
     public function manualInterventionsGetWithHttpInfo($organization, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention';
         $request = $this->manualInterventionsGetRequest($organization, $project, $releaseId, $manualInterventionId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ManualInterventionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class ManualInterventionsApi
      */
     public function manualInterventionsGetAsyncWithHttpInfo($organization, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention';
         $request = $this->manualInterventionsGetRequest($organization, $project, $releaseId, $manualInterventionId, $apiVersion);
 
         return $this->client
@@ -436,9 +436,9 @@ class ManualInterventionsApi
      * @param  int $releaseId Id of the release. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]
      */
     public function manualInterventionsList($organization, $project, $releaseId, $apiVersion)
     {
@@ -454,13 +454,13 @@ class ManualInterventionsApi
      * @param  int $releaseId Id of the release. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[], HTTP status code, HTTP response headers (array of strings)
      */
     public function manualInterventionsListWithHttpInfo($organization, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]';
         $request = $this->manualInterventionsListRequest($organization, $project, $releaseId, $apiVersion);
 
         try {
@@ -512,7 +512,7 @@ class ManualInterventionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class ManualInterventionsApi
      */
     public function manualInterventionsListAsyncWithHttpInfo($organization, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]';
         $request = $this->manualInterventionsListRequest($organization, $project, $releaseId, $apiVersion);
 
         return $this->client
@@ -754,15 +754,15 @@ class ManualInterventionsApi
      * Operation manualInterventionsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $manualInterventionId Id of the manual intervention. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention
      */
     public function manualInterventionsUpdate($organization, $body, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
@@ -774,19 +774,19 @@ class ManualInterventionsApi
      * Operation manualInterventionsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $manualInterventionId Id of the manual intervention. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention, HTTP status code, HTTP response headers (array of strings)
      */
     public function manualInterventionsUpdateWithHttpInfo($organization, $body, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention';
         $request = $this->manualInterventionsUpdateRequest($organization, $body, $project, $releaseId, $manualInterventionId, $apiVersion);
 
         try {
@@ -838,7 +838,7 @@ class ManualInterventionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -854,7 +854,7 @@ class ManualInterventionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $manualInterventionId Id of the manual intervention. (required)
@@ -879,7 +879,7 @@ class ManualInterventionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $manualInterventionId Id of the manual intervention. (required)
@@ -890,7 +890,7 @@ class ManualInterventionsApi
      */
     public function manualInterventionsUpdateAsyncWithHttpInfo($organization, $body, $project, $releaseId, $manualInterventionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention';
         $request = $this->manualInterventionsUpdateRequest($organization, $body, $project, $releaseId, $manualInterventionId, $apiVersion);
 
         return $this->client
@@ -934,7 +934,7 @@ class ManualInterventionsApi
      * Create request for operation 'manualInterventionsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ManualInterventionUpdateMetadata $body Meta data to update manual intervention. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $manualInterventionId Id of the manual intervention. (required)

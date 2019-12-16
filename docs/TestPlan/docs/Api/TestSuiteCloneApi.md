@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\TestSuiteCloneApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\TestSuiteCloneApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **testSuiteCloneCloneTestSuite**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation testSuiteCloneCloneTestSuite($organization, $body, $project, $apiVersion, $deepClone)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation testSuiteCloneCloneTestSuite($organization, $body, $project, $apiVersion, $deepClone)
 
 
 
@@ -21,16 +21,16 @@ Clone test suite
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestSuiteCloneApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestSuiteCloneApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams | Suite Clone Request Body detail TestSuiteCloneRequest
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams | Suite Clone Request Body detail TestSuiteCloneRequest
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.2' to use this version of the api.
 $deepClone = true; // bool | Clones all the associated test cases as well
@@ -49,14 +49,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams**](../Model/CloneTestSuiteParams.md)| Suite Clone Request Body detail TestSuiteCloneRequest |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteParams**](../Model/CloneTestSuiteParams.md)| Suite Clone Request Body detail TestSuiteCloneRequest |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. |
  **deepClone** | **bool**| Clones all the associated test cases as well | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation**](../Model/CloneTestSuiteOperationInformation.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation**](../Model/CloneTestSuiteOperationInformation.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testSuiteCloneGet**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation testSuiteCloneGet($organization, $project, $cloneOperationId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation testSuiteCloneGet($organization, $project, $cloneOperationId, $apiVersion)
 
 
 
@@ -82,9 +82,9 @@ Get clone information.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestSuiteCloneApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestSuiteCloneApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation**](../Model/CloneTestSuiteOperationInformation.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneTestSuiteOperationInformation**](../Model/CloneTestSuiteOperationInformation.md)
 
 ### Authorization
 

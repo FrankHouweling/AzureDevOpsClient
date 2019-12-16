@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamFieldValuesPatch Class Doc Comment
  *
  * @category Class
  * @description Expected data from PATCH
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TeamFieldValuesPatch implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'defaultValue' => 'string',
-        'values' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]'
+        'values' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TeamFieldValuesPatch implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]
      */
     public function getValues()
     {
@@ -248,7 +248,7 @@ class TeamFieldValuesPatch implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[] $values values
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[] $values values
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * FlakySettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyDetection' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetection',
+        'flakyDetection' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetection',
         'flakyInSummaryReport' => 'bool',
         'isFlakyBugCreated' => 'bool',
         'manualMarkUnmarkFlaky' => 'bool'
@@ -226,7 +226,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
     /**
      * Gets flakyDetection
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetection
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetection
      */
     public function getFlakyDetection()
     {
@@ -236,7 +236,7 @@ class FlakySettings implements ModelInterface, ArrayAccess
     /**
      * Sets flakyDetection
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetection $flakyDetection FlakyDetection defines types of detection.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetection $flakyDetection FlakyDetection defines types of detection.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentJob Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class DeploymentJob implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'job' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask',
-        'tasks' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[]'
+        'job' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask',
+        'tasks' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class DeploymentJob implements ModelInterface, ArrayAccess
     /**
      * Gets job
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask
      */
     public function getJob()
     {
@@ -224,7 +224,7 @@ class DeploymentJob implements ModelInterface, ArrayAccess
     /**
      * Sets job
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask $job Parent task of all executed tasks.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask $job Parent task of all executed tasks.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class DeploymentJob implements ModelInterface, ArrayAccess
     /**
      * Gets tasks
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[]
      */
     public function getTasks()
     {
@@ -248,7 +248,7 @@ class DeploymentJob implements ModelInterface, ArrayAccess
     /**
      * Sets tasks
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[] $tasks List of  executed tasks with in job.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[] $tasks List of  executed tasks with in job.
      *
      * @return $this
      */

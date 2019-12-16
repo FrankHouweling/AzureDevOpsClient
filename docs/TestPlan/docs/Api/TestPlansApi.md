@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\TestPlansApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\TestPlansApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **testPlansCreate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -24,16 +24,16 @@ Create a test plan.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams | A testPlanCreateParams object.TestPlanCreateParams
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams | A testPlanCreateParams object.TestPlanCreateParams
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -51,13 +51,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams**](../Model/TestPlanCreateParams.md)| A testPlanCreateParams object.TestPlanCreateParams |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams**](../Model/TestPlanCreateParams.md)| A testPlanCreateParams object.TestPlanCreateParams |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
 
 ### Authorization
 
@@ -83,9 +83,9 @@ Delete a test plan.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testPlansGet**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansGet($organization, $project, $planId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansGet($organization, $project, $planId, $apiVersion)
 
 
 
@@ -141,9 +141,9 @@ Get a test plan by Id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testPlansList**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[] testPlansList($organization, $project, $apiVersion, $owner, $continuationToken, $includePlanDetails, $filterActivePlans)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[] testPlansList($organization, $project, $apiVersion, $owner, $continuationToken, $includePlanDetails, $filterActivePlans)
 
 
 
@@ -200,9 +200,9 @@ Get a list of test plans
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[]**](../Model/TestPlan.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[]**](../Model/TestPlan.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testPlansUpdate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansUpdate($organization, $body, $project, $planId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan testPlansUpdate($organization, $body, $project, $planId, $apiVersion)
 
 
 
@@ -265,16 +265,16 @@ Update a test plan.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams | A testPlanUpdateParams object.TestPlanUpdateParams
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams | A testPlanUpdateParams object.TestPlanUpdateParams
 $project = "project_example"; // string | Project ID or project name
 $planId = 56; // int | ID of the test plan to be updated.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -293,14 +293,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams**](../Model/TestPlanUpdateParams.md)| A testPlanUpdateParams object.TestPlanUpdateParams |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams**](../Model/TestPlanUpdateParams.md)| A testPlanUpdateParams object.TestPlanUpdateParams |
  **project** | **string**| Project ID or project name |
  **planId** | **int**| ID of the test plan to be updated. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan**](../Model/TestPlan.md)
 
 ### Authorization
 

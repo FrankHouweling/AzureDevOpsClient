@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * CloneTestSuiteParams Class Doc Comment
  *
  * @category Class
  * @description Parameters for Test Suite clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneOptions' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions',
-        'destinationTestSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo',
-        'sourceTestSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo'
+        'cloneOptions' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions',
+        'destinationTestSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo',
+        'sourceTestSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo'
     ];
 
     /**
@@ -220,7 +220,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOptions
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions
      */
     public function getCloneOptions()
     {
@@ -230,7 +230,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOptions
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Gets destinationTestSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo
      */
     public function getDestinationTestSuite()
     {
@@ -254,7 +254,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Sets destinationTestSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo $destinationTestSuite Information about destination Test Suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestSuiteInfo $destinationTestSuite Information about destination Test Suite
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Gets sourceTestSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo
      */
     public function getSourceTestSuite()
     {
@@ -278,7 +278,7 @@ class CloneTestSuiteParams implements ModelInterface, ArrayAccess
     /**
      * Sets sourceTestSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo $sourceTestSuite Information about source Test Suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestSuiteInfo $sourceTestSuite Information about source Test Suite
      *
      * @return $this
      */

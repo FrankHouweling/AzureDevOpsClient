@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\UsersApi
+# FrankHouweling\AzureDevOpsClient\Graph\UsersApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **usersCreate**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser usersCreate($organization, $body, $apiVersion, $groupDescriptors)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser usersCreate($organization, $body, $apiVersion, $groupDescriptors)
 
 
 
@@ -24,16 +24,16 @@ Materialize an existing AAD or MSA user into the VSTS account.  NOTE: Created us
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\UsersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext | The subset of the full graph user used to uniquely find the graph subject in an external provider.
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext | The subset of the full graph user used to uniquely find the graph subject in an external provider.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $groupDescriptors = "groupDescriptors_example"; // string | A comma separated list of descriptors of groups you want the graph user to join
 
@@ -51,13 +51,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext**](../Model/GraphUserCreationContext.md)| The subset of the full graph user used to uniquely find the graph subject in an external provider. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext**](../Model/GraphUserCreationContext.md)| The subset of the full graph user used to uniquely find the graph subject in an external provider. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
  **groupDescriptors** | **string**| A comma separated list of descriptors of groups you want the graph user to join | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
 
 ### Authorization
 
@@ -83,9 +83,9 @@ Disables a user.  The user will still be visible, but membership checks for the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\UsersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser usersGet($organization, $userDescriptor, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser usersGet($organization, $userDescriptor, $apiVersion)
 
 
 
@@ -139,9 +139,9 @@ Get a user by its descriptor.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\UsersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersList**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[] usersList($organization, $apiVersion, $subjectTypes, $continuationToken, $scopeDescriptor)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[] usersList($organization, $apiVersion, $subjectTypes, $continuationToken, $scopeDescriptor)
 
 
 
@@ -196,9 +196,9 @@ Get a list of all users in a given scope.  Since the list of users may be large,
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\UsersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]**](../Model/GraphUser.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]**](../Model/GraphUser.md)
 
 ### Authorization
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersUpdate**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser usersUpdate($organization, $body, $userDescriptor, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser usersUpdate($organization, $body, $userDescriptor, $apiVersion)
 
 
 
@@ -257,19 +257,19 @@ Map an existing user to a different identity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\UsersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext | The subset of the full graph user used to uniquely find the graph subject in an external provider.
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext | The subset of the full graph user used to uniquely find the graph subject in an external provider.
 $userDescriptor = "userDescriptor_example"; // string | the descriptor of the user to update
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -287,13 +287,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext**](../Model/GraphUserUpdateContext.md)| The subset of the full graph user used to uniquely find the graph subject in an external provider. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext**](../Model/GraphUserUpdateContext.md)| The subset of the full graph user used to uniquely find the graph subject in an external provider. |
  **userDescriptor** | **string**| the descriptor of the user to update |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser**](../Model/GraphUser.md)
 
 ### Authorization
 

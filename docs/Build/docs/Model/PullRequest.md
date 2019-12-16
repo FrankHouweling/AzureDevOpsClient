@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) | The links to other objects related to this object. | [optional] 
-**author** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | Author of the pull request. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) | The links to other objects related to this object. | [optional] 
+**author** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | Author of the pull request. | [optional] 
 **currentState** | **string** | Current state of the pull request, e.g. open, merged, closed, conflicts, etc. | [optional] 
 **description** | **string** | Description for the pull request. | [optional] 
 **id** | **string** | Unique identifier for the pull request | [optional] 

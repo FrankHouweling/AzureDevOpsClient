@@ -1,4 +1,4 @@
-# AzureDevOpsClient\MemberEntitlementManagement\UserEntitlementsApi
+# FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\UserEntitlementsApi
 
 All URIs are relative to *https://vsaex.dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **userEntitlementsAdd**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse userEntitlementsAdd($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse userEntitlementsAdd($organization, $body, $apiVersion)
 
 
 
@@ -25,16 +25,16 @@ Add a user, assign license and extensions and make them a member of a project gr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement(); // \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement | UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to.
+$body = new \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement(); // \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement | UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
 try {
@@ -51,12 +51,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement**](../Model/UserEntitlement.md)| UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement**](../Model/UserEntitlement.md)| UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse**](../Model/UserEntitlementsPostResponse.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse**](../Model/UserEntitlementsPostResponse.md)
 
 ### Authorization
 
@@ -82,9 +82,9 @@ Delete a user from the account.  The delete operation includes unassigning Exten
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,7 +126,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEntitlementsGet**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement userEntitlementsGet($organization, $userId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement userEntitlementsGet($organization, $userId, $apiVersion)
 
 
 
@@ -138,9 +138,9 @@ Get User Entitlement for a user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement**](../Model/UserEntitlement.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement**](../Model/UserEntitlement.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEntitlementsSearchUserEntitlements**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList userEntitlementsSearchUserEntitlements($organization, $apiVersion, $continuationToken, $select, $filter, $orderBy)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList userEntitlementsSearchUserEntitlements($organization, $apiVersion, $continuationToken, $select, $filter, $orderBy)
 
 
 
@@ -195,9 +195,9 @@ Get a paged set of user entitlements matching the filter and sort criteria built
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList**](../Model/PagedGraphMemberList.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList**](../Model/PagedGraphMemberList.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEntitlementsUpdateUserEntitlement**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse userEntitlementsUpdateUserEntitlement($organization, $body, $userId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse userEntitlementsUpdateUserEntitlement($organization, $body, $userId, $apiVersion)
 
 
 
@@ -258,16 +258,16 @@ Edit the entitlements (License, Extensions, Projects, Teams etc) for a user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform on the user.
+$body = new \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform on the user.
 $userId = "userId_example"; // string | ID of the user.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
@@ -285,13 +285,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform on the user. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform on the user. |
  **userId** | [**string**](../Model/.md)| ID of the user. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse**](../Model/UserEntitlementsPatchResponse.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse**](../Model/UserEntitlementsPatchResponse.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEntitlementsUpdateUserEntitlements**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference userEntitlementsUpdateUserEntitlements($organization, $body, $apiVersion, $doNotSendInviteForNewUsers)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference userEntitlementsUpdateUserEntitlements($organization, $body, $apiVersion, $doNotSendInviteForNewUsers)
 
 
 
@@ -317,16 +317,16 @@ Edit the entitlements (License, Extensions, Projects, Teams etc) for one or more
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\UserEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform.
+$body = new \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 $doNotSendInviteForNewUsers = true; // bool | Whether to send email invites to new users or not
 
@@ -344,13 +344,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
  **doNotSendInviteForNewUsers** | **bool**| Whether to send email invites to new users or not | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference**](../Model/UserEntitlementOperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference**](../Model/UserEntitlementOperationReference.md)
 
 ### Authorization
 

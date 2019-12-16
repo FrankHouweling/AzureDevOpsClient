@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\RetentionApi
+# FrankHouweling\AzureDevOpsClient\Build\RetentionApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **retentionGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting retentionGet($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting retentionGet($organization, $project, $apiVersion)
 
 
 
@@ -21,12 +21,12 @@ Gets the project's retention settings.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\RetentionApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\RetentionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting**](../Model/ProjectRetentionSetting.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting**](../Model/ProjectRetentionSetting.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retentionUpdate**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting retentionUpdate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting retentionUpdate($organization, $body, $project, $apiVersion)
 
 
 
@@ -81,19 +81,19 @@ Updates the project's retention settings.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\RetentionApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\RetentionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel(); // \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel | 
+$body = new \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel(); // \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel | 
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -111,13 +111,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel**](../Model/UpdateProjectRetentionSettingModel.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel**](../Model/UpdateProjectRetentionSettingModel.md)|  |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting**](../Model/ProjectRetentionSetting.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting**](../Model/ProjectRetentionSetting.md)
 
 ### Authorization
 

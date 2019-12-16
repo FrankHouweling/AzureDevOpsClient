@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * DependsOn Class Doc Comment
  *
  * @category Class
  * @description Represents the inputs on which any given input is dependent.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class DependsOn implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'input' => 'string',
-        'map' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[]'
+        'map' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class DependsOn implements ModelInterface, ArrayAccess
     /**
      * Gets map
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[]
      */
     public function getMap()
     {
@@ -248,7 +248,7 @@ class DependsOn implements ModelInterface, ArrayAccess
     /**
      * Sets map
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[] $map Gets or sets key-value pair containing other's field value and corresponding url value.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyBinding[] $map Gets or sets key-value pair containing other's field value and corresponding url value.
      *
      * @return $this
      */

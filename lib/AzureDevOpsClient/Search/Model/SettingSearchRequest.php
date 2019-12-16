@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * SettingSearchRequest Class Doc Comment
  *
  * @category Class
  * @description Defines a setting search request
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SettingSearchRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'orderBy' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SortOption[]',
+        'orderBy' => '\FrankHouweling\AzureDevOpsClient\Search\Model\SortOption[]',
         'skip' => 'int',
         'top' => 'int',
         'includeFacets' => 'bool',
@@ -238,7 +238,7 @@ class SettingSearchRequest implements ModelInterface, ArrayAccess
     /**
      * Gets orderBy
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SortOption[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\SortOption[]
      */
     public function getOrderBy()
     {
@@ -248,7 +248,7 @@ class SettingSearchRequest implements ModelInterface, ArrayAccess
     /**
      * Sets orderBy
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SortOption[] $orderBy Options for sorting search results. If set to null, the results will be returned sorted by relevance. If more than one sort option is provided, the results are sorted in the order specified in the OrderBy.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\SortOption[] $orderBy Options for sorting search results. If set to null, the results will be returned sorted by relevance. If more than one sort option is provided, the results are sorted in the order specified in the OrderBy.
      *
      * @return $this
      */

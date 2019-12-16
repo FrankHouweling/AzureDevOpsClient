@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * RunsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class RunsApi
      * Operation runsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun
      */
     public function runsCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class RunsApi
      * Operation runsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function runsCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class RunsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class RunsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class RunsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class RunsApi
      */
     public function runsCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class RunsApi
      * Create request for operation 'runsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunCreateModel $body Run details RunCreateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class RunsApi
      * @param  int $runId ID of the run to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class RunsApi
      * @param  int $runId ID of the run to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -698,9 +698,9 @@ class RunsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeDetails Default value is true. It includes details like run statistics, release, build, test environment, post process state, and more. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun
      */
     public function runsGetTestRunById($organization, $project, $runId, $apiVersion, $includeDetails = null)
     {
@@ -717,13 +717,13 @@ class RunsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeDetails Default value is true. It includes details like run statistics, release, build, test environment, post process state, and more. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function runsGetTestRunByIdWithHttpInfo($organization, $project, $runId, $apiVersion, $includeDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsGetTestRunByIdRequest($organization, $project, $runId, $apiVersion, $includeDetails);
 
         try {
@@ -775,7 +775,7 @@ class RunsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -825,7 +825,7 @@ class RunsApi
      */
     public function runsGetTestRunByIdAsyncWithHttpInfo($organization, $project, $runId, $apiVersion, $includeDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsGetTestRunByIdRequest($organization, $project, $runId, $apiVersion, $includeDetails);
 
         return $this->client
@@ -1028,9 +1028,9 @@ class RunsApi
      * @param  int $runId ID of the run to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunStatistic
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRunStatistic
      */
     public function runsGetTestRunStatistics($organization, $project, $runId, $apiVersion)
     {
@@ -1046,13 +1046,13 @@ class RunsApi
      * @param  int $runId ID of the run to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunStatistic, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRunStatistic, HTTP status code, HTTP response headers (array of strings)
      */
     public function runsGetTestRunStatisticsWithHttpInfo($organization, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunStatistic';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunStatistic';
         $request = $this->runsGetTestRunStatisticsRequest($organization, $project, $runId, $apiVersion);
 
         try {
@@ -1104,7 +1104,7 @@ class RunsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunStatistic',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunStatistic',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1152,7 +1152,7 @@ class RunsApi
      */
     public function runsGetTestRunStatisticsAsyncWithHttpInfo($organization, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunStatistic';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunStatistic';
         $request = $this->runsGetTestRunStatisticsRequest($organization, $project, $runId, $apiVersion);
 
         return $this->client
@@ -1357,9 +1357,9 @@ class RunsApi
      * @param  int $skip Number of test runs to skip. (optional)
      * @param  int $top Number of test runs to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun[]
      */
     public function runsList($organization, $project, $apiVersion, $buildUri = null, $owner = null, $tmiRunId = null, $planId = null, $includeRunDetails = null, $automated = null, $skip = null, $top = null)
     {
@@ -1382,13 +1382,13 @@ class RunsApi
      * @param  int $skip Number of test runs to skip. (optional)
      * @param  int $top Number of test runs to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun[], HTTP status code, HTTP response headers (array of strings)
      */
     public function runsListWithHttpInfo($organization, $project, $apiVersion, $buildUri = null, $owner = null, $tmiRunId = null, $planId = null, $includeRunDetails = null, $automated = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun[]';
         $request = $this->runsListRequest($organization, $project, $apiVersion, $buildUri, $owner, $tmiRunId, $planId, $includeRunDetails, $automated, $skip, $top);
 
         try {
@@ -1440,7 +1440,7 @@ class RunsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1502,7 +1502,7 @@ class RunsApi
      */
     public function runsListAsyncWithHttpInfo($organization, $project, $apiVersion, $buildUri = null, $owner = null, $tmiRunId = null, $planId = null, $includeRunDetails = null, $automated = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun[]';
         $request = $this->runsListRequest($organization, $project, $apiVersion, $buildUri, $owner, $tmiRunId, $planId, $includeRunDetails, $automated, $skip, $top);
 
         return $this->client
@@ -1721,14 +1721,14 @@ class RunsApi
      * Operation runsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the run to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun
      */
     public function runsUpdate($organization, $body, $project, $runId, $apiVersion)
     {
@@ -1740,18 +1740,18 @@ class RunsApi
      * Operation runsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the run to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRun, HTTP status code, HTTP response headers (array of strings)
      */
     public function runsUpdateWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsUpdateRequest($organization, $body, $project, $runId, $apiVersion);
 
         try {
@@ -1803,7 +1803,7 @@ class RunsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1819,7 +1819,7 @@ class RunsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the run to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1843,7 +1843,7 @@ class RunsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the run to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1853,7 +1853,7 @@ class RunsApi
      */
     public function runsUpdateAsyncWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRun';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRun';
         $request = $this->runsUpdateRequest($organization, $body, $project, $runId, $apiVersion);
 
         return $this->client
@@ -1897,7 +1897,7 @@ class RunsApi
      * Create request for operation 'runsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\RunUpdateModel $body Run details RunUpdateModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the run to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

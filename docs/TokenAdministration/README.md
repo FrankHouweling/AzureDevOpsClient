@@ -57,15 +57,15 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TokenAdministration\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TokenAdministration\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TokenAdministration\Api\TokenListGlobalIdentitiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TokenAdministration\Api\TokenListGlobalIdentitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation()); // \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] | The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens.
+$body = array(new \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation()); // \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] | The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $isPublic = true; // bool | Set to false for PAT tokens and true for SSH tokens.
 

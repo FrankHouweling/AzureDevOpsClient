@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Client;
+namespace FrankHouweling\AzureDevOpsClient\Search\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Search\ApiException;
-use AzureDevOpsClient\Search\Configuration;
-use AzureDevOpsClient\Search\HeaderSelector;
-use AzureDevOpsClient\Search\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Search\ApiException;
+use FrankHouweling\AzureDevOpsClient\Search\Configuration;
+use FrankHouweling\AzureDevOpsClient\Search\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * WikiSearchResultsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class WikiSearchResultsApi
      * Operation wikiSearchResultsFetchWikiSearchResults
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchResponse
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchResponse
      */
     public function wikiSearchResultsFetchWikiSearchResults($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class WikiSearchResultsApi
      * Operation wikiSearchResultsFetchWikiSearchResultsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Search\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Search\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function wikiSearchResultsFetchWikiSearchResultsWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchResponse';
         $request = $this->wikiSearchResultsFetchWikiSearchResultsRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class WikiSearchResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchResponse',
+                        '\FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class WikiSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class WikiSearchResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class WikiSearchResultsApi
      */
     public function wikiSearchResultsFetchWikiSearchResultsAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchResponse';
         $request = $this->wikiSearchResultsFetchWikiSearchResultsRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class WikiSearchResultsApi
      * Create request for operation 'wikiSearchResultsFetchWikiSearchResults'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Search\Model\WikiSearchRequest $body The Wiki Search Request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Client;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Wiki\ApiException;
-use AzureDevOpsClient\Wiki\Configuration;
-use AzureDevOpsClient\Wiki\HeaderSelector;
-use AzureDevOpsClient\Wiki\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Wiki\ApiException;
+use FrankHouweling\AzureDevOpsClient\Wiki\Configuration;
+use FrankHouweling\AzureDevOpsClient\Wiki\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikisApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class WikisApi
      * Operation wikisCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2
      */
     public function wikisCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class WikisApi
      * Operation wikisCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function wikisCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class WikisApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class WikisApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class WikisApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class WikisApi
      */
     public function wikisCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class WikisApi
      * Create request for operation 'wikisCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiCreateParametersV2 $body Parameters for the wiki creation. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
@@ -412,9 +412,9 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2
      */
     public function wikisDelete($organization, $wikiIdentifier, $project, $apiVersion)
     {
@@ -430,13 +430,13 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function wikisDeleteWithHttpInfo($organization, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisDeleteRequest($organization, $wikiIdentifier, $project, $apiVersion);
 
         try {
@@ -488,7 +488,7 @@ class WikisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -536,7 +536,7 @@ class WikisApi
      */
     public function wikisDeleteAsyncWithHttpInfo($organization, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisDeleteRequest($organization, $wikiIdentifier, $project, $apiVersion);
 
         return $this->client
@@ -734,9 +734,9 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2
      */
     public function wikisGet($organization, $wikiIdentifier, $project, $apiVersion)
     {
@@ -752,13 +752,13 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function wikisGetWithHttpInfo($organization, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisGetRequest($organization, $wikiIdentifier, $project, $apiVersion);
 
         try {
@@ -810,7 +810,7 @@ class WikisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -858,7 +858,7 @@ class WikisApi
      */
     public function wikisGetAsyncWithHttpInfo($organization, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisGetRequest($organization, $wikiIdentifier, $project, $apiVersion);
 
         return $this->client
@@ -1055,9 +1055,9 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2[]
      */
     public function wikisList($organization, $project, $apiVersion)
     {
@@ -1072,13 +1072,13 @@ class WikisApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2[], HTTP status code, HTTP response headers (array of strings)
      */
     public function wikisListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2[]';
         $request = $this->wikisListRequest($organization, $project, $apiVersion);
 
         try {
@@ -1130,7 +1130,7 @@ class WikisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2[]',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1176,7 +1176,7 @@ class WikisApi
      */
     public function wikisListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2[]';
         $request = $this->wikisListRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1355,14 +1355,14 @@ class WikisApi
      * Operation wikisUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2
      */
     public function wikisUpdate($organization, $body, $wikiIdentifier, $project, $apiVersion)
     {
@@ -1374,18 +1374,18 @@ class WikisApi
      * Operation wikisUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function wikisUpdateWithHttpInfo($organization, $body, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisUpdateRequest($organization, $body, $wikiIdentifier, $project, $apiVersion);
 
         try {
@@ -1437,7 +1437,7 @@ class WikisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1453,7 +1453,7 @@ class WikisApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -1477,7 +1477,7 @@ class WikisApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -1487,7 +1487,7 @@ class WikisApi
      */
     public function wikisUpdateAsyncWithHttpInfo($organization, $body, $wikiIdentifier, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiV2';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiV2';
         $request = $this->wikisUpdateRequest($organization, $body, $wikiIdentifier, $project, $apiVersion);
 
         return $this->client
@@ -1531,7 +1531,7 @@ class WikisApi
      * Create request for operation 'wikisUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiUpdateParameters $body Update parameters. (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)

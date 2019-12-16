@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * GroupsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class GroupsApi
      * Operation groupsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $scopeDescriptor A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. (optional)
      * @param  string $groupDescriptors A comma separated list of descriptors referencing groups you want the graph group to join (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup
      */
     public function groupsCreate($organization, $body, $apiVersion, $scopeDescriptor = null, $groupDescriptors = null)
     {
@@ -110,18 +110,18 @@ class GroupsApi
      * Operation groupsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $scopeDescriptor A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. (optional)
      * @param  string $groupDescriptors A comma separated list of descriptors referencing groups you want the graph group to join (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupsCreateWithHttpInfo($organization, $body, $apiVersion, $scopeDescriptor = null, $groupDescriptors = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsCreateRequest($organization, $body, $apiVersion, $scopeDescriptor, $groupDescriptors);
 
         try {
@@ -173,7 +173,7 @@ class GroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class GroupsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $scopeDescriptor A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. (optional)
      * @param  string $groupDescriptors A comma separated list of descriptors referencing groups you want the graph group to join (optional)
@@ -213,7 +213,7 @@ class GroupsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $scopeDescriptor A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. (optional)
      * @param  string $groupDescriptors A comma separated list of descriptors referencing groups you want the graph group to join (optional)
@@ -223,7 +223,7 @@ class GroupsApi
      */
     public function groupsCreateAsyncWithHttpInfo($organization, $body, $apiVersion, $scopeDescriptor = null, $groupDescriptors = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsCreateRequest($organization, $body, $apiVersion, $scopeDescriptor, $groupDescriptors);
 
         return $this->client
@@ -267,7 +267,7 @@ class GroupsApi
      * Create request for operation 'groupsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext $body The subset of the full graph group used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $scopeDescriptor A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. (optional)
      * @param  string $groupDescriptors A comma separated list of descriptors referencing groups you want the graph group to join (optional)
@@ -410,7 +410,7 @@ class GroupsApi
      * @param  string $groupDescriptor The descriptor of the group to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -426,7 +426,7 @@ class GroupsApi
      * @param  string $groupDescriptor The descriptor of the group to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -676,9 +676,9 @@ class GroupsApi
      * @param  string $groupDescriptor The descriptor of the desired graph group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup
      */
     public function groupsGet($organization, $groupDescriptor, $apiVersion)
     {
@@ -693,13 +693,13 @@ class GroupsApi
      * @param  string $groupDescriptor The descriptor of the desired graph group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupsGetWithHttpInfo($organization, $groupDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsGetRequest($organization, $groupDescriptor, $apiVersion);
 
         try {
@@ -751,7 +751,7 @@ class GroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -797,7 +797,7 @@ class GroupsApi
      */
     public function groupsGetAsyncWithHttpInfo($organization, $groupDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsGetRequest($organization, $groupDescriptor, $apiVersion);
 
         return $this->client
@@ -981,9 +981,9 @@ class GroupsApi
      * @param  string $subjectTypes A comma separated list of user subject subtypes to reduce the retrieved results, e.g. Microsoft.IdentityModel.Claims.ClaimsIdentity (optional)
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]
      */
     public function groupsList($organization, $apiVersion, $scopeDescriptor = null, $subjectTypes = null, $continuationToken = null)
     {
@@ -1000,13 +1000,13 @@ class GroupsApi
      * @param  string $subjectTypes A comma separated list of user subject subtypes to reduce the retrieved results, e.g. Microsoft.IdentityModel.Claims.ClaimsIdentity (optional)
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[], HTTP status code, HTTP response headers (array of strings)
      */
     public function groupsListWithHttpInfo($organization, $apiVersion, $scopeDescriptor = null, $subjectTypes = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]';
         $request = $this->groupsListRequest($organization, $apiVersion, $scopeDescriptor, $subjectTypes, $continuationToken);
 
         try {
@@ -1058,7 +1058,7 @@ class GroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1108,7 +1108,7 @@ class GroupsApi
      */
     public function groupsListAsyncWithHttpInfo($organization, $apiVersion, $scopeDescriptor = null, $subjectTypes = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]';
         $request = $this->groupsListRequest($organization, $apiVersion, $scopeDescriptor, $subjectTypes, $continuationToken);
 
         return $this->client
@@ -1288,12 +1288,12 @@ class GroupsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $groupDescriptor The descriptor of the group to modify. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup
      */
     public function groupsUpdate($organization, $groupDescriptor, $body, $apiVersion)
     {
@@ -1306,16 +1306,16 @@ class GroupsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $groupDescriptor The descriptor of the group to modify. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupsUpdateWithHttpInfo($organization, $groupDescriptor, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsUpdateRequest($organization, $groupDescriptor, $body, $apiVersion);
 
         try {
@@ -1367,7 +1367,7 @@ class GroupsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1384,7 +1384,7 @@ class GroupsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $groupDescriptor The descriptor of the group to modify. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1407,7 +1407,7 @@ class GroupsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $groupDescriptor The descriptor of the group to modify. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1415,7 +1415,7 @@ class GroupsApi
      */
     public function groupsUpdateAsyncWithHttpInfo($organization, $groupDescriptor, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup';
         $request = $this->groupsUpdateRequest($organization, $groupDescriptor, $body, $apiVersion);
 
         return $this->client
@@ -1460,7 +1460,7 @@ class GroupsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $groupDescriptor The descriptor of the group to modify. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument $body The JSON+Patch document containing the fields to alter. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

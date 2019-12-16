@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ShareNotificationContext Class Doc Comment
  *
  * @category Class
  * @description Context used while sharing a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ShareNotificationContext implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'message' => 'string',
-        'receivers' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]'
+        'receivers' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ShareNotificationContext implements ModelInterface, ArrayAccess
     /**
      * Gets receivers
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]
      */
     public function getReceivers()
     {
@@ -248,7 +248,7 @@ class ShareNotificationContext implements ModelInterface, ArrayAccess
     /**
      * Sets receivers
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] $receivers Identities of users who will receive a share notification.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] $receivers Identities of users who will receive a share notification.
      *
      * @return $this
      */

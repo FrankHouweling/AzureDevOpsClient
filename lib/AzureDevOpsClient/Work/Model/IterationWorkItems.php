@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * IterationWorkItems Class Doc Comment
  *
  * @category Class
  * @description Represents work items in an iteration backlog
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class IterationWorkItems implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
-        'workItemRelations' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[]'
+        'workItemRelations' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class IterationWorkItems implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -230,7 +230,7 @@ class IterationWorkItems implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class IterationWorkItems implements ModelInterface, ArrayAccess
     /**
      * Gets workItemRelations
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[]
      */
     public function getWorkItemRelations()
     {
@@ -278,7 +278,7 @@ class IterationWorkItems implements ModelInterface, ArrayAccess
     /**
      * Sets workItemRelations
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[] $workItemRelations Work item relations
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[] $workItemRelations Work item relations
      *
      * @return $this
      */

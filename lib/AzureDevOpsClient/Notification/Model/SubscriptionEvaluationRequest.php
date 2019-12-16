@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionEvaluationRequest Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of a SubscriptionEvaluationRequest. It defines the subscription to be evaluated and time interval for events used in evaluation.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class SubscriptionEvaluationRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'minEventsCreatedDate' => '\DateTime',
-        'subscriptionCreateParameters' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters'
+        'subscriptionCreateParameters' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters'
     ];
 
     /**
@@ -238,7 +238,7 @@ class SubscriptionEvaluationRequest implements ModelInterface, ArrayAccess
     /**
      * Gets subscriptionCreateParameters
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters
      */
     public function getSubscriptionCreateParameters()
     {
@@ -248,7 +248,7 @@ class SubscriptionEvaluationRequest implements ModelInterface, ArrayAccess
     /**
      * Sets subscriptionCreateParameters
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $subscriptionCreateParameters User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $subscriptionCreateParameters User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
      *
      * @return $this
      */

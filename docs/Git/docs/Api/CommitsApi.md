@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\CommitsApi
+# FrankHouweling\AzureDevOpsClient\Git\CommitsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **commitsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit commitsGet($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit commitsGet($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount)
 
 
 
@@ -23,9 +23,9 @@ Retrieve a particular commit.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\CommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\CommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit**](../Model/GitCommit.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit**](../Model/GitCommit.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **commitsGetChanges**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges commitsGetChanges($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges commitsGetChanges($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip)
 
 
 
@@ -86,9 +86,9 @@ Retrieve changes for a particular commit.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\CommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\CommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges**](../Model/GitCommitChanges.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges**](../Model/GitCommitChanges.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **commitsGetCommitsBatch**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] commitsGetCommitsBatch($organization, $body, $repositoryId, $project, $apiVersion, $skip, $top, $includeStatuses)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] commitsGetCommitsBatch($organization, $body, $repositoryId, $project, $apiVersion, $skip, $top, $includeStatuses)
 
 
 
@@ -151,16 +151,16 @@ Retrieve git commits for a project matching the search criteria
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\CommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\CommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria | Search options
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria | Search options
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -182,7 +182,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria**](../Model/GitQueryCommitsCriteria.md)| Search options |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria**](../Model/GitQueryCommitsCriteria.md)| Search options |
  **repositoryId** | **string**| The name or ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **commitsGetPushCommits**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] commitsGetPushCommits($organization, $repositoryId, $pushId, $project, $apiVersion, $top, $skip, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] commitsGetPushCommits($organization, $repositoryId, $pushId, $project, $apiVersion, $top, $skip, $includeLinks)
 
 
 
@@ -218,9 +218,9 @@ Retrieve a list of commits associated with a particular push.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\CommitsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\CommitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
 
 ### Authorization
 

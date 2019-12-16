@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseArtifact Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ReleaseArtifact implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactProvider' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactProvider',
+        'artifactProvider' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactProvider',
         'artifactType' => 'string',
         'definitionData' => 'string',
         'definitionId' => 'int',
@@ -250,7 +250,7 @@ class ReleaseArtifact implements ModelInterface, ArrayAccess
     /**
      * Gets artifactProvider
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactProvider
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactProvider
      */
     public function getArtifactProvider()
     {
@@ -260,7 +260,7 @@ class ReleaseArtifact implements ModelInterface, ArrayAccess
     /**
      * Sets artifactProvider
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactProvider $artifactProvider Gets or sets the artifact provider of ReleaseArtifact.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactProvider $artifactProvider Gets or sets the artifact provider of ReleaseArtifact.
      *
      * @return $this
      */

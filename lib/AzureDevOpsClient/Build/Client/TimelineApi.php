@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * TimelineApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class TimelineApi
      * @param  int $changeId  (optional)
      * @param  string $planId  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Timeline
      */
     public function timelineGet($organization, $project, $buildId, $timelineId, $apiVersion, $changeId = null, $planId = null)
     {
@@ -119,13 +119,13 @@ class TimelineApi
      * @param  int $changeId  (optional)
      * @param  string $planId  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\Timeline, HTTP status code, HTTP response headers (array of strings)
      */
     public function timelineGetWithHttpInfo($organization, $project, $buildId, $timelineId, $apiVersion, $changeId = null, $planId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Timeline';
         $request = $this->timelineGetRequest($organization, $project, $buildId, $timelineId, $apiVersion, $changeId, $planId);
 
         try {
@@ -177,7 +177,7 @@ class TimelineApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\Timeline',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class TimelineApi
      */
     public function timelineGetAsyncWithHttpInfo($organization, $project, $buildId, $timelineId, $apiVersion, $changeId = null, $planId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\Timeline';
         $request = $this->timelineGetRequest($organization, $project, $buildId, $timelineId, $apiVersion, $changeId, $planId);
 
         return $this->client

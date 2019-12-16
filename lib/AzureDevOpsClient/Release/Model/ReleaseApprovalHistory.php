@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseApprovalHistory Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ReleaseApprovalHistory implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'approver' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'changedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'approver' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'changedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'comments' => 'string',
         'createdOn' => '\DateTime',
         'modifiedOn' => '\DateTime',
@@ -238,7 +238,7 @@ class ReleaseApprovalHistory implements ModelInterface, ArrayAccess
     /**
      * Gets approver
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getApprover()
     {
@@ -248,7 +248,7 @@ class ReleaseApprovalHistory implements ModelInterface, ArrayAccess
     /**
      * Sets approver
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $approver Identity of the approver.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $approver Identity of the approver.
      *
      * @return $this
      */
@@ -262,7 +262,7 @@ class ReleaseApprovalHistory implements ModelInterface, ArrayAccess
     /**
      * Gets changedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getChangedBy()
     {
@@ -272,7 +272,7 @@ class ReleaseApprovalHistory implements ModelInterface, ArrayAccess
     /**
      * Sets changedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $changedBy Identity of the object who changed approval.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $changedBy Identity of the object who changed approval.
      *
      * @return $this
      */

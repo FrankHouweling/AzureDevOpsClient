@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\MergeBasesApi
+# FrankHouweling\AzureDevOpsClient\Git\MergeBasesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **mergeBasesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] mergeBasesList($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId, $otherRepositoryId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] mergeBasesList($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId, $otherRepositoryId)
 
 
 
@@ -20,9 +20,9 @@ Find the merge bases of two commits, optionally across forks. If otherRepository
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\MergeBasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\MergeBasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]**](../Model/GitCommitRef.md)
 
 ### Authorization
 

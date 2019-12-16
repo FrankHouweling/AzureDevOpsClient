@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional] 
 **url** | **string** |  | [optional] 
-**links** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **description** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **isDefault** | **bool** |  | [optional] 

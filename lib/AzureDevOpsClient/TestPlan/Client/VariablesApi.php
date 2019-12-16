@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * VariablesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class VariablesApi
      * Operation variablesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable
      */
     public function variablesCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class VariablesApi
      * Operation variablesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
      */
     public function variablesCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class VariablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class VariablesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class VariablesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class VariablesApi
      */
     public function variablesCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class VariablesApi
      * Create request for operation 'variablesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class VariablesApi
      * @param  int $testVariableId ID of the test variable to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class VariablesApi
      * @param  int $testVariableId ID of the test variable to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -697,9 +697,9 @@ class VariablesApi
      * @param  int $testVariableId ID of the test variable to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable
      */
     public function variablesGet($organization, $project, $testVariableId, $apiVersion)
     {
@@ -715,13 +715,13 @@ class VariablesApi
      * @param  int $testVariableId ID of the test variable to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
      */
     public function variablesGetWithHttpInfo($organization, $project, $testVariableId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesGetRequest($organization, $project, $testVariableId, $apiVersion);
 
         try {
@@ -773,7 +773,7 @@ class VariablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class VariablesApi
      */
     public function variablesGetAsyncWithHttpInfo($organization, $project, $testVariableId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesGetRequest($organization, $project, $testVariableId, $apiVersion);
 
         return $this->client
@@ -1019,9 +1019,9 @@ class VariablesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $continuationToken If the list of variables returned is not complete, a continuation token to query next batch of variables is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test variables. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[]
      */
     public function variablesList($organization, $project, $apiVersion, $continuationToken = null)
     {
@@ -1037,13 +1037,13 @@ class VariablesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $continuationToken If the list of variables returned is not complete, a continuation token to query next batch of variables is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test variables. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[], HTTP status code, HTTP response headers (array of strings)
      */
     public function variablesListWithHttpInfo($organization, $project, $apiVersion, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[]';
         $request = $this->variablesListRequest($organization, $project, $apiVersion, $continuationToken);
 
         try {
@@ -1095,7 +1095,7 @@ class VariablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1143,7 +1143,7 @@ class VariablesApi
      */
     public function variablesListAsyncWithHttpInfo($organization, $project, $apiVersion, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[]';
         $request = $this->variablesListRequest($organization, $project, $apiVersion, $continuationToken);
 
         return $this->client
@@ -1327,14 +1327,14 @@ class VariablesApi
      * Operation variablesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testVariableId ID of the test variable to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable
      */
     public function variablesUpdate($organization, $body, $project, $testVariableId, $apiVersion)
     {
@@ -1346,18 +1346,18 @@ class VariablesApi
      * Operation variablesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testVariableId ID of the test variable to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable, HTTP status code, HTTP response headers (array of strings)
      */
     public function variablesUpdateWithHttpInfo($organization, $body, $project, $testVariableId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesUpdateRequest($organization, $body, $project, $testVariableId, $apiVersion);
 
         try {
@@ -1409,7 +1409,7 @@ class VariablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1425,7 +1425,7 @@ class VariablesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testVariableId ID of the test variable to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1449,7 +1449,7 @@ class VariablesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testVariableId ID of the test variable to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1459,7 +1459,7 @@ class VariablesApi
      */
     public function variablesUpdateAsyncWithHttpInfo($organization, $body, $project, $testVariableId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable';
         $request = $this->variablesUpdateRequest($organization, $body, $project, $testVariableId, $apiVersion);
 
         return $this->client
@@ -1503,7 +1503,7 @@ class VariablesApi
      * Create request for operation 'variablesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters $body TestVariableCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testVariableId ID of the test variable to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

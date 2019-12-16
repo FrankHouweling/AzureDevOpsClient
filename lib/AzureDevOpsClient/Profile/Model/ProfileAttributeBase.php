@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model;
+namespace FrankHouweling\AzureDevOpsClient\Profile\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Profile\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Profile\ObjectSerializer;
 
 /**
  * ProfileAttributeBase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ProfileAttributeBase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'descriptor' => '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributeDescriptor',
+        'descriptor' => '\FrankHouweling\AzureDevOpsClient\Profile\Model\AttributeDescriptor',
         'revision' => 'int',
         'timeStamp' => '\DateTime',
         'value' => 'string'
@@ -226,7 +226,7 @@ class ProfileAttributeBase implements ModelInterface, ArrayAccess
     /**
      * Gets descriptor
      *
-     * @return \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributeDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Profile\Model\AttributeDescriptor
      */
     public function getDescriptor()
     {
@@ -236,7 +236,7 @@ class ProfileAttributeBase implements ModelInterface, ArrayAccess
     /**
      * Sets descriptor
      *
-     * @param \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributeDescriptor $descriptor The descriptor of the attribute.
+     * @param \FrankHouweling\AzureDevOpsClient\Profile\Model\AttributeDescriptor $descriptor The descriptor of the attribute.
      *
      * @return $this
      */

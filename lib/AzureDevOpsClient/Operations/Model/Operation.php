@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model;
+namespace FrankHouweling\AzureDevOpsClient\Operations\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Operations\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Operations\ObjectSerializer;
 
 /**
  * Operation Class Doc Comment
  *
  * @category Class
  * @description Contains information about the progress or result of an async operation.
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,10 +62,10 @@ class Operation implements ModelInterface, ArrayAccess
         'pluginId' => 'string',
         'status' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Operations\Model\ReferenceLinks',
         'detailedMessage' => 'string',
         'resultMessage' => 'string',
-        'resultUrl' => '\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\OperationResultReference'
+        'resultUrl' => '\FrankHouweling\AzureDevOpsClient\Operations\Model\OperationResultReference'
     ];
 
     /**
@@ -386,7 +386,7 @@ class Operation implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Operations\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -396,7 +396,7 @@ class Operation implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\ReferenceLinks $links Links to other related objects.
+     * @param \FrankHouweling\AzureDevOpsClient\Operations\Model\ReferenceLinks $links Links to other related objects.
      *
      * @return $this
      */
@@ -458,7 +458,7 @@ class Operation implements ModelInterface, ArrayAccess
     /**
      * Gets resultUrl
      *
-     * @return \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\OperationResultReference
+     * @return \FrankHouweling\AzureDevOpsClient\Operations\Model\OperationResultReference
      */
     public function getResultUrl()
     {
@@ -468,7 +468,7 @@ class Operation implements ModelInterface, ArrayAccess
     /**
      * Sets resultUrl
      *
-     * @param \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\OperationResultReference $resultUrl URL to the operation result.
+     * @param \FrankHouweling\AzureDevOpsClient\Operations\Model\OperationResultReference $resultUrl URL to the operation result.
      *
      * @return $this
      */

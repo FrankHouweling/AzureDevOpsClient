@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestSettings2 Class Doc Comment
  *
  * @category Class
  * @description Represents the test settings of the run. Used to create test settings and fetch test settings
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,11 +59,11 @@ class TestSettings2 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'areaPath' => 'string',
-        'createdBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'isPublic' => 'bool',
-        'lastUpdatedBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'lastUpdatedBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'lastUpdatedDate' => '\DateTime',
         'machineRoles' => 'string',
         'testSettingsContent' => 'string',
@@ -292,7 +292,7 @@ class TestSettings2 implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -302,7 +302,7 @@ class TestSettings2 implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $createdBy createdBy
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $createdBy createdBy
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class TestSettings2 implements ModelInterface, ArrayAccess
     /**
      * Gets lastUpdatedBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getLastUpdatedBy()
     {
@@ -398,7 +398,7 @@ class TestSettings2 implements ModelInterface, ArrayAccess
     /**
      * Sets lastUpdatedBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy lastUpdatedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy lastUpdatedBy
      *
      * @return $this
      */

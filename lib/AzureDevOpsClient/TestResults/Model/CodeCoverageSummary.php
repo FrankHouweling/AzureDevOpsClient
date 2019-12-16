@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * CodeCoverageSummary Class Doc Comment
  *
  * @category Class
  * @description Represents the code coverage summary results Used to publish or retrieve code coverage summary against a build
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'coverageData' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageData[]',
-        'deltaBuild' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'coverageData' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageData[]',
+        'deltaBuild' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
         'status' => 'string'
     ];
 
@@ -255,7 +255,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getBuild()
     {
@@ -265,7 +265,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $build Uri of build for which data is retrieved/published
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $build Uri of build for which data is retrieved/published
      *
      * @return $this
      */
@@ -279,7 +279,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets coverageData
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageData[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageData[]
      */
     public function getCoverageData()
     {
@@ -289,7 +289,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets coverageData
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CodeCoverageData[] $coverageData List of coverage data and details for the build
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\CodeCoverageData[] $coverageData List of coverage data and details for the build
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Gets deltaBuild
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getDeltaBuild()
     {
@@ -313,7 +313,7 @@ class CodeCoverageSummary implements ModelInterface, ArrayAccess
     /**
      * Sets deltaBuild
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $deltaBuild Uri of build against which difference in coverage is computed
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $deltaBuild Uri of build against which difference in coverage is computed
      *
      * @return $this
      */

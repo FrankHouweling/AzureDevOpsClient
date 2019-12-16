@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestIterationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class PullRequestIterationsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration
      */
     public function pullRequestIterationsGet($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
     {
@@ -117,13 +117,13 @@ class PullRequestIterationsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestIterationsGetWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration';
         $request = $this->pullRequestIterationsGetRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class PullRequestIterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class PullRequestIterationsApi
      */
     public function pullRequestIterationsGetAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration';
         $request = $this->pullRequestIterationsGetRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion);
 
         return $this->client
@@ -457,9 +457,9 @@ class PullRequestIterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeCommits If true, include the commits associated with each iteration in the response. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]
      */
     public function pullRequestIterationsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $includeCommits = null)
     {
@@ -477,13 +477,13 @@ class PullRequestIterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeCommits If true, include the commits associated with each iteration in the response. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestIterationsListWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $includeCommits = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]';
         $request = $this->pullRequestIterationsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $includeCommits);
 
         try {
@@ -535,7 +535,7 @@ class PullRequestIterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class PullRequestIterationsApi
      */
     public function pullRequestIterationsListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $includeCommits = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIteration[]';
         $request = $this->pullRequestIterationsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $includeCommits);
 
         return $this->client

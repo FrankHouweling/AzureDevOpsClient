@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestLog Class Doc Comment
  *
  * @category Class
  * @description Represents Test Log Result object.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestLog implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'logReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogReference',
+        'logReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogReference',
         'metaData' => 'map[string,string]',
         'modifiedOn' => '\DateTime',
         'size' => 'int'
@@ -226,7 +226,7 @@ class TestLog implements ModelInterface, ArrayAccess
     /**
      * Gets logReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogReference
      */
     public function getLogReference()
     {
@@ -236,7 +236,7 @@ class TestLog implements ModelInterface, ArrayAccess
     /**
      * Sets logReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogReference $logReference Test Log Context run, build
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogReference $logReference Test Log Context run, build
      *
      * @return $this
      */

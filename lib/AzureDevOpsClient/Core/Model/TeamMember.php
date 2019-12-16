@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * TeamMember Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TeamMember implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'identity' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef',
+        'identity' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef',
         'isTeamAdmin' => 'bool'
     ];
 
@@ -214,7 +214,7 @@ class TeamMember implements ModelInterface, ArrayAccess
     /**
      * Gets identity
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef
      */
     public function getIdentity()
     {
@@ -224,7 +224,7 @@ class TeamMember implements ModelInterface, ArrayAccess
     /**
      * Sets identity
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityRef $identity identity
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityRef $identity identity
      *
      * @return $this
      */

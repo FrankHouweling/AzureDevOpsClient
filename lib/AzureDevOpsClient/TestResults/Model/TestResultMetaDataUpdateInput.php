@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultMetaDataUpdateInput Class Doc Comment
  *
  * @category Class
  * @description Represents a TestResultMetaData Input
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyIdentifiers' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]'
+        'flakyIdentifiers' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
     /**
      * Gets flakyIdentifiers
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]
      */
     public function getFlakyIdentifiers()
     {
@@ -218,7 +218,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
     /**
      * Sets flakyIdentifiers
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifiers
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifiers
      *
      * @return $this
      */

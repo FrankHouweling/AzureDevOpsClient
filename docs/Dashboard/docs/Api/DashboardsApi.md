@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Dashboard\DashboardsApi
+# FrankHouweling\AzureDevOpsClient\Dashboard\DashboardsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **dashboardsCreate**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsCreate($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsCreate($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -25,16 +25,16 @@ Create the supplied dashboard.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard(); // \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard | The initial state of the dashboard
+$body = new \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard(); // \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard | The initial state of the dashboard
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -53,14 +53,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)| The initial state of the dashboard |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)| The initial state of the dashboard |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -86,9 +86,9 @@ Delete a dashboard given its ID. This also deletes the widgets associated with t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardsGet**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsGet($organization, $project, $dashboardId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsGet($organization, $project, $dashboardId, $team, $apiVersion)
 
 
 
@@ -146,9 +146,9 @@ Get a dashboard by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardsList**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[] dashboardsList($organization, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[] dashboardsList($organization, $project, $team, $apiVersion)
 
 
 
@@ -207,9 +207,9 @@ Get a list of dashboards under a project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[]**](../Model/Dashboard.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[]**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardsReplaceDashboard**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsReplaceDashboard($organization, $body, $project, $dashboardId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard dashboardsReplaceDashboard($organization, $body, $project, $dashboardId, $team, $apiVersion)
 
 
 
@@ -266,19 +266,19 @@ Replace configuration for the specified dashboard. Replaces Widget list on Dashb
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard(); // \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard | The Configuration of the dashboard to replace.
+$body = new \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard(); // \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard | The Configuration of the dashboard to replace.
 $project = "project_example"; // string | Project ID or project name
 $dashboardId = "dashboardId_example"; // string | ID of the dashboard to replace.
 $team = "team_example"; // string | Team ID or team name
@@ -298,7 +298,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)| The Configuration of the dashboard to replace. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)| The Configuration of the dashboard to replace. |
  **project** | **string**| Project ID or project name |
  **dashboardId** | [**string**](../Model/.md)| ID of the dashboard to replace. |
  **team** | **string**| Team ID or team name |
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard**](../Model/Dashboard.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dashboardsReplaceDashboards**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup dashboardsReplaceDashboards($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup dashboardsReplaceDashboards($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -332,19 +332,19 @@ Update the name and position of dashboards in the supplied group, and remove omi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\DashboardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\DashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup(); // \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup | 
+$body = new \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup(); // \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup | 
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -363,14 +363,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup**](../Model/DashboardGroup.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup**](../Model/DashboardGroup.md)|  |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup**](../Model/DashboardGroup.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup**](../Model/DashboardGroup.md)
 
 ### Authorization
 

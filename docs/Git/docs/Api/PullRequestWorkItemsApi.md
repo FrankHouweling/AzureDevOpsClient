@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestWorkItemsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestWorkItemsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestWorkItemsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[] pullRequestWorkItemsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[] pullRequestWorkItemsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Retrieve a list of work items associated with a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestWorkItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestWorkItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]**](../Model/ResourceRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]**](../Model/ResourceRef.md)
 
 ### Authorization
 

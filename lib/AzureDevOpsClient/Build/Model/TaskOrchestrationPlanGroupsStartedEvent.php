@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * TaskOrchestrationPlanGroupsStartedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'planGroups' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[]'
+        'planGroups' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
     /**
      * Gets planGroups
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[]
      */
     public function getPlanGroups()
     {
@@ -218,7 +218,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
     /**
      * Sets planGroups
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[] $planGroups planGroups
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanGroupReference[] $planGroups planGroups
      *
      * @return $this
      */

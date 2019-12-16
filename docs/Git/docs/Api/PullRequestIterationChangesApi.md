@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestIterationChangesApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestIterationChangesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestIterationChangesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges pullRequestIterationChangesGet($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip, $compareTo)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges pullRequestIterationChangesGet($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip, $compareTo)
 
 
 
@@ -20,9 +20,9 @@ Retrieve the changes made in a pull request between two iterations.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestIterationChangesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestIterationChangesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges**](../Model/GitPullRequestIterationChanges.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges**](../Model/GitPullRequestIterationChanges.md)
 
 ### Authorization
 

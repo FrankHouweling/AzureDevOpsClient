@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardCardSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BoardCardSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cards' => 'map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldSetting[]]'
+        'cards' => 'map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\FieldSetting[]]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class BoardCardSettings implements ModelInterface, ArrayAccess
     /**
      * Gets cards
      *
-     * @return map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldSetting[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\FieldSetting[]]
      */
     public function getCards()
     {
@@ -218,7 +218,7 @@ class BoardCardSettings implements ModelInterface, ArrayAccess
     /**
      * Sets cards
      *
-     * @param map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldSetting[]] $cards cards
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\FieldSetting[]] $cards cards
      *
      * @return $this
      */

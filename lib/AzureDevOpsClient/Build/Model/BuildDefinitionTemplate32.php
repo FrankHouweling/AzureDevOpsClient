@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinitionTemplate32 Class Doc Comment
  *
  * @category Class
  * @description For back-compat with extensions that use the old Steps format instead of Process and Phases
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class BuildDefinitionTemplate32 implements ModelInterface, ArrayAccess
         'iconTaskId' => 'string',
         'id' => 'string',
         'name' => 'string',
-        'template' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition32'
+        'template' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition32'
     ];
 
     /**
@@ -448,7 +448,7 @@ class BuildDefinitionTemplate32 implements ModelInterface, ArrayAccess
     /**
      * Gets template
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition32
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition32
      */
     public function getTemplate()
     {
@@ -458,7 +458,7 @@ class BuildDefinitionTemplate32 implements ModelInterface, ArrayAccess
     /**
      * Sets template
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition32 $template template
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition32 $template template
      *
      * @return $this
      */

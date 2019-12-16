@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Wiki\AttachmentsApi
+# FrankHouweling\AzureDevOpsClient\Wiki\AttachmentsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **attachmentsCreate**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment attachmentsCreate($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment attachmentsCreate($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -20,9 +20,9 @@ Creates an attachment in the wiki.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\AttachmentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\AttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment**](../Model/WikiAttachment.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment**](../Model/WikiAttachment.md)
 
 ### Authorization
 

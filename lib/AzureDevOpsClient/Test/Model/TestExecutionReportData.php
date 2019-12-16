@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestExecutionReportData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestExecutionReportData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'reportData' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\DatedTestFieldData[]'
+        'reportData' => '\FrankHouweling\AzureDevOpsClient\Test\Model\DatedTestFieldData[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestExecutionReportData implements ModelInterface, ArrayAccess
     /**
      * Gets reportData
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\DatedTestFieldData[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\DatedTestFieldData[]
      */
     public function getReportData()
     {
@@ -218,7 +218,7 @@ class TestExecutionReportData implements ModelInterface, ArrayAccess
     /**
      * Sets reportData
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\DatedTestFieldData[] $reportData reportData
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\DatedTestFieldData[] $reportData reportData
      *
      * @return $this
      */

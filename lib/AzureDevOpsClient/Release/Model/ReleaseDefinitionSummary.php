@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionSummary Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'environments' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[]',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
-        'releases' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]'
+        'environments' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[]',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'releases' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Release[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Gets environments
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[]
      */
     public function getEnvironments()
     {
@@ -230,7 +230,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Sets environments
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[] $environments List of Release Definition environment summary.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionEnvironmentSummary[] $environments List of Release Definition environment summary.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -254,7 +254,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Release Definition reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Release Definition reference.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Gets releases
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release[]
      */
     public function getReleases()
     {
@@ -278,7 +278,7 @@ class ReleaseDefinitionSummary implements ModelInterface, ArrayAccess
     /**
      * Sets releases
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[] $releases List of releases deployed using this Release Definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Release[] $releases List of releases deployed using this Release Definition.
      *
      * @return $this
      */

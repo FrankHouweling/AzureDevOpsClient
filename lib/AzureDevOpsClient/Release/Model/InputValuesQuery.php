@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * InputValuesQuery Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class InputValuesQuery implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'currentValues' => 'map[string,string]',
-        'inputValues' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues[]',
+        'inputValues' => '\FrankHouweling\AzureDevOpsClient\Release\Model\InputValues[]',
         'resource' => 'object'
     ];
 
@@ -244,7 +244,7 @@ class InputValuesQuery implements ModelInterface, ArrayAccess
     /**
      * Gets inputValues
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\InputValues[]
      */
     public function getInputValues()
     {
@@ -254,7 +254,7 @@ class InputValuesQuery implements ModelInterface, ArrayAccess
     /**
      * Sets inputValues
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues[] $inputValues The input values to return on input, and the result from the consumer on output.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\InputValues[] $inputValues The input values to return on input, and the result from the consumer on output.
      *
      * @return $this
      */

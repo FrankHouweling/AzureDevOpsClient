@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CreateTestRunRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'projectName' => 'string',
-        'results' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]',
-        'testRun' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun',
-        'testSettings' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestSettings'
+        'results' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]',
+        'testRun' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun',
+        'testSettings' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestSettings'
     ];
 
     /**
@@ -250,7 +250,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
      */
     public function getResults()
     {
@@ -260,7 +260,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets testRun
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun
      */
     public function getTestRun()
     {
@@ -284,7 +284,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets testRun
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun $testRun testRun
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun $testRun testRun
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets testSettings
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestSettings
      */
     public function getTestSettings()
     {
@@ -308,7 +308,7 @@ class CreateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets testSettings
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestSettings $testSettings testSettings
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestSettings $testSettings testSettings
      *
      * @return $this
      */

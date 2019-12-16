@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildArtifact Class Doc Comment
  *
  * @category Class
  * @description Represents an artifact produced by a build.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class BuildArtifact implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'name' => 'string',
-        'resource' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ArtifactResource',
+        'resource' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ArtifactResource',
         'source' => 'string'
     ];
 
@@ -274,7 +274,7 @@ class BuildArtifact implements ModelInterface, ArrayAccess
     /**
      * Gets resource
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ArtifactResource
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ArtifactResource
      */
     public function getResource()
     {
@@ -284,7 +284,7 @@ class BuildArtifact implements ModelInterface, ArrayAccess
     /**
      * Sets resource
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ArtifactResource $resource The actual resource.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ArtifactResource $resource The actual resource.
      *
      * @return $this
      */

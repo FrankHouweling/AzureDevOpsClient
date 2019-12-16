@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\VariablesApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\VariablesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **variablesCreate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable variablesCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable variablesCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -24,16 +24,16 @@ Create a test variable.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\VariablesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\VariablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters | TestVariableCreateUpdateParameters
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters | TestVariableCreateUpdateParameters
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -51,13 +51,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters**](../Model/TestVariableCreateUpdateParameters.md)| TestVariableCreateUpdateParameters |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters**](../Model/TestVariableCreateUpdateParameters.md)| TestVariableCreateUpdateParameters |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
 
 ### Authorization
 
@@ -83,9 +83,9 @@ Delete a test variable by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\VariablesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\VariablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **variablesGet**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable variablesGet($organization, $project, $testVariableId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable variablesGet($organization, $project, $testVariableId, $apiVersion)
 
 
 
@@ -141,9 +141,9 @@ Get a test variable by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\VariablesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\VariablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **variablesList**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[] variablesList($organization, $project, $apiVersion, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[] variablesList($organization, $project, $apiVersion, $continuationToken)
 
 
 
@@ -200,9 +200,9 @@ Get a list of test variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\VariablesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\VariablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable[]**](../Model/TestVariable.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable[]**](../Model/TestVariable.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **variablesUpdate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable variablesUpdate($organization, $body, $project, $testVariableId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable variablesUpdate($organization, $body, $project, $testVariableId, $apiVersion)
 
 
 
@@ -259,16 +259,16 @@ Update a test variable by its ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\VariablesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\VariablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters | TestVariableCreateUpdateParameters
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters | TestVariableCreateUpdateParameters
 $project = "project_example"; // string | Project ID or project name
 $testVariableId = 56; // int | ID of the test variable to update.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -287,14 +287,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters**](../Model/TestVariableCreateUpdateParameters.md)| TestVariableCreateUpdateParameters |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariableCreateUpdateParameters**](../Model/TestVariableCreateUpdateParameters.md)| TestVariableCreateUpdateParameters |
  **project** | **string**| Project ID or project name |
  **testVariableId** | **int**| ID of the test variable to update. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestVariable**](../Model/TestVariable.md)
 
 ### Authorization
 

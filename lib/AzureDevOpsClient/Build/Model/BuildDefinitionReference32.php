@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinitionReference32 Class Doc Comment
  *
  * @category Class
  * @description For back-compat with extensions that use the old Steps format instead of Process and Phases
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,19 +62,19 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
         'queueStatus' => 'string',
         'revision' => 'int',
         'type' => 'string',
         'uri' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
-        'authoredBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
-        'draftOf' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference',
-        'drafts' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[]',
-        'metrics' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'authoredBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
+        'draftOf' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference',
+        'drafts' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[]',
+        'metrics' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]',
         'quality' => 'string',
-        'queue' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue'
+        'queue' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue'
     ];
 
     /**
@@ -471,7 +471,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -481,7 +481,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
      *
      * @return $this
      */
@@ -633,7 +633,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -643,7 +643,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -657,7 +657,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets authoredBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getAuthoredBy()
     {
@@ -667,7 +667,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets authoredBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $authoredBy The author of the definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $authoredBy The author of the definition.
      *
      * @return $this
      */
@@ -681,7 +681,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets draftOf
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference
      */
     public function getDraftOf()
     {
@@ -691,7 +691,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets draftOf
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference $draftOf A reference to the definition that this definition is a draft of, if this is a draft definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference $draftOf A reference to the definition that this definition is a draft of, if this is a draft definition.
      *
      * @return $this
      */
@@ -705,7 +705,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets drafts
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[]
      */
     public function getDrafts()
     {
@@ -715,7 +715,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets drafts
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference[] $drafts The list of drafts associated with this definition, if this is not a draft definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference[] $drafts The list of drafts associated with this definition, if this is not a draft definition.
      *
      * @return $this
      */
@@ -729,7 +729,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets metrics
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]
      */
     public function getMetrics()
     {
@@ -739,7 +739,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets metrics
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[] $metrics metrics
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[] $metrics metrics
      *
      * @return $this
      */
@@ -786,7 +786,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Gets queue
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue
      */
     public function getQueue()
     {
@@ -796,7 +796,7 @@ class BuildDefinitionReference32 implements ModelInterface, ArrayAccess
     /**
      * Sets queue
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The default queue for builds run against this definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The default queue for builds run against this definition.
      *
      * @return $this
      */

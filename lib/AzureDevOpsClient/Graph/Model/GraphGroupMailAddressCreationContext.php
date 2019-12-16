@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * GraphGroupMailAddressCreationContext Class Doc Comment
  *
  * @category Class
  * @description Use this type to create a new group using the mail address as a reference to an existing group from an external AD or AAD backed provider. This is the subset of GraphGroup fields required for creation of a group for the AAD and AD use case.
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

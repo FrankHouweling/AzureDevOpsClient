@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * ConfigurationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class ConfigurationsApi
      * Operation configurationsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration
      */
     public function configurationsCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class ConfigurationsApi
      * Operation configurationsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class ConfigurationsApi
      */
     public function configurationsCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class ConfigurationsApi
      * Create request for operation 'configurationsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class ConfigurationsApi
      * @param  int $testConfiguartionId ID of the test configuration to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class ConfigurationsApi
      * @param  int $testConfiguartionId ID of the test configuration to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -693,9 +693,9 @@ class ConfigurationsApi
      * @param  int $testConfigurationId ID of the test configuration to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration
      */
     public function configurationsGet($organization, $project, $testConfigurationId, $apiVersion)
     {
@@ -711,13 +711,13 @@ class ConfigurationsApi
      * @param  int $testConfigurationId ID of the test configuration to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsGetWithHttpInfo($organization, $project, $testConfigurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsGetRequest($organization, $project, $testConfigurationId, $apiVersion);
 
         try {
@@ -769,7 +769,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -817,7 +817,7 @@ class ConfigurationsApi
      */
     public function configurationsGetAsyncWithHttpInfo($organization, $project, $testConfigurationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsGetRequest($organization, $project, $testConfigurationId, $apiVersion);
 
         return $this->client
@@ -1015,9 +1015,9 @@ class ConfigurationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $continuationToken If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test configurations. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]
      */
     public function configurationsList($organization, $project, $apiVersion, $continuationToken = null)
     {
@@ -1033,13 +1033,13 @@ class ConfigurationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $continuationToken If the list of configurations returned is not complete, a continuation token to query next batch of configurations is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test configurations. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsListWithHttpInfo($organization, $project, $apiVersion, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]';
         $request = $this->configurationsListRequest($organization, $project, $apiVersion, $continuationToken);
 
         try {
@@ -1091,7 +1091,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1139,7 +1139,7 @@ class ConfigurationsApi
      */
     public function configurationsListAsyncWithHttpInfo($organization, $project, $apiVersion, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration[]';
         $request = $this->configurationsListRequest($organization, $project, $apiVersion, $continuationToken);
 
         return $this->client
@@ -1323,14 +1323,14 @@ class ConfigurationsApi
      * Operation configurationsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testConfiguartionId ID of the test configuration to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration
      */
     public function configurationsUpdate($organization, $body, $project, $testConfiguartionId, $apiVersion)
     {
@@ -1342,18 +1342,18 @@ class ConfigurationsApi
      * Operation configurationsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testConfiguartionId ID of the test configuration to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function configurationsUpdateWithHttpInfo($organization, $body, $project, $testConfiguartionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsUpdateRequest($organization, $body, $project, $testConfiguartionId, $apiVersion);
 
         try {
@@ -1405,7 +1405,7 @@ class ConfigurationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1421,7 +1421,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testConfiguartionId ID of the test configuration to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1445,7 +1445,7 @@ class ConfigurationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testConfiguartionId ID of the test configuration to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1455,7 +1455,7 @@ class ConfigurationsApi
      */
     public function configurationsUpdateAsyncWithHttpInfo($organization, $body, $project, $testConfiguartionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfiguration';
         $request = $this->configurationsUpdateRequest($organization, $body, $project, $testConfiguartionId, $apiVersion);
 
         return $this->client
@@ -1499,7 +1499,7 @@ class ConfigurationsApi
      * Create request for operation 'configurationsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters $body TestConfigurationCreateUpdateParameters (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $testConfiguartionId ID of the test configuration to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

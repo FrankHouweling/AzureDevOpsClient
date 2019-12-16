@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CodeCoverageApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class CodeCoverageApi
      * @param  int $flags Value of flags determine the level of code coverage details to be fetched. Flags are additive. Expected Values are 1 for Modules, 2 for Functions, 4 for BlockData. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[]
      */
     public function codeCoverageGetBuildCodeCoverage($organization, $project, $buildId, $flags, $apiVersion)
     {
@@ -115,13 +115,13 @@ class CodeCoverageApi
      * @param  int $flags Value of flags determine the level of code coverage details to be fetched. Flags are additive. Expected Values are 1 for Modules, 2 for Functions, 4 for BlockData. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function codeCoverageGetBuildCodeCoverageWithHttpInfo($organization, $project, $buildId, $flags, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[]';
         $request = $this->codeCoverageGetBuildCodeCoverageRequest($organization, $project, $buildId, $flags, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class CodeCoverageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class CodeCoverageApi
      */
     public function codeCoverageGetBuildCodeCoverageAsyncWithHttpInfo($organization, $project, $buildId, $flags, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildCoverage[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\BuildCoverage[]';
         $request = $this->codeCoverageGetBuildCodeCoverageRequest($organization, $project, $buildId, $flags, $apiVersion);
 
         return $this->client
@@ -429,9 +429,9 @@ class CodeCoverageApi
      * @param  int $flags Value of flags determine the level of code coverage details to be fetched. Flags are additive. Expected Values are 1 for Modules, 2 for Functions, 4 for BlockData. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[]
      */
     public function codeCoverageGetTestRunCodeCoverage($organization, $project, $runId, $flags, $apiVersion)
     {
@@ -448,13 +448,13 @@ class CodeCoverageApi
      * @param  int $flags Value of flags determine the level of code coverage details to be fetched. Flags are additive. Expected Values are 1 for Modules, 2 for Functions, 4 for BlockData. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[], HTTP status code, HTTP response headers (array of strings)
      */
     public function codeCoverageGetTestRunCodeCoverageWithHttpInfo($organization, $project, $runId, $flags, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[]';
         $request = $this->codeCoverageGetTestRunCodeCoverageRequest($organization, $project, $runId, $flags, $apiVersion);
 
         try {
@@ -506,7 +506,7 @@ class CodeCoverageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class CodeCoverageApi
      */
     public function codeCoverageGetTestRunCodeCoverageAsyncWithHttpInfo($organization, $project, $runId, $flags, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestRunCoverage[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestRunCoverage[]';
         $request = $this->codeCoverageGetTestRunCodeCoverageRequest($organization, $project, $runId, $flags, $apiVersion);
 
         return $this->client

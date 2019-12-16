@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestTagSummary Class Doc Comment
  *
  * @category Class
  * @description Test tag summary for build or release grouped by test run.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tagsGroupByTestArtifact' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[]]'
+        'tagsGroupByTestArtifact' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[]]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
     /**
      * Gets tagsGroupByTestArtifact
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[]]
      */
     public function getTagsGroupByTestArtifact()
     {
@@ -218,7 +218,7 @@ class TestTagSummary implements ModelInterface, ArrayAccess
     /**
      * Sets tagsGroupByTestArtifact
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[]] $tagsGroupByTestArtifact Dictionary which contains tags associated with a test run.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[]] $tagsGroupByTestArtifact Dictionary which contains tags associated with a test run.
      *
      * @return $this
      */

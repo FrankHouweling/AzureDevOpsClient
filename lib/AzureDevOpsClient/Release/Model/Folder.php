@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * Folder Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class Folder implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'createdBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'createdOn' => '\DateTime',
         'description' => 'string',
-        'lastChangedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'lastChangedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'lastChangedDate' => '\DateTime',
         'path' => 'string'
     ];
@@ -238,7 +238,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -248,7 +248,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Identity who created this folder.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Identity who created this folder.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Gets lastChangedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getLastChangedBy()
     {
@@ -320,7 +320,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Sets lastChangedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $lastChangedBy Identity who last changed this folder.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $lastChangedBy Identity who last changed this folder.
      *
      * @return $this
      */

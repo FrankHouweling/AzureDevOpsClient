@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * StatsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class StatsApi
      * @param  string $baseVersionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $baseVersionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[]
      */
     public function statsList($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion = null, $baseVersionDescriptorVersionOptions = null, $baseVersionDescriptorVersionType = null)
     {
@@ -119,13 +119,13 @@ class StatsApi
      * @param  string $baseVersionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $baseVersionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[], HTTP status code, HTTP response headers (array of strings)
      */
     public function statsListWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion = null, $baseVersionDescriptorVersionOptions = null, $baseVersionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[]';
         $request = $this->statsListRequest($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion, $baseVersionDescriptorVersionOptions, $baseVersionDescriptorVersionType);
 
         try {
@@ -177,7 +177,7 @@ class StatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class StatsApi
      */
     public function statsListAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion = null, $baseVersionDescriptorVersionOptions = null, $baseVersionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[]';
         $request = $this->statsListRequest($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion, $baseVersionDescriptorVersionOptions, $baseVersionDescriptorVersionType);
 
         return $this->client

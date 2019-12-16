@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\OptionsApi
+# FrankHouweling\AzureDevOpsClient\Build\OptionsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **optionsList**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[] optionsList($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[] optionsList($organization, $project, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Gets all build definition options supported by the system.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\OptionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\OptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]**](../Model/BuildOptionDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]**](../Model/BuildOptionDefinition.md)
 
 ### Authorization
 

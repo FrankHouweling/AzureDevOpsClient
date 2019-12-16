@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**author** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The author of the change. | [optional] 
+**author** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The author of the change. | [optional] 
 **displayUri** | **string** | The location of a user-friendly representation of the resource. | [optional] 
 **id** | **string** | The identifier for the change. For a commit, this would be the SHA1. For a TFVC changeset, this would be the changeset ID. | [optional] 
 **location** | **string** | The location of the full representation of the resource. | [optional] 

@@ -3,12 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**build** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference**](XamlBuildReference.md) |  | [optional] 
+**build** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference**](XamlBuildReference.md) |  | [optional] 
 **finishTime** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **keepForever** | **bool** |  | [optional] 
 **quality** | **string** |  | [optional] 
 **reason** | **string** |  | [optional] 
-**requestedFor** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
+**requestedFor** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
 **startTime** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **status** | **string** |  | [optional] 
 

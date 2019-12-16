@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * DataProviderResult Class Doc Comment
  *
  * @category Class
  * @description Result structure from calls to GetDataProviderData
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class DataProviderResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'clientProviders' => 'map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery]',
+        'clientProviders' => 'map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery]',
         'data' => 'map[string,object]',
-        'exceptions' => 'map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails]',
-        'resolvedProviders' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[]',
+        'exceptions' => 'map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails]',
+        'resolvedProviders' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[]',
         'scopeName' => 'string',
         'scopeValue' => 'string',
         'sharedData' => 'map[string,object]'
@@ -244,7 +244,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Gets clientProviders
      *
-     * @return map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery]
      */
     public function getClientProviders()
     {
@@ -254,7 +254,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Sets clientProviders
      *
-     * @param map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery] $clientProviders This is the set of data providers that were requested, but either they were defined as client providers, or as remote providers that failed and may be retried by the client.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientDataProviderQuery] $clientProviders This is the set of data providers that were requested, but either they were defined as client providers, or as remote providers that failed and may be retried by the client.
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Gets exceptions
      *
-     * @return map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails]
      */
     public function getExceptions()
     {
@@ -302,7 +302,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Sets exceptions
      *
-     * @param map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails] $exceptions Set of exceptions that occurred resolving the data providers.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderExceptionDetails] $exceptions Set of exceptions that occurred resolving the data providers.
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Gets resolvedProviders
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[]
      */
     public function getResolvedProviders()
     {
@@ -326,7 +326,7 @@ class DataProviderResult implements ModelInterface, ArrayAccess
     /**
      * Sets resolvedProviders
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[] $resolvedProviders List of data providers resolved in the data-provider query
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ResolvedDataProvider[] $resolvedProviders List of data providers resolved in the data-provider query
      *
      * @return $this
      */

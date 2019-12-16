@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\SuiteTestCaseApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\SuiteTestCaseApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **suiteTestCaseAdd**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseAdd($organization, $body, $project, $planId, $suiteId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseAdd($organization, $body, $project, $planId, $suiteId, $apiVersion)
 
 
 
@@ -24,16 +24,16 @@ Add test cases to a suite with specified configurations
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters()); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] | SuiteTestCaseCreateUpdateParameters object.
+$body = array(new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters()); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] | SuiteTestCaseCreateUpdateParameters object.
 $project = "project_example"; // string | Project ID or project name
 $planId = 56; // int | ID of the test plan to which test cases are to be added.
 $suiteId = 56; // int | ID of the test suite to which test cases are to be added.
@@ -53,7 +53,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[]**](../Model/SuiteTestCaseCreateUpdateParameters.md)| SuiteTestCaseCreateUpdateParameters object. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[]**](../Model/SuiteTestCaseCreateUpdateParameters.md)| SuiteTestCaseCreateUpdateParameters object. |
  **project** | **string**| Project ID or project name |
  **planId** | **int**| ID of the test plan to which test cases are to be added. |
  **suiteId** | **int**| ID of the test suite to which test cases are to be added. |
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **suiteTestCaseGetTestCase**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseGetTestCase($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields, $returnIdentityRef)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseGetTestCase($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields, $returnIdentityRef)
 
 
 
@@ -87,9 +87,9 @@ Get Test Cases For a Suite.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **suiteTestCaseGetTestCaseList**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseGetTestCaseList($organization, $project, $planId, $suiteId, $apiVersion, $testIds, $configurationIds, $witFields, $continuationToken, $returnIdentityRef, $expand, $excludeFlags)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseGetTestCaseList($organization, $project, $planId, $suiteId, $apiVersion, $testIds, $configurationIds, $witFields, $continuationToken, $returnIdentityRef, $expand, $excludeFlags)
 
 
 
@@ -154,9 +154,9 @@ Get Test Case List return those test cases which have all the configuration Ids 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
 
 ### Authorization
 
@@ -229,9 +229,9 @@ Removes test cases from a suite based on the list of test case Ids provided.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -279,7 +279,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **suiteTestCaseUpdate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[] suiteTestCaseUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion)
 
 
 
@@ -291,16 +291,16 @@ Update the configurations for test cases
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\SuiteTestCaseApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters()); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] | A SuiteTestCaseCreateUpdateParameters object.
+$body = array(new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters()); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] | A SuiteTestCaseCreateUpdateParameters object.
 $project = "project_example"; // string | Project ID or project name
 $planId = 56; // int | ID of the test plan to which test cases are to be updated.
 $suiteId = 56; // int | ID of the test suite to which test cases are to be updated.
@@ -320,7 +320,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[]**](../Model/SuiteTestCaseCreateUpdateParameters.md)| A SuiteTestCaseCreateUpdateParameters object. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[]**](../Model/SuiteTestCaseCreateUpdateParameters.md)| A SuiteTestCaseCreateUpdateParameters object. |
  **project** | **string**| Project ID or project name |
  **planId** | **int**| ID of the test plan to which test cases are to be updated. |
  **suiteId** | **int**| ID of the test suite to which test cases are to be updated. |
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]**](../Model/TestCase.md)
 
 ### Authorization
 

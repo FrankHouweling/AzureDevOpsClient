@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseUpdatedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ReleaseUpdatedEvent implements ModelInterface, ArrayAccess
         'environmentId' => 'int',
         'projectId' => 'string',
         'releaseId' => 'int',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release'
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Release'
     ];
 
     /**
@@ -298,7 +298,7 @@ class ReleaseUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function getRelease()
     {
@@ -308,7 +308,7 @@ class ReleaseUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $release release
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Release $release release
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\PlansApi
+# FrankHouweling\AzureDevOpsClient\Work\PlansApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **plansCreate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan plansCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\Plan plansCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -24,19 +24,19 @@ Add a new plan for the team
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\PlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\PlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan | Plan definition
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan(); // \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan | Plan definition
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -54,13 +54,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan**](../Model/CreatePlan.md)| Plan definition |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan**](../Model/CreatePlan.md)| Plan definition |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
 
 ### Authorization
 
@@ -86,12 +86,12 @@ Delete the specified plan
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\PlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\PlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **plansGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan plansGet($organization, $project, $id, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\Plan plansGet($organization, $project, $id, $apiVersion)
 
 
 
@@ -147,12 +147,12 @@ Get the information for the specified plan
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\PlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\PlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **plansList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[] plansList($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\Plan[] plansList($organization, $project, $apiVersion)
 
 
 
@@ -209,12 +209,12 @@ Get the information for all the plans configured for the given team
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\PlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\PlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[]**](../Model/Plan.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\Plan[]**](../Model/Plan.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **plansUpdate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan plansUpdate($organization, $body, $project, $id, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\Plan plansUpdate($organization, $body, $project, $id, $apiVersion)
 
 
 
@@ -269,19 +269,19 @@ Update the information for the specified plan
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\PlansApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\PlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan | Plan definition to be updated
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan(); // \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan | Plan definition to be updated
 $project = "project_example"; // string | Project ID or project name
 $id = "id_example"; // string | Identifier of the plan
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -300,14 +300,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan**](../Model/UpdatePlan.md)| Plan definition to be updated |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan**](../Model/UpdatePlan.md)| Plan definition to be updated |
  **project** | **string**| Project ID or project name |
  **id** | **string**| Identifier of the plan |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\Plan**](../Model/Plan.md)
 
 ### Authorization
 

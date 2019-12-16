@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcBranch Class Doc Comment
  *
  * @category Class
  * @description Class representing a branch object.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,17 +58,17 @@ class TfvcBranch implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'isDeleted' => 'bool',
-        'owner' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'url' => 'string',
         'path' => 'string',
-        'children' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranch[]',
-        'mappings' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranchMapping[]',
-        'parent' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef',
-        'relatedBranches' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[]'
+        'children' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranch[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranchMapping[]',
+        'parent' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef',
+        'relatedBranches' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -278,7 +278,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of REST reference links.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -374,7 +374,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $owner Alias or display name of user
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $owner Alias or display name of user
      *
      * @return $this
      */
@@ -436,7 +436,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets children
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranch[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranch[]
      */
     public function getChildren()
     {
@@ -446,7 +446,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets children
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranch[] $children List of children for the branch.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranch[] $children List of children for the branch.
      *
      * @return $this
      */
@@ -460,7 +460,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranchMapping[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranchMapping[]
      */
     public function getMappings()
     {
@@ -470,7 +470,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcBranchMapping[] $mappings List of branch mappings.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcBranchMapping[] $mappings List of branch mappings.
      *
      * @return $this
      */
@@ -484,7 +484,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets parent
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef
      */
     public function getParent()
     {
@@ -494,7 +494,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets parent
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef $parent Path of the branch's parent.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef $parent Path of the branch's parent.
      *
      * @return $this
      */
@@ -508,7 +508,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets relatedBranches
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[]
      */
     public function getRelatedBranches()
     {
@@ -518,7 +518,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets relatedBranches
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[] $relatedBranches List of paths of the related branches.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcShallowBranchRef[] $relatedBranches List of paths of the related branches.
      *
      * @return $this
      */

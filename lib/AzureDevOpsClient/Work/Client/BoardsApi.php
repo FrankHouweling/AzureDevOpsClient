@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Board
      */
     public function boardsGet($organization, $project, $id, $team, $apiVersion)
     {
@@ -115,13 +115,13 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\Board, HTTP status code, HTTP response headers (array of strings)
      */
     public function boardsGetWithHttpInfo($organization, $project, $id, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Board';
         $request = $this->boardsGetRequest($organization, $project, $id, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class BoardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\Board',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class BoardsApi
      */
     public function boardsGetAsyncWithHttpInfo($organization, $project, $id, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Board';
         $request = $this->boardsGetRequest($organization, $project, $id, $team, $apiVersion);
 
         return $this->client
@@ -436,9 +436,9 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[]
      */
     public function boardsList($organization, $project, $team, $apiVersion)
     {
@@ -454,13 +454,13 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function boardsListWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[]';
         $request = $this->boardsListRequest($organization, $project, $team, $apiVersion);
 
         try {
@@ -512,7 +512,7 @@ class BoardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class BoardsApi
      */
     public function boardsListAsyncWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[]';
         $request = $this->boardsListRequest($organization, $project, $team, $apiVersion);
 
         return $this->client
@@ -760,7 +760,7 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return map[string,string]
      */
@@ -780,7 +780,7 @@ class BoardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of map[string,string], HTTP status code, HTTP response headers (array of strings)
      */

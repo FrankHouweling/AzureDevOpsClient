@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **buildDirectory** | **string** |  | [optional] 
-**controller** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildControllerReference**](XamlBuildControllerReference.md) |  | [optional] 
+**controller** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildControllerReference**](XamlBuildControllerReference.md) |  | [optional] 
 **createdDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **description** | **string** |  | [optional] 
 **enabled** | **bool** |  | [optional] 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **messageQueueUrl** | **string** |  | [optional] 
 **name** | **string** |  | [optional] 
 **reservedForBuild** | **string** |  | [optional] 
-**server** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildServerReference**](XamlBuildServerReference.md) |  | [optional] 
+**server** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildServerReference**](XamlBuildServerReference.md) |  | [optional] 
 **status** | **string** |  | [optional] 
 **statusMessage** | **string** |  | [optional] 
 **updatedDate** | [**\DateTime**](\DateTime.md) |  | [optional] 

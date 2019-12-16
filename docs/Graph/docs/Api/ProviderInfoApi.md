@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\ProviderInfoApi
+# FrankHouweling\AzureDevOpsClient\Graph\ProviderInfoApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **providerInfoGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphProviderInfo providerInfoGet($userDescriptor, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphProviderInfo providerInfoGet($userDescriptor, $organization, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\ProviderInfoApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\ProviderInfoApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphProviderInfo**](../Model/GraphProviderInfo.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphProviderInfo**](../Model/GraphProviderInfo.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * Change Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Change implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'changeType' => 'string',
         'item' => 'string',
-        'newContent' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent',
+        'newContent' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent',
         'sourceServerItem' => 'string',
         'url' => 'string'
     ];
@@ -338,7 +338,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Gets newContent
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent
      */
     public function getNewContent()
     {
@@ -348,7 +348,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Sets newContent
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent $newContent Content of the item after the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent $newContent Content of the item after the change.
      *
      * @return $this
      */

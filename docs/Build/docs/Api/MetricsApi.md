@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\MetricsApi
+# FrankHouweling\AzureDevOpsClient\Build\MetricsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **metricsGetDefinitionMetrics**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[] metricsGetDefinitionMetrics($organization, $project, $definitionId, $apiVersion, $minMetricsTime)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[] metricsGetDefinitionMetrics($organization, $project, $definitionId, $apiVersion, $minMetricsTime)
 
 
 
@@ -21,9 +21,9 @@ Gets build metrics for a definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\MetricsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\MetricsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]**](../Model/BuildMetric.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]**](../Model/BuildMetric.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **metricsGetProjectMetrics**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[] metricsGetProjectMetrics($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[] metricsGetProjectMetrics($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime)
 
 
 
@@ -82,12 +82,12 @@ Gets build metrics for a project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\MetricsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\MetricsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]**](../Model/BuildMetric.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]**](../Model/BuildMetric.md)
 
 ### Authorization
 

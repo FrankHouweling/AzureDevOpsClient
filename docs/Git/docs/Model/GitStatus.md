@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | Reference links. | [optional] 
-**context** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatusContext**](GitStatusContext.md) | Context of the status. | [optional] 
-**createdBy** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Identity that created the status. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | Reference links. | [optional] 
+**context** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatusContext**](GitStatusContext.md) | Context of the status. | [optional] 
+**createdBy** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Identity that created the status. | [optional] 
 **creationDate** | [**\DateTime**](\DateTime.md) | Creation date and time of the status. | [optional] 
 **description** | **string** | Status description. Typically describes current state of the status. | [optional] 
 **id** | **int** | Status identifier. | [optional] 

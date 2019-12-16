@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactSourceIdsQueryResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ArtifactSourceIdsQueryResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactSourceIds' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceId[]'
+        'artifactSourceIds' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceId[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ArtifactSourceIdsQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets artifactSourceIds
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceId[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceId[]
      */
     public function getArtifactSourceIds()
     {
@@ -218,7 +218,7 @@ class ArtifactSourceIdsQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets artifactSourceIds
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceId[] $artifactSourceIds Gets or sets the list of artifactsourceIds.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceId[] $artifactSourceIds Gets or sets the list of artifactsourceIds.
      *
      * @return $this
      */

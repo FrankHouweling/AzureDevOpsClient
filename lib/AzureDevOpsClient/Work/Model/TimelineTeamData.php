@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TimelineTeamData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,20 +58,20 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'backlog' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevel',
+        'backlog' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevel',
         'fieldReferenceNames' => 'string[]',
         'id' => 'string',
         'isExpanded' => 'bool',
-        'iterations' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamIteration[]',
+        'iterations' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamIteration[]',
         'name' => 'string',
         'orderByField' => 'string',
         'partiallyPagedFieldReferenceNames' => 'string[]',
         'projectId' => 'string',
-        'status' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamStatus',
+        'status' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamStatus',
         'teamFieldDefaultValue' => 'string',
         'teamFieldName' => 'string',
-        'teamFieldValues' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]',
-        'workItemTypeColors' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemColor[]'
+        'teamFieldValues' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]',
+        'workItemTypeColors' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemColor[]'
     ];
 
     /**
@@ -286,7 +286,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Gets backlog
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevel
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevel
      */
     public function getBacklog()
     {
@@ -296,7 +296,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Sets backlog
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevel $backlog Backlog matching the mapped backlog associated with this team.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevel $backlog Backlog matching the mapped backlog associated with this team.
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Gets iterations
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamIteration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamIteration[]
      */
     public function getIterations()
     {
@@ -392,7 +392,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Sets iterations
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamIteration[] $iterations The iteration data, including the work items, in the queried date range.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamIteration[] $iterations The iteration data, including the work items, in the queried date range.
      *
      * @return $this
      */
@@ -502,7 +502,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamStatus
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamStatus
      */
     public function getStatus()
     {
@@ -512,7 +512,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamStatus $status Status for this team.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamStatus $status Status for this team.
      *
      * @return $this
      */
@@ -574,7 +574,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Gets teamFieldValues
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[]
      */
     public function getTeamFieldValues()
     {
@@ -584,7 +584,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Sets teamFieldValues
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamFieldValue[] $teamFieldValues The team field values
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamFieldValue[] $teamFieldValues The team field values
      *
      * @return $this
      */
@@ -598,7 +598,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Gets workItemTypeColors
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemColor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemColor[]
      */
     public function getWorkItemTypeColors()
     {
@@ -608,7 +608,7 @@ class TimelineTeamData implements ModelInterface, ArrayAccess
     /**
      * Sets workItemTypeColors
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemColor[] $workItemTypeColors Colors for the work item types.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemColor[] $workItemTypeColors Colors for the work item types.
      *
      * @return $this
      */

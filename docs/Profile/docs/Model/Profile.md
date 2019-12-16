@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**applicationContainer** | [**\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributesContainer**](AttributesContainer.md) | The attributes of this profile. | [optional] 
-**coreAttributes** | [**map[string,\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]**](CoreProfileAttribute.md) | The core attributes of this profile. | [optional] 
+**applicationContainer** | [**\FrankHouweling\AzureDevOpsClient\Profile\Model\AttributesContainer**](AttributesContainer.md) | The attributes of this profile. | [optional] 
+**coreAttributes** | [**map[string,\FrankHouweling\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]**](CoreProfileAttribute.md) | The core attributes of this profile. | [optional] 
 **coreRevision** | **int** | The maximum revision number of any attribute. | [optional] 
 **id** | **string** | The unique identifier of the profile. | [optional] 
 **profileState** | **string** | The current state of the profile. | [optional] 

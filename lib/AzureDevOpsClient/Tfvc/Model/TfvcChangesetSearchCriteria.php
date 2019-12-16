@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcChangesetSearchCriteria Class Doc Comment
  *
  * @category Class
  * @description Criteria used in a search for change lists.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
         'fromId' => 'int',
         'includeLinks' => 'bool',
         'itemPath' => 'string',
-        'mappings' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]',
         'toDate' => 'string',
         'toId' => 'int'
     ];
@@ -400,7 +400,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]
      */
     public function getMappings()
     {
@@ -410,7 +410,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[] $mappings mappings
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[] $mappings mappings
      *
      * @return $this
      */

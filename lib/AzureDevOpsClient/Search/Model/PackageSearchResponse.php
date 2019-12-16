@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * PackageSearchResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PackageSearchResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'activityId' => 'string[]',
-        'content' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent'
+        'content' => '\FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PackageSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets content
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent
      */
     public function getContent()
     {
@@ -248,7 +248,7 @@ class PackageSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets content
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageSearchResponseContent $content content
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\PackageSearchResponseContent $content content
      *
      * @return $this
      */

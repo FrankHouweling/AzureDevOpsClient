@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Client;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Policy\ApiException;
-use AzureDevOpsClient\Policy\Configuration;
-use AzureDevOpsClient\Policy\HeaderSelector;
-use AzureDevOpsClient\Policy\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Policy\ApiException;
+use FrankHouweling\AzureDevOpsClient\Policy\Configuration;
+use FrankHouweling\AzureDevOpsClient\Policy\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * RevisionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class RevisionsApi
      * @param  int $revisionId The revision ID. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration
      */
     public function revisionsGet($organization, $project, $configurationId, $revisionId, $apiVersion)
     {
@@ -115,13 +115,13 @@ class RevisionsApi
      * @param  int $revisionId The revision ID. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration, HTTP status code, HTTP response headers (array of strings)
      */
     public function revisionsGetWithHttpInfo($organization, $project, $configurationId, $revisionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->revisionsGetRequest($organization, $project, $configurationId, $revisionId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class RevisionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class RevisionsApi
      */
     public function revisionsGetAsyncWithHttpInfo($organization, $project, $configurationId, $revisionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration';
         $request = $this->revisionsGetRequest($organization, $project, $configurationId, $revisionId, $apiVersion);
 
         return $this->client
@@ -438,9 +438,9 @@ class RevisionsApi
      * @param  int $top The number of revisions to retrieve. (optional)
      * @param  int $skip The number of revisions to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]
      */
     public function revisionsList($organization, $project, $configurationId, $apiVersion, $top = null, $skip = null)
     {
@@ -458,13 +458,13 @@ class RevisionsApi
      * @param  int $top The number of revisions to retrieve. (optional)
      * @param  int $skip The number of revisions to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function revisionsListWithHttpInfo($organization, $project, $configurationId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
         $request = $this->revisionsListRequest($organization, $project, $configurationId, $apiVersion, $top, $skip);
 
         try {
@@ -516,7 +516,7 @@ class RevisionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class RevisionsApi
      */
     public function revisionsListAsyncWithHttpInfo($organization, $project, $configurationId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]';
         $request = $this->revisionsListRequest($organization, $project, $configurationId, $apiVersion, $top, $skip);
 
         return $this->client

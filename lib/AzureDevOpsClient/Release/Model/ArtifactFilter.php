@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactFilter Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class ArtifactFilter implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'createReleaseOnBuildTagging' => 'bool',
         'sourceBranch' => 'string',
-        'tagFilter' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter',
+        'tagFilter' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter',
         'tags' => 'string[]',
         'useBuildDefinitionBranch' => 'bool'
     ];
@@ -280,7 +280,7 @@ class ArtifactFilter implements ModelInterface, ArrayAccess
     /**
      * Gets tagFilter
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter
      */
     public function getTagFilter()
     {
@@ -290,7 +290,7 @@ class ArtifactFilter implements ModelInterface, ArrayAccess
     /**
      * Sets tagFilter
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter $tagFilter Gets or sets the regex based tag filter.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter $tagFilter Gets or sets the regex based tag filter.
      *
      * @return $this
      */

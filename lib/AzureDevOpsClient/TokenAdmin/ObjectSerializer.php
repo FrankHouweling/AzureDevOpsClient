@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,13 +27,13 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -298,7 +298,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\AzureDevOpsClient\TokenAdmin\Model\\' . $data->{$discriminator};
+                $subclass = '\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

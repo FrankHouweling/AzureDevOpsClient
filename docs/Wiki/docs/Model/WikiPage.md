@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **order** | **int** | Order of the wiki page, relative to other pages in the same hierarchy level. | [optional] 
 **path** | **string** | Path of the wiki page. | [optional] 
 **remoteUrl** | **string** | Remote web url to the wiki page. | [optional] 
-**subPages** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage[]**](WikiPage.md) | List of subpages of the current page. | [optional] 
+**subPages** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage[]**](WikiPage.md) | List of subpages of the current page. | [optional] 
 **url** | **string** | REST url for this wiki page. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

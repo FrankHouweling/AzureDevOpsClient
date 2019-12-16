@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * OptionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class OptionsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]
      */
     public function optionsList($organization, $project, $apiVersion)
     {
@@ -111,13 +111,13 @@ class OptionsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[], HTTP status code, HTTP response headers (array of strings)
      */
     public function optionsListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]';
         $request = $this->optionsListRequest($organization, $project, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class OptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class OptionsApi
      */
     public function optionsListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinition[]';
         $request = $this->optionsListRequest($organization, $project, $apiVersion);
 
         return $this->client

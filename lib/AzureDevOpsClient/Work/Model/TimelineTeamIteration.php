@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TimelineTeamIteration Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class TimelineTeamIteration implements ModelInterface, ArrayAccess
         'partiallyPagedWorkItems' => 'object[][]',
         'path' => 'string',
         'startDate' => '\DateTime',
-        'status' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineIterationStatus',
+        'status' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TimelineIterationStatus',
         'workItems' => 'object[][]'
     ];
 
@@ -394,7 +394,7 @@ class TimelineTeamIteration implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineIterationStatus
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineIterationStatus
      */
     public function getStatus()
     {
@@ -404,7 +404,7 @@ class TimelineTeamIteration implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineIterationStatus $status The status of this iteration
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineIterationStatus $status The status of this iteration
      *
      * @return $this
      */

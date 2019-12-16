@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * TimelineRecordsUpdatedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TimelineRecordsUpdatedEvent implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'buildId' => 'int',
-        'timelineRecords' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[]'
+        'timelineRecords' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TimelineRecordsUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets timelineRecords
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[]
      */
     public function getTimelineRecords()
     {
@@ -248,7 +248,7 @@ class TimelineRecordsUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets timelineRecords
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[] $timelineRecords timelineRecords
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[] $timelineRecords timelineRecords
      *
      * @return $this
      */

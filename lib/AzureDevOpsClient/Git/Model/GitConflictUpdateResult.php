@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitConflictUpdateResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GitConflictUpdateResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'conflictId' => 'int',
         'customMessage' => 'string',
-        'updatedConflict' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitConflict',
+        'updatedConflict' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitConflict',
         'updateStatus' => 'string'
     ];
 
@@ -303,7 +303,7 @@ class GitConflictUpdateResult implements ModelInterface, ArrayAccess
     /**
      * Gets updatedConflict
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitConflict
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitConflict
      */
     public function getUpdatedConflict()
     {
@@ -313,7 +313,7 @@ class GitConflictUpdateResult implements ModelInterface, ArrayAccess
     /**
      * Sets updatedConflict
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitConflict $updatedConflict New state of the conflict after updating
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitConflict $updatedConflict New state of the conflict after updating
      *
      * @return $this
      */

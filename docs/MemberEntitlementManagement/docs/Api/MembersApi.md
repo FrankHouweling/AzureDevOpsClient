@@ -1,4 +1,4 @@
-# AzureDevOpsClient\MemberEntitlementManagement\MembersApi
+# FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\MembersApi
 
 All URIs are relative to *https://vsaex.dev.azure.com*
 
@@ -22,12 +22,12 @@ Add a member to a Group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -71,7 +71,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **membersGet**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList membersGet($organization, $groupId, $apiVersion, $maxResults, $pagingToken)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList membersGet($organization, $groupId, $apiVersion, $maxResults, $pagingToken)
 
 
 
@@ -83,9 +83,9 @@ Get direct members of a Group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList**](../Model/PagedGraphMemberList.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList**](../Model/PagedGraphMemberList.md)
 
 ### Authorization
 
@@ -144,9 +144,9 @@ Remove a member from a Group.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\MembersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

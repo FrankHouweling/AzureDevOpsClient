@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * Attachment Class Doc Comment
  *
  * @category Class
  * @description Meta data for a file attached to an artifact.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,14 +58,14 @@ class Attachment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'contentHash' => 'string',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'displayName' => 'string',
         'id' => 'int',
-        'properties' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection',
         'url' => 'string'
     ];
 
@@ -256,7 +256,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -266,7 +266,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -290,7 +290,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $author The person that uploaded this attachment.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $author The person that uploaded this attachment.
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -434,7 +434,7 @@ class Attachment implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection $properties Extended properties.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection $properties Extended properties.
      *
      * @return $this
      */

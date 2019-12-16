@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * CloneOperationCommonResponse Class Doc Comment
  *
  * @category Class
  * @description Common Response for clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class CloneOperationCommonResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneStatistics' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneStatistics',
+        'cloneStatistics' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneStatistics',
         'completionDate' => '\DateTime',
         'creationDate' => '\DateTime',
-        'links' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
         'message' => 'string',
         'opId' => 'int',
         'state' => 'string'
@@ -271,7 +271,7 @@ class CloneOperationCommonResponse implements ModelInterface, ArrayAccess
     /**
      * Gets cloneStatistics
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneStatistics
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneStatistics
      */
     public function getCloneStatistics()
     {
@@ -281,7 +281,7 @@ class CloneOperationCommonResponse implements ModelInterface, ArrayAccess
     /**
      * Sets cloneStatistics
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneStatistics $cloneStatistics Various statistics related to the clone operation
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneStatistics $cloneStatistics Various statistics related to the clone operation
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class CloneOperationCommonResponse implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -353,7 +353,7 @@ class CloneOperationCommonResponse implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Reference links
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Reference links
      *
      * @return $this
      */

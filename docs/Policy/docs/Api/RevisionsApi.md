@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Policy\RevisionsApi
+# FrankHouweling\AzureDevOpsClient\Policy\RevisionsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **revisionsGet**
-> \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration revisionsGet($organization, $project, $configurationId, $revisionId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration revisionsGet($organization, $project, $configurationId, $revisionId, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Retrieve a specific revision of a given policy by ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Policy\Api\RevisionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Policy\Api\RevisionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration**](../Model/PolicyConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration**](../Model/PolicyConfiguration.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **revisionsList**
-> \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[] revisionsList($organization, $project, $configurationId, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[] revisionsList($organization, $project, $configurationId, $apiVersion, $top, $skip)
 
 
 
@@ -82,9 +82,9 @@ Retrieve all revisions for a given policy.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Policy\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Policy\Api\RevisionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Policy\Api\RevisionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]**](../Model/PolicyConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration[]**](../Model/PolicyConfiguration.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * MemberEntitlementsPatchResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class MemberEntitlementsPatchResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'isSuccess' => 'bool',
-        'memberEntitlement' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement',
-        'operationResults' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[]'
+        'memberEntitlement' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement',
+        'operationResults' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[]'
     ];
 
     /**
@@ -244,7 +244,7 @@ class MemberEntitlementsPatchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets memberEntitlement
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement
      */
     public function getMemberEntitlement()
     {
@@ -254,7 +254,7 @@ class MemberEntitlementsPatchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets memberEntitlement
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement $memberEntitlement Result of the member entitlement after the operations. have been applied
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\MemberEntitlement $memberEntitlement Result of the member entitlement after the operations. have been applied
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class MemberEntitlementsPatchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets operationResults
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[]
      */
     public function getOperationResults()
     {
@@ -278,7 +278,7 @@ class MemberEntitlementsPatchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets operationResults
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[] $operationResults List of results for each operation
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\OperationResult[] $operationResults List of results for each operation
      *
      * @return $this
      */

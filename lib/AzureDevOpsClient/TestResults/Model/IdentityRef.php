@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * IdentityRef Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ReferenceLinks',
         'descriptor' => 'string',
         'displayName' => 'string',
         'url' => 'string',
@@ -280,7 +280,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -290,7 +290,7 @@ class IdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReferenceLinks $links links
      *
      * @return $this
      */

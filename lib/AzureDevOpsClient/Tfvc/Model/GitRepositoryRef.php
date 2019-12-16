@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * GitRepositoryRef Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class GitRepositoryRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'collection' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference',
+        'collection' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference',
         'id' => 'string',
         'isFork' => 'bool',
         'name' => 'string',
-        'project' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference',
         'remoteUrl' => 'string',
         'sshUrl' => 'string',
         'url' => 'string'
@@ -250,7 +250,7 @@ class GitRepositoryRef implements ModelInterface, ArrayAccess
     /**
      * Gets collection
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference
      */
     public function getCollection()
     {
@@ -260,7 +260,7 @@ class GitRepositoryRef implements ModelInterface, ArrayAccess
     /**
      * Sets collection
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference $collection Team Project Collection where this Fork resides
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference $collection Team Project Collection where this Fork resides
      *
      * @return $this
      */
@@ -346,7 +346,7 @@ class GitRepositoryRef implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -356,7 +356,7 @@ class GitRepositoryRef implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference $project project
      *
      * @return $this
      */

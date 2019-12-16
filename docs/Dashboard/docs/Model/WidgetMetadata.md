@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**allowedSizes** | [**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[]**](WidgetSize.md) | Sizes supported by the Widget. | [optional] 
+**allowedSizes** | [**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[]**](WidgetSize.md) | Sizes supported by the Widget. | [optional] 
 **analyticsServiceRequired** | **bool** | Opt-in boolean that indicates if the widget requires the Analytics Service to function. Widgets requiring the analytics service are hidden from the catalog if the Analytics Service is not available. | [optional] 
 **catalogIconUrl** | **string** | Resource for an icon in the widget catalog. | [optional] 
 **catalogInfoUrl** | **string** | Opt-in URL string pointing at widget information. Defaults to extension marketplace URL if omitted | [optional] 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **isNameConfigurable** | **bool** | Opt-out boolean that indicates if the widget supports widget name/title configuration. Widgets ignoring the name should set it to false in the manifest. | [optional] 
 **isVisibleFromCatalog** | **bool** | Opt-out boolean indicating if the widget is hidden from the catalog. Commonly, this is used to allow developers to disable creation of a deprecated widget. A widget must have a functional default state, or have a configuration experience, in order to be visible from the catalog. | [optional] 
 **keywords** | **string[]** | Keywords associated with this widget, non-filterable and invisible | [optional] 
-**lightboxOptions** | [**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions**](LightboxOptions.md) | Opt-in properties for customizing widget presentation in a \&quot;lightbox\&quot; dialog. | [optional] 
+**lightboxOptions** | [**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions**](LightboxOptions.md) | Opt-in properties for customizing widget presentation in a \&quot;lightbox\&quot; dialog. | [optional] 
 **loadingImageUrl** | **string** | Resource for a loading placeholder image on dashboard | [optional] 
 **name** | **string** | User facing name of the widget type. Each widget must use a unique value here. | [optional] 
 **publisherName** | **string** | Publisher Name of this kind of widget. | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * SourceTestplanResponse Class Doc Comment
  *
  * @category Class
  * @description Source Test Plan Response for Test Plan clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class SourceTestplanResponse implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'name' => 'string',
-        'project' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
         'suiteIds' => 'int[]'
     ];
 
@@ -274,7 +274,7 @@ class SourceTestplanResponse implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -284,7 +284,7 @@ class SourceTestplanResponse implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project project reference
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project project reference
      *
      * @return $this
      */

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **description** | **string** | The description. | [optional] 
 **name** | **string** | The name of the variable group. | [optional] 
 **type** | **string** | The type of the variable group. | [optional] 
-**variables** | [**map[string,\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]**](BuildDefinitionVariable.md) |  | [optional] 
+**variables** | [**map[string,\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionVariable]**](BuildDefinitionVariable.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Audit\AuditLogApi
+# FrankHouweling\AzureDevOpsClient\Audit\AuditLogApi
 
 All URIs are relative to *https://auditservice.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **auditLogQuery**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult auditLogQuery($organization, $apiVersion, $startTime, $endTime, $batchSize, $continuationToken, $skipAggregation)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult auditLogQuery($organization, $apiVersion, $startTime, $endTime, $batchSize, $continuationToken, $skipAggregation)
 
 
 
@@ -20,9 +20,9 @@ Queries audit log entries
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\AuditLogApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\AuditLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult**](../Model/AuditLogQueryResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult**](../Model/AuditLogQueryResult.md)
 
 ### Authorization
 

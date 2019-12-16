@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * PointsFilter Class Doc Comment
  *
  * @category Class
  * @description Filter class for test point.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class PointsFilter implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'configurationNames' => 'string[]',
         'testcaseIds' => 'int[]',
-        'testers' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef[]'
+        'testers' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class PointsFilter implements ModelInterface, ArrayAccess
     /**
      * Gets testers
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef[]
      */
     public function getTesters()
     {
@@ -278,7 +278,7 @@ class PointsFilter implements ModelInterface, ArrayAccess
     /**
      * Sets testers
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef[] $testers List of tester for filtering.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef[] $testers List of tester for filtering.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * Plan Class Doc Comment
  *
  * @category Class
  * @description Data contract for the plan definition
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class Plan implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'createdByIdentity' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef',
+        'createdByIdentity' => '\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'id' => 'string',
-        'modifiedByIdentity' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef',
+        'modifiedByIdentity' => '\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef',
         'modifiedDate' => '\DateTime',
         'name' => 'string',
         'properties' => 'object',
@@ -326,7 +326,7 @@ class Plan implements ModelInterface, ArrayAccess
     /**
      * Gets createdByIdentity
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef
      */
     public function getCreatedByIdentity()
     {
@@ -336,7 +336,7 @@ class Plan implements ModelInterface, ArrayAccess
     /**
      * Sets createdByIdentity
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef $createdByIdentity Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef $createdByIdentity Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class Plan implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedByIdentity
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef
      */
     public function getModifiedByIdentity()
     {
@@ -432,7 +432,7 @@ class Plan implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedByIdentity
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef $modifiedByIdentity Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef $modifiedByIdentity Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4.
      *
      * @return $this
      */

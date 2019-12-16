@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * RetentionApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class RetentionApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting
      */
     public function retentionGet($organization, $project, $apiVersion)
     {
@@ -111,13 +111,13 @@ class RetentionApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting, HTTP status code, HTTP response headers (array of strings)
      */
     public function retentionGetWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
         $request = $this->retentionGetRequest($organization, $project, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class RetentionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class RetentionApi
      */
     public function retentionGetAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
         $request = $this->retentionGetRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -394,13 +394,13 @@ class RetentionApi
      * Operation retentionUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting
      */
     public function retentionUpdate($organization, $body, $project, $apiVersion)
     {
@@ -412,17 +412,17 @@ class RetentionApi
      * Operation retentionUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting, HTTP status code, HTTP response headers (array of strings)
      */
     public function retentionUpdateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
         $request = $this->retentionUpdateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -474,7 +474,7 @@ class RetentionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -490,7 +490,7 @@ class RetentionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -513,7 +513,7 @@ class RetentionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -522,7 +522,7 @@ class RetentionApi
      */
     public function retentionUpdateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\ProjectRetentionSetting';
         $request = $this->retentionUpdateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -566,7 +566,7 @@ class RetentionApi
      * Create request for operation 'retentionUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\UpdateProjectRetentionSettingModel $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

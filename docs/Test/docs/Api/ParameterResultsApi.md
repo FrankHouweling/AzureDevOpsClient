@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\ParameterResultsApi
+# FrankHouweling\AzureDevOpsClient\Test\ParameterResultsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **parameterResultsList**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[] parameterResultsList($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[] parameterResultsList($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $paramName)
 
 
 
@@ -20,9 +20,9 @@ Get a list of parameterized results
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ParameterResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ParameterResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]**](../Model/TestResultParameterModel.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]**](../Model/TestResultParameterModel.md)
 
 ### Authorization
 

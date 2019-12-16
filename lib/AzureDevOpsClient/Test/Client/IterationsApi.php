@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * IterationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeActionResults Include result details for each action performed in the test iteration. ActionResults refer to outcome (pass/fail) of test steps that are executed as part of a running a manual test. Including the ActionResults flag gets the outcome of test steps in the actionResults section and test parameters in the parameters section for each test iteration. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel
      */
     public function iterationsGet($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $includeActionResults = null)
     {
@@ -119,13 +119,13 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeActionResults Include result details for each action performed in the test iteration. ActionResults refer to outcome (pass/fail) of test steps that are executed as part of a running a manual test. Including the ActionResults flag gets the outcome of test steps in the actionResults section and test parameters in the parameters section for each test iteration. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsGetWithHttpInfo($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $includeActionResults = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel';
         $request = $this->iterationsGetRequest($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $includeActionResults);
 
         try {
@@ -177,7 +177,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class IterationsApi
      */
     public function iterationsGetAsyncWithHttpInfo($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $includeActionResults = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel';
         $request = $this->iterationsGetRequest($organization, $project, $runId, $testCaseResultId, $iterationId, $apiVersion, $includeActionResults);
 
         return $this->client
@@ -466,9 +466,9 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeActionResults Include result details for each action performed in the test iteration. ActionResults refer to outcome (pass/fail) of test steps that are executed as part of a running a manual test. Including the ActionResults flag gets the outcome of test steps in the actionResults section and test parameters in the parameters section for each test iteration. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]
      */
     public function iterationsList($organization, $project, $runId, $testCaseResultId, $apiVersion, $includeActionResults = null)
     {
@@ -486,13 +486,13 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $includeActionResults Include result details for each action performed in the test iteration. ActionResults refer to outcome (pass/fail) of test steps that are executed as part of a running a manual test. Including the ActionResults flag gets the outcome of test steps in the actionResults section and test parameters in the parameters section for each test iteration. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[], HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsListWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion, $includeActionResults = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]';
         $request = $this->iterationsListRequest($organization, $project, $runId, $testCaseResultId, $apiVersion, $includeActionResults);
 
         try {
@@ -544,7 +544,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -596,7 +596,7 @@ class IterationsApi
      */
     public function iterationsListAsyncWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion, $includeActionResults = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestIterationDetailsModel[]';
         $request = $this->iterationsListRequest($organization, $project, $runId, $testCaseResultId, $apiVersion, $includeActionResults);
 
         return $this->client

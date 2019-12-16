@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * DataSource Class Doc Comment
  *
  * @category Class
  * @description Specifies the data sources for this endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class DataSource implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'authenticationScheme' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference',
+        'authenticationScheme' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference',
         'callbackContextTemplate' => 'string',
         'callbackRequiredTemplate' => 'string',
         'endpointUrl' => 'string',
-        'headers' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]',
+        'headers' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]',
         'initialContextTemplate' => 'string',
         'name' => 'string',
         'requestContent' => 'string',
@@ -268,7 +268,7 @@ class DataSource implements ModelInterface, ArrayAccess
     /**
      * Gets authenticationScheme
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference
      */
     public function getAuthenticationScheme()
     {
@@ -278,7 +278,7 @@ class DataSource implements ModelInterface, ArrayAccess
     /**
      * Sets authenticationScheme
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference $authenticationScheme Gets or sets the authentication scheme for the endpoint request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthenticationSchemeReference $authenticationScheme Gets or sets the authentication scheme for the endpoint request.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class DataSource implements ModelInterface, ArrayAccess
     /**
      * Gets headers
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]
      */
     public function getHeaders()
     {
@@ -374,7 +374,7 @@ class DataSource implements ModelInterface, ArrayAccess
     /**
      * Sets headers
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[] $headers Gets or sets the authorization headers of the request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[] $headers Gets or sets the authorization headers of the request.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ServerDeploymentInput Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class ServerDeploymentInput implements ModelInterface, ArrayAccess
         'jobCancelTimeoutInMinutes' => 'int',
         'overrideInputs' => 'map[string,string]',
         'timeoutInMinutes' => 'int',
-        'parallelExecution' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput'
+        'parallelExecution' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput'
     ];
 
     /**
@@ -328,7 +328,7 @@ class ServerDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Gets parallelExecution
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput
      */
     public function getParallelExecution()
     {
@@ -338,7 +338,7 @@ class ServerDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Sets parallelExecution
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput $parallelExecution Gets or sets the parallel execution input.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput $parallelExecution Gets or sets the parallel execution input.
      *
      * @return $this
      */

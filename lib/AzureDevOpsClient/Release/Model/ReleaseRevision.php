@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseRevision Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ReleaseRevision implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'changedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'changedDate' => '\DateTime',
         'changeDetails' => 'string',
         'changeType' => 'string',
@@ -244,7 +244,7 @@ class ReleaseRevision implements ModelInterface, ArrayAccess
     /**
      * Gets changedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getChangedBy()
     {
@@ -254,7 +254,7 @@ class ReleaseRevision implements ModelInterface, ArrayAccess
     /**
      * Sets changedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $changedBy Gets or sets the identity who changed.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $changedBy Gets or sets the identity who changed.
      *
      * @return $this
      */

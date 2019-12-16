@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ValueDefinition Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of a field value definition. It has the information needed to retrieve the list of possible values for a certain field and how to handle that field values in the UI. This information includes what type of object this value represents, which property to use for UI display and which property to use for saving the subscription
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ValueDefinition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dataSource' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[]',
+        'dataSource' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[]',
         'endPoint' => 'string',
         'resultTemplate' => 'string'
     ];
@@ -220,7 +220,7 @@ class ValueDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets dataSource
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[]
      */
     public function getDataSource()
     {
@@ -230,7 +230,7 @@ class ValueDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets dataSource
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[] $dataSource Gets or sets the data source.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[] $dataSource Gets or sets the data source.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ScheduleTrigger Class Doc Comment
  *
  * @category Class
  * @description Represents a schedule trigger.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ScheduleTrigger implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'triggerType' => 'string',
-        'schedules' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Schedule[]'
+        'schedules' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Schedule[]'
     ];
 
     /**
@@ -284,7 +284,7 @@ class ScheduleTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets schedules
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Schedule[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Schedule[]
      */
     public function getSchedules()
     {
@@ -294,7 +294,7 @@ class ScheduleTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets schedules
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Schedule[] $schedules schedules
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Schedule[] $schedules schedules
      *
      * @return $this
      */

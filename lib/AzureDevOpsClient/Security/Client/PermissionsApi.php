@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Client;
+namespace FrankHouweling\AzureDevOpsClient\Security\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Security\ApiException;
-use AzureDevOpsClient\Security\Configuration;
-use AzureDevOpsClient\Security\HeaderSelector;
-use AzureDevOpsClient\Security\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Security\ApiException;
+use FrankHouweling\AzureDevOpsClient\Security\Configuration;
+use FrankHouweling\AzureDevOpsClient\Security\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * PermissionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,7 +98,7 @@ class PermissionsApi
      * @param  bool $alwaysAllowAdministrators If true and if the caller is an administrator, always return true. (optional)
      * @param  string $delimiter Optional security token separator. Defaults to \&quot;,\&quot;. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return bool[]
      */
@@ -119,7 +119,7 @@ class PermissionsApi
      * @param  bool $alwaysAllowAdministrators If true and if the caller is an administrator, always return true. (optional)
      * @param  string $delimiter Optional security token separator. Defaults to \&quot;,\&quot;. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of bool[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -439,13 +439,13 @@ class PermissionsApi
     /**
      * Operation permissionsHasPermissionsBatch
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch
      */
     public function permissionsHasPermissionsBatch($body, $organization, $apiVersion)
     {
@@ -456,17 +456,17 @@ class PermissionsApi
     /**
      * Operation permissionsHasPermissionsBatchWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch, HTTP status code, HTTP response headers (array of strings)
      */
     public function permissionsHasPermissionsBatchWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch';
         $request = $this->permissionsHasPermissionsBatchRequest($body, $organization, $apiVersion);
 
         try {
@@ -518,7 +518,7 @@ class PermissionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch',
+                        '\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -533,7 +533,7 @@ class PermissionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -555,7 +555,7 @@ class PermissionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -564,7 +564,7 @@ class PermissionsApi
      */
     public function permissionsHasPermissionsBatchAsyncWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch';
         $request = $this->permissionsHasPermissionsBatchRequest($body, $organization, $apiVersion);
 
         return $this->client
@@ -607,7 +607,7 @@ class PermissionsApi
     /**
      * Create request for operation 'permissionsHasPermissionsBatch'
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\PermissionEvaluationBatch $body The set of evaluation requests. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -744,9 +744,9 @@ class PermissionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $token Security token to remove permissions for. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry
      */
     public function permissionsRemovePermission($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token = null)
     {
@@ -764,13 +764,13 @@ class PermissionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $token Security token to remove permissions for. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function permissionsRemovePermissionWithHttpInfo($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry';
         $request = $this->permissionsRemovePermissionRequest($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token);
 
         try {
@@ -822,7 +822,7 @@ class PermissionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry',
+                        '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -874,7 +874,7 @@ class PermissionsApi
      */
     public function permissionsRemovePermissionAsyncWithHttpInfo($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry';
         $request = $this->permissionsRemovePermissionRequest($securityNamespaceId, $descriptor, $organization, $permissions, $apiVersion, $token);
 
         return $this->client

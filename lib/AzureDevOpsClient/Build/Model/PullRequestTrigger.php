@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * PullRequestTrigger Class Doc Comment
  *
  * @category Class
  * @description Represents a pull request trigger.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
         'triggerType' => 'string',
         'autoCancel' => 'bool',
         'branchFilters' => 'string[]',
-        'forks' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Forks',
+        'forks' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Forks',
         'isCommentRequiredForPullRequest' => 'bool',
         'pathFilters' => 'string[]',
         'requireCommentsForNonTeamMembersOnly' => 'bool',
@@ -368,7 +368,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets forks
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Forks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Forks
      */
     public function getForks()
     {
@@ -378,7 +378,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets forks
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Forks $forks forks
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Forks $forks forks
      *
      * @return $this
      */

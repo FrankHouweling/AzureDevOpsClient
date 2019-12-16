@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Audit\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * AuditLogEntry Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

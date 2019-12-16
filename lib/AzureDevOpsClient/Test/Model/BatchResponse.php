@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * BatchResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class BatchResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'error' => 'string',
-        'responses' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\Response[]',
+        'responses' => '\FrankHouweling\AzureDevOpsClient\Test\Model\Response[]',
         'status' => 'string'
     ];
 
@@ -357,7 +357,7 @@ class BatchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets responses
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\Response[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\Response[]
      */
     public function getResponses()
     {
@@ -367,7 +367,7 @@ class BatchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets responses
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\Response[] $responses responses
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\Response[] $responses responses
      *
      * @return $this
      */

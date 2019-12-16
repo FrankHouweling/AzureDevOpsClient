@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitItem Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class GitItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'content' => 'string',
-        'contentMetadata' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata',
+        'contentMetadata' => '\FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata',
         'isFolder' => 'bool',
         'isSymLink' => 'bool',
         'path' => 'string',
         'url' => 'string',
         'commitId' => 'string',
         'gitObjectType' => 'string',
-        'latestProcessedChange' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'latestProcessedChange' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'objectId' => 'string',
         'originalObjectId' => 'string'
     ];
@@ -309,7 +309,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -319,7 +319,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Gets contentMetadata
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata
      */
     public function getContentMetadata()
     {
@@ -367,7 +367,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Sets contentMetadata
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata $contentMetadata contentMetadata
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata $contentMetadata contentMetadata
      *
      * @return $this
      */
@@ -534,7 +534,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Gets latestProcessedChange
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getLatestProcessedChange()
     {
@@ -544,7 +544,7 @@ class GitItem implements ModelInterface, ArrayAccess
     /**
      * Sets latestProcessedChange
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $latestProcessedChange Shallow ref to commit that last changed this item Only populated if latestProcessedChange is requested May not be accurate if latest change is not yet cached
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $latestProcessedChange Shallow ref to commit that last changed this item Only populated if latestProcessedChange is requested May not be accurate if latest change is not yet cached
      *
      * @return $this
      */

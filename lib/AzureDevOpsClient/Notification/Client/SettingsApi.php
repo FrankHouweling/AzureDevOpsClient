@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Client;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Notification\ApiException;
-use AzureDevOpsClient\Notification\Configuration;
-use AzureDevOpsClient\Notification\HeaderSelector;
-use AzureDevOpsClient\Notification\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Notification\ApiException;
+use FrankHouweling\AzureDevOpsClient\Notification\Configuration;
+use FrankHouweling\AzureDevOpsClient\Notification\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SettingsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class SettingsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings
      */
     public function settingsGet($organization, $apiVersion)
     {
@@ -109,13 +109,13 @@ class SettingsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function settingsGetWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
         $request = $this->settingsGetRequest($organization, $apiVersion);
 
         try {
@@ -167,7 +167,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class SettingsApi
      */
     public function settingsGetAsyncWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
         $request = $this->settingsGetRequest($organization, $apiVersion);
 
         return $this->client
@@ -374,13 +374,13 @@ class SettingsApi
     /**
      * Operation settingsUpdate
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings
      */
     public function settingsUpdate($body, $organization, $apiVersion)
     {
@@ -391,17 +391,17 @@ class SettingsApi
     /**
      * Operation settingsUpdateWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function settingsUpdateWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
         $request = $this->settingsUpdateRequest($body, $organization, $apiVersion);
 
         try {
@@ -453,7 +453,7 @@ class SettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,7 +468,7 @@ class SettingsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -490,7 +490,7 @@ class SettingsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -499,7 +499,7 @@ class SettingsApi
      */
     public function settingsUpdateAsyncWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings';
         $request = $this->settingsUpdateRequest($body, $organization, $apiVersion);
 
         return $this->client
@@ -542,7 +542,7 @@ class SettingsApi
     /**
      * Create request for operation 'settingsUpdate'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

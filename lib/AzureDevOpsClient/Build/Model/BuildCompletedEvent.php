@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildCompletedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
         'buildId' => 'int',
-        'changes' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]',
-        'pullRequest' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest',
-        'testResults' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis',
-        'timelineRecords' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[]',
-        'workItems' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AssociatedWorkItem[]'
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Change[]',
+        'pullRequest' => '\FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest',
+        'testResults' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis',
+        'timelineRecords' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[]',
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AssociatedWorkItem[]'
     ];
 
     /**
@@ -244,7 +244,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function getBuild()
     {
@@ -254,7 +254,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $build build
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Build $build build
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Change[]
      */
     public function getChanges()
     {
@@ -302,7 +302,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Change[] $changes Changes associated with a build used for build notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Change[] $changes Changes associated with a build used for build notifications
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets pullRequest
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest
      */
     public function getPullRequest()
     {
@@ -326,7 +326,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets pullRequest
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest $pullRequest Pull request for the build used for build notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest $pullRequest Pull request for the build used for build notifications
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets testResults
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis
      */
     public function getTestResults()
     {
@@ -350,7 +350,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets testResults
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis $testResults Test results associated with a build used for build notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AggregatedResultsAnalysis $testResults Test results associated with a build used for build notifications
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets timelineRecords
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[]
      */
     public function getTimelineRecords()
     {
@@ -374,7 +374,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets timelineRecords
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineRecord[] $timelineRecords Timeline records associated with a build used for build notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineRecord[] $timelineRecords Timeline records associated with a build used for build notifications
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AssociatedWorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AssociatedWorkItem[]
      */
     public function getWorkItems()
     {
@@ -398,7 +398,7 @@ class BuildCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AssociatedWorkItem[] $workItems Work items associated with a build used for build notifications
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AssociatedWorkItem[] $workItems Work items associated with a build used for build notifications
      *
      * @return $this
      */

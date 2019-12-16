@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * TimeZoneList Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TimeZoneList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'utcTimeZone' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone',
-        'validTimeZones' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone[]'
+        'utcTimeZone' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone',
+        'validTimeZones' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TimeZoneList implements ModelInterface, ArrayAccess
     /**
      * Gets utcTimeZone
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone
      */
     public function getUtcTimeZone()
     {
@@ -224,7 +224,7 @@ class TimeZoneList implements ModelInterface, ArrayAccess
     /**
      * Sets utcTimeZone
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone $utcTimeZone UTC timezone.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone $utcTimeZone UTC timezone.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TimeZoneList implements ModelInterface, ArrayAccess
     /**
      * Gets validTimeZones
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone[]
      */
     public function getValidTimeZones()
     {
@@ -248,7 +248,7 @@ class TimeZoneList implements ModelInterface, ArrayAccess
     /**
      * Sets validTimeZones
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TimeZone[] $validTimeZones List of valid timezones.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TimeZone[] $validTimeZones List of valid timezones.
      *
      * @return $this
      */

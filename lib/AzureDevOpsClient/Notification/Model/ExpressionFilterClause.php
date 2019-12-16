@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ExpressionFilterClause Class Doc Comment
  *
  * @category Class
  * @description Subscription Filter Clause represents a single clause in a subscription filter e.g. If the subscription has the following criteria \&quot;Project Name &#x3D; [Current Project] AND Assigned To &#x3D; [Me] it will be represented as two Filter Clauses Clause 1: Index &#x3D; 1, Logical Operator: NULL  , FieldName &#x3D; &#39;Project Name&#39;, Operator &#x3D; &#39;&#x3D;&#39;, Value &#x3D; &#39;[Current Project]&#39; Clause 2: Index &#x3D; 2, Logical Operator: &#39;AND&#39; , FieldName &#x3D; &#39;Assigned To&#39; , Operator &#x3D; &#39;&#x3D;&#39;, Value &#x3D; &#39;[Me]&#39;
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

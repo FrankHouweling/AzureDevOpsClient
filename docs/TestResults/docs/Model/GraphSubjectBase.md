@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **descriptor** | **string** |  | [optional] 
 **displayName** | **string** |  | [optional] 
 **url** | **string** |  | [optional] 

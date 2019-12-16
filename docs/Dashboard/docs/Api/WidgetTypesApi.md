@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Dashboard\WidgetTypesApi
+# FrankHouweling\AzureDevOpsClient\Dashboard\WidgetTypesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **widgetTypesGetWidgetMetadata**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse widgetTypesGetWidgetMetadata($organization, $contributionId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse widgetTypesGetWidgetMetadata($organization, $contributionId, $project, $apiVersion)
 
 
 
@@ -21,12 +21,12 @@ Get the widget metadata satisfying the specified contribution ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\WidgetTypesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\WidgetTypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse**](../Model/WidgetMetadataResponse.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadataResponse**](../Model/WidgetMetadataResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **widgetTypesGetWidgetTypes**
-> \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse widgetTypesGetWidgetTypes($organization, $scope, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse widgetTypesGetWidgetTypes($organization, $scope, $project, $apiVersion)
 
 
 
@@ -83,12 +83,12 @@ Get all available widget metadata in alphabetical order, including widgets marke
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Dashboard\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Dashboard\Api\WidgetTypesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Dashboard\Api\WidgetTypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse**](../Model/WidgetTypesResponse.md)
+[**\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetTypesResponse**](../Model/WidgetTypesResponse.md)
 
 ### Authorization
 

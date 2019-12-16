@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * WikiResult Class Doc Comment
  *
  * @category Class
  * @description Defines the wiki result that matched a wiki search request.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class WikiResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'collection' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection',
+        'collection' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Collection',
         'contentId' => 'string',
         'fileName' => 'string',
-        'hits' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiHit[]',
+        'hits' => '\FrankHouweling\AzureDevOpsClient\Search\Model\WikiHit[]',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\ProjectReference',
-        'wiki' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Wiki'
+        'project' => '\FrankHouweling\AzureDevOpsClient\Search\Model\ProjectReference',
+        'wiki' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Wiki'
     ];
 
     /**
@@ -244,7 +244,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Gets collection
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Collection
      */
     public function getCollection()
     {
@@ -254,7 +254,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Sets collection
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection $collection Collection of the result file.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Collection $collection Collection of the result file.
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Gets hits
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiHit[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\WikiHit[]
      */
     public function getHits()
     {
@@ -326,7 +326,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Sets hits
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\WikiHit[] $hits Highlighted snippets of fields that match the search request. The list is sorted by relevance of the snippets.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\WikiHit[] $hits Highlighted snippets of fields that match the search request. The list is sorted by relevance of the snippets.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\ProjectReference
      */
     public function getProject()
     {
@@ -374,7 +374,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\ProjectReference $project Project details of the wiki document.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\ProjectReference $project Project details of the wiki document.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Gets wiki
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Wiki
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Wiki
      */
     public function getWiki()
     {
@@ -398,7 +398,7 @@ class WikiResult implements ModelInterface, ArrayAccess
     /**
      * Sets wiki
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Wiki $wiki Wiki information for the result.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Wiki $wiki Wiki information for the result.
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Core\ProjectsApi
+# FrankHouweling\AzureDevOpsClient\Core\ProjectsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **projectsCreate**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference projectsCreate($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference projectsCreate($organization, $body, $apiVersion)
 
 
 
@@ -26,16 +26,16 @@ Queues a project to be created. Use the [GetOperation](../../operations/operatio
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject | The project to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject(); // \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject | The project to create.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.4' to use this version of the api.
 
 try {
@@ -52,12 +52,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)| The project to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)| The project to create. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectsDelete**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference projectsDelete($organization, $projectId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference projectsDelete($organization, $projectId, $apiVersion)
 
 
 
@@ -83,9 +83,9 @@ Queues a project to be deleted. Use the [GetOperation](../../operations/operatio
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectsGet**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject projectsGet($organization, $projectId, $apiVersion, $includeCapabilities, $includeHistory)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject projectsGet($organization, $projectId, $apiVersion, $includeCapabilities, $includeHistory)
 
 
 
@@ -140,9 +140,9 @@ Get project with the specified id or name, optionally including capabilities.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectsGetProjectProperties**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[] projectsGetProjectProperties($organization, $projectId, $apiVersion, $keys)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[] projectsGetProjectProperties($organization, $projectId, $apiVersion, $keys)
 
 
 
@@ -201,9 +201,9 @@ Get a collection of team project properties.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]**](../Model/ProjectProperty.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]**](../Model/ProjectProperty.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectsList**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[] projectsList($organization, $apiVersion, $stateFilter, $top, $skip, $continuationToken, $getDefaultTeamImageUrl)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[] projectsList($organization, $apiVersion, $stateFilter, $top, $skip, $continuationToken, $getDefaultTeamImageUrl)
 
 
 
@@ -260,9 +260,9 @@ Get all projects in the organization that the authenticated user has access to.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[]**](../Model/TeamProjectReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[]**](../Model/TeamProjectReference.md)
 
 ### Authorization
 
@@ -325,9 +325,9 @@ Create, update, and delete team project properties.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -335,7 +335,7 @@ $apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $projectId = "projectId_example"; // string | The team project ID.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument | A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name.
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument | A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
  **projectId** | [**string**](../Model/.md)| The team project ID. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
@@ -371,7 +371,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **projectsUpdate**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference projectsUpdate($organization, $body, $projectId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference projectsUpdate($organization, $body, $projectId, $apiVersion)
 
 
 
@@ -383,16 +383,16 @@ Update an existing project's name, abbreviation, description, or restore a proje
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\ProjectsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\ProjectsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject | The updates for the project. The state must be set to wellFormed to restore the project.
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject(); // \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject | The updates for the project. The state must be set to wellFormed to restore the project.
 $projectId = "projectId_example"; // string | The project id of the project to update.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.4' to use this version of the api.
 
@@ -410,13 +410,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)| The updates for the project. The state must be set to wellFormed to restore the project. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject**](../Model/TeamProject.md)| The updates for the project. The state must be set to wellFormed to restore the project. |
  **projectId** | [**string**](../Model/.md)| The project id of the project to update. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference**](../Model/OperationReference.md)
 
 ### Authorization
 

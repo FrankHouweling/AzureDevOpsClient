@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**summary** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend**](AggregatedDataForResultTrend.md) |  | [optional] 
-**workItem** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference**](WorkItemReference.md) |  | [optional] 
+**summary** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend**](AggregatedDataForResultTrend.md) |  | [optional] 
+**workItem** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference**](WorkItemReference.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

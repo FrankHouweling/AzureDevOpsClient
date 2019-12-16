@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Client;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Symbol\ApiException;
-use AzureDevOpsClient\Symbol\Configuration;
-use AzureDevOpsClient\Symbol\HeaderSelector;
-use AzureDevOpsClient\Symbol\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Symbol\ApiException;
+use FrankHouweling\AzureDevOpsClient\Symbol\Configuration;
+use FrankHouweling\AzureDevOpsClient\Symbol\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * AvailabilityApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class AvailabilityApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,7 +108,7 @@ class AvailabilityApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

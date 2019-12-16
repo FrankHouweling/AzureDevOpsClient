@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class PullRequestsApi
      * Operation pullRequestsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $supportsIterations If true, subsequent pushes to the pull request will be individually reviewable. Set this to false for large pull requests for performance reasons if this functionality is not needed. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest
      */
     public function pullRequestsCreate($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations = null)
     {
@@ -111,19 +111,19 @@ class PullRequestsApi
      * Operation pullRequestsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $supportsIterations If true, subsequent pushes to the pull request will be individually reviewable. Set this to false for large pull requests for performance reasons if this functionality is not needed. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsCreateWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsCreateRequest($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations);
 
         try {
@@ -175,7 +175,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class PullRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -216,7 +216,7 @@ class PullRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -227,7 +227,7 @@ class PullRequestsApi
      */
     public function pullRequestsCreateAsyncWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsCreateRequest($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations);
 
         return $this->client
@@ -271,7 +271,7 @@ class PullRequestsApi
      * Create request for operation 'pullRequestsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request to create. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -446,9 +446,9 @@ class PullRequestsApi
      * @param  bool $includeCommits If true, the pull request will be returned with the associated commits. (optional)
      * @param  bool $includeWorkItemRefs If true, the pull request will be returned with the associated work item references. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest
      */
     public function pullRequestsGetPullRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $includeCommits = null, $includeWorkItemRefs = null)
     {
@@ -470,13 +470,13 @@ class PullRequestsApi
      * @param  bool $includeCommits If true, the pull request will be returned with the associated commits. (optional)
      * @param  bool $includeWorkItemRefs If true, the pull request will be returned with the associated work item references. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsGetPullRequestWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $includeCommits = null, $includeWorkItemRefs = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsGetPullRequestRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength, $skip, $top, $includeCommits, $includeWorkItemRefs);
 
         try {
@@ -528,7 +528,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -588,7 +588,7 @@ class PullRequestsApi
      */
     public function pullRequestsGetPullRequestAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength = null, $skip = null, $top = null, $includeCommits = null, $includeWorkItemRefs = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsGetPullRequestRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength, $skip, $top, $includeCommits, $includeWorkItemRefs);
 
         return $this->client
@@ -826,9 +826,9 @@ class PullRequestsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest
      */
     public function pullRequestsGetPullRequestById($organization, $pullRequestId, $project, $apiVersion)
     {
@@ -844,13 +844,13 @@ class PullRequestsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsGetPullRequestByIdWithHttpInfo($organization, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsGetPullRequestByIdRequest($organization, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -902,7 +902,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,7 +950,7 @@ class PullRequestsApi
      */
     public function pullRequestsGetPullRequestByIdAsyncWithHttpInfo($organization, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsGetPullRequestByIdRequest($organization, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -1159,9 +1159,9 @@ class PullRequestsApi
      * @param  int $skip The number of pull requests to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  int $top The number of pull requests to retrieve. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]
      */
     public function pullRequestsGetPullRequests($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
@@ -1188,13 +1188,13 @@ class PullRequestsApi
      * @param  int $skip The number of pull requests to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  int $top The number of pull requests to retrieve. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsGetPullRequestsWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]';
         $request = $this->pullRequestsGetPullRequestsRequest($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top);
 
         try {
@@ -1246,7 +1246,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1316,7 +1316,7 @@ class PullRequestsApi
      */
     public function pullRequestsGetPullRequestsAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]';
         $request = $this->pullRequestsGetPullRequestsRequest($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top);
 
         return $this->client
@@ -1579,9 +1579,9 @@ class PullRequestsApi
      * @param  int $skip The number of pull requests to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  int $top The number of pull requests to retrieve. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]
      */
     public function pullRequestsGetPullRequestsByProject($organization, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
@@ -1607,13 +1607,13 @@ class PullRequestsApi
      * @param  int $skip The number of pull requests to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      * @param  int $top The number of pull requests to retrieve. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsGetPullRequestsByProjectWithHttpInfo($organization, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]';
         $request = $this->pullRequestsGetPullRequestsByProjectRequest($organization, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top);
 
         try {
@@ -1665,7 +1665,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1733,7 +1733,7 @@ class PullRequestsApi
      */
     public function pullRequestsGetPullRequestsByProjectAsyncWithHttpInfo($organization, $project, $apiVersion, $searchCriteriaCreatorId = null, $searchCriteriaIncludeLinks = null, $searchCriteriaRepositoryId = null, $searchCriteriaReviewerId = null, $searchCriteriaSourceRefName = null, $searchCriteriaSourceRepositoryId = null, $searchCriteriaStatus = null, $searchCriteriaTargetRefName = null, $maxCommentLength = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]';
         $request = $this->pullRequestsGetPullRequestsByProjectRequest($organization, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top);
 
         return $this->client
@@ -1967,15 +1967,15 @@ class PullRequestsApi
      * Operation pullRequestsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest
      */
     public function pullRequestsUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -1987,19 +1987,19 @@ class PullRequestsApi
      * Operation pullRequestsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestsUpdateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -2051,7 +2051,7 @@ class PullRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2067,7 +2067,7 @@ class PullRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request to update. (required)
      * @param  string $project Project ID or project name (required)
@@ -2092,7 +2092,7 @@ class PullRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request to update. (required)
      * @param  string $project Project ID or project name (required)
@@ -2103,7 +2103,7 @@ class PullRequestsApi
      */
     public function pullRequestsUpdateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest';
         $request = $this->pullRequestsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -2147,7 +2147,7 @@ class PullRequestsApi
      * Create request for operation 'pullRequestsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest $body The pull request content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request to update. (required)
      * @param  string $project Project ID or project name (required)

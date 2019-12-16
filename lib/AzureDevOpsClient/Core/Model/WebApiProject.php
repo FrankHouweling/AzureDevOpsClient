@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * WebApiProject Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -69,8 +69,8 @@ class WebApiProject implements ModelInterface, ArrayAccess
         'url' => 'string',
         'visibility' => 'string',
         'capabilities' => 'map[string,map[string,string]]',
-        'collection' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef',
-        'defaultTeam' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef'
+        'collection' => '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef',
+        'defaultTeam' => '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef'
     ];
 
     /**
@@ -618,7 +618,7 @@ class WebApiProject implements ModelInterface, ArrayAccess
     /**
      * Gets collection
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef
      */
     public function getCollection()
     {
@@ -628,7 +628,7 @@ class WebApiProject implements ModelInterface, ArrayAccess
     /**
      * Sets collection
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef $collection Reference to collection which contains this project
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiProjectCollectionRef $collection Reference to collection which contains this project
      *
      * @return $this
      */
@@ -642,7 +642,7 @@ class WebApiProject implements ModelInterface, ArrayAccess
     /**
      * Gets defaultTeam
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef
      */
     public function getDefaultTeam()
     {
@@ -652,7 +652,7 @@ class WebApiProject implements ModelInterface, ArrayAccess
     /**
      * Sets defaultTeam
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef $defaultTeam Default team for this project
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef $defaultTeam Default team for this project
      *
      * @return $this
      */

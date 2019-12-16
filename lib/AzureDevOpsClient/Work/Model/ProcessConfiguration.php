@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * ProcessConfiguration Class Doc Comment
  *
  * @category Class
  * @description Process Configurations for the project
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bugWorkItems' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration',
-        'portfolioBacklogs' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration[]',
-        'requirementBacklog' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration',
-        'taskBacklog' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration',
-        'typeFields' => 'map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference]',
+        'bugWorkItems' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration',
+        'portfolioBacklogs' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration[]',
+        'requirementBacklog' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration',
+        'taskBacklog' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration',
+        'typeFields' => 'map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference]',
         'url' => 'string'
     ];
 
@@ -238,7 +238,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets bugWorkItems
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration
      */
     public function getBugWorkItems()
     {
@@ -248,7 +248,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets bugWorkItems
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration $bugWorkItems Details about bug work items
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration $bugWorkItems Details about bug work items
      *
      * @return $this
      */
@@ -262,7 +262,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets portfolioBacklogs
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration[]
      */
     public function getPortfolioBacklogs()
     {
@@ -272,7 +272,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets portfolioBacklogs
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration[] $portfolioBacklogs Details about portfolio backlogs
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration[] $portfolioBacklogs Details about portfolio backlogs
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets requirementBacklog
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration
      */
     public function getRequirementBacklog()
     {
@@ -296,7 +296,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets requirementBacklog
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration $requirementBacklog Details of requirement backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration $requirementBacklog Details of requirement backlog
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets taskBacklog
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration
      */
     public function getTaskBacklog()
     {
@@ -320,7 +320,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets taskBacklog
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CategoryConfiguration $taskBacklog Details of task backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CategoryConfiguration $taskBacklog Details of task backlog
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets typeFields
      *
-     * @return map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference]
      */
     public function getTypeFields()
     {
@@ -344,7 +344,7 @@ class ProcessConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets typeFields
      *
-     * @param map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemFieldReference] $typeFields Type fields for the process configuration
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemFieldReference] $typeFields Type fields for the process configuration
      *
      * @return $this
      */

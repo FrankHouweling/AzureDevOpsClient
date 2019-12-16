@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestActionResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,7 +65,7 @@ class TestActionResult implements ModelInterface, ArrayAccess
         'dateStarted' => '\DateTime',
         'duration' => 'int',
         'errorMessage' => 'string',
-        'id' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier',
+        'id' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier',
         'iterationId' => 'int',
         'lastUpdated' => '\DateTime',
         'lastUpdatedBy' => 'string',
@@ -458,7 +458,7 @@ class TestActionResult implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier
      */
     public function getId()
     {
@@ -468,7 +468,7 @@ class TestActionResult implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier $id id
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier $id id
      *
      * @return $this
      */

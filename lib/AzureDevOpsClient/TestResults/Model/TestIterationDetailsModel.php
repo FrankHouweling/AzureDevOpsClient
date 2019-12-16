@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestIterationDetailsModel Class Doc Comment
  *
  * @category Class
  * @description Represents a test iteration result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actionResults' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestActionResultModel[]',
-        'attachments' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[]',
+        'actionResults' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestActionResultModel[]',
+        'attachments' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[]',
         'comment' => 'string',
         'completedDate' => '\DateTime',
         'durationInMs' => 'double',
         'errorMessage' => 'string',
         'id' => 'int',
         'outcome' => 'string',
-        'parameters' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[]',
+        'parameters' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[]',
         'startedDate' => '\DateTime',
         'url' => 'string'
     ];
@@ -268,7 +268,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Gets actionResults
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestActionResultModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestActionResultModel[]
      */
     public function getActionResults()
     {
@@ -278,7 +278,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Sets actionResults
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestActionResultModel[] $actionResults Test step results in an iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestActionResultModel[] $actionResults Test step results in an iteration.
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Gets attachments
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[]
      */
     public function getAttachments()
     {
@@ -302,7 +302,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Sets attachments
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[] $attachments Reference to attachments in test iteration result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResultAttachmentModel[] $attachments Reference to attachments in test iteration result.
      *
      * @return $this
      */
@@ -460,7 +460,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Gets parameters
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[]
      */
     public function getParameters()
     {
@@ -470,7 +470,7 @@ class TestIterationDetailsModel implements ModelInterface, ArrayAccess
     /**
      * Sets parameters
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[] $parameters Test parameters in an iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultParameterModel[] $parameters Test parameters in an iteration.
      *
      * @return $this
      */

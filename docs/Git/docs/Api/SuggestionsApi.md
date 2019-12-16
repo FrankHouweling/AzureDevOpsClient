@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\SuggestionsApi
+# FrankHouweling\AzureDevOpsClient\Git\SuggestionsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **suggestionsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitSuggestion[] suggestionsList($organization, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitSuggestion[] suggestionsList($organization, $repositoryId, $project, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Retrieve a pull request suggestion for a particular repository or team project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\SuggestionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\SuggestionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitSuggestion[]**](../Model/GitSuggestion.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitSuggestion[]**](../Model/GitSuggestion.md)
 
 ### Authorization
 

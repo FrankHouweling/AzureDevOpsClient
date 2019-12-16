@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitImportSucceededEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GitImportSucceededEvent implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'sourceRepositoryName' => 'string',
-        'targetRepository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository'
+        'targetRepository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository'
     ];
 
     /**
@@ -238,7 +238,7 @@ class GitImportSucceededEvent implements ModelInterface, ArrayAccess
     /**
      * Gets targetRepository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getTargetRepository()
     {
@@ -248,7 +248,7 @@ class GitImportSucceededEvent implements ModelInterface, ArrayAccess
     /**
      * Sets targetRepository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $targetRepository targetRepository
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $targetRepository targetRepository
      *
      * @return $this
      */

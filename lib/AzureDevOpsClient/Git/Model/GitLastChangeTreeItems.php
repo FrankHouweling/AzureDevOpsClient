@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitLastChangeTreeItems Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GitLastChangeTreeItems implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'commits' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
-        'items' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitLastChangeItem[]',
+        'commits' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+        'items' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitLastChangeItem[]',
         'lastExploredTime' => '\DateTime'
     ];
 
@@ -220,7 +220,7 @@ class GitLastChangeTreeItems implements ModelInterface, ArrayAccess
     /**
      * Gets commits
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function getCommits()
     {
@@ -230,7 +230,7 @@ class GitLastChangeTreeItems implements ModelInterface, ArrayAccess
     /**
      * Sets commits
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The list of commits referenced by Items, if they were requested.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The list of commits referenced by Items, if they were requested.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class GitLastChangeTreeItems implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitLastChangeItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitLastChangeItem[]
      */
     public function getItems()
     {
@@ -254,7 +254,7 @@ class GitLastChangeTreeItems implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitLastChangeItem[] $items The last change of items.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitLastChangeItem[] $items The last change of items.
      *
      * @return $this
      */

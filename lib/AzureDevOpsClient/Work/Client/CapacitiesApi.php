@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CapacitiesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class CapacitiesApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef
      */
     public function capacitiesGet($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
@@ -117,13 +117,13 @@ class CapacitiesApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function capacitiesGetWithHttpInfo($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
         $request = $this->capacitiesGetRequest($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class CapacitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class CapacitiesApi
      */
     public function capacitiesGetAsyncWithHttpInfo($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
         $request = $this->capacitiesGetRequest($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion);
 
         return $this->client
@@ -456,9 +456,9 @@ class CapacitiesApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]
      */
     public function capacitiesList($organization, $project, $iterationId, $team, $apiVersion)
     {
@@ -475,13 +475,13 @@ class CapacitiesApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function capacitiesListWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
         $request = $this->capacitiesListRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         try {
@@ -533,7 +533,7 @@ class CapacitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -583,7 +583,7 @@ class CapacitiesApi
      */
     public function capacitiesListAsyncWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
         $request = $this->capacitiesListRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         return $this->client
@@ -792,15 +792,15 @@ class CapacitiesApi
      * Operation capacitiesReplaceCapacitiesWithIdentityRef
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]
      */
     public function capacitiesReplaceCapacitiesWithIdentityRef($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
@@ -812,19 +812,19 @@ class CapacitiesApi
      * Operation capacitiesReplaceCapacitiesWithIdentityRefWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function capacitiesReplaceCapacitiesWithIdentityRefWithHttpInfo($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
         $request = $this->capacitiesReplaceCapacitiesWithIdentityRefRequest($organization, $body, $project, $iterationId, $team, $apiVersion);
 
         try {
@@ -876,7 +876,7 @@ class CapacitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class CapacitiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
@@ -917,7 +917,7 @@ class CapacitiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
@@ -928,7 +928,7 @@ class CapacitiesApi
      */
     public function capacitiesReplaceCapacitiesWithIdentityRefAsyncWithHttpInfo($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]';
         $request = $this->capacitiesReplaceCapacitiesWithIdentityRefRequest($organization, $body, $project, $iterationId, $team, $apiVersion);
 
         return $this->client
@@ -972,7 +972,7 @@ class CapacitiesApi
      * Create request for operation 'capacitiesReplaceCapacitiesWithIdentityRef'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] $body Team capacity to replace (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
@@ -1147,16 +1147,16 @@ class CapacitiesApi
      * Operation capacitiesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $teamMemberId ID of the team member (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef
      */
     public function capacitiesUpdate($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
@@ -1168,20 +1168,20 @@ class CapacitiesApi
      * Operation capacitiesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $teamMemberId ID of the team member (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function capacitiesUpdateWithHttpInfo($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
         $request = $this->capacitiesUpdateRequest($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion);
 
         try {
@@ -1233,7 +1233,7 @@ class CapacitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1249,7 +1249,7 @@ class CapacitiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $teamMemberId ID of the team member (required)
@@ -1275,7 +1275,7 @@ class CapacitiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $teamMemberId ID of the team member (required)
@@ -1287,7 +1287,7 @@ class CapacitiesApi
      */
     public function capacitiesUpdateAsyncWithHttpInfo($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef';
         $request = $this->capacitiesUpdateRequest($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion);
 
         return $this->client
@@ -1331,7 +1331,7 @@ class CapacitiesApi
      * Create request for operation 'capacitiesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch $body Updated capacity (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $teamMemberId ID of the team member (required)

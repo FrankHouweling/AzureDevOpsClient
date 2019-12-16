@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestCommitsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class PullRequestCommitsApi
      * @param  int $top Maximum number of commits to return. (optional)
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function pullRequestCommitsGetPullRequestCommits($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top = null, $continuationToken = null)
     {
@@ -119,13 +119,13 @@ class PullRequestCommitsApi
      * @param  int $top Maximum number of commits to return. (optional)
      * @param  string $continuationToken The continuation token used for pagination. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestCommitsGetPullRequestCommitsWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->pullRequestCommitsGetPullRequestCommitsRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top, $continuationToken);
 
         try {
@@ -177,7 +177,7 @@ class PullRequestCommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class PullRequestCommitsApi
      */
     public function pullRequestCommitsGetPullRequestCommitsAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->pullRequestCommitsGetPullRequestCommitsRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $top, $continuationToken);
 
         return $this->client
@@ -458,9 +458,9 @@ class PullRequestCommitsApi
      * @param  int $top Maximum number of commits to return. The maximum number of commits that can be returned per batch is 500. (optional)
      * @param  int $skip Number of commits to skip. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function pullRequestCommitsGetPullRequestIterationCommits($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null)
     {
@@ -480,13 +480,13 @@ class PullRequestCommitsApi
      * @param  int $top Maximum number of commits to return. The maximum number of commits that can be returned per batch is 500. (optional)
      * @param  int $skip Number of commits to skip. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestCommitsGetPullRequestIterationCommitsWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->pullRequestCommitsGetPullRequestIterationCommitsRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip);
 
         try {
@@ -538,7 +538,7 @@ class PullRequestCommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -594,7 +594,7 @@ class PullRequestCommitsApi
      */
     public function pullRequestCommitsGetPullRequestIterationCommitsAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->pullRequestCommitsGetPullRequestIterationCommitsRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip);
 
         return $this->client

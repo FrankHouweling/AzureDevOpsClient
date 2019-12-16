@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LegacyTestCaseResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,20 +67,20 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
         'automatedTestType' => 'string',
         'automatedTestTypeId' => 'string',
         'buildNumber' => 'string',
-        'buildReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration',
+        'buildReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration',
         'comment' => 'string',
         'computerName' => 'string',
         'configurationId' => 'int',
         'configurationName' => 'string',
         'creationDate' => '\DateTime',
-        'customFields' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[]',
+        'customFields' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[]',
         'dateCompleted' => '\DateTime',
         'dateStarted' => '\DateTime',
         'duration' => 'int',
         'errorMessage' => 'string',
-        'failingSince' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FailingSince',
+        'failingSince' => '\FrankHouweling\AzureDevOpsClient\Test\Model\FailingSince',
         'failureType' => 'string',
-        'id' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier',
+        'id' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier',
         'isRerun' => 'bool',
         'lastUpdated' => '\DateTime',
         'lastUpdatedBy' => 'string',
@@ -89,7 +89,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
         'owner' => 'string',
         'ownerName' => 'string',
         'priority' => 'string',
-        'releaseReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference',
+        'releaseReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference',
         'resetCount' => 'int',
         'resolutionStateId' => 'int',
         'resultGroupType' => 'string',
@@ -97,7 +97,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
         'runBy' => 'string',
         'runByName' => 'string',
         'sequenceId' => 'int',
-        'stackTrace' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField',
+        'stackTrace' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField',
         'state' => 'string',
         'subResultCount' => 'int',
         'suiteName' => 'string',
@@ -793,7 +793,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets buildReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration
      */
     public function getBuildReference()
     {
@@ -803,7 +803,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets buildReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration $buildReference buildReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration $buildReference buildReference
      *
      * @return $this
      */
@@ -937,7 +937,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets customFields
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[]
      */
     public function getCustomFields()
     {
@@ -947,7 +947,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets customFields
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[] $customFields customFields
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[] $customFields customFields
      *
      * @return $this
      */
@@ -1057,7 +1057,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets failingSince
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FailingSince
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\FailingSince
      */
     public function getFailingSince()
     {
@@ -1067,7 +1067,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets failingSince
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FailingSince $failingSince failingSince
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\FailingSince $failingSince failingSince
      *
      * @return $this
      */
@@ -1110,7 +1110,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets id
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier
      */
     public function getId()
     {
@@ -1120,7 +1120,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets id
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier $id id
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier $id id
      *
      * @return $this
      */
@@ -1336,7 +1336,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets releaseReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference
      */
     public function getReleaseReference()
     {
@@ -1346,7 +1346,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets releaseReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference $releaseReference releaseReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference $releaseReference releaseReference
      *
      * @return $this
      */
@@ -1537,7 +1537,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets stackTrace
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField
      */
     public function getStackTrace()
     {
@@ -1547,7 +1547,7 @@ class LegacyTestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets stackTrace
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField $stackTrace stackTrace
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField $stackTrace stackTrace
      *
      * @return $this
      */

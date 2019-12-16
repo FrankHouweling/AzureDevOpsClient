@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ArtifactsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class ArtifactsApi
      * Operation artifactsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact
      */
     public function artifactsCreate($organization, $body, $project, $buildId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class ArtifactsApi
      * Operation artifactsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact, HTTP status code, HTTP response headers (array of strings)
      */
     public function artifactsCreateWithHttpInfo($organization, $body, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact';
         $request = $this->artifactsCreateRequest($organization, $body, $project, $buildId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ArtifactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ArtifactsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ArtifactsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class ArtifactsApi
      */
     public function artifactsCreateAsyncWithHttpInfo($organization, $body, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact';
         $request = $this->artifactsCreateRequest($organization, $body, $project, $buildId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class ArtifactsApi
      * Create request for operation 'artifactsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact $body The artifact. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
@@ -431,9 +431,9 @@ class ArtifactsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact[]
      */
     public function artifactsList($organization, $project, $buildId, $apiVersion)
     {
@@ -449,13 +449,13 @@ class ArtifactsApi
      * @param  int $buildId The ID of the build. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.5&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact[], HTTP status code, HTTP response headers (array of strings)
      */
     public function artifactsListWithHttpInfo($organization, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact[]';
         $request = $this->artifactsListRequest($organization, $project, $buildId, $apiVersion);
 
         try {
@@ -507,7 +507,7 @@ class ArtifactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -555,7 +555,7 @@ class ArtifactsApi
      */
     public function artifactsListAsyncWithHttpInfo($organization, $project, $buildId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildArtifact[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildArtifact[]';
         $request = $this->artifactsListRequest($organization, $project, $buildId, $apiVersion);
 
         return $this->client

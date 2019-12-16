@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**authorization** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProxyAuthorization**](ProxyAuthorization.md) |  | [optional] 
+**authorization** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ProxyAuthorization**](ProxyAuthorization.md) |  | [optional] 
 **description** | **string** | This is a description string | [optional] 
 **friendlyName** | **string** | The friendly name of the server | [optional] 
 **globalDefault** | **bool** |  | [optional] 

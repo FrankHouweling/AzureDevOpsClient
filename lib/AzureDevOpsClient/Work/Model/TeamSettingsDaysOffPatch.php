@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamSettingsDaysOffPatch Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TeamSettingsDaysOffPatch implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'daysOff' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]'
+        'daysOff' => '\FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TeamSettingsDaysOffPatch implements ModelInterface, ArrayAccess
     /**
      * Gets daysOff
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]
      */
     public function getDaysOff()
     {
@@ -218,7 +218,7 @@ class TeamSettingsDaysOffPatch implements ModelInterface, ArrayAccess
     /**
      * Sets daysOff
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[] $daysOff daysOff
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[] $daysOff daysOff
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequestCommentThreadContext Class Doc Comment
  *
  * @category Class
  * @description Comment thread context contains details about what diffs were being viewed at the time of thread creation and whether or not the thread has been tracked from that original diff.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class GitPullRequestCommentThreadContext implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'changeTrackingId' => 'int',
-        'iterationContext' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentIterationContext',
-        'trackingCriteria' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentTrackingCriteria'
+        'iterationContext' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentIterationContext',
+        'trackingCriteria' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentTrackingCriteria'
     ];
 
     /**
@@ -244,7 +244,7 @@ class GitPullRequestCommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets iterationContext
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentIterationContext
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentIterationContext
      */
     public function getIterationContext()
     {
@@ -254,7 +254,7 @@ class GitPullRequestCommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets iterationContext
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentIterationContext $iterationContext The iteration context being viewed when the thread was created.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentIterationContext $iterationContext The iteration context being viewed when the thread was created.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class GitPullRequestCommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets trackingCriteria
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentTrackingCriteria
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentTrackingCriteria
      */
     public function getTrackingCriteria()
     {
@@ -278,7 +278,7 @@ class GitPullRequestCommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets trackingCriteria
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentTrackingCriteria $trackingCriteria The criteria used to track this thread. If this property is filled out when the thread is returned, then the thread has been tracked from its original location using the given criteria.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentTrackingCriteria $trackingCriteria The criteria used to track this thread. If this property is filled out when the thread is returned, then the thread has been tracked from its original location using the given criteria.
      *
      * @return $this
      */

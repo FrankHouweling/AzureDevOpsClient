@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Client;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\MemberEntitlementManagement\ApiException;
-use AzureDevOpsClient\MemberEntitlementManagement\Configuration;
-use AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
-use AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GroupEntitlementsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class GroupEntitlementsApi
      * Operation groupEntitlementsAdd
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
      */
     public function groupEntitlementsAdd($organization, $body, $apiVersion, $ruleOption = null)
     {
@@ -109,17 +109,17 @@ class GroupEntitlementsApi
      * Operation groupEntitlementsAddWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupEntitlementsAddWithHttpInfo($organization, $body, $apiVersion, $ruleOption = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsAddRequest($organization, $body, $apiVersion, $ruleOption);
 
         try {
@@ -171,7 +171,7 @@ class GroupEntitlementsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class GroupEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested (optional)
      *
@@ -210,7 +210,7 @@ class GroupEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested (optional)
      *
@@ -219,7 +219,7 @@ class GroupEntitlementsApi
      */
     public function groupEntitlementsAddAsyncWithHttpInfo($organization, $body, $apiVersion, $ruleOption = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsAddRequest($organization, $body, $apiVersion, $ruleOption);
 
         return $this->client
@@ -263,7 +263,7 @@ class GroupEntitlementsApi
      * Create request for operation 'groupEntitlementsAdd'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement $body GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested (optional)
      *
@@ -403,9 +403,9 @@ class GroupEntitlementsApi
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be deleted and the changes are applied to it’s members (default option) or just be tested (optional)
      * @param  bool $removeGroupMembership Optional parameter that specifies whether the group with the given ID should be removed from all other groups (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
      */
     public function groupEntitlementsDelete($organization, $groupId, $apiVersion, $ruleOption = null, $removeGroupMembership = null)
     {
@@ -422,13 +422,13 @@ class GroupEntitlementsApi
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be deleted and the changes are applied to it’s members (default option) or just be tested (optional)
      * @param  bool $removeGroupMembership Optional parameter that specifies whether the group with the given ID should be removed from all other groups (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupEntitlementsDeleteWithHttpInfo($organization, $groupId, $apiVersion, $ruleOption = null, $removeGroupMembership = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsDeleteRequest($organization, $groupId, $apiVersion, $ruleOption, $removeGroupMembership);
 
         try {
@@ -480,7 +480,7 @@ class GroupEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -530,7 +530,7 @@ class GroupEntitlementsApi
      */
     public function groupEntitlementsDeleteAsyncWithHttpInfo($organization, $groupId, $apiVersion, $ruleOption = null, $removeGroupMembership = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsDeleteRequest($organization, $groupId, $apiVersion, $ruleOption, $removeGroupMembership);
 
         return $this->client
@@ -722,9 +722,9 @@ class GroupEntitlementsApi
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement
      */
     public function groupEntitlementsGet($organization, $groupId, $apiVersion)
     {
@@ -739,13 +739,13 @@ class GroupEntitlementsApi
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupEntitlementsGetWithHttpInfo($organization, $groupId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement';
         $request = $this->groupEntitlementsGetRequest($organization, $groupId, $apiVersion);
 
         try {
@@ -797,7 +797,7 @@ class GroupEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -843,7 +843,7 @@ class GroupEntitlementsApi
      */
     public function groupEntitlementsGetAsyncWithHttpInfo($organization, $groupId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement';
         $request = $this->groupEntitlementsGetRequest($organization, $groupId, $apiVersion);
 
         return $this->client
@@ -1024,9 +1024,9 @@ class GroupEntitlementsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]
      */
     public function groupEntitlementsList($organization, $apiVersion)
     {
@@ -1040,13 +1040,13 @@ class GroupEntitlementsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[], HTTP status code, HTTP response headers (array of strings)
      */
     public function groupEntitlementsListWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]';
         $request = $this->groupEntitlementsListRequest($organization, $apiVersion);
 
         try {
@@ -1098,7 +1098,7 @@ class GroupEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1142,7 +1142,7 @@ class GroupEntitlementsApi
      */
     public function groupEntitlementsListAsyncWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]';
         $request = $this->groupEntitlementsListRequest($organization, $apiVersion);
 
         return $this->client
@@ -1306,14 +1306,14 @@ class GroupEntitlementsApi
      * Operation groupEntitlementsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference
      */
     public function groupEntitlementsUpdate($organization, $body, $groupId, $apiVersion, $ruleOption = null)
     {
@@ -1325,18 +1325,18 @@ class GroupEntitlementsApi
      * Operation groupEntitlementsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function groupEntitlementsUpdateWithHttpInfo($organization, $body, $groupId, $apiVersion, $ruleOption = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsUpdateRequest($organization, $body, $groupId, $apiVersion, $ruleOption);
 
         try {
@@ -1388,7 +1388,7 @@ class GroupEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1404,7 +1404,7 @@ class GroupEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested (optional)
@@ -1428,7 +1428,7 @@ class GroupEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested (optional)
@@ -1438,7 +1438,7 @@ class GroupEntitlementsApi
      */
     public function groupEntitlementsUpdateAsyncWithHttpInfo($organization, $body, $groupId, $apiVersion, $ruleOption = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference';
         $request = $this->groupEntitlementsUpdateRequest($organization, $body, $groupId, $apiVersion, $ruleOption);
 
         return $this->client
@@ -1482,7 +1482,7 @@ class GroupEntitlementsApi
      * Create request for operation 'groupEntitlementsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the group. (required)
      * @param  string $groupId ID of the group. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $ruleOption RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested (optional)

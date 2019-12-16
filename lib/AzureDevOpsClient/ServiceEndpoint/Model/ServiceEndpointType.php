@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointType Class Doc Comment
  *
  * @category Class
  * @description Represents type of the service endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'authenticationSchemes' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[]',
-        'dataSources' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[]',
-        'dependencyData' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[]',
+        'authenticationSchemes' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[]',
+        'dataSources' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[]',
+        'dependencyData' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[]',
         'description' => 'string',
         'displayName' => 'string',
-        'endpointUrl' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl',
-        'helpLink' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink',
+        'endpointUrl' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl',
+        'helpLink' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink',
         'helpMarkDown' => 'string',
         'iconUrl' => 'string',
-        'inputDescriptors' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]',
+        'inputDescriptors' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]',
         'name' => 'string',
         'trustedHosts' => 'string[]',
         'uiContributionId' => 'string'
@@ -280,7 +280,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets authenticationSchemes
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[]
      */
     public function getAuthenticationSchemes()
     {
@@ -290,7 +290,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets authenticationSchemes
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[] $authenticationSchemes Authentication scheme of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointAuthenticationScheme[] $authenticationSchemes Authentication scheme of service endpoint type.
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets dataSources
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[]
      */
     public function getDataSources()
     {
@@ -314,7 +314,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets dataSources
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[] $dataSources Data sources of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DataSource[] $dataSources Data sources of service endpoint type.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets dependencyData
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[]
      */
     public function getDependencyData()
     {
@@ -338,7 +338,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets dependencyData
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[] $dependencyData Dependency data of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependencyData[] $dependencyData Dependency data of service endpoint type.
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets endpointUrl
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl
      */
     public function getEndpointUrl()
     {
@@ -410,7 +410,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets endpointUrl
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl $endpointUrl Gets or sets the endpoint url of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\EndpointUrl $endpointUrl Gets or sets the endpoint url of service endpoint type.
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets helpLink
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink
      */
     public function getHelpLink()
     {
@@ -434,7 +434,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets helpLink
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink $helpLink Gets or sets the help link of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\HelpLink $helpLink Gets or sets the help link of service endpoint type.
      *
      * @return $this
      */
@@ -496,7 +496,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Gets inputDescriptors
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[]
      */
     public function getInputDescriptors()
     {
@@ -506,7 +506,7 @@ class ServiceEndpointType implements ModelInterface, ArrayAccess
     /**
      * Sets inputDescriptors
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[] $inputDescriptors Input descriptor of service endpoint type.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputDescriptor[] $inputDescriptors Input descriptor of service endpoint type.
      *
      * @return $this
      */

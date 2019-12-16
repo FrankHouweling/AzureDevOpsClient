@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetMetadataResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class WidgetMetadataResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'uri' => 'string',
-        'widgetMetadata' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata'
+        'widgetMetadata' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata'
     ];
 
     /**
@@ -238,7 +238,7 @@ class WidgetMetadataResponse implements ModelInterface, ArrayAccess
     /**
      * Gets widgetMetadata
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata
      */
     public function getWidgetMetadata()
     {
@@ -248,7 +248,7 @@ class WidgetMetadataResponse implements ModelInterface, ArrayAccess
     /**
      * Sets widgetMetadata
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata $widgetMetadata widgetMetadata
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata $widgetMetadata widgetMetadata
      *
      * @return $this
      */

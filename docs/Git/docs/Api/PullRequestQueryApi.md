@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestQueryApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestQueryApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestQueryGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQuery pullRequestQueryGet($organization, $body, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQuery pullRequestQueryGet($organization, $body, $repositoryId, $project, $apiVersion)
 
 
 
@@ -20,16 +20,16 @@ This API is used to find what pull requests are related to a given commit.  It c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestQueryApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestQueryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQuery(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQuery | The list of queries to perform.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQuery(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQuery | The list of queries to perform.
 $repositoryId = "repositoryId_example"; // string | ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -48,14 +48,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQuery**](../Model/GitPullRequestQuery.md)| The list of queries to perform. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQuery**](../Model/GitPullRequestQuery.md)| The list of queries to perform. |
  **repositoryId** | **string**| ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQuery**](../Model/GitPullRequestQuery.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQuery**](../Model/GitPullRequestQuery.md)
 
 ### Authorization
 

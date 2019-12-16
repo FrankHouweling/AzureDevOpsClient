@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * Comment Class Doc Comment
  *
  * @category Class
  * @description Comment on an artifact like Work Item or Wiki, etc.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,17 +60,17 @@ class Comment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'url' => 'string',
         'artifactId' => 'string',
-        'createdBy' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'id' => 'int',
         'isDeleted' => 'bool',
-        'mentions' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentMention[]',
-        'modifiedBy' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef',
+        'mentions' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentMention[]',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef',
         'modifiedDate' => '\DateTime',
         'parentId' => 'int',
-        'reactions' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentReaction[]',
+        'reactions' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentReaction[]',
         'renderedText' => 'string',
-        'replies' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentList',
+        'replies' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentList',
         'state' => 'string',
         'text' => 'string',
         'version' => 'int'
@@ -371,7 +371,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -381,7 +381,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef $createdBy IdentityRef of the creator of the comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef $createdBy IdentityRef of the creator of the comment.
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets mentions
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentMention[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentMention[]
      */
     public function getMentions()
     {
@@ -477,7 +477,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets mentions
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentMention[] $mentions The mentions of the comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentMention[] $mentions The mentions of the comment.
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -501,7 +501,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef $modifiedBy IdentityRef of the user who last modified the comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef $modifiedBy IdentityRef of the user who last modified the comment.
      *
      * @return $this
      */
@@ -563,7 +563,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets reactions
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentReaction[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentReaction[]
      */
     public function getReactions()
     {
@@ -573,7 +573,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets reactions
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentReaction[] $reactions The reactions on the comment.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentReaction[] $reactions The reactions on the comment.
      *
      * @return $this
      */
@@ -611,7 +611,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Gets replies
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentList
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentList
      */
     public function getReplies()
     {
@@ -621,7 +621,7 @@ class Comment implements ModelInterface, ArrayAccess
     /**
      * Sets replies
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\CommentList $replies Replies for this comment
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\CommentList $replies Replies for this comment
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**orderBy** | [**\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SortOption[]**](SortOption.md) | Options for sorting search results. If set to null, the results will be returned sorted by relevance. If more than one sort option is provided, the results are sorted in the order specified in the OrderBy. | [optional] 
+**orderBy** | [**\FrankHouweling\AzureDevOpsClient\Search\Model\SortOption[]**](SortOption.md) | Options for sorting search results. If set to null, the results will be returned sorted by relevance. If more than one sort option is provided, the results are sorted in the order specified in the OrderBy. | [optional] 
 **skip** | **int** | Number of results to be skipped. | [optional] 
 **top** | **int** | Number of results to be returned. | [optional] 
 **includeFacets** | **bool** | Flag to opt for faceting in the result. Default behavior is false. | [optional] 

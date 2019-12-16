@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model
+ * @package FrankHouweling\AzureDevOpsClient\Tfvc\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

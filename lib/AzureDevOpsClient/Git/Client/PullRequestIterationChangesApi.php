@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestIterationChangesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class PullRequestIterationChangesApi
      * @param  int $skip Optional. The number of changes to ignore.  For example, to retrieve changes 101-150, set top 50 and skip to 100. (optional)
      * @param  int $compareTo ID of the pull request iteration to compare against.  The default value is zero which indicates the comparison is made against the common commit between the source and target branches (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges
      */
     public function pullRequestIterationChangesGet($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null, $compareTo = null)
     {
@@ -123,13 +123,13 @@ class PullRequestIterationChangesApi
      * @param  int $skip Optional. The number of changes to ignore.  For example, to retrieve changes 101-150, set top 50 and skip to 100. (optional)
      * @param  int $compareTo ID of the pull request iteration to compare against.  The default value is zero which indicates the comparison is made against the common commit between the source and target branches (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestIterationChangesGetWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null, $compareTo = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges';
         $request = $this->pullRequestIterationChangesGetRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip, $compareTo);
 
         try {
@@ -181,7 +181,7 @@ class PullRequestIterationChangesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class PullRequestIterationChangesApi
      */
     public function pullRequestIterationChangesGetAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top = null, $skip = null, $compareTo = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestIterationChanges';
         $request = $this->pullRequestIterationChangesGetRequest($organization, $repositoryId, $pullRequestId, $iterationId, $project, $apiVersion, $top, $skip, $compareTo);
 
         return $this->client

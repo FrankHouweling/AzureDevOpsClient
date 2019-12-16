@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * GraphProviderInfo Class Doc Comment
  *
  * @category Class
  * @description Who is the provider for this user and what is the identifier and domain that is used to uniquely identify the user.
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -4,9 +4,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **assetUri** | **string** |  | [optional] 
-**badges** | [**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]**](ExtensionBadge.md) |  | [optional] 
+**badges** | [**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]**](ExtensionBadge.md) |  | [optional] 
 **fallbackAssetUri** | **string** |  | [optional] 
-**files** | [**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]**](ExtensionFile.md) |  | [optional] 
+**files** | [**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]**](ExtensionFile.md) |  | [optional] 
 **flags** | **string** |  | [optional] 
 **lastUpdated** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **properties** | **object[]** |  | [optional] 

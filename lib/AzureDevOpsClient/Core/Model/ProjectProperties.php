@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * ProjectProperties Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ProjectProperties implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'projectId' => 'string',
-        'properties' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]'
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ProjectProperties implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]
      */
     public function getProperties()
     {
@@ -248,7 +248,7 @@ class ProjectProperties implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[] $properties The collection of team project properties
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[] $properties The collection of team project properties
      *
      * @return $this
      */

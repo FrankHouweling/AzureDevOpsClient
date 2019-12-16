@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**project** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectInfo**](ProjectInfo.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectInfo**](ProjectInfo.md) |  | [optional] 
 **projectChangeType** | **string** |  | [optional] 
 **shouldInvalidateSystemStore** | **bool** |  | [optional] 
 

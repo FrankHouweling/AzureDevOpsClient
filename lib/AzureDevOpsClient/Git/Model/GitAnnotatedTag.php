@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitAnnotatedTag Class Doc Comment
  *
  * @category Class
  * @description A Git annotated tag.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class GitAnnotatedTag implements ModelInterface, ArrayAccess
         'message' => 'string',
         'name' => 'string',
         'objectId' => 'string',
-        'taggedBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate',
-        'taggedObject' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitObject',
+        'taggedBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate',
+        'taggedObject' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitObject',
         'url' => 'string'
     ];
 
@@ -310,7 +310,7 @@ class GitAnnotatedTag implements ModelInterface, ArrayAccess
     /**
      * Gets taggedBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate
      */
     public function getTaggedBy()
     {
@@ -320,7 +320,7 @@ class GitAnnotatedTag implements ModelInterface, ArrayAccess
     /**
      * Sets taggedBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate $taggedBy User info and date of tagging.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate $taggedBy User info and date of tagging.
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class GitAnnotatedTag implements ModelInterface, ArrayAccess
     /**
      * Gets taggedObject
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitObject
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitObject
      */
     public function getTaggedObject()
     {
@@ -344,7 +344,7 @@ class GitAnnotatedTag implements ModelInterface, ArrayAccess
     /**
      * Sets taggedObject
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitObject $taggedObject Tagged git object.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitObject $taggedObject Tagged git object.
      *
      * @return $this
      */

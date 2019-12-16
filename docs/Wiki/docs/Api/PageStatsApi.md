@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Wiki\PageStatsApi
+# FrankHouweling\AzureDevOpsClient\Wiki\PageStatsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pageStatsGet**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail pageStatsGet($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail pageStatsGet($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays)
 
 
 
@@ -20,9 +20,9 @@ Returns page detail corresponding to Page ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PageStatsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PageStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail**](../Model/WikiPageDetail.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail**](../Model/WikiPageDetail.md)
 
 ### Authorization
 

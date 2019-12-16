@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcHistoryEntry Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TfvcHistoryEntry implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changeList' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeList',
+        'changeList' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ChangeList',
         'itemChangeType' => 'string',
         'serverItem' => 'string',
         'encoding' => 'int',
@@ -281,7 +281,7 @@ class TfvcHistoryEntry implements ModelInterface, ArrayAccess
     /**
      * Gets changeList
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeList
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeList
      */
     public function getChangeList()
     {
@@ -291,7 +291,7 @@ class TfvcHistoryEntry implements ModelInterface, ArrayAccess
     /**
      * Sets changeList
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeList $changeList The Change list (changeset/commit/shelveset) for this point in history
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeList $changeList The Change list (changeset/commit/shelveset) for this point in history
      *
      * @return $this
      */

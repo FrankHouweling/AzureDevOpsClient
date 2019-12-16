@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks**](ReferenceLinks.md) | Gets the links to related resources, APIs, and views for the release environment. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks**](ReferenceLinks.md) | Gets the links to related resources, APIs, and views for the release environment. | [optional] 
 **id** | **int** | Gets the unique identifier of release environment. | [optional] 
 **name** | **string** | Gets or sets the name of the release environment. | [optional] 
 **url** | **string** | Gets the REST API url to access the release environment. | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ArtifactResource Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ArtifactResource implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
         'data' => 'string',
         'downloadUrl' => 'string',
         'properties' => 'map[string,string]',
@@ -238,7 +238,7 @@ class ArtifactResource implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -248,7 +248,7 @@ class ArtifactResource implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */

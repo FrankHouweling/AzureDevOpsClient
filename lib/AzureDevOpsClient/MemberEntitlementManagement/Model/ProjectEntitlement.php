@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * ProjectEntitlement Class Doc Comment
  *
  * @category Class
  * @description Relation between a project and the user&#39;s effective permissions in that project.
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'assignmentSource' => 'string',
-        'group' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group',
+        'group' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group',
         'projectPermissionInherited' => 'string',
-        'projectRef' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef',
-        'teamRefs' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[]'
+        'projectRef' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef',
+        'teamRefs' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[]'
     ];
 
     /**
@@ -315,7 +315,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group
      */
     public function getGroup()
     {
@@ -325,7 +325,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group $group Project Group (e.g. Contributor, Reader etc.)
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group $group Project Group (e.g. Contributor, Reader etc.)
      *
      * @return $this
      */
@@ -372,7 +372,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets projectRef
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef
      */
     public function getProjectRef()
     {
@@ -382,7 +382,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets projectRef
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef $projectRef Project Ref
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef $projectRef Project Ref
      *
      * @return $this
      */
@@ -396,7 +396,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets teamRefs
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[]
      */
     public function getTeamRefs()
     {
@@ -406,7 +406,7 @@ class ProjectEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets teamRefs
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[] $teamRefs Team Ref.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\TeamRef[] $teamRefs Team Ref.
      *
      * @return $this
      */

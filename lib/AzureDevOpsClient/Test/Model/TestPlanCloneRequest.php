@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestPlanCloneRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestPlanCloneRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'destinationTestPlan' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan',
-        'options' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions',
+        'destinationTestPlan' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan',
+        'options' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions',
         'suiteIds' => 'int[]'
     ];
 
@@ -220,7 +220,7 @@ class TestPlanCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Gets destinationTestPlan
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan
      */
     public function getDestinationTestPlan()
     {
@@ -230,7 +230,7 @@ class TestPlanCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Sets destinationTestPlan
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan $destinationTestPlan destinationTestPlan
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan $destinationTestPlan destinationTestPlan
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class TestPlanCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions
      */
     public function getOptions()
     {
@@ -254,7 +254,7 @@ class TestPlanCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions $options options
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions $options options
      *
      * @return $this
      */

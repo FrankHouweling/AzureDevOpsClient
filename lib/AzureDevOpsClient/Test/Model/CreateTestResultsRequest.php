@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CreateTestResultsRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class CreateTestResultsRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'projectName' => 'string',
-        'results' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]'
+        'results' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class CreateTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
      */
     public function getResults()
     {
@@ -248,7 +248,7 @@ class CreateTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
      *
      * @return $this
      */

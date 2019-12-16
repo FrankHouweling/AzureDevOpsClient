@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * SourceRepositories Class Doc Comment
  *
  * @category Class
  * @description A set of repositories returned from the source provider.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class SourceRepositories implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'continuationToken' => 'string',
         'pageLength' => 'int',
-        'repositories' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepository[]',
+        'repositories' => '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepository[]',
         'totalPageCount' => 'int'
     ];
 
@@ -274,7 +274,7 @@ class SourceRepositories implements ModelInterface, ArrayAccess
     /**
      * Gets repositories
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepository[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepository[]
      */
     public function getRepositories()
     {
@@ -284,7 +284,7 @@ class SourceRepositories implements ModelInterface, ArrayAccess
     /**
      * Sets repositories
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepository[] $repositories A list of repositories
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepository[] $repositories A list of repositories
      *
      * @return $this
      */

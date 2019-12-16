@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * PackageResult Class Doc Comment
  *
  * @category Class
  * @description Defines the package result that matched a package search request.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class PackageResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'description' => 'string',
-        'feeds' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\FeedInfo[]',
-        'hits' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageHit[]',
+        'feeds' => '\FrankHouweling\AzureDevOpsClient\Search\Model\FeedInfo[]',
+        'hits' => '\FrankHouweling\AzureDevOpsClient\Search\Model\PackageHit[]',
         'id' => 'string',
         'name' => 'string',
         'protocolType' => 'string'
@@ -262,7 +262,7 @@ class PackageResult implements ModelInterface, ArrayAccess
     /**
      * Gets feeds
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\FeedInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\FeedInfo[]
      */
     public function getFeeds()
     {
@@ -272,7 +272,7 @@ class PackageResult implements ModelInterface, ArrayAccess
     /**
      * Sets feeds
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\FeedInfo[] $feeds List of feeds which contain the matching package.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\FeedInfo[] $feeds List of feeds which contain the matching package.
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class PackageResult implements ModelInterface, ArrayAccess
     /**
      * Gets hits
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageHit[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\PackageHit[]
      */
     public function getHits()
     {
@@ -296,7 +296,7 @@ class PackageResult implements ModelInterface, ArrayAccess
     /**
      * Sets hits
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\PackageHit[] $hits List of highlighted fields for the match.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\PackageHit[] $hits List of highlighted fields for the match.
      *
      * @return $this
      */

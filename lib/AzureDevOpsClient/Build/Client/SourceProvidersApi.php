@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * SourceProvidersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -99,7 +99,7 @@ class SourceProvidersApi
      * @param  string $commitOrBranch The identifier of the commit or branch from which a file&#39;s contents are retrieved. (optional)
      * @param  string $path The path to the file to retrieve, relative to the root of the repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -121,7 +121,7 @@ class SourceProvidersApi
      * @param  string $commitOrBranch The identifier of the commit or branch from which a file&#39;s contents are retrieved. (optional)
      * @param  string $path The path to the file to retrieve, relative to the root of the repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -457,9 +457,9 @@ class SourceProvidersApi
      * @param  string $commitOrBranch The identifier of the commit or branch from which a file&#39;s contents are retrieved. (optional)
      * @param  string $path The path contents to list, relative to the root of the repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]
      */
     public function sourceProvidersGetPathContents($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $commitOrBranch = null, $path = null)
     {
@@ -479,13 +479,13 @@ class SourceProvidersApi
      * @param  string $commitOrBranch The identifier of the commit or branch from which a file&#39;s contents are retrieved. (optional)
      * @param  string $path The path contents to list, relative to the root of the repository. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sourceProvidersGetPathContentsWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $commitOrBranch = null, $path = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]';
         $request = $this->sourceProvidersGetPathContentsRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $commitOrBranch, $path);
 
         try {
@@ -537,7 +537,7 @@ class SourceProvidersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -593,7 +593,7 @@ class SourceProvidersApi
      */
     public function sourceProvidersGetPathContentsAsyncWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $commitOrBranch = null, $path = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositoryItem[]';
         $request = $this->sourceProvidersGetPathContentsRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $commitOrBranch, $path);
 
         return $this->client
@@ -814,9 +814,9 @@ class SourceProvidersApi
      * @param  string $repositoryId Vendor-specific identifier or the name of the repository that contains the pull request. (optional)
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest
      */
     public function sourceProvidersGetPullRequest($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId = null, $serviceEndpointId = null)
     {
@@ -835,13 +835,13 @@ class SourceProvidersApi
      * @param  string $repositoryId Vendor-specific identifier or the name of the repository that contains the pull request. (optional)
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function sourceProvidersGetPullRequestWithHttpInfo($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId = null, $serviceEndpointId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest';
         $request = $this->sourceProvidersGetPullRequestRequest($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId, $serviceEndpointId);
 
         try {
@@ -893,7 +893,7 @@ class SourceProvidersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -947,7 +947,7 @@ class SourceProvidersApi
      */
     public function sourceProvidersGetPullRequestAsyncWithHttpInfo($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId = null, $serviceEndpointId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PullRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\PullRequest';
         $request = $this->sourceProvidersGetPullRequestRequest($organization, $project, $providerName, $pullRequestId, $apiVersion, $repositoryId, $serviceEndpointId);
 
         return $this->client
@@ -1169,9 +1169,9 @@ class SourceProvidersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]
      */
     public function sourceProvidersList($organization, $project, $apiVersion)
     {
@@ -1186,13 +1186,13 @@ class SourceProvidersApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sourceProvidersListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]';
         $request = $this->sourceProvidersListRequest($organization, $project, $apiVersion);
 
         try {
@@ -1244,7 +1244,7 @@ class SourceProvidersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1290,7 +1290,7 @@ class SourceProvidersApi
      */
     public function sourceProvidersListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceProviderAttributes[]';
         $request = $this->sourceProvidersListRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1476,7 +1476,7 @@ class SourceProvidersApi
      * @param  string $repository The vendor-specific identifier or the name of the repository to get branches. Can only be omitted for providers that do not support multiple repositories. (optional)
      * @param  string $branchName If supplied, the name of the branch to check for specifically. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string[]
      */
@@ -1497,7 +1497,7 @@ class SourceProvidersApi
      * @param  string $repository The vendor-specific identifier or the name of the repository to get branches. Can only be omitted for providers that do not support multiple repositories. (optional)
      * @param  string $branchName If supplied, the name of the branch to check for specifically. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string[], HTTP status code, HTTP response headers (array of strings)
      */
@@ -1827,9 +1827,9 @@ class SourceProvidersApi
      * @param  bool $pageResults If set to true, this will limit the set of results and will return a continuation token to continue the query. (optional)
      * @param  string $continuationToken When paging results, this is a continuation token, returned by a previous call to this method, that can be used to return the next set of repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories
      */
     public function sourceProvidersListRepositories($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $resultSet = null, $pageResults = null, $continuationToken = null)
     {
@@ -1850,13 +1850,13 @@ class SourceProvidersApi
      * @param  bool $pageResults If set to true, this will limit the set of results and will return a continuation token to continue the query. (optional)
      * @param  string $continuationToken When paging results, this is a continuation token, returned by a previous call to this method, that can be used to return the next set of repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories, HTTP status code, HTTP response headers (array of strings)
      */
     public function sourceProvidersListRepositoriesWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $resultSet = null, $pageResults = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories';
         $request = $this->sourceProvidersListRepositoriesRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $resultSet, $pageResults, $continuationToken);
 
         try {
@@ -1908,7 +1908,7 @@ class SourceProvidersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1966,7 +1966,7 @@ class SourceProvidersApi
      */
     public function sourceProvidersListRepositoriesAsyncWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null, $resultSet = null, $pageResults = null, $continuationToken = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SourceRepositories';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\SourceRepositories';
         $request = $this->sourceProvidersListRepositoriesRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository, $resultSet, $pageResults, $continuationToken);
 
         return $this->client
@@ -2191,9 +2191,9 @@ class SourceProvidersApi
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      * @param  string $repository If specified, the vendor-specific identifier or the name of the repository to get webhooks. Can only be omitted for providers that do not support multiple repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[]
      */
     public function sourceProvidersListWebhooks($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null)
     {
@@ -2211,13 +2211,13 @@ class SourceProvidersApi
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      * @param  string $repository If specified, the vendor-specific identifier or the name of the repository to get webhooks. Can only be omitted for providers that do not support multiple repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sourceProvidersListWebhooksWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[]';
         $request = $this->sourceProvidersListWebhooksRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository);
 
         try {
@@ -2269,7 +2269,7 @@ class SourceProvidersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2321,7 +2321,7 @@ class SourceProvidersApi
      */
     public function sourceProvidersListWebhooksAsyncWithHttpInfo($organization, $project, $providerName, $apiVersion, $serviceEndpointId = null, $repository = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RepositoryWebhook[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RepositoryWebhook[]';
         $request = $this->sourceProvidersListWebhooksRequest($organization, $project, $providerName, $apiVersion, $serviceEndpointId, $repository);
 
         return $this->client
@@ -2532,7 +2532,7 @@ class SourceProvidersApi
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      * @param  string $repository If specified, the vendor-specific identifier or the name of the repository to get webhooks. Can only be omitted for providers that do not support multiple repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2552,7 +2552,7 @@ class SourceProvidersApi
      * @param  string $serviceEndpointId If specified, the ID of the service endpoint to query. Can only be omitted for providers that do not use service endpoints, e.g. TFVC or TFGit. (optional)
      * @param  string $repository If specified, the vendor-specific identifier or the name of the repository to get webhooks. Can only be omitted for providers that do not support multiple repositories. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

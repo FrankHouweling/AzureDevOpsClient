@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactsDownloadInput Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ArtifactsDownloadInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'downloadInputs' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[]'
+        'downloadInputs' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ArtifactsDownloadInput implements ModelInterface, ArrayAccess
     /**
      * Gets downloadInputs
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[]
      */
     public function getDownloadInputs()
     {
@@ -218,7 +218,7 @@ class ArtifactsDownloadInput implements ModelInterface, ArrayAccess
     /**
      * Sets downloadInputs
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[] $downloadInputs downloadInputs
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactDownloadInputBase[] $downloadInputs downloadInputs
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * GitRepository Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class GitRepository implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
         'defaultBranch' => 'string',
         'id' => 'string',
         'isFork' => 'bool',
         'name' => 'string',
-        'parentRepository' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef',
-        'project' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference',
+        'parentRepository' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference',
         'remoteUrl' => 'string',
         'size' => 'int',
         'sshUrl' => 'string',
@@ -280,7 +280,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -290,7 +290,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets parentRepository
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef
      */
     public function getParentRepository()
     {
@@ -410,7 +410,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets parentRepository
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef $parentRepository parentRepository
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\GitRepositoryRef $parentRepository parentRepository
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -434,7 +434,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference $project project
      *
      * @return $this
      */

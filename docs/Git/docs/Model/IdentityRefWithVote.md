@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **isDeletedInOrigin** | **bool** |  | [optional] 
 **profileUrl** | **string** | Deprecated - not in use in most preexisting implementations of ToIdentityRef | [optional] 
 **uniqueName** | **string** | Deprecated - use Domain+PrincipalName instead | [optional] 
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | This field contains zero or more interesting links about the graph subject. These links may be invoked to obtain additional relationships or more detailed information about this graph subject. | [optional] 
 **descriptor** | **string** | The descriptor is the primary way to reference the graph subject while the system is running. This field will uniquely identify the same graph subject across both Accounts and Organizations. | [optional] 
 **displayName** | **string** | This is the non-unique display name of the graph subject. To change this field, you must alter its value in the source provider. | [optional] 
 **url** | **string** | This url is the full route to the source resource of this graph subject. | [optional] 
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **isRequired** | **bool** | Indicates if this is a required reviewer for this pull request. &lt;br /&gt; Branches can have policies that require particular reviewers are required for pull requests. | [optional] 
 **reviewerUrl** | **string** | URL to retrieve information about this identity | [optional] 
 **vote** | **int** | Vote on a pull request:&lt;br /&gt; 10 - approved 5 - approved with suggestions 0 - no vote -5 - waiting for author -10 - rejected | [optional] 
-**votedFor** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](IdentityRefWithVote.md) | Groups or teams that that this reviewer contributed to. &lt;br /&gt; Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list of such votes. | [optional] 
+**votedFor** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](IdentityRefWithVote.md) | Groups or teams that that this reviewer contributed to. &lt;br /&gt; Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list of such votes. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

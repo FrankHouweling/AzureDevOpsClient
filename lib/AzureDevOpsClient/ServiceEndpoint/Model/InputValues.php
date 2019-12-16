@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * InputValues Class Doc Comment
  *
  * @category Class
  * @description Information about the possible/allowed values for a given subscription input
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,12 +59,12 @@ class InputValues implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'defaultValue' => 'string',
-        'error' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError',
+        'error' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError',
         'inputId' => 'string',
         'isDisabled' => 'bool',
         'isLimitedToPossibleValues' => 'bool',
         'isReadOnly' => 'bool',
-        'possibleValues' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[]'
+        'possibleValues' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError
      */
     public function getError()
     {
@@ -278,7 +278,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError $error Errors encountered while computing dynamic values.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValuesError $error Errors encountered while computing dynamic values.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Gets possibleValues
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[]
      */
     public function getPossibleValues()
     {
@@ -398,7 +398,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Sets possibleValues
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[] $possibleValues Possible values that this input can take
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValue[] $possibleValues Possible values that this input can take
      *
      * @return $this
      */

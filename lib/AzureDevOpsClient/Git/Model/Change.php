@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * Change Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Change implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'changeType' => 'string',
         'item' => 'string',
-        'newContent' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent',
+        'newContent' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent',
         'sourceServerItem' => 'string',
         'url' => 'string'
     ];
@@ -338,7 +338,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Gets newContent
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent
      */
     public function getNewContent()
     {
@@ -348,7 +348,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Sets newContent
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
      *
      * @return $this
      */

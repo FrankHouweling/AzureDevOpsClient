@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * YamlFileSource Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class YamlFileSource implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sourceReference' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\YamlSourceReference]',
+        'sourceReference' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\YamlSourceReference]',
         'type' => 'string'
     ];
 
@@ -237,7 +237,7 @@ class YamlFileSource implements ModelInterface, ArrayAccess
     /**
      * Gets sourceReference
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\YamlSourceReference]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\YamlSourceReference]
      */
     public function getSourceReference()
     {
@@ -247,7 +247,7 @@ class YamlFileSource implements ModelInterface, ArrayAccess
     /**
      * Sets sourceReference
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\YamlSourceReference] $sourceReference Gets or sets definition reference. e.g. {\"project\":{\"id\":\"fed755ea-49c5-4399-acea-fd5b5aa90a6c\",\"name\":\"myProject\"},\"definition\":{\"id\":\"1\",\"name\":\"mybuildDefinition\"},\"connection\":{\"id\":\"1\",\"name\":\"myConnection\"}}
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\YamlSourceReference] $sourceReference Gets or sets definition reference. e.g. {\"project\":{\"id\":\"fed755ea-49c5-4399-acea-fd5b5aa90a6c\",\"name\":\"myProject\"},\"definition\":{\"id\":\"1\",\"name\":\"mybuildDefinition\"},\"connection\":{\"id\":\"1\",\"name\":\"myConnection\"}}
      *
      * @return $this
      */

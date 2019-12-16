@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointRequestResult Class Doc Comment
  *
  * @category Class
  * @description Represents result of the service endpoint request.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ServiceEndpointRequestResult implements ModelInterface, ArrayAccess
         'callbackContextParameters' => 'map[string,string]',
         'callbackRequired' => 'bool',
         'errorMessage' => 'string',
-        'result' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken',
+        'result' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken',
         'statusCode' => 'string'
     ];
 
@@ -417,7 +417,7 @@ class ServiceEndpointRequestResult implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken
      */
     public function getResult()
     {
@@ -427,7 +427,7 @@ class ServiceEndpointRequestResult implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken $result Gets or sets the result of service endpoint request.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken $result Gets or sets the result of service endpoint request.
      *
      * @return $this
      */

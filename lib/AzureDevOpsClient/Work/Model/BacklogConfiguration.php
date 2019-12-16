@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BacklogConfiguration Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'backlogFields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogFields',
+        'backlogFields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogFields',
         'bugsBehavior' => 'string',
         'hiddenBacklogs' => 'string[]',
         'isBugsBehaviorConfigured' => 'bool',
-        'portfolioBacklogs' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]',
-        'requirementBacklog' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
-        'taskBacklog' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
+        'portfolioBacklogs' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]',
+        'requirementBacklog' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
+        'taskBacklog' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration',
         'url' => 'string',
-        'workItemTypeMappedStates' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[]'
+        'workItemTypeMappedStates' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[]'
     ];
 
     /**
@@ -281,7 +281,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets backlogFields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogFields
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogFields
      */
     public function getBacklogFields()
     {
@@ -291,7 +291,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets backlogFields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogFields $backlogFields Behavior/type field mapping
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogFields $backlogFields Behavior/type field mapping
      *
      * @return $this
      */
@@ -386,7 +386,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets portfolioBacklogs
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]
      */
     public function getPortfolioBacklogs()
     {
@@ -396,7 +396,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets portfolioBacklogs
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[] $portfolioBacklogs Portfolio backlog descriptors
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[] $portfolioBacklogs Portfolio backlog descriptors
      *
      * @return $this
      */
@@ -410,7 +410,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets requirementBacklog
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
      */
     public function getRequirementBacklog()
     {
@@ -420,7 +420,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets requirementBacklog
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration $requirementBacklog Requirement backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration $requirementBacklog Requirement backlog
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets taskBacklog
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration
      */
     public function getTaskBacklog()
     {
@@ -444,7 +444,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets taskBacklog
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration $taskBacklog Task backlog
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration $taskBacklog Task backlog
      *
      * @return $this
      */
@@ -482,7 +482,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets workItemTypeMappedStates
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[]
      */
     public function getWorkItemTypeMappedStates()
     {
@@ -492,7 +492,7 @@ class BacklogConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets workItemTypeMappedStates
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[] $workItemTypeMappedStates Mapped states for work item types
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeStateInfo[] $workItemTypeMappedStates Mapped states for work item types
      *
      * @return $this
      */

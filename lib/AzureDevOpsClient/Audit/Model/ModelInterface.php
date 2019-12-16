@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model
+ * @package  FrankHouweling\AzureDevOpsClient\Audit\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model
+ * @package FrankHouweling\AzureDevOpsClient\Audit\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

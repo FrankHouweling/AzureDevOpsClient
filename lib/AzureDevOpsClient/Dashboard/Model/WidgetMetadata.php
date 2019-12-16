@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetMetadata Class Doc Comment
  *
  * @category Class
  * @description Contribution based information describing Dashboard Widgets.
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'allowedSizes' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[]',
+        'allowedSizes' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[]',
         'analyticsServiceRequired' => 'bool',
         'catalogIconUrl' => 'string',
         'catalogInfoUrl' => 'string',
@@ -73,7 +73,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
         'isNameConfigurable' => 'bool',
         'isVisibleFromCatalog' => 'bool',
         'keywords' => 'string[]',
-        'lightboxOptions' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions',
+        'lightboxOptions' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions',
         'loadingImageUrl' => 'string',
         'name' => 'string',
         'publisherName' => 'string',
@@ -340,7 +340,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets allowedSizes
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[]
      */
     public function getAllowedSizes()
     {
@@ -350,7 +350,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets allowedSizes
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[] $allowedSizes Sizes supported by the Widget.
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[] $allowedSizes Sizes supported by the Widget.
      *
      * @return $this
      */
@@ -700,7 +700,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets lightboxOptions
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions
      */
     public function getLightboxOptions()
     {
@@ -710,7 +710,7 @@ class WidgetMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets lightboxOptions
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions $lightboxOptions Opt-in properties for customizing widget presentation in a \"lightbox\" dialog.
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions $lightboxOptions Opt-in properties for customizing widget presentation in a \"lightbox\" dialog.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * FlakyDetection Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyDetectionPipelines' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines',
+        'flakyDetectionPipelines' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines',
         'flakyDetectionType' => 'string'
     ];
 
@@ -237,7 +237,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
     /**
      * Gets flakyDetectionPipelines
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines
      */
     public function getFlakyDetectionPipelines()
     {
@@ -247,7 +247,7 @@ class FlakyDetection implements ModelInterface, ArrayAccess
     /**
      * Sets flakyDetectionPipelines
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines $flakyDetectionPipelines FlakyDetectionPipelines defines Pipelines for Detection.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\FlakyDetectionPipelines $flakyDetectionPipelines FlakyDetectionPipelines defines Pipelines for Detection.
      *
      * @return $this
      */

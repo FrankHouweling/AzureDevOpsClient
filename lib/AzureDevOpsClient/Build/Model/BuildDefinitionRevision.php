@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinitionRevision Class Doc Comment
  *
  * @category Class
  * @description Represents a revision of a build definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BuildDefinitionRevision implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changedBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'changedBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'changedDate' => '\DateTime',
         'changeType' => 'string',
         'comment' => 'string',
@@ -269,7 +269,7 @@ class BuildDefinitionRevision implements ModelInterface, ArrayAccess
     /**
      * Gets changedBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getChangedBy()
     {
@@ -279,7 +279,7 @@ class BuildDefinitionRevision implements ModelInterface, ArrayAccess
     /**
      * Sets changedBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $changedBy The identity of the person or process that changed the definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $changedBy The identity of the person or process that changed the definition.
      *
      * @return $this
      */

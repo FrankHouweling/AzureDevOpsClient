@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationStatisticsQuery Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class NotificationStatisticsQuery implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'conditions' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[]'
+        'conditions' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class NotificationStatisticsQuery implements ModelInterface, ArrayAccess
     /**
      * Gets conditions
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[]
      */
     public function getConditions()
     {
@@ -218,7 +218,7 @@ class NotificationStatisticsQuery implements ModelInterface, ArrayAccess
     /**
      * Sets conditions
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[] $conditions conditions
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationStatisticsQueryConditions[] $conditions conditions
      *
      * @return $this
      */

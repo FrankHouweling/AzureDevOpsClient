@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
-**detailedStatus** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationDetail**](GitAsyncRefOperationDetail.md) |  | [optional] 
-**parameters** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters**](GitAsyncRefOperationParameters.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**detailedStatus** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationDetail**](GitAsyncRefOperationDetail.md) |  | [optional] 
+**parameters** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters**](GitAsyncRefOperationParameters.md) |  | [optional] 
 **status** | **string** |  | [optional] 
 **url** | **string** | A URL that can be used to make further requests for status about the operation | [optional] 
 

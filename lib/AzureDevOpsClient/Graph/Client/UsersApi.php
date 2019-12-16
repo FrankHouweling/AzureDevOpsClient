@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * UsersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class UsersApi
      * Operation usersCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $groupDescriptors A comma separated list of descriptors of groups you want the graph user to join (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser
      */
     public function usersCreate($organization, $body, $apiVersion, $groupDescriptors = null)
     {
@@ -109,17 +109,17 @@ class UsersApi
      * Operation usersCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $groupDescriptors A comma separated list of descriptors of groups you want the graph user to join (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersCreateWithHttpInfo($organization, $body, $apiVersion, $groupDescriptors = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersCreateRequest($organization, $body, $apiVersion, $groupDescriptors);
 
         try {
@@ -171,7 +171,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class UsersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $groupDescriptors A comma separated list of descriptors of groups you want the graph user to join (optional)
      *
@@ -210,7 +210,7 @@ class UsersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $groupDescriptors A comma separated list of descriptors of groups you want the graph user to join (optional)
      *
@@ -219,7 +219,7 @@ class UsersApi
      */
     public function usersCreateAsyncWithHttpInfo($organization, $body, $apiVersion, $groupDescriptors = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersCreateRequest($organization, $body, $apiVersion, $groupDescriptors);
 
         return $this->client
@@ -263,7 +263,7 @@ class UsersApi
      * Create request for operation 'usersCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserCreationContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $groupDescriptors A comma separated list of descriptors of groups you want the graph user to join (optional)
      *
@@ -401,7 +401,7 @@ class UsersApi
      * @param  string $userDescriptor The descriptor of the user to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -417,7 +417,7 @@ class UsersApi
      * @param  string $userDescriptor The descriptor of the user to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -667,9 +667,9 @@ class UsersApi
      * @param  string $userDescriptor The descriptor of the desired user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser
      */
     public function usersGet($organization, $userDescriptor, $apiVersion)
     {
@@ -684,13 +684,13 @@ class UsersApi
      * @param  string $userDescriptor The descriptor of the desired user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersGetWithHttpInfo($organization, $userDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersGetRequest($organization, $userDescriptor, $apiVersion);
 
         try {
@@ -742,7 +742,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -788,7 +788,7 @@ class UsersApi
      */
     public function usersGetAsyncWithHttpInfo($organization, $userDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersGetRequest($organization, $userDescriptor, $apiVersion);
 
         return $this->client
@@ -972,9 +972,9 @@ class UsersApi
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      * @param  string $scopeDescriptor Specify a non-default scope (collection, project) to search for users. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]
      */
     public function usersList($organization, $apiVersion, $subjectTypes = null, $continuationToken = null, $scopeDescriptor = null)
     {
@@ -991,13 +991,13 @@ class UsersApi
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      * @param  string $scopeDescriptor Specify a non-default scope (collection, project) to search for users. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[], HTTP status code, HTTP response headers (array of strings)
      */
     public function usersListWithHttpInfo($organization, $apiVersion, $subjectTypes = null, $continuationToken = null, $scopeDescriptor = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]';
         $request = $this->usersListRequest($organization, $apiVersion, $subjectTypes, $continuationToken, $scopeDescriptor);
 
         try {
@@ -1049,7 +1049,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1099,7 +1099,7 @@ class UsersApi
      */
     public function usersListAsyncWithHttpInfo($organization, $apiVersion, $subjectTypes = null, $continuationToken = null, $scopeDescriptor = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]';
         $request = $this->usersListRequest($organization, $apiVersion, $subjectTypes, $continuationToken, $scopeDescriptor);
 
         return $this->client
@@ -1278,13 +1278,13 @@ class UsersApi
      * Operation usersUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $userDescriptor the descriptor of the user to update (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser
      */
     public function usersUpdate($organization, $body, $userDescriptor, $apiVersion)
     {
@@ -1296,17 +1296,17 @@ class UsersApi
      * Operation usersUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $userDescriptor the descriptor of the user to update (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersUpdateWithHttpInfo($organization, $body, $userDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersUpdateRequest($organization, $body, $userDescriptor, $apiVersion);
 
         try {
@@ -1358,7 +1358,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1374,7 +1374,7 @@ class UsersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $userDescriptor the descriptor of the user to update (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -1397,7 +1397,7 @@ class UsersApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $userDescriptor the descriptor of the user to update (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -1406,7 +1406,7 @@ class UsersApi
      */
     public function usersUpdateAsyncWithHttpInfo($organization, $body, $userDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser';
         $request = $this->usersUpdateRequest($organization, $body, $userDescriptor, $apiVersion);
 
         return $this->client
@@ -1450,7 +1450,7 @@ class UsersApi
      * Create request for operation 'usersUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUserUpdateContext $body The subset of the full graph user used to uniquely find the graph subject in an external provider. (required)
      * @param  string $userDescriptor the descriptor of the user to update (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

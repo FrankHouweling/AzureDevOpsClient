@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcBranchRef Class Doc Comment
  *
  * @category Class
  * @description Metadata for a branchref.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,11 +59,11 @@ class TfvcBranchRef implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'path' => 'string',
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'isDeleted' => 'bool',
-        'owner' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef',
         'url' => 'string'
     ];
 
@@ -268,7 +268,7 @@ class TfvcBranchRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -278,7 +278,7 @@ class TfvcBranchRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class TfvcBranchRef implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -374,7 +374,7 @@ class TfvcBranchRef implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Alias or display name of user
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Alias or display name of user
      *
      * @return $this
      */

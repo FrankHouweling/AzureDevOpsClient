@@ -57,16 +57,16 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\ConfigurationsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\ConfigurationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters(); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters | TestConfigurationCreateUpdateParameters
+$body = new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationCreateUpdateParameters | TestConfigurationCreateUpdateParameters
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\ServiceEndpoint\EndpointsApi
+# FrankHouweling\AzureDevOpsClient\ServiceEndpoint\EndpointsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **endpointsCreate**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsCreate($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsCreate($organization, $body, $apiVersion)
 
 
 
@@ -25,19 +25,19 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint(); // \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint | 
+$body = new \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint(); // \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint | 
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
 try {
@@ -54,12 +54,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)|  |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
 
 ### Authorization
 
@@ -85,12 +85,12 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointsGet**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsGet($organization, $project, $endpointId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsGet($organization, $project, $endpointId, $apiVersion)
 
 
 
@@ -146,9 +146,9 @@ Get the service endpoint details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointsGetServiceEndpointsByNames**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[] endpointsGetServiceEndpointsByNames($organization, $project, $endpointNames, $apiVersion, $type, $authSchemes, $owner, $includeFailed, $includeDetails)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[] endpointsGetServiceEndpointsByNames($organization, $project, $endpointNames, $apiVersion, $type, $authSchemes, $owner, $includeFailed, $includeDetails)
 
 
 
@@ -205,9 +205,9 @@ Get the service endpoints by name.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]**](../Model/ServiceEndpoint.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]**](../Model/ServiceEndpoint.md)
 
 ### Authorization
 
@@ -274,19 +274,19 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference()); // \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] | 
+$body = array(new \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference()); // \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] | 
 $endpointId = "endpointId_example"; // string | 
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
@@ -303,7 +303,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]**](../Model/ServiceEndpointProjectReference.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[]**](../Model/ServiceEndpointProjectReference.md)|  |
  **endpointId** | [**string**](../Model/.md)|  |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
@@ -323,7 +323,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointsUpdate**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsUpdate($organization, $body, $endpointId, $operation, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint endpointsUpdate($organization, $body, $endpointId, $operation, $apiVersion)
 
 
 
@@ -335,19 +335,19 @@ void (empty response body)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\EndpointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint(); // \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint | 
+$body = new \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint(); // \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint | 
 $endpointId = "endpointId_example"; // string | 
 $operation = "operation_example"; // string | 
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -366,14 +366,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)|  |
  **endpointId** | [**string**](../Model/.md)|  |
  **operation** | **string**|  |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint**](../Model/ServiceEndpoint.md)
 
 ### Authorization
 

@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | A collection of REST reference links. | [optional] 
-**author** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Alias or display name of user. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) | A collection of REST reference links. | [optional] 
+**author** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Alias or display name of user. | [optional] 
 **changesetId** | **int** | Changeset Id. | [optional] 
-**checkedInBy** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Alias or display name of user. | [optional] 
+**checkedInBy** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | Alias or display name of user. | [optional] 
 **comment** | **string** | Comment for the changeset. | [optional] 
 **commentTruncated** | **bool** | Was the Comment result truncated? | [optional] 
 **createdDate** | [**\DateTime**](\DateTime.md) | Creation date of the changeset. | [optional] 

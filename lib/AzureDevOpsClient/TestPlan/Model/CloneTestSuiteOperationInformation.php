@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * CloneTestSuiteOperationInformation Class Doc Comment
  *
  * @category Class
  * @description Response for Test Suite clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'clonedTestSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject',
-        'cloneOperationResponse' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse',
-        'cloneOptions' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions',
-        'destinationTestSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject',
-        'sourceTestSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject'
+        'clonedTestSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject',
+        'cloneOperationResponse' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse',
+        'cloneOptions' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions',
+        'destinationTestSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject',
+        'sourceTestSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject'
     ];
 
     /**
@@ -232,7 +232,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets clonedTestSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
      */
     public function getClonedTestSuite()
     {
@@ -242,7 +242,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets clonedTestSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $clonedTestSuite Information of newly cloned Test Suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $clonedTestSuite Information of newly cloned Test Suite
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOperationResponse
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse
      */
     public function getCloneOperationResponse()
     {
@@ -266,7 +266,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOperationResponse
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse $cloneOperationResponse Various information related to the clone
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse $cloneOperationResponse Various information related to the clone
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOptions
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions
      */
     public function getCloneOptions()
     {
@@ -290,7 +290,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOptions
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets destinationTestSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
      */
     public function getDestinationTestSuite()
     {
@@ -314,7 +314,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets destinationTestSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $destinationTestSuite Information of destination Test Suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $destinationTestSuite Information of destination Test Suite
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sourceTestSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject
      */
     public function getSourceTestSuite()
     {
@@ -338,7 +338,7 @@ class CloneTestSuiteOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sourceTestSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $sourceTestSuite Information of source Test Suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReferenceWithProject $sourceTestSuite Information of source Test Suite
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DefinitionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class DefinitionsApi
      * Operation definitionsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $definitionToCloneId  (optional)
      * @param  int $definitionToCloneRevision  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition
      */
     public function definitionsCreate($organization, $body, $project, $apiVersion, $definitionToCloneId = null, $definitionToCloneRevision = null)
     {
@@ -111,19 +111,19 @@ class DefinitionsApi
      * Operation definitionsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $definitionToCloneId  (optional)
      * @param  int $definitionToCloneRevision  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsCreateWithHttpInfo($organization, $body, $project, $apiVersion, $definitionToCloneId = null, $definitionToCloneRevision = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsCreateRequest($organization, $body, $project, $apiVersion, $definitionToCloneId, $definitionToCloneRevision);
 
         try {
@@ -175,7 +175,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $definitionToCloneId  (optional)
@@ -216,7 +216,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $definitionToCloneId  (optional)
@@ -227,7 +227,7 @@ class DefinitionsApi
      */
     public function definitionsCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion, $definitionToCloneId = null, $definitionToCloneRevision = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsCreateRequest($organization, $body, $project, $apiVersion, $definitionToCloneId, $definitionToCloneRevision);
 
         return $this->client
@@ -271,7 +271,7 @@ class DefinitionsApi
      * Create request for operation 'definitionsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $definitionToCloneId  (optional)
@@ -430,7 +430,7 @@ class DefinitionsApi
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -447,7 +447,7 @@ class DefinitionsApi
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -719,9 +719,9 @@ class DefinitionsApi
      * @param  string $propertyFilters A comma-delimited list of properties to include in the results. (optional)
      * @param  bool $includeLatestBuilds  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition
      */
     public function definitionsGet($organization, $project, $definitionId, $apiVersion, $revision = null, $minMetricsTime = null, $propertyFilters = null, $includeLatestBuilds = null)
     {
@@ -741,13 +741,13 @@ class DefinitionsApi
      * @param  string $propertyFilters A comma-delimited list of properties to include in the results. (optional)
      * @param  bool $includeLatestBuilds  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsGetWithHttpInfo($organization, $project, $definitionId, $apiVersion, $revision = null, $minMetricsTime = null, $propertyFilters = null, $includeLatestBuilds = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsGetRequest($organization, $project, $definitionId, $apiVersion, $revision, $minMetricsTime, $propertyFilters, $includeLatestBuilds);
 
         try {
@@ -799,7 +799,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -855,7 +855,7 @@ class DefinitionsApi
      */
     public function definitionsGetAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion, $revision = null, $minMetricsTime = null, $propertyFilters = null, $includeLatestBuilds = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsGetRequest($organization, $project, $definitionId, $apiVersion, $revision, $minMetricsTime, $propertyFilters, $includeLatestBuilds);
 
         return $this->client
@@ -1073,9 +1073,9 @@ class DefinitionsApi
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]
      */
     public function definitionsGetDefinitionRevisions($organization, $project, $definitionId, $apiVersion)
     {
@@ -1091,13 +1091,13 @@ class DefinitionsApi
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[], HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsGetDefinitionRevisionsWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]';
         $request = $this->definitionsGetDefinitionRevisionsRequest($organization, $project, $definitionId, $apiVersion);
 
         try {
@@ -1149,7 +1149,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1197,7 +1197,7 @@ class DefinitionsApi
      */
     public function definitionsGetDefinitionRevisionsAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionRevision[]';
         $request = $this->definitionsGetDefinitionRevisionsRequest($organization, $project, $definitionId, $apiVersion);
 
         return $this->client
@@ -1410,9 +1410,9 @@ class DefinitionsApi
      * @param  int $processType If specified, filters to definitions with the given process type. (optional)
      * @param  string $yamlFilename If specified, filters to YAML definitions that match the given filename. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]
      */
     public function definitionsList($organization, $project, $apiVersion, $name = null, $repositoryId = null, $repositoryType = null, $queryOrder = null, $top = null, $continuationToken = null, $minMetricsTime = null, $definitionIds = null, $path = null, $builtAfter = null, $notBuiltAfter = null, $includeAllProperties = null, $includeLatestBuilds = null, $taskIdFilter = null, $processType = null, $yamlFilename = null)
     {
@@ -1443,13 +1443,13 @@ class DefinitionsApi
      * @param  int $processType If specified, filters to definitions with the given process type. (optional)
      * @param  string $yamlFilename If specified, filters to YAML definitions that match the given filename. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsListWithHttpInfo($organization, $project, $apiVersion, $name = null, $repositoryId = null, $repositoryType = null, $queryOrder = null, $top = null, $continuationToken = null, $minMetricsTime = null, $definitionIds = null, $path = null, $builtAfter = null, $notBuiltAfter = null, $includeAllProperties = null, $includeLatestBuilds = null, $taskIdFilter = null, $processType = null, $yamlFilename = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]';
         $request = $this->definitionsListRequest($organization, $project, $apiVersion, $name, $repositoryId, $repositoryType, $queryOrder, $top, $continuationToken, $minMetricsTime, $definitionIds, $path, $builtAfter, $notBuiltAfter, $includeAllProperties, $includeLatestBuilds, $taskIdFilter, $processType, $yamlFilename);
 
         try {
@@ -1501,7 +1501,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1579,7 +1579,7 @@ class DefinitionsApi
      */
     public function definitionsListAsyncWithHttpInfo($organization, $project, $apiVersion, $name = null, $repositoryId = null, $repositoryType = null, $queryOrder = null, $top = null, $continuationToken = null, $minMetricsTime = null, $definitionIds = null, $path = null, $builtAfter = null, $notBuiltAfter = null, $includeAllProperties = null, $includeLatestBuilds = null, $taskIdFilter = null, $processType = null, $yamlFilename = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionReference[]';
         $request = $this->definitionsListRequest($organization, $project, $apiVersion, $name, $repositoryId, $repositoryType, $queryOrder, $top, $continuationToken, $minMetricsTime, $definitionIds, $path, $builtAfter, $notBuiltAfter, $includeAllProperties, $includeLatestBuilds, $taskIdFilter, $processType, $yamlFilename);
 
         return $this->client
@@ -1843,9 +1843,9 @@ class DefinitionsApi
      * @param  bool $deleted When false, restores a deleted definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition
      */
     public function definitionsRestoreDefinition($organization, $project, $definitionId, $deleted, $apiVersion)
     {
@@ -1862,13 +1862,13 @@ class DefinitionsApi
      * @param  bool $deleted When false, restores a deleted definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsRestoreDefinitionWithHttpInfo($organization, $project, $definitionId, $deleted, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsRestoreDefinitionRequest($organization, $project, $definitionId, $deleted, $apiVersion);
 
         try {
@@ -1920,7 +1920,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1970,7 +1970,7 @@ class DefinitionsApi
      */
     public function definitionsRestoreDefinitionAsyncWithHttpInfo($organization, $project, $definitionId, $deleted, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsRestoreDefinitionRequest($organization, $project, $definitionId, $deleted, $apiVersion);
 
         return $this->client
@@ -2175,16 +2175,16 @@ class DefinitionsApi
      * Operation definitionsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $secretsSourceDefinitionId  (optional)
      * @param  int $secretsSourceDefinitionRevision  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition
      */
     public function definitionsUpdate($organization, $body, $project, $definitionId, $apiVersion, $secretsSourceDefinitionId = null, $secretsSourceDefinitionRevision = null)
     {
@@ -2196,20 +2196,20 @@ class DefinitionsApi
      * Operation definitionsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
      * @param  int $secretsSourceDefinitionId  (optional)
      * @param  int $secretsSourceDefinitionRevision  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function definitionsUpdateWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion, $secretsSourceDefinitionId = null, $secretsSourceDefinitionRevision = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsUpdateRequest($organization, $body, $project, $definitionId, $apiVersion, $secretsSourceDefinitionId, $secretsSourceDefinitionRevision);
 
         try {
@@ -2261,7 +2261,7 @@ class DefinitionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2277,7 +2277,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
@@ -2303,7 +2303,7 @@ class DefinitionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)
@@ -2315,7 +2315,7 @@ class DefinitionsApi
      */
     public function definitionsUpdateAsyncWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion, $secretsSourceDefinitionId = null, $secretsSourceDefinitionRevision = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition';
         $request = $this->definitionsUpdateRequest($organization, $body, $project, $definitionId, $apiVersion, $secretsSourceDefinitionId, $secretsSourceDefinitionRevision);
 
         return $this->client
@@ -2359,7 +2359,7 @@ class DefinitionsApi
      * Create request for operation 'definitionsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $body The new version of the definition. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId The ID of the definition. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.7&#39; to use this version of the api. (required)

@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **state** | **string** | Project state. | [optional] 
 **url** | **string** | Url to the full version of the object. | [optional] 
 **visibility** | **string** | Project visibility. | [optional] 
-**links** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks**](ReferenceLinks.md) | The links to other objects related to this object. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks**](ReferenceLinks.md) | The links to other objects related to this object. | [optional] 
 **capabilities** | [**map[string,map[string,string]]**](map.md) | Set of capabilities this project has (such as process template &amp; version control). | [optional] 
-**defaultTeam** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef**](WebApiTeamRef.md) | The shallow ref to the default team. | [optional] 
+**defaultTeam** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef**](WebApiTeamRef.md) | The shallow ref to the default team. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

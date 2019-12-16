@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\BacklogsApi
+# FrankHouweling\AzureDevOpsClient\Work\BacklogsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **backlogsGetBacklog**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration backlogsGetBacklog($organization, $project, $team, $id, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration backlogsGetBacklog($organization, $project, $team, $id, $apiVersion)
 
 
 
@@ -22,9 +22,9 @@ Get a backlog level
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BacklogsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BacklogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration**](../Model/BacklogLevelConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration**](../Model/BacklogLevelConfiguration.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **backlogsGetBacklogLevelWorkItems**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems backlogsGetBacklogLevelWorkItems($organization, $project, $team, $backlogId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems backlogsGetBacklogLevelWorkItems($organization, $project, $team, $backlogId, $apiVersion)
 
 
 
@@ -83,9 +83,9 @@ Get a list of work items within a backlog level
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BacklogsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BacklogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems**](../Model/BacklogLevelWorkItems.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelWorkItems**](../Model/BacklogLevelWorkItems.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **backlogsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[] backlogsList($organization, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[] backlogsList($organization, $project, $team, $apiVersion)
 
 
 
@@ -144,9 +144,9 @@ List all backlog levels
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BacklogsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BacklogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]**](../Model/BacklogLevelConfiguration.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BacklogLevelConfiguration[]**](../Model/BacklogLevelConfiguration.md)
 
 ### Authorization
 

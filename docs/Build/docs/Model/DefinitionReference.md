@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **id** | **int** | The ID of the referenced definition. | [optional] 
 **name** | **string** | The name of the referenced definition. | [optional] 
 **path** | **string** | The folder path of the definition. | [optional] 
-**project** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference**](TeamProjectReference.md) | A reference to the project. | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference**](TeamProjectReference.md) | A reference to the project. | [optional] 
 **queueStatus** | **string** | A value that indicates whether builds can be queued against this definition. | [optional] 
 **revision** | **int** | The definition revision number. | [optional] 
 **type** | **string** | The type of the definition. | [optional] 

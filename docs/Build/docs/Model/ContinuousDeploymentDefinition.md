@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**connectedService** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef**](WebApiConnectedServiceRef.md) | The connected service associated with the continuous deployment | [optional] 
-**definition** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlDefinitionReference**](XamlDefinitionReference.md) | The definition associated with the continuous deployment | [optional] 
+**connectedService** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\WebApiConnectedServiceRef**](WebApiConnectedServiceRef.md) | The connected service associated with the continuous deployment | [optional] 
+**definition** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\XamlDefinitionReference**](XamlDefinitionReference.md) | The definition associated with the continuous deployment | [optional] 
 **gitBranch** | **string** |  | [optional] 
 **hostedServiceName** | **string** |  | [optional] 
-**project** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
 **repositoryId** | **string** |  | [optional] 
 **storageAccountName** | **string** |  | [optional] 
 **subscriptionId** | **string** |  | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Symbol\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * JsonBlobIdentifierWithBlocks Class Doc Comment
  *
  * @category Class
  * @description BlobIdentifier with block hashes formatted to be deserialzied for symbol service.
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class JsonBlobIdentifierWithBlocks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'blockHashes' => '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[]',
+        'blockHashes' => '\FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[]',
         'identifierValue' => 'string[]'
     ];
 
@@ -214,7 +214,7 @@ class JsonBlobIdentifierWithBlocks implements ModelInterface, ArrayAccess
     /**
      * Gets blockHashes
      *
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[]
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[]
      */
     public function getBlockHashes()
     {
@@ -224,7 +224,7 @@ class JsonBlobIdentifierWithBlocks implements ModelInterface, ArrayAccess
     /**
      * Sets blockHashes
      *
-     * @param \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[] $blockHashes List of blob block hashes.
+     * @param \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobBlockHash[] $blockHashes List of blob block hashes.
      *
      * @return $this
      */

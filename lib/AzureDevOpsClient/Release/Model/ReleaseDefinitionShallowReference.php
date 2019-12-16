@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionShallowReference Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ReleaseDefinitionShallowReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks',
         'id' => 'int',
         'name' => 'string',
         'path' => 'string',
-        'projectReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
+        'projectReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
         'url' => 'string'
     ];
 
@@ -238,7 +238,7 @@ class ReleaseDefinitionShallowReference implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -248,7 +248,7 @@ class ReleaseDefinitionShallowReference implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets the links to related resources, APIs, and views for the release definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets the links to related resources, APIs, and views for the release definition.
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class ReleaseDefinitionShallowReference implements ModelInterface, ArrayAccess
     /**
      * Gets projectReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProjectReference()
     {
@@ -344,7 +344,7 @@ class ReleaseDefinitionShallowReference implements ModelInterface, ArrayAccess
     /**
      * Sets projectReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
      *
      * @return $this
      */

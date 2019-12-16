@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultHistoryForGroup Class Doc Comment
  *
  * @category Class
  * @description List of test results filtered on the basis of GroupByValue
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'displayName' => 'string',
         'groupByValue' => 'string',
-        'results' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[]'
+        'results' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[]
      */
     public function getResults()
     {
@@ -278,7 +278,7 @@ class TestResultHistoryForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[] $results List of results for GroupByValue
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[] $results List of results for GroupByValue
      *
      * @return $this
      */

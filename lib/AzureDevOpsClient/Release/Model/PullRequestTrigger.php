@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * PullRequestTrigger Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,9 +60,9 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'triggerType' => 'string',
         'artifactAlias' => 'string',
-        'pullRequestConfiguration' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestConfiguration',
+        'pullRequestConfiguration' => '\FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestConfiguration',
         'statusPolicyName' => 'string',
-        'triggerConditions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestFilter[]'
+        'triggerConditions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestFilter[]'
     ];
 
     /**
@@ -322,7 +322,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets pullRequestConfiguration
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestConfiguration
      */
     public function getPullRequestConfiguration()
     {
@@ -332,7 +332,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets pullRequestConfiguration
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestConfiguration $pullRequestConfiguration Code reference details of pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestConfiguration $pullRequestConfiguration Code reference details of pull request.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets triggerConditions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestFilter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestFilter[]
      */
     public function getTriggerConditions()
     {
@@ -380,7 +380,7 @@ class PullRequestTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets triggerConditions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PullRequestFilter[] $triggerConditions List of filters applied while trigger.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\PullRequestFilter[] $triggerConditions List of filters applied while trigger.
      *
      * @return $this
      */

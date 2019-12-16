@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * AgentDeploymentInput Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactsDownloadInput' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput',
-        'demands' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Demand[]',
+        'artifactsDownloadInput' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput',
+        'demands' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Demand[]',
         'enableAccessToken' => 'bool',
         'queueId' => 'int',
         'skipArtifactsDownload' => 'bool',
@@ -67,9 +67,9 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
         'jobCancelTimeoutInMinutes' => 'int',
         'overrideInputs' => 'map[string,string]',
         'timeoutInMinutes' => 'int',
-        'agentSpecification' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\AgentSpecification',
+        'agentSpecification' => '\FrankHouweling\AzureDevOpsClient\Release\Model\AgentSpecification',
         'imageId' => 'int',
-        'parallelExecution' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput'
+        'parallelExecution' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput'
     ];
 
     /**
@@ -274,7 +274,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Gets artifactsDownloadInput
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput
      */
     public function getArtifactsDownloadInput()
     {
@@ -284,7 +284,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Sets artifactsDownloadInput
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput $artifactsDownloadInput Artifacts that downloaded during job execution.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput $artifactsDownloadInput Artifacts that downloaded during job execution.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Gets demands
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Demand[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Demand[]
      */
     public function getDemands()
     {
@@ -308,7 +308,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Sets demands
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Demand[] $demands List demands that needs to meet to execute the job.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Demand[] $demands List demands that needs to meet to execute the job.
      *
      * @return $this
      */
@@ -490,7 +490,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Gets agentSpecification
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\AgentSpecification
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\AgentSpecification
      */
     public function getAgentSpecification()
     {
@@ -500,7 +500,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Sets agentSpecification
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\AgentSpecification $agentSpecification Specification for an agent on which a job gets executed.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\AgentSpecification $agentSpecification Specification for an agent on which a job gets executed.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Gets parallelExecution
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput
      */
     public function getParallelExecution()
     {
@@ -548,7 +548,7 @@ class AgentDeploymentInput implements ModelInterface, ArrayAccess
     /**
      * Sets parallelExecution
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ExecutionInput $parallelExecution Gets or sets the parallel execution input.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ExecutionInput $parallelExecution Gets or sets the parallel execution input.
      *
      * @return $this
      */

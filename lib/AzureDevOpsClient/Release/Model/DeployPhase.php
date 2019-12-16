@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeployPhase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class DeployPhase implements ModelInterface, ArrayAccess
         'phaseType' => 'string',
         'rank' => 'int',
         'refName' => 'string',
-        'workflowTasks' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[]'
+        'workflowTasks' => '\FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[]'
     ];
 
     /**
@@ -366,7 +366,7 @@ class DeployPhase implements ModelInterface, ArrayAccess
     /**
      * Gets workflowTasks
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[]
      */
     public function getWorkflowTasks()
     {
@@ -376,7 +376,7 @@ class DeployPhase implements ModelInterface, ArrayAccess
     /**
      * Sets workflowTasks
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[] $workflowTasks Gets and sets the workflow tasks for the deploy phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[] $workflowTasks Gets and sets the workflow tasks for the deploy phase.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestPlansWithSelection Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestPlansWithSelection implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'lastSelectedPlan' => 'int',
         'lastSelectedSuite' => 'int',
-        'plans' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan[]'
+        'plans' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TestPlansWithSelection implements ModelInterface, ArrayAccess
     /**
      * Gets plans
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan[]
      */
     public function getPlans()
     {
@@ -278,7 +278,7 @@ class TestPlansWithSelection implements ModelInterface, ArrayAccess
     /**
      * Sets plans
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPlan[] $plans plans
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestPlan[] $plans plans
      *
      * @return $this
      */

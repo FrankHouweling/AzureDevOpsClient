@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ProjectRetentionSetting Class Doc Comment
  *
  * @category Class
  * @description Contains the settings for the retention rules.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'purgeArtifacts' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting',
-        'purgePullRequestRuns' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting',
-        'purgeRuns' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting',
-        'retainRunsPerProtectedBranch' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting'
+        'purgeArtifacts' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting',
+        'purgePullRequestRuns' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting',
+        'purgeRuns' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting',
+        'retainRunsPerProtectedBranch' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting'
     ];
 
     /**
@@ -226,7 +226,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Gets purgeArtifacts
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting
      */
     public function getPurgeArtifacts()
     {
@@ -236,7 +236,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Sets purgeArtifacts
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting $purgeArtifacts The rules for artifact retention. Artifacts can not live longer than a run, so will be overridden by a shorter run purge setting.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting $purgeArtifacts The rules for artifact retention. Artifacts can not live longer than a run, so will be overridden by a shorter run purge setting.
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Gets purgePullRequestRuns
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting
      */
     public function getPurgePullRequestRuns()
     {
@@ -260,7 +260,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Sets purgePullRequestRuns
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting $purgePullRequestRuns The rules for pull request pipeline run retention.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting $purgePullRequestRuns The rules for pull request pipeline run retention.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Gets purgeRuns
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting
      */
     public function getPurgeRuns()
     {
@@ -284,7 +284,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Sets purgeRuns
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting $purgeRuns The rules for pipeline run retention.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting $purgeRuns The rules for pipeline run retention.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Gets retainRunsPerProtectedBranch
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting
      */
     public function getRetainRunsPerProtectedBranch()
     {
@@ -308,7 +308,7 @@ class ProjectRetentionSetting implements ModelInterface, ArrayAccess
     /**
      * Sets retainRunsPerProtectedBranch
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionSetting $retainRunsPerProtectedBranch The rules for retaining runs per protected branch.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionSetting $retainRunsPerProtectedBranch The rules for retaining runs per protected branch.
      *
      * @return $this
      */

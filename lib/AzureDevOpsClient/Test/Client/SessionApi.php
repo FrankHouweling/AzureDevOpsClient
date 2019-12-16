@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * SessionApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class SessionApi
      * Operation sessionCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession
      */
     public function sessionCreate($organization, $body, $project, $team, $apiVersion)
     {
@@ -110,18 +110,18 @@ class SessionApi
      * Operation sessionCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession, HTTP status code, HTTP response headers (array of strings)
      */
     public function sessionCreateWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession';
         $request = $this->sessionCreateRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class SessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class SessionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class SessionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class SessionApi
      */
     public function sessionCreateAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession';
         $request = $this->sessionCreateRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class SessionApi
      * Create request for operation 'sessionCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -436,9 +436,9 @@ class SessionApi
      * @param  string $source Source of the test session. (optional)
      * @param  bool $includeOnlyCompletedSessions If true, it returns test sessions in completed state. Otherwise, it returns test sessions for all states (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[]
      */
     public function sessionList($organization, $project, $team, $apiVersion, $period = null, $allSessions = null, $includeAllProperties = null, $source = null, $includeOnlyCompletedSessions = null)
     {
@@ -459,13 +459,13 @@ class SessionApi
      * @param  string $source Source of the test session. (optional)
      * @param  bool $includeOnlyCompletedSessions If true, it returns test sessions in completed state. Otherwise, it returns test sessions for all states (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[], HTTP status code, HTTP response headers (array of strings)
      */
     public function sessionListWithHttpInfo($organization, $project, $team, $apiVersion, $period = null, $allSessions = null, $includeAllProperties = null, $source = null, $includeOnlyCompletedSessions = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[]';
         $request = $this->sessionListRequest($organization, $project, $team, $apiVersion, $period, $allSessions, $includeAllProperties, $source, $includeOnlyCompletedSessions);
 
         try {
@@ -517,7 +517,7 @@ class SessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -575,7 +575,7 @@ class SessionApi
      */
     public function sessionListAsyncWithHttpInfo($organization, $project, $team, $apiVersion, $period = null, $allSessions = null, $includeAllProperties = null, $source = null, $includeOnlyCompletedSessions = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession[]';
         $request = $this->sessionListRequest($organization, $project, $team, $apiVersion, $period, $allSessions, $includeAllProperties, $source, $includeOnlyCompletedSessions);
 
         return $this->client
@@ -794,14 +794,14 @@ class SessionApi
      * Operation sessionUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession
      */
     public function sessionUpdate($organization, $body, $project, $team, $apiVersion)
     {
@@ -813,18 +813,18 @@ class SessionApi
      * Operation sessionUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession, HTTP status code, HTTP response headers (array of strings)
      */
     public function sessionUpdateWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession';
         $request = $this->sessionUpdateRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -876,7 +876,7 @@ class SessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class SessionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -916,7 +916,7 @@ class SessionApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -926,7 +926,7 @@ class SessionApi
      */
     public function sessionUpdateAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSession';
         $request = $this->sessionUpdateRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -970,7 +970,7 @@ class SessionApi
      * Create request for operation 'sessionUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestSession $body Test session details for update (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestActionResultModel Class Doc Comment
  *
  * @category Class
  * @description Represents a test step result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
         'startedDate' => '\DateTime',
         'actionPath' => 'string',
         'iterationId' => 'int',
-        'sharedStepModel' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\SharedStepModel',
+        'sharedStepModel' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\SharedStepModel',
         'stepIdentifier' => 'string',
         'url' => 'string'
     ];
@@ -460,7 +460,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
     /**
      * Gets sharedStepModel
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\SharedStepModel
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\SharedStepModel
      */
     public function getSharedStepModel()
     {
@@ -470,7 +470,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
     /**
      * Sets sharedStepModel
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\SharedStepModel $sharedStepModel Reference to shared step workitem.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\SharedStepModel $sharedStepModel Reference to shared step workitem.
      *
      * @return $this
      */

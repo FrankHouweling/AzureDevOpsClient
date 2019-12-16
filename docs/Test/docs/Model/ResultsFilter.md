@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **testCaseReferenceIds** | **int[]** |  | [optional] 
 **testPlanId** | **int** |  | [optional] 
 **testPointIds** | **int[]** |  | [optional] 
-**testResultsContext** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext**](TestResultsContext.md) |  | [optional] 
+**testResultsContext** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext**](TestResultsContext.md) |  | [optional] 
 **trendDays** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

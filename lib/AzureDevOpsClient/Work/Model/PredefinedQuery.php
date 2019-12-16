@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * PredefinedQuery Class Doc Comment
  *
  * @category Class
  * @description Represents a single pre-defined query.
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PredefinedQuery implements ModelInterface, ArrayAccess
         'hasMore' => 'bool',
         'id' => 'string',
         'name' => 'string',
-        'results' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItem[]',
+        'results' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItem[]',
         'url' => 'string',
         'webUrl' => 'string'
     ];
@@ -310,7 +310,7 @@ class PredefinedQuery implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItem[]
      */
     public function getResults()
     {
@@ -320,7 +320,7 @@ class PredefinedQuery implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItem[] $results The results of the query.  This will be a set of WorkItem objects with only the 'id' set.  The client is responsible for paging in the data as needed.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItem[] $results The results of the query.  This will be a set of WorkItem objects with only the 'id' set.  The client is responsible for paging in the data as needed.
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Client;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Notification\ApiException;
-use AzureDevOpsClient\Notification\Configuration;
-use AzureDevOpsClient\Notification\HeaderSelector;
-use AzureDevOpsClient\Notification\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Notification\ApiException;
+use FrankHouweling\AzureDevOpsClient\Notification\Configuration;
+use FrankHouweling\AzureDevOpsClient\Notification\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,13 +90,13 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsCreate
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription
      */
     public function subscriptionsCreate($body, $organization, $apiVersion)
     {
@@ -107,17 +107,17 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsCreateWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsCreateWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsCreateRequest($body, $organization, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -206,7 +206,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -215,7 +215,7 @@ class SubscriptionsApi
      */
     public function subscriptionsCreateAsyncWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsCreateRequest($body, $organization, $apiVersion);
 
         return $this->client
@@ -258,7 +258,7 @@ class SubscriptionsApi
     /**
      * Create request for operation 'subscriptionsCreate'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionCreateParameters $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -392,7 +392,7 @@ class SubscriptionsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -408,7 +408,7 @@ class SubscriptionsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -659,9 +659,9 @@ class SubscriptionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $queryFlags  (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription
      */
     public function subscriptionsGet($subscriptionId, $organization, $apiVersion, $queryFlags = null)
     {
@@ -677,13 +677,13 @@ class SubscriptionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $queryFlags  (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsGetWithHttpInfo($subscriptionId, $organization, $apiVersion, $queryFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsGetRequest($subscriptionId, $organization, $apiVersion, $queryFlags);
 
         try {
@@ -735,7 +735,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class SubscriptionsApi
      */
     public function subscriptionsGetAsyncWithHttpInfo($subscriptionId, $organization, $apiVersion, $queryFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsGetRequest($subscriptionId, $organization, $apiVersion, $queryFlags);
 
         return $this->client
@@ -969,9 +969,9 @@ class SubscriptionsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]
      */
     public function subscriptionsGetSubscriptionTemplates($organization, $apiVersion)
     {
@@ -985,13 +985,13 @@ class SubscriptionsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsGetSubscriptionTemplatesWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]';
         $request = $this->subscriptionsGetSubscriptionTemplatesRequest($organization, $apiVersion);
 
         try {
@@ -1043,7 +1043,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1087,7 +1087,7 @@ class SubscriptionsApi
      */
     public function subscriptionsGetSubscriptionTemplatesAsyncWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionTemplate[]';
         $request = $this->subscriptionsGetSubscriptionTemplatesRequest($organization, $apiVersion);
 
         return $this->client
@@ -1256,9 +1256,9 @@ class SubscriptionsApi
      * @param  string $ids List of subscription IDs (optional)
      * @param  string $queryFlags  (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]
      */
     public function subscriptionsList($organization, $apiVersion, $targetId = null, $ids = null, $queryFlags = null)
     {
@@ -1275,13 +1275,13 @@ class SubscriptionsApi
      * @param  string $ids List of subscription IDs (optional)
      * @param  string $queryFlags  (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[], HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsListWithHttpInfo($organization, $apiVersion, $targetId = null, $ids = null, $queryFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
         $request = $this->subscriptionsListRequest($organization, $apiVersion, $targetId, $ids, $queryFlags);
 
         try {
@@ -1333,7 +1333,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,7 +1383,7 @@ class SubscriptionsApi
      */
     public function subscriptionsListAsyncWithHttpInfo($organization, $apiVersion, $targetId = null, $ids = null, $queryFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
         $request = $this->subscriptionsListRequest($organization, $apiVersion, $targetId, $ids, $queryFlags);
 
         return $this->client
@@ -1561,13 +1561,13 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsQuery
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]
      */
     public function subscriptionsQuery($body, $organization, $apiVersion)
     {
@@ -1578,17 +1578,17 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsQueryWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[], HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsQueryWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
         $request = $this->subscriptionsQueryRequest($body, $organization, $apiVersion);
 
         try {
@@ -1640,7 +1640,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1655,7 +1655,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -1677,7 +1677,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -1686,7 +1686,7 @@ class SubscriptionsApi
      */
     public function subscriptionsQueryAsyncWithHttpInfo($body, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription[]';
         $request = $this->subscriptionsQueryRequest($body, $organization, $apiVersion);
 
         return $this->client
@@ -1729,7 +1729,7 @@ class SubscriptionsApi
     /**
      * Create request for operation 'subscriptionsQuery'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQuery $body  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -1859,14 +1859,14 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsUpdate
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription
      */
     public function subscriptionsUpdate($body, $subscriptionId, $organization, $apiVersion)
     {
@@ -1877,18 +1877,18 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsUpdateWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsUpdateWithHttpInfo($body, $subscriptionId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsUpdateRequest($body, $subscriptionId, $organization, $apiVersion);
 
         try {
@@ -1940,7 +1940,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1955,7 +1955,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1978,7 +1978,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1988,7 +1988,7 @@ class SubscriptionsApi
      */
     public function subscriptionsUpdateAsyncWithHttpInfo($body, $subscriptionId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscription';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscription';
         $request = $this->subscriptionsUpdateRequest($body, $subscriptionId, $organization, $apiVersion);
 
         return $this->client
@@ -2031,7 +2031,7 @@ class SubscriptionsApi
     /**
      * Create request for operation 'subscriptionsUpdate'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationSubscriptionUpdateParameters $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -2176,15 +2176,15 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsUpdateSubscriptionUserSettings
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $userId ID of the user (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings
      */
     public function subscriptionsUpdateSubscriptionUserSettings($body, $subscriptionId, $userId, $organization, $apiVersion)
     {
@@ -2195,19 +2195,19 @@ class SubscriptionsApi
     /**
      * Operation subscriptionsUpdateSubscriptionUserSettingsWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $userId ID of the user (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function subscriptionsUpdateSubscriptionUserSettingsWithHttpInfo($body, $subscriptionId, $userId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings';
         $request = $this->subscriptionsUpdateSubscriptionUserSettingsRequest($body, $subscriptionId, $userId, $organization, $apiVersion);
 
         try {
@@ -2259,7 +2259,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2274,7 +2274,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $userId ID of the user (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
@@ -2298,7 +2298,7 @@ class SubscriptionsApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $userId ID of the user (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
@@ -2309,7 +2309,7 @@ class SubscriptionsApi
      */
     public function subscriptionsUpdateSubscriptionUserSettingsAsyncWithHttpInfo($body, $subscriptionId, $userId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings';
         $request = $this->subscriptionsUpdateSubscriptionUserSettingsRequest($body, $subscriptionId, $userId, $organization, $apiVersion);
 
         return $this->client
@@ -2352,7 +2352,7 @@ class SubscriptionsApi
     /**
      * Create request for operation 'subscriptionsUpdateSubscriptionUserSettings'
      *
-     * @param  \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $body  (required)
      * @param  string $subscriptionId  (required)
      * @param  string $userId ID of the user (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)

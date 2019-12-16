@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * PublishedExtension Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,17 +64,17 @@ class PublishedExtension implements ModelInterface, ArrayAccess
         'extensionId' => 'string',
         'extensionName' => 'string',
         'flags' => 'string',
-        'installationTargets' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[]',
+        'installationTargets' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[]',
         'lastUpdated' => '\DateTime',
         'longDescription' => 'string',
         'publishedDate' => '\DateTime',
-        'publisher' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts',
+        'publisher' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts',
         'releaseDate' => '\DateTime',
-        'sharedWith' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[]',
+        'sharedWith' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[]',
         'shortDescription' => 'string',
-        'statistics' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[]',
+        'statistics' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[]',
         'tags' => 'string[]',
-        'versions' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[]'
+        'versions' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[]'
     ];
 
     /**
@@ -540,7 +540,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets installationTargets
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[]
      */
     public function getInstallationTargets()
     {
@@ -550,7 +550,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets installationTargets
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[] $installationTargets installationTargets
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstallationTarget[] $installationTargets installationTargets
      *
      * @return $this
      */
@@ -636,7 +636,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets publisher
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts
      */
     public function getPublisher()
     {
@@ -646,7 +646,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets publisher
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts $publisher publisher
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublisherFacts $publisher publisher
      *
      * @return $this
      */
@@ -684,7 +684,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets sharedWith
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[]
      */
     public function getSharedWith()
     {
@@ -694,7 +694,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets sharedWith
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[] $sharedWith sharedWith
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionShare[] $sharedWith sharedWith
      *
      * @return $this
      */
@@ -732,7 +732,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets statistics
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[]
      */
     public function getStatistics()
     {
@@ -742,7 +742,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets statistics
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[] $statistics statistics
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionStatistic[] $statistics statistics
      *
      * @return $this
      */
@@ -780,7 +780,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[]
      */
     public function getVersions()
     {
@@ -790,7 +790,7 @@ class PublishedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[] $versions versions
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionVersion[] $versions versions
      *
      * @return $this
      */

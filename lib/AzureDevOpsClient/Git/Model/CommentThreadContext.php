@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * CommentThreadContext Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'filePath' => 'string',
-        'leftFileEnd' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'leftFileStart' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'rightFileEnd' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'rightFileStart' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition'
+        'leftFileEnd' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'leftFileStart' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'rightFileEnd' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'rightFileStart' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition'
     ];
 
     /**
@@ -256,7 +256,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets leftFileEnd
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getLeftFileEnd()
     {
@@ -266,7 +266,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets leftFileEnd
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $leftFileEnd Position of last character of the thread's span in left file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $leftFileEnd Position of last character of the thread's span in left file.
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets leftFileStart
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getLeftFileStart()
     {
@@ -290,7 +290,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets leftFileStart
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $leftFileStart Position of first character of the thread's span in left file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $leftFileStart Position of first character of the thread's span in left file.
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets rightFileEnd
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getRightFileEnd()
     {
@@ -314,7 +314,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets rightFileEnd
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $rightFileEnd Position of last character of the thread's span in right file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $rightFileEnd Position of last character of the thread's span in right file.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Gets rightFileStart
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getRightFileStart()
     {
@@ -338,7 +338,7 @@ class CommentThreadContext implements ModelInterface, ArrayAccess
     /**
      * Sets rightFileStart
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $rightFileStart Position of first character of the thread's span in right file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $rightFileStart Position of first character of the thread's span in right file.
      *
      * @return $this
      */

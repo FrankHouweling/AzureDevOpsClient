@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **url** | **string** |  | [optional] 
-**comments** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\Comment[]**](Comment.md) | List of comments in the current batch. | [optional] 
+**comments** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\Comment[]**](Comment.md) | List of comments in the current batch. | [optional] 
 **continuationToken** | **string** | A string token that can be used to retrieving next page of comments if available. Otherwise null. | [optional] 
 **count** | **int** | The count of comments in the current batch. | [optional] 
 **nextPage** | **string** | Uri to the next page of comments if it is available. Otherwise null. | [optional] 

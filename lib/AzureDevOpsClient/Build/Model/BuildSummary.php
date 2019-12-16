@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildSummary Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class BuildSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference',
         'finishTime' => '\DateTime',
         'keepForever' => 'bool',
         'quality' => 'string',
         'reason' => 'string',
-        'requestedFor' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'requestedFor' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'startTime' => '\DateTime',
         'status' => 'string'
     ];
@@ -330,7 +330,7 @@ class BuildSummary implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference
      */
     public function getBuild()
     {
@@ -340,7 +340,7 @@ class BuildSummary implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference $build build
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference $build build
      *
      * @return $this
      */
@@ -459,7 +459,7 @@ class BuildSummary implements ModelInterface, ArrayAccess
     /**
      * Gets requestedFor
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getRequestedFor()
     {
@@ -469,7 +469,7 @@ class BuildSummary implements ModelInterface, ArrayAccess
     /**
      * Sets requestedFor
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor requestedFor
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor requestedFor
      *
      * @return $this
      */

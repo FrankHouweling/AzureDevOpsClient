@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiPage Class Doc Comment
  *
  * @category Class
  * @description Defines a page in a wiki.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class WikiPage implements ModelInterface, ArrayAccess
         'order' => 'int',
         'path' => 'string',
         'remoteUrl' => 'string',
-        'subPages' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage[]',
+        'subPages' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage[]',
         'url' => 'string'
     ];
 
@@ -454,7 +454,7 @@ class WikiPage implements ModelInterface, ArrayAccess
     /**
      * Gets subPages
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage[]
      */
     public function getSubPages()
     {
@@ -464,7 +464,7 @@ class WikiPage implements ModelInterface, ArrayAccess
     /**
      * Sets subPages
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage[] $subPages List of subpages of the current page.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage[] $subPages List of subpages of the current page.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPointResults Class Doc Comment
  *
  * @category Class
  * @description Test Point Results
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestPointResults implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'failureType' => 'string',
         'lastResolutionState' => 'string',
-        'lastResultDetails' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\LastResultDetails',
+        'lastResultDetails' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\LastResultDetails',
         'lastResultId' => 'int',
         'lastResultState' => 'string',
         'lastRunBuildNumber' => 'string',
@@ -503,7 +503,7 @@ class TestPointResults implements ModelInterface, ArrayAccess
     /**
      * Gets lastResultDetails
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\LastResultDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\LastResultDetails
      */
     public function getLastResultDetails()
     {
@@ -513,7 +513,7 @@ class TestPointResults implements ModelInterface, ArrayAccess
     /**
      * Sets lastResultDetails
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\LastResultDetails $lastResultDetails Last Result Details for the Test Point
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\LastResultDetails $lastResultDetails Last Result Details for the Test Point
      *
      * @return $this
      */

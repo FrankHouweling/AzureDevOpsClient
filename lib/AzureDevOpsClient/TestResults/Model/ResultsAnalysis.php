@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * ResultsAnalysis Class Doc Comment
  *
  * @category Class
  * @description Results insights for runs with state completed and NeedInvestigation.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'previousContext' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference',
-        'resultsDifference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference',
-        'testFailuresAnalysis' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis'
+        'previousContext' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference',
+        'resultsDifference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference',
+        'testFailuresAnalysis' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets previousContext
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference
      */
     public function getPreviousContext()
     {
@@ -230,7 +230,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets previousContext
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference $previousContext Reference of pipeline instance from which to compare the results.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference $previousContext Reference of pipeline instance from which to compare the results.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets resultsDifference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference
      */
     public function getResultsDifference()
     {
@@ -254,7 +254,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets resultsDifference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference $resultsDifference Increase/Decrease in counts of results for a different outcome with respect to PreviousContext.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsDifference $resultsDifference Increase/Decrease in counts of results for a different outcome with respect to PreviousContext.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets testFailuresAnalysis
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis
      */
     public function getTestFailuresAnalysis()
     {
@@ -278,7 +278,7 @@ class ResultsAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets testFailuresAnalysis
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis $testFailuresAnalysis Failure analysis of results with respect to PreviousContext
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultFailuresAnalysis $testFailuresAnalysis Failure analysis of results with respect to PreviousContext
      *
      * @return $this
      */

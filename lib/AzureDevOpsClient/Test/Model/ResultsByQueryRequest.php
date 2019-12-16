@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultsByQueryRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ResultsByQueryRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageSize' => 'int',
-        'query' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsStoreQuery'
+        'query' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ResultsStoreQuery'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ResultsByQueryRequest implements ModelInterface, ArrayAccess
     /**
      * Gets query
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsStoreQuery
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ResultsStoreQuery
      */
     public function getQuery()
     {
@@ -248,7 +248,7 @@ class ResultsByQueryRequest implements ModelInterface, ArrayAccess
     /**
      * Sets query
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ResultsStoreQuery $query query
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ResultsStoreQuery $query query
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * OAuthConfiguration Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,11 +60,11 @@ class OAuthConfiguration implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'clientId' => 'string',
         'clientSecret' => 'string',
-        'createdBy' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
         'createdOn' => '\DateTime',
         'endpointType' => 'string',
         'id' => 'string',
-        'modifiedBy' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
         'url' => 'string'
@@ -310,7 +310,7 @@ class OAuthConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -320,7 +320,7 @@ class OAuthConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $createdBy Gets or sets the identity who created the config.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $createdBy Gets or sets the identity who created the config.
      *
      * @return $this
      */
@@ -406,7 +406,7 @@ class OAuthConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -416,7 +416,7 @@ class OAuthConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $modifiedBy Gets or sets the identity who modified the config.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\IdentityRef $modifiedBy Gets or sets the identity who modified the config.
      *
      * @return $this
      */

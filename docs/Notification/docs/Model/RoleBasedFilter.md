@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**criteria** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel**](ExpressionFilterModel.md) |  | [optional] 
+**criteria** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel**](ExpressionFilterModel.md) |  | [optional] 
 **type** | **string** |  | [optional] 
 **eventType** | **string** |  | [optional] 
 **exclusions** | **string[]** |  | [optional] 

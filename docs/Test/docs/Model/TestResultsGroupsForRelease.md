@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fields** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]**](FieldDetailsForTestResults.md) | The group by results | [optional] 
+**fields** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]**](FieldDetailsForTestResults.md) | The group by results | [optional] 
 **releaseEnvId** | **int** | Release Environment Id for which groupby result is fetched. | [optional] 
 **releaseId** | **int** | ReleaseId for which groupby result is fetched. | [optional] 
 

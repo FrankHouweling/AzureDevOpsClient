@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestReviewersApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestReviewersApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestReviewersCreatePullRequestReviewer**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersCreatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersCreatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
 
 
 
@@ -26,16 +26,16 @@ Add a reviewer to a pull request or cast a vote.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote | Reviewer's vote.<br />If the reviewer's ID is included here, it must match the reviewerID parameter.<br />Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote(); // \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote | Reviewer's vote.<br />If the reviewer's ID is included here, it must match the reviewerID parameter.<br />Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $reviewerId = "reviewerId_example"; // string | ID of the reviewer.
@@ -56,7 +56,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)| Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)| Reviewer&#39;s vote.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter.&lt;br /&gt;Reviewers can set their own vote with this method.  When adding other reviewers, vote must be set to zero. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **reviewerId** | **string**| ID of the reviewer. |
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestReviewersCreatePullRequestReviewers**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] pullRequestReviewersCreatePullRequestReviewers($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] pullRequestReviewersCreatePullRequestReviewers($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -91,16 +91,16 @@ Add reviewers to a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef()); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[] | Reviewers to add to the pull request.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef()); // \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[] | Reviewers to add to the pull request.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $project = "project_example"; // string | Project ID or project name
@@ -120,7 +120,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef[]**](../Model/IdentityRef.md)| Reviewers to add to the pull request. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef[]**](../Model/IdentityRef.md)| Reviewers to add to the pull request. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **project** | **string**| Project ID or project name |
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)
 
 ### Authorization
 
@@ -154,9 +154,9 @@ Remove a reviewer from a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestReviewersGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersGet($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersGet($organization, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
 
 
 
@@ -216,9 +216,9 @@ Retrieve information about a particular reviewer on a pull request
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestReviewersList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] pullRequestReviewersList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] pullRequestReviewersList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -279,9 +279,9 @@ Retrieve the reviewers for a pull request
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)
 
 ### Authorization
 
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestReviewersUpdatePullRequestReviewer**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersUpdatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote pullRequestReviewersUpdatePullRequestReviewer($organization, $body, $repositoryId, $pullRequestId, $reviewerId, $project, $apiVersion)
 
 
 
@@ -340,16 +340,16 @@ Edit a reviewer entry. These fields are patchable: isFlagged
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote | Reviewer data.<br />If the reviewer's ID is included here, it must match the reviewerID parameter.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote(); // \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote | Reviewer data.<br />If the reviewer's ID is included here, it must match the reviewerID parameter.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $reviewerId = "reviewerId_example"; // string | ID of the reviewer.
@@ -370,7 +370,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)| Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)| Reviewer data.&lt;br /&gt;If the reviewer&#39;s ID is included here, it must match the reviewerID parameter. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **reviewerId** | **string**| ID of the reviewer. |
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote**](../Model/IdentityRefWithVote.md)
 
 ### Authorization
 
@@ -405,16 +405,16 @@ Reset the votes of multiple reviewers on a pull request.  NOTE: This endpoint on
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestReviewersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote()); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] | IDs of the reviewers whose votes will be reset to zero
+$body = array(new \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote()); // \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] | IDs of the reviewers whose votes will be reset to zero
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request
 $project = "project_example"; // string | Project ID or project name
@@ -433,7 +433,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)| IDs of the reviewers whose votes will be reset to zero |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]**](../Model/IdentityRefWithVote.md)| IDs of the reviewers whose votes will be reset to zero |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request |
  **project** | **string**| Project ID or project name |

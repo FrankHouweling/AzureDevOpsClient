@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationSubscriptionCreateParameters Class Doc Comment
  *
  * @category Class
  * @description Parameters for creating a new subscription. A subscription defines criteria for matching events and how the subscription&#39;s subscriber should be notified about those events.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'channel' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel',
+        'channel' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel',
         'description' => 'string',
-        'filter' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
-        'scope' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope',
-        'subscriber' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef'
+        'filter' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
+        'scope' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope',
+        'subscriber' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef'
     ];
 
     /**
@@ -232,7 +232,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Gets channel
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel
      */
     public function getChannel()
     {
@@ -242,7 +242,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Sets channel
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel $channel Channel for delivering notifications triggered by the new subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel $channel Channel for delivering notifications triggered by the new subscription.
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Gets filter
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
      */
     public function getFilter()
     {
@@ -290,7 +290,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Sets filter
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Matching criteria for the new subscription. ExpressionFilter
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Matching criteria for the new subscription. ExpressionFilter
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Gets scope
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope
      */
     public function getScope()
     {
@@ -314,7 +314,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Sets scope
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope $scope The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope $scope The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Gets subscriber
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef
      */
     public function getSubscriber()
     {
@@ -338,7 +338,7 @@ class NotificationSubscriptionCreateParameters implements ModelInterface, ArrayA
     /**
      * Sets subscriber
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef $subscriber User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef $subscriber User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
      *
      * @return $this
      */

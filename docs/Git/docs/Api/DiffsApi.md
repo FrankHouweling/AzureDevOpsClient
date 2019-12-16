@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\DiffsApi
+# FrankHouweling\AzureDevOpsClient\Git\DiffsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **diffsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs diffsGet($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit, $top, $skip, $baseVersion, $baseVersionOptions, $baseVersionType, $targetVersion, $targetVersionOptions, $targetVersionType)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs diffsGet($organization, $repositoryId, $project, $apiVersion, $diffCommonCommit, $top, $skip, $baseVersion, $baseVersionOptions, $baseVersionType, $targetVersion, $targetVersionOptions, $targetVersionType)
 
 
 
@@ -20,9 +20,9 @@ Find the closest common commit (the merge base) between base and target commits,
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\DiffsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\DiffsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitDiffs**](../Model/GitCommitDiffs.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitDiffs**](../Model/GitCommitDiffs.md)
 
 ### Authorization
 

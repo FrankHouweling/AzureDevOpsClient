@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointExecutionRecordsInput Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ServiceEndpointExecutionRecordsInput implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData',
+        'data' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData',
         'endpointIds' => 'string[]'
     ];
 
@@ -214,7 +214,7 @@ class ServiceEndpointExecutionRecordsInput implements ModelInterface, ArrayAcces
     /**
      * Gets data
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData
      */
     public function getData()
     {
@@ -224,7 +224,7 @@ class ServiceEndpointExecutionRecordsInput implements ModelInterface, ArrayAcces
     /**
      * Sets data
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData $data data
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionData $data data
      *
      * @return $this
      */

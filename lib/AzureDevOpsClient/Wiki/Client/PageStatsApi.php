@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Client;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Wiki\ApiException;
-use AzureDevOpsClient\Wiki\Configuration;
-use AzureDevOpsClient\Wiki\HeaderSelector;
-use AzureDevOpsClient\Wiki\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Wiki\ApiException;
+use FrankHouweling\AzureDevOpsClient\Wiki\Configuration;
+use FrankHouweling\AzureDevOpsClient\Wiki\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * PageStatsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class PageStatsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  int $pageViewsForDays last N days from the current day for which page views is to be returned. It&#39;s inclusive of current day. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail
      */
     public function pageStatsGet($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays = null)
     {
@@ -117,13 +117,13 @@ class PageStatsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  int $pageViewsForDays last N days from the current day for which page views is to be returned. It&#39;s inclusive of current day. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function pageStatsGetWithHttpInfo($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail';
         $request = $this->pageStatsGetRequest($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays);
 
         try {
@@ -175,7 +175,7 @@ class PageStatsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class PageStatsApi
      */
     public function pageStatsGetAsyncWithHttpInfo($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail';
         $request = $this->pageStatsGetRequest($organization, $project, $wikiIdentifier, $pageId, $apiVersion, $pageViewsForDays);
 
         return $this->client

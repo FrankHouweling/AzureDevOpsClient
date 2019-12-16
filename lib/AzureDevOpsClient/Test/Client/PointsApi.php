@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * PointsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class PointsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $witFields Comma-separated list of work item field names. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint
      */
     public function pointsGetPoint($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $witFields = null)
     {
@@ -119,13 +119,13 @@ class PointsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $witFields Comma-separated list of work item field names. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint, HTTP status code, HTTP response headers (array of strings)
      */
     public function pointsGetPointWithHttpInfo($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $witFields = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint';
         $request = $this->pointsGetPointRequest($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $witFields);
 
         try {
@@ -177,7 +177,7 @@ class PointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class PointsApi
      */
     public function pointsGetPointAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $witFields = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint';
         $request = $this->pointsGetPointRequest($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $witFields);
 
         return $this->client
@@ -460,15 +460,15 @@ class PointsApi
      * Operation pointsGetPointsByQuery
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $skip Number of test points to skip.. (optional)
      * @param  int $top Number of test points to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery
      */
     public function pointsGetPointsByQuery($organization, $body, $project, $apiVersion, $skip = null, $top = null)
     {
@@ -480,19 +480,19 @@ class PointsApi
      * Operation pointsGetPointsByQueryWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $skip Number of test points to skip.. (optional)
      * @param  int $top Number of test points to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery, HTTP status code, HTTP response headers (array of strings)
      */
     public function pointsGetPointsByQueryWithHttpInfo($organization, $body, $project, $apiVersion, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery';
         $request = $this->pointsGetPointsByQueryRequest($organization, $body, $project, $apiVersion, $skip, $top);
 
         try {
@@ -544,7 +544,7 @@ class PointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -560,7 +560,7 @@ class PointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $skip Number of test points to skip.. (optional)
@@ -585,7 +585,7 @@ class PointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $skip Number of test points to skip.. (optional)
@@ -596,7 +596,7 @@ class PointsApi
      */
     public function pointsGetPointsByQueryAsyncWithHttpInfo($organization, $body, $project, $apiVersion, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery';
         $request = $this->pointsGetPointsByQueryRequest($organization, $body, $project, $apiVersion, $skip, $top);
 
         return $this->client
@@ -640,7 +640,7 @@ class PointsApi
      * Create request for operation 'pointsGetPointsByQuery'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestPointsQuery $body TestPointsQuery to get test points. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  int $skip Number of test points to skip.. (optional)
@@ -807,9 +807,9 @@ class PointsApi
      * @param  int $skip Number of test points to skip.. (optional)
      * @param  int $top Number of test points to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]
      */
     public function pointsList($organization, $project, $planId, $suiteId, $apiVersion, $witFields = null, $configurationId = null, $testCaseId = null, $testPointIds = null, $includePointDetails = null, $skip = null, $top = null)
     {
@@ -833,13 +833,13 @@ class PointsApi
      * @param  int $skip Number of test points to skip.. (optional)
      * @param  int $top Number of test points to return. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pointsListWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $witFields = null, $configurationId = null, $testCaseId = null, $testPointIds = null, $includePointDetails = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]';
         $request = $this->pointsListRequest($organization, $project, $planId, $suiteId, $apiVersion, $witFields, $configurationId, $testCaseId, $testPointIds, $includePointDetails, $skip, $top);
 
         try {
@@ -891,7 +891,7 @@ class PointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -955,7 +955,7 @@ class PointsApi
      */
     public function pointsListAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $witFields = null, $configurationId = null, $testCaseId = null, $testPointIds = null, $includePointDetails = null, $skip = null, $top = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]';
         $request = $this->pointsListRequest($organization, $project, $planId, $suiteId, $apiVersion, $witFields, $configurationId, $testCaseId, $testPointIds, $includePointDetails, $skip, $top);
 
         return $this->client
@@ -1199,16 +1199,16 @@ class PointsApi
      * Operation pointsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan. (required)
      * @param  int $suiteId ID of the suite that contains the points. (required)
      * @param  string $pointIds ID of the test point to get. Use a comma-separated list of IDs to update multiple test points. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]
      */
     public function pointsUpdate($organization, $body, $project, $planId, $suiteId, $pointIds, $apiVersion)
     {
@@ -1220,20 +1220,20 @@ class PointsApi
      * Operation pointsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan. (required)
      * @param  int $suiteId ID of the suite that contains the points. (required)
      * @param  string $pointIds ID of the test point to get. Use a comma-separated list of IDs to update multiple test points. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pointsUpdateWithHttpInfo($organization, $body, $project, $planId, $suiteId, $pointIds, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]';
         $request = $this->pointsUpdateRequest($organization, $body, $project, $planId, $suiteId, $pointIds, $apiVersion);
 
         try {
@@ -1285,7 +1285,7 @@ class PointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1301,7 +1301,7 @@ class PointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan. (required)
      * @param  int $suiteId ID of the suite that contains the points. (required)
@@ -1327,7 +1327,7 @@ class PointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan. (required)
      * @param  int $suiteId ID of the suite that contains the points. (required)
@@ -1339,7 +1339,7 @@ class PointsApi
      */
     public function pointsUpdateAsyncWithHttpInfo($organization, $body, $project, $planId, $suiteId, $pointIds, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestPoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestPoint[]';
         $request = $this->pointsUpdateRequest($organization, $body, $project, $planId, $suiteId, $pointIds, $apiVersion);
 
         return $this->client
@@ -1383,7 +1383,7 @@ class PointsApi
      * Create request for operation 'pointsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\PointUpdateModel $body Data to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan. (required)
      * @param  int $suiteId ID of the suite that contains the points. (required)

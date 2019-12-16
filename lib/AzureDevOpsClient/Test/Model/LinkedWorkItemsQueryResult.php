@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LinkedWorkItemsQueryResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class LinkedWorkItemsQueryResult implements ModelInterface, ArrayAccess
         'pointId' => 'int',
         'suiteId' => 'int',
         'testCaseId' => 'int',
-        'workItems' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference[]'
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference[]'
     ];
 
     /**
@@ -358,7 +358,7 @@ class LinkedWorkItemsQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference[]
      */
     public function getWorkItems()
     {
@@ -368,7 +368,7 @@ class LinkedWorkItemsQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference[] $workItems workItems
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference[] $workItems workItems
      *
      * @return $this
      */

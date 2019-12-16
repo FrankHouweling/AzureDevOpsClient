@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ActorNotificationReason Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ActorNotificationReason implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'notificationReasonType' => 'string',
-        'targetIdentities' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef[]',
+        'targetIdentities' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef[]',
         'matchedRoles' => 'string[]'
     ];
 
@@ -296,7 +296,7 @@ class ActorNotificationReason implements ModelInterface, ArrayAccess
     /**
      * Gets targetIdentities
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef[]
      */
     public function getTargetIdentities()
     {
@@ -306,7 +306,7 @@ class ActorNotificationReason implements ModelInterface, ArrayAccess
     /**
      * Sets targetIdentities
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef[] $targetIdentities targetIdentities
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef[] $targetIdentities targetIdentities
      *
      * @return $this
      */

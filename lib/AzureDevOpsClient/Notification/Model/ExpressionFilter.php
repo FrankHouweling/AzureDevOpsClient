@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * ExpressionFilter Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class ExpressionFilter implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'eventType' => 'string',
         'type' => 'string',
-        'criteria' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel'
+        'criteria' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel'
     ];
 
     /**
@@ -268,7 +268,7 @@ class ExpressionFilter implements ModelInterface, ArrayAccess
     /**
      * Gets criteria
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel
      */
     public function getCriteria()
     {
@@ -278,7 +278,7 @@ class ExpressionFilter implements ModelInterface, ArrayAccess
     /**
      * Sets criteria
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel $criteria criteria
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel $criteria criteria
      *
      * @return $this
      */

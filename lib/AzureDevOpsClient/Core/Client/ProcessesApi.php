@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Client;
+namespace FrankHouweling\AzureDevOpsClient\Core\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Core\ApiException;
-use AzureDevOpsClient\Core\Configuration;
-use AzureDevOpsClient\Core\HeaderSelector;
-use AzureDevOpsClient\Core\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Core\ApiException;
+use FrankHouweling\AzureDevOpsClient\Core\Configuration;
+use FrankHouweling\AzureDevOpsClient\Core\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * ProcessesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ProcessesApi
      * @param  string $processId ID for a process. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\Process
      */
     public function processesGet($organization, $processId, $apiVersion)
     {
@@ -111,13 +111,13 @@ class ProcessesApi
      * @param  string $processId ID for a process. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\Process, HTTP status code, HTTP response headers (array of strings)
      */
     public function processesGetWithHttpInfo($organization, $processId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\Process';
         $request = $this->processesGetRequest($organization, $processId, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class ProcessesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\Process',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ProcessesApi
      */
     public function processesGetAsyncWithHttpInfo($organization, $processId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\Process';
         $request = $this->processesGetRequest($organization, $processId, $apiVersion);
 
         return $this->client
@@ -396,9 +396,9 @@ class ProcessesApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\Process[]
      */
     public function processesList($organization, $apiVersion)
     {
@@ -412,13 +412,13 @@ class ProcessesApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\Process[], HTTP status code, HTTP response headers (array of strings)
      */
     public function processesListWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\Process[]';
         $request = $this->processesListRequest($organization, $apiVersion);
 
         try {
@@ -470,7 +470,7 @@ class ProcessesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\Process[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class ProcessesApi
      */
     public function processesListAsyncWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Process[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\Process[]';
         $request = $this->processesListRequest($organization, $apiVersion);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultsByQueryResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ResultsByQueryResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'excessIds' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
-        'testResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]'
+        'excessIds' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
+        'testResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class ResultsByQueryResponse implements ModelInterface, ArrayAccess
     /**
      * Gets excessIds
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
      */
     public function getExcessIds()
     {
@@ -224,7 +224,7 @@ class ResultsByQueryResponse implements ModelInterface, ArrayAccess
     /**
      * Sets excessIds
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $excessIds excessIds
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $excessIds excessIds
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class ResultsByQueryResponse implements ModelInterface, ArrayAccess
     /**
      * Gets testResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
      */
     public function getTestResults()
     {
@@ -248,7 +248,7 @@ class ResultsByQueryResponse implements ModelInterface, ArrayAccess
     /**
      * Sets testResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $testResults testResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $testResults testResults
      *
      * @return $this
      */

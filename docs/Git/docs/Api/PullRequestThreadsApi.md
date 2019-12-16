@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestThreadsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestThreadsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestThreadsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsCreate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsCreate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -23,16 +23,16 @@ Create a thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread | The thread to create. Thread must contain at least one comment.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread | The thread to create. Thread must contain at least one comment.
 $repositoryId = "repositoryId_example"; // string | Repository ID of the pull request's target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $project = "project_example"; // string | Project ID or project name
@@ -52,7 +52,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)| The thread to create. Thread must contain at least one comment. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)| The thread to create. Thread must contain at least one comment. |
  **repositoryId** | **string**| Repository ID of the pull request&#39;s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **project** | **string**| Project ID or project name |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsGet($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration, $baseIteration)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsGet($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration, $baseIteration)
 
 
 
@@ -86,9 +86,9 @@ Retrieve a thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[] pullRequestThreadsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration, $baseIteration)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[] pullRequestThreadsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration, $baseIteration)
 
 
 
@@ -153,9 +153,9 @@ Retrieve all threads in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]**](../Model/GitPullRequestCommentThread.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]**](../Model/GitPullRequestCommentThread.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadsUpdate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread pullRequestThreadsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
 
 
 
@@ -218,16 +218,16 @@ Update a thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread | The thread content that should be updated.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread | The thread content that should be updated.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request's target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $threadId = 56; // int | ID of the thread to update.
@@ -248,7 +248,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)| The thread content that should be updated. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)| The thread content that should be updated. |
  **repositoryId** | **string**| The repository ID of the pull request&#39;s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **threadId** | **int**| ID of the thread to update. |
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread**](../Model/GitPullRequestCommentThread.md)
 
 ### Authorization
 

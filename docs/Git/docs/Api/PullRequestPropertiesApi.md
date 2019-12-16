@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestPropertiesApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestPropertiesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestPropertiesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection pullRequestPropertiesList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection pullRequestPropertiesList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Get external properties of the pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestPropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestPropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestPropertiesUpdate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection pullRequestPropertiesUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection pullRequestPropertiesUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -82,16 +82,16 @@ Create or update pull request external properties. The patch operation can be `a
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestPropertiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestPropertiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument | Properties to add, replace or remove in JSON Patch format.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument | Properties to add, replace or remove in JSON Patch format.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $project = "project_example"; // string | Project ID or project name
@@ -111,7 +111,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| Properties to add, replace or remove in JSON Patch format. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| Properties to add, replace or remove in JSON Patch format. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **project** | **string**| Project ID or project name |
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection**](../Model/PropertiesCollection.md)
 
 ### Authorization
 

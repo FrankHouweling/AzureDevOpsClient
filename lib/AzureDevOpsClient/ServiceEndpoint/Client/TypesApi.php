@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Client;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\ServiceEndpoint\ApiException;
-use AzureDevOpsClient\ServiceEndpoint\Configuration;
-use AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
-use AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * TypesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class TypesApi
      * @param  string $type Type of service endpoint. (optional)
      * @param  string $scheme Scheme of service endpoint. (optional)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]
      */
     public function typesList($organization, $apiVersion, $type = null, $scheme = null)
     {
@@ -113,13 +113,13 @@ class TypesApi
      * @param  string $type Type of service endpoint. (optional)
      * @param  string $scheme Scheme of service endpoint. (optional)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function typesListWithHttpInfo($organization, $apiVersion, $type = null, $scheme = null)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]';
         $request = $this->typesListRequest($organization, $apiVersion, $type, $scheme);
 
         try {
@@ -171,7 +171,7 @@ class TypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]',
+                        '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class TypesApi
      */
     public function typesListAsyncWithHttpInfo($organization, $apiVersion, $type = null, $scheme = null)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointType[]';
         $request = $this->typesListRequest($organization, $apiVersion, $type, $scheme);
 
         return $this->client

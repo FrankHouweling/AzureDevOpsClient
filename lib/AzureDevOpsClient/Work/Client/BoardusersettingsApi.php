@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardusersettingsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class BoardusersettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings
      */
     public function boardusersettingsGet($organization, $project, $board, $team, $apiVersion)
     {
@@ -115,13 +115,13 @@ class BoardusersettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function boardusersettingsGetWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings';
         $request = $this->boardusersettingsGetRequest($organization, $project, $board, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class BoardusersettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class BoardusersettingsApi
      */
     public function boardusersettingsGetAsyncWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings';
         $request = $this->boardusersettingsGetRequest($organization, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -438,9 +438,9 @@ class BoardusersettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings
      */
     public function boardusersettingsUpdate($organization, $body, $project, $board, $team, $apiVersion)
     {
@@ -458,13 +458,13 @@ class BoardusersettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function boardusersettingsUpdateWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings';
         $request = $this->boardusersettingsUpdateRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         try {
@@ -516,7 +516,7 @@ class BoardusersettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class BoardusersettingsApi
      */
     public function boardusersettingsUpdateAsyncWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings';
         $request = $this->boardusersettingsUpdateRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         return $this->client

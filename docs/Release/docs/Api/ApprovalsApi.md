@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Release\ApprovalsApi
+# FrankHouweling\AzureDevOpsClient\Release\ApprovalsApi
 
 All URIs are relative to *https://vsrm.dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **approvalsList**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] approvalsList($organization, $project, $apiVersion, $assignedToFilter, $statusFilter, $releaseIdsFilter, $typeFilter, $top, $continuationToken, $queryOrder, $includeMyGroupApprovals)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] approvalsList($organization, $project, $apiVersion, $assignedToFilter, $statusFilter, $releaseIdsFilter, $typeFilter, $top, $continuationToken, $queryOrder, $includeMyGroupApprovals)
 
 
 
@@ -21,9 +21,9 @@ Get a list of approvals
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\ApprovalsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\ApprovalsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]**](../Model/ReleaseApproval.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]**](../Model/ReleaseApproval.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **approvalsUpdate**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval approvalsUpdate($organization, $body, $project, $approvalId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval approvalsUpdate($organization, $body, $project, $approvalId, $apiVersion)
 
 
 
@@ -94,16 +94,16 @@ Update status of an approval
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\ApprovalsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\ApprovalsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval(); // \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval | ReleaseApproval object having status, approver and comments.
+$body = new \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval(); // \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval | ReleaseApproval object having status, approver and comments.
 $project = "project_example"; // string | Project ID or project name
 $approvalId = 56; // int | Id of the approval.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -122,14 +122,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval**](../Model/ReleaseApproval.md)| ReleaseApproval object having status, approver and comments. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval**](../Model/ReleaseApproval.md)| ReleaseApproval object having status, approver and comments. |
  **project** | **string**| Project ID or project name |
  **approvalId** | **int**| Id of the approval. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval**](../Model/ReleaseApproval.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval**](../Model/ReleaseApproval.md)
 
 ### Authorization
 

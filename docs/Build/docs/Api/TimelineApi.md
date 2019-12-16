@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\TimelineApi
+# FrankHouweling\AzureDevOpsClient\Build\TimelineApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **timelineGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline timelineGet($organization, $project, $buildId, $timelineId, $apiVersion, $changeId, $planId)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Timeline timelineGet($organization, $project, $buildId, $timelineId, $apiVersion, $changeId, $planId)
 
 
 
@@ -20,9 +20,9 @@ Gets details for a build
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\TimelineApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\TimelineApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Timeline**](../Model/Timeline.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Timeline**](../Model/Timeline.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionEventCallbackCollection Class Doc Comment
  *
  * @category Class
  * @description Collection of event callbacks - endpoints called when particular extension events occur.
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'postDisable' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'postEnable' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'postInstall' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'postUninstall' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'postUpdate' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'preInstall' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
-        'versionCheck' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback'
+        'postDisable' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'postEnable' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'postInstall' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'postUninstall' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'postUpdate' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'preInstall' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback',
+        'versionCheck' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback'
     ];
 
     /**
@@ -244,7 +244,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets postDisable
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPostDisable()
     {
@@ -254,7 +254,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets postDisable
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postDisable Optional.  Defines an endpoint that gets called via a POST request to notify that an extension disable has occurred.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postDisable Optional.  Defines an endpoint that gets called via a POST request to notify that an extension disable has occurred.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets postEnable
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPostEnable()
     {
@@ -278,7 +278,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets postEnable
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postEnable Optional.  Defines an endpoint that gets called via a POST request to notify that an extension enable has occurred.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postEnable Optional.  Defines an endpoint that gets called via a POST request to notify that an extension enable has occurred.
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets postInstall
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPostInstall()
     {
@@ -302,7 +302,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets postInstall
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postInstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension install has completed.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postInstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension install has completed.
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets postUninstall
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPostUninstall()
     {
@@ -326,7 +326,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets postUninstall
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postUninstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension uninstall has occurred.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postUninstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension uninstall has occurred.
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets postUpdate
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPostUpdate()
     {
@@ -350,7 +350,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets postUpdate
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postUpdate Optional.  Defines an endpoint that gets called via a POST request to notify that an extension update has occurred.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $postUpdate Optional.  Defines an endpoint that gets called via a POST request to notify that an extension update has occurred.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets preInstall
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getPreInstall()
     {
@@ -374,7 +374,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets preInstall
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $preInstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension install is about to occur.  Response indicates whether to proceed or abort.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $preInstall Optional.  Defines an endpoint that gets called via a POST request to notify that an extension install is about to occur.  Response indicates whether to proceed or abort.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Gets versionCheck
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback
      */
     public function getVersionCheck()
     {
@@ -398,7 +398,7 @@ class ExtensionEventCallbackCollection implements ModelInterface, ArrayAccess
     /**
      * Sets versionCheck
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $versionCheck For multi-version extensions, defines an endpoint that gets called via an OPTIONS request to determine the particular version of the extension to be used
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallback $versionCheck For multi-version extensions, defines an endpoint that gets called via an OPTIONS request to determine the particular version of the extension to be used
      *
      * @return $this
      */

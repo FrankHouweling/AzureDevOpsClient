@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcChangesetSearchCriteria Class Doc Comment
  *
  * @category Class
  * @description Criteria used in a search for change lists.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
         'fromId' => 'int',
         'includeLinks' => 'bool',
         'itemPath' => 'string',
-        'mappings' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMappingFilter[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMappingFilter[]',
         'toDate' => 'string',
         'toId' => 'int'
     ];
@@ -400,7 +400,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMappingFilter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMappingFilter[]
      */
     public function getMappings()
     {
@@ -410,7 +410,7 @@ class TfvcChangesetSearchCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMappingFilter[] $mappings mappings
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMappingFilter[] $mappings mappings
      *
      * @return $this
      */

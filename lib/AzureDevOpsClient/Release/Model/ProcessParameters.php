@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ProcessParameters Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ProcessParameters implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dataSourceBindings' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBindingBase[]',
-        'inputs' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[]',
-        'sourceDefinitions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[]'
+        'dataSourceBindings' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBindingBase[]',
+        'inputs' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[]',
+        'sourceDefinitions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Gets dataSourceBindings
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBindingBase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBindingBase[]
      */
     public function getDataSourceBindings()
     {
@@ -230,7 +230,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Sets dataSourceBindings
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBindingBase[] $dataSourceBindings dataSourceBindings
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBindingBase[] $dataSourceBindings dataSourceBindings
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Gets inputs
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[]
      */
     public function getInputs()
     {
@@ -254,7 +254,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Sets inputs
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[] $inputs inputs
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputDefinitionBase[] $inputs inputs
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Gets sourceDefinitions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[]
      */
     public function getSourceDefinitions()
     {
@@ -278,7 +278,7 @@ class ProcessParameters implements ModelInterface, ArrayAccess
     /**
      * Sets sourceDefinitions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[] $sourceDefinitions sourceDefinitions
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TaskSourceDefinitionBase[] $sourceDefinitions sourceDefinitions
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultHistoryDetailsForGroup Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'groupByValue' => 'object',
-        'latestResult' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult'
+        'latestResult' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets latestResult
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult
      */
     public function getLatestResult()
     {
@@ -248,7 +248,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets latestResult
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult $latestResult latestResult
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult $latestResult latestResult
      *
      * @return $this
      */

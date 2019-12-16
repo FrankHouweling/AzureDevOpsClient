@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * RoleBasedFilter Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class RoleBasedFilter implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'criteria' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel',
+        'criteria' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel',
         'type' => 'string',
         'eventType' => 'string',
         'exclusions' => 'string[]',
@@ -232,7 +232,7 @@ class RoleBasedFilter implements ModelInterface, ArrayAccess
     /**
      * Gets criteria
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel
      */
     public function getCriteria()
     {
@@ -242,7 +242,7 @@ class RoleBasedFilter implements ModelInterface, ArrayAccess
     /**
      * Sets criteria
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel $criteria criteria
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel $criteria criteria
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildOption Class Doc Comment
  *
  * @category Class
  * @description Represents the application of an optional behavior to a build definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BuildOption implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'definition' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference',
+        'definition' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference',
         'enabled' => 'bool',
         'inputs' => 'map[string,string]'
     ];
@@ -220,7 +220,7 @@ class BuildOption implements ModelInterface, ArrayAccess
     /**
      * Gets definition
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference
      */
     public function getDefinition()
     {
@@ -230,7 +230,7 @@ class BuildOption implements ModelInterface, ArrayAccess
     /**
      * Sets definition
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference $definition A reference to the build option.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference $definition A reference to the build option.
      *
      * @return $this
      */

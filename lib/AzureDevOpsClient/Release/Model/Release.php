@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * Release Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,33 +58,33 @@ class Release implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks',
-        'artifacts' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Artifact[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks',
+        'artifacts' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Artifact[]',
         'comment' => 'string',
-        'createdBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'createdFor' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'createdFor' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'createdOn' => '\DateTime',
         'definitionSnapshotRevision' => 'int',
         'description' => 'string',
-        'environments' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]',
+        'environments' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]',
         'id' => 'int',
         'keepForever' => 'bool',
         'logsContainerUrl' => 'string',
-        'modifiedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
         'poolName' => 'string',
-        'projectReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
-        'properties' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection',
+        'projectReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection',
         'reason' => 'string',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
         'releaseDefinitionRevision' => 'int',
         'releaseNameFormat' => 'string',
         'status' => 'string',
         'tags' => 'string[]',
         'triggeringArtifactAlias' => 'string',
-        'variableGroups' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[]',
-        'variables' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
+        'variableGroups' => '\FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[]',
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
     ];
 
     /**
@@ -420,7 +420,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -430,7 +430,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets links to access the release.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks $links Gets links to access the release.
      *
      * @return $this
      */
@@ -444,7 +444,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets artifacts
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Artifact[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Artifact[]
      */
     public function getArtifacts()
     {
@@ -454,7 +454,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets artifacts
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Artifact[] $artifacts Gets or sets the list of artifacts.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Artifact[] $artifacts Gets or sets the list of artifacts.
      *
      * @return $this
      */
@@ -492,7 +492,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -502,7 +502,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Gets or sets the identity who created.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Gets or sets the identity who created.
      *
      * @return $this
      */
@@ -516,7 +516,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets createdFor
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getCreatedFor()
     {
@@ -526,7 +526,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets createdFor
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $createdFor Gets or sets the identity for whom release was created.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $createdFor Gets or sets the identity for whom release was created.
      *
      * @return $this
      */
@@ -612,7 +612,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets environments
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]
      */
     public function getEnvironments()
     {
@@ -622,7 +622,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets environments
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[] $environments Gets list of environments.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[] $environments Gets list of environments.
      *
      * @return $this
      */
@@ -708,7 +708,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -718,7 +718,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Gets or sets the identity who modified.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Gets or sets the identity who modified.
      *
      * @return $this
      */
@@ -804,7 +804,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets projectReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProjectReference()
     {
@@ -814,7 +814,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets projectReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
      *
      * @return $this
      */
@@ -828,7 +828,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -838,7 +838,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection $properties properties
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection $properties properties
      *
      * @return $this
      */
@@ -885,7 +885,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -895,7 +895,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this release is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this release is associated.
      *
      * @return $this
      */
@@ -1038,7 +1038,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets variableGroups
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[]
      */
     public function getVariableGroups()
     {
@@ -1048,7 +1048,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets variableGroups
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[] $variableGroups Gets the list of variable groups.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[] $variableGroups Gets the list of variable groups.
      *
      * @return $this
      */
@@ -1062,7 +1062,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
      */
     public function getVariables()
     {
@@ -1072,7 +1072,7 @@ class Release implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Gets or sets the dictionary of variables.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Gets or sets the dictionary of variables.
      *
      * @return $this
      */

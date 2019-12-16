@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PushesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class PushesApi
      * Operation pushesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush $body  (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush
      */
     public function pushesCreate($organization, $body, $repositoryId, $project, $apiVersion)
     {
@@ -110,18 +110,18 @@ class PushesApi
      * Operation pushesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush $body  (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushesCreateWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush';
         $request = $this->pushesCreateRequest($organization, $body, $repositoryId, $project, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class PushesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class PushesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush $body  (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class PushesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush $body  (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class PushesApi
      */
     public function pushesCreateAsyncWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush';
         $request = $this->pushesCreateRequest($organization, $body, $repositoryId, $project, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class PushesApi
      * Create request for operation 'pushesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush $body  (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -434,9 +434,9 @@ class PushesApi
      * @param  int $includeCommits The number of commits to include in the result. (optional)
      * @param  bool $includeRefUpdates If true, include the list of refs that were updated by the push. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush
      */
     public function pushesGet($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits = null, $includeRefUpdates = null)
     {
@@ -455,13 +455,13 @@ class PushesApi
      * @param  int $includeCommits The number of commits to include in the result. (optional)
      * @param  bool $includeRefUpdates If true, include the list of refs that were updated by the push. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushesGetWithHttpInfo($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits = null, $includeRefUpdates = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush';
         $request = $this->pushesGetRequest($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits, $includeRefUpdates);
 
         try {
@@ -513,7 +513,7 @@ class PushesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -567,7 +567,7 @@ class PushesApi
      */
     public function pushesGetAsyncWithHttpInfo($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits = null, $includeRefUpdates = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush';
         $request = $this->pushesGetRequest($organization, $repositoryId, $pushId, $project, $apiVersion, $includeCommits, $includeRefUpdates);
 
         return $this->client
@@ -798,9 +798,9 @@ class PushesApi
      * @param  string $searchCriteriaRefName Search criteria attributes: fromDate, toDate, pusherId, refName, includeRefUpdates or includeLinks. fromDate: Start date to search from. toDate: End date to search to. pusherId: Identity of the person who submitted the push. refName: Branch name to consider. includeRefUpdates: If true, include the list of refs that were updated by the push. includeLinks: Whether to include the _links field on the shallow references. (optional)
      * @param  \DateTime $searchCriteriaToDate Search criteria attributes: fromDate, toDate, pusherId, refName, includeRefUpdates or includeLinks. fromDate: Start date to search from. toDate: End date to search to. pusherId: Identity of the person who submitted the push. refName: Branch name to consider. includeRefUpdates: If true, include the list of refs that were updated by the push. includeLinks: Whether to include the _links field on the shallow references. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[]
      */
     public function pushesList($organization, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $searchCriteriaFromDate = null, $searchCriteriaIncludeLinks = null, $searchCriteriaIncludeRefUpdates = null, $searchCriteriaPusherId = null, $searchCriteriaRefName = null, $searchCriteriaToDate = null)
     {
@@ -824,13 +824,13 @@ class PushesApi
      * @param  string $searchCriteriaRefName Search criteria attributes: fromDate, toDate, pusherId, refName, includeRefUpdates or includeLinks. fromDate: Start date to search from. toDate: End date to search to. pusherId: Identity of the person who submitted the push. refName: Branch name to consider. includeRefUpdates: If true, include the list of refs that were updated by the push. includeLinks: Whether to include the _links field on the shallow references. (optional)
      * @param  \DateTime $searchCriteriaToDate Search criteria attributes: fromDate, toDate, pusherId, refName, includeRefUpdates or includeLinks. fromDate: Start date to search from. toDate: End date to search to. pusherId: Identity of the person who submitted the push. refName: Branch name to consider. includeRefUpdates: If true, include the list of refs that were updated by the push. includeLinks: Whether to include the _links field on the shallow references. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pushesListWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $searchCriteriaFromDate = null, $searchCriteriaIncludeLinks = null, $searchCriteriaIncludeRefUpdates = null, $searchCriteriaPusherId = null, $searchCriteriaRefName = null, $searchCriteriaToDate = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[]';
         $request = $this->pushesListRequest($organization, $repositoryId, $project, $apiVersion, $skip, $top, $searchCriteriaFromDate, $searchCriteriaIncludeLinks, $searchCriteriaIncludeRefUpdates, $searchCriteriaPusherId, $searchCriteriaRefName, $searchCriteriaToDate);
 
         try {
@@ -882,7 +882,7 @@ class PushesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -946,7 +946,7 @@ class PushesApi
      */
     public function pushesListAsyncWithHttpInfo($organization, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $searchCriteriaFromDate = null, $searchCriteriaIncludeLinks = null, $searchCriteriaIncludeRefUpdates = null, $searchCriteriaPusherId = null, $searchCriteriaRefName = null, $searchCriteriaToDate = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPush[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPush[]';
         $request = $this->pushesListRequest($organization, $repositoryId, $project, $apiVersion, $skip, $top, $searchCriteriaFromDate, $searchCriteriaIncludeLinks, $searchCriteriaIncludeRefUpdates, $searchCriteriaPusherId, $searchCriteriaRefName, $searchCriteriaToDate);
 
         return $this->client

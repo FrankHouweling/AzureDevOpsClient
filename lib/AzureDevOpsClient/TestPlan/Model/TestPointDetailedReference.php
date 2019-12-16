@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPointDetailedReference Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'configuration' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference',
-        'plan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference',
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference',
+        'plan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference',
         'pointId' => 'int',
-        'suite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
-        'tester' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef'
+        'suite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
+        'tester' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef'
     ];
 
     /**
@@ -232,7 +232,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference
      */
     public function getConfiguration()
     {
@@ -242,7 +242,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference $configuration configuration
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference $configuration configuration
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Gets plan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference
      */
     public function getPlan()
     {
@@ -266,7 +266,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Sets plan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference $plan plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference $plan plan
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Gets suite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
      */
     public function getSuite()
     {
@@ -314,7 +314,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Sets suite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $suite suite
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $suite suite
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Gets tester
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getTester()
     {
@@ -338,7 +338,7 @@ class TestPointDetailedReference implements ModelInterface, ArrayAccess
     /**
      * Sets tester
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester tester
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester tester
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\AnnotatedTagsApi
+# FrankHouweling\AzureDevOpsClient\Git\AnnotatedTagsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **annotatedTagsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag annotatedTagsCreate($organization, $body, $project, $repositoryId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag annotatedTagsCreate($organization, $body, $project, $repositoryId, $apiVersion)
 
 
 
@@ -21,16 +21,16 @@ Create an annotated tag.  Repositories have both a name and an identifier. Ident
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag | Object containing details of tag to be created.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag | Object containing details of tag to be created.
 $project = "project_example"; // string | Project ID or project name
 $repositoryId = "repositoryId_example"; // string | ID or name of the repository.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -49,14 +49,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)| Object containing details of tag to be created. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)| Object containing details of tag to be created. |
  **project** | **string**| Project ID or project name |
  **repositoryId** | **string**| ID or name of the repository. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **annotatedTagsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag annotatedTagsGet($organization, $project, $repositoryId, $objectId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag annotatedTagsGet($organization, $project, $repositoryId, $objectId, $apiVersion)
 
 
 
@@ -82,9 +82,9 @@ Get an annotated tag.  Repositories have both a name and an identifier. Identifi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\AnnotatedTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitAnnotatedTag**](../Model/GitAnnotatedTag.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * CommentTrackingCriteria Class Doc Comment
  *
  * @category Class
  * @description Comment tracking criteria is used to identify which iteration context the thread has been tracked to (if any) along with some detail about the original position and filename.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'firstComparingIteration' => 'int',
         'origFilePath' => 'string',
-        'origLeftFileEnd' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'origLeftFileStart' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'origRightFileEnd' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
-        'origRightFileStart' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition',
+        'origLeftFileEnd' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'origLeftFileStart' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'origRightFileEnd' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
+        'origRightFileStart' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition',
         'secondComparingIteration' => 'int'
     ];
 
@@ -292,7 +292,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets origLeftFileEnd
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getOrigLeftFileEnd()
     {
@@ -302,7 +302,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets origLeftFileEnd
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $origLeftFileEnd Original position of last character of the thread's span in left file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $origLeftFileEnd Original position of last character of the thread's span in left file.
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets origLeftFileStart
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getOrigLeftFileStart()
     {
@@ -326,7 +326,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets origLeftFileStart
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $origLeftFileStart Original position of first character of the thread's span in left file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $origLeftFileStart Original position of first character of the thread's span in left file.
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets origRightFileEnd
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getOrigRightFileEnd()
     {
@@ -350,7 +350,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets origRightFileEnd
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $origRightFileEnd Original position of last character of the thread's span in right file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $origRightFileEnd Original position of last character of the thread's span in right file.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets origRightFileStart
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition
      */
     public function getOrigRightFileStart()
     {
@@ -374,7 +374,7 @@ class CommentTrackingCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets origRightFileStart
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentPosition $origRightFileStart Original position of first character of the thread's span in right file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentPosition $origRightFileStart Original position of first character of the thread's span in right file.
      *
      * @return $this
      */

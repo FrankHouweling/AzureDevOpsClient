@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamSettingsIteration Class Doc Comment
  *
  * @category Class
  * @description Represents a shallow ref for a single iteration.
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class TeamSettingsIteration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
-        'attributes' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamIterationAttributes',
+        'attributes' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamIterationAttributes',
         'id' => 'string',
         'name' => 'string',
         'path' => 'string'
@@ -238,7 +238,7 @@ class TeamSettingsIteration implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -248,7 +248,7 @@ class TeamSettingsIteration implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class TeamSettingsIteration implements ModelInterface, ArrayAccess
     /**
      * Gets attributes
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamIterationAttributes
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamIterationAttributes
      */
     public function getAttributes()
     {
@@ -296,7 +296,7 @@ class TeamSettingsIteration implements ModelInterface, ArrayAccess
     /**
      * Sets attributes
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamIterationAttributes $attributes Attributes of the iteration such as start and end date.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamIterationAttributes $attributes Attributes of the iteration such as start and end date.
      *
      * @return $this
      */

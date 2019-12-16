@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CloneOperationInformation Class Doc Comment
  *
  * @category Class
  * @description Detail About Clone Operation.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,18 +58,18 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneStatistics' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneStatistics',
+        'cloneStatistics' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CloneStatistics',
         'completionDate' => '\DateTime',
         'creationDate' => '\DateTime',
-        'destinationObject' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'destinationPlan' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'destinationProject' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'destinationObject' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'destinationPlan' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'destinationProject' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'message' => 'string',
         'opId' => 'int',
         'resultObjectType' => 'string',
-        'sourceObject' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'sourcePlan' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'sourceProject' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'sourceObject' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'sourcePlan' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'sourceProject' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'state' => 'string',
         'url' => 'string'
     ];
@@ -336,7 +336,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets cloneStatistics
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneStatistics
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CloneStatistics
      */
     public function getCloneStatistics()
     {
@@ -346,7 +346,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets cloneStatistics
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneStatistics $cloneStatistics Clone Statistics
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CloneStatistics $cloneStatistics Clone Statistics
      *
      * @return $this
      */
@@ -408,7 +408,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets destinationObject
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDestinationObject()
     {
@@ -418,7 +418,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets destinationObject
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $destinationObject Shallow reference of the destination
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $destinationObject Shallow reference of the destination
      *
      * @return $this
      */
@@ -432,7 +432,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets destinationPlan
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDestinationPlan()
     {
@@ -442,7 +442,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets destinationPlan
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $destinationPlan Shallow reference of the destination
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $destinationPlan Shallow reference of the destination
      *
      * @return $this
      */
@@ -456,7 +456,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets destinationProject
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDestinationProject()
     {
@@ -466,7 +466,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets destinationProject
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $destinationProject Shallow reference of the destination
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $destinationProject Shallow reference of the destination
      *
      * @return $this
      */
@@ -561,7 +561,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sourceObject
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getSourceObject()
     {
@@ -571,7 +571,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sourceObject
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $sourceObject Shallow reference of the source
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $sourceObject Shallow reference of the source
      *
      * @return $this
      */
@@ -585,7 +585,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sourcePlan
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getSourcePlan()
     {
@@ -595,7 +595,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sourcePlan
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $sourcePlan Shallow reference of the source
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $sourcePlan Shallow reference of the source
      *
      * @return $this
      */
@@ -609,7 +609,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sourceProject
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getSourceProject()
     {
@@ -619,7 +619,7 @@ class CloneOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sourceProject
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $sourceProject Shallow reference of the source
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $sourceProject Shallow reference of the source
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Client;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Policy\ApiException;
-use AzureDevOpsClient\Policy\Configuration;
-use AzureDevOpsClient\Policy\HeaderSelector;
-use AzureDevOpsClient\Policy\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Policy\ApiException;
+use FrankHouweling\AzureDevOpsClient\Policy\Configuration;
+use FrankHouweling\AzureDevOpsClient\Policy\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * EvaluationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class EvaluationsApi
      * @param  string $evaluationId ID of the policy evaluation to be retrieved. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord
      */
     public function evaluationsGet($organization, $project, $evaluationId, $apiVersion)
     {
@@ -113,13 +113,13 @@ class EvaluationsApi
      * @param  string $evaluationId ID of the policy evaluation to be retrieved. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord, HTTP status code, HTTP response headers (array of strings)
      */
     public function evaluationsGetWithHttpInfo($organization, $project, $evaluationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
         $request = $this->evaluationsGetRequest($organization, $project, $evaluationId, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class EvaluationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class EvaluationsApi
      */
     public function evaluationsGetAsyncWithHttpInfo($organization, $project, $evaluationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
         $request = $this->evaluationsGetRequest($organization, $project, $evaluationId, $apiVersion);
 
         return $this->client
@@ -420,9 +420,9 @@ class EvaluationsApi
      * @param  int $top The number of policy evaluation records to retrieve. (optional)
      * @param  int $skip The number of policy evaluation records to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]
      */
     public function evaluationsList($organization, $project, $artifactId, $apiVersion, $includeNotApplicable = null, $top = null, $skip = null)
     {
@@ -441,13 +441,13 @@ class EvaluationsApi
      * @param  int $top The number of policy evaluation records to retrieve. (optional)
      * @param  int $skip The number of policy evaluation records to ignore. For example, to retrieve results 101-150, set top to 50 and skip to 100. (optional)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[], HTTP status code, HTTP response headers (array of strings)
      */
     public function evaluationsListWithHttpInfo($organization, $project, $artifactId, $apiVersion, $includeNotApplicable = null, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]';
         $request = $this->evaluationsListRequest($organization, $project, $artifactId, $apiVersion, $includeNotApplicable, $top, $skip);
 
         try {
@@ -499,7 +499,7 @@ class EvaluationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -553,7 +553,7 @@ class EvaluationsApi
      */
     public function evaluationsListAsyncWithHttpInfo($organization, $project, $artifactId, $apiVersion, $includeNotApplicable = null, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord[]';
         $request = $this->evaluationsListRequest($organization, $project, $artifactId, $apiVersion, $includeNotApplicable, $top, $skip);
 
         return $this->client
@@ -762,9 +762,9 @@ class EvaluationsApi
      * @param  string $evaluationId ID of the policy evaluation to be retrieved. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord
      */
     public function evaluationsRequeuePolicyEvaluation($organization, $project, $evaluationId, $apiVersion)
     {
@@ -780,13 +780,13 @@ class EvaluationsApi
      * @param  string $evaluationId ID of the policy evaluation to be retrieved. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord, HTTP status code, HTTP response headers (array of strings)
      */
     public function evaluationsRequeuePolicyEvaluationWithHttpInfo($organization, $project, $evaluationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
         $request = $this->evaluationsRequeuePolicyEvaluationRequest($organization, $project, $evaluationId, $apiVersion);
 
         try {
@@ -838,7 +838,7 @@ class EvaluationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -886,7 +886,7 @@ class EvaluationsApi
      */
     public function evaluationsRequeuePolicyEvaluationAsyncWithHttpInfo($organization, $project, $evaluationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyEvaluationRecord';
         $request = $this->evaluationsRequeuePolicyEvaluationRequest($organization, $project, $evaluationId, $apiVersion);
 
         return $this->client

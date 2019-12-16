@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CategoryConfiguration Class Doc Comment
  *
  * @category Class
  * @description Details about a given backlog category
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class CategoryConfiguration implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'referenceName' => 'string',
-        'workItemTypes' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]'
+        'workItemTypes' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class CategoryConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets workItemTypes
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[]
      */
     public function getWorkItemTypes()
     {
@@ -278,7 +278,7 @@ class CategoryConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets workItemTypes
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemTypeReference[] $workItemTypes Work item types for the backlog category
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemTypeReference[] $workItemTypes Work item types for the backlog category
      *
      * @return $this
      */

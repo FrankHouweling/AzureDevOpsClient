@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * EventProcessingLog Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,13 +66,13 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
         'errors' => 'int',
         'id' => 'string',
         'logType' => 'string',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
         'properties' => 'map[string,string]',
         'source' => 'string',
         'startTime' => '\DateTime',
         'warnings' => 'int',
-        'batches' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBatch[]',
-        'matcherResults' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\MatcherResult[]'
+        'batches' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventBatch[]',
+        'matcherResults' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\MatcherResult[]'
     ];
 
     /**
@@ -484,7 +484,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -494,7 +494,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
      *
      * @return $this
      */
@@ -604,7 +604,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets batches
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBatch[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventBatch[]
      */
     public function getBatches()
     {
@@ -614,7 +614,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets batches
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBatch[] $batches batches
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventBatch[] $batches batches
      *
      * @return $this
      */
@@ -628,7 +628,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets matcherResults
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\MatcherResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\MatcherResult[]
      */
     public function getMatcherResults()
     {
@@ -638,7 +638,7 @@ class EventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets matcherResults
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\MatcherResult[] $matcherResults matcherResults
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\MatcherResult[] $matcherResults matcherResults
      *
      * @return $this
      */

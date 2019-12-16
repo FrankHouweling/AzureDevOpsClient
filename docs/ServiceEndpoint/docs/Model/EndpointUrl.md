@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dependsOn** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn**](DependsOn.md) | Gets or sets the dependency bindings. | [optional] 
+**dependsOn** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn**](DependsOn.md) | Gets or sets the dependency bindings. | [optional] 
 **displayName** | **string** | Gets or sets the display name of service endpoint url. | [optional] 
 **format** | **string** | Gets or sets the format of the url. | [optional] 
 **helpText** | **string** | Gets or sets the help text of service endpoint url. | [optional] 

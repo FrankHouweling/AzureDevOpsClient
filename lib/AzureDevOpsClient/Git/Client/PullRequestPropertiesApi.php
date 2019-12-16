@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestPropertiesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class PullRequestPropertiesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection
      */
     public function pullRequestPropertiesList($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -115,13 +115,13 @@ class PullRequestPropertiesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestPropertiesListWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection';
         $request = $this->pullRequestPropertiesListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class PullRequestPropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class PullRequestPropertiesApi
      */
     public function pullRequestPropertiesListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection';
         $request = $this->pullRequestPropertiesListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -432,15 +432,15 @@ class PullRequestPropertiesApi
      * Operation pullRequestPropertiesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection
      */
     public function pullRequestPropertiesUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -452,19 +452,19 @@ class PullRequestPropertiesApi
      * Operation pullRequestPropertiesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestPropertiesUpdateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection';
         $request = $this->pullRequestPropertiesUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -516,7 +516,7 @@ class PullRequestPropertiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class PullRequestPropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -557,7 +557,7 @@ class PullRequestPropertiesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -568,7 +568,7 @@ class PullRequestPropertiesApi
      */
     public function pullRequestPropertiesUpdateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection';
         $request = $this->pullRequestPropertiesUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -612,7 +612,7 @@ class PullRequestPropertiesApi
      * Create request for operation 'pullRequestPropertiesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\JsonPatchDocument $body Properties to add, replace or remove in JSON Patch format. (required)
      * @param  string $repositoryId The repository ID of the pull request’s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)

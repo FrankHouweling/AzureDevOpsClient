@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * IdentityBase Class Doc Comment
  *
  * @category Class
  * @description Base Identity class to allow \&quot;trimmed\&quot; identity class in the GetConnectionData API Makes sure that on-the-wire representations of the derived classes are compatible with each other (e.g. Server responds with PublicIdentity object while client deserializes it as Identity object) Derived classes should not have additional [DataMember] properties
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,16 +59,16 @@ class IdentityBase implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'customDisplayName' => 'string',
-        'descriptor' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor',
+        'descriptor' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor',
         'id' => 'string',
         'isActive' => 'bool',
         'isContainer' => 'bool',
         'masterId' => 'string',
         'memberIds' => 'string[]',
-        'memberOf' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[]',
-        'members' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[]',
+        'memberOf' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[]',
+        'members' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[]',
         'metaTypeId' => 'int',
-        'properties' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PropertiesCollection',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Core\Model\PropertiesCollection',
         'providerDisplayName' => 'string',
         'resourceVersion' => 'int',
         'socialDescriptor' => 'string',
@@ -322,7 +322,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Gets descriptor
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor
      */
     public function getDescriptor()
     {
@@ -332,7 +332,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Sets descriptor
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor $descriptor descriptor
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor $descriptor descriptor
      *
      * @return $this
      */
@@ -466,7 +466,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Gets memberOf
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[]
      */
     public function getMemberOf()
     {
@@ -476,7 +476,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Sets memberOf
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[] $memberOf memberOf
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[] $memberOf memberOf
      *
      * @return $this
      */
@@ -490,7 +490,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Gets members
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[]
      */
     public function getMembers()
     {
@@ -500,7 +500,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Sets members
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor[] $members members
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor[] $members members
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -548,7 +548,7 @@ class IdentityBase implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PropertiesCollection $properties properties
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\PropertiesCollection $properties properties
      *
      * @return $this
      */

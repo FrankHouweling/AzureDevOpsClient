@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ImportRequestsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class ImportRequestsApi
      * Operation importRequestsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest
      */
     public function importRequestsCreate($organization, $body, $project, $repositoryId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class ImportRequestsApi
      * Operation importRequestsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function importRequestsCreateWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ImportRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ImportRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ImportRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class ImportRequestsApi
      */
     public function importRequestsCreateAsyncWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class ImportRequestsApi
      * Create request for operation 'importRequestsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The import request to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -432,9 +432,9 @@ class ImportRequestsApi
      * @param  int $importRequestId The unique identifier for the import request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest
      */
     public function importRequestsGet($organization, $project, $repositoryId, $importRequestId, $apiVersion)
     {
@@ -451,13 +451,13 @@ class ImportRequestsApi
      * @param  int $importRequestId The unique identifier for the import request. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function importRequestsGetWithHttpInfo($organization, $project, $repositoryId, $importRequestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsGetRequest($organization, $project, $repositoryId, $importRequestId, $apiVersion);
 
         try {
@@ -509,7 +509,7 @@ class ImportRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -559,7 +559,7 @@ class ImportRequestsApi
      */
     public function importRequestsGetAsyncWithHttpInfo($organization, $project, $repositoryId, $importRequestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsGetRequest($organization, $project, $repositoryId, $importRequestId, $apiVersion);
 
         return $this->client
@@ -773,9 +773,9 @@ class ImportRequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeAbandoned True to include abandoned import requests in the results. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest[]
      */
     public function importRequestsQuery($organization, $project, $repositoryId, $apiVersion, $includeAbandoned = null)
     {
@@ -792,13 +792,13 @@ class ImportRequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeAbandoned True to include abandoned import requests in the results. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest[], HTTP status code, HTTP response headers (array of strings)
      */
     public function importRequestsQueryWithHttpInfo($organization, $project, $repositoryId, $apiVersion, $includeAbandoned = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest[]';
         $request = $this->importRequestsQueryRequest($organization, $project, $repositoryId, $apiVersion, $includeAbandoned);
 
         try {
@@ -850,7 +850,7 @@ class ImportRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class ImportRequestsApi
      */
     public function importRequestsQueryAsyncWithHttpInfo($organization, $project, $repositoryId, $apiVersion, $includeAbandoned = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest[]';
         $request = $this->importRequestsQueryRequest($organization, $project, $repositoryId, $apiVersion, $includeAbandoned);
 
         return $this->client
@@ -1099,15 +1099,15 @@ class ImportRequestsApi
      * Operation importRequestsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  int $importRequestId The unique identifier for the import request to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest
      */
     public function importRequestsUpdate($organization, $body, $project, $repositoryId, $importRequestId, $apiVersion)
     {
@@ -1119,19 +1119,19 @@ class ImportRequestsApi
      * Operation importRequestsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  int $importRequestId The unique identifier for the import request to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function importRequestsUpdateWithHttpInfo($organization, $body, $project, $repositoryId, $importRequestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsUpdateRequest($organization, $body, $project, $repositoryId, $importRequestId, $apiVersion);
 
         try {
@@ -1183,7 +1183,7 @@ class ImportRequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1199,7 +1199,7 @@ class ImportRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  int $importRequestId The unique identifier for the import request to update. (required)
@@ -1224,7 +1224,7 @@ class ImportRequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  int $importRequestId The unique identifier for the import request to update. (required)
@@ -1235,7 +1235,7 @@ class ImportRequestsApi
      */
     public function importRequestsUpdateAsyncWithHttpInfo($organization, $body, $project, $repositoryId, $importRequestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest';
         $request = $this->importRequestsUpdateRequest($organization, $body, $project, $repositoryId, $importRequestId, $apiVersion);
 
         return $this->client
@@ -1279,7 +1279,7 @@ class ImportRequestsApi
      * Create request for operation 'importRequestsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportRequest $body The updated version of the import request. Currently, the only change allowed is setting the Status to Queued or Abandoned. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  int $importRequestId The unique identifier for the import request to update. (required)

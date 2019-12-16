@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\AvatarsApi
+# FrankHouweling\AzureDevOpsClient\Graph\AvatarsApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -22,12 +22,12 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\AvatarsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\AvatarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **avatarsGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar avatarsGet($subjectDescriptor, $organization, $apiVersion, $size, $format)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar avatarsGet($subjectDescriptor, $organization, $apiVersion, $size, $format)
 
 
 
@@ -81,9 +81,9 @@ void (empty response body)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\AvatarsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\AvatarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar**](../Model/Avatar.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar**](../Model/Avatar.md)
 
 ### Authorization
 
@@ -142,18 +142,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\AvatarsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\AvatarsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar | 
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar | 
 $subjectDescriptor = "subjectDescriptor_example"; // string | 
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -170,7 +170,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\Avatar**](../Model/Avatar.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\Avatar**](../Model/Avatar.md)|  |
  **subjectDescriptor** | **string**|  |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * RunUpdateModel Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
         'buildDropLocation' => 'string',
         'buildFlavor' => 'string',
         'buildPlatform' => 'string',
@@ -66,24 +66,24 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
         'completedDate' => 'string',
         'controller' => 'string',
         'deleteInProgressResults' => 'bool',
-        'dtlAutEnvironment' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'dtlEnvironment' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'dtlEnvironmentDetails' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails',
+        'dtlAutEnvironment' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'dtlEnvironment' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'dtlEnvironmentDetails' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails',
         'dueDate' => 'string',
         'errorMessage' => 'string',
         'iteration' => 'string',
-        'logEntries' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[]',
+        'logEntries' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[]',
         'name' => 'string',
         'releaseEnvironmentUri' => 'string',
         'releaseUri' => 'string',
-        'runSummary' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummaryModel[]',
+        'runSummary' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummaryModel[]',
         'sourceWorkflow' => 'string',
         'startedDate' => 'string',
         'state' => 'string',
         'substate' => 'string',
-        'tags' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[]',
+        'tags' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[]',
         'testEnvironmentId' => 'string',
-        'testSettings' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference'
+        'testSettings' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference'
     ];
 
     /**
@@ -395,7 +395,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getBuild()
     {
@@ -405,7 +405,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $build An abstracted reference to the build that it belongs.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $build An abstracted reference to the build that it belongs.
      *
      * @return $this
      */
@@ -587,7 +587,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets dtlAutEnvironment
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getDtlAutEnvironment()
     {
@@ -597,7 +597,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets dtlAutEnvironment
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $dtlAutEnvironment An abstracted reference to DtlAutEnvironment.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $dtlAutEnvironment An abstracted reference to DtlAutEnvironment.
      *
      * @return $this
      */
@@ -611,7 +611,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets dtlEnvironment
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getDtlEnvironment()
     {
@@ -621,7 +621,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets dtlEnvironment
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $dtlEnvironment An abstracted reference to DtlEnvironment.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $dtlEnvironment An abstracted reference to DtlEnvironment.
      *
      * @return $this
      */
@@ -635,7 +635,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets dtlEnvironmentDetails
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails
      */
     public function getDtlEnvironmentDetails()
     {
@@ -645,7 +645,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets dtlEnvironmentDetails
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails $dtlEnvironmentDetails dtlEnvironmentDetails
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\DtlEnvironmentDetails $dtlEnvironmentDetails dtlEnvironmentDetails
      *
      * @return $this
      */
@@ -731,7 +731,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets logEntries
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[]
      */
     public function getLogEntries()
     {
@@ -741,7 +741,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets logEntries
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[] $logEntries Log entries associated with the run. Use a comma-separated list of multiple log entry objects. { logEntry }, { logEntry }, ...
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMessageLogDetails[] $logEntries Log entries associated with the run. Use a comma-separated list of multiple log entry objects. { logEntry }, { logEntry }, ...
      *
      * @return $this
      */
@@ -827,7 +827,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets runSummary
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummaryModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummaryModel[]
      */
     public function getRunSummary()
     {
@@ -837,7 +837,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets runSummary
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummaryModel[] $runSummary Run summary for run Type = NoConfigRun.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummaryModel[] $runSummary Run summary for run Type = NoConfigRun.
      *
      * @return $this
      */
@@ -956,7 +956,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets tags
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[]
      */
     public function getTags()
     {
@@ -966,7 +966,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets tags
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestTag[] $tags Tags to attach with the test run.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestTag[] $tags Tags to attach with the test run.
      *
      * @return $this
      */
@@ -1004,7 +1004,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets testSettings
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestSettings()
     {
@@ -1014,7 +1014,7 @@ class RunUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets testSettings
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testSettings An abstracted reference to test setting resource.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testSettings An abstracted reference to test setting resource.
      *
      * @return $this
      */

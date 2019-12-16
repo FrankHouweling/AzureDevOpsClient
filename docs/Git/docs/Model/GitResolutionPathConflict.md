@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**author** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | User who created the resolution. | [optional] 
+**author** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) | User who created the resolution. | [optional] 
 **action** | **string** |  | [optional] 
 **renamePath** | **string** |  | [optional] 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ContributionNodeQueryResult Class Doc Comment
  *
  * @category Class
  * @description Result of a contribution node query.  Wraps the resulting contribution nodes and provider details.
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ContributionNodeQueryResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'nodes' => 'map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode]',
-        'providerDetails' => 'map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails]'
+        'nodes' => 'map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode]',
+        'providerDetails' => 'map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class ContributionNodeQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets nodes
      *
-     * @return map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode]
      */
     public function getNodes()
     {
@@ -224,7 +224,7 @@ class ContributionNodeQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets nodes
      *
-     * @param map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode] $nodes Map of contribution ids to corresponding node.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionNode] $nodes Map of contribution ids to corresponding node.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class ContributionNodeQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets providerDetails
      *
-     * @return map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails]
      */
     public function getProviderDetails()
     {
@@ -248,7 +248,7 @@ class ContributionNodeQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets providerDetails
      *
-     * @param map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails] $providerDetails Map of provider ids to the corresponding provider details object.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContributionProviderDetails] $providerDetails Map of provider ids to the corresponding provider details object.
      *
      * @return $this
      */

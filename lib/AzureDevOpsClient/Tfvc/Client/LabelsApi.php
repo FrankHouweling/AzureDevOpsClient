@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Client;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Tfvc\ApiException;
-use AzureDevOpsClient\Tfvc\Configuration;
-use AzureDevOpsClient\Tfvc\HeaderSelector;
-use AzureDevOpsClient\Tfvc\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ApiException;
+use FrankHouweling\AzureDevOpsClient\Tfvc\Configuration;
+use FrankHouweling\AzureDevOpsClient\Tfvc\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * LabelsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -101,9 +101,9 @@ class LabelsApi
      * @param  string $requestDataName maxItemCount (optional)
      * @param  string $requestDataOwner maxItemCount (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel
      */
     public function labelsGet($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null)
     {
@@ -125,13 +125,13 @@ class LabelsApi
      * @param  string $requestDataName maxItemCount (optional)
      * @param  string $requestDataOwner maxItemCount (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel, HTTP status code, HTTP response headers (array of strings)
      */
     public function labelsGetWithHttpInfo($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel';
         $request = $this->labelsGetRequest($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner);
 
         try {
@@ -183,7 +183,7 @@ class LabelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -243,7 +243,7 @@ class LabelsApi
      */
     public function labelsGetAsyncWithHttpInfo($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabel';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabel';
         $request = $this->labelsGetRequest($organization, $labelId, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner);
 
         return $this->client
@@ -472,9 +472,9 @@ class LabelsApi
      * @param  int $top Max number of items to return (optional)
      * @param  int $skip Number of items to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
      */
     public function labelsGetLabelItems($organization, $labelId, $apiVersion, $top = null, $skip = null)
     {
@@ -491,13 +491,13 @@ class LabelsApi
      * @param  int $top Max number of items to return (optional)
      * @param  int $skip Number of items to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function labelsGetLabelItemsWithHttpInfo($organization, $labelId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
         $request = $this->labelsGetLabelItemsRequest($organization, $labelId, $apiVersion, $top, $skip);
 
         try {
@@ -549,7 +549,7 @@ class LabelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -599,7 +599,7 @@ class LabelsApi
      */
     public function labelsGetLabelItemsAsyncWithHttpInfo($organization, $labelId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
         $request = $this->labelsGetLabelItemsRequest($organization, $labelId, $apiVersion, $top, $skip);
 
         return $this->client
@@ -799,9 +799,9 @@ class LabelsApi
      * @param  int $top Max number of labels to return, defaults to 100 when undefined (optional)
      * @param  int $skip Number of labels to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]
      */
     public function labelsList($organization, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null, $top = null, $skip = null)
     {
@@ -824,13 +824,13 @@ class LabelsApi
      * @param  int $top Max number of labels to return, defaults to 100 when undefined (optional)
      * @param  int $skip Number of labels to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function labelsListWithHttpInfo($organization, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]';
         $request = $this->labelsListRequest($organization, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner, $top, $skip);
 
         try {
@@ -882,7 +882,7 @@ class LabelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -944,7 +944,7 @@ class LabelsApi
      */
     public function labelsListAsyncWithHttpInfo($organization, $project, $apiVersion, $requestDataIncludeLinks = null, $requestDataItemLabelFilter = null, $requestDataLabelScope = null, $requestDataMaxItemCount = null, $requestDataName = null, $requestDataOwner = null, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcLabelRef[]';
         $request = $this->labelsListRequest($organization, $project, $apiVersion, $requestDataIncludeLinks, $requestDataItemLabelFilter, $requestDataLabelScope, $requestDataMaxItemCount, $requestDataName, $requestDataOwner, $top, $skip);
 
         return $this->client

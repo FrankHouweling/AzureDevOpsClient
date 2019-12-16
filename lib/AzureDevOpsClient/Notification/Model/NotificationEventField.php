@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationEventField Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of a filterable field. A filterable field is a field in an event that can used to filter notifications for a certain event type.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class NotificationEventField implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'fieldType' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldType',
+        'fieldType' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldType',
         'id' => 'string',
         'name' => 'string',
         'path' => 'string',
@@ -232,7 +232,7 @@ class NotificationEventField implements ModelInterface, ArrayAccess
     /**
      * Gets fieldType
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldType
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldType
      */
     public function getFieldType()
     {
@@ -242,7 +242,7 @@ class NotificationEventField implements ModelInterface, ArrayAccess
     /**
      * Sets fieldType
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventFieldType $fieldType Gets or sets the type of this field.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventFieldType $fieldType Gets or sets the type of this field.
      *
      * @return $this
      */

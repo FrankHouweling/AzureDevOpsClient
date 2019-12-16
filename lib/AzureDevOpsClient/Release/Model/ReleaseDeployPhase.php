@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDeployPhase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ReleaseDeployPhase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deploymentJobs' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[]',
+        'deploymentJobs' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[]',
         'errorLog' => 'string',
-        'manualInterventions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]',
+        'manualInterventions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]',
         'name' => 'string',
         'phaseId' => 'string',
         'phaseType' => 'string',
@@ -328,7 +328,7 @@ class ReleaseDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Gets deploymentJobs
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[]
      */
     public function getDeploymentJobs()
     {
@@ -338,7 +338,7 @@ class ReleaseDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Sets deploymentJobs
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[] $deploymentJobs Deployment jobs of the phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[] $deploymentJobs Deployment jobs of the phase.
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class ReleaseDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Gets manualInterventions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]
      */
     public function getManualInterventions()
     {
@@ -386,7 +386,7 @@ class ReleaseDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Sets manualInterventions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[] $manualInterventions List of manual intervention tasks execution information in phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[] $manualInterventions List of manual intervention tasks execution information in phase.
      *
      * @return $this
      */

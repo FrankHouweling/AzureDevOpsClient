@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPathToItemsCollection Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GitPathToItemsCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => 'map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]]'
+        'items' => 'map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class GitPathToItemsCollection implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]]
      */
     public function getItems()
     {
@@ -218,7 +218,7 @@ class GitPathToItemsCollection implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]] $items items
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]] $items items
      *
      * @return $this
      */

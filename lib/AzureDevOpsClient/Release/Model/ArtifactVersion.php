@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactVersion Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class ArtifactVersion implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'alias' => 'string',
-        'defaultVersion' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion',
+        'defaultVersion' => '\FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion',
         'errorMessage' => 'string',
-        'versions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion[]'
+        'versions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion[]'
     ];
 
     /**
@@ -250,7 +250,7 @@ class ArtifactVersion implements ModelInterface, ArrayAccess
     /**
      * Gets defaultVersion
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion
      */
     public function getDefaultVersion()
     {
@@ -260,7 +260,7 @@ class ArtifactVersion implements ModelInterface, ArrayAccess
     /**
      * Sets defaultVersion
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion $defaultVersion Gets or sets the default version of artifact.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion $defaultVersion Gets or sets the default version of artifact.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class ArtifactVersion implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion[]
      */
     public function getVersions()
     {
@@ -308,7 +308,7 @@ class ArtifactVersion implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion[] $versions Gets or sets the list of build versions of artifact.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion[] $versions Gets or sets the list of build versions of artifact.
      *
      * @return $this
      */

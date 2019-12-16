@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * DataProviderQuery Class Doc Comment
  *
  * @category Class
  * @description A query that can be issued for data provider data
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class DataProviderQuery implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'context' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext',
+        'context' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext',
         'contributionIds' => 'string[]'
     ];
 
@@ -214,7 +214,7 @@ class DataProviderQuery implements ModelInterface, ArrayAccess
     /**
      * Gets context
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext
      */
     public function getContext()
     {
@@ -224,7 +224,7 @@ class DataProviderQuery implements ModelInterface, ArrayAccess
     /**
      * Sets context
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext $context Contextual information to pass to the data providers
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext $context Contextual information to pass to the data providers
      *
      * @return $this
      */

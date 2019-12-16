@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LegacyTestRunStatistic Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class LegacyTestRunStatistic implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'count' => 'int',
         'outcome' => 'string',
-        'resolutionState' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState',
+        'resolutionState' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState',
         'state' => 'string',
         'testRunId' => 'int'
     ];
@@ -293,7 +293,7 @@ class LegacyTestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets resolutionState
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState
      */
     public function getResolutionState()
     {
@@ -303,7 +303,7 @@ class LegacyTestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets resolutionState
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResolutionState $resolutionState resolutionState
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResolutionState $resolutionState resolutionState
      *
      * @return $this
      */

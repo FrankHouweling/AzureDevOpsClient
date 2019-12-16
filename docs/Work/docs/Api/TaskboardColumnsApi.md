@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\TaskboardColumnsApi
+# FrankHouweling\AzureDevOpsClient\Work\TaskboardColumnsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **taskboardColumnsGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns taskboardColumnsGet($organization, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns taskboardColumnsGet($organization, $project, $team, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\TaskboardColumnsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\TaskboardColumnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns**](../Model/TaskboardColumns.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns**](../Model/TaskboardColumns.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **taskboardColumnsUpdate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns taskboardColumnsUpdate($organization, $body, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns taskboardColumnsUpdate($organization, $body, $project, $team, $apiVersion)
 
 
 
@@ -80,16 +80,16 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\TaskboardColumnsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\TaskboardColumnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn()); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] | 
+$body = array(new \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn()); // \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] | 
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -108,14 +108,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[]**](../Model/UpdateTaskboardColumn.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[]**](../Model/UpdateTaskboardColumn.md)|  |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns**](../Model/TaskboardColumns.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns**](../Model/TaskboardColumns.md)
 
 ### Authorization
 

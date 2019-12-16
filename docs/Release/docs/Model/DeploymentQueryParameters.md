@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **artifactVersions** | **string[]** | Query deployments based specified artifact versions. | [optional] 
 **deploymentsPerEnvironment** | **int** | Query deployments number of deployments per environment. | [optional] 
 **deploymentStatus** | **string** | Query deployment based on deployment status. | [optional] 
-**environments** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]**](DefinitionEnvironmentReference.md) | Query deployments of specified environments. | [optional] 
+**environments** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]**](DefinitionEnvironmentReference.md) | Query deployments of specified environments. | [optional] 
 **expands** | **string** | Query deployments based specified expands. | [optional] 
 **isDeleted** | **bool** | Specify deleted deployments should return or not. | [optional] 
 **operationStatus** | **string** | Query deployment based on deployment operation status. | [optional] 

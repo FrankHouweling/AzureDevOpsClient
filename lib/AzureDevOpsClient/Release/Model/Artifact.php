@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * Artifact Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class Artifact implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'alias' => 'string',
-        'definitionReference' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceReference]',
+        'definitionReference' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceReference]',
         'isPrimary' => 'bool',
         'isRetained' => 'bool',
         'type' => 'string'
@@ -256,7 +256,7 @@ class Artifact implements ModelInterface, ArrayAccess
     /**
      * Gets definitionReference
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceReference]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceReference]
      */
     public function getDefinitionReference()
     {
@@ -266,7 +266,7 @@ class Artifact implements ModelInterface, ArrayAccess
     /**
      * Sets definitionReference
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactSourceReference] $definitionReference Gets or sets definition reference. e.g. {\"project\":{\"id\":\"fed755ea-49c5-4399-acea-fd5b5aa90a6c\",\"name\":\"myProject\"},\"definition\":{\"id\":\"1\",\"name\":\"mybuildDefinition\"},\"connection\":{\"id\":\"1\",\"name\":\"myConnection\"}}.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactSourceReference] $definitionReference Gets or sets definition reference. e.g. {\"project\":{\"id\":\"fed755ea-49c5-4399-acea-fd5b5aa90a6c\",\"name\":\"myProject\"},\"definition\":{\"id\":\"1\",\"name\":\"mybuildDefinition\"},\"connection\":{\"id\":\"1\",\"name\":\"myConnection\"}}.
      *
      * @return $this
      */

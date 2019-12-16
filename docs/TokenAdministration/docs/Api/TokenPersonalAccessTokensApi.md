@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TokenAdministration\TokenPersonalAccessTokensApi
+# FrankHouweling\AzureDevOpsClient\TokenAdministration\TokenPersonalAccessTokensApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **tokenPersonalAccessTokensList**
-> \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminPagedSessionTokens tokenPersonalAccessTokensList($body, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic)
+> \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminPagedSessionTokens tokenPersonalAccessTokensList($body, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic)
 
 
 
@@ -20,15 +20,15 @@ Lists of all the session token details of the personal access tokens (PATs) for 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TokenAdministration\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TokenAdministration\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TokenAdministration\Api\TokenPersonalAccessTokensApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TokenAdministration\Api\TokenPersonalAccessTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = array(new \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\string[]()); // string[] | 
+$body = array(new \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\string[]()); // string[] | 
 $subjectDescriptor = "subjectDescriptor_example"; // string | The descriptor of the target user.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $pageSize = 56; // int | The maximum number of results to return on each page.
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminPagedSessionTokens**](../Model/TokenAdminPagedSessionTokens.md)
+[**\FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminPagedSessionTokens**](../Model/TokenAdminPagedSessionTokens.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcChange Class Doc Comment
  *
  * @category Class
  * @description A change.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class TfvcChange implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'changeType' => 'string',
         'item' => 'string',
-        'newContent' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent',
+        'newContent' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent',
         'sourceServerItem' => 'string',
         'url' => 'string',
-        'mergeSources' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[]',
+        'mergeSources' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[]',
         'pendingVersion' => 'int'
     ];
 
@@ -350,7 +350,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Gets newContent
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent
      */
     public function getNewContent()
     {
@@ -360,7 +360,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Sets newContent
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ItemContent $newContent Content of the item after the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ItemContent $newContent Content of the item after the change.
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Gets mergeSources
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[]
      */
     public function getMergeSources()
     {
@@ -432,7 +432,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Sets mergeSources
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[] $mergeSources List of merge sources in case of rename or branch creation.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMergeSource[] $mergeSources List of merge sources in case of rename or branch creation.
      *
      * @return $this
      */

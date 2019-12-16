@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcLabel Class Doc Comment
  *
  * @category Class
  * @description Metadata for a label.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class TfvcLabel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
         'description' => 'string',
         'id' => 'int',
         'labelScope' => 'string',
         'modifiedDate' => '\DateTime',
         'name' => 'string',
-        'owner' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef',
         'url' => 'string',
-        'items' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]'
+        'items' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]'
     ];
 
     /**
@@ -256,7 +256,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -266,7 +266,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links Collection of reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links Collection of reference links.
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -410,7 +410,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Label owner.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Label owner.
      *
      * @return $this
      */
@@ -448,7 +448,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
      */
     public function getItems()
     {
@@ -458,7 +458,7 @@ class TfvcLabel implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[] $items List of items.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[] $items List of items.
      *
      * @return $this
      */

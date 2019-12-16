@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * WorkspaceTemplate Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class WorkspaceTemplate implements ModelInterface, ArrayAccess
         'definitionUri' => 'string',
         'lastModifiedBy' => 'string',
         'lastModifiedDate' => '\DateTime',
-        'mappings' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WorkspaceMapping[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Build\Model\WorkspaceMapping[]',
         'workspaceId' => 'int'
     ];
 
@@ -304,7 +304,7 @@ class WorkspaceTemplate implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WorkspaceMapping[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\WorkspaceMapping[]
      */
     public function getMappings()
     {
@@ -314,7 +314,7 @@ class WorkspaceTemplate implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\WorkspaceMapping[] $mappings List of workspace mappings
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\WorkspaceMapping[] $mappings List of workspace mappings
      *
      * @return $this
      */

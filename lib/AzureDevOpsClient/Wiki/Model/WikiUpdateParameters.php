@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiUpdateParameters Class Doc Comment
  *
  * @category Class
  * @description Wiki update parameters.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class WikiUpdateParameters implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'versions' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[]'
+        'versions' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class WikiUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[]
      */
     public function getVersions()
     {
@@ -248,7 +248,7 @@ class WikiUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[] $versions Versions of the wiki.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor[] $versions Versions of the wiki.
      *
      * @return $this
      */

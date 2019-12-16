@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\TestPointApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\TestPointApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **testPointGetPoints**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointGetPoints($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef, $includePointDetails)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointGetPoints($organization, $project, $planId, $suiteId, $pointIds, $apiVersion, $returnIdentityRef, $includePointDetails)
 
 
 
@@ -22,9 +22,9 @@ Get a list of points based on point Ids provided.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testPointGetPointsList**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointGetPointsList($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds, $testCaseId, $continuationToken, $returnIdentityRef, $includePointDetails)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointGetPointsList($organization, $project, $planId, $suiteId, $apiVersion, $testPointIds, $testCaseId, $continuationToken, $returnIdentityRef, $includePointDetails)
 
 
 
@@ -89,9 +89,9 @@ Get all the points inside a suite based on some filters
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testPointUpdate**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails, $returnIdentityRef)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[] testPointUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion, $includePointDetails, $returnIdentityRef)
 
 
 
@@ -160,16 +160,16 @@ Update Test Points. This is used to Reset test point to active, update the outco
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestPointApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestPointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams()); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] | A TestPointUpdateParams Object.
+$body = array(new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams()); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[] | A TestPointUpdateParams Object.
 $project = "project_example"; // string | Project ID or project name
 $planId = 56; // int | ID of the test plan for which test points are requested.
 $suiteId = 56; // int | ID of the test suite for which test points are requested.
@@ -191,7 +191,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[]**](../Model/TestPointUpdateParams.md)| A TestPointUpdateParams Object. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointUpdateParams[]**](../Model/TestPointUpdateParams.md)| A TestPointUpdateParams Object. |
  **project** | **string**| Project ID or project name |
  **planId** | **int**| ID of the test plan for which test points are requested. |
  **suiteId** | **int**| ID of the test suite for which test points are requested. |
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]**](../Model/TestPoint.md)
 
 ### Authorization
 

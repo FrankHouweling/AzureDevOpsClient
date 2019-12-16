@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestSummaryForWorkItem Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestSummaryForWorkItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'summary' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend',
-        'workItem' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference'
+        'summary' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend',
+        'workItem' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TestSummaryForWorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets summary
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend
      */
     public function getSummary()
     {
@@ -224,7 +224,7 @@ class TestSummaryForWorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets summary
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend $summary summary
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedDataForResultTrend $summary summary
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TestSummaryForWorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets workItem
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference
      */
     public function getWorkItem()
     {
@@ -248,7 +248,7 @@ class TestSummaryForWorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets workItem
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference $workItem workItem
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference $workItem workItem
      *
      * @return $this
      */

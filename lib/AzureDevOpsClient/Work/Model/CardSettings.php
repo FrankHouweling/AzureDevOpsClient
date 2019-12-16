@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CardSettings Class Doc Comment
  *
  * @category Class
  * @description Card settings, such as fields and rules
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class CardSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'fields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardFieldSettings'
+        'fields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CardFieldSettings'
     ];
 
     /**
@@ -208,7 +208,7 @@ class CardSettings implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardFieldSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CardFieldSettings
      */
     public function getFields()
     {
@@ -218,7 +218,7 @@ class CardSettings implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardFieldSettings $fields A collection of settings related to rendering of fields on cards
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CardFieldSettings $fields A collection of settings related to rendering of fields on cards
      *
      * @return $this
      */

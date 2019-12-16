@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Release\DefinitionsApi
+# FrankHouweling\AzureDevOpsClient\Release\DefinitionsApi
 
 All URIs are relative to *https://vsrm.dev.azure.com*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **definitionsCreate**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -26,16 +26,16 @@ Create a release definition
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition(); // \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition | release definition object to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition(); // \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition | release definition object to create.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.4' to use this version of the api.
 
@@ -53,13 +53,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)| release definition object to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)| release definition object to create. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
 
 ### Authorization
 
@@ -85,9 +85,9 @@ Delete a release definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **definitionsGet**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsGet($organization, $project, $definitionId, $apiVersion, $propertyFilters)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsGet($organization, $project, $definitionId, $apiVersion, $propertyFilters)
 
 
 
@@ -147,9 +147,9 @@ Get a release definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
 
 ### Authorization
 
@@ -208,9 +208,9 @@ Get release definition for a given definitionId and revision
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **definitionsGetReleaseDefinitionHistory**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[] definitionsGetReleaseDefinitionHistory($organization, $project, $definitionId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[] definitionsGetReleaseDefinitionHistory($organization, $project, $definitionId, $apiVersion)
 
 
 
@@ -269,9 +269,9 @@ Get revision history for a release definition
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]**](../Model/ReleaseDefinitionRevision.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionRevision[]**](../Model/ReleaseDefinitionRevision.md)
 
 ### Authorization
 
@@ -316,7 +316,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **definitionsList**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[] definitionsList($organization, $project, $apiVersion, $searchText, $expand, $artifactType, $artifactSourceId, $top, $continuationToken, $queryOrder, $path, $isExactNameMatch, $tagFilter, $propertyFilters, $definitionIdFilter, $isDeleted, $searchTextContainsFolderName)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[] definitionsList($organization, $project, $apiVersion, $searchText, $expand, $artifactType, $artifactSourceId, $top, $continuationToken, $queryOrder, $path, $isExactNameMatch, $tagFilter, $propertyFilters, $definitionIdFilter, $isDeleted, $searchTextContainsFolderName)
 
 
 
@@ -328,9 +328,9 @@ Get a list of release definitions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -387,7 +387,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition[]**](../Model/ReleaseDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition[]**](../Model/ReleaseDefinition.md)
 
 ### Authorization
 
@@ -401,7 +401,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **definitionsUpdate**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsUpdate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition definitionsUpdate($organization, $body, $project, $apiVersion)
 
 
 
@@ -413,16 +413,16 @@ Update a release definition.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DefinitionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DefinitionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition(); // \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition | Release definition object to update.
+$body = new \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition(); // \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition | Release definition object to update.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.4' to use this version of the api.
 
@@ -440,13 +440,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)| Release definition object to update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)| Release definition object to update. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinition**](../Model/ReleaseDefinition.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LastResultDetails Class Doc Comment
  *
  * @category Class
  * @description Last result details of test point.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class LastResultDetails implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'dateCompleted' => '\DateTime',
         'duration' => 'int',
-        'runBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef'
+        'runBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef'
     ];
 
     /**
@@ -268,7 +268,7 @@ class LastResultDetails implements ModelInterface, ArrayAccess
     /**
      * Gets runBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getRunBy()
     {
@@ -278,7 +278,7 @@ class LastResultDetails implements ModelInterface, ArrayAccess
     /**
      * Sets runBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $runBy RunBy.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $runBy RunBy.
      *
      * @return $this
      */

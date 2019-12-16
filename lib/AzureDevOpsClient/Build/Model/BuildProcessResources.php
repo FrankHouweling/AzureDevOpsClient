@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildProcessResources Class Doc Comment
  *
  * @category Class
  * @description Represents resources used by a build process.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'endpoints' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServiceEndpointReference[]',
-        'files' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SecureFileReference[]',
-        'queues' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[]',
-        'variableGroups' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroupReference[]'
+        'endpoints' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ServiceEndpointReference[]',
+        'files' => '\FrankHouweling\AzureDevOpsClient\Build\Model\SecureFileReference[]',
+        'queues' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[]',
+        'variableGroups' => '\FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroupReference[]'
     ];
 
     /**
@@ -226,7 +226,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Gets endpoints
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServiceEndpointReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ServiceEndpointReference[]
      */
     public function getEndpoints()
     {
@@ -236,7 +236,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Sets endpoints
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServiceEndpointReference[] $endpoints endpoints
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ServiceEndpointReference[] $endpoints endpoints
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Gets files
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SecureFileReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SecureFileReference[]
      */
     public function getFiles()
     {
@@ -260,7 +260,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Sets files
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SecureFileReference[] $files files
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\SecureFileReference[] $files files
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Gets queues
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[]
      */
     public function getQueues()
     {
@@ -284,7 +284,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Sets queues
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[] $queues queues
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueueReference[] $queues queues
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Gets variableGroups
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroupReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroupReference[]
      */
     public function getVariableGroups()
     {
@@ -308,7 +308,7 @@ class BuildProcessResources implements ModelInterface, ArrayAccess
     /**
      * Sets variableGroups
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\VariableGroupReference[] $variableGroups variableGroups
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\VariableGroupReference[] $variableGroups variableGroups
      *
      * @return $this
      */

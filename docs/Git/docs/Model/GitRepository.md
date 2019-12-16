@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **defaultBranch** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **isFork** | **bool** | True if the repository was created as a fork | [optional] 
 **name** | **string** |  | [optional] 
-**parentRepository** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef**](GitRepositoryRef.md) |  | [optional] 
-**project** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
+**parentRepository** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef**](GitRepositoryRef.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
 **remoteUrl** | **string** |  | [optional] 
 **size** | **int** | Compressed size (bytes) of the repository. | [optional] 
 **sshUrl** | **string** |  | [optional] 

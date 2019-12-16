@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseTasksUpdatedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,10 +61,10 @@ class ReleaseTasksUpdatedEvent implements ModelInterface, ArrayAccess
         'environmentId' => 'int',
         'projectId' => 'string',
         'releaseId' => 'int',
-        'job' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask',
+        'job' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask',
         'planId' => 'string',
         'releaseStepId' => 'int',
-        'tasks' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[]'
+        'tasks' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[]'
     ];
 
     /**
@@ -316,7 +316,7 @@ class ReleaseTasksUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets job
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask
      */
     public function getJob()
     {
@@ -326,7 +326,7 @@ class ReleaseTasksUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets job
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask $job job
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask $job job
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class ReleaseTasksUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets tasks
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[]
      */
     public function getTasks()
     {
@@ -398,7 +398,7 @@ class ReleaseTasksUpdatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets tasks
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTask[] $tasks tasks
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTask[] $tasks tasks
      *
      * @return $this
      */

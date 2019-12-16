@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * PointAssignment Class Doc Comment
  *
  * @category Class
  * @description Assignments for the Test Point
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
         'configurationId' => 'int',
         'configurationName' => 'string',
         'id' => 'int',
-        'tester' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef'
+        'tester' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef'
     ];
 
     /**
@@ -298,7 +298,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Gets tester
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getTester()
     {
@@ -308,7 +308,7 @@ class PointAssignment implements ModelInterface, ArrayAccess
     /**
      * Sets tester
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester Tester Assigned to the Test Point
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $tester Tester Assigned to the Test Point
      *
      * @return $this
      */

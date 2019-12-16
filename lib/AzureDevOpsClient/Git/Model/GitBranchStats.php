@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitBranchStats Class Doc Comment
  *
  * @category Class
  * @description Ahead and behind counts for a particular ref.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GitBranchStats implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'aheadCount' => 'int',
         'behindCount' => 'int',
-        'commit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'commit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'isBaseVersion' => 'bool',
         'name' => 'string'
     ];
@@ -280,7 +280,7 @@ class GitBranchStats implements ModelInterface, ArrayAccess
     /**
      * Gets commit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getCommit()
     {
@@ -290,7 +290,7 @@ class GitBranchStats implements ModelInterface, ArrayAccess
     /**
      * Sets commit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $commit Current commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $commit Current commit.
      *
      * @return $this
      */

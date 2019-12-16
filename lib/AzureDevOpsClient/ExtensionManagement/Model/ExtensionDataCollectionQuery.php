@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionDataCollectionQuery Class Doc Comment
  *
  * @category Class
  * @description Represents a query to receive a set of extension data collections
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ExtensionDataCollectionQuery implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'collections' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[]'
+        'collections' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ExtensionDataCollectionQuery implements ModelInterface, ArrayAccess
     /**
      * Gets collections
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[]
      */
     public function getCollections()
     {
@@ -218,7 +218,7 @@ class ExtensionDataCollectionQuery implements ModelInterface, ArrayAccess
     /**
      * Sets collections
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[] $collections A list of collections to query
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionDataCollection[] $collections A list of collections to query
      *
      * @return $this
      */

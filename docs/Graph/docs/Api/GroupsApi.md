@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\GroupsApi
+# FrankHouweling\AzureDevOpsClient\Graph\GroupsApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **groupsCreate**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup groupsCreate($organization, $body, $apiVersion, $scopeDescriptor, $groupDescriptors)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup groupsCreate($organization, $body, $apiVersion, $scopeDescriptor, $groupDescriptors)
 
 
 
@@ -24,16 +24,16 @@ Create a new Azure DevOps group or materialize an existing AAD group.  The body 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext | The subset of the full graph group used to uniquely find the graph subject in an external provider.
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext | The subset of the full graph group used to uniquely find the graph subject in an external provider.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $scopeDescriptor = "scopeDescriptor_example"; // string | A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups.
 $groupDescriptors = "groupDescriptors_example"; // string | A comma separated list of descriptors referencing groups you want the graph group to join
@@ -52,14 +52,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext**](../Model/GraphGroupCreationContext.md)| The subset of the full graph group used to uniquely find the graph subject in an external provider. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroupCreationContext**](../Model/GraphGroupCreationContext.md)| The subset of the full graph group used to uniquely find the graph subject in an external provider. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
  **scopeDescriptor** | **string**| A descriptor referencing the scope (collection, project) in which the group should be created. If omitted, will be created in the scope of the enclosing account or organization. Valid only for VSTS groups. | [optional]
  **groupDescriptors** | **string**| A comma separated list of descriptors referencing groups you want the graph group to join | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
 
 ### Authorization
 
@@ -85,9 +85,9 @@ Removes an Azure DevOps group from all of its parent groups.  The group will sti
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -129,7 +129,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupsGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup groupsGet($organization, $groupDescriptor, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup groupsGet($organization, $groupDescriptor, $apiVersion)
 
 
 
@@ -141,9 +141,9 @@ Get a group by its descriptor.  The group will be returned even if it has been d
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
 
 ### Authorization
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupsList**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[] groupsList($organization, $apiVersion, $scopeDescriptor, $subjectTypes, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[] groupsList($organization, $apiVersion, $scopeDescriptor, $subjectTypes, $continuationToken)
 
 
 
@@ -198,9 +198,9 @@ Gets a list of all groups in the current scope (usually organization or account)
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]**](../Model/GraphGroup.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]**](../Model/GraphGroup.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupsUpdate**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup groupsUpdate($organization, $groupDescriptor, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup groupsUpdate($organization, $groupDescriptor, $body, $apiVersion)
 
 
 
@@ -259,9 +259,9 @@ Update the properties of an Azure DevOps group.  Currently limited to only chang
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -269,7 +269,7 @@ $apiInstance = new AzureDevOpsClient\Graph\Api\GroupsApi(
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $groupDescriptor = "groupDescriptor_example"; // string | The descriptor of the group to modify.
-$body = new \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument(); // \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument | The JSON+Patch document containing the fields to alter.
+$body = new \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument | The JSON+Patch document containing the fields to alter.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -287,12 +287,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
  **groupDescriptor** | **string**| The descriptor of the group to modify. |
- **body** | [**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| The JSON+Patch document containing the fields to alter. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Graph\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| The JSON+Patch document containing the fields to alter. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup**](../Model/GraphGroup.md)
 
 ### Authorization
 

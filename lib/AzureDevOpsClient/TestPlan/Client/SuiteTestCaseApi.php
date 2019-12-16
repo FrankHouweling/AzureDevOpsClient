@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * SuiteTestCaseApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class SuiteTestCaseApi
      * Operation suiteTestCaseAdd
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be added. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be added. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]
      */
     public function suiteTestCaseAdd($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
@@ -111,19 +111,19 @@ class SuiteTestCaseApi
      * Operation suiteTestCaseAddWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be added. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be added. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function suiteTestCaseAddWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseAddRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class SuiteTestCaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class SuiteTestCaseApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be added. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be added. (required)
@@ -216,7 +216,7 @@ class SuiteTestCaseApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be added. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be added. (required)
@@ -227,7 +227,7 @@ class SuiteTestCaseApi
      */
     public function suiteTestCaseAddAsyncWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseAddRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         return $this->client
@@ -271,7 +271,7 @@ class SuiteTestCaseApi
      * Create request for operation 'suiteTestCaseAdd'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be added. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be added. (required)
@@ -454,9 +454,9 @@ class SuiteTestCaseApi
      * @param  string $witFields Get the list of witFields. (optional)
      * @param  bool $returnIdentityRef If set to true, returns all identity fields, like AssignedTo, ActivatedBy etc., as IdentityRef objects. If set to false, these fields are returned as unique names in string format. This is false by default. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]
      */
     public function suiteTestCaseGetTestCase($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields = null, $returnIdentityRef = null)
     {
@@ -476,13 +476,13 @@ class SuiteTestCaseApi
      * @param  string $witFields Get the list of witFields. (optional)
      * @param  bool $returnIdentityRef If set to true, returns all identity fields, like AssignedTo, ActivatedBy etc., as IdentityRef objects. If set to false, these fields are returned as unique names in string format. This is false by default. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function suiteTestCaseGetTestCaseWithHttpInfo($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields = null, $returnIdentityRef = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseGetTestCaseRequest($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields, $returnIdentityRef);
 
         try {
@@ -534,7 +534,7 @@ class SuiteTestCaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class SuiteTestCaseApi
      */
     public function suiteTestCaseGetTestCaseAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields = null, $returnIdentityRef = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseGetTestCaseRequest($organization, $project, $planId, $suiteId, $testCaseIds, $apiVersion, $witFields, $returnIdentityRef);
 
         return $this->client
@@ -836,9 +836,9 @@ class SuiteTestCaseApi
      * @param  bool $expand If set to false, will get a smaller payload containing only basic details about the suite test case object (optional)
      * @param  string $excludeFlags Flag to exclude various values from payload. For example to remove point assignments pass exclude &#x3D; 1. To remove extra information (links, test plan , test suite) pass exclude &#x3D; 2. To remove both extra information and point assignments pass exclude &#x3D; 3 (1 + 2). (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]
      */
     public function suiteTestCaseGetTestCaseList($organization, $project, $planId, $suiteId, $apiVersion, $testIds = null, $configurationIds = null, $witFields = null, $continuationToken = null, $returnIdentityRef = null, $expand = null, $excludeFlags = null)
     {
@@ -862,13 +862,13 @@ class SuiteTestCaseApi
      * @param  bool $expand If set to false, will get a smaller payload containing only basic details about the suite test case object (optional)
      * @param  string $excludeFlags Flag to exclude various values from payload. For example to remove point assignments pass exclude &#x3D; 1. To remove extra information (links, test plan , test suite) pass exclude &#x3D; 2. To remove both extra information and point assignments pass exclude &#x3D; 3 (1 + 2). (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function suiteTestCaseGetTestCaseListWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $testIds = null, $configurationIds = null, $witFields = null, $continuationToken = null, $returnIdentityRef = null, $expand = null, $excludeFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseGetTestCaseListRequest($organization, $project, $planId, $suiteId, $apiVersion, $testIds, $configurationIds, $witFields, $continuationToken, $returnIdentityRef, $expand, $excludeFlags);
 
         try {
@@ -920,7 +920,7 @@ class SuiteTestCaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -984,7 +984,7 @@ class SuiteTestCaseApi
      */
     public function suiteTestCaseGetTestCaseListAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $testIds = null, $configurationIds = null, $witFields = null, $continuationToken = null, $returnIdentityRef = null, $expand = null, $excludeFlags = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseGetTestCaseListRequest($organization, $project, $planId, $suiteId, $apiVersion, $testIds, $configurationIds, $witFields, $continuationToken, $returnIdentityRef, $expand, $excludeFlags);
 
         return $this->client
@@ -1234,7 +1234,7 @@ class SuiteTestCaseApi
      * @param  string $testCaseIds Test Case Ids to be removed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1253,7 +1253,7 @@ class SuiteTestCaseApi
      * @param  string $testCaseIds Test Case Ids to be removed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1551,15 +1551,15 @@ class SuiteTestCaseApi
      * Operation suiteTestCaseUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be updated. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]
      */
     public function suiteTestCaseUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
@@ -1571,19 +1571,19 @@ class SuiteTestCaseApi
      * Operation suiteTestCaseUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be updated. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[], HTTP status code, HTTP response headers (array of strings)
      */
     public function suiteTestCaseUpdateWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         try {
@@ -1635,7 +1635,7 @@ class SuiteTestCaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1651,7 +1651,7 @@ class SuiteTestCaseApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be updated. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be updated. (required)
@@ -1676,7 +1676,7 @@ class SuiteTestCaseApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be updated. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be updated. (required)
@@ -1687,7 +1687,7 @@ class SuiteTestCaseApi
      */
     public function suiteTestCaseUpdateAsyncWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]';
         $request = $this->suiteTestCaseUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         return $this->client
@@ -1731,7 +1731,7 @@ class SuiteTestCaseApi
      * Create request for operation 'suiteTestCaseUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteTestCaseCreateUpdateParameters[] $body A SuiteTestCaseCreateUpdateParameters object. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to which test cases are to be updated. (required)
      * @param  int $suiteId ID of the test suite to which test cases are to be updated. (required)

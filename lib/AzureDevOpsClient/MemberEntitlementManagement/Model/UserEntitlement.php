@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * UserEntitlement Class Doc Comment
  *
  * @category Class
  * @description A user entity with additional properties including their license, extensions, and project membership
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class UserEntitlement implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accessLevel' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
+        'accessLevel' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
         'dateCreated' => '\DateTime',
-        'groupAssignments' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]',
+        'groupAssignments' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]',
         'id' => 'string',
         'lastAccessedDate' => '\DateTime',
-        'projectEntitlements' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]',
-        'user' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser'
+        'projectEntitlements' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]',
+        'user' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser'
     ];
 
     /**
@@ -244,7 +244,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets accessLevel
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
      */
     public function getAccessLevel()
     {
@@ -254,7 +254,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets accessLevel
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $accessLevel User's access level denoted by a license.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $accessLevel User's access level denoted by a license.
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets groupAssignments
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]
      */
     public function getGroupAssignments()
     {
@@ -302,7 +302,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets groupAssignments
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[] $groupAssignments [Readonly] GroupEntitlements that this user belongs to.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[] $groupAssignments [Readonly] GroupEntitlements that this user belongs to.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets projectEntitlements
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]
      */
     public function getProjectEntitlements()
     {
@@ -374,7 +374,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets projectEntitlements
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[] $projectEntitlements Relation between a project and the user's effective permissions in that project.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[] $projectEntitlements Relation between a project and the user's effective permissions in that project.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser
      */
     public function getUser()
     {
@@ -398,7 +398,7 @@ class UserEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser $user User reference.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphUser $user User reference.
      *
      * @return $this
      */

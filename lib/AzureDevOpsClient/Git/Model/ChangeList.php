@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ChangeList Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,11 +60,11 @@ class ChangeList implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'allChangesIncluded' => 'bool',
         'changeCounts' => 'map[string,int]',
-        'changes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Change[]',
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\Change[]',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'creationDate' => '\DateTime',
-        'notes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[]',
+        'notes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[]',
         'owner' => 'string',
         'ownerDisplayName' => 'string',
         'ownerId' => 'string',
@@ -322,7 +322,7 @@ class ChangeList implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Change[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Change[]
      */
     public function getChanges()
     {
@@ -332,7 +332,7 @@ class ChangeList implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Change[] $changes changes
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\Change[] $changes changes
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class ChangeList implements ModelInterface, ArrayAccess
     /**
      * Gets notes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[]
      */
     public function getNotes()
     {
@@ -428,7 +428,7 @@ class ChangeList implements ModelInterface, ArrayAccess
     /**
      * Sets notes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[] $notes notes
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[] $notes notes
      *
      * @return $this
      */

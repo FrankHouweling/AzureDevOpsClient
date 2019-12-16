@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * TeamProject Class Doc Comment
  *
  * @category Class
  * @description Represents a Team Project object.
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,9 +68,9 @@ class TeamProject implements ModelInterface, ArrayAccess
         'state' => 'string',
         'url' => 'string',
         'visibility' => 'string',
-        'links' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks',
         'capabilities' => 'map[string,map[string,string]]',
-        'defaultTeam' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef'
+        'defaultTeam' => '\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef'
     ];
 
     /**
@@ -594,7 +594,7 @@ class TeamProject implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -604,7 +604,7 @@ class TeamProject implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks $links The links to other objects related to this object.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks $links The links to other objects related to this object.
      *
      * @return $this
      */
@@ -642,7 +642,7 @@ class TeamProject implements ModelInterface, ArrayAccess
     /**
      * Gets defaultTeam
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef
      */
     public function getDefaultTeam()
     {
@@ -652,7 +652,7 @@ class TeamProject implements ModelInterface, ArrayAccess
     /**
      * Sets defaultTeam
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeamRef $defaultTeam The shallow ref to the default team.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeamRef $defaultTeam The shallow ref to the default team.
      *
      * @return $this
      */

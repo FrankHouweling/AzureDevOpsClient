@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * PipelineReference Class Doc Comment
  *
  * @category Class
  * @description Pipeline reference
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class PipelineReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'jobReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\JobReference',
-        'phaseReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PhaseReference',
+        'jobReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\JobReference',
+        'phaseReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\PhaseReference',
         'pipelineId' => 'int',
-        'stageReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\StageReference'
+        'stageReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\StageReference'
     ];
 
     /**
@@ -226,7 +226,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets jobReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\JobReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\JobReference
      */
     public function getJobReference()
     {
@@ -236,7 +236,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets jobReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\JobReference $jobReference Reference of the job
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\JobReference $jobReference Reference of the job
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets phaseReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PhaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\PhaseReference
      */
     public function getPhaseReference()
     {
@@ -260,7 +260,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets phaseReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PhaseReference $phaseReference Reference of the phase.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\PhaseReference $phaseReference Reference of the phase.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets stageReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\StageReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\StageReference
      */
     public function getStageReference()
     {
@@ -308,7 +308,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets stageReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\StageReference $stageReference Reference of the stage.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\StageReference $stageReference Reference of the stage.
      *
      * @return $this
      */

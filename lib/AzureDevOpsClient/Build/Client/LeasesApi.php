@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * LeasesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class LeasesApi
      * Operation leasesAdd
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]
      */
     public function leasesAdd($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class LeasesApi
      * Operation leasesAddWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[], HTTP status code, HTTP response headers (array of strings)
      */
     public function leasesAddWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]';
         $request = $this->leasesAddRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class LeasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class LeasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class LeasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class LeasesApi
      */
     public function leasesAddAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]';
         $request = $this->leasesAddRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class LeasesApi
      * Create request for operation 'leasesAdd'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\NewRetentionLease[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class LeasesApi
      * @param  string $ids  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class LeasesApi
      * @param  string $ids  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -693,9 +693,9 @@ class LeasesApi
      * @param  int $leaseId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease
      */
     public function leasesGet($organization, $project, $leaseId, $apiVersion)
     {
@@ -711,13 +711,13 @@ class LeasesApi
      * @param  int $leaseId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease, HTTP status code, HTTP response headers (array of strings)
      */
     public function leasesGetWithHttpInfo($organization, $project, $leaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease';
         $request = $this->leasesGetRequest($organization, $project, $leaseId, $apiVersion);
 
         try {
@@ -769,7 +769,7 @@ class LeasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -817,7 +817,7 @@ class LeasesApi
      */
     public function leasesGetAsyncWithHttpInfo($organization, $project, $leaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease';
         $request = $this->leasesGetRequest($organization, $project, $leaseId, $apiVersion);
 
         return $this->client
@@ -1017,9 +1017,9 @@ class LeasesApi
      * @param  int $definitionId An optional parameter to limit the search to a specific pipeline definition. (optional)
      * @param  int $runId An optional parameter to limit the search to a single pipeline run. Requires definitionId. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]
      */
     public function leasesGetRetentionLeasesByUserId($organization, $project, $userOwnerId, $apiVersion, $definitionId = null, $runId = null)
     {
@@ -1037,13 +1037,13 @@ class LeasesApi
      * @param  int $definitionId An optional parameter to limit the search to a specific pipeline definition. (optional)
      * @param  int $runId An optional parameter to limit the search to a single pipeline run. Requires definitionId. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[], HTTP status code, HTTP response headers (array of strings)
      */
     public function leasesGetRetentionLeasesByUserIdWithHttpInfo($organization, $project, $userOwnerId, $apiVersion, $definitionId = null, $runId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]';
         $request = $this->leasesGetRetentionLeasesByUserIdRequest($organization, $project, $userOwnerId, $apiVersion, $definitionId, $runId);
 
         try {
@@ -1095,7 +1095,7 @@ class LeasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1147,7 +1147,7 @@ class LeasesApi
      */
     public function leasesGetRetentionLeasesByUserIdAsyncWithHttpInfo($organization, $project, $userOwnerId, $apiVersion, $definitionId = null, $runId = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionLease[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionLease[]';
         $request = $this->leasesGetRetentionLeasesByUserIdRequest($organization, $project, $userOwnerId, $apiVersion, $definitionId, $runId);
 
         return $this->client

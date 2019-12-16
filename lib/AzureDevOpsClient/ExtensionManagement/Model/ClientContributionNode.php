@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ClientContributionNode Class Doc Comment
  *
  * @category Class
  * @description Representation of a ContributionNode that can be used for serialized to clients.
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ClientContributionNode implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'children' => 'string[]',
-        'contribution' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution',
+        'contribution' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution',
         'parents' => 'string[]'
     ];
 
@@ -244,7 +244,7 @@ class ClientContributionNode implements ModelInterface, ArrayAccess
     /**
      * Gets contribution
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution
      */
     public function getContribution()
     {
@@ -254,7 +254,7 @@ class ClientContributionNode implements ModelInterface, ArrayAccess
     /**
      * Sets contribution
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution $contribution Contribution associated with this node.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ClientContribution $contribution Contribution associated with this node.
      *
      * @return $this
      */

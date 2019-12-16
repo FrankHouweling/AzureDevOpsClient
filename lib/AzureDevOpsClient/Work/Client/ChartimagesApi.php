@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * ChartimagesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -101,7 +101,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.). (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -125,7 +125,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.). (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -497,7 +497,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.) (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -521,7 +521,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.) (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -893,7 +893,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.) (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -917,7 +917,7 @@ class ChartimagesApi
      * @param  bool $showDetails Whether or not the chart should include detailed information (e.g. axis labels, titles, trend lines, etc.) (optional)
      * @param  string $title The title of the chart. Can only be dislayed if ShowLabels is true. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

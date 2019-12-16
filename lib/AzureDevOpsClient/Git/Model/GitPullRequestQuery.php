@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequestQuery Class Doc Comment
  *
  * @category Class
  * @description A set of pull request queries and their results.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GitPullRequestQuery implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'queries' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[]',
-        'results' => 'map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]][]'
+        'queries' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[]',
+        'results' => 'map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]][]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GitPullRequestQuery implements ModelInterface, ArrayAccess
     /**
      * Gets queries
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[]
      */
     public function getQueries()
     {
@@ -224,7 +224,7 @@ class GitPullRequestQuery implements ModelInterface, ArrayAccess
     /**
      * Sets queries
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[] $queries The queries to perform.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestQueryInput[] $queries The queries to perform.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GitPullRequestQuery implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]][]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]][]
      */
     public function getResults()
     {
@@ -248,7 +248,7 @@ class GitPullRequestQuery implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]][] $results The results of the queries. This matches the QueryInputs list so Results[n] are the results of QueryInputs[n]. Each entry in the list is a dictionary of commit->pull requests.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]][] $results The results of the queries. This matches the QueryInputs list so Results[n] are the results of QueryInputs[n]. Each entry in the list is a dictionary of commit->pull requests.
      *
      * @return $this
      */

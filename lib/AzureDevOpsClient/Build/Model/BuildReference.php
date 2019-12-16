@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildReference Class Doc Comment
  *
  * @category Class
  * @description Represents a reference to a build.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class BuildReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
         'buildNumber' => 'string',
         'deleted' => 'bool',
         'finishTime' => '\DateTime',
         'id' => 'int',
         'queueTime' => '\DateTime',
-        'requestedFor' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'requestedFor' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'result' => 'string',
         'startTime' => '\DateTime',
         'status' => 'string'
@@ -324,7 +324,7 @@ class BuildReference implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -334,7 +334,7 @@ class BuildReference implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -468,7 +468,7 @@ class BuildReference implements ModelInterface, ArrayAccess
     /**
      * Gets requestedFor
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getRequestedFor()
     {
@@ -478,7 +478,7 @@ class BuildReference implements ModelInterface, ArrayAccess
     /**
      * Sets requestedFor
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor The identity on whose behalf the build was queued.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor The identity on whose behalf the build was queued.
      *
      * @return $this
      */

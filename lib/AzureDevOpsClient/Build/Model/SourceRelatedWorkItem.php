@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * SourceRelatedWorkItem Class Doc Comment
  *
  * @category Class
  * @description Represents a work item related to some source item. These are retrieved from Source Providers.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class SourceRelatedWorkItem implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
-        'assignedTo' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'assignedTo' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'currentState' => 'string',
         'description' => 'string',
         'id' => 'string',
@@ -250,7 +250,7 @@ class SourceRelatedWorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -260,7 +260,7 @@ class SourceRelatedWorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class SourceRelatedWorkItem implements ModelInterface, ArrayAccess
     /**
      * Gets assignedTo
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getAssignedTo()
     {
@@ -284,7 +284,7 @@ class SourceRelatedWorkItem implements ModelInterface, ArrayAccess
     /**
      * Sets assignedTo
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $assignedTo Identity ref for the person that the work item is assigned to.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $assignedTo Identity ref for the person that the work item is assigned to.
      *
      * @return $this
      */

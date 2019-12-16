@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * FetchTestResultsResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actionResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]',
-        'attachments' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
-        'deletedIds' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
-        'results' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]',
-        'testParameters' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]'
+        'actionResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]',
+        'attachments' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
+        'deletedIds' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]',
+        'results' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]',
+        'testParameters' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]'
     ];
 
     /**
@@ -232,7 +232,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets actionResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[]
      */
     public function getActionResults()
     {
@@ -242,7 +242,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets actionResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResult[] $actionResults actionResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResult[] $actionResults actionResults
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets attachments
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]
      */
     public function getAttachments()
     {
@@ -266,7 +266,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets attachments
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[] $attachments attachments
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[] $attachments attachments
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets deletedIds
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[]
      */
     public function getDeletedIds()
     {
@@ -290,7 +290,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets deletedIds
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $deletedIds deletedIds
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResultIdentifier[] $deletedIds deletedIds
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[]
      */
     public function getResults()
     {
@@ -314,7 +314,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestCaseResult[] $results results
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets testParameters
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[]
      */
     public function getTestParameters()
     {
@@ -338,7 +338,7 @@ class FetchTestResultsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets testParameters
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameter[] $testParameters testParameters
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameter[] $testParameters testParameters
      *
      * @return $this
      */

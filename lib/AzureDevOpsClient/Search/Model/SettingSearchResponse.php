@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * SettingSearchResponse Class Doc Comment
  *
  * @category Class
  * @description Defines a setting search response item
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class SettingSearchResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'facets' => 'map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]]',
+        'facets' => 'map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]]',
         'infoCode' => 'int',
         'count' => 'int',
-        'results' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SettingResult[]'
+        'results' => '\FrankHouweling\AzureDevOpsClient\Search\Model\SettingResult[]'
     ];
 
     /**
@@ -226,7 +226,7 @@ class SettingSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets facets
      *
-     * @return map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]]
      */
     public function getFacets()
     {
@@ -236,7 +236,7 @@ class SettingSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets facets
      *
-     * @param map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]] $facets A dictionary storing an array of <code>Filter</code> object against each facet.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]] $facets A dictionary storing an array of <code>Filter</code> object against each facet.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class SettingSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SettingResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\SettingResult[]
      */
     public function getResults()
     {
@@ -308,7 +308,7 @@ class SettingSearchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\SettingResult[] $results List of top matched setting documents.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\SettingResult[] $results List of top matched setting documents.
      *
      * @return $this
      */

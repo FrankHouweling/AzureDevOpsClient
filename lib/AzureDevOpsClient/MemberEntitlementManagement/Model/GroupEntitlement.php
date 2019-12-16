@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GroupEntitlement Class Doc Comment
  *
  * @category Class
  * @description A group entity with additional properties including its license, extensions, and project membership
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'group' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup',
+        'group' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup',
         'id' => 'string',
         'lastExecuted' => '\DateTime',
-        'licenseRule' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
-        'members' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]',
-        'projectEntitlements' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]',
+        'licenseRule' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
+        'members' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]',
+        'projectEntitlements' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]',
         'status' => 'string'
     ];
 
@@ -271,7 +271,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup
      */
     public function getGroup()
     {
@@ -281,7 +281,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup $group Member reference.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GraphGroup $group Member reference.
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets licenseRule
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
      */
     public function getLicenseRule()
     {
@@ -353,7 +353,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets licenseRule
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $licenseRule License Rule.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $licenseRule License Rule.
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets members
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[]
      */
     public function getMembers()
     {
@@ -377,7 +377,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets members
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[] $members Group members. Only used when creating a new group.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement[] $members Group members. Only used when creating a new group.
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Gets projectEntitlements
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[]
      */
     public function getProjectEntitlements()
     {
@@ -401,7 +401,7 @@ class GroupEntitlement implements ModelInterface, ArrayAccess
     /**
      * Sets projectEntitlements
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[] $projectEntitlements Relation between a project and the member's effective permissions in that project.
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectEntitlement[] $projectEntitlements Relation between a project and the member's effective permissions in that project.
      *
      * @return $this
      */

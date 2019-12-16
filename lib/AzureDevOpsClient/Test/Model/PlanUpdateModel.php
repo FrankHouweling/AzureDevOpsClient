@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * PlanUpdateModel Class Doc Comment
  *
  * @category Class
  * @description A model class used for creating and updating test plans.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,19 +58,19 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'area' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'build' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'buildDefinition' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'area' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'buildDefinition' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'configurationIds' => 'int[]',
         'description' => 'string',
         'endDate' => 'string',
         'iteration' => 'string',
         'name' => 'string',
-        'owner' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
-        'releaseEnvironmentDefinition' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
+        'releaseEnvironmentDefinition' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference',
         'startDate' => 'string',
         'state' => 'string',
-        'testOutcomeSettings' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOutcomeSettings'
+        'testOutcomeSettings' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestOutcomeSettings'
     ];
 
     /**
@@ -280,7 +280,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets area
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getArea()
     {
@@ -290,7 +290,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets area
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $area Area path to which the test plan belongs. This should be set to area path of the team that works on this test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $area Area path to which the test plan belongs. This should be set to area path of the team that works on this test plan.
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getBuild()
     {
@@ -314,7 +314,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $build Build ID of the build whose quality is tested by the tests in this test plan. For automated testing, this build ID is used to find the test binaries that contain automated test methods.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $build Build ID of the build whose quality is tested by the tests in this test plan. For automated testing, this build ID is used to find the test binaries that contain automated test methods.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets buildDefinition
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getBuildDefinition()
     {
@@ -338,7 +338,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets buildDefinition
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $buildDefinition The Build Definition that generates a build associated with this test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $buildDefinition The Build Definition that generates a build associated with this test plan.
      *
      * @return $this
      */
@@ -472,7 +472,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -482,7 +482,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $owner Owner of the test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $owner Owner of the test plan.
      *
      * @return $this
      */
@@ -496,7 +496,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets releaseEnvironmentDefinition
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference
      */
     public function getReleaseEnvironmentDefinition()
     {
@@ -506,7 +506,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets releaseEnvironmentDefinition
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference $releaseEnvironmentDefinition Release Environment to be used to deploy the build and run automated tests from this test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseEnvironmentDefinitionReference $releaseEnvironmentDefinition Release Environment to be used to deploy the build and run automated tests from this test plan.
      *
      * @return $this
      */
@@ -568,7 +568,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets testOutcomeSettings
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOutcomeSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestOutcomeSettings
      */
     public function getTestOutcomeSettings()
     {
@@ -578,7 +578,7 @@ class PlanUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets testOutcomeSettings
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOutcomeSettings $testOutcomeSettings Test Outcome settings
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestOutcomeSettings $testOutcomeSettings Test Outcome settings
      *
      * @return $this
      */

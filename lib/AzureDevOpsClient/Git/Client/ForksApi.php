@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * ForksApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class ForksApi
      * Operation forksCreateForkSyncRequest
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest
      */
     public function forksCreateForkSyncRequest($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks = null)
     {
@@ -111,19 +111,19 @@ class ForksApi
      * Operation forksCreateForkSyncRequestWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function forksCreateForkSyncRequestWithHttpInfo($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
         $request = $this->forksCreateForkSyncRequestRequest($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks);
 
         try {
@@ -175,7 +175,7 @@ class ForksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class ForksApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -216,7 +216,7 @@ class ForksApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -227,7 +227,7 @@ class ForksApi
      */
     public function forksCreateForkSyncRequestAsyncWithHttpInfo($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
         $request = $this->forksCreateForkSyncRequestRequest($organization, $body, $repositoryNameOrId, $project, $apiVersion, $includeLinks);
 
         return $this->client
@@ -271,7 +271,7 @@ class ForksApi
      * Create request for operation 'forksCreateForkSyncRequest'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequestParameters $body Source repository and ref mapping. (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -442,9 +442,9 @@ class ForksApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest
      */
     public function forksGetForkSyncRequest($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks = null)
     {
@@ -462,13 +462,13 @@ class ForksApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function forksGetForkSyncRequestWithHttpInfo($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
         $request = $this->forksGetForkSyncRequestRequest($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks);
 
         try {
@@ -520,7 +520,7 @@ class ForksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +572,7 @@ class ForksApi
      */
     public function forksGetForkSyncRequestAsyncWithHttpInfo($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest';
         $request = $this->forksGetForkSyncRequestRequest($organization, $repositoryNameOrId, $forkSyncOperationId, $project, $apiVersion, $includeLinks);
 
         return $this->client
@@ -792,9 +792,9 @@ class ForksApi
      * @param  bool $includeAbandoned True to include abandoned requests. (optional)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]
      */
     public function forksGetForkSyncRequests($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned = null, $includeLinks = null)
     {
@@ -812,13 +812,13 @@ class ForksApi
      * @param  bool $includeAbandoned True to include abandoned requests. (optional)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[], HTTP status code, HTTP response headers (array of strings)
      */
     public function forksGetForkSyncRequestsWithHttpInfo($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]';
         $request = $this->forksGetForkSyncRequestsRequest($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned, $includeLinks);
 
         try {
@@ -870,7 +870,7 @@ class ForksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -922,7 +922,7 @@ class ForksApi
      */
     public function forksGetForkSyncRequestsAsyncWithHttpInfo($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkSyncRequest[]';
         $request = $this->forksGetForkSyncRequestsRequest($organization, $repositoryNameOrId, $project, $apiVersion, $includeAbandoned, $includeLinks);
 
         return $this->client
@@ -1132,9 +1132,9 @@ class ForksApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[]
      */
     public function forksList($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks = null)
     {
@@ -1152,13 +1152,13 @@ class ForksApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function forksListWithHttpInfo($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[]';
         $request = $this->forksListRequest($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks);
 
         try {
@@ -1210,7 +1210,7 @@ class ForksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1262,7 +1262,7 @@ class ForksApi
      */
     public function forksListAsyncWithHttpInfo($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryRef[]';
         $request = $this->forksListRequest($organization, $repositoryNameOrId, $collectionId, $project, $apiVersion, $includeLinks);
 
         return $this->client

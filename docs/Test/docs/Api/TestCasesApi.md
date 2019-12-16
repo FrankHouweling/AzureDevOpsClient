@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\TestCasesApi
+# FrankHouweling\AzureDevOpsClient\Test\TestCasesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -20,12 +20,12 @@ Delete a test case.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Test\Api\TestCasesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\TestCasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model;
+namespace FrankHouweling\AzureDevOpsClient\Profile\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Profile\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Profile\ObjectSerializer;
 
 /**
  * ProfileRegions Class Doc Comment
  *
  * @category Class
  * @description Container of country/region information
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class ProfileRegions implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'noticeContactConsentRequirementRegions' => 'string[]',
         'optOutContactConsentRequirementRegions' => 'string[]',
-        'regions' => '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\ProfileRegion[]'
+        'regions' => '\FrankHouweling\AzureDevOpsClient\Profile\Model\ProfileRegion[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class ProfileRegions implements ModelInterface, ArrayAccess
     /**
      * Gets regions
      *
-     * @return \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\ProfileRegion[]
+     * @return \FrankHouweling\AzureDevOpsClient\Profile\Model\ProfileRegion[]
      */
     public function getRegions()
     {
@@ -278,7 +278,7 @@ class ProfileRegions implements ModelInterface, ArrayAccess
     /**
      * Sets regions
      *
-     * @param \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\ProfileRegion[] $regions List of country/regions
+     * @param \FrankHouweling\AzureDevOpsClient\Profile\Model\ProfileRegion[] $regions List of country/regions
      *
      * @return $this
      */

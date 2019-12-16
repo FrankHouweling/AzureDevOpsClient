@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DesignerProcessTarget Class Doc Comment
  *
  * @category Class
  * @description Represents the target for the build process.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class DesignerProcessTarget implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'agentSpecification' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification'
+        'agentSpecification' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification'
     ];
 
     /**
@@ -208,7 +208,7 @@ class DesignerProcessTarget implements ModelInterface, ArrayAccess
     /**
      * Gets agentSpecification
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification
      */
     public function getAgentSpecification()
     {
@@ -218,7 +218,7 @@ class DesignerProcessTarget implements ModelInterface, ArrayAccess
     /**
      * Sets agentSpecification
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification Agent specification for the build process.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification Agent specification for the build process.
      *
      * @return $this
      */

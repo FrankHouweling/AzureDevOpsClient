@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultHistoryDetailsForGroup Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'groupByValue' => 'object',
-        'latestResult' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult'
+        'latestResult' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets latestResult
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult
      */
     public function getLatestResult()
     {
@@ -248,7 +248,7 @@ class TestResultHistoryDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets latestResult
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult $latestResult latestResult
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult $latestResult latestResult
      *
      * @return $this
      */

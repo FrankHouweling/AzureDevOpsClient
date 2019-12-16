@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Test\ResultsApi
+# FrankHouweling\AzureDevOpsClient\Test\ResultsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **resultsAdd**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsAdd($organization, $body, $project, $runId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsAdd($organization, $body, $project, $runId, $apiVersion)
 
 
 
@@ -23,16 +23,16 @@ Add test results to a test run.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult()); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] | List of test results to add.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult()); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] | List of test results to add.
 $project = "project_example"; // string | Project ID or project name
 $runId = 56; // int | Test run ID into which test results to add.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.6' to use this version of the api.
@@ -51,14 +51,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)| List of test results to add. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)| List of test results to add. |
  **project** | **string**| Project ID or project name |
  **runId** | **int**| Test run ID into which test results to add. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resultsGet**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult resultsGet($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult resultsGet($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude)
 
 
 
@@ -84,9 +84,9 @@ Get a test result for a test run.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult**](../Model/TestCaseResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult**](../Model/TestCaseResult.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resultsList**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsList($organization, $project, $runId, $apiVersion, $detailsToInclude, $skip, $top, $outcomes)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsList($organization, $project, $runId, $apiVersion, $detailsToInclude, $skip, $top, $outcomes)
 
 
 
@@ -147,9 +147,9 @@ Get test results for a test run.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **resultsUpdate**
-> \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsUpdate($organization, $body, $project, $runId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] resultsUpdate($organization, $body, $project, $runId, $apiVersion)
 
 
 
@@ -214,16 +214,16 @@ Update test results in a test run.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Test\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Test\Api\ResultsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Test\Api\ResultsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult()); // \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] | List of test results to update.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult()); // \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] | List of test results to update.
 $project = "project_example"; // string | Project ID or project name
 $runId = 56; // int | Test run ID whose test results to update.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.6' to use this version of the api.
@@ -242,14 +242,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)| List of test results to update. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)| List of test results to update. |
  **project** | **string**| Project ID or project name |
  **runId** | **int**| Test run ID whose test results to update. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]**](../Model/TestCaseResult.md)
 
 ### Authorization
 

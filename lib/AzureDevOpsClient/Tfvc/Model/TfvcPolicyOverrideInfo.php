@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcPolicyOverrideInfo Class Doc Comment
  *
  * @category Class
  * @description Information on the policy override.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'comment' => 'string',
-        'policyFailures' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[]'
+        'policyFailures' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
     /**
      * Gets policyFailures
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[]
      */
     public function getPolicyFailures()
     {
@@ -248,7 +248,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
     /**
      * Sets policyFailures
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[] $policyFailures Information on the failed policy that was overridden.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyFailureInfo[] $policyFailures Information on the failed policy that was overridden.
      *
      * @return $this
      */

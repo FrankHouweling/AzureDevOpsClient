@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\RepositoriesApi
+# FrankHouweling\AzureDevOpsClient\Git\RepositoriesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **repositoriesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository repositoriesCreate($organization, $body, $project, $apiVersion, $sourceRef)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository repositoriesCreate($organization, $body, $project, $apiVersion, $sourceRef)
 
 
 
@@ -28,16 +28,16 @@ Create a git repository in a team project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions | Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id).
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions | Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id).
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $sourceRef = "sourceRef_example"; // string | [optional] Specify the source refs to use while creating a fork repo
@@ -56,14 +56,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions**](../Model/GitRepositoryCreateOptions.md)| Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepositoryCreateOptions**](../Model/GitRepositoryCreateOptions.md)| Specify the repo name, team project and/or parent repository. Team project information can be omitted from gitRepositoryToCreate if the request is project-scoped (i.e., includes project Id). |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
  **sourceRef** | **string**| [optional] Specify the source refs to use while creating a fork repo | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
 
 ### Authorization
 
@@ -89,9 +89,9 @@ Delete a git repository
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -147,9 +147,9 @@ Destroy (hard delete) a soft-deleted Git repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -193,7 +193,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesGetDeletedRepositories**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[] repositoriesGetDeletedRepositories($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[] repositoriesGetDeletedRepositories($organization, $project, $apiVersion)
 
 
 
@@ -205,12 +205,12 @@ Retrieve deleted git repositories.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]**](../Model/GitDeletedRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]**](../Model/GitDeletedRepository.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesGetRecycleBinRepositories**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[] repositoriesGetRecycleBinRepositories($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[] repositoriesGetRecycleBinRepositories($organization, $project, $apiVersion)
 
 
 
@@ -265,9 +265,9 @@ Retrieve soft-deleted git repositories from the recycle bin.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitDeletedRepository[]**](../Model/GitDeletedRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitDeletedRepository[]**](../Model/GitDeletedRepository.md)
 
 ### Authorization
 
@@ -310,7 +310,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesGetRepository**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository repositoriesGetRepository($organization, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository repositoriesGetRepository($organization, $repositoryId, $project, $apiVersion)
 
 
 
@@ -322,9 +322,9 @@ Retrieve a git repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[] repositoriesList($organization, $project, $apiVersion, $includeLinks, $includeAllUrls, $includeHidden)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[] repositoriesList($organization, $project, $apiVersion, $includeLinks, $includeAllUrls, $includeHidden)
 
 
 
@@ -381,9 +381,9 @@ Retrieve git repositories.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -418,7 +418,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository[]**](../Model/GitRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository[]**](../Model/GitRepository.md)
 
 ### Authorization
 
@@ -432,7 +432,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesRestoreRepositoryFromRecycleBin**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository repositoriesRestoreRepositoryFromRecycleBin($organization, $body, $project, $repositoryId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository repositoriesRestoreRepositoryFromRecycleBin($organization, $body, $project, $repositoryId, $apiVersion)
 
 
 
@@ -444,16 +444,16 @@ Recover a soft-deleted Git repository. Recently deleted repositories go into a s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails | 
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails | 
 $project = "project_example"; // string | Project ID or project name
 $repositoryId = "repositoryId_example"; // string | The ID of the repository.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -472,14 +472,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails**](../Model/GitRecycleBinRepositoryDetails.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRecycleBinRepositoryDetails**](../Model/GitRecycleBinRepositoryDetails.md)|  |
  **project** | **string**| Project ID or project name |
  **repositoryId** | [**string**](../Model/.md)| The ID of the repository. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
 
 ### Authorization
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **repositoriesUpdate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository repositoriesUpdate($organization, $body, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository repositoriesUpdate($organization, $body, $repositoryId, $project, $apiVersion)
 
 
 
@@ -505,16 +505,16 @@ Updates the Git repository with either a new repo name or a new default branch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RepositoriesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RepositoriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository | Specify a new repo name or a new default branch of the repository
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository | Specify a new repo name or a new default branch of the repository
 $repositoryId = "repositoryId_example"; // string | The ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -533,14 +533,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)| Specify a new repo name or a new default branch of the repository |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)| Specify a new repo name or a new default branch of the repository |
  **repositoryId** | [**string**](../Model/.md)| The ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository**](../Model/GitRepository.md)
 
 ### Authorization
 

@@ -3,17 +3,17 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **conflictId** | **int** |  | [optional] 
 **conflictPath** | **string** |  | [optional] 
 **conflictType** | **string** |  | [optional] 
-**mergeBaseCommit** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
-**mergeOrigin** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOriginRef**](GitMergeOriginRef.md) |  | [optional] 
-**mergeSourceCommit** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
-**mergeTargetCommit** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
+**mergeBaseCommit** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
+**mergeOrigin** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOriginRef**](GitMergeOriginRef.md) |  | [optional] 
+**mergeSourceCommit** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
+**mergeTargetCommit** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef**](GitCommitRef.md) |  | [optional] 
 **resolutionError** | **string** |  | [optional] 
 **resolutionStatus** | **string** |  | [optional] 
-**resolvedBy** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
+**resolvedBy** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef**](IdentityRef.md) |  | [optional] 
 **resolvedDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **url** | **string** |  | [optional] 
 

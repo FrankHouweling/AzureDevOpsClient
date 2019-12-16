@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetTypesResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class WidgetTypesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
         'uri' => 'string',
-        'widgetTypes' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[]'
+        'widgetTypes' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class WidgetTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -230,7 +230,7 @@ class WidgetTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class WidgetTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets widgetTypes
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[]
      */
     public function getWidgetTypes()
     {
@@ -278,7 +278,7 @@ class WidgetTypesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets widgetTypes
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[] $widgetTypes widgetTypes
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetMetadata[] $widgetTypes widgetTypes
      *
      * @return $this
      */

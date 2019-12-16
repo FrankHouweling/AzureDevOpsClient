@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * AcquisitionOptions Class Doc Comment
  *
  * @category Class
  * @description Market item acquisition options (install, buy, etc) for an installation target.
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'defaultOperation' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation',
+        'defaultOperation' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation',
         'itemId' => 'string',
-        'operations' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[]',
-        'properties' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject',
+        'operations' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[]',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject',
         'target' => 'string'
     ];
 
@@ -232,7 +232,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Gets defaultOperation
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation
      */
     public function getDefaultOperation()
     {
@@ -242,7 +242,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Sets defaultOperation
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation $defaultOperation Default Operation for the ItemId in this target
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation $defaultOperation Default Operation for the ItemId in this target
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Gets operations
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[]
      */
     public function getOperations()
     {
@@ -290,7 +290,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Sets operations
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[] $operations Operations allowed for the ItemId in this target
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperation[] $operations Operations allowed for the ItemId in this target
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject
      */
     public function getProperties()
     {
@@ -314,7 +314,7 @@ class AcquisitionOptions implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\JObject $properties Additional properties which can be added to the request.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\JObject $properties Additional properties which can be added to the request.
      *
      * @return $this
      */

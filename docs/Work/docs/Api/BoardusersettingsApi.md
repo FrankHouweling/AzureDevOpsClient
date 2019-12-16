@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\BoardusersettingsApi
+# FrankHouweling\AzureDevOpsClient\Work\BoardusersettingsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **boardusersettingsGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings boardusersettingsGet($organization, $project, $board, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings boardusersettingsGet($organization, $project, $board, $team, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Get board user settings for a board id
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardusersettingsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardusersettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings**](../Model/BoardUserSettings.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings**](../Model/BoardUserSettings.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **boardusersettingsUpdate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings boardusersettingsUpdate($organization, $body, $project, $board, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings boardusersettingsUpdate($organization, $body, $project, $board, $team, $apiVersion)
 
 
 
@@ -82,9 +82,9 @@ Update board user settings for the board id  We don't want stakeholders to updat
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardusersettingsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardusersettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardUserSettings**](../Model/BoardUserSettings.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardUserSettings**](../Model/BoardUserSettings.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ContributionNodeQuery Class Doc Comment
  *
  * @category Class
  * @description A query that can be issued for contribution nodes
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ContributionNodeQuery implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'contributionIds' => 'string[]',
-        'dataProviderContext' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext',
+        'dataProviderContext' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext',
         'includeProviderDetails' => 'bool',
         'queryOptions' => 'string'
     ];
@@ -281,7 +281,7 @@ class ContributionNodeQuery implements ModelInterface, ArrayAccess
     /**
      * Gets dataProviderContext
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext
      */
     public function getDataProviderContext()
     {
@@ -291,7 +291,7 @@ class ContributionNodeQuery implements ModelInterface, ArrayAccess
     /**
      * Sets dataProviderContext
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext $dataProviderContext Contextual information that can be leveraged by contribution constraints
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\DataProviderContext $dataProviderContext Contextual information that can be leveraged by contribution constraints
      *
      * @return $this
      */

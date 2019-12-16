@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * SuiteTestCaseCreateUpdateParameters Class Doc Comment
  *
  * @category Class
  * @description Create and Update Suite Test Case Parameters
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class SuiteTestCaseCreateUpdateParameters implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pointAssignments' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Configuration[]',
-        'workItem' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItem'
+        'pointAssignments' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\Configuration[]',
+        'workItem' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItem'
     ];
 
     /**
@@ -214,7 +214,7 @@ class SuiteTestCaseCreateUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Gets pointAssignments
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Configuration[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\Configuration[]
      */
     public function getPointAssignments()
     {
@@ -224,7 +224,7 @@ class SuiteTestCaseCreateUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Sets pointAssignments
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\Configuration[] $pointAssignments Configurations Ids
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\Configuration[] $pointAssignments Configurations Ids
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class SuiteTestCaseCreateUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Gets workItem
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItem
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItem
      */
     public function getWorkItem()
     {
@@ -248,7 +248,7 @@ class SuiteTestCaseCreateUpdateParameters implements ModelInterface, ArrayAccess
     /**
      * Sets workItem
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItem $workItem Id of Test Case to be updated or created
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItem $workItem Id of Test Case to be updated or created
      *
      * @return $this
      */

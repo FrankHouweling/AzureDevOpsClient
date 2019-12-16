@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Client;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Dashboard\ApiException;
-use AzureDevOpsClient\Dashboard\Configuration;
-use AzureDevOpsClient\Dashboard\HeaderSelector;
-use AzureDevOpsClient\Dashboard\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ApiException;
+use FrankHouweling\AzureDevOpsClient\Dashboard\Configuration;
+use FrankHouweling\AzureDevOpsClient\Dashboard\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * DashboardsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class DashboardsApi
      * Operation dashboardsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard
      */
     public function dashboardsCreate($organization, $body, $project, $team, $apiVersion)
     {
@@ -110,18 +110,18 @@ class DashboardsApi
      * Operation dashboardsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
      */
     public function dashboardsCreateWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsCreateRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class DashboardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class DashboardsApi
      */
     public function dashboardsCreateAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsCreateRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class DashboardsApi
      * Create request for operation 'dashboardsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The initial state of the dashboard (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -432,7 +432,7 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -450,7 +450,7 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -736,9 +736,9 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard
      */
     public function dashboardsGet($organization, $project, $dashboardId, $team, $apiVersion)
     {
@@ -755,13 +755,13 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
      */
     public function dashboardsGetWithHttpInfo($organization, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsGetRequest($organization, $project, $dashboardId, $team, $apiVersion);
 
         try {
@@ -813,7 +813,7 @@ class DashboardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -863,7 +863,7 @@ class DashboardsApi
      */
     public function dashboardsGetAsyncWithHttpInfo($organization, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsGetRequest($organization, $project, $dashboardId, $team, $apiVersion);
 
         return $this->client
@@ -1076,9 +1076,9 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[]
      */
     public function dashboardsList($organization, $project, $team, $apiVersion)
     {
@@ -1094,13 +1094,13 @@ class DashboardsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[], HTTP status code, HTTP response headers (array of strings)
      */
     public function dashboardsListWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[]';
         $request = $this->dashboardsListRequest($organization, $project, $team, $apiVersion);
 
         try {
@@ -1152,7 +1152,7 @@ class DashboardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[]',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1200,7 +1200,7 @@ class DashboardsApi
      */
     public function dashboardsListAsyncWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard[]';
         $request = $this->dashboardsListRequest($organization, $project, $team, $apiVersion);
 
         return $this->client
@@ -1394,15 +1394,15 @@ class DashboardsApi
      * Operation dashboardsReplaceDashboard
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard to replace. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard
      */
     public function dashboardsReplaceDashboard($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
@@ -1414,19 +1414,19 @@ class DashboardsApi
      * Operation dashboardsReplaceDashboardWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard to replace. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
      */
     public function dashboardsReplaceDashboardWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsReplaceDashboardRequest($organization, $body, $project, $dashboardId, $team, $apiVersion);
 
         try {
@@ -1478,7 +1478,7 @@ class DashboardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1494,7 +1494,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard to replace. (required)
      * @param  string $team Team ID or team name (required)
@@ -1519,7 +1519,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard to replace. (required)
      * @param  string $team Team ID or team name (required)
@@ -1530,7 +1530,7 @@ class DashboardsApi
      */
     public function dashboardsReplaceDashboardAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->dashboardsReplaceDashboardRequest($organization, $body, $project, $dashboardId, $team, $apiVersion);
 
         return $this->client
@@ -1574,7 +1574,7 @@ class DashboardsApi
      * Create request for operation 'dashboardsReplaceDashboard'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $body The Configuration of the dashboard to replace. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard to replace. (required)
      * @param  string $team Team ID or team name (required)
@@ -1749,14 +1749,14 @@ class DashboardsApi
      * Operation dashboardsReplaceDashboards
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup
      */
     public function dashboardsReplaceDashboards($organization, $body, $project, $team, $apiVersion)
     {
@@ -1768,18 +1768,18 @@ class DashboardsApi
      * Operation dashboardsReplaceDashboardsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function dashboardsReplaceDashboardsWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup';
         $request = $this->dashboardsReplaceDashboardsRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -1831,7 +1831,7 @@ class DashboardsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1847,7 +1847,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1871,7 +1871,7 @@ class DashboardsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1881,7 +1881,7 @@ class DashboardsApi
      */
     public function dashboardsReplaceDashboardsAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup';
         $request = $this->dashboardsReplaceDashboardsRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -1925,7 +1925,7 @@ class DashboardsApi
      * Create request for operation 'dashboardsReplaceDashboards'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroup $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

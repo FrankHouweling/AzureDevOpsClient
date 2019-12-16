@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * RepositoryStatusResponse Class Doc Comment
  *
  * @category Class
  * @description Defines the repository status.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class RepositoryStatusResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'indexedBranches' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\BranchInfo[]'
+        'indexedBranches' => '\FrankHouweling\AzureDevOpsClient\Search\Model\BranchInfo[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class RepositoryStatusResponse implements ModelInterface, ArrayAccess
     /**
      * Gets indexedBranches
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\BranchInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\BranchInfo[]
      */
     public function getIndexedBranches()
     {
@@ -248,7 +248,7 @@ class RepositoryStatusResponse implements ModelInterface, ArrayAccess
     /**
      * Sets indexedBranches
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\BranchInfo[] $indexedBranches List of Indexed branches info.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\BranchInfo[] $indexedBranches List of Indexed branches info.
      *
      * @return $this
      */

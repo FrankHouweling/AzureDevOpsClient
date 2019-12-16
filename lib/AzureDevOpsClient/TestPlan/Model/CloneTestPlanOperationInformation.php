@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * CloneTestPlanOperationInformation Class Doc Comment
  *
  * @category Class
  * @description Response for Test Plan clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneOperationResponse' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse',
-        'cloneOptions' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions',
-        'destinationTestPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan',
-        'sourceTestPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse'
+        'cloneOperationResponse' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse',
+        'cloneOptions' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions',
+        'destinationTestPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan',
+        'sourceTestPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse'
     ];
 
     /**
@@ -226,7 +226,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOperationResponse
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse
      */
     public function getCloneOperationResponse()
     {
@@ -236,7 +236,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOperationResponse
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse $cloneOperationResponse Various information related to the clone
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOperationCommonResponse $cloneOperationResponse Various information related to the clone
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOptions
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions
      */
     public function getCloneOptions()
     {
@@ -260,7 +260,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOptions
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets destinationTestPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan
      */
     public function getDestinationTestPlan()
     {
@@ -284,7 +284,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets destinationTestPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan $destinationTestPlan Information of destination Test Plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan $destinationTestPlan Information of destination Test Plan
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Gets sourceTestPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse
      */
     public function getSourceTestPlan()
     {
@@ -308,7 +308,7 @@ class CloneTestPlanOperationInformation implements ModelInterface, ArrayAccess
     /**
      * Sets sourceTestPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse $sourceTestPlan Information of source Test Plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestplanResponse $sourceTestPlan Information of source Test Plan
      *
      * @return $this
      */

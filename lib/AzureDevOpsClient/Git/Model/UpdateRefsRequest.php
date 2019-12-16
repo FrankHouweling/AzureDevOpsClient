@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * UpdateRefsRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class UpdateRefsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'refUpdateRequests' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[]',
+        'refUpdateRequests' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[]',
         'updateMode' => 'string'
     ];
 
@@ -237,7 +237,7 @@ class UpdateRefsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets refUpdateRequests
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[]
      */
     public function getRefUpdateRequests()
     {
@@ -247,7 +247,7 @@ class UpdateRefsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets refUpdateRequests
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] $refUpdateRequests refUpdateRequests
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] $refUpdateRequests refUpdateRequests
      *
      * @return $this
      */

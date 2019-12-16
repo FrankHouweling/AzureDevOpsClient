@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamdaysoffApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class TeamdaysoffApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff
      */
     public function teamdaysoffGet($organization, $project, $iterationId, $team, $apiVersion)
     {
@@ -115,13 +115,13 @@ class TeamdaysoffApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff, HTTP status code, HTTP response headers (array of strings)
      */
     public function teamdaysoffGetWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
         $request = $this->teamdaysoffGetRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class TeamdaysoffApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class TeamdaysoffApi
      */
     public function teamdaysoffGetAsyncWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
         $request = $this->teamdaysoffGetRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         return $this->client
@@ -432,15 +432,15 @@ class TeamdaysoffApi
      * Operation teamdaysoffUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff
      */
     public function teamdaysoffUpdate($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
@@ -452,19 +452,19 @@ class TeamdaysoffApi
      * Operation teamdaysoffUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff, HTTP status code, HTTP response headers (array of strings)
      */
     public function teamdaysoffUpdateWithHttpInfo($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
         $request = $this->teamdaysoffUpdateRequest($organization, $body, $project, $iterationId, $team, $apiVersion);
 
         try {
@@ -516,7 +516,7 @@ class TeamdaysoffApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class TeamdaysoffApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
@@ -557,7 +557,7 @@ class TeamdaysoffApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)
@@ -568,7 +568,7 @@ class TeamdaysoffApi
      */
     public function teamdaysoffUpdateAsyncWithHttpInfo($organization, $body, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOff';
         $request = $this->teamdaysoffUpdateRequest($organization, $body, $project, $iterationId, $team, $apiVersion);
 
         return $this->client
@@ -612,7 +612,7 @@ class TeamdaysoffApi
      * Create request for operation 'teamdaysoffUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsDaysOffPatch $body Team&#39;s days off patch containing a list of start and end dates (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $iterationId ID of the iteration (required)
      * @param  string $team Team ID or team name (required)

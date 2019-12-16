@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * AgentPoolQueueTarget Class Doc Comment
  *
  * @category Class
  * @description Describes how a phase should run against an agent queue.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,11 +59,11 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'int',
-        'agentSpecification' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification',
+        'agentSpecification' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification',
         'allowScriptsAuthAccessOption' => 'bool',
-        'demands' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]',
-        'executionOptions' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions',
-        'queue' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue'
+        'demands' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]',
+        'executionOptions' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions',
+        'queue' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue'
     ];
 
     /**
@@ -262,7 +262,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Gets agentSpecification
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification
      */
     public function getAgentSpecification()
     {
@@ -272,7 +272,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Sets agentSpecification
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification Agent specification of the target.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification Agent specification of the target.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Gets demands
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]
      */
     public function getDemands()
     {
@@ -320,7 +320,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Sets demands
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[] $demands demands
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[] $demands demands
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Gets executionOptions
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions
      */
     public function getExecutionOptions()
     {
@@ -344,7 +344,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Sets executionOptions
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions $executionOptions The execution options.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentTargetExecutionOptions $executionOptions The execution options.
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Gets queue
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue
      */
     public function getQueue()
     {
@@ -368,7 +368,7 @@ class AgentPoolQueueTarget implements ModelInterface, ArrayAccess
     /**
      * Sets queue
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The queue.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The queue.
      *
      * @return $this
      */

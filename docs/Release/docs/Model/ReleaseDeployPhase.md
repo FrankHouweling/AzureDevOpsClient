@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**deploymentJobs** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentJob[]**](DeploymentJob.md) | Deployment jobs of the phase. | [optional] 
+**deploymentJobs** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentJob[]**](DeploymentJob.md) | Deployment jobs of the phase. | [optional] 
 **errorLog** | **string** | Phase execution error logs. | [optional] 
-**manualInterventions** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention[]**](ManualIntervention.md) | List of manual intervention tasks execution information in phase. | [optional] 
+**manualInterventions** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention[]**](ManualIntervention.md) | List of manual intervention tasks execution information in phase. | [optional] 
 **name** | **string** | Name of the phase. | [optional] 
 **phaseId** | **string** | ID of the phase. | [optional] 
 **phaseType** | **string** | Type of the phase. | [optional] 

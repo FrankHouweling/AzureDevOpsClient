@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * JToken Class Doc Comment
  *
  * @category Class
  * @description Represents an abstract JSON token.
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class JToken implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'first' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
+        'first' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
         'hasValues' => 'bool',
-        'item' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
-        'last' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
-        'next' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
+        'item' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
+        'last' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
+        'next' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
         'parent' => 'string',
         'path' => 'string',
-        'previous' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
-        'root' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken',
+        'previous' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
+        'root' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\JToken',
         'type' => 'string'
     ];
 
@@ -262,7 +262,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets first
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getFirst()
     {
@@ -272,7 +272,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets first
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $first Get the first child token of this token.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $first Get the first child token of this token.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getItem()
     {
@@ -320,7 +320,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $item item
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $item item
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets last
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getLast()
     {
@@ -344,7 +344,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets last
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $last Get the last child token of this token.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $last Get the last child token of this token.
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets next
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getNext()
     {
@@ -368,7 +368,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets next
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $next Gets the next sibling token of this node.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $next Gets the next sibling token of this node.
      *
      * @return $this
      */
@@ -430,7 +430,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets previous
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getPrevious()
     {
@@ -440,7 +440,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets previous
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $previous Gets the previous sibling token of this node.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $previous Gets the previous sibling token of this node.
      *
      * @return $this
      */
@@ -454,7 +454,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Gets root
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken
      */
     public function getRoot()
     {
@@ -464,7 +464,7 @@ class JToken implements ModelInterface, ArrayAccess
     /**
      * Sets root
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\JToken $root Gets the root JToken of this JToken.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\JToken $root Gets the root JToken of this JToken.
      *
      * @return $this
      */

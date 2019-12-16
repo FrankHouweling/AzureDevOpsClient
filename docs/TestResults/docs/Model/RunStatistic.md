@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** | Test result count fo the given outcome. | [optional] 
 **outcome** | **string** | Test result outcome | [optional] 
-**resolutionState** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResolutionState**](TestResolutionState.md) | Test run Resolution State. | [optional] 
+**resolutionState** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResolutionState**](TestResolutionState.md) | Test run Resolution State. | [optional] 
 **resultMetadata** | **string** | ResultMetadata for the given outcome/count. | [optional] 
 **state** | **string** | State of the test run | [optional] 
 

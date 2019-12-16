@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ControllersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ControllersApi
      * @param  int $controllerId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController
      */
     public function controllersGet($organization, $controllerId, $apiVersion)
     {
@@ -111,13 +111,13 @@ class ControllersApi
      * @param  int $controllerId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController, HTTP status code, HTTP response headers (array of strings)
      */
     public function controllersGetWithHttpInfo($organization, $controllerId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController';
         $request = $this->controllersGetRequest($organization, $controllerId, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class ControllersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ControllersApi
      */
     public function controllersGetAsyncWithHttpInfo($organization, $controllerId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController';
         $request = $this->controllersGetRequest($organization, $controllerId, $apiVersion);
 
         return $this->client
@@ -397,9 +397,9 @@ class ControllersApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $name  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[]
      */
     public function controllersList($organization, $apiVersion, $name = null)
     {
@@ -414,13 +414,13 @@ class ControllersApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $name  (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[], HTTP status code, HTTP response headers (array of strings)
      */
     public function controllersListWithHttpInfo($organization, $apiVersion, $name = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[]';
         $request = $this->controllersListRequest($organization, $apiVersion, $name);
 
         try {
@@ -472,7 +472,7 @@ class ControllersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class ControllersApi
      */
     public function controllersListAsyncWithHttpInfo($organization, $apiVersion, $name = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[]';
         $request = $this->controllersListRequest($organization, $apiVersion, $name);
 
         return $this->client

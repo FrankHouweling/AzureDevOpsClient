@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * RevertsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class RevertsApi
      * Operation revertsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert
      */
     public function revertsCreate($organization, $body, $project, $repositoryId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class RevertsApi
      * Operation revertsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
      */
     public function revertsCreateWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class RevertsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class RevertsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class RevertsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class RevertsApi
      */
     public function revertsCreateAsyncWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class RevertsApi
      * Create request for operation 'revertsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -432,9 +432,9 @@ class RevertsApi
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert
      */
     public function revertsGetRevert($organization, $project, $revertId, $repositoryId, $apiVersion)
     {
@@ -451,13 +451,13 @@ class RevertsApi
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
      */
     public function revertsGetRevertWithHttpInfo($organization, $project, $revertId, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsGetRevertRequest($organization, $project, $revertId, $repositoryId, $apiVersion);
 
         try {
@@ -509,7 +509,7 @@ class RevertsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -559,7 +559,7 @@ class RevertsApi
      */
     public function revertsGetRevertAsyncWithHttpInfo($organization, $project, $revertId, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsGetRevertRequest($organization, $project, $revertId, $repositoryId, $apiVersion);
 
         return $this->client
@@ -773,9 +773,9 @@ class RevertsApi
      * @param  string $refName The GitAsyncRefOperationParameters generatedRefName used for the revert operation. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert
      */
     public function revertsGetRevertForRefName($organization, $project, $repositoryId, $refName, $apiVersion)
     {
@@ -792,13 +792,13 @@ class RevertsApi
      * @param  string $refName The GitAsyncRefOperationParameters generatedRefName used for the revert operation. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert, HTTP status code, HTTP response headers (array of strings)
      */
     public function revertsGetRevertForRefNameWithHttpInfo($organization, $project, $repositoryId, $refName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsGetRevertForRefNameRequest($organization, $project, $repositoryId, $refName, $apiVersion);
 
         try {
@@ -850,7 +850,7 @@ class RevertsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class RevertsApi
      */
     public function revertsGetRevertForRefNameAsyncWithHttpInfo($organization, $project, $repositoryId, $refName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRevert';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRevert';
         $request = $this->revertsGetRevertForRefNameRequest($organization, $project, $repositoryId, $refName, $apiVersion);
 
         return $this->client

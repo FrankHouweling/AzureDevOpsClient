@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model;
+namespace FrankHouweling\AzureDevOpsClient\Operations\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Operations\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Operations\ObjectSerializer;
 
 /**
  * ReferenceLinks Class Doc Comment
  *
  * @category Class
  * @description The class to represent a collection of REST reference links.
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

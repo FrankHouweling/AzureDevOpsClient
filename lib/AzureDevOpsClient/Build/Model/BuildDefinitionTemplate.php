@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinitionTemplate Class Doc Comment
  *
  * @category Class
  * @description Represents a template from which new build definitions can be created.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class BuildDefinitionTemplate implements ModelInterface, ArrayAccess
         'iconTaskId' => 'string',
         'id' => 'string',
         'name' => 'string',
-        'template' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition'
+        'template' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition'
     ];
 
     /**
@@ -448,7 +448,7 @@ class BuildDefinitionTemplate implements ModelInterface, ArrayAccess
     /**
      * Gets template
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition
      */
     public function getTemplate()
     {
@@ -458,7 +458,7 @@ class BuildDefinitionTemplate implements ModelInterface, ArrayAccess
     /**
      * Sets template
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition $template The actual template.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition $template The actual template.
      *
      * @return $this
      */

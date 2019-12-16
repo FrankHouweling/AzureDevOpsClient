@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestFailuresAnalysis Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'existingFailures' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
-        'fixedTests' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
-        'newFailures' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
-        'previousContext' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext'
+        'existingFailures' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
+        'fixedTests' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
+        'newFailures' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails',
+        'previousContext' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext'
     ];
 
     /**
@@ -226,7 +226,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets existingFailures
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getExistingFailures()
     {
@@ -236,7 +236,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets existingFailures
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $existingFailures existingFailures
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $existingFailures existingFailures
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets fixedTests
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getFixedTests()
     {
@@ -260,7 +260,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets fixedTests
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $fixedTests fixedTests
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $fixedTests fixedTests
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets newFailures
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails
      */
     public function getNewFailures()
     {
@@ -284,7 +284,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets newFailures
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFailureDetails $newFailures newFailures
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFailureDetails $newFailures newFailures
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Gets previousContext
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext
      */
     public function getPreviousContext()
     {
@@ -308,7 +308,7 @@ class TestFailuresAnalysis implements ModelInterface, ArrayAccess
     /**
      * Sets previousContext
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext $previousContext previousContext
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext $previousContext previousContext
      *
      * @return $this
      */

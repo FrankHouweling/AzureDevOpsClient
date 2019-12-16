@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestThreadsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class PullRequestThreadsApi
      * Operation pullRequestThreadsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
      * @param  string $repositoryId Repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
      */
     public function pullRequestThreadsCreate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
@@ -111,19 +111,19 @@ class PullRequestThreadsApi
      * Operation pullRequestThreadsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
      * @param  string $repositoryId Repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadsCreateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsCreateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class PullRequestThreadsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class PullRequestThreadsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
      * @param  string $repositoryId Repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -216,7 +216,7 @@ class PullRequestThreadsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
      * @param  string $repositoryId Repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -227,7 +227,7 @@ class PullRequestThreadsApi
      */
     public function pullRequestThreadsCreateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsCreateRequest($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion);
 
         return $this->client
@@ -271,7 +271,7 @@ class PullRequestThreadsApi
      * Create request for operation 'pullRequestThreadsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread to create. Thread must contain at least one comment. (required)
      * @param  string $repositoryId Repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -454,9 +454,9 @@ class PullRequestThreadsApi
      * @param  int $iteration If specified, thread position will be tracked using this iteration as the right side of the diff. (optional)
      * @param  int $baseIteration If specified, thread position will be tracked using this iteration as the left side of the diff. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
      */
     public function pullRequestThreadsGet($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
@@ -476,13 +476,13 @@ class PullRequestThreadsApi
      * @param  int $iteration If specified, thread position will be tracked using this iteration as the right side of the diff. (optional)
      * @param  int $baseIteration If specified, thread position will be tracked using this iteration as the left side of the diff. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadsGetWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsGetRequest($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration, $baseIteration);
 
         try {
@@ -534,7 +534,7 @@ class PullRequestThreadsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -590,7 +590,7 @@ class PullRequestThreadsApi
      */
     public function pullRequestThreadsGetAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsGetRequest($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion, $iteration, $baseIteration);
 
         return $this->client
@@ -831,9 +831,9 @@ class PullRequestThreadsApi
      * @param  int $iteration If specified, thread positions will be tracked using this iteration as the right side of the diff. (optional)
      * @param  int $baseIteration If specified, thread positions will be tracked using this iteration as the left side of the diff. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]
      */
     public function pullRequestThreadsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
@@ -852,13 +852,13 @@ class PullRequestThreadsApi
      * @param  int $iteration If specified, thread positions will be tracked using this iteration as the right side of the diff. (optional)
      * @param  int $baseIteration If specified, thread positions will be tracked using this iteration as the left side of the diff. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadsListWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]';
         $request = $this->pullRequestThreadsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration, $baseIteration);
 
         try {
@@ -910,7 +910,7 @@ class PullRequestThreadsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class PullRequestThreadsApi
      */
     public function pullRequestThreadsListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration = null, $baseIteration = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread[]';
         $request = $this->pullRequestThreadsListRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $iteration, $baseIteration);
 
         return $this->client
@@ -1183,16 +1183,16 @@ class PullRequestThreadsApi
      * Operation pullRequestThreadsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread
      */
     public function pullRequestThreadsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
@@ -1204,20 +1204,20 @@ class PullRequestThreadsApi
      * Operation pullRequestThreadsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadsUpdateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         try {
@@ -1269,7 +1269,7 @@ class PullRequestThreadsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1285,7 +1285,7 @@ class PullRequestThreadsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread to update. (required)
@@ -1311,7 +1311,7 @@ class PullRequestThreadsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread to update. (required)
@@ -1323,7 +1323,7 @@ class PullRequestThreadsApi
      */
     public function pullRequestThreadsUpdateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread';
         $request = $this->pullRequestThreadsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         return $this->client
@@ -1367,7 +1367,7 @@ class PullRequestThreadsApi
      * Create request for operation 'pullRequestThreadsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCommentThread $body The thread content that should be updated. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread to update. (required)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationSubscription Class Doc Comment
  *
  * @category Class
  * @description A subscription defines criteria for matching events and how the subscription&#39;s subscriber should be notified about those events.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,24 +58,24 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ReferenceLinks',
-        'adminSettings' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings',
-        'channel' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ReferenceLinks',
+        'adminSettings' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings',
+        'channel' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel',
         'description' => 'string',
-        'diagnostics' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics',
+        'diagnostics' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics',
         'extendedProperties' => 'map[string,string]',
-        'filter' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
+        'filter' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter',
         'flags' => 'string',
         'id' => 'string',
-        'lastModifiedBy' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef',
+        'lastModifiedBy' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef',
         'modifiedDate' => '\DateTime',
         'permissions' => 'string',
-        'scope' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope',
+        'scope' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope',
         'status' => 'string',
         'statusMessage' => 'string',
-        'subscriber' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef',
+        'subscriber' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef',
         'url' => 'string',
-        'userSettings' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings'
+        'userSettings' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings'
     ];
 
     /**
@@ -419,7 +419,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -429,7 +429,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ReferenceLinks $links Links to related resources, APIs, and views for the subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ReferenceLinks $links Links to related resources, APIs, and views for the subscription.
      *
      * @return $this
      */
@@ -443,7 +443,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets adminSettings
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings
      */
     public function getAdminSettings()
     {
@@ -453,7 +453,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets adminSettings
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings $adminSettings Admin-managed settings for the subscription. Only applies when the subscriber is a group.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionAdminSettings $adminSettings Admin-managed settings for the subscription. Only applies when the subscriber is a group.
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets channel
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel
      */
     public function getChannel()
     {
@@ -477,7 +477,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets channel
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionChannel $channel Channel for delivering notifications triggered by the subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionChannel $channel Channel for delivering notifications triggered by the subscription.
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets diagnostics
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics
      */
     public function getDiagnostics()
     {
@@ -525,7 +525,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets diagnostics
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics $diagnostics Diagnostics for this subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionDiagnostics $diagnostics Diagnostics for this subscription.
      *
      * @return $this
      */
@@ -563,7 +563,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets filter
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter
      */
     public function getFilter()
     {
@@ -573,7 +573,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets filter
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Matching criteria for the subscription. ExpressionFilter
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ISubscriptionFilter $filter Matching criteria for the subscription. ExpressionFilter
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedBy
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef
      */
     public function getLastModifiedBy()
     {
@@ -654,7 +654,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedBy
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef $lastModifiedBy User that last modified (or created) the subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef $lastModifiedBy User that last modified (or created) the subscription.
      *
      * @return $this
      */
@@ -725,7 +725,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets scope
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope
      */
     public function getScope()
     {
@@ -735,7 +735,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets scope
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionScope $scope The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionScope $scope The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
      *
      * @return $this
      */
@@ -806,7 +806,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets subscriber
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef
      */
     public function getSubscriber()
     {
@@ -816,7 +816,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets subscriber
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef $subscriber User or group that will receive notifications for events matching the subscription's filter criteria.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef $subscriber User or group that will receive notifications for events matching the subscription's filter criteria.
      *
      * @return $this
      */
@@ -854,7 +854,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Gets userSettings
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings
      */
     public function getUserSettings()
     {
@@ -864,7 +864,7 @@ class NotificationSubscription implements ModelInterface, ArrayAccess
     /**
      * Sets userSettings
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $userSettings User-managed settings for the subscription. Only applies when the subscriber is a group. Typically used to indicate whether the calling user is opted in or out of a group subscription.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionUserSettings $userSettings User-managed settings for the subscription. Only applies when the subscriber is a group. Typically used to indicate whether the calling user is opted in or out of a group subscription.
      *
      * @return $this
      */

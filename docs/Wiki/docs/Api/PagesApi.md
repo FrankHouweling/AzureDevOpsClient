@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Wiki\PagesApi
+# FrankHouweling\AzureDevOpsClient\Wiki\PagesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **pagesCreateOrUpdate**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesCreateOrUpdate($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesCreateOrUpdate($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -25,16 +25,16 @@ Creates or edits a wiki page.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters(); // \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters | Wiki create or update operation parameters.
+$body = new \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters | Wiki create or update operation parameters.
 $project = "project_example"; // string | Project ID or project name
 $wikiIdentifier = "wikiIdentifier_example"; // string | Wiki ID or wiki name.
 $path = "path_example"; // string | Wiki page path.
@@ -59,7 +59,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters**](../Model/WikiPageCreateOrUpdateParameters.md)| Wiki create or update operation parameters. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters**](../Model/WikiPageCreateOrUpdateParameters.md)| Wiki create or update operation parameters. |
  **project** | **string**| Project ID or project name |
  **wikiIdentifier** | **string**| Wiki ID or wiki name. |
  **path** | **string**| Wiki page path. |
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pagesDeletePage**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesDeletePage($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesDeletePage($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -98,9 +98,9 @@ Deletes a wiki page.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pagesDeletePageById**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesDeletePageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesDeletePageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment)
 
 
 
@@ -167,9 +167,9 @@ Deletes a wiki page.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pagesGetPage**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesGetPage($organization, $project, $wikiIdentifier, $apiVersion, $path, $recursionLevel, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType, $includeContent)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesGetPage($organization, $project, $wikiIdentifier, $apiVersion, $path, $recursionLevel, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType, $includeContent)
 
 
 
@@ -230,9 +230,9 @@ Gets metadata or content of the wiki page for the provided path. Content negotia
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -275,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pagesGetPageById**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesGetPageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel, $includeContent)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesGetPageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel, $includeContent)
 
 
 
@@ -301,9 +301,9 @@ Gets metadata or content of the wiki page for the provided page id. Content nego
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -340,7 +340,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pagesUpdate**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage pagesUpdate($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage pagesUpdate($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment)
 
 
 
@@ -366,16 +366,16 @@ Edits a wiki page.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters(); // \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters | Wiki update operation parameters.
+$body = new \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters | Wiki update operation parameters.
 $project = "project_example"; // string | Project ID or project name
 $wikiIdentifier = "wikiIdentifier_example"; // string | Wiki ID or wiki name.
 $id = 56; // int | Wiki page ID.
@@ -397,7 +397,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters**](../Model/WikiPageCreateOrUpdateParameters.md)| Wiki update operation parameters. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters**](../Model/WikiPageCreateOrUpdateParameters.md)| Wiki update operation parameters. |
  **project** | **string**| Project ID or project name |
  **wikiIdentifier** | **string**| Wiki ID or wiki name. |
  **id** | **int**| Wiki page ID. |
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage**](../Model/WikiPage.md)
 
 ### Authorization
 

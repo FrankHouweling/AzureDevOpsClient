@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * DeliveryViewData Class Doc Comment
  *
  * @category Class
  * @description Data contract for Data of Delivery View
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class DeliveryViewData implements ModelInterface, ArrayAccess
         'id' => 'string',
         'revision' => 'int',
         'childIdToParentIdMap' => 'map[string,int]',
-        'criteriaStatus' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus',
+        'criteriaStatus' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus',
         'endDate' => '\DateTime',
         'maxExpandedTeams' => 'int',
         'startDate' => '\DateTime',
-        'teams' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamData[]'
+        'teams' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamData[]'
     ];
 
     /**
@@ -322,7 +322,7 @@ class DeliveryViewData implements ModelInterface, ArrayAccess
     /**
      * Gets criteriaStatus
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus
      */
     public function getCriteriaStatus()
     {
@@ -332,7 +332,7 @@ class DeliveryViewData implements ModelInterface, ArrayAccess
     /**
      * Sets criteriaStatus
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus $criteriaStatus Filter criteria status of the timeline
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineCriteriaStatus $criteriaStatus Filter criteria status of the timeline
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class DeliveryViewData implements ModelInterface, ArrayAccess
     /**
      * Gets teams
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamData[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamData[]
      */
     public function getTeams()
     {
@@ -428,7 +428,7 @@ class DeliveryViewData implements ModelInterface, ArrayAccess
     /**
      * Sets teams
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TimelineTeamData[] $teams All the team data
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TimelineTeamData[] $teams All the team data
      *
      * @return $this
      */

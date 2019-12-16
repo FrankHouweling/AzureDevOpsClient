@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestSuiteUpdateParams Class Doc Comment
  *
  * @category Class
  * @description Test Suite Update Parameters
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'defaultConfigurations' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[]',
-        'defaultTesters' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef[]',
+        'defaultConfigurations' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[]',
+        'defaultTesters' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef[]',
         'inheritDefaultConfigurations' => 'bool',
         'name' => 'string',
-        'parentSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
+        'parentSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
         'queryString' => 'string',
         'revision' => 'int'
     ];
@@ -244,7 +244,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Gets defaultConfigurations
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[]
      */
     public function getDefaultConfigurations()
     {
@@ -254,7 +254,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Sets defaultConfigurations
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[] $defaultConfigurations Test suite default configurations.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestConfigurationReference[] $defaultConfigurations Test suite default configurations.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Gets defaultTesters
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef[]
      */
     public function getDefaultTesters()
     {
@@ -278,7 +278,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Sets defaultTesters
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef[] $defaultTesters Test suite default testers.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef[] $defaultTesters Test suite default testers.
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Gets parentSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
      */
     public function getParentSuite()
     {
@@ -350,7 +350,7 @@ class TestSuiteUpdateParams implements ModelInterface, ArrayAccess
     /**
      * Sets parentSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $parentSuite Test suite parent shallow reference.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $parentSuite Test suite parent shallow reference.
      *
      * @return $this
      */

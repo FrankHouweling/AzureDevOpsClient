@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Notification\EventTypesApi
+# FrankHouweling\AzureDevOpsClient\Notification\EventTypesApi
 
 All URIs are relative to *https://{service}.dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **eventTypesGet**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType eventTypesGet($eventType, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType eventTypesGet($eventType, $organization, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Get a specific event type.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\EventTypesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\EventTypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType**](../Model/NotificationEventType.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType**](../Model/NotificationEventType.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **eventTypesList**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[] eventTypesList($organization, $apiVersion, $publisherId)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[] eventTypesList($organization, $apiVersion, $publisherId)
 
 
 
@@ -78,9 +78,9 @@ List available event types for this service. Optionally filter by only event typ
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\EventTypesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\EventTypesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[]**](../Model/NotificationEventType.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[]**](../Model/NotificationEventType.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TokenAdmin\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TokenAdmin\ObjectSerializer;
 
 /**
  * TokenAdminPagedSessionTokens Class Doc Comment
  *
  * @category Class
  * @description A paginated list of session tokens. Session tokens correspond to OAuth credentials such as personal access tokens (PATs) and other OAuth authorizations.
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TokenAdminPagedSessionTokens implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'continuationToken' => 'string',
-        'value' => '\AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\SessionToken[]'
+        'value' => '\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\SessionToken[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TokenAdminPagedSessionTokens implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\SessionToken[]
+     * @return \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\SessionToken[]
      */
     public function getValue()
     {
@@ -248,7 +248,7 @@ class TokenAdminPagedSessionTokens implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\SessionToken[] $value The list of all session tokens in the current page.
+     * @param \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\SessionToken[] $value The list of all session tokens in the current page.
      *
      * @return $this
      */

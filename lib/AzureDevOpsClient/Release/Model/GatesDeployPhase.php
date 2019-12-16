@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * GatesDeployPhase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,8 +62,8 @@ class GatesDeployPhase implements ModelInterface, ArrayAccess
         'phaseType' => 'string',
         'rank' => 'int',
         'refName' => 'string',
-        'workflowTasks' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[]',
-        'deploymentInput' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GatesDeploymentInput'
+        'workflowTasks' => '\FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[]',
+        'deploymentInput' => '\FrankHouweling\AzureDevOpsClient\Release\Model\GatesDeploymentInput'
     ];
 
     /**
@@ -372,7 +372,7 @@ class GatesDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Gets workflowTasks
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[]
      */
     public function getWorkflowTasks()
     {
@@ -382,7 +382,7 @@ class GatesDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Sets workflowTasks
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTask[] $workflowTasks Gets and sets the workflow tasks for the deploy phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTask[] $workflowTasks Gets and sets the workflow tasks for the deploy phase.
      *
      * @return $this
      */
@@ -396,7 +396,7 @@ class GatesDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Gets deploymentInput
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GatesDeploymentInput
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\GatesDeploymentInput
      */
     public function getDeploymentInput()
     {
@@ -406,7 +406,7 @@ class GatesDeployPhase implements ModelInterface, ArrayAccess
     /**
      * Sets deploymentInput
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GatesDeploymentInput $deploymentInput Gets and sets the gate job input.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\GatesDeploymentInput $deploymentInput Gets and sets the gate job input.
      *
      * @return $this
      */

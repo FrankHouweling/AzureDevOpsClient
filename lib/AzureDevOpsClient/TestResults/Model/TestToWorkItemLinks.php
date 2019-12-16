@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestToWorkItemLinks Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestToWorkItemLinks implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'test' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMethod',
-        'workItems' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference[]'
+        'test' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMethod',
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TestToWorkItemLinks implements ModelInterface, ArrayAccess
     /**
      * Gets test
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMethod
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMethod
      */
     public function getTest()
     {
@@ -224,7 +224,7 @@ class TestToWorkItemLinks implements ModelInterface, ArrayAccess
     /**
      * Sets test
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestMethod $test test
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestMethod $test test
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TestToWorkItemLinks implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference[]
      */
     public function getWorkItems()
     {
@@ -248,7 +248,7 @@ class TestToWorkItemLinks implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\WorkItemReference[] $workItems workItems
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\WorkItemReference[] $workItems workItems
      *
      * @return $this
      */

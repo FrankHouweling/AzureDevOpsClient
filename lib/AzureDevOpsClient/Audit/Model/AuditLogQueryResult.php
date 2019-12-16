@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Audit\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * AuditLogQueryResult Class Doc Comment
  *
  * @category Class
  * @description The object returned when the audit log is queried. It contains the log and the information needed to query more audit entries.
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AuditLogQueryResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'continuationToken' => 'string',
-        'decoratedAuditLogEntries' => '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[]',
+        'decoratedAuditLogEntries' => '\FrankHouweling\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[]',
         'hasMore' => 'bool'
     ];
 
@@ -244,7 +244,7 @@ class AuditLogQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets decoratedAuditLogEntries
      *
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[]
      */
     public function getDecoratedAuditLogEntries()
     {
@@ -254,7 +254,7 @@ class AuditLogQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets decoratedAuditLogEntries
      *
-     * @param \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[] $decoratedAuditLogEntries The list of audit log entries
+     * @param \FrankHouweling\AzureDevOpsClient\Audit\Model\DecoratedAuditLogEntry[] $decoratedAuditLogEntries The list of audit log entries
      *
      * @return $this
      */

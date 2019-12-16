@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseEnvironment Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,36 +58,36 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'conditions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseCondition[]',
+        'conditions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseCondition[]',
         'createdOn' => '\DateTime',
         'definitionEnvironmentId' => 'int',
-        'deployPhasesSnapshot' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeployPhase[]',
-        'deploySteps' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentAttempt[]',
-        'environmentOptions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentOptions',
+        'deployPhasesSnapshot' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DeployPhase[]',
+        'deploySteps' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentAttempt[]',
+        'environmentOptions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentOptions',
         'id' => 'int',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
         'nextScheduledUtcTime' => '\DateTime',
-        'owner' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'postApprovalsSnapshot' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals',
-        'postDeployApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
-        'postDeploymentGatesSnapshot' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep',
-        'preApprovalsSnapshot' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals',
-        'preDeployApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
-        'preDeploymentGatesSnapshot' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep',
-        'processParameters' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProcessParameters',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'postApprovalsSnapshot' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals',
+        'postDeployApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'postDeploymentGatesSnapshot' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep',
+        'preApprovalsSnapshot' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals',
+        'preDeployApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'preDeploymentGatesSnapshot' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep',
+        'processParameters' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProcessParameters',
         'rank' => 'int',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
-        'releaseCreatedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
+        'releaseCreatedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
         'releaseId' => 'int',
         'scheduledDeploymentTime' => '\DateTime',
-        'schedules' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule[]',
+        'schedules' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule[]',
         'status' => 'string',
         'timeToDeploy' => 'double',
         'triggerReason' => 'string',
-        'variableGroups' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[]',
-        'variables' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
+        'variableGroups' => '\FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[]',
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
     ];
 
     /**
@@ -419,7 +419,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets conditions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseCondition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseCondition[]
      */
     public function getConditions()
     {
@@ -429,7 +429,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets conditions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseCondition[] $conditions Gets list of conditions.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseCondition[] $conditions Gets list of conditions.
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets deployPhasesSnapshot
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeployPhase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DeployPhase[]
      */
     public function getDeployPhasesSnapshot()
     {
@@ -501,7 +501,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets deployPhasesSnapshot
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeployPhase[] $deployPhasesSnapshot Gets list of deploy phases snapshot.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DeployPhase[] $deployPhasesSnapshot Gets list of deploy phases snapshot.
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets deploySteps
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentAttempt[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentAttempt[]
      */
     public function getDeploySteps()
     {
@@ -525,7 +525,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets deploySteps
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DeploymentAttempt[] $deploySteps Gets deploy steps.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DeploymentAttempt[] $deploySteps Gets deploy steps.
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets environmentOptions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentOptions
      */
     public function getEnvironmentOptions()
     {
@@ -549,7 +549,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets environmentOptions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentOptions $environmentOptions Gets environment options.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentOptions $environmentOptions Gets environment options.
      *
      * @return $this
      */
@@ -659,7 +659,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -669,7 +669,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $owner Gets the identity who is owner for release environment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $owner Gets the identity who is owner for release environment.
      *
      * @return $this
      */
@@ -683,7 +683,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets postApprovalsSnapshot
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals
      */
     public function getPostApprovalsSnapshot()
     {
@@ -693,7 +693,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets postApprovalsSnapshot
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals $postApprovalsSnapshot Gets list of post deploy approvals snapshot.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals $postApprovalsSnapshot Gets list of post deploy approvals snapshot.
      *
      * @return $this
      */
@@ -707,7 +707,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets postDeployApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getPostDeployApprovals()
     {
@@ -717,7 +717,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets postDeployApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $postDeployApprovals Gets list of post deploy approvals.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $postDeployApprovals Gets list of post deploy approvals.
      *
      * @return $this
      */
@@ -731,7 +731,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets postDeploymentGatesSnapshot
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep
      */
     public function getPostDeploymentGatesSnapshot()
     {
@@ -741,7 +741,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets postDeploymentGatesSnapshot
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep $postDeploymentGatesSnapshot Post deployment gates snapshot data.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep $postDeploymentGatesSnapshot Post deployment gates snapshot data.
      *
      * @return $this
      */
@@ -755,7 +755,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets preApprovalsSnapshot
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals
      */
     public function getPreApprovalsSnapshot()
     {
@@ -765,7 +765,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets preApprovalsSnapshot
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals $preApprovalsSnapshot Gets list of pre deploy approvals snapshot.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovals $preApprovalsSnapshot Gets list of pre deploy approvals snapshot.
      *
      * @return $this
      */
@@ -779,7 +779,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets preDeployApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getPreDeployApprovals()
     {
@@ -789,7 +789,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets preDeployApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $preDeployApprovals Gets list of pre deploy approvals.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $preDeployApprovals Gets list of pre deploy approvals.
      *
      * @return $this
      */
@@ -803,7 +803,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets preDeploymentGatesSnapshot
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep
      */
     public function getPreDeploymentGatesSnapshot()
     {
@@ -813,7 +813,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets preDeploymentGatesSnapshot
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep $preDeploymentGatesSnapshot Pre deployment gates snapshot data.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesStep $preDeploymentGatesSnapshot Pre deployment gates snapshot data.
      *
      * @return $this
      */
@@ -827,7 +827,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets processParameters
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProcessParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProcessParameters
      */
     public function getProcessParameters()
     {
@@ -837,7 +837,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets processParameters
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProcessParameters $processParameters Gets process parameters.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProcessParameters $processParameters Gets process parameters.
      *
      * @return $this
      */
@@ -875,7 +875,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference
      */
     public function getRelease()
     {
@@ -885,7 +885,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets release reference which specifies the reference of the release to which this release environment is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets release reference which specifies the reference of the release to which this release environment is associated.
      *
      * @return $this
      */
@@ -899,7 +899,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets releaseCreatedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getReleaseCreatedBy()
     {
@@ -909,7 +909,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets releaseCreatedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $releaseCreatedBy Gets the identity who created release.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $releaseCreatedBy Gets the identity who created release.
      *
      * @return $this
      */
@@ -923,7 +923,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -933,7 +933,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this release environment is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this release environment is associated.
      *
      * @return $this
      */
@@ -995,7 +995,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets schedules
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule[]
      */
     public function getSchedules()
     {
@@ -1005,7 +1005,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets schedules
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseSchedule[] $schedules Gets list of schedules.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseSchedule[] $schedules Gets list of schedules.
      *
      * @return $this
      */
@@ -1100,7 +1100,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets variableGroups
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[]
      */
     public function getVariableGroups()
     {
@@ -1110,7 +1110,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets variableGroups
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroup[] $variableGroups Gets the list of variable groups.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroup[] $variableGroups Gets the list of variable groups.
      *
      * @return $this
      */
@@ -1124,7 +1124,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
      */
     public function getVariables()
     {
@@ -1134,7 +1134,7 @@ class ReleaseEnvironment implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Gets the dictionary of variables.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Gets the dictionary of variables.
      *
      * @return $this
      */

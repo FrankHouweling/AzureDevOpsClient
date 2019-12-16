@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * CommentList Class Doc Comment
  *
  * @category Class
  * @description Represents a list of comments.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class CommentList implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'url' => 'string',
-        'comments' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\Comment[]',
+        'comments' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\Comment[]',
         'continuationToken' => 'string',
         'count' => 'int',
         'nextPage' => 'string',
@@ -262,7 +262,7 @@ class CommentList implements ModelInterface, ArrayAccess
     /**
      * Gets comments
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\Comment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\Comment[]
      */
     public function getComments()
     {
@@ -272,7 +272,7 @@ class CommentList implements ModelInterface, ArrayAccess
     /**
      * Sets comments
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\Comment[] $comments List of comments in the current batch.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\Comment[] $comments List of comments in the current batch.
      *
      * @return $this
      */

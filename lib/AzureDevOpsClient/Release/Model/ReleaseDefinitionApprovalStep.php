@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionApprovalStep Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ReleaseDefinitionApprovalStep implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'approver' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'approver' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'isAutomated' => 'bool',
         'isNotificationOn' => 'bool',
         'rank' => 'int'
@@ -256,7 +256,7 @@ class ReleaseDefinitionApprovalStep implements ModelInterface, ArrayAccess
     /**
      * Gets approver
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getApprover()
     {
@@ -266,7 +266,7 @@ class ReleaseDefinitionApprovalStep implements ModelInterface, ArrayAccess
     /**
      * Sets approver
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets and sets the approver.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets and sets the approver.
      *
      * @return $this
      */

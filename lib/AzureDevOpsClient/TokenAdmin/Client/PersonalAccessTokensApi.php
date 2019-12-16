@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Client;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TokenAdmin\ApiException;
-use AzureDevOpsClient\TokenAdmin\Configuration;
-use AzureDevOpsClient\TokenAdmin\HeaderSelector;
-use AzureDevOpsClient\TokenAdmin\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\Configuration;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ObjectSerializer;
 
 /**
  * PersonalAccessTokensApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class PersonalAccessTokensApi
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens
+     * @return \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens
      */
     public function personalAccessTokensList($organization, $subjectDescriptor, $apiVersion, $pageSize = null, $continuationToken = null, $isPublic = null)
     {
@@ -117,13 +117,13 @@ class PersonalAccessTokensApi
      * @param  string $continuationToken An opaque data blob that allows the next page of data to resume immediately after where the previous page ended. The only reliable way to know if there is more data left is the presence of a continuation token. (optional)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens, HTTP status code, HTTP response headers (array of strings)
      */
     public function personalAccessTokensListWithHttpInfo($organization, $subjectDescriptor, $apiVersion, $pageSize = null, $continuationToken = null, $isPublic = null)
     {
-        $returnType = '\AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens';
         $request = $this->personalAccessTokensListRequest($organization, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic);
 
         try {
@@ -175,7 +175,7 @@ class PersonalAccessTokensApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens',
+                        '\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class PersonalAccessTokensApi
      */
     public function personalAccessTokensListAsyncWithHttpInfo($organization, $subjectDescriptor, $apiVersion, $pageSize = null, $continuationToken = null, $isPublic = null)
     {
-        $returnType = '\AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens';
         $request = $this->personalAccessTokensListRequest($organization, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic);
 
         return $this->client

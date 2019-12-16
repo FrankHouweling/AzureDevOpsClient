@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionGatesStep Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ReleaseDefinitionGatesStep implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'gates' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[]',
-        'gatesOptions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions',
+        'gates' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[]',
+        'gatesOptions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions',
         'id' => 'int'
     ];
 
@@ -220,7 +220,7 @@ class ReleaseDefinitionGatesStep implements ModelInterface, ArrayAccess
     /**
      * Gets gates
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[]
      */
     public function getGates()
     {
@@ -230,7 +230,7 @@ class ReleaseDefinitionGatesStep implements ModelInterface, ArrayAccess
     /**
      * Sets gates
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[] $gates Gets or sets the gates.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGate[] $gates Gets or sets the gates.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class ReleaseDefinitionGatesStep implements ModelInterface, ArrayAccess
     /**
      * Gets gatesOptions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions
      */
     public function getGatesOptions()
     {
@@ -254,7 +254,7 @@ class ReleaseDefinitionGatesStep implements ModelInterface, ArrayAccess
     /**
      * Sets gatesOptions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions $gatesOptions Gets or sets the gate options.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionGatesOptions $gatesOptions Gets or sets the gate options.
      *
      * @return $this
      */

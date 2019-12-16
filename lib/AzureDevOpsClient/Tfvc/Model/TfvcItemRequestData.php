@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcItemRequestData Class Doc Comment
  *
  * @category Class
  * @description Request body used by Get Items Batch
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TfvcItemRequestData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'includeContentMetadata' => 'bool',
         'includeLinks' => 'bool',
-        'itemDescriptors' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[]'
+        'itemDescriptors' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TfvcItemRequestData implements ModelInterface, ArrayAccess
     /**
      * Gets itemDescriptors
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[]
      */
     public function getItemDescriptors()
     {
@@ -278,7 +278,7 @@ class TfvcItemRequestData implements ModelInterface, ArrayAccess
     /**
      * Sets itemDescriptors
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[] $itemDescriptors itemDescriptors
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemDescriptor[] $itemDescriptors itemDescriptors
      *
      * @return $this
      */

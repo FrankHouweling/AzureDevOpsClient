@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Tfvc\ItemsApi
+# FrankHouweling\AzureDevOpsClient\Tfvc\ItemsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -21,16 +21,16 @@ Post for retrieving a set of items given a list of paths or a long path. Allows 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData(); // \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData | 
+$body = new \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData(); // \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData | 
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -48,7 +48,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData**](../Model/TfvcItemRequestData.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData**](../Model/TfvcItemRequestData.md)|  |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **itemsList**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[] itemsList($organization, $project, $apiVersion, $scopePath, $recursionLevel, $includeLinks, $versionDescriptorVersion, $versionDescriptorVersionOption, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[] itemsList($organization, $project, $apiVersion, $scopePath, $recursionLevel, $includeLinks, $versionDescriptorVersion, $versionDescriptorVersionOption, $versionDescriptorVersionType)
 
 
 
@@ -80,9 +80,9 @@ Get a list of Tfvc items
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]**](../Model/TfvcItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]**](../Model/TfvcItem.md)
 
 ### Authorization
 

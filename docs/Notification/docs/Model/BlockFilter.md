@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **exclusions** | **string[]** |  | [optional] 
 **inclusions** | **string[]** |  | [optional] 
-**criteria** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ExpressionFilterModel**](ExpressionFilterModel.md) |  | [optional] 
+**criteria** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\ExpressionFilterModel**](ExpressionFilterModel.md) |  | [optional] 
 **type** | **string** |  | [optional] 
 **eventType** | **string** |  | [optional] 
 

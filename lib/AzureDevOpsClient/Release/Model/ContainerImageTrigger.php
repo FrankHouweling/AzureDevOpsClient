@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ContainerImageTrigger Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class ContainerImageTrigger implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'triggerType' => 'string',
         'alias' => 'string',
-        'tagFilters' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter[]'
+        'tagFilters' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter[]'
     ];
 
     /**
@@ -310,7 +310,7 @@ class ContainerImageTrigger implements ModelInterface, ArrayAccess
     /**
      * Gets tagFilters
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter[]
      */
     public function getTagFilters()
     {
@@ -320,7 +320,7 @@ class ContainerImageTrigger implements ModelInterface, ArrayAccess
     /**
      * Sets tagFilters
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TagFilter[] $tagFilters List tag filters applied while trigger.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TagFilter[] $tagFilters List tag filters applied while trigger.
      *
      * @return $this
      */

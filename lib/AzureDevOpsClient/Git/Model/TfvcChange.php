@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcChange Class Doc Comment
  *
  * @category Class
  * @description A change.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,10 +60,10 @@ class TfvcChange implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'changeType' => 'string',
         'item' => 'string',
-        'newContent' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent',
+        'newContent' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent',
         'sourceServerItem' => 'string',
         'url' => 'string',
-        'mergeSources' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMergeSource[]',
+        'mergeSources' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMergeSource[]',
         'pendingVersion' => 'int'
     ];
 
@@ -350,7 +350,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Gets newContent
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent
      */
     public function getNewContent()
     {
@@ -360,7 +360,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Sets newContent
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Gets mergeSources
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMergeSource[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMergeSource[]
      */
     public function getMergeSources()
     {
@@ -432,7 +432,7 @@ class TfvcChange implements ModelInterface, ArrayAccess
     /**
      * Sets mergeSources
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcMergeSource[] $mergeSources List of merge sources in case of rename or branch creation.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcMergeSource[] $mergeSources List of merge sources in case of rename or branch creation.
      *
      * @return $this
      */

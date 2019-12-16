@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PolicyConfigurationRef Class Doc Comment
  *
  * @category Class
  * @description Policy configuration reference.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PolicyConfigurationRef implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'type' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef',
+        'type' => '\FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef',
         'url' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class PolicyConfigurationRef implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef
      */
     public function getType()
     {
@@ -254,7 +254,7 @@ class PolicyConfigurationRef implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PolicyTypeRef $type The policy configuration type.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\PolicyTypeRef $type The policy configuration type.
      *
      * @return $this
      */

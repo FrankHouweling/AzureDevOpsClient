@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Client;
+namespace FrankHouweling\AzureDevOpsClient\Operations\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Operations\ApiException;
-use AzureDevOpsClient\Operations\Configuration;
-use AzureDevOpsClient\Operations\HeaderSelector;
-use AzureDevOpsClient\Operations\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Operations\ApiException;
+use FrankHouweling\AzureDevOpsClient\Operations\Configuration;
+use FrankHouweling\AzureDevOpsClient\Operations\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Operations\ObjectSerializer;
 
 /**
  * OperationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Operations
+ * @package  FrankHouweling\AzureDevOpsClient\Operations
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class OperationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $pluginId The ID for the plugin. (optional)
      *
-     * @throws \AzureDevOpsClient\Operations\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Operations\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation
+     * @return \FrankHouweling\AzureDevOpsClient\Operations\Model\Operation
      */
     public function operationsGet($operationId, $organization, $apiVersion, $pluginId = null)
     {
@@ -113,13 +113,13 @@ class OperationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $pluginId The ID for the plugin. (optional)
      *
-     * @throws \AzureDevOpsClient\Operations\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Operations\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Operations\Model\Operation, HTTP status code, HTTP response headers (array of strings)
      */
     public function operationsGetWithHttpInfo($operationId, $organization, $apiVersion, $pluginId = null)
     {
-        $returnType = '\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Operations\Model\Operation';
         $request = $this->operationsGetRequest($operationId, $organization, $apiVersion, $pluginId);
 
         try {
@@ -171,7 +171,7 @@ class OperationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation',
+                        '\FrankHouweling\AzureDevOpsClient\Operations\Model\Operation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class OperationsApi
      */
     public function operationsGetAsyncWithHttpInfo($operationId, $organization, $apiVersion, $pluginId = null)
     {
-        $returnType = '\AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model\Operation';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Operations\Model\Operation';
         $request = $this->operationsGetRequest($operationId, $organization, $apiVersion, $pluginId);
 
         return $this->client

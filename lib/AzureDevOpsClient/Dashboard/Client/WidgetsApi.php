@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Client;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Dashboard\ApiException;
-use AzureDevOpsClient\Dashboard\Configuration;
-use AzureDevOpsClient\Dashboard\HeaderSelector;
-use AzureDevOpsClient\Dashboard\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ApiException;
+use FrankHouweling\AzureDevOpsClient\Dashboard\Configuration;
+use FrankHouweling\AzureDevOpsClient\Dashboard\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class WidgetsApi
      * Operation widgetsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of dashboard the widget will be added to. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget
      */
     public function widgetsCreate($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
@@ -111,19 +111,19 @@ class WidgetsApi
      * Operation widgetsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of dashboard the widget will be added to. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsCreateWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsCreateRequest($organization, $body, $project, $dashboardId, $team, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of dashboard the widget will be added to. (required)
      * @param  string $team Team ID or team name (required)
@@ -216,7 +216,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of dashboard the widget will be added to. (required)
      * @param  string $team Team ID or team name (required)
@@ -227,7 +227,7 @@ class WidgetsApi
      */
     public function widgetsCreateAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsCreateRequest($organization, $body, $project, $dashboardId, $team, $apiVersion);
 
         return $this->client
@@ -271,7 +271,7 @@ class WidgetsApi
      * Create request for operation 'widgetsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State of the widget to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of dashboard the widget will be added to. (required)
      * @param  string $team Team ID or team name (required)
@@ -452,9 +452,9 @@ class WidgetsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard
      */
     public function widgetsDelete($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
@@ -472,13 +472,13 @@ class WidgetsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsDeleteWithHttpInfo($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->widgetsDeleteRequest($organization, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         try {
@@ -530,7 +530,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -582,7 +582,7 @@ class WidgetsApi
      */
     public function widgetsDeleteAsyncWithHttpInfo($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard';
         $request = $this->widgetsDeleteRequest($organization, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         return $this->client
@@ -812,9 +812,9 @@ class WidgetsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget
      */
     public function widgetsGetWidget($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
@@ -832,13 +832,13 @@ class WidgetsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsGetWidgetWithHttpInfo($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsGetWidgetRequest($organization, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         try {
@@ -890,7 +890,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -942,7 +942,7 @@ class WidgetsApi
      */
     public function widgetsGetWidgetAsyncWithHttpInfo($organization, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsGetWidgetRequest($organization, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         return $this->client
@@ -1172,9 +1172,9 @@ class WidgetsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]
      */
     public function widgetsGetWidgets($organization, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
@@ -1192,13 +1192,13 @@ class WidgetsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsGetWidgetsWithHttpInfo($organization, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsGetWidgetsRequest($organization, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         try {
@@ -1250,7 +1250,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1302,7 +1302,7 @@ class WidgetsApi
      */
     public function widgetsGetWidgetsAsyncWithHttpInfo($organization, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsGetWidgetsRequest($organization, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         return $this->client
@@ -1516,16 +1516,16 @@ class WidgetsApi
      * Operation widgetsReplaceWidget
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget
      */
     public function widgetsReplaceWidget($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
@@ -1537,20 +1537,20 @@ class WidgetsApi
      * Operation widgetsReplaceWidgetWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsReplaceWidgetWithHttpInfo($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsReplaceWidgetRequest($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         try {
@@ -1602,7 +1602,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1618,7 +1618,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -1644,7 +1644,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -1656,7 +1656,7 @@ class WidgetsApi
      */
     public function widgetsReplaceWidgetAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsReplaceWidgetRequest($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         return $this->client
@@ -1700,7 +1700,7 @@ class WidgetsApi
      * Create request for operation 'widgetsReplaceWidget'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body State to be written for the widget. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -1890,16 +1890,16 @@ class WidgetsApi
      * Operation widgetsReplaceWidgets
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]
      */
     public function widgetsReplaceWidgets($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
@@ -1911,20 +1911,20 @@ class WidgetsApi
      * Operation widgetsReplaceWidgetsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsReplaceWidgetsWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsReplaceWidgetsRequest($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         try {
@@ -1976,7 +1976,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1992,7 +1992,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
@@ -2018,7 +2018,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
@@ -2030,7 +2030,7 @@ class WidgetsApi
      */
     public function widgetsReplaceWidgetsAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsReplaceWidgetsRequest($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         return $this->client
@@ -2074,7 +2074,7 @@ class WidgetsApi
      * Create request for operation 'widgetsReplaceWidgets'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body Revised state of widgets to store for the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
@@ -2254,16 +2254,16 @@ class WidgetsApi
      * Operation widgetsUpdateWidget
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget
      */
     public function widgetsUpdateWidget($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
@@ -2275,20 +2275,20 @@ class WidgetsApi
      * Operation widgetsUpdateWidgetWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget, HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsUpdateWidgetWithHttpInfo($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsUpdateWidgetRequest($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         try {
@@ -2340,7 +2340,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2356,7 +2356,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -2382,7 +2382,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -2394,7 +2394,7 @@ class WidgetsApi
      */
     public function widgetsUpdateWidgetAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget';
         $request = $this->widgetsUpdateWidgetRequest($organization, $body, $project, $dashboardId, $widgetId, $team, $apiVersion);
 
         return $this->client
@@ -2438,7 +2438,7 @@ class WidgetsApi
      * Create request for operation 'widgetsUpdateWidget'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget $body Description of the widget changes to apply. All non-null fields will be replaced. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the dashboard containing the widget. (required)
      * @param  string $widgetId ID of the widget to update. (required)
@@ -2628,16 +2628,16 @@ class WidgetsApi
      * Operation widgetsUpdateWidgets
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]
      */
     public function widgetsUpdateWidgets($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
@@ -2649,20 +2649,20 @@ class WidgetsApi
      * Operation widgetsUpdateWidgetsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      * @param  string $eTag Dashboard Widgets Version (optional)
      *
-     * @throws \AzureDevOpsClient\Dashboard\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Dashboard\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[], HTTP status code, HTTP response headers (array of strings)
      */
     public function widgetsUpdateWidgetsWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsUpdateWidgetsRequest($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         try {
@@ -2714,7 +2714,7 @@ class WidgetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]',
+                        '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2730,7 +2730,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
@@ -2756,7 +2756,7 @@ class WidgetsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)
@@ -2768,7 +2768,7 @@ class WidgetsApi
      */
     public function widgetsUpdateWidgetsAsyncWithHttpInfo($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag = null)
     {
-        $returnType = '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]';
         $request = $this->widgetsUpdateWidgetsRequest($organization, $body, $project, $dashboardId, $team, $apiVersion, $eTag);
 
         return $this->client
@@ -2812,7 +2812,7 @@ class WidgetsApi
      * Create request for operation 'widgetsUpdateWidgets'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $body The set of widget states to update on the dashboard. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $dashboardId ID of the Dashboard to modify. (required)
      * @param  string $team Team ID or team name (required)

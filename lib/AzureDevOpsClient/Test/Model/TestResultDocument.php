@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultDocument Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestResultDocument implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'operationReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOperationReference',
-        'payload' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultPayload'
+        'operationReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestOperationReference',
+        'payload' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultPayload'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TestResultDocument implements ModelInterface, ArrayAccess
     /**
      * Gets operationReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestOperationReference
      */
     public function getOperationReference()
     {
@@ -224,7 +224,7 @@ class TestResultDocument implements ModelInterface, ArrayAccess
     /**
      * Sets operationReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestOperationReference $operationReference operationReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestOperationReference $operationReference operationReference
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TestResultDocument implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultPayload
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultPayload
      */
     public function getPayload()
     {
@@ -248,7 +248,7 @@ class TestResultDocument implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultPayload $payload payload
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultPayload $payload payload
      *
      * @return $this
      */

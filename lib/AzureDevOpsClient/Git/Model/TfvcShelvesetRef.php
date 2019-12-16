@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcShelvesetRef Class Doc Comment
  *
  * @category Class
  * @description Metadata for a shallow shelveset.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class TfvcShelvesetRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'createdDate' => '\DateTime',
         'id' => 'string',
         'name' => 'string',
-        'owner' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'url' => 'string'
     ];
 
@@ -250,7 +250,7 @@ class TfvcShelvesetRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -260,7 +260,7 @@ class TfvcShelvesetRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links List of reference links for the shelveset.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links List of reference links for the shelveset.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class TfvcShelvesetRef implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -404,7 +404,7 @@ class TfvcShelvesetRef implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $owner Shelveset Owner.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $owner Shelveset Owner.
      *
      * @return $this
      */

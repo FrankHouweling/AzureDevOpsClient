@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * AttachmentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class AttachmentsApi
      * Operation attachmentsCreateTestResultAttachment
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run that contains the result. (required)
      * @param  int $testCaseResultId ID of the test result against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference
      */
     public function attachmentsCreateTestResultAttachment($organization, $body, $project, $runId, $testCaseResultId, $apiVersion)
     {
@@ -111,19 +111,19 @@ class AttachmentsApi
      * Operation attachmentsCreateTestResultAttachmentWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run that contains the result. (required)
      * @param  int $testCaseResultId ID of the test result against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsCreateTestResultAttachmentWithHttpInfo($organization, $body, $project, $runId, $testCaseResultId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference';
         $request = $this->attachmentsCreateTestResultAttachmentRequest($organization, $body, $project, $runId, $testCaseResultId, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class AttachmentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run that contains the result. (required)
      * @param  int $testCaseResultId ID of the test result against which attachment has to be uploaded. (required)
@@ -216,7 +216,7 @@ class AttachmentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run that contains the result. (required)
      * @param  int $testCaseResultId ID of the test result against which attachment has to be uploaded. (required)
@@ -227,7 +227,7 @@ class AttachmentsApi
      */
     public function attachmentsCreateTestResultAttachmentAsyncWithHttpInfo($organization, $body, $project, $runId, $testCaseResultId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference';
         $request = $this->attachmentsCreateTestResultAttachmentRequest($organization, $body, $project, $runId, $testCaseResultId, $apiVersion);
 
         return $this->client
@@ -271,7 +271,7 @@ class AttachmentsApi
      * Create request for operation 'attachmentsCreateTestResultAttachment'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run that contains the result. (required)
      * @param  int $testCaseResultId ID of the test result against which attachment has to be uploaded. (required)
@@ -446,14 +446,14 @@ class AttachmentsApi
      * Operation attachmentsCreateTestRunAttachment
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference
      */
     public function attachmentsCreateTestRunAttachment($organization, $body, $project, $runId, $apiVersion)
     {
@@ -465,18 +465,18 @@ class AttachmentsApi
      * Operation attachmentsCreateTestRunAttachmentWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsCreateTestRunAttachmentWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference';
         $request = $this->attachmentsCreateTestRunAttachmentRequest($organization, $body, $project, $runId, $apiVersion);
 
         try {
@@ -528,7 +528,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -544,7 +544,7 @@ class AttachmentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -568,7 +568,7 @@ class AttachmentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -578,7 +578,7 @@ class AttachmentsApi
      */
     public function attachmentsCreateTestRunAttachmentAsyncWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentReference';
         $request = $this->attachmentsCreateTestRunAttachmentRequest($organization, $body, $project, $runId, $apiVersion);
 
         return $this->client
@@ -622,7 +622,7 @@ class AttachmentsApi
      * Create request for operation 'attachmentsCreateTestRunAttachment'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachmentRequestModel $body Attachment details TestAttachmentRequestModel (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId ID of the test run against which attachment has to be uploaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -788,7 +788,7 @@ class AttachmentsApi
      * @param  int $attachmentId ID of the test result attachment to be downloaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -808,7 +808,7 @@ class AttachmentsApi
      * @param  int $attachmentId ID of the test result attachment to be downloaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1147,9 +1147,9 @@ class AttachmentsApi
      * @param  int $testCaseResultId ID of the test result. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]
      */
     public function attachmentsGetTestResultAttachments($organization, $project, $runId, $testCaseResultId, $apiVersion)
     {
@@ -1166,13 +1166,13 @@ class AttachmentsApi
      * @param  int $testCaseResultId ID of the test result. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsGetTestResultAttachmentsWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]';
         $request = $this->attachmentsGetTestResultAttachmentsRequest($organization, $project, $runId, $testCaseResultId, $apiVersion);
 
         try {
@@ -1224,7 +1224,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1274,7 +1274,7 @@ class AttachmentsApi
      */
     public function attachmentsGetTestResultAttachmentsAsyncWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]';
         $request = $this->attachmentsGetTestResultAttachmentsRequest($organization, $project, $runId, $testCaseResultId, $apiVersion);
 
         return $this->client
@@ -1488,7 +1488,7 @@ class AttachmentsApi
      * @param  int $attachmentId ID of the test run attachment to be downloaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1507,7 +1507,7 @@ class AttachmentsApi
      * @param  int $attachmentId ID of the test run attachment to be downloaded. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1828,9 +1828,9 @@ class AttachmentsApi
      * @param  int $runId ID of the test run. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]
      */
     public function attachmentsGetTestRunAttachments($organization, $project, $runId, $apiVersion)
     {
@@ -1846,13 +1846,13 @@ class AttachmentsApi
      * @param  int $runId ID of the test run. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsGetTestRunAttachmentsWithHttpInfo($organization, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]';
         $request = $this->attachmentsGetTestRunAttachmentsRequest($organization, $project, $runId, $apiVersion);
 
         try {
@@ -1904,7 +1904,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1952,7 +1952,7 @@ class AttachmentsApi
      */
     public function attachmentsGetTestRunAttachmentsAsyncWithHttpInfo($organization, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestAttachment[]';
         $request = $this->attachmentsGetTestRunAttachmentsRequest($organization, $project, $runId, $apiVersion);
 
         return $this->client

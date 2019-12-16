@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**definition** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference**](BuildOptionDefinitionReference.md) | A reference to the build option. | [optional] 
+**definition** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionDefinitionReference**](BuildOptionDefinitionReference.md) | A reference to the build option. | [optional] 
 **enabled** | **bool** | Indicates whether the behavior is enabled. | [optional] 
 **inputs** | **map[string,string]** |  | [optional] 
 

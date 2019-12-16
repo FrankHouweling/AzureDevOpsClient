@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * GraphSubjectLookup Class Doc Comment
  *
  * @category Class
  * @description Batching of subjects to lookup using the Graph API
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GraphSubjectLookup implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lookupKeys' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[]'
+        'lookupKeys' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class GraphSubjectLookup implements ModelInterface, ArrayAccess
     /**
      * Gets lookupKeys
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[]
      */
     public function getLookupKeys()
     {
@@ -218,7 +218,7 @@ class GraphSubjectLookup implements ModelInterface, ArrayAccess
     /**
      * Sets lookupKeys
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[] $lookupKeys lookupKeys
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookupKey[] $lookupKeys lookupKeys
      *
      * @return $this
      */

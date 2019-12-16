@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Core\TeamsApi
+# FrankHouweling\AzureDevOpsClient\Core\TeamsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **teamsCreate**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam teamsCreate($organization, $body, $projectId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam teamsCreate($organization, $body, $projectId, $apiVersion)
 
 
 
@@ -26,16 +26,16 @@ Create a team in a team project.  Possible failure scenarios Invalid project nam
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam | The team data used to create the team.
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam(); // \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam | The team data used to create the team.
 $projectId = "projectId_example"; // string | The name or ID (GUID) of the team project in which to create the team.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
@@ -53,13 +53,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)| The team data used to create the team. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)| The team data used to create the team. |
  **projectId** | **string**| The name or ID (GUID) of the team project in which to create the team. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
 
 ### Authorization
 
@@ -85,9 +85,9 @@ Delete a team.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamsGet**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam teamsGet($organization, $projectId, $teamId, $apiVersion, $expandIdentity)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam teamsGet($organization, $projectId, $teamId, $apiVersion, $expandIdentity)
 
 
 
@@ -143,9 +143,9 @@ Get a specific team.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamsGetAllTeams**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[] teamsGetAllTeams($organization, $apiVersion, $mine, $top, $skip, $expandIdentity)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[] teamsGetAllTeams($organization, $apiVersion, $mine, $top, $skip, $expandIdentity)
 
 
 
@@ -204,9 +204,9 @@ Get a list of all teams.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]**](../Model/WebApiTeam.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]**](../Model/WebApiTeam.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamsGetTeamMembersWithExtendedProperties**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[] teamsGetTeamMembersWithExtendedProperties($organization, $projectId, $teamId, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[] teamsGetTeamMembersWithExtendedProperties($organization, $projectId, $teamId, $apiVersion, $top, $skip)
 
 
 
@@ -267,9 +267,9 @@ Get a list of members for a specific team.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamMember[]**](../Model/TeamMember.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\TeamMember[]**](../Model/TeamMember.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamsGetTeams**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[] teamsGetTeams($organization, $projectId, $apiVersion, $mine, $top, $skip, $expandIdentity)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[] teamsGetTeams($organization, $projectId, $apiVersion, $mine, $top, $skip, $expandIdentity)
 
 
 
@@ -330,9 +330,9 @@ Get a list of teams.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam[]**](../Model/WebApiTeam.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam[]**](../Model/WebApiTeam.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **teamsUpdate**
-> \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam teamsUpdate($organization, $body, $projectId, $teamId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam teamsUpdate($organization, $body, $projectId, $teamId, $apiVersion)
 
 
 
@@ -395,16 +395,16 @@ Update a team's name and/or description.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\TeamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam | 
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam(); // \FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam | 
 $projectId = "projectId_example"; // string | The name or ID (GUID) of the team project containing the team to update.
 $teamId = "teamId_example"; // string | The name of ID of the team to update.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
@@ -423,14 +423,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)|  |
  **projectId** | **string**| The name or ID (GUID) of the team project containing the team to update. |
  **teamId** | **string**| The name of ID of the team to update. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
+[**\FrankHouweling\AzureDevOpsClient\Core\Model\WebApiTeam**](../Model/WebApiTeam.md)
 
 ### Authorization
 

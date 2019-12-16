@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * PlansApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class PlansApi
      * Operation plansCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Plan
      */
     public function plansCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class PlansApi
      * Operation plansCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
      */
     public function plansCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class PlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class PlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class PlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class PlansApi
      */
     public function plansCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class PlansApi
      * Create request for operation 'plansCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\CreatePlan $body Plan definition (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class PlansApi
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class PlansApi
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -697,9 +697,9 @@ class PlansApi
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Plan
      */
     public function plansGet($organization, $project, $id, $apiVersion)
     {
@@ -715,13 +715,13 @@ class PlansApi
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
      */
     public function plansGetWithHttpInfo($organization, $project, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansGetRequest($organization, $project, $id, $apiVersion);
 
         try {
@@ -773,7 +773,7 @@ class PlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class PlansApi
      */
     public function plansGetAsyncWithHttpInfo($organization, $project, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansGetRequest($organization, $project, $id, $apiVersion);
 
         return $this->client
@@ -1018,9 +1018,9 @@ class PlansApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Plan[]
      */
     public function plansList($organization, $project, $apiVersion)
     {
@@ -1035,13 +1035,13 @@ class PlansApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\Plan[], HTTP status code, HTTP response headers (array of strings)
      */
     public function plansListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan[]';
         $request = $this->plansListRequest($organization, $project, $apiVersion);
 
         try {
@@ -1093,7 +1093,7 @@ class PlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1139,7 +1139,7 @@ class PlansApi
      */
     public function plansListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan[]';
         $request = $this->plansListRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1318,14 +1318,14 @@ class PlansApi
      * Operation plansUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Plan
      */
     public function plansUpdate($organization, $body, $project, $id, $apiVersion)
     {
@@ -1337,18 +1337,18 @@ class PlansApi
      * Operation plansUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\Plan, HTTP status code, HTTP response headers (array of strings)
      */
     public function plansUpdateWithHttpInfo($organization, $body, $project, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansUpdateRequest($organization, $body, $project, $id, $apiVersion);
 
         try {
@@ -1400,7 +1400,7 @@ class PlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1416,7 +1416,7 @@ class PlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1440,7 +1440,7 @@ class PlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1450,7 +1450,7 @@ class PlansApi
      */
     public function plansUpdateAsyncWithHttpInfo($organization, $body, $project, $id, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Plan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\Plan';
         $request = $this->plansUpdateRequest($organization, $body, $project, $id, $apiVersion);
 
         return $this->client
@@ -1494,7 +1494,7 @@ class PlansApi
      * Create request for operation 'plansUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdatePlan $body Plan definition to be updated (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $id Identifier of the plan (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

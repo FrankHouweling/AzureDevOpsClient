@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionRequestEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'extension' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension',
-        'host' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost',
+        'extension' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension',
+        'host' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost',
         'hostName' => 'string',
-        'links' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls',
-        'request' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest',
+        'links' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls',
+        'request' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest',
         'updateType' => 'string'
     ];
 
@@ -265,7 +265,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Gets extension
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension
      */
     public function getExtension()
     {
@@ -275,7 +275,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Sets extension
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension $extension The extension which has been requested
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension $extension The extension which has been requested
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Gets host
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost
      */
     public function getHost()
     {
@@ -299,7 +299,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Sets host
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost $host Information about the host for which this extension is requested
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost $host Information about the host for which this extension is requested
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls
      */
     public function getLinks()
     {
@@ -347,7 +347,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls $links Gallery host url
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequestUrls $links Gallery host url
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Gets request
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest
      */
     public function getRequest()
     {
@@ -371,7 +371,7 @@ class ExtensionRequestEvent implements ModelInterface, ArrayAccess
     /**
      * Sets request
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest $request The extension request object
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest $request The extension request object
      *
      * @return $this
      */

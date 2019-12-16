@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * ResultsFilter Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,7 +68,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
         'testCaseReferenceIds' => 'int[]',
         'testPlanId' => 'int',
         'testPointIds' => 'int[]',
-        'testResultsContext' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext',
+        'testResultsContext' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext',
         'trendDays' => 'int'
     ];
 
@@ -548,7 +548,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
     /**
      * Gets testResultsContext
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext
      */
     public function getTestResultsContext()
     {
@@ -558,7 +558,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
     /**
      * Sets testResultsContext
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsContext $testResultsContext testResultsContext
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsContext $testResultsContext testResultsContext
      *
      * @return $this
      */

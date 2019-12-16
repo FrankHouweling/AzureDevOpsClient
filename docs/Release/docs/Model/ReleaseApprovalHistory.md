@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**approver** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity of the approver. | [optional] 
-**changedBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity of the object who changed approval. | [optional] 
+**approver** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity of the approver. | [optional] 
+**changedBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity of the object who changed approval. | [optional] 
 **comments** | **string** | Approval history comments. | [optional] 
 **createdOn** | [**\DateTime**](\DateTime.md) | Time when this approval created. | [optional] 
 **modifiedOn** | [**\DateTime**](\DateTime.md) | Time when this approval modified. | [optional] 

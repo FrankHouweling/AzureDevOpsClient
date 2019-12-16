@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Client;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\ServiceEndpoint\ApiException;
-use AzureDevOpsClient\ServiceEndpoint\Configuration;
-use AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
-use AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * EndpointsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class EndpointsApi
      * Operation endpointsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
      */
     public function endpointsCreate($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class EndpointsApi
      * Operation endpointsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointsCreateWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsCreateRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class EndpointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
+                        '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class EndpointsApi
      */
     public function endpointsCreateAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsCreateRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class EndpointsApi
      * Create request for operation 'endpointsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -393,7 +393,7 @@ class EndpointsApi
      * @param  string $projectIds  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -410,7 +410,7 @@ class EndpointsApi
      * @param  string $projectIds  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -674,9 +674,9 @@ class EndpointsApi
      * @param  string $endpointId Id of the service endpoint. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
      */
     public function endpointsGet($organization, $project, $endpointId, $apiVersion)
     {
@@ -692,13 +692,13 @@ class EndpointsApi
      * @param  string $endpointId Id of the service endpoint. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointsGetWithHttpInfo($organization, $project, $endpointId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsGetRequest($organization, $project, $endpointId, $apiVersion);
 
         try {
@@ -750,7 +750,7 @@ class EndpointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
+                        '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -798,7 +798,7 @@ class EndpointsApi
      */
     public function endpointsGetAsyncWithHttpInfo($organization, $project, $endpointId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsGetRequest($organization, $project, $endpointId, $apiVersion);
 
         return $this->client
@@ -1001,9 +1001,9 @@ class EndpointsApi
      * @param  bool $includeFailed Failed flag for service endpoints. (optional)
      * @param  bool $includeDetails Flag to include more details for service endpoints. This is for internal use only and the flag will be treated as false for all other requests (optional)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]
      */
     public function endpointsGetServiceEndpointsByNames($organization, $project, $endpointNames, $apiVersion, $type = null, $authSchemes = null, $owner = null, $includeFailed = null, $includeDetails = null)
     {
@@ -1024,13 +1024,13 @@ class EndpointsApi
      * @param  bool $includeFailed Failed flag for service endpoints. (optional)
      * @param  bool $includeDetails Flag to include more details for service endpoints. This is for internal use only and the flag will be treated as false for all other requests (optional)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointsGetServiceEndpointsByNamesWithHttpInfo($organization, $project, $endpointNames, $apiVersion, $type = null, $authSchemes = null, $owner = null, $includeFailed = null, $includeDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]';
         $request = $this->endpointsGetServiceEndpointsByNamesRequest($organization, $project, $endpointNames, $apiVersion, $type, $authSchemes, $owner, $includeFailed, $includeDetails);
 
         try {
@@ -1082,7 +1082,7 @@ class EndpointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]',
+                        '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1140,7 +1140,7 @@ class EndpointsApi
      */
     public function endpointsGetServiceEndpointsByNamesAsyncWithHttpInfo($organization, $project, $endpointNames, $apiVersion, $type = null, $authSchemes = null, $owner = null, $includeFailed = null, $includeDetails = null)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint[]';
         $request = $this->endpointsGetServiceEndpointsByNamesRequest($organization, $project, $endpointNames, $apiVersion, $type, $authSchemes, $owner, $includeFailed, $includeDetails);
 
         return $this->client
@@ -1355,11 +1355,11 @@ class EndpointsApi
      * Operation endpointsShareServiceEndpoint
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1372,11 +1372,11 @@ class EndpointsApi
      * Operation endpointsShareServiceEndpointWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1428,7 +1428,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1451,7 +1451,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1490,7 +1490,7 @@ class EndpointsApi
      * Create request for operation 'endpointsShareServiceEndpoint'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointProjectReference[] $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1635,14 +1635,14 @@ class EndpointsApi
      * Operation endpointsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $operation  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint
      */
     public function endpointsUpdate($organization, $body, $endpointId, $operation, $apiVersion)
     {
@@ -1654,18 +1654,18 @@ class EndpointsApi
      * Operation endpointsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $operation  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointsUpdateWithHttpInfo($organization, $body, $endpointId, $operation, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsUpdateRequest($organization, $body, $endpointId, $operation, $apiVersion);
 
         try {
@@ -1717,7 +1717,7 @@ class EndpointsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
+                        '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1733,7 +1733,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $operation  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1757,7 +1757,7 @@ class EndpointsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $operation  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1767,7 +1767,7 @@ class EndpointsApi
      */
     public function endpointsUpdateAsyncWithHttpInfo($organization, $body, $endpointId, $operation, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint';
         $request = $this->endpointsUpdateRequest($organization, $body, $endpointId, $operation, $apiVersion);
 
         return $this->client
@@ -1811,7 +1811,7 @@ class EndpointsApi
      * Create request for operation 'endpointsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpoint $body  (required)
      * @param  string $endpointId  (required)
      * @param  string $operation  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ContributionType Class Doc Comment
  *
  * @category Class
  * @description A contribution type, given by a json schema
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class ContributionType implements ModelInterface, ArrayAccess
         'visibleTo' => 'string[]',
         'indexed' => 'bool',
         'name' => 'string',
-        'properties' => 'map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription]'
+        'properties' => 'map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription]'
     ];
 
     /**
@@ -358,7 +358,7 @@ class ContributionType implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription]
      */
     public function getProperties()
     {
@@ -368,7 +368,7 @@ class ContributionType implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param map[string,\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription] $properties Describes the allowed properties for this contribution type
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionPropertyDescription] $properties Describes the allowed properties for this contribution type
      *
      * @return $this
      */

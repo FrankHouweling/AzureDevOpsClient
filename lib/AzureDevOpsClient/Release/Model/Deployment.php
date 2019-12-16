@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * Deployment Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,23 +60,23 @@ class Deployment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'attempt' => 'int',
         'completedOn' => '\DateTime',
-        'conditions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Condition[]',
+        'conditions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Condition[]',
         'definitionEnvironmentId' => 'int',
         'deploymentStatus' => 'string',
         'id' => 'int',
-        'lastModifiedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'lastModifiedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'lastModifiedOn' => '\DateTime',
         'operationStatus' => 'string',
-        'postDeployApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
-        'preDeployApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
-        'projectReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
+        'postDeployApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'preDeployApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'projectReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
         'queuedOn' => '\DateTime',
         'reason' => 'string',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseReference',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
-        'releaseEnvironment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
-        'requestedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'requestedFor' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseReference',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'releaseEnvironment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
+        'requestedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'requestedFor' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'scheduledDeploymentTime' => '\DateTime',
         'startedOn' => '\DateTime'
     ];
@@ -497,7 +497,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets conditions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Condition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Condition[]
      */
     public function getConditions()
     {
@@ -507,7 +507,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets conditions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Condition[] $conditions Gets the list of condition associated with deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Condition[] $conditions Gets the list of condition associated with deployment.
      *
      * @return $this
      */
@@ -602,7 +602,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getLastModifiedBy()
     {
@@ -612,7 +612,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $lastModifiedBy Gets the identity who last modified the deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $lastModifiedBy Gets the identity who last modified the deployment.
      *
      * @return $this
      */
@@ -683,7 +683,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets postDeployApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getPostDeployApprovals()
     {
@@ -693,7 +693,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets postDeployApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $postDeployApprovals Gets list of PostDeployApprovals.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $postDeployApprovals Gets list of PostDeployApprovals.
      *
      * @return $this
      */
@@ -707,7 +707,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets preDeployApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getPreDeployApprovals()
     {
@@ -717,7 +717,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets preDeployApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $preDeployApprovals Gets list of PreDeployApprovals.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $preDeployApprovals Gets list of PreDeployApprovals.
      *
      * @return $this
      */
@@ -731,7 +731,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets projectReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProjectReference()
     {
@@ -741,7 +741,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets projectReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference.
      *
      * @return $this
      */
@@ -812,7 +812,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseReference
      */
     public function getRelease()
     {
@@ -822,7 +822,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseReference $release Gets the reference of release.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseReference $release Gets the reference of release.
      *
      * @return $this
      */
@@ -836,7 +836,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -846,7 +846,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which the deployment is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which the deployment is associated.
      *
      * @return $this
      */
@@ -860,7 +860,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets releaseEnvironment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
      */
     public function getReleaseEnvironment()
     {
@@ -870,7 +870,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets releaseEnvironment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference which specifies the reference of the release environment to which the deployment is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference which specifies the reference of the release environment to which the deployment is associated.
      *
      * @return $this
      */
@@ -884,7 +884,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets requestedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getRequestedBy()
     {
@@ -894,7 +894,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets requestedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy Gets the identity who requested.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy Gets the identity who requested.
      *
      * @return $this
      */
@@ -908,7 +908,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Gets requestedFor
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getRequestedFor()
     {
@@ -918,7 +918,7 @@ class Deployment implements ModelInterface, ArrayAccess
     /**
      * Sets requestedFor
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $requestedFor Gets the identity for whom deployment is requested.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $requestedFor Gets the identity for whom deployment is requested.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionAuditLogEntry Class Doc Comment
  *
  * @category Class
  * @description An audit log entry for an extension
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ExtensionAuditLogEntry implements ModelInterface, ArrayAccess
         'auditAction' => 'string',
         'auditDate' => '\DateTime',
         'comment' => 'string',
-        'updatedBy' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef'
+        'updatedBy' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef'
     ];
 
     /**
@@ -298,7 +298,7 @@ class ExtensionAuditLogEntry implements ModelInterface, ArrayAccess
     /**
      * Gets updatedBy
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
      */
     public function getUpdatedBy()
     {
@@ -308,7 +308,7 @@ class ExtensionAuditLogEntry implements ModelInterface, ArrayAccess
     /**
      * Sets updatedBy
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $updatedBy Represents the user who made the change
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $updatedBy Represents the user who made the change
      *
      * @return $this
      */

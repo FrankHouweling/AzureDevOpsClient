@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Audit\DownloadLogApi
+# FrankHouweling\AzureDevOpsClient\Audit\DownloadLogApi
 
 All URIs are relative to *https://auditservice.dev.azure.com*
 
@@ -20,12 +20,12 @@ Downloads audit log entries.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\DownloadLogApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\DownloadLogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

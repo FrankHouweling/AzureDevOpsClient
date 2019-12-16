@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BacklogLevelWorkItems Class Doc Comment
  *
  * @category Class
  * @description Represents work items in a backlog level
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BacklogLevelWorkItems implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'workItems' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[]'
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class BacklogLevelWorkItems implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[]
      */
     public function getWorkItems()
     {
@@ -218,7 +218,7 @@ class BacklogLevelWorkItems implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemLink[] $workItems A list of work items within a backlog level
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemLink[] $workItems A list of work items within a backlog level
      *
      * @return $this
      */

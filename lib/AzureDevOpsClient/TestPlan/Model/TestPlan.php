@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPlan Class Doc Comment
  *
  * @category Class
  * @description The test plan resource.
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,23 +60,23 @@ class TestPlan implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'revision' => 'int',
         'areaPath' => 'string',
-        'buildDefinition' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference',
+        'buildDefinition' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference',
         'buildId' => 'int',
         'description' => 'string',
         'endDate' => '\DateTime',
         'iteration' => 'string',
         'name' => 'string',
-        'owner' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef',
-        'releaseEnvironmentDefinition' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef',
+        'releaseEnvironmentDefinition' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference',
         'startDate' => '\DateTime',
         'state' => 'string',
-        'testOutcomeSettings' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings',
-        'links' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
+        'testOutcomeSettings' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings',
+        'links' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
         'id' => 'int',
         'previousBuildId' => 'int',
-        'project' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
-        'rootSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
-        'updatedBy' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef',
+        'project' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
+        'rootSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
+        'updatedBy' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef',
         'updatedDate' => '\DateTime'
     ];
 
@@ -370,7 +370,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets buildDefinition
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference
      */
     public function getBuildDefinition()
     {
@@ -380,7 +380,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets buildDefinition
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference $buildDefinition The Build Definition that generates a build associated with this test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\BuildDefinitionReference $buildDefinition The Build Definition that generates a build associated with this test plan.
      *
      * @return $this
      */
@@ -514,7 +514,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -524,7 +524,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $owner Owner of the test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $owner Owner of the test plan.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets releaseEnvironmentDefinition
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference
      */
     public function getReleaseEnvironmentDefinition()
     {
@@ -548,7 +548,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets releaseEnvironmentDefinition
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference $releaseEnvironmentDefinition Release Environment to be used to deploy the build and run automated tests from this test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReleaseEnvironmentDefinitionReference $releaseEnvironmentDefinition Release Environment to be used to deploy the build and run automated tests from this test plan.
      *
      * @return $this
      */
@@ -610,7 +610,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets testOutcomeSettings
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings
      */
     public function getTestOutcomeSettings()
     {
@@ -620,7 +620,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets testOutcomeSettings
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings $testOutcomeSettings Value to configure how same tests across test suites under a test plan need to behave
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestOutcomeSettings $testOutcomeSettings Value to configure how same tests across test suites under a test plan need to behave
      *
      * @return $this
      */
@@ -634,7 +634,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -644,7 +644,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Relevant links
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Relevant links
      *
      * @return $this
      */
@@ -706,7 +706,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -716,7 +716,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Project which contains the test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Project which contains the test plan.
      *
      * @return $this
      */
@@ -730,7 +730,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets rootSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
      */
     public function getRootSuite()
     {
@@ -740,7 +740,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets rootSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $rootSuite Root test suite of the test plan.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $rootSuite Root test suite of the test plan.
      *
      * @return $this
      */
@@ -754,7 +754,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Gets updatedBy
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef
      */
     public function getUpdatedBy()
     {
@@ -764,7 +764,7 @@ class TestPlan implements ModelInterface, ArrayAccess
     /**
      * Sets updatedBy
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\IdentityRef $updatedBy Identity Reference for the last update of the test plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\IdentityRef $updatedBy Identity Reference for the last update of the test plan
      *
      * @return $this
      */

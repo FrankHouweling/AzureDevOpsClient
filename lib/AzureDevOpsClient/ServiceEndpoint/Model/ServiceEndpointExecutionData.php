@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointExecutionData Class Doc Comment
  *
  * @category Class
  * @description Represents service endpoint execution data.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class ServiceEndpointExecutionData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'definition' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner',
+        'definition' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner',
         'finishTime' => '\DateTime',
         'id' => 'int',
-        'owner' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner',
         'planType' => 'string',
         'result' => 'string',
         'startTime' => '\DateTime'
@@ -275,7 +275,7 @@ class ServiceEndpointExecutionData implements ModelInterface, ArrayAccess
     /**
      * Gets definition
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner
      */
     public function getDefinition()
     {
@@ -285,7 +285,7 @@ class ServiceEndpointExecutionData implements ModelInterface, ArrayAccess
     /**
      * Sets definition
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner $definition Gets the definition of service endpoint execution owner.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner $definition Gets the definition of service endpoint execution owner.
      *
      * @return $this
      */
@@ -347,7 +347,7 @@ class ServiceEndpointExecutionData implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner
      */
     public function getOwner()
     {
@@ -357,7 +357,7 @@ class ServiceEndpointExecutionData implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner $owner Gets the owner of service endpoint execution data.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionOwner $owner Gets the owner of service endpoint execution data.
      *
      * @return $this
      */

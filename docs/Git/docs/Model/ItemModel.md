@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **content** | **string** |  | [optional] 
-**contentMetadata** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileContentMetadata**](FileContentMetadata.md) |  | [optional] 
+**contentMetadata** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\FileContentMetadata**](FileContentMetadata.md) |  | [optional] 
 **isFolder** | **bool** |  | [optional] 
 **isSymLink** | **bool** |  | [optional] 
 **path** | **string** |  | [optional] 

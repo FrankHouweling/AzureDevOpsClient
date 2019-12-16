@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TokenAdmin\PersonalAccessTokensApi
+# FrankHouweling\AzureDevOpsClient\TokenAdmin\PersonalAccessTokensApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **personalAccessTokensList**
-> \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens personalAccessTokensList($organization, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic)
+> \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens personalAccessTokensList($organization, $subjectDescriptor, $apiVersion, $pageSize, $continuationToken, $isPublic)
 
 
 
@@ -20,9 +20,9 @@ Lists of all the session token details of the personal access tokens (PATs) for 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TokenAdmin\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TokenAdmin\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TokenAdmin\Api\PersonalAccessTokensApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TokenAdmin\Api\PersonalAccessTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens**](../Model/TokenAdminPagedSessionTokens.md)
+[**\FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminPagedSessionTokens**](../Model/TokenAdminPagedSessionTokens.md)
 
 ### Authorization
 

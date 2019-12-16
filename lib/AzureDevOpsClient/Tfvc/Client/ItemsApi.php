@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Client;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Tfvc\ApiException;
-use AzureDevOpsClient\Tfvc\Configuration;
-use AzureDevOpsClient\Tfvc\HeaderSelector;
-use AzureDevOpsClient\Tfvc\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ApiException;
+use FrankHouweling\AzureDevOpsClient\Tfvc\Configuration;
+use FrankHouweling\AzureDevOpsClient\Tfvc\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * ItemsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class ItemsApi
      * Operation itemsGetItemsBatch
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return null[][]
      */
@@ -109,11 +109,11 @@ class ItemsApi
      * Operation itemsGetItemsBatchWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null[][], HTTP status code, HTTP response headers (array of strings)
      */
@@ -187,7 +187,7 @@ class ItemsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class ItemsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -263,7 +263,7 @@ class ItemsApi
      * Create request for operation 'itemsGetItemsBatch'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItemRequestData $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -417,9 +417,9 @@ class ItemsApi
      * @param  string $versionDescriptorVersionOption  (optional)
      * @param  string $versionDescriptorVersionType  (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]
      */
     public function itemsList($organization, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeLinks = null, $versionDescriptorVersion = null, $versionDescriptorVersionOption = null, $versionDescriptorVersionType = null)
     {
@@ -440,13 +440,13 @@ class ItemsApi
      * @param  string $versionDescriptorVersionOption  (optional)
      * @param  string $versionDescriptorVersionType  (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function itemsListWithHttpInfo($organization, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeLinks = null, $versionDescriptorVersion = null, $versionDescriptorVersionOption = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
         $request = $this->itemsListRequest($organization, $project, $apiVersion, $scopePath, $recursionLevel, $includeLinks, $versionDescriptorVersion, $versionDescriptorVersionOption, $versionDescriptorVersionType);
 
         try {
@@ -498,7 +498,7 @@ class ItemsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class ItemsApi
      */
     public function itemsListAsyncWithHttpInfo($organization, $project, $apiVersion, $scopePath = null, $recursionLevel = null, $includeLinks = null, $versionDescriptorVersion = null, $versionDescriptorVersionOption = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcItem[]';
         $request = $this->itemsListRequest($organization, $project, $apiVersion, $scopePath, $recursionLevel, $includeLinks, $versionDescriptorVersion, $versionDescriptorVersionOption, $versionDescriptorVersionType);
 
         return $this->client

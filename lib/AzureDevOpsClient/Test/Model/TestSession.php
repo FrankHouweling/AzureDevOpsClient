@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestSession Class Doc Comment
  *
  * @category Class
  * @description Test Session
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class TestSession implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'area' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'area' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'comment' => 'string',
         'endDate' => '\DateTime',
         'id' => 'int',
-        'lastUpdatedBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'lastUpdatedBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'lastUpdatedDate' => '\DateTime',
-        'owner' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
-        'project' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'propertyBag' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PropertyBag',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'propertyBag' => '\FrankHouweling\AzureDevOpsClient\Test\Model\PropertyBag',
         'revision' => 'int',
         'source' => 'string',
         'startDate' => '\DateTime',
@@ -356,7 +356,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Gets area
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getArea()
     {
@@ -366,7 +366,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Sets area
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $area Area path of the test session
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $area Area path of the test session
      *
      * @return $this
      */
@@ -452,7 +452,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Gets lastUpdatedBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getLastUpdatedBy()
     {
@@ -462,7 +462,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Sets lastUpdatedBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy Last Updated By  Reference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy Last Updated By  Reference
      *
      * @return $this
      */
@@ -500,7 +500,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -510,7 +510,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $owner Owner of the test session
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $owner Owner of the test session
      *
      * @return $this
      */
@@ -524,7 +524,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getProject()
     {
@@ -534,7 +534,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $project Project to which the test session belongs
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $project Project to which the test session belongs
      *
      * @return $this
      */
@@ -548,7 +548,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Gets propertyBag
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PropertyBag
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\PropertyBag
      */
     public function getPropertyBag()
     {
@@ -558,7 +558,7 @@ class TestSession implements ModelInterface, ArrayAccess
     /**
      * Sets propertyBag
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PropertyBag $propertyBag Generic store for test session data
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\PropertyBag $propertyBag Generic store for test session data
      *
      * @return $this
      */

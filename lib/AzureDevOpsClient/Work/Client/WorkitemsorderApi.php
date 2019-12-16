@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * WorkitemsorderApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class WorkitemsorderApi
      * Operation workitemsorderReorderBacklogWorkItems
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]
      */
     public function workitemsorderReorderBacklogWorkItems($organization, $body, $project, $team, $apiVersion)
     {
@@ -110,18 +110,18 @@ class WorkitemsorderApi
      * Operation workitemsorderReorderBacklogWorkItemsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function workitemsorderReorderBacklogWorkItemsWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]';
         $request = $this->workitemsorderReorderBacklogWorkItemsRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class WorkitemsorderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class WorkitemsorderApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class WorkitemsorderApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class WorkitemsorderApi
      */
     public function workitemsorderReorderBacklogWorkItemsAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]';
         $request = $this->workitemsorderReorderBacklogWorkItemsRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class WorkitemsorderApi
      * Create request for operation 'workitemsorderReorderBacklogWorkItems'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -427,15 +427,15 @@ class WorkitemsorderApi
      * Operation workitemsorderReorderIterationWorkItems
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $iterationId The id of the iteration (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]
      */
     public function workitemsorderReorderIterationWorkItems($organization, $body, $project, $team, $iterationId, $apiVersion)
     {
@@ -447,19 +447,19 @@ class WorkitemsorderApi
      * Operation workitemsorderReorderIterationWorkItemsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $iterationId The id of the iteration (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function workitemsorderReorderIterationWorkItemsWithHttpInfo($organization, $body, $project, $team, $iterationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]';
         $request = $this->workitemsorderReorderIterationWorkItemsRequest($organization, $body, $project, $team, $iterationId, $apiVersion);
 
         try {
@@ -511,7 +511,7 @@ class WorkitemsorderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -527,7 +527,7 @@ class WorkitemsorderApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $iterationId The id of the iteration (required)
@@ -552,7 +552,7 @@ class WorkitemsorderApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $iterationId The id of the iteration (required)
@@ -563,7 +563,7 @@ class WorkitemsorderApi
      */
     public function workitemsorderReorderIterationWorkItemsAsyncWithHttpInfo($organization, $body, $project, $team, $iterationId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ReorderResult[]';
         $request = $this->workitemsorderReorderIterationWorkItemsRequest($organization, $body, $project, $team, $iterationId, $apiVersion);
 
         return $this->client
@@ -607,7 +607,7 @@ class WorkitemsorderApi
      * Create request for operation 'workitemsorderReorderIterationWorkItems'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\ReorderOperation $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $iterationId The id of the iteration (required)

@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**excludedIdentities** | [**map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]**](ProcessingDiagnosticIdentity.md) |  | [optional] 
-**includedIdentities** | [**map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]**](ProcessingDiagnosticIdentity.md) |  | [optional] 
-**messages** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) |  | [optional] 
+**excludedIdentities** | [**map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]**](ProcessingDiagnosticIdentity.md) |  | [optional] 
+**includedIdentities** | [**map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingDiagnosticIdentity]**](ProcessingDiagnosticIdentity.md) |  | [optional] 
+**messages** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) |  | [optional] 
 **missingIdentities** | **string[]** |  | [optional] 
 **properties** | **map[string,string]** |  | [optional] 
 

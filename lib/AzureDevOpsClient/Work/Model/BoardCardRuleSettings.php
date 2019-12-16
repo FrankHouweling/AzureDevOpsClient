@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardCardRuleSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class BoardCardRuleSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
-        'rules' => 'map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Rule[]]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'rules' => 'map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\Rule[]]',
         'url' => 'string'
     ];
 
@@ -220,7 +220,7 @@ class BoardCardRuleSettings implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -230,7 +230,7 @@ class BoardCardRuleSettings implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class BoardCardRuleSettings implements ModelInterface, ArrayAccess
     /**
      * Gets rules
      *
-     * @return map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Rule[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\Rule[]]
      */
     public function getRules()
     {
@@ -254,7 +254,7 @@ class BoardCardRuleSettings implements ModelInterface, ArrayAccess
     /**
      * Sets rules
      *
-     * @param map[string,\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Rule[]] $rules rules
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Work\Model\Rule[]] $rules rules
      *
      * @return $this
      */

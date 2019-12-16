@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitQueryBranchStatsCriteria Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GitQueryBranchStatsCriteria implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'baseCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
-        'targetCommits' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor[]'
+        'baseCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
+        'targetCommits' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GitQueryBranchStatsCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets baseCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor
      */
     public function getBaseCommit()
     {
@@ -224,7 +224,7 @@ class GitQueryBranchStatsCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets baseCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor $baseCommit baseCommit
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor $baseCommit baseCommit
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GitQueryBranchStatsCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets targetCommits
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor[]
      */
     public function getTargetCommits()
     {
@@ -248,7 +248,7 @@ class GitQueryBranchStatsCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets targetCommits
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor[] $targetCommits targetCommits
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor[] $targetCommits targetCommits
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Symbol\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * DebugEntry Class Doc Comment
  *
  * @category Class
  * @description A dual-purpose data object, the debug entry is used by the client to publish the symbol file (with file&#39;s blob identifier, which can be calculated from VSTS hashing algorithm) or query the file (with a client key). Since the symbol server tries to return a matched symbol file with the richest information level, it may not always point to the same symbol file for different queries with same client key.
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,8 +63,8 @@ class DebugEntry implements ModelInterface, ArrayAccess
         'id' => 'string',
         'storageETag' => 'string',
         'url' => 'string',
-        'blobDetails' => '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks',
-        'blobIdentifier' => '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier',
+        'blobDetails' => '\FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks',
+        'blobIdentifier' => '\FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier',
         'blobUri' => 'string',
         'clientKey' => 'string',
         'informationLevel' => 'string',
@@ -456,7 +456,7 @@ class DebugEntry implements ModelInterface, ArrayAccess
     /**
      * Gets blobDetails
      *
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks
      */
     public function getBlobDetails()
     {
@@ -466,7 +466,7 @@ class DebugEntry implements ModelInterface, ArrayAccess
     /**
      * Sets blobDetails
      *
-     * @param \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks $blobDetails Details of the blob formatted to be deserialized for symbol service.
+     * @param \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifierWithBlocks $blobDetails Details of the blob formatted to be deserialized for symbol service.
      *
      * @return $this
      */
@@ -480,7 +480,7 @@ class DebugEntry implements ModelInterface, ArrayAccess
     /**
      * Gets blobIdentifier
      *
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier
      */
     public function getBlobIdentifier()
     {
@@ -490,7 +490,7 @@ class DebugEntry implements ModelInterface, ArrayAccess
     /**
      * Sets blobIdentifier
      *
-     * @param \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier $blobIdentifier A blob identifier of the symbol file to upload to this debug entry. This property is mostly used during creation of debug entry (a.k.a. symbol publishing) to allow the server to query the existence of the blob.
+     * @param \FrankHouweling\AzureDevOpsClient\Symbol\Model\JsonBlobIdentifier $blobIdentifier A blob identifier of the symbol file to upload to this debug entry. This property is mostly used during creation of debug entry (a.k.a. symbol publishing) to allow the server to query the existence of the blob.
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Client;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Symbol\ApiException;
-use AzureDevOpsClient\Symbol\Configuration;
-use AzureDevOpsClient\Symbol\HeaderSelector;
-use AzureDevOpsClient\Symbol\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Symbol\ApiException;
+use FrankHouweling\AzureDevOpsClient\Symbol\Configuration;
+use FrankHouweling\AzureDevOpsClient\Symbol\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * RequestsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class RequestsApi
      * Operation requestsCreateRequests
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request
      */
     public function requestsCreateRequests($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class RequestsApi
      * Operation requestsCreateRequestsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsCreateRequestsWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsCreateRequestsRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class RequestsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class RequestsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -223,7 +223,7 @@ class RequestsApi
      */
     public function requestsCreateRequestsAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsCreateRequestsRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class RequestsApi
      * Create request for operation 'requestsCreateRequests'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -397,14 +397,14 @@ class RequestsApi
      * Operation requestsCreateRequestsRequestIdDebugEntries
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $collection A valid debug entry collection name. Must be \&quot;debugentries\&quot;. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]
      */
     public function requestsCreateRequestsRequestIdDebugEntries($organization, $body, $requestId, $collection, $apiVersion)
     {
@@ -416,18 +416,18 @@ class RequestsApi
      * Operation requestsCreateRequestsRequestIdDebugEntriesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $collection A valid debug entry collection name. Must be \&quot;debugentries\&quot;. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsCreateRequestsRequestIdDebugEntriesWithHttpInfo($organization, $body, $requestId, $collection, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]';
         $request = $this->requestsCreateRequestsRequestIdDebugEntriesRequest($organization, $body, $requestId, $collection, $apiVersion);
 
         try {
@@ -479,7 +479,7 @@ class RequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class RequestsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class RequestsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -511,7 +511,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $collection A valid debug entry collection name. Must be \&quot;debugentries\&quot;. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -535,7 +535,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $collection A valid debug entry collection name. Must be \&quot;debugentries\&quot;. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -545,7 +545,7 @@ class RequestsApi
      */
     public function requestsCreateRequestsRequestIdDebugEntriesAsyncWithHttpInfo($organization, $body, $requestId, $collection, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]';
         $request = $this->requestsCreateRequestsRequestIdDebugEntriesRequest($organization, $body, $requestId, $collection, $apiVersion);
 
         return $this->client
@@ -589,7 +589,7 @@ class RequestsApi
      * Create request for operation 'requestsCreateRequestsRequestIdDebugEntries'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch $body A batch that contains debug entries to create. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $collection A valid debug entry collection name. Must be \&quot;debugentries\&quot;. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -749,7 +749,7 @@ class RequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $synchronous If true, delete all the debug entries under this request synchronously in the current session. If false, the deletion will be postponed to a later point and be executed automatically by the system. (optional)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -766,7 +766,7 @@ class RequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $synchronous If true, delete all the debug entries under this request synchronously in the current session. If false, the deletion will be postponed to a later point and be executed automatically by the system. (optional)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1024,7 +1024,7 @@ class RequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $synchronous If true, delete all the debug entries under this request synchronously in the current session. If false, the deletion will be postponed to a later point and be executed automatically by the system. (optional)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1041,7 +1041,7 @@ class RequestsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $synchronous If true, delete all the debug entries under this request synchronously in the current session. If false, the deletion will be postponed to a later point and be executed automatically by the system. (optional)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1294,9 +1294,9 @@ class RequestsApi
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request
      */
     public function requestsGetRequestsRequestId($organization, $requestId, $apiVersion)
     {
@@ -1311,13 +1311,13 @@ class RequestsApi
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsGetRequestsRequestIdWithHttpInfo($organization, $requestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsGetRequestsRequestIdRequest($organization, $requestId, $apiVersion);
 
         try {
@@ -1369,7 +1369,7 @@ class RequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1377,7 +1377,7 @@ class RequestsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1423,7 +1423,7 @@ class RequestsApi
      */
     public function requestsGetRequestsRequestIdAsyncWithHttpInfo($organization, $requestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsGetRequestsRequestIdRequest($organization, $requestId, $apiVersion);
 
         return $this->client
@@ -1605,9 +1605,9 @@ class RequestsApi
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request
      */
     public function requestsGetRequestsRequestName($organization, $requestName, $apiVersion)
     {
@@ -1622,13 +1622,13 @@ class RequestsApi
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsGetRequestsRequestNameWithHttpInfo($organization, $requestName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsGetRequestsRequestNameRequest($organization, $requestName, $apiVersion);
 
         try {
@@ -1680,7 +1680,7 @@ class RequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1688,7 +1688,7 @@ class RequestsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1734,7 +1734,7 @@ class RequestsApi
      */
     public function requestsGetRequestsRequestNameAsyncWithHttpInfo($organization, $requestName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsGetRequestsRequestNameRequest($organization, $requestName, $apiVersion);
 
         return $this->client
@@ -1909,13 +1909,13 @@ class RequestsApi
      * Operation requestsUpdateRequestsRequestId
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request
      */
     public function requestsUpdateRequestsRequestId($organization, $body, $requestId, $apiVersion)
     {
@@ -1927,17 +1927,17 @@ class RequestsApi
      * Operation requestsUpdateRequestsRequestIdWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsUpdateRequestsRequestIdWithHttpInfo($organization, $body, $requestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsUpdateRequestsRequestIdRequest($organization, $body, $requestId, $apiVersion);
 
         try {
@@ -1989,7 +1989,7 @@ class RequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1997,7 +1997,7 @@ class RequestsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2005,7 +2005,7 @@ class RequestsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2021,7 +2021,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -2044,7 +2044,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -2053,7 +2053,7 @@ class RequestsApi
      */
     public function requestsUpdateRequestsRequestIdAsyncWithHttpInfo($organization, $body, $requestId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsUpdateRequestsRequestIdRequest($organization, $body, $requestId, $apiVersion);
 
         return $this->client
@@ -2097,7 +2097,7 @@ class RequestsApi
      * Create request for operation 'requestsUpdateRequestsRequestId'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestId The symbol request identifier. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -2242,13 +2242,13 @@ class RequestsApi
      * Operation requestsUpdateRequestsRequestName
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request
      */
     public function requestsUpdateRequestsRequestName($organization, $body, $requestName, $apiVersion)
     {
@@ -2260,17 +2260,17 @@ class RequestsApi
      * Operation requestsUpdateRequestsRequestNameWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Symbol\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Symbol\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request, HTTP status code, HTTP response headers (array of strings)
      */
     public function requestsUpdateRequestsRequestNameWithHttpInfo($organization, $body, $requestName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsUpdateRequestsRequestNameRequest($organization, $body, $requestName, $apiVersion);
 
         try {
@@ -2322,7 +2322,7 @@ class RequestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2330,7 +2330,7 @@ class RequestsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2338,7 +2338,7 @@ class RequestsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request',
+                        '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2354,7 +2354,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -2377,7 +2377,7 @@ class RequestsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -2386,7 +2386,7 @@ class RequestsApi
      */
     public function requestsUpdateRequestsRequestNameAsyncWithHttpInfo($organization, $body, $requestName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request';
         $request = $this->requestsUpdateRequestsRequestNameRequest($organization, $body, $requestName, $apiVersion);
 
         return $this->client
@@ -2430,7 +2430,7 @@ class RequestsApi
      * Create request for operation 'requestsUpdateRequestsRequestName'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request $body The symbol request. (required)
      * @param  string $requestName The symbol request name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

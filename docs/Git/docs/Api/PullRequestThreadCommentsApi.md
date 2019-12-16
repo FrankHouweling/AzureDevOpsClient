@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestThreadCommentsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestThreadCommentsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestThreadCommentsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsCreate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsCreate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
 
 
 
@@ -24,16 +24,16 @@ Create a comment on a specific thread in a pull request (up to 500 comments can 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment | The comment to create. Comments can be up to 150,000 characters.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\Comment(); // \FrankHouweling\AzureDevOpsClient\Git\Model\Comment | The comment to create. Comments can be up to 150,000 characters.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request's target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $threadId = 56; // int | ID of the thread that the desired comment is in.
@@ -54,7 +54,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)| The comment to create. Comments can be up to 150,000 characters. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)| The comment to create. Comments can be up to 150,000 characters. |
  **repositoryId** | **string**| The repository ID of the pull request&#39;s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **threadId** | **int**| ID of the thread that the desired comment is in. |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
 
 ### Authorization
 
@@ -89,9 +89,9 @@ Delete a comment associated with a specific thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadCommentsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsGet($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsGet($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
 
 
 
@@ -153,9 +153,9 @@ Retrieve a comment associated with a specific thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadCommentsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[] pullRequestThreadCommentsList($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Comment[] pullRequestThreadCommentsList($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
 
 
 
@@ -218,9 +218,9 @@ Retrieve all comments associated with a specific thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]**](../Model/Comment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]**](../Model/Comment.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestThreadCommentsUpdate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\Comment pullRequestThreadCommentsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
 
 
 
@@ -281,16 +281,16 @@ Update a comment associated with a specific thread in a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestThreadCommentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment | The comment content that should be updated. Comments can be up to 150,000 characters.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\Comment(); // \FrankHouweling\AzureDevOpsClient\Git\Model\Comment | The comment content that should be updated. Comments can be up to 150,000 characters.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request's target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $threadId = 56; // int | ID of the thread that the desired comment is in.
@@ -312,7 +312,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)| The comment content that should be updated. Comments can be up to 150,000 characters. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)| The comment content that should be updated. Comments can be up to 150,000 characters. |
  **repositoryId** | **string**| The repository ID of the pull request&#39;s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **threadId** | **int**| ID of the thread that the desired comment is in. |
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\Comment**](../Model/Comment.md)
 
 ### Authorization
 

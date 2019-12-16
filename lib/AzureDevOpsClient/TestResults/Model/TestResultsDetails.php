@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultsDetails Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestResultsDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'groupByField' => 'string',
-        'resultsForGroup' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[]'
+        'resultsForGroup' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestResultsDetails implements ModelInterface, ArrayAccess
     /**
      * Gets resultsForGroup
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[]
      */
     public function getResultsForGroup()
     {
@@ -248,7 +248,7 @@ class TestResultsDetails implements ModelInterface, ArrayAccess
     /**
      * Sets resultsForGroup
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[] $resultsForGroup resultsForGroup
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultsDetailsForGroup[] $resultsForGroup resultsForGroup
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -109,9 +109,9 @@ class DeploymentsApi
      * @param  \DateTime $maxStartedTime  (optional)
      * @param  string $sourceBranch  (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[]
      */
     public function deploymentsList($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $createdBy = null, $minModifiedTime = null, $maxModifiedTime = null, $deploymentStatus = null, $operationStatus = null, $latestAttemptsOnly = null, $queryOrder = null, $top = null, $continuationToken = null, $createdFor = null, $minStartedTime = null, $maxStartedTime = null, $sourceBranch = null)
     {
@@ -141,13 +141,13 @@ class DeploymentsApi
      * @param  \DateTime $maxStartedTime  (optional)
      * @param  string $sourceBranch  (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function deploymentsListWithHttpInfo($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $createdBy = null, $minModifiedTime = null, $maxModifiedTime = null, $deploymentStatus = null, $operationStatus = null, $latestAttemptsOnly = null, $queryOrder = null, $top = null, $continuationToken = null, $createdFor = null, $minStartedTime = null, $maxStartedTime = null, $sourceBranch = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[]';
         $request = $this->deploymentsListRequest($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $createdBy, $minModifiedTime, $maxModifiedTime, $deploymentStatus, $operationStatus, $latestAttemptsOnly, $queryOrder, $top, $continuationToken, $createdFor, $minStartedTime, $maxStartedTime, $sourceBranch);
 
         try {
@@ -199,7 +199,7 @@ class DeploymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -275,7 +275,7 @@ class DeploymentsApi
      */
     public function deploymentsListAsyncWithHttpInfo($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $createdBy = null, $minModifiedTime = null, $maxModifiedTime = null, $deploymentStatus = null, $operationStatus = null, $latestAttemptsOnly = null, $queryOrder = null, $top = null, $continuationToken = null, $createdFor = null, $minStartedTime = null, $maxStartedTime = null, $sourceBranch = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[]';
         $request = $this->deploymentsListRequest($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $createdBy, $minModifiedTime, $maxModifiedTime, $deploymentStatus, $operationStatus, $latestAttemptsOnly, $queryOrder, $top, $continuationToken, $createdFor, $minStartedTime, $maxStartedTime, $sourceBranch);
 
         return $this->client

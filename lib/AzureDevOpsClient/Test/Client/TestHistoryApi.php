@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestHistoryApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class TestHistoryApi
      * Operation testHistoryQuery
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery
      */
     public function testHistoryQuery($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class TestHistoryApi
      * Operation testHistoryQueryWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery, HTTP status code, HTTP response headers (array of strings)
      */
     public function testHistoryQueryWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery';
         $request = $this->testHistoryQueryRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class TestHistoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class TestHistoryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class TestHistoryApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class TestHistoryApi
      */
     public function testHistoryQueryAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery';
         $request = $this->testHistoryQueryRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class TestHistoryApi
      * Create request for operation 'testHistoryQuery'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestHistoryQuery $body TestHistoryQuery to get history (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestResults\ApiException;
-use AzureDevOpsClient\TestResults\Configuration;
-use AzureDevOpsClient\TestResults\HeaderSelector;
-use AzureDevOpsClient\TestResults\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestResults\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestResults\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestResults\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestlogstoreendpointApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class TestlogstoreendpointApi
      * @param  string $filePath filePath for which sas uri is needed (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLog($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion)
     {
@@ -119,13 +119,13 @@ class TestlogstoreendpointApi
      * @param  string $filePath filePath for which sas uri is needed (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLogWithHttpInfo($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLogRequest($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion);
 
         try {
@@ -177,7 +177,7 @@ class TestlogstoreendpointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class TestlogstoreendpointApi
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLogAsyncWithHttpInfo($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointGetTestLogStoreEndpointDetailsForResultLogRequest($organization, $project, $runId, $resultId, $type, $filePath, $apiVersion);
 
         return $this->client
@@ -468,9 +468,9 @@ class TestlogstoreendpointApi
      * @param  string $filePath filePath for which sas uri is needed (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLog($organization, $project, $runId, $type, $filePath, $apiVersion)
     {
@@ -488,13 +488,13 @@ class TestlogstoreendpointApi
      * @param  string $filePath filePath for which sas uri is needed (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLogWithHttpInfo($organization, $project, $runId, $type, $filePath, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLogRequest($organization, $project, $runId, $type, $filePath, $apiVersion);
 
         try {
@@ -546,7 +546,7 @@ class TestlogstoreendpointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -598,7 +598,7 @@ class TestlogstoreendpointApi
      */
     public function testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLogAsyncWithHttpInfo($organization, $project, $runId, $type, $filePath, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointGetTestLogStoreEndpointDetailsForRunLogRequest($organization, $project, $runId, $type, $filePath, $apiVersion);
 
         return $this->client
@@ -822,9 +822,9 @@ class TestlogstoreendpointApi
      * @param  string $type Type of the file for download (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForResult($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion)
     {
@@ -844,13 +844,13 @@ class TestlogstoreendpointApi
      * @param  string $type Type of the file for download (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForResultWithHttpInfo($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointTestLogStoreEndpointDetailsForResultRequest($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion);
 
         try {
@@ -902,7 +902,7 @@ class TestlogstoreendpointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -958,7 +958,7 @@ class TestlogstoreendpointApi
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForResultAsyncWithHttpInfo($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointTestLogStoreEndpointDetailsForResultRequest($organization, $project, $runId, $resultId, $subResultId, $filePath, $type, $apiVersion);
 
         return $this->client
@@ -1207,9 +1207,9 @@ class TestlogstoreendpointApi
      * @param  string $filePath file path to create an empty file (optional)
      * @param  string $type Default is GeneralAttachment, type of empty file to be created (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForRun($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath = null, $type = null)
     {
@@ -1228,13 +1228,13 @@ class TestlogstoreendpointApi
      * @param  string $filePath file path to create an empty file (optional)
      * @param  string $type Default is GeneralAttachment, type of empty file to be created (optional)
      *
-     * @throws \AzureDevOpsClient\TestResults\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestResults\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails, HTTP status code, HTTP response headers (array of strings)
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForRunWithHttpInfo($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath = null, $type = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointTestLogStoreEndpointDetailsForRunRequest($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath, $type);
 
         try {
@@ -1286,7 +1286,7 @@ class TestlogstoreendpointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
+                        '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1340,7 +1340,7 @@ class TestlogstoreendpointApi
      */
     public function testlogstoreendpointTestLogStoreEndpointDetailsForRunAsyncWithHttpInfo($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath = null, $type = null)
     {
-        $returnType = '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLogStoreEndpointDetails';
         $request = $this->testlogstoreendpointTestLogStoreEndpointDetailsForRunRequest($organization, $project, $runId, $testLogStoreOperationType, $apiVersion, $filePath, $type);
 
         return $this->client

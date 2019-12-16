@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitCommitDiffs Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class GitCommitDiffs implements ModelInterface, ArrayAccess
         'baseCommit' => 'string',
         'behindCount' => 'int',
         'changeCounts' => 'map[string,int]',
-        'changes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]',
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]',
         'commonCommit' => 'string',
         'targetCommit' => 'string'
     ];
@@ -370,7 +370,7 @@ class GitCommitDiffs implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]
      */
     public function getChanges()
     {
@@ -380,7 +380,7 @@ class GitCommitDiffs implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[] $changes changes
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[] $changes changes
      *
      * @return $this
      */

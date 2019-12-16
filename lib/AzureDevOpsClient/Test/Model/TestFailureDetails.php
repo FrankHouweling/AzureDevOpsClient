@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestFailureDetails Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'count' => 'int',
-        'testResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]'
+        'testResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
     /**
      * Gets testResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]
      */
     public function getTestResults()
     {
@@ -248,7 +248,7 @@ class TestFailureDetails implements ModelInterface, ArrayAccess
     /**
      * Sets testResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[] $testResults testResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[] $testResults testResults
      *
      * @return $this
      */

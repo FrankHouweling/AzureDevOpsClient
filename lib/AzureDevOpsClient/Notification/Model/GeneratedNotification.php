@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * GeneratedNotification Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GeneratedNotification implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'recipients' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]'
+        'recipients' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class GeneratedNotification implements ModelInterface, ArrayAccess
     /**
      * Gets recipients
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]
      */
     public function getRecipients()
     {
@@ -218,7 +218,7 @@ class GeneratedNotification implements ModelInterface, ArrayAccess
     /**
      * Sets recipients
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[] $recipients recipients
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[] $recipients recipients
      *
      * @return $this
      */

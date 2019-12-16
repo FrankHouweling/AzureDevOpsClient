@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LegacyTestSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,7 +70,7 @@ class LegacyTestSettings implements ModelInterface, ArrayAccess
         'lastUpdated' => '\DateTime',
         'lastUpdatedBy' => 'string',
         'lastUpdatedByName' => 'string',
-        'machineRoles' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]',
+        'machineRoles' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]',
         'name' => 'string',
         'revision' => 'int',
         'settings' => 'string',
@@ -592,7 +592,7 @@ class LegacyTestSettings implements ModelInterface, ArrayAccess
     /**
      * Gets machineRoles
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]
      */
     public function getMachineRoles()
     {
@@ -602,7 +602,7 @@ class LegacyTestSettings implements ModelInterface, ArrayAccess
     /**
      * Sets machineRoles
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[] $machineRoles machineRoles
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[] $machineRoles machineRoles
      *
      * @return $this
      */

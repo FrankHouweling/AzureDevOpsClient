@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactMetadata Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ArtifactMetadata implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'alias' => 'string',
-        'instanceReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion'
+        'instanceReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ArtifactMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets instanceReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion
      */
     public function getInstanceReference()
     {
@@ -248,7 +248,7 @@ class ArtifactMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets instanceReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\BuildVersion $instanceReference Sets instance reference of artifact. e.g. for build artifact it is build number.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\BuildVersion $instanceReference Sets instance reference of artifact. e.g. for build artifact it is build number.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitTreeDiffResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class GitTreeDiffResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'continuationToken' => 'string[]',
-        'treeDiff' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeDiff'
+        'treeDiff' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeDiff'
     ];
 
     /**
@@ -238,7 +238,7 @@ class GitTreeDiffResponse implements ModelInterface, ArrayAccess
     /**
      * Gets treeDiff
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeDiff
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeDiff
      */
     public function getTreeDiff()
     {
@@ -248,7 +248,7 @@ class GitTreeDiffResponse implements ModelInterface, ArrayAccess
     /**
      * Sets treeDiff
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeDiff $treeDiff treeDiff
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeDiff $treeDiff treeDiff
      *
      * @return $this
      */

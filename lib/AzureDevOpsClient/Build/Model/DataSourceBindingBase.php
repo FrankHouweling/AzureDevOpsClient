@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DataSourceBindingBase Class Doc Comment
  *
  * @category Class
  * @description Represents binding of data source for the service endpoint request.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class DataSourceBindingBase implements ModelInterface, ArrayAccess
         'dataSourceName' => 'string',
         'endpointId' => 'string',
         'endpointUrl' => 'string',
-        'headers' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AuthorizationHeader[]',
+        'headers' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AuthorizationHeader[]',
         'initialContextTemplate' => 'string',
         'parameters' => 'map[string,string]',
         'requestContent' => 'string',
@@ -400,7 +400,7 @@ class DataSourceBindingBase implements ModelInterface, ArrayAccess
     /**
      * Gets headers
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AuthorizationHeader[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AuthorizationHeader[]
      */
     public function getHeaders()
     {
@@ -410,7 +410,7 @@ class DataSourceBindingBase implements ModelInterface, ArrayAccess
     /**
      * Sets headers
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AuthorizationHeader[] $headers Gets or sets the authorization headers.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AuthorizationHeader[] $headers Gets or sets the authorization headers.
      *
      * @return $this
      */

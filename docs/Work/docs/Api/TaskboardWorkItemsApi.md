@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\TaskboardWorkItemsApi
+# FrankHouweling\AzureDevOpsClient\Work\TaskboardWorkItemsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **taskboardWorkItemsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardWorkItemColumn[] taskboardWorkItemsList($organization, $project, $team, $iterationId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardWorkItemColumn[] taskboardWorkItemsList($organization, $project, $team, $iterationId, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\TaskboardWorkItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\TaskboardWorkItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardWorkItemColumn[]**](../Model/TaskboardWorkItemColumn.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardWorkItemColumn[]**](../Model/TaskboardWorkItemColumn.md)
 
 ### Authorization
 
@@ -82,16 +82,16 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\TaskboardWorkItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\TaskboardWorkItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn | 
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn(); // \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn | 
 $project = "project_example"; // string | Project ID or project name
 $team = "team_example"; // string | Team ID or team name
 $iterationId = "iterationId_example"; // string | 
@@ -111,7 +111,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn**](../Model/UpdateTaskboardWorkItemColumn.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardWorkItemColumn**](../Model/UpdateTaskboardWorkItemColumn.md)|  |
  **project** | **string**| Project ID or project name |
  **team** | **string**| Team ID or team name |
  **iterationId** | [**string**](../Model/.md)|  |

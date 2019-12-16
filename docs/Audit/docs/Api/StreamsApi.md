@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Audit\StreamsApi
+# FrankHouweling\AzureDevOpsClient\Audit\StreamsApi
 
 All URIs are relative to *https://auditservice.dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **streamsCreate**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream streamsCreate($organization, $body, $daysToBackfill, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream streamsCreate($organization, $body, $daysToBackfill, $apiVersion)
 
 
 
@@ -25,19 +25,19 @@ Create new Audit Stream
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream(); // \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream | Stream entry
+$body = new \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream(); // \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream | Stream entry
 $daysToBackfill = 56; // int | The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -55,13 +55,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)| Stream entry |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)| Stream entry |
  **daysToBackfill** | **int**| The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
 
 ### Authorization
 
@@ -87,12 +87,12 @@ Delete Audit Stream
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **streamsQueryAllStreams**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[] streamsQueryAllStreams($organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[] streamsQueryAllStreams($organization, $apiVersion)
 
 
 
@@ -146,12 +146,12 @@ Return all Audit Streams scoped to an organization
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[]**](../Model/AuditStream.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[]**](../Model/AuditStream.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **streamsQueryStreamById**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream streamsQueryStreamById($organization, $streamId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream streamsQueryStreamById($organization, $streamId, $apiVersion)
 
 
 
@@ -204,12 +204,12 @@ Return Audit Stream with id of streamId if one exists otherwise throw
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -238,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
 
 ### Authorization
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **streamsUpdateStatus**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream streamsUpdateStatus($organization, $streamId, $status, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream streamsUpdateStatus($organization, $streamId, $status, $apiVersion)
 
 
 
@@ -264,12 +264,12 @@ Update existing Audit Stream status
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **streamsUpdateStream**
-> \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream streamsUpdateStream($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream streamsUpdateStream($organization, $body, $apiVersion)
 
 
 
@@ -326,19 +326,19 @@ Update existing Audit Stream
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Audit\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Audit\Api\StreamsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Audit\Api\StreamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream(); // \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream | Stream entry
+$body = new \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream(); // \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream | Stream entry
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -355,12 +355,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)| Stream entry |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)| Stream entry |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
+[**\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream**](../Model/AuditStream.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitConflictAddAdd Class Doc Comment
  *
  * @category Class
  * @description Data object for AddAdd conflict
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,22 +58,22 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'conflictId' => 'int',
         'conflictPath' => 'string',
         'conflictType' => 'string',
-        'mergeBaseCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
-        'mergeOrigin' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOriginRef',
-        'mergeSourceCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
-        'mergeTargetCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'mergeBaseCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'mergeOrigin' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOriginRef',
+        'mergeSourceCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'mergeTargetCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'resolutionError' => 'string',
         'resolutionStatus' => 'string',
-        'resolvedBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'resolvedBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'resolvedDate' => '\DateTime',
         'url' => 'string',
-        'resolution' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitResolutionMergeContent',
-        'sourceBlob' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef',
-        'targetBlob' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef'
+        'resolution' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitResolutionMergeContent',
+        'sourceBlob' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef',
+        'targetBlob' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef'
     ];
 
     /**
@@ -405,7 +405,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -415,7 +415,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets mergeBaseCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getMergeBaseCommit()
     {
@@ -520,7 +520,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets mergeBaseCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $mergeBaseCommit mergeBaseCommit
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $mergeBaseCommit mergeBaseCommit
      *
      * @return $this
      */
@@ -534,7 +534,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets mergeOrigin
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOriginRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOriginRef
      */
     public function getMergeOrigin()
     {
@@ -544,7 +544,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets mergeOrigin
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOriginRef $mergeOrigin mergeOrigin
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOriginRef $mergeOrigin mergeOrigin
      *
      * @return $this
      */
@@ -558,7 +558,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets mergeSourceCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getMergeSourceCommit()
     {
@@ -568,7 +568,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets mergeSourceCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $mergeSourceCommit mergeSourceCommit
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $mergeSourceCommit mergeSourceCommit
      *
      * @return $this
      */
@@ -582,7 +582,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets mergeTargetCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getMergeTargetCommit()
     {
@@ -592,7 +592,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets mergeTargetCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $mergeTargetCommit mergeTargetCommit
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $mergeTargetCommit mergeTargetCommit
      *
      * @return $this
      */
@@ -672,7 +672,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets resolvedBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getResolvedBy()
     {
@@ -682,7 +682,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets resolvedBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $resolvedBy resolvedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $resolvedBy resolvedBy
      *
      * @return $this
      */
@@ -744,7 +744,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets resolution
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitResolutionMergeContent
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitResolutionMergeContent
      */
     public function getResolution()
     {
@@ -754,7 +754,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets resolution
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitResolutionMergeContent $resolution resolution
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitResolutionMergeContent $resolution resolution
      *
      * @return $this
      */
@@ -768,7 +768,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets sourceBlob
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef
      */
     public function getSourceBlob()
     {
@@ -778,7 +778,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets sourceBlob
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef $sourceBlob sourceBlob
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef $sourceBlob sourceBlob
      *
      * @return $this
      */
@@ -792,7 +792,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Gets targetBlob
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef
      */
     public function getTargetBlob()
     {
@@ -802,7 +802,7 @@ class GitConflictAddAdd implements ModelInterface, ArrayAccess
     /**
      * Sets targetBlob
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef $targetBlob targetBlob
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef $targetBlob targetBlob
      *
      * @return $this
      */

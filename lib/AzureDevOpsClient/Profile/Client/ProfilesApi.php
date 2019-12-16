@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Client;
+namespace FrankHouweling\AzureDevOpsClient\Profile\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Profile\ApiException;
-use AzureDevOpsClient\Profile\Configuration;
-use AzureDevOpsClient\Profile\HeaderSelector;
-use AzureDevOpsClient\Profile\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Profile\ApiException;
+use FrankHouweling\AzureDevOpsClient\Profile\Configuration;
+use FrankHouweling\AzureDevOpsClient\Profile\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Profile\ObjectSerializer;
 
 /**
  * ProfilesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class ProfilesApi
      * @param  string $coreAttributes A comma-delimited list of core profile attributes to return. Valid values are Email, Avatar, DisplayName, and ContactWithOffers. (optional)
      * @param  bool $forceRefresh Not used in this version of the API. (optional)
      *
-     * @throws \AzureDevOpsClient\Profile\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Profile\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile
+     * @return \FrankHouweling\AzureDevOpsClient\Profile\Model\Profile
      */
     public function profilesGet($id, $apiVersion, $details = null, $withAttributes = null, $partition = null, $coreAttributes = null, $forceRefresh = null)
     {
@@ -119,13 +119,13 @@ class ProfilesApi
      * @param  string $coreAttributes A comma-delimited list of core profile attributes to return. Valid values are Email, Avatar, DisplayName, and ContactWithOffers. (optional)
      * @param  bool $forceRefresh Not used in this version of the API. (optional)
      *
-     * @throws \AzureDevOpsClient\Profile\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Profile\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Profile\Model\Profile, HTTP status code, HTTP response headers (array of strings)
      */
     public function profilesGetWithHttpInfo($id, $apiVersion, $details = null, $withAttributes = null, $partition = null, $coreAttributes = null, $forceRefresh = null)
     {
-        $returnType = '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Profile\Model\Profile';
         $request = $this->profilesGetRequest($id, $apiVersion, $details, $withAttributes, $partition, $coreAttributes, $forceRefresh);
 
         try {
@@ -177,7 +177,7 @@ class ProfilesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile',
+                        '\FrankHouweling\AzureDevOpsClient\Profile\Model\Profile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class ProfilesApi
      */
     public function profilesGetAsyncWithHttpInfo($id, $apiVersion, $details = null, $withAttributes = null, $partition = null, $coreAttributes = null, $forceRefresh = null)
     {
-        $returnType = '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\Profile';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Profile\Model\Profile';
         $request = $this->profilesGetRequest($id, $apiVersion, $details, $withAttributes, $partition, $coreAttributes, $forceRefresh);
 
         return $this->client

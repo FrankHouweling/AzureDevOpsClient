@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * TimelineRecord Class Doc Comment
  *
  * @category Class
  * @description Represents an entry in a build&#39;s timeline.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,28 +58,28 @@ class TimelineRecord implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
         'attempt' => 'int',
         'changeId' => 'int',
         'currentOperation' => 'string',
-        'details' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineReference',
+        'details' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TimelineReference',
         'errorCount' => 'int',
         'finishTime' => '\DateTime',
         'id' => 'string',
         'identifier' => 'string',
-        'issues' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Issue[]',
+        'issues' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Issue[]',
         'lastModified' => '\DateTime',
-        'log' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference',
+        'log' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference',
         'name' => 'string',
         'order' => 'int',
         'parentId' => 'string',
         'percentComplete' => 'int',
-        'previousAttempts' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineAttempt[]',
+        'previousAttempts' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TimelineAttempt[]',
         'result' => 'string',
         'resultCode' => 'string',
         'startTime' => '\DateTime',
         'state' => 'string',
-        'task' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskReference',
+        'task' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskReference',
         'type' => 'string',
         'url' => 'string',
         'warningCount' => 'int',
@@ -414,7 +414,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -424,7 +424,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -510,7 +510,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets details
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineReference
      */
     public function getDetails()
     {
@@ -520,7 +520,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets details
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineReference $details A reference to a sub-timeline.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineReference $details A reference to a sub-timeline.
      *
      * @return $this
      */
@@ -630,7 +630,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets issues
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Issue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Issue[]
      */
     public function getIssues()
     {
@@ -640,7 +640,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets issues
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Issue[] $issues issues
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Issue[] $issues issues
      *
      * @return $this
      */
@@ -678,7 +678,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets log
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference
      */
     public function getLog()
     {
@@ -688,7 +688,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets log
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference $log A reference to the log produced by this operation.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference $log A reference to the log produced by this operation.
      *
      * @return $this
      */
@@ -798,7 +798,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets previousAttempts
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineAttempt[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineAttempt[]
      */
     public function getPreviousAttempts()
     {
@@ -808,7 +808,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets previousAttempts
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TimelineAttempt[] $previousAttempts previousAttempts
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TimelineAttempt[] $previousAttempts previousAttempts
      *
      * @return $this
      */
@@ -936,7 +936,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Gets task
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskReference
      */
     public function getTask()
     {
@@ -946,7 +946,7 @@ class TimelineRecord implements ModelInterface, ArrayAccess
     /**
      * Sets task
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskReference $task A reference to the task represented by this timeline record.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskReference $task A reference to the task represented by this timeline record.
      *
      * @return $this
      */

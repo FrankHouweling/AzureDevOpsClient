@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentApprovalCompletedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,9 +62,9 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
         'stageName' => 'string',
         'id' => 'int',
         'url' => 'string',
-        'approval' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval',
-        'project' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release'
+        'approval' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Release'
     ];
 
     /**
@@ -340,7 +340,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets approval
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval
      */
     public function getApproval()
     {
@@ -350,7 +350,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets approval
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $approval approval
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $approval approval
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProject()
     {
@@ -374,7 +374,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $project project
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function getRelease()
     {
@@ -398,7 +398,7 @@ class DeploymentApprovalCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $release release
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Release $release release
      *
      * @return $this
      */

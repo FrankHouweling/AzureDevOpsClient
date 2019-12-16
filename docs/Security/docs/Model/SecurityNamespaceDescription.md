@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**actions** | [**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\ActionDefinition[]**](ActionDefinition.md) | The list of actions that this Security Namespace is responsible for securing. | [optional] 
+**actions** | [**\FrankHouweling\AzureDevOpsClient\Security\Model\ActionDefinition[]**](ActionDefinition.md) | The list of actions that this Security Namespace is responsible for securing. | [optional] 
 **dataspaceCategory** | **string** | This is the dataspace category that describes where the security information for this SecurityNamespace should be stored. | [optional] 
 **displayName** | **string** | This localized name for this namespace. | [optional] 
 **elementLength** | **int** | If the security tokens this namespace will be operating on need to be split on certain character lengths to determine its elements, that length should be specified here. If not, this value will be -1. | [optional] 

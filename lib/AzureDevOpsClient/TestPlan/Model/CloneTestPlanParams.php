@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * CloneTestPlanParams Class Doc Comment
  *
  * @category Class
  * @description Parameters for Test Plan clone operation
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneOptions' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions',
-        'destinationTestPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams',
-        'sourceTestPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo'
+        'cloneOptions' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions',
+        'destinationTestPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams',
+        'sourceTestPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo'
     ];
 
     /**
@@ -220,7 +220,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOptions
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions
      */
     public function getCloneOptions()
     {
@@ -230,7 +230,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOptions
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\CloneOptions $cloneOptions Test Plan Clone create parameters
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Gets destinationTestPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams
      */
     public function getDestinationTestPlan()
     {
@@ -254,7 +254,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Sets destinationTestPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams $destinationTestPlan Information about destination Test Plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\DestinationTestPlanCloneParams $destinationTestPlan Information about destination Test Plan
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Gets sourceTestPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo
      */
     public function getSourceTestPlan()
     {
@@ -278,7 +278,7 @@ class CloneTestPlanParams implements ModelInterface, ArrayAccess
     /**
      * Sets sourceTestPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo $sourceTestPlan Information about source Test Plan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SourceTestPlanInfo $sourceTestPlan Information about source Test Plan
      *
      * @return $this
      */

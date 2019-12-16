@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * AzureSubscriptionQueryResult Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AzureSubscriptionQueryResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'errorMessage' => 'string',
-        'value' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[]'
+        'value' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class AzureSubscriptionQueryResult implements ModelInterface, ArrayAccess
     /**
      * Gets value
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[]
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[]
      */
     public function getValue()
     {
@@ -248,7 +248,7 @@ class AzureSubscriptionQueryResult implements ModelInterface, ArrayAccess
     /**
      * Sets value
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[] $value value
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AzureSubscription[] $value value
      *
      * @return $this
      */

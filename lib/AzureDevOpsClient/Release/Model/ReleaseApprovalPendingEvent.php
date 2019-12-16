@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseApprovalPendingEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'approval' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval',
-        'approvalOptions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions',
-        'completedApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'approval' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval',
+        'approvalOptions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions',
+        'completedApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
         'definitionName' => 'string',
-        'deployment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment',
+        'deployment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment',
         'environmentId' => 'int',
         'environmentName' => 'string',
-        'environments' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]',
+        'environments' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]',
         'isMultipleRankApproval' => 'bool',
-        'pendingApprovals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
+        'pendingApprovals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]',
         'releaseCreator' => 'string',
         'releaseName' => 'string',
         'title' => 'string',
@@ -286,7 +286,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets approval
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval
      */
     public function getApproval()
     {
@@ -296,7 +296,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets approval
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval $approval approval
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval $approval approval
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets approvalOptions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions
      */
     public function getApprovalOptions()
     {
@@ -320,7 +320,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets approvalOptions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions $approvalOptions approvalOptions
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions $approvalOptions approvalOptions
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets completedApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getCompletedApprovals()
     {
@@ -344,7 +344,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets completedApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $completedApprovals completedApprovals
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $completedApprovals completedApprovals
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets deployment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment
      */
     public function getDeployment()
     {
@@ -392,7 +392,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets deployment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
      *
      * @return $this
      */
@@ -454,7 +454,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets environments
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[]
      */
     public function getEnvironments()
     {
@@ -464,7 +464,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets environments
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment[] $environments environments
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment[] $environments environments
      *
      * @return $this
      */
@@ -502,7 +502,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Gets pendingApprovals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[]
      */
     public function getPendingApprovals()
     {
@@ -512,7 +512,7 @@ class ReleaseApprovalPendingEvent implements ModelInterface, ArrayAccess
     /**
      * Sets pendingApprovals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApproval[] $pendingApprovals pendingApprovals
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApproval[] $pendingApprovals pendingApprovals
      *
      * @return $this
      */

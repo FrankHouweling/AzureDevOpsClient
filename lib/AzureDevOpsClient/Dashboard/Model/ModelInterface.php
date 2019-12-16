@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model
+ * @package FrankHouweling\AzureDevOpsClient\Dashboard\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

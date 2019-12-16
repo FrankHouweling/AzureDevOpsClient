@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\StatsApi
+# FrankHouweling\AzureDevOpsClient\Git\StatsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **statsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[] statsList($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion, $baseVersionDescriptorVersionOptions, $baseVersionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[] statsList($organization, $repositoryId, $project, $apiVersion, $baseVersionDescriptorVersion, $baseVersionDescriptorVersionOptions, $baseVersionDescriptorVersionType)
 
 
 
@@ -20,9 +20,9 @@ Retrieve statistics about all branches within a repository.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\StatsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\StatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBranchStats[]**](../Model/GitBranchStats.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitBranchStats[]**](../Model/GitBranchStats.md)
 
 ### Authorization
 

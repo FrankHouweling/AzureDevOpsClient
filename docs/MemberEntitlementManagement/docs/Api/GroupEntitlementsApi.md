@@ -1,4 +1,4 @@
-# AzureDevOpsClient\MemberEntitlementManagement\GroupEntitlementsApi
+# FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\GroupEntitlementsApi
 
 All URIs are relative to *https://vsaex.dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **groupEntitlementsAdd**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsAdd($organization, $body, $apiVersion, $ruleOption)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsAdd($organization, $body, $apiVersion, $ruleOption)
 
 
 
@@ -24,16 +24,16 @@ Create a group entitlement with license rule, extension rule.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement(); // \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement | GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups
+$body = new \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement(); // \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement | GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $ruleOption = "ruleOption_example"; // string | RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested
 
@@ -51,13 +51,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement**](../Model/GroupEntitlement.md)| GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement**](../Model/GroupEntitlement.md)| GroupEntitlement object specifying License Rule, Extensions Rule for the group. Based on the rules the members of the group will be given licenses and extensions. The Group Entitlement can be used to add the group to another project level groups |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
  **ruleOption** | **string**| RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be created and applied to it’s members (default option) or just be tested | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupEntitlementsDelete**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsDelete($organization, $groupId, $apiVersion, $ruleOption, $removeGroupMembership)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsDelete($organization, $groupId, $apiVersion, $ruleOption, $removeGroupMembership)
 
 
 
@@ -83,9 +83,9 @@ Delete a group entitlement.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupEntitlementsGet**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement groupEntitlementsGet($organization, $groupId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement groupEntitlementsGet($organization, $groupId, $apiVersion)
 
 
 
@@ -144,9 +144,9 @@ Get a group entitlement.  If the group entitlement does not exist, returns null.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement**](../Model/GroupEntitlement.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement**](../Model/GroupEntitlement.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupEntitlementsList**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[] groupEntitlementsList($organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[] groupEntitlementsList($organization, $apiVersion)
 
 
 
@@ -201,9 +201,9 @@ Get the group entitlements for an account.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]**](../Model/GroupEntitlement.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlement[]**](../Model/GroupEntitlement.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupEntitlementsUpdate**
-> \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsUpdate($organization, $body, $groupId, $apiVersion, $ruleOption)
+> \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference groupEntitlementsUpdate($organization, $body, $groupId, $apiVersion, $ruleOption)
 
 
 
@@ -256,16 +256,16 @@ Update entitlements (License Rule, Extensions Rule, Project memberships etc.) fo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Api\GroupEntitlementsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform on the group.
+$body = new \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument(); // \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument | JsonPatchDocument containing the operations to perform on the group.
 $groupId = "groupId_example"; // string | ID of the group.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 $ruleOption = "ruleOption_example"; // string | RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested
@@ -284,14 +284,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform on the group. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument**](../Model/JsonPatchDocument.md)| JsonPatchDocument containing the operations to perform on the group. |
  **groupId** | [**string**](../Model/.md)| ID of the group. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
  **ruleOption** | **string**| RuleOption [ApplyGroupRule/TestApplyGroupRule] - specifies if the rules defined in group entitlement should be updated and the changes are applied to it’s members (default option) or just be tested | [optional]
 
 ### Return type
 
-[**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
+[**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupEntitlementOperationReference**](../Model/GroupEntitlementOperationReference.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Client;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\ExtensionManagement\ApiException;
-use AzureDevOpsClient\ExtensionManagement\Configuration;
-use AzureDevOpsClient\ExtensionManagement\HeaderSelector;
-use AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException;
+use FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration;
+use FrankHouweling\AzureDevOpsClient\ExtensionManagement\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * InstalledExtensionsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class InstalledExtensionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $assetTypes  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
      */
     public function installedExtensionsGet($organization, $publisherName, $extensionName, $apiVersion, $assetTypes = null)
     {
@@ -115,13 +115,13 @@ class InstalledExtensionsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $assetTypes  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
      */
     public function installedExtensionsGetWithHttpInfo($organization, $publisherName, $extensionName, $apiVersion, $assetTypes = null)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsGetRequest($organization, $publisherName, $extensionName, $apiVersion, $assetTypes);
 
         try {
@@ -173,7 +173,7 @@ class InstalledExtensionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
+                        '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class InstalledExtensionsApi
      */
     public function installedExtensionsGetAsyncWithHttpInfo($organization, $publisherName, $extensionName, $apiVersion, $assetTypes = null)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsGetRequest($organization, $publisherName, $extensionName, $apiVersion, $assetTypes);
 
         return $this->client
@@ -427,9 +427,9 @@ class InstalledExtensionsApi
      * @param  string $version  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
      */
     public function installedExtensionsInstallExtensionByName($organization, $publisherName, $extensionName, $version, $apiVersion)
     {
@@ -446,13 +446,13 @@ class InstalledExtensionsApi
      * @param  string $version  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
      */
     public function installedExtensionsInstallExtensionByNameWithHttpInfo($organization, $publisherName, $extensionName, $version, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsInstallExtensionByNameRequest($organization, $publisherName, $extensionName, $version, $apiVersion);
 
         try {
@@ -504,7 +504,7 @@ class InstalledExtensionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
+                        '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class InstalledExtensionsApi
      */
     public function installedExtensionsInstallExtensionByNameAsyncWithHttpInfo($organization, $publisherName, $extensionName, $version, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsInstallExtensionByNameRequest($organization, $publisherName, $extensionName, $version, $apiVersion);
 
         return $this->client
@@ -769,9 +769,9 @@ class InstalledExtensionsApi
      * @param  string $assetTypes  (optional)
      * @param  bool $includeInstallationIssues  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]
      */
     public function installedExtensionsList($organization, $apiVersion, $includeDisabledExtensions = null, $includeErrors = null, $assetTypes = null, $includeInstallationIssues = null)
     {
@@ -789,13 +789,13 @@ class InstalledExtensionsApi
      * @param  string $assetTypes  (optional)
      * @param  bool $includeInstallationIssues  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[], HTTP status code, HTTP response headers (array of strings)
      */
     public function installedExtensionsListWithHttpInfo($organization, $apiVersion, $includeDisabledExtensions = null, $includeErrors = null, $assetTypes = null, $includeInstallationIssues = null)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]';
         $request = $this->installedExtensionsListRequest($organization, $apiVersion, $includeDisabledExtensions, $includeErrors, $assetTypes, $includeInstallationIssues);
 
         try {
@@ -847,7 +847,7 @@ class InstalledExtensionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]',
+                        '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -899,7 +899,7 @@ class InstalledExtensionsApi
      */
     public function installedExtensionsListAsyncWithHttpInfo($organization, $apiVersion, $includeDisabledExtensions = null, $includeErrors = null, $assetTypes = null, $includeInstallationIssues = null)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]';
         $request = $this->installedExtensionsListRequest($organization, $apiVersion, $includeDisabledExtensions, $includeErrors, $assetTypes, $includeInstallationIssues);
 
         return $this->client
@@ -1089,7 +1089,7 @@ class InstalledExtensionsApi
      * @param  string $reason  (optional)
      * @param  string $reasonCode  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1108,7 +1108,7 @@ class InstalledExtensionsApi
      * @param  string $reason  (optional)
      * @param  string $reasonCode  (optional)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1386,12 +1386,12 @@ class InstalledExtensionsApi
      * Operation installedExtensionsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension
      */
     public function installedExtensionsUpdate($organization, $body, $apiVersion)
     {
@@ -1403,16 +1403,16 @@ class InstalledExtensionsApi
      * Operation installedExtensionsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension, HTTP status code, HTTP response headers (array of strings)
      */
     public function installedExtensionsUpdateWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsUpdateRequest($organization, $body, $apiVersion);
 
         try {
@@ -1464,7 +1464,7 @@ class InstalledExtensionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
+                        '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1480,7 +1480,7 @@ class InstalledExtensionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1502,7 +1502,7 @@ class InstalledExtensionsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1510,7 +1510,7 @@ class InstalledExtensionsApi
      */
     public function installedExtensionsUpdateAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension';
         $request = $this->installedExtensionsUpdateRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -1554,7 +1554,7 @@ class InstalledExtensionsApi
      * Create request for operation 'installedExtensionsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension $body  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

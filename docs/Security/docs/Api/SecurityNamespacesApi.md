@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Security\SecurityNamespacesApi
+# FrankHouweling\AzureDevOpsClient\Security\SecurityNamespacesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **securityNamespacesQuery**
-> \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[] securityNamespacesQuery($organization, $securityNamespaceId, $apiVersion, $localOnly)
+> \FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[] securityNamespacesQuery($organization, $securityNamespaceId, $apiVersion, $localOnly)
 
 
 
@@ -20,12 +20,12 @@ List all security namespaces or just the specified namespace.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Security\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Security\Api\SecurityNamespacesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Security\Api\SecurityNamespacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]**](../Model/SecurityNamespaceDescription.md)
+[**\FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]**](../Model/SecurityNamespaceDescription.md)
 
 ### Authorization
 

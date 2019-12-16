@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * Build Class Doc Comment
  *
  * @category Class
  * @description Data representation of a build.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,38 +58,38 @@ class Build implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
-        'agentSpecification' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'agentSpecification' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification',
         'buildNumber' => 'string',
         'buildNumberRevision' => 'int',
-        'controller' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController',
-        'definition' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference',
+        'controller' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController',
+        'definition' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference',
         'deleted' => 'bool',
-        'deletedBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'deletedBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'deletedDate' => '\DateTime',
         'deletedReason' => 'string',
-        'demands' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]',
+        'demands' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]',
         'finishTime' => '\DateTime',
         'id' => 'int',
         'keepForever' => 'bool',
-        'lastChangedBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'lastChangedBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'lastChangedDate' => '\DateTime',
-        'logs' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference',
-        'orchestrationPlan' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference',
+        'logs' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference',
+        'orchestrationPlan' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference',
         'parameters' => 'string',
-        'plans' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[]',
+        'plans' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[]',
         'priority' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
-        'properties' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection',
         'quality' => 'string',
-        'queue' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue',
+        'queue' => '\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue',
         'queueOptions' => 'string',
         'queuePosition' => 'int',
         'queueTime' => '\DateTime',
         'reason' => 'string',
-        'repository' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository',
-        'requestedBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
-        'requestedFor' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository',
+        'requestedBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
+        'requestedFor' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'result' => 'string',
         'retainedByRelease' => 'bool',
         'sourceBranch' => 'string',
@@ -97,11 +97,11 @@ class Build implements ModelInterface, ArrayAccess
         'startTime' => '\DateTime',
         'status' => 'string',
         'tags' => 'string[]',
-        'triggeredByBuild' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+        'triggeredByBuild' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
         'triggerInfo' => 'map[string,string]',
         'uri' => 'string',
         'url' => 'string',
-        'validationResults' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[]'
+        'validationResults' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[]'
     ];
 
     /**
@@ -627,7 +627,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -637,7 +637,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -651,7 +651,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets agentSpecification
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification
      */
     public function getAgentSpecification()
     {
@@ -661,7 +661,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets agentSpecification
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification The agent specification for the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification $agentSpecification The agent specification for the build.
      *
      * @return $this
      */
@@ -723,7 +723,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets controller
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController
      */
     public function getController()
     {
@@ -733,7 +733,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets controller
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController $controller The build controller. This is only set if the definition type is Xaml.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController $controller The build controller. This is only set if the definition type is Xaml.
      *
      * @return $this
      */
@@ -747,7 +747,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets definition
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference
      */
     public function getDefinition()
     {
@@ -757,7 +757,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets definition
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionReference $definition The definition associated with the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference $definition The definition associated with the build.
      *
      * @return $this
      */
@@ -795,7 +795,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets deletedBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getDeletedBy()
     {
@@ -805,7 +805,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets deletedBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $deletedBy The identity of the process or person that deleted the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $deletedBy The identity of the process or person that deleted the build.
      *
      * @return $this
      */
@@ -867,7 +867,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets demands
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]
      */
     public function getDemands()
     {
@@ -877,7 +877,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets demands
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Demand[] $demands A list of demands that represents the agent capabilities required by this build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Demand[] $demands A list of demands that represents the agent capabilities required by this build.
      *
      * @return $this
      */
@@ -963,7 +963,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets lastChangedBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getLastChangedBy()
     {
@@ -973,7 +973,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets lastChangedBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $lastChangedBy The identity representing the process or person that last changed the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $lastChangedBy The identity representing the process or person that last changed the build.
      *
      * @return $this
      */
@@ -1011,7 +1011,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets logs
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference
      */
     public function getLogs()
     {
@@ -1021,7 +1021,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets logs
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildLogReference $logs Information about the build logs.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference $logs Information about the build logs.
      *
      * @return $this
      */
@@ -1035,7 +1035,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets orchestrationPlan
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference
      */
     public function getOrchestrationPlan()
     {
@@ -1045,7 +1045,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets orchestrationPlan
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference $orchestrationPlan The orchestration plan for the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference $orchestrationPlan The orchestration plan for the build.
      *
      * @return $this
      */
@@ -1083,7 +1083,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets plans
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[]
      */
     public function getPlans()
     {
@@ -1093,7 +1093,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets plans
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[] $plans Orchestration plans associated with the build (build, cleanup)
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[] $plans Orchestration plans associated with the build (build, cleanup)
      *
      * @return $this
      */
@@ -1140,7 +1140,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -1150,7 +1150,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project The team project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project The team project.
      *
      * @return $this
      */
@@ -1164,7 +1164,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -1174,7 +1174,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PropertiesCollection $properties properties
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection $properties properties
      *
      * @return $this
      */
@@ -1212,7 +1212,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets queue
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue
      */
     public function getQueue()
     {
@@ -1222,7 +1222,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets queue
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The queue. This is only set if the definition type is Build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue $queue The queue. This is only set if the definition type is Build.
      *
      * @return $this
      */
@@ -1350,7 +1350,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository
      */
     public function getRepository()
     {
@@ -1360,7 +1360,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository.
      *
      * @return $this
      */
@@ -1374,7 +1374,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets requestedBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getRequestedBy()
     {
@@ -1384,7 +1384,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets requestedBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $requestedBy The identity that queued the build.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $requestedBy The identity that queued the build.
      *
      * @return $this
      */
@@ -1398,7 +1398,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets requestedFor
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getRequestedFor()
     {
@@ -1408,7 +1408,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets requestedFor
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor The identity on whose behalf the build was queued.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $requestedFor The identity on whose behalf the build was queued.
      *
      * @return $this
      */
@@ -1608,7 +1608,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets triggeredByBuild
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function getTriggeredByBuild()
     {
@@ -1618,7 +1618,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets triggeredByBuild
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $triggeredByBuild The build that triggered this build via a Build completion trigger.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Build $triggeredByBuild The build that triggered this build via a Build completion trigger.
      *
      * @return $this
      */
@@ -1704,7 +1704,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Gets validationResults
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[]
      */
     public function getValidationResults()
     {
@@ -1714,7 +1714,7 @@ class Build implements ModelInterface, ArrayAccess
     /**
      * Sets validationResults
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[] $validationResults validationResults
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[] $validationResults validationResults
      *
      * @return $this
      */

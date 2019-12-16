@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Client;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Audit\ApiException;
-use AzureDevOpsClient\Audit\Configuration;
-use AzureDevOpsClient\Audit\HeaderSelector;
-use AzureDevOpsClient\Audit\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Audit\ApiException;
+use FrankHouweling\AzureDevOpsClient\Audit\Configuration;
+use FrankHouweling\AzureDevOpsClient\Audit\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * AuditLogApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class AuditLogApi
      * @param  string $continuationToken Token used for returning next set of results from previous query. Optional (optional)
      * @param  bool $skipAggregation Skips aggregating events and leaves them as individual entries instead. By default events are aggregated. Event types that are aggregated: AuditLog.AccessLog. (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult
      */
     public function auditLogQuery($organization, $apiVersion, $startTime = null, $endTime = null, $batchSize = null, $continuationToken = null, $skipAggregation = null)
     {
@@ -119,13 +119,13 @@ class AuditLogApi
      * @param  string $continuationToken Token used for returning next set of results from previous query. Optional (optional)
      * @param  bool $skipAggregation Skips aggregating events and leaves them as individual entries instead. By default events are aggregated. Event types that are aggregated: AuditLog.AccessLog. (optional)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function auditLogQueryWithHttpInfo($organization, $apiVersion, $startTime = null, $endTime = null, $batchSize = null, $continuationToken = null, $skipAggregation = null)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult';
         $request = $this->auditLogQueryRequest($organization, $apiVersion, $startTime, $endTime, $batchSize, $continuationToken, $skipAggregation);
 
         try {
@@ -177,7 +177,7 @@ class AuditLogApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class AuditLogApi
      */
     public function auditLogQueryAsyncWithHttpInfo($organization, $apiVersion, $startTime = null, $endTime = null, $batchSize = null, $continuationToken = null, $skipAggregation = null)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditLogQueryResult';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditLogQueryResult';
         $request = $this->auditLogQueryRequest($organization, $apiVersion, $startTime, $endTime, $batchSize, $continuationToken, $skipAggregation);
 
         return $this->client

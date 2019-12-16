@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleasesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class ReleasesApi
      * Operation releasesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function releasesCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class ReleasesApi
      * Operation releasesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Release',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class ReleasesApi
      */
     public function releasesCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class ReleasesApi
      * Create request for operation 'releasesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartMetadata $body Metadata to create a release. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class ReleasesApi
      * @param  int $releaseId Id of the release. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -430,7 +430,7 @@ class ReleasesApi
      * @param  int $releaseId Id of the release. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -735,9 +735,9 @@ class ReleasesApi
      * @param  int $environmentId Id of the release environment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment
      */
     public function releasesGetReleaseEnvironment($organization, $project, $releaseId, $environmentId, $apiVersion)
     {
@@ -754,13 +754,13 @@ class ReleasesApi
      * @param  int $environmentId Id of the release environment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesGetReleaseEnvironmentWithHttpInfo($organization, $project, $releaseId, $environmentId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
         $request = $this->releasesGetReleaseEnvironmentRequest($organization, $project, $releaseId, $environmentId, $apiVersion);
 
         try {
@@ -812,7 +812,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -862,7 +862,7 @@ class ReleasesApi
      */
     public function releasesGetReleaseEnvironmentAsyncWithHttpInfo($organization, $project, $releaseId, $environmentId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
         $request = $this->releasesGetReleaseEnvironmentRequest($organization, $project, $releaseId, $environmentId, $apiVersion);
 
         return $this->client
@@ -1076,7 +1076,7 @@ class ReleasesApi
      * @param  int $definitionSnapshotRevision Definition snapshot revision number. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1095,7 +1095,7 @@ class ReleasesApi
      * @param  int $definitionSnapshotRevision Definition snapshot revision number. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1417,7 +1417,7 @@ class ReleasesApi
      * @param  int $startLine Starting line number for logs (optional)
      * @param  int $endLine Ending line number for logs (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1440,7 +1440,7 @@ class ReleasesApi
      * @param  int $startLine Starting line number for logs (optional)
      * @param  int $endLine Ending line number for logs (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1829,9 +1829,9 @@ class ReleasesApi
      * @param  string $releaseIdFilter A comma-delimited list of releases Ids. Only releases with these Ids will be returned. (optional)
      * @param  string $path Releases under this folder path will be returned (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release[]
      */
     public function releasesList($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $searchText = null, $createdBy = null, $statusFilter = null, $environmentStatusFilter = null, $minCreatedTime = null, $maxCreatedTime = null, $queryOrder = null, $top = null, $continuationToken = null, $expand = null, $artifactTypeId = null, $sourceId = null, $artifactVersionId = null, $sourceBranchFilter = null, $isDeleted = null, $tagFilter = null, $propertyFilters = null, $releaseIdFilter = null, $path = null)
     {
@@ -1867,13 +1867,13 @@ class ReleasesApi
      * @param  string $releaseIdFilter A comma-delimited list of releases Ids. Only releases with these Ids will be returned. (optional)
      * @param  string $path Releases under this folder path will be returned (optional)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Release[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesListWithHttpInfo($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $searchText = null, $createdBy = null, $statusFilter = null, $environmentStatusFilter = null, $minCreatedTime = null, $maxCreatedTime = null, $queryOrder = null, $top = null, $continuationToken = null, $expand = null, $artifactTypeId = null, $sourceId = null, $artifactVersionId = null, $sourceBranchFilter = null, $isDeleted = null, $tagFilter = null, $propertyFilters = null, $releaseIdFilter = null, $path = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release[]';
         $request = $this->releasesListRequest($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $searchText, $createdBy, $statusFilter, $environmentStatusFilter, $minCreatedTime, $maxCreatedTime, $queryOrder, $top, $continuationToken, $expand, $artifactTypeId, $sourceId, $artifactVersionId, $sourceBranchFilter, $isDeleted, $tagFilter, $propertyFilters, $releaseIdFilter, $path);
 
         try {
@@ -1925,7 +1925,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Release[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2013,7 +2013,7 @@ class ReleasesApi
      */
     public function releasesListAsyncWithHttpInfo($organization, $project, $apiVersion, $definitionId = null, $definitionEnvironmentId = null, $searchText = null, $createdBy = null, $statusFilter = null, $environmentStatusFilter = null, $minCreatedTime = null, $maxCreatedTime = null, $queryOrder = null, $top = null, $continuationToken = null, $expand = null, $artifactTypeId = null, $sourceId = null, $artifactVersionId = null, $sourceBranchFilter = null, $isDeleted = null, $tagFilter = null, $propertyFilters = null, $releaseIdFilter = null, $path = null)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release[]';
         $request = $this->releasesListRequest($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $searchText, $createdBy, $statusFilter, $environmentStatusFilter, $minCreatedTime, $maxCreatedTime, $queryOrder, $top, $continuationToken, $expand, $artifactTypeId, $sourceId, $artifactVersionId, $sourceBranchFilter, $isDeleted, $tagFilter, $propertyFilters, $releaseIdFilter, $path);
 
         return $this->client
@@ -2297,14 +2297,14 @@ class ReleasesApi
      * Operation releasesUpdateRelease
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function releasesUpdateRelease($organization, $body, $project, $releaseId, $apiVersion)
     {
@@ -2316,18 +2316,18 @@ class ReleasesApi
      * Operation releasesUpdateReleaseWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesUpdateReleaseWithHttpInfo($organization, $body, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesUpdateReleaseRequest($organization, $body, $project, $releaseId, $apiVersion);
 
         try {
@@ -2379,7 +2379,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Release',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2395,7 +2395,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
@@ -2419,7 +2419,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
@@ -2429,7 +2429,7 @@ class ReleasesApi
      */
     public function releasesUpdateReleaseAsyncWithHttpInfo($organization, $body, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesUpdateReleaseRequest($organization, $body, $project, $releaseId, $apiVersion);
 
         return $this->client
@@ -2473,7 +2473,7 @@ class ReleasesApi
      * Create request for operation 'releasesUpdateRelease'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\Release $body Release object for update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
@@ -2633,15 +2633,15 @@ class ReleasesApi
      * Operation releasesUpdateReleaseEnvironment
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $environmentId Id of release environment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment
      */
     public function releasesUpdateReleaseEnvironment($organization, $body, $project, $releaseId, $environmentId, $apiVersion)
     {
@@ -2653,19 +2653,19 @@ class ReleasesApi
      * Operation releasesUpdateReleaseEnvironmentWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $environmentId Id of release environment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesUpdateReleaseEnvironmentWithHttpInfo($organization, $body, $project, $releaseId, $environmentId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
         $request = $this->releasesUpdateReleaseEnvironmentRequest($organization, $body, $project, $releaseId, $environmentId, $apiVersion);
 
         try {
@@ -2717,7 +2717,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2733,7 +2733,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $environmentId Id of release environment. (required)
@@ -2758,7 +2758,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $environmentId Id of release environment. (required)
@@ -2769,7 +2769,7 @@ class ReleasesApi
      */
     public function releasesUpdateReleaseEnvironmentAsyncWithHttpInfo($organization, $body, $project, $releaseId, $environmentId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment';
         $request = $this->releasesUpdateReleaseEnvironmentRequest($organization, $body, $project, $releaseId, $environmentId, $apiVersion);
 
         return $this->client
@@ -2813,7 +2813,7 @@ class ReleasesApi
      * Create request for operation 'releasesUpdateReleaseEnvironment'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentUpdateMetadata $body Environment update meta data. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release. (required)
      * @param  int $environmentId Id of release environment. (required)
@@ -2988,14 +2988,14 @@ class ReleasesApi
      * Operation releasesUpdateReleaseResource
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function releasesUpdateReleaseResource($organization, $body, $project, $releaseId, $apiVersion)
     {
@@ -3007,18 +3007,18 @@ class ReleasesApi
      * Operation releasesUpdateReleaseResourceWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\Release, HTTP status code, HTTP response headers (array of strings)
      */
     public function releasesUpdateReleaseResourceWithHttpInfo($organization, $body, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesUpdateReleaseResourceRequest($organization, $body, $project, $releaseId, $apiVersion);
 
         try {
@@ -3070,7 +3070,7 @@ class ReleasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\Release',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3086,7 +3086,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
@@ -3110,7 +3110,7 @@ class ReleasesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)
@@ -3120,7 +3120,7 @@ class ReleasesApi
      */
     public function releasesUpdateReleaseResourceAsyncWithHttpInfo($organization, $body, $project, $releaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\Release';
         $request = $this->releasesUpdateReleaseResourceRequest($organization, $body, $project, $releaseId, $apiVersion);
 
         return $this->client
@@ -3164,7 +3164,7 @@ class ReleasesApi
      * Create request for operation 'releasesUpdateReleaseResource'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseUpdateMetadata $body Properties of release to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $releaseId Id of the release to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.8&#39; to use this version of the api. (required)

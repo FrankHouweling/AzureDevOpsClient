@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultsDetailsForGroup Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class TestResultsDetailsForGroup implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'groupByValue' => 'object',
-        'results' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[]',
-        'resultsCountByOutcome' => 'map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
+        'results' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[]',
+        'resultsCountByOutcome' => 'map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]',
         'tags' => 'string[]'
     ];
 
@@ -250,7 +250,7 @@ class TestResultsDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[]
      */
     public function getResults()
     {
@@ -260,7 +260,7 @@ class TestResultsDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestCaseResult[] $results results
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestCaseResult[] $results results
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TestResultsDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Gets resultsCountByOutcome
      *
-     * @return map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome]
      */
     public function getResultsCountByOutcome()
     {
@@ -284,7 +284,7 @@ class TestResultsDetailsForGroup implements ModelInterface, ArrayAccess
     /**
      * Sets resultsCountByOutcome
      *
-     * @param map[string,\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsCountByOutcome resultsCountByOutcome
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\TestResults\Model\AggregatedResultsByOutcome] $resultsCountByOutcome resultsCountByOutcome
      *
      * @return $this
      */

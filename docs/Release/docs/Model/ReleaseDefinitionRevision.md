@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **apiVersion** | **string** | Gets api-version for revision object. | [optional] 
-**changedBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets the identity who did change. | [optional] 
+**changedBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets the identity who did change. | [optional] 
 **changedDate** | [**\DateTime**](\DateTime.md) | Gets date on which ReleaseDefinition changed. | [optional] 
 **changeType** | **string** | Gets type of change. | [optional] 
 **comment** | **string** | Gets comments for revision. | [optional] 

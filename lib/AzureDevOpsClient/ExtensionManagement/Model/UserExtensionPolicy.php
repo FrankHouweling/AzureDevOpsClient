@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * UserExtensionPolicy Class Doc Comment
  *
  * @category Class
  * @description Represents the extension policy applied to a given user
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class UserExtensionPolicy implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'displayName' => 'string',
-        'permissions' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy',
+        'permissions' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy',
         'userId' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class UserExtensionPolicy implements ModelInterface, ArrayAccess
     /**
      * Gets permissions
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy
      */
     public function getPermissions()
     {
@@ -254,7 +254,7 @@ class UserExtensionPolicy implements ModelInterface, ArrayAccess
     /**
      * Sets permissions
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy $permissions The extension policy applied to the user
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionPolicy $permissions The extension policy applied to the user
      *
      * @return $this
      */

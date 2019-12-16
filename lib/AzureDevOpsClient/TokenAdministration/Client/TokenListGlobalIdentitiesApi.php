@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdministration
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdministration
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Client;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdministration\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TokenAdministration\ApiException;
-use AzureDevOpsClient\TokenAdministration\Configuration;
-use AzureDevOpsClient\TokenAdministration\HeaderSelector;
-use AzureDevOpsClient\TokenAdministration\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TokenAdministration\ApiException;
+use FrankHouweling\AzureDevOpsClient\TokenAdministration\Configuration;
+use FrankHouweling\AzureDevOpsClient\TokenAdministration\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TokenAdministration\ObjectSerializer;
 
 /**
  * TokenListGlobalIdentitiesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdministration
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdministration
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -90,11 +90,11 @@ class TokenListGlobalIdentitiesApi
     /**
      * Operation tokenListGlobalIdentitiesList
      *
-     * @param  \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdministration\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdministration\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -106,11 +106,11 @@ class TokenListGlobalIdentitiesApi
     /**
      * Operation tokenListGlobalIdentitiesListWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdministration\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdministration\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -161,7 +161,7 @@ class TokenListGlobalIdentitiesApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
@@ -183,7 +183,7 @@ class TokenListGlobalIdentitiesApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
@@ -221,7 +221,7 @@ class TokenListGlobalIdentitiesApi
     /**
      * Create request for operation 'tokenListGlobalIdentitiesList'
      *
-     * @param  \AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdministration\Model\TokenAdminRevocation[] $body The list of identities containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be checked for global access tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *

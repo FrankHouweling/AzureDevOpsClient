@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPlansHubRefreshData Class Doc Comment
  *
  * @category Class
  * @description This data model is used in TestPlansHubRefreshDataProvider and populates the data required for initial page load
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,13 +64,13 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
         'isAdvancedExtensionEnabled' => 'bool',
         'selectedSuiteId' => 'int',
         'testCasePageSize' => 'int',
-        'testCases' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]',
+        'testCases' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]',
         'testCasesContinuationToken' => 'string',
-        'testPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference',
+        'testPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference',
         'testPointPageSize' => 'int',
-        'testPoints' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
+        'testPoints' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]',
         'testPointsContinuationToken' => 'string',
-        'testSuites' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
+        'testSuites' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
         'testSuitesContinuationToken' => 'string'
     ];
 
@@ -430,7 +430,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Gets testCases
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[]
      */
     public function getTestCases()
     {
@@ -440,7 +440,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Sets testCases
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCase[] $testCases testCases
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCase[] $testCases testCases
      *
      * @return $this
      */
@@ -478,7 +478,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Gets testPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference
      */
     public function getTestPlan()
     {
@@ -488,7 +488,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Sets testPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference $testPlan testPlan
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanDetailedReference $testPlan testPlan
      *
      * @return $this
      */
@@ -526,7 +526,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Gets testPoints
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[]
      */
     public function getTestPoints()
     {
@@ -536,7 +536,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Sets testPoints
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPoint[] $testPoints testPoints
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPoint[] $testPoints testPoints
      *
      * @return $this
      */
@@ -574,7 +574,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Gets testSuites
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]
      */
     public function getTestSuites()
     {
@@ -584,7 +584,7 @@ class TestPlansHubRefreshData implements ModelInterface, ArrayAccess
     /**
      * Sets testSuites
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[] $testSuites testSuites
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[] $testSuites testSuites
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * WidgetResponse Class Doc Comment
  *
  * @category Class
  * @description Response from RestAPI when saving and editing Widget
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,26 +58,26 @@ class WidgetResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
-        'allowedSizes' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
+        'allowedSizes' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[]',
         'areSettingsBlockedForUser' => 'bool',
         'artifactId' => 'string',
         'configurationContributionId' => 'string',
         'configurationContributionRelativeId' => 'string',
         'contentUri' => 'string',
         'contributionId' => 'string',
-        'dashboard' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard',
+        'dashboard' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard',
         'eTag' => 'string',
         'id' => 'string',
         'isEnabled' => 'bool',
         'isNameConfigurable' => 'bool',
-        'lightboxOptions' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions',
+        'lightboxOptions' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions',
         'loadingImageUrl' => 'string',
         'name' => 'string',
-        'position' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetPosition',
+        'position' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetPosition',
         'settings' => 'string',
-        'settingsVersion' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\SemanticVersion',
-        'size' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize',
+        'settingsVersion' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\SemanticVersion',
+        'size' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize',
         'typeId' => 'string',
         'url' => 'string'
     ];
@@ -334,7 +334,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -344,7 +344,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets allowedSizes
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[]
      */
     public function getAllowedSizes()
     {
@@ -368,7 +368,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets allowedSizes
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize[] $allowedSizes Refers to the allowed sizes for the widget. This gets populated when user wants to configure the widget
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize[] $allowedSizes Refers to the allowed sizes for the widget. This gets populated when user wants to configure the widget
      *
      * @return $this
      */
@@ -526,7 +526,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets dashboard
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard
      */
     public function getDashboard()
     {
@@ -536,7 +536,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets dashboard
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Dashboard $dashboard Optional partial dashboard content, to support exchanging dashboard-level version ETag for widget-level APIs
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Dashboard $dashboard Optional partial dashboard content, to support exchanging dashboard-level version ETag for widget-level APIs
      *
      * @return $this
      */
@@ -646,7 +646,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets lightboxOptions
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions
      */
     public function getLightboxOptions()
     {
@@ -656,7 +656,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets lightboxOptions
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\LightboxOptions $lightboxOptions lightboxOptions
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\LightboxOptions $lightboxOptions lightboxOptions
      *
      * @return $this
      */
@@ -718,7 +718,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets position
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetPosition
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetPosition
      */
     public function getPosition()
     {
@@ -728,7 +728,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets position
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetPosition $position position
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetPosition $position position
      *
      * @return $this
      */
@@ -766,7 +766,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets settingsVersion
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\SemanticVersion
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\SemanticVersion
      */
     public function getSettingsVersion()
     {
@@ -776,7 +776,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets settingsVersion
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\SemanticVersion $settingsVersion settingsVersion
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\SemanticVersion $settingsVersion settingsVersion
      *
      * @return $this
      */
@@ -790,7 +790,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Gets size
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize
      */
     public function getSize()
     {
@@ -800,7 +800,7 @@ class WidgetResponse implements ModelInterface, ArrayAccess
     /**
      * Sets size
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\WidgetSize $size size
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\WidgetSize $size size
      *
      * @return $this
      */

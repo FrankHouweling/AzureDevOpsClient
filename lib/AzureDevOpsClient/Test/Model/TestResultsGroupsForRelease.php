@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultsGroupsForRelease Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestResultsGroupsForRelease implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'fields' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]',
+        'fields' => '\FrankHouweling\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]',
         'releaseEnvId' => 'int',
         'releaseId' => 'int'
     ];
@@ -220,7 +220,7 @@ class TestResultsGroupsForRelease implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[]
      */
     public function getFields()
     {
@@ -230,7 +230,7 @@ class TestResultsGroupsForRelease implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[] $fields The group by results
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\FieldDetailsForTestResults[] $fields The group by results
      *
      * @return $this
      */

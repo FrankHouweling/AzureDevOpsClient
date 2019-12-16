@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitItemRequestData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class GitItemRequestData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'includeContentMetadata' => 'bool',
         'includeLinks' => 'bool',
-        'itemDescriptors' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemDescriptor[]',
+        'itemDescriptors' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitItemDescriptor[]',
         'latestProcessedChange' => 'bool'
     ];
 
@@ -274,7 +274,7 @@ class GitItemRequestData implements ModelInterface, ArrayAccess
     /**
      * Gets itemDescriptors
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemDescriptor[]
      */
     public function getItemDescriptors()
     {
@@ -284,7 +284,7 @@ class GitItemRequestData implements ModelInterface, ArrayAccess
     /**
      * Sets itemDescriptors
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemDescriptor[] $itemDescriptors Collection of items to fetch, including path, version, and recursion level
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemDescriptor[] $itemDescriptors Collection of items to fetch, including path, version, and recursion level
      *
      * @return $this
      */

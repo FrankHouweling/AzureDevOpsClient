@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardparentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class BoardparentsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ParentChildWIMap[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ParentChildWIMap[]
      */
     public function boardparentsList($organization, $project, $childBacklogContextCategoryRefName, $workitemIds, $team, $apiVersion)
     {
@@ -117,13 +117,13 @@ class BoardparentsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ParentChildWIMap[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\ParentChildWIMap[], HTTP status code, HTTP response headers (array of strings)
      */
     public function boardparentsListWithHttpInfo($organization, $project, $childBacklogContextCategoryRefName, $workitemIds, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ParentChildWIMap[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ParentChildWIMap[]';
         $request = $this->boardparentsListRequest($organization, $project, $childBacklogContextCategoryRefName, $workitemIds, $team, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class BoardparentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ParentChildWIMap[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\ParentChildWIMap[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class BoardparentsApi
      */
     public function boardparentsListAsyncWithHttpInfo($organization, $project, $childBacklogContextCategoryRefName, $workitemIds, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ParentChildWIMap[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\ParentChildWIMap[]';
         $request = $this->boardparentsListRequest($organization, $project, $childBacklogContextCategoryRefName, $workitemIds, $team, $apiVersion);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionVersion Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class ExtensionVersion implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'assetUri' => 'string',
-        'badges' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]',
+        'badges' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]',
         'fallbackAssetUri' => 'string',
-        'files' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]',
+        'files' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]',
         'flags' => 'string',
         'lastUpdated' => '\DateTime',
         'properties' => 'object[]',
@@ -309,7 +309,7 @@ class ExtensionVersion implements ModelInterface, ArrayAccess
     /**
      * Gets badges
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[]
      */
     public function getBadges()
     {
@@ -319,7 +319,7 @@ class ExtensionVersion implements ModelInterface, ArrayAccess
     /**
      * Sets badges
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[] $badges badges
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionBadge[] $badges badges
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class ExtensionVersion implements ModelInterface, ArrayAccess
     /**
      * Gets files
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[]
      */
     public function getFiles()
     {
@@ -367,7 +367,7 @@ class ExtensionVersion implements ModelInterface, ArrayAccess
     /**
      * Sets files
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[] $files files
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionFile[] $files files
      *
      * @return $this
      */

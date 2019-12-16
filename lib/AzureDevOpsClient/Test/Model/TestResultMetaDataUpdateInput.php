@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultMetaDataUpdateInput Class Doc Comment
  *
  * @category Class
  * @description Represents a TestResultMetaData Input
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'flakyIdentifiers' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[]'
+        'flakyIdentifiers' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
     /**
      * Gets flakyIdentifiers
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[]
      */
     public function getFlakyIdentifiers()
     {
@@ -218,7 +218,7 @@ class TestResultMetaDataUpdateInput implements ModelInterface, ArrayAccess
     /**
      * Sets flakyIdentifiers
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifiers
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifiers
      *
      * @return $this
      */

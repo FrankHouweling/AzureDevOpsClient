@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\BlobsApi
+# FrankHouweling\AzureDevOpsClient\Git\BlobsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **blobsGetBlob**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef blobsGetBlob($organization, $repositoryId, $sha1, $project, $apiVersion, $download, $fileName, $format, $resolveLfs)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef blobsGetBlob($organization, $repositoryId, $sha1, $project, $apiVersion, $download, $fileName, $format, $resolveLfs)
 
 
 
@@ -21,9 +21,9 @@ Get a single blob.  Repositories have both a name and an identifier. Identifiers
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\BlobsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\BlobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef**](../Model/GitBlobRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef**](../Model/GitBlobRef.md)
 
 ### Authorization
 
@@ -90,16 +90,16 @@ Gets one or more blobs in a zip file download.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\BlobsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\BlobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\string[]()); // string[] | Blob IDs (SHA1 hashes) to be returned in the zip file.
+$body = array(new \FrankHouweling\AzureDevOpsClient\Git\Model\string[]()); // string[] | Blob IDs (SHA1 hashes) to be returned in the zip file.
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.

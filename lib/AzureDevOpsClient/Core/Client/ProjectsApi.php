@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Client;
+namespace FrankHouweling\AzureDevOpsClient\Core\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Core\ApiException;
-use AzureDevOpsClient\Core\Configuration;
-use AzureDevOpsClient\Core\HeaderSelector;
-use AzureDevOpsClient\Core\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Core\ApiException;
+use FrankHouweling\AzureDevOpsClient\Core\Configuration;
+use FrankHouweling\AzureDevOpsClient\Core\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * ProjectsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class ProjectsApi
      * Operation projectsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference
      */
     public function projectsCreate($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class ProjectsApi
      * Operation projectsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsCreateWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsCreateRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class ProjectsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class ProjectsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class ProjectsApi
      */
     public function projectsCreateAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsCreateRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class ProjectsApi
      * Create request for operation 'projectsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The project to create. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -392,9 +392,9 @@ class ProjectsApi
      * @param  string $projectId The project id of the project to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference
      */
     public function projectsDelete($organization, $projectId, $apiVersion)
     {
@@ -409,13 +409,13 @@ class ProjectsApi
      * @param  string $projectId The project id of the project to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsDeleteWithHttpInfo($organization, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsDeleteRequest($organization, $projectId, $apiVersion);
 
         try {
@@ -467,7 +467,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class ProjectsApi
      */
     public function projectsDeleteAsyncWithHttpInfo($organization, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsDeleteRequest($organization, $projectId, $apiVersion);
 
         return $this->client
@@ -697,9 +697,9 @@ class ProjectsApi
      * @param  bool $includeCapabilities Include capabilities (such as source control) in the team project result (default: false). (optional)
      * @param  bool $includeHistory Search within renamed projects (that had such name in the past). (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject
      */
     public function projectsGet($organization, $projectId, $apiVersion, $includeCapabilities = null, $includeHistory = null)
     {
@@ -716,13 +716,13 @@ class ProjectsApi
      * @param  bool $includeCapabilities Include capabilities (such as source control) in the team project result (default: false). (optional)
      * @param  bool $includeHistory Search within renamed projects (that had such name in the past). (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject, HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsGetWithHttpInfo($organization, $projectId, $apiVersion, $includeCapabilities = null, $includeHistory = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject';
         $request = $this->projectsGetRequest($organization, $projectId, $apiVersion, $includeCapabilities, $includeHistory);
 
         try {
@@ -774,7 +774,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -824,7 +824,7 @@ class ProjectsApi
      */
     public function projectsGetAsyncWithHttpInfo($organization, $projectId, $apiVersion, $includeCapabilities = null, $includeHistory = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject';
         $request = $this->projectsGetRequest($organization, $projectId, $apiVersion, $includeCapabilities, $includeHistory);
 
         return $this->client
@@ -1017,9 +1017,9 @@ class ProjectsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $keys A comma-delimited string of team project property names. Wildcard characters (\&quot;?\&quot; and \&quot;*\&quot;) are supported. If no key is specified, all properties will be returned. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]
      */
     public function projectsGetProjectProperties($organization, $projectId, $apiVersion, $keys = null)
     {
@@ -1035,13 +1035,13 @@ class ProjectsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $keys A comma-delimited string of team project property names. Wildcard characters (\&quot;?\&quot; and \&quot;*\&quot;) are supported. If no key is specified, all properties will be returned. (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[], HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsGetProjectPropertiesWithHttpInfo($organization, $projectId, $apiVersion, $keys = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]';
         $request = $this->projectsGetProjectPropertiesRequest($organization, $projectId, $apiVersion, $keys);
 
         try {
@@ -1093,7 +1093,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1141,7 +1141,7 @@ class ProjectsApi
      */
     public function projectsGetProjectPropertiesAsyncWithHttpInfo($organization, $projectId, $apiVersion, $keys = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]';
         $request = $this->projectsGetProjectPropertiesRequest($organization, $projectId, $apiVersion, $keys);
 
         return $this->client
@@ -1332,9 +1332,9 @@ class ProjectsApi
      * @param  string $continuationToken  (optional)
      * @param  bool $getDefaultTeamImageUrl  (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[]
      */
     public function projectsList($organization, $apiVersion, $stateFilter = null, $top = null, $skip = null, $continuationToken = null, $getDefaultTeamImageUrl = null)
     {
@@ -1353,13 +1353,13 @@ class ProjectsApi
      * @param  string $continuationToken  (optional)
      * @param  bool $getDefaultTeamImageUrl  (optional)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsListWithHttpInfo($organization, $apiVersion, $stateFilter = null, $top = null, $skip = null, $continuationToken = null, $getDefaultTeamImageUrl = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[]';
         $request = $this->projectsListRequest($organization, $apiVersion, $stateFilter, $top, $skip, $continuationToken, $getDefaultTeamImageUrl);
 
         try {
@@ -1411,7 +1411,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1465,7 +1465,7 @@ class ProjectsApi
      */
     public function projectsListAsyncWithHttpInfo($organization, $apiVersion, $stateFilter = null, $top = null, $skip = null, $continuationToken = null, $getDefaultTeamImageUrl = null)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProjectReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\TeamProjectReference[]';
         $request = $this->projectsListRequest($organization, $apiVersion, $stateFilter, $top, $skip, $continuationToken, $getDefaultTeamImageUrl);
 
         return $this->client
@@ -1655,10 +1655,10 @@ class ProjectsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $projectId The team project ID. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1672,10 +1672,10 @@ class ProjectsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $projectId The team project ID. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1728,7 +1728,7 @@ class ProjectsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $projectId The team project ID. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1751,7 +1751,7 @@ class ProjectsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $projectId The team project ID. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1790,7 +1790,7 @@ class ProjectsApi
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $projectId The team project ID. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\JsonPatchDocument $body A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1934,13 +1934,13 @@ class ProjectsApi
      * Operation projectsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
      * @param  string $projectId The project id of the project to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference
      */
     public function projectsUpdate($organization, $body, $projectId, $apiVersion)
     {
@@ -1952,17 +1952,17 @@ class ProjectsApi
      * Operation projectsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
      * @param  string $projectId The project id of the project to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function projectsUpdateWithHttpInfo($organization, $body, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsUpdateRequest($organization, $body, $projectId, $apiVersion);
 
         try {
@@ -2014,7 +2014,7 @@ class ProjectsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2030,7 +2030,7 @@ class ProjectsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
      * @param  string $projectId The project id of the project to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -2053,7 +2053,7 @@ class ProjectsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
      * @param  string $projectId The project id of the project to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *
@@ -2062,7 +2062,7 @@ class ProjectsApi
      */
     public function projectsUpdateAsyncWithHttpInfo($organization, $body, $projectId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\OperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Core\Model\OperationReference';
         $request = $this->projectsUpdateRequest($organization, $body, $projectId, $apiVersion);
 
         return $this->client
@@ -2106,7 +2106,7 @@ class ProjectsApi
      * Create request for operation 'projectsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\TeamProject $body The updates for the project. The state must be set to wellFormed to restore the project. (required)
      * @param  string $projectId The project id of the project to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.4&#39; to use this version of the api. (required)
      *

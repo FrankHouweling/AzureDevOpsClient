@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationStatistic Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class NotificationStatistic implements ModelInterface, ArrayAccess
         'hitCount' => 'int',
         'path' => 'string',
         'type' => 'string',
-        'user' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef'
+        'user' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef'
     ];
 
     /**
@@ -414,7 +414,7 @@ class NotificationStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets user
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef
      */
     public function getUser()
     {
@@ -424,7 +424,7 @@ class NotificationStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets user
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\IdentityRef $user user
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\IdentityRef $user user
      *
      * @return $this
      */

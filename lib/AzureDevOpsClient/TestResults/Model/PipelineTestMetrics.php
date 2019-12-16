@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * PipelineTestMetrics Class Doc Comment
  *
  * @category Class
  * @description Test summary of a pipeline instance.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'currentContext' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference',
-        'resultsAnalysis' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultsAnalysis',
-        'resultSummary' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultSummary',
-        'runSummary' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummary',
-        'summaryAtChild' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[]'
+        'currentContext' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference',
+        'resultsAnalysis' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultsAnalysis',
+        'resultSummary' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultSummary',
+        'runSummary' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummary',
+        'summaryAtChild' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[]'
     ];
 
     /**
@@ -232,7 +232,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets currentContext
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference
      */
     public function getCurrentContext()
     {
@@ -242,7 +242,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets currentContext
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineReference $currentContext Reference of Pipeline instance for which test summary is calculated.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineReference $currentContext Reference of Pipeline instance for which test summary is calculated.
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets resultsAnalysis
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultsAnalysis
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultsAnalysis
      */
     public function getResultsAnalysis()
     {
@@ -266,7 +266,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets resultsAnalysis
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultsAnalysis $resultsAnalysis This is the return value for metric ResultsAnalysis Results insights which include failure analysis, increase/decrease in results count analysis.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultsAnalysis $resultsAnalysis This is the return value for metric ResultsAnalysis Results insights which include failure analysis, increase/decrease in results count analysis.
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets resultSummary
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultSummary
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultSummary
      */
     public function getResultSummary()
     {
@@ -290,7 +290,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets resultSummary
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ResultSummary $resultSummary This is the return value for metric ResultSummary Results summary based on results outcome.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ResultSummary $resultSummary This is the return value for metric ResultSummary Results summary based on results outcome.
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets runSummary
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummary
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummary
      */
     public function getRunSummary()
     {
@@ -314,7 +314,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets runSummary
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\RunSummary $runSummary This is the return value for metric RunSummary Run summary.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\RunSummary $runSummary This is the return value for metric RunSummary Run summary.
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Gets summaryAtChild
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[]
      */
     public function getSummaryAtChild()
     {
@@ -338,7 +338,7 @@ class PipelineTestMetrics implements ModelInterface, ArrayAccess
     /**
      * Sets summaryAtChild
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[] $summaryAtChild Summary at child node.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\PipelineTestMetrics[] $summaryAtChild Summary at child node.
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Client;
+namespace FrankHouweling\AzureDevOpsClient\Core\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Core\ApiException;
-use AzureDevOpsClient\Core\Configuration;
-use AzureDevOpsClient\Core\HeaderSelector;
-use AzureDevOpsClient\Core\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Core\ApiException;
+use FrankHouweling\AzureDevOpsClient\Core\Configuration;
+use FrankHouweling\AzureDevOpsClient\Core\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * AvatarApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class AvatarApi
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,7 +110,7 @@ class AvatarApi
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -357,11 +357,11 @@ class AvatarApi
      * Operation avatarSetProjectAvatar
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -374,11 +374,11 @@ class AvatarApi
      * Operation avatarSetProjectAvatarWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Core\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Core\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -430,7 +430,7 @@ class AvatarApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -453,7 +453,7 @@ class AvatarApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -492,7 +492,7 @@ class AvatarApi
      * Create request for operation 'avatarSetProjectAvatar'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar $body The avatar blob data object to upload. (required)
      * @param  string $projectId The ID or name of the project. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *

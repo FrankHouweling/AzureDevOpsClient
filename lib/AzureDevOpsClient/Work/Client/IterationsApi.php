@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * IterationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,7 +96,7 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -114,7 +114,7 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -400,9 +400,9 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration
      */
     public function iterationsGet($organization, $project, $id, $team, $apiVersion)
     {
@@ -419,13 +419,13 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration, HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsGetWithHttpInfo($organization, $project, $id, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
         $request = $this->iterationsGetRequest($organization, $project, $id, $team, $apiVersion);
 
         try {
@@ -477,7 +477,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -527,7 +527,7 @@ class IterationsApi
      */
     public function iterationsGetAsyncWithHttpInfo($organization, $project, $id, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
         $request = $this->iterationsGetRequest($organization, $project, $id, $team, $apiVersion);
 
         return $this->client
@@ -741,9 +741,9 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems
      */
     public function iterationsGetIterationWorkItems($organization, $project, $iterationId, $team, $apiVersion)
     {
@@ -760,13 +760,13 @@ class IterationsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems, HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsGetIterationWorkItemsWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems';
         $request = $this->iterationsGetIterationWorkItemsRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         try {
@@ -818,7 +818,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -868,7 +868,7 @@ class IterationsApi
      */
     public function iterationsGetIterationWorkItemsAsyncWithHttpInfo($organization, $project, $iterationId, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IterationWorkItems';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\IterationWorkItems';
         $request = $this->iterationsGetIterationWorkItemsRequest($organization, $project, $iterationId, $team, $apiVersion);
 
         return $this->client
@@ -1082,9 +1082,9 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $timeframe A filter for which iterations are returned based on relative time. Only Current is supported currently. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]
      */
     public function iterationsList($organization, $project, $team, $apiVersion, $timeframe = null)
     {
@@ -1101,13 +1101,13 @@ class IterationsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $timeframe A filter for which iterations are returned based on relative time. Only Current is supported currently. (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[], HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsListWithHttpInfo($organization, $project, $team, $apiVersion, $timeframe = null)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]';
         $request = $this->iterationsListRequest($organization, $project, $team, $apiVersion, $timeframe);
 
         try {
@@ -1159,7 +1159,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1209,7 +1209,7 @@ class IterationsApi
      */
     public function iterationsListAsyncWithHttpInfo($organization, $project, $team, $apiVersion, $timeframe = null)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration[]';
         $request = $this->iterationsListRequest($organization, $project, $team, $apiVersion, $timeframe);
 
         return $this->client
@@ -1408,14 +1408,14 @@ class IterationsApi
      * Operation iterationsPostTeamIteration
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration
      */
     public function iterationsPostTeamIteration($organization, $body, $project, $team, $apiVersion)
     {
@@ -1427,18 +1427,18 @@ class IterationsApi
      * Operation iterationsPostTeamIterationWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration, HTTP status code, HTTP response headers (array of strings)
      */
     public function iterationsPostTeamIterationWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
         $request = $this->iterationsPostTeamIterationRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -1490,7 +1490,7 @@ class IterationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1506,7 +1506,7 @@ class IterationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1530,7 +1530,7 @@ class IterationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1540,7 +1540,7 @@ class IterationsApi
      */
     public function iterationsPostTeamIterationAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration';
         $request = $this->iterationsPostTeamIterationRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -1584,7 +1584,7 @@ class IterationsApi
      * Create request for operation 'iterationsPostTeamIteration'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\TeamSettingsIteration $body Iteration to add (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

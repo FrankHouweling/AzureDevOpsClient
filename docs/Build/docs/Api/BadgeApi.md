@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\BadgeApi
+# FrankHouweling\AzureDevOpsClient\Build\BadgeApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -21,12 +21,12 @@ This endpoint is deprecated. Please see the Build Status REST endpoint.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BadgeApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BadgeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -85,9 +85,9 @@ Gets a badge that indicates the status of the most recent build for the specifie
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\BadgeApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\BadgeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

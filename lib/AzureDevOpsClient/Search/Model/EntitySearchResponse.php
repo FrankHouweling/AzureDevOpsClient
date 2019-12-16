@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * EntitySearchResponse Class Doc Comment
  *
  * @category Class
  * @description Defines the base contract for search response.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class EntitySearchResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'facets' => 'map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]]',
+        'facets' => 'map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]]',
         'infoCode' => 'int'
     ];
 
@@ -214,7 +214,7 @@ class EntitySearchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets facets
      *
-     * @return map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]]
      */
     public function getFacets()
     {
@@ -224,7 +224,7 @@ class EntitySearchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets facets
      *
-     * @param map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Filter[]] $facets A dictionary storing an array of <code>Filter</code> object against each facet.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Filter[]] $facets A dictionary storing an array of <code>Filter</code> object against each facet.
      *
      * @return $this
      */

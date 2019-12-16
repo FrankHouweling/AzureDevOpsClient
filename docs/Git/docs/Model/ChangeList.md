@@ -5,11 +5,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **allChangesIncluded** | **bool** |  | [optional] 
 **changeCounts** | **map[string,int]** |  | [optional] 
-**changes** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Change[]**](Change.md) |  | [optional] 
+**changes** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\Change[]**](Change.md) |  | [optional] 
 **comment** | **string** |  | [optional] 
 **commentTruncated** | **bool** |  | [optional] 
 **creationDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**notes** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CheckinNote[]**](CheckinNote.md) |  | [optional] 
+**notes** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\CheckinNote[]**](CheckinNote.md) |  | [optional] 
 **owner** | **string** |  | [optional] 
 **ownerDisplayName** | **string** |  | [optional] 
 **ownerId** | **string** |  | [optional] 

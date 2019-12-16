@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * GatesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class GatesApi
      * Operation gatesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $gateStepId Gate step Id. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates
      */
     public function gatesUpdate($organization, $body, $project, $gateStepId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class GatesApi
      * Operation gatesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $gateStepId Gate step Id. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates, HTTP status code, HTTP response headers (array of strings)
      */
     public function gatesUpdateWithHttpInfo($organization, $body, $project, $gateStepId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates';
         $request = $this->gatesUpdateRequest($organization, $body, $project, $gateStepId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class GatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class GatesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $gateStepId Gate step Id. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class GatesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $gateStepId Gate step Id. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class GatesApi
      */
     public function gatesUpdateAsyncWithHttpInfo($organization, $body, $project, $gateStepId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates';
         $request = $this->gatesUpdateRequest($organization, $body, $project, $gateStepId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class GatesApi
      * Create request for operation 'gatesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Release\Model\GateUpdateMetadata $body Metadata to patch the Release Gates. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $gateStepId Gate step Id. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

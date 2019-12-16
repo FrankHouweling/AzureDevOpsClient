@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiPageResponse Class Doc Comment
  *
  * @category Class
  * @description Response contract for the Wiki Pages PUT, PATCH and DELETE APIs.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class WikiPageResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'eTag' => 'string[]',
-        'page' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage'
+        'page' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage'
     ];
 
     /**
@@ -238,7 +238,7 @@ class WikiPageResponse implements ModelInterface, ArrayAccess
     /**
      * Gets page
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function getPage()
     {
@@ -248,7 +248,7 @@ class WikiPageResponse implements ModelInterface, ArrayAccess
     /**
      * Sets page
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage $page Defines properties for wiki page.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage $page Defines properties for wiki page.
      *
      * @return $this
      */

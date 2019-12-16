@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * IdentityDescriptor Class Doc Comment
  *
  * @category Class
  * @description An Identity descriptor is a wrapper for the identity type (Windows SID, Passport) along with a unique identifier such as the SID or PUID.
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

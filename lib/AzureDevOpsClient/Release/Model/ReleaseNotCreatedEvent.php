@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseNotCreatedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class ReleaseNotCreatedEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'definitionReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'definitionReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
         'message' => 'string',
         'releaseReason' => 'string',
-        'requestedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef'
+        'requestedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef'
     ];
 
     /**
@@ -255,7 +255,7 @@ class ReleaseNotCreatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets definitionReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getDefinitionReference()
     {
@@ -265,7 +265,7 @@ class ReleaseNotCreatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets definitionReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $definitionReference definitionReference
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $definitionReference definitionReference
      *
      * @return $this
      */
@@ -336,7 +336,7 @@ class ReleaseNotCreatedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets requestedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getRequestedBy()
     {
@@ -346,7 +346,7 @@ class ReleaseNotCreatedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets requestedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy requestedBy
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy requestedBy
      *
      * @return $this
      */

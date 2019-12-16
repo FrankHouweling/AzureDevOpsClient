@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcCheckinEventData Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TfvcCheckinEventData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changeset' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChangeset',
-        'project' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference'
+        'changeset' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChangeset',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TfvcCheckinEventData implements ModelInterface, ArrayAccess
     /**
      * Gets changeset
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChangeset
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChangeset
      */
     public function getChangeset()
     {
@@ -224,7 +224,7 @@ class TfvcCheckinEventData implements ModelInterface, ArrayAccess
     /**
      * Sets changeset
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcChangeset $changeset changeset
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcChangeset $changeset changeset
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TfvcCheckinEventData implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -248,7 +248,7 @@ class TfvcCheckinEventData implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TeamProjectReference $project project
      *
      * @return $this
      */

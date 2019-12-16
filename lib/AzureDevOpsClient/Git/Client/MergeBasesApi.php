@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * MergeBasesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -99,9 +99,9 @@ class MergeBasesApi
      * @param  string $otherCollectionId The collection ID where otherCommitId lives. (optional)
      * @param  string $otherRepositoryId The repository ID where otherCommitId lives. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function mergeBasesList($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId = null, $otherRepositoryId = null)
     {
@@ -121,13 +121,13 @@ class MergeBasesApi
      * @param  string $otherCollectionId The collection ID where otherCommitId lives. (optional)
      * @param  string $otherRepositoryId The repository ID where otherCommitId lives. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function mergeBasesListWithHttpInfo($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId = null, $otherRepositoryId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->mergeBasesListRequest($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId, $otherRepositoryId);
 
         try {
@@ -179,7 +179,7 @@ class MergeBasesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,7 +235,7 @@ class MergeBasesApi
      */
     public function mergeBasesListAsyncWithHttpInfo($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId = null, $otherRepositoryId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->mergeBasesListRequest($organization, $repositoryNameOrId, $commitId, $otherCommitId, $project, $apiVersion, $otherCollectionId, $otherRepositoryId);
 
         return $this->client

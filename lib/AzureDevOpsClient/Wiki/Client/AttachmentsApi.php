@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Client;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Wiki\ApiException;
-use AzureDevOpsClient\Wiki\Configuration;
-use AzureDevOpsClient\Wiki\HeaderSelector;
-use AzureDevOpsClient\Wiki\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Wiki\ApiException;
+use FrankHouweling\AzureDevOpsClient\Wiki\Configuration;
+use FrankHouweling\AzureDevOpsClient\Wiki\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * AttachmentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class AttachmentsApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment
      */
     public function attachmentsCreate($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
@@ -123,13 +123,13 @@ class AttachmentsApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment, HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsCreateWithHttpInfo($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment';
         $request = $this->attachmentsCreateRequest($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         try {
@@ -181,7 +181,7 @@ class AttachmentsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class AttachmentsApi
      */
     public function attachmentsCreateAsyncWithHttpInfo($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiAttachment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiAttachment';
         $request = $this->attachmentsCreateRequest($organization, $body, $project, $wikiIdentifier, $name, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         return $this->client

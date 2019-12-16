@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionState Class Doc Comment
  *
  * @category Class
  * @description The state of an extension
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ExtensionState implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'flags' => 'string',
-        'installationIssues' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[]',
+        'installationIssues' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[]',
         'lastUpdated' => '\DateTime',
         'extensionName' => 'string',
         'lastVersionCheck' => '\DateTime',
@@ -318,7 +318,7 @@ class ExtensionState implements ModelInterface, ArrayAccess
     /**
      * Gets installationIssues
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[]
      */
     public function getInstallationIssues()
     {
@@ -328,7 +328,7 @@ class ExtensionState implements ModelInterface, ArrayAccess
     /**
      * Sets installationIssues
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[] $installationIssues List of installation issues
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtensionStateIssue[] $installationIssues List of installation issues
      *
      * @return $this
      */

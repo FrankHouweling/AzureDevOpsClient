@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * CommentThread Class Doc Comment
  *
  * @category Class
  * @description Represents a comment thread of a pull request. A thread contains meta data about the file it was left on along with one or more comments (an initial comment and the subsequent replies).
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,16 +58,16 @@ class CommentThread implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'comments' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'comments' => '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]',
         'id' => 'int',
-        'identities' => 'map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef]',
+        'identities' => 'map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef]',
         'isDeleted' => 'bool',
         'lastUpdatedDate' => '\DateTime',
-        'properties' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection',
         'publishedDate' => '\DateTime',
         'status' => 'string',
-        'threadContext' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentThreadContext'
+        'threadContext' => '\FrankHouweling\AzureDevOpsClient\Git\Model\CommentThreadContext'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -305,7 +305,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Gets comments
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]
      */
     public function getComments()
     {
@@ -329,7 +329,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Sets comments
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[] $comments A list of the comments.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\Comment[] $comments A list of the comments.
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Gets identities
      *
-     * @return map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef]
      */
     public function getIdentities()
     {
@@ -377,7 +377,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Sets identities
      *
-     * @param map[string,\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef] $identities Set of identities related to this thread
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef] $identities Set of identities related to this thread
      *
      * @return $this
      */
@@ -439,7 +439,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -449,7 +449,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\PropertiesCollection $properties Optional properties associated with the thread as a collection of key-value pairs.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\PropertiesCollection $properties Optional properties associated with the thread as a collection of key-value pairs.
      *
      * @return $this
      */
@@ -520,7 +520,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Gets threadContext
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentThreadContext
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\CommentThreadContext
      */
     public function getThreadContext()
     {
@@ -530,7 +530,7 @@ class CommentThread implements ModelInterface, ArrayAccess
     /**
      * Sets threadContext
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\CommentThreadContext $threadContext Specify thread context such as position in left/right file.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\CommentThreadContext $threadContext Specify thread context such as position in left/right file.
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\RefsApi
+# FrankHouweling\AzureDevOpsClient\Git\RefsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **refsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[] refsList($organization, $repositoryId, $project, $apiVersion, $filter, $includeLinks, $includeStatuses, $includeMyBranches, $latestStatusesOnly, $peelTags, $filterContains, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[] refsList($organization, $repositoryId, $project, $apiVersion, $filter, $includeLinks, $includeStatuses, $includeMyBranches, $latestStatusesOnly, $peelTags, $filterContains, $top, $continuationToken)
 
 
 
@@ -22,9 +22,9 @@ Queries the provided repository for its refs and returns them.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef[]**](../Model/GitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef[]**](../Model/GitRef.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **refsUpdateRef**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef refsUpdateRef($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef refsUpdateRef($organization, $body, $repositoryId, $filter, $project, $apiVersion, $projectId)
 
 
 
@@ -99,16 +99,16 @@ Lock or Unlock a branch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate | The ref update action (lock/unlock) to perform
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate | The ref update action (lock/unlock) to perform
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository.
 $filter = "filter_example"; // string | The name of the branch to lock/unlock
 $project = "project_example"; // string | Project ID or project name
@@ -129,7 +129,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate**](../Model/GitRefUpdate.md)| The ref update action (lock/unlock) to perform |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate**](../Model/GitRefUpdate.md)| The ref update action (lock/unlock) to perform |
  **repositoryId** | **string**| The name or ID of the repository. |
  **filter** | **string**| The name of the branch to lock/unlock |
  **project** | **string**| Project ID or project name |
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef**](../Model/GitRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef**](../Model/GitRef.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **refsUpdateRefs**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[] refsUpdateRefs($organization, $body, $repositoryId, $project, $apiVersion, $projectId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[] refsUpdateRefs($organization, $body, $repositoryId, $project, $apiVersion, $projectId)
 
 
 
@@ -164,16 +164,16 @@ Creating, updating, or deleting refs(branches).  Updating a ref means making it 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate()); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[] | List of ref updates to attempt to perform
+$body = array(new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate()); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[] | List of ref updates to attempt to perform
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -193,7 +193,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdate[]**](../Model/GitRefUpdate.md)| List of ref updates to attempt to perform |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdate[]**](../Model/GitRefUpdate.md)| List of ref updates to attempt to perform |
  **repositoryId** | **string**| The name or ID of the repository. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]**](../Model/GitRefUpdateResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefUpdateResult[]**](../Model/GitRefUpdateResult.md)
 
 ### Authorization
 

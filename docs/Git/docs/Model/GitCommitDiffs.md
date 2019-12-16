@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **baseCommit** | **string** |  | [optional] 
 **behindCount** | **int** |  | [optional] 
 **changeCounts** | **map[string,int]** |  | [optional] 
-**changes** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]**](GitChange.md) |  | [optional] 
+**changes** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]**](GitChange.md) |  | [optional] 
 **commonCommit** | **string** |  | [optional] 
 **targetCommit** | **string** |  | [optional] 
 

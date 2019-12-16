@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Client;
+namespace FrankHouweling\AzureDevOpsClient\Audit\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Audit\ApiException;
-use AzureDevOpsClient\Audit\Configuration;
-use AzureDevOpsClient\Audit\HeaderSelector;
-use AzureDevOpsClient\Audit\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Audit\ApiException;
+use FrankHouweling\AzureDevOpsClient\Audit\Configuration;
+use FrankHouweling\AzureDevOpsClient\Audit\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Audit\ObjectSerializer;
 
 /**
  * StreamsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Audit
+ * @package  FrankHouweling\AzureDevOpsClient\Audit
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class StreamsApi
      * Operation streamsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  int $daysToBackfill The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream
      */
     public function streamsCreate($organization, $body, $daysToBackfill, $apiVersion)
     {
@@ -109,17 +109,17 @@ class StreamsApi
      * Operation streamsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  int $daysToBackfill The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
      */
     public function streamsCreateWithHttpInfo($organization, $body, $daysToBackfill, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsCreateRequest($organization, $body, $daysToBackfill, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class StreamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class StreamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  int $daysToBackfill The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class StreamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  int $daysToBackfill The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class StreamsApi
      */
     public function streamsCreateAsyncWithHttpInfo($organization, $body, $daysToBackfill, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsCreateRequest($organization, $body, $daysToBackfill, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class StreamsApi
      * Create request for operation 'streamsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  int $daysToBackfill The number of days of previously recorded audit data that will be replayed into the stream. A value of zero will result in only new events being streamed. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -407,7 +407,7 @@ class StreamsApi
      * @param  int $streamId Id of stream entry to delete (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -423,7 +423,7 @@ class StreamsApi
      * @param  int $streamId Id of stream entry to delete (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -672,9 +672,9 @@ class StreamsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[]
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[]
      */
     public function streamsQueryAllStreams($organization, $apiVersion)
     {
@@ -688,13 +688,13 @@ class StreamsApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[], HTTP status code, HTTP response headers (array of strings)
      */
     public function streamsQueryAllStreamsWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[]';
         $request = $this->streamsQueryAllStreamsRequest($organization, $apiVersion);
 
         try {
@@ -746,7 +746,7 @@ class StreamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[]',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -790,7 +790,7 @@ class StreamsApi
      */
     public function streamsQueryAllStreamsAsyncWithHttpInfo($organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream[]';
         $request = $this->streamsQueryAllStreamsRequest($organization, $apiVersion);
 
         return $this->client
@@ -957,9 +957,9 @@ class StreamsApi
      * @param  int $streamId Id of stream entry to retrieve (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream
      */
     public function streamsQueryStreamById($organization, $streamId, $apiVersion)
     {
@@ -974,13 +974,13 @@ class StreamsApi
      * @param  int $streamId Id of stream entry to retrieve (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
      */
     public function streamsQueryStreamByIdWithHttpInfo($organization, $streamId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsQueryStreamByIdRequest($organization, $streamId, $apiVersion);
 
         try {
@@ -1032,7 +1032,7 @@ class StreamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1078,7 +1078,7 @@ class StreamsApi
      */
     public function streamsQueryStreamByIdAsyncWithHttpInfo($organization, $streamId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsQueryStreamByIdRequest($organization, $streamId, $apiVersion);
 
         return $this->client
@@ -1261,9 +1261,9 @@ class StreamsApi
      * @param  string $status Status of the stream (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream
      */
     public function streamsUpdateStatus($organization, $streamId, $status, $apiVersion)
     {
@@ -1279,13 +1279,13 @@ class StreamsApi
      * @param  string $status Status of the stream (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
      */
     public function streamsUpdateStatusWithHttpInfo($organization, $streamId, $status, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsUpdateStatusRequest($organization, $streamId, $status, $apiVersion);
 
         try {
@@ -1337,7 +1337,7 @@ class StreamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1385,7 +1385,7 @@ class StreamsApi
      */
     public function streamsUpdateStatusAsyncWithHttpInfo($organization, $streamId, $status, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsUpdateStatusRequest($organization, $streamId, $status, $apiVersion);
 
         return $this->client
@@ -1575,12 +1575,12 @@ class StreamsApi
      * Operation streamsUpdateStream
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream
+     * @return \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream
      */
     public function streamsUpdateStream($organization, $body, $apiVersion)
     {
@@ -1592,16 +1592,16 @@ class StreamsApi
      * Operation streamsUpdateStreamWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Audit\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Audit\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream, HTTP status code, HTTP response headers (array of strings)
      */
     public function streamsUpdateStreamWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsUpdateStreamRequest($organization, $body, $apiVersion);
 
         try {
@@ -1653,7 +1653,7 @@ class StreamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream',
+                        '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1669,7 +1669,7 @@ class StreamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1691,7 +1691,7 @@ class StreamsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -1699,7 +1699,7 @@ class StreamsApi
      */
     public function streamsUpdateStreamAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream';
         $request = $this->streamsUpdateStreamRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -1743,7 +1743,7 @@ class StreamsApi
      * Create request for operation 'streamsUpdateStream'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Audit\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Audit\Model\AuditStream $body Stream entry (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

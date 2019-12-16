@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * MembershipStatesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class MembershipStatesApi
      * @param  string $subjectDescriptor Descriptor of the subject (user, group, scope, etc.) to check state of (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembershipState
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembershipState
      */
     public function membershipStatesGet($organization, $subjectDescriptor, $apiVersion)
     {
@@ -111,13 +111,13 @@ class MembershipStatesApi
      * @param  string $subjectDescriptor Descriptor of the subject (user, group, scope, etc.) to check state of (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembershipState, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembershipState, HTTP status code, HTTP response headers (array of strings)
      */
     public function membershipStatesGetWithHttpInfo($organization, $subjectDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembershipState';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembershipState';
         $request = $this->membershipStatesGetRequest($organization, $subjectDescriptor, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class MembershipStatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembershipState',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembershipState',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class MembershipStatesApi
      */
     public function membershipStatesGetAsyncWithHttpInfo($organization, $subjectDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembershipState';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembershipState';
         $request = $this->membershipStatesGetRequest($organization, $subjectDescriptor, $apiVersion);
 
         return $this->client

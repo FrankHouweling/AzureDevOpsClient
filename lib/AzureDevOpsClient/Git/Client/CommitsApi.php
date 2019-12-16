@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * CommitsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class CommitsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  int $changeCount The number of changes to include in the result. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit
      */
     public function commitsGet($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount = null)
     {
@@ -117,13 +117,13 @@ class CommitsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  int $changeCount The number of changes to include in the result. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit, HTTP status code, HTTP response headers (array of strings)
      */
     public function commitsGetWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit';
         $request = $this->commitsGetRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount);
 
         try {
@@ -175,7 +175,7 @@ class CommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class CommitsApi
      */
     public function commitsGetAsyncWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommit';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommit';
         $request = $this->commitsGetRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $changeCount);
 
         return $this->client
@@ -448,9 +448,9 @@ class CommitsApi
      * @param  int $top The maximum number of changes to return. (optional)
      * @param  int $skip The number of changes to skip. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges
      */
     public function commitsGetChanges($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null)
     {
@@ -469,13 +469,13 @@ class CommitsApi
      * @param  int $top The maximum number of changes to return. (optional)
      * @param  int $skip The number of changes to skip. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges, HTTP status code, HTTP response headers (array of strings)
      */
     public function commitsGetChangesWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges';
         $request = $this->commitsGetChangesRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip);
 
         try {
@@ -527,7 +527,7 @@ class CommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -581,7 +581,7 @@ class CommitsApi
      */
     public function commitsGetChangesAsyncWithHttpInfo($organization, $commitId, $repositoryId, $project, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitChanges';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitChanges';
         $request = $this->commitsGetChangesRequest($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip);
 
         return $this->client
@@ -800,7 +800,7 @@ class CommitsApi
      * Operation commitsGetCommitsBatch
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -808,9 +808,9 @@ class CommitsApi
      * @param  int $top Maximum number of commits to return. (optional)
      * @param  bool $includeStatuses True to include additional commit status information. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function commitsGetCommitsBatch($organization, $body, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $includeStatuses = null)
     {
@@ -822,7 +822,7 @@ class CommitsApi
      * Operation commitsGetCommitsBatchWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -830,13 +830,13 @@ class CommitsApi
      * @param  int $top Maximum number of commits to return. (optional)
      * @param  bool $includeStatuses True to include additional commit status information. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function commitsGetCommitsBatchWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $includeStatuses = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->commitsGetCommitsBatchRequest($organization, $body, $repositoryId, $project, $apiVersion, $skip, $top, $includeStatuses);
 
         try {
@@ -888,7 +888,7 @@ class CommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -904,7 +904,7 @@ class CommitsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -931,7 +931,7 @@ class CommitsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -944,7 +944,7 @@ class CommitsApi
      */
     public function commitsGetCommitsBatchAsyncWithHttpInfo($organization, $body, $repositoryId, $project, $apiVersion, $skip = null, $top = null, $includeStatuses = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->commitsGetCommitsBatchRequest($organization, $body, $repositoryId, $project, $apiVersion, $skip, $top, $includeStatuses);
 
         return $this->client
@@ -988,7 +988,7 @@ class CommitsApi
      * Create request for operation 'commitsGetCommitsBatch'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitQueryCommitsCriteria $body Search options (required)
      * @param  string $repositoryId The name or ID of the repository. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1171,9 +1171,9 @@ class CommitsApi
      * @param  int $skip The number of commits to skip. (optional)
      * @param  bool $includeLinks Set to false to avoid including REST Url links for resources. Defaults to true. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function commitsGetPushCommits($organization, $repositoryId, $pushId, $project, $apiVersion, $top = null, $skip = null, $includeLinks = null)
     {
@@ -1193,13 +1193,13 @@ class CommitsApi
      * @param  int $skip The number of commits to skip. (optional)
      * @param  bool $includeLinks Set to false to avoid including REST Url links for resources. Defaults to true. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[], HTTP status code, HTTP response headers (array of strings)
      */
     public function commitsGetPushCommitsWithHttpInfo($organization, $repositoryId, $pushId, $project, $apiVersion, $top = null, $skip = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->commitsGetPushCommitsRequest($organization, $repositoryId, $pushId, $project, $apiVersion, $top, $skip, $includeLinks);
 
         try {
@@ -1251,7 +1251,7 @@ class CommitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1307,7 +1307,7 @@ class CommitsApi
      */
     public function commitsGetPushCommitsAsyncWithHttpInfo($organization, $repositoryId, $pushId, $project, $apiVersion, $top = null, $skip = null, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]';
         $request = $this->commitsGetPushCommitsRequest($organization, $repositoryId, $pushId, $project, $apiVersion, $top, $skip, $includeLinks);
 
         return $this->client

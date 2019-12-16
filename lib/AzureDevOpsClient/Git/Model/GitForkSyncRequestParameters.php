@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitForkSyncRequestParameters Class Doc Comment
  *
  * @category Class
  * @description Parameters for creating a fork request
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GitForkSyncRequestParameters implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'source' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey',
-        'sourceToTargetRefs' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\SourceToTargetRef[]'
+        'source' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey',
+        'sourceToTargetRefs' => '\FrankHouweling\AzureDevOpsClient\Git\Model\SourceToTargetRef[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GitForkSyncRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Gets source
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey
      */
     public function getSource()
     {
@@ -224,7 +224,7 @@ class GitForkSyncRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Sets source
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey $source Fully-qualified identifier for the source repository.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GlobalGitRepositoryKey $source Fully-qualified identifier for the source repository.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GitForkSyncRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Gets sourceToTargetRefs
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\SourceToTargetRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\SourceToTargetRef[]
      */
     public function getSourceToTargetRefs()
     {
@@ -248,7 +248,7 @@ class GitForkSyncRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Sets sourceToTargetRefs
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\SourceToTargetRef[] $sourceToTargetRefs If supplied, the set of ref mappings to use when performing a \"sync\" or create. If missing, all refs will be synchronized.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\SourceToTargetRef[] $sourceToTargetRefs If supplied, the set of ref mappings to use when performing a \"sync\" or create. If missing, all refs will be synchronized.
      *
      * @return $this
      */

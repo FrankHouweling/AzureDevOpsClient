@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsCreate($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsCreate($organization, $body, $repositoryId, $project, $apiVersion, $supportsIterations)
 
 
 
@@ -25,16 +25,16 @@ Create a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest | The pull request to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest | The pull request to create.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request's target branch.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -54,7 +54,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)| The pull request to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)| The pull request to create. |
  **repositoryId** | **string**| The repository ID of the pull request&#39;s target branch. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestsGetPullRequest**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsGetPullRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength, $skip, $top, $includeCommits, $includeWorkItemRefs)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsGetPullRequest($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $maxCommentLength, $skip, $top, $includeCommits, $includeWorkItemRefs)
 
 
 
@@ -88,9 +88,9 @@ Retrieve a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
 
 ### Authorization
 
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestsGetPullRequestById**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsGetPullRequestById($organization, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsGetPullRequestById($organization, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -159,9 +159,9 @@ Retrieve a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestsGetPullRequests**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[] pullRequestsGetPullRequests($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[] pullRequestsGetPullRequests($organization, $repositoryId, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top)
 
 
 
@@ -218,9 +218,9 @@ Retrieve all pull requests matching a specified criteria.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]**](../Model/GitPullRequest.md)
 
 ### Authorization
 
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestsGetPullRequestsByProject**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[] pullRequestsGetPullRequestsByProject($organization, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[] pullRequestsGetPullRequestsByProject($organization, $project, $apiVersion, $searchCriteriaCreatorId, $searchCriteriaIncludeLinks, $searchCriteriaRepositoryId, $searchCriteriaReviewerId, $searchCriteriaSourceRefName, $searchCriteriaSourceRepositoryId, $searchCriteriaStatus, $searchCriteriaTargetRefName, $maxCommentLength, $skip, $top)
 
 
 
@@ -299,9 +299,9 @@ Retrieve all pull requests matching a specified criteria.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest[]**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest[]**](../Model/GitPullRequest.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestsUpdate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest pullRequestsUpdate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion)
 
 
 
@@ -378,16 +378,16 @@ Update a pull request  These are the properties that can be updated with the API
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest | The pull request content that should be updated.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest | The pull request content that should be updated.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request's target branch.
 $pullRequestId = 56; // int | ID of the pull request to update.
 $project = "project_example"; // string | Project ID or project name
@@ -407,7 +407,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)| The pull request content that should be updated. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)| The pull request content that should be updated. |
  **repositoryId** | **string**| The repository ID of the pull request&#39;s target branch. |
  **pullRequestId** | **int**| ID of the pull request to update. |
  **project** | **string**| Project ID or project name |
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequest**](../Model/GitPullRequest.md)
 
 ### Authorization
 

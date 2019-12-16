@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model;
+namespace FrankHouweling\AzureDevOpsClient\Profile\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Profile\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Profile\ObjectSerializer;
 
 /**
  * Profile Class Doc Comment
  *
  * @category Class
  * @description A user profile.
- * @package  AzureDevOpsClient\Profile
+ * @package  FrankHouweling\AzureDevOpsClient\Profile
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class Profile implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'applicationContainer' => '\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributesContainer',
-        'coreAttributes' => 'map[string,\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]',
+        'applicationContainer' => '\FrankHouweling\AzureDevOpsClient\Profile\Model\AttributesContainer',
+        'coreAttributes' => 'map[string,\FrankHouweling\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]',
         'coreRevision' => 'int',
         'id' => 'string',
         'profileState' => 'string',
@@ -269,7 +269,7 @@ class Profile implements ModelInterface, ArrayAccess
     /**
      * Gets applicationContainer
      *
-     * @return \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributesContainer
+     * @return \FrankHouweling\AzureDevOpsClient\Profile\Model\AttributesContainer
      */
     public function getApplicationContainer()
     {
@@ -279,7 +279,7 @@ class Profile implements ModelInterface, ArrayAccess
     /**
      * Sets applicationContainer
      *
-     * @param \AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\AttributesContainer $applicationContainer The attributes of this profile.
+     * @param \FrankHouweling\AzureDevOpsClient\Profile\Model\AttributesContainer $applicationContainer The attributes of this profile.
      *
      * @return $this
      */
@@ -293,7 +293,7 @@ class Profile implements ModelInterface, ArrayAccess
     /**
      * Gets coreAttributes
      *
-     * @return map[string,\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Profile\Model\CoreProfileAttribute]
      */
     public function getCoreAttributes()
     {
@@ -303,7 +303,7 @@ class Profile implements ModelInterface, ArrayAccess
     /**
      * Sets coreAttributes
      *
-     * @param map[string,\AzureDevOpsClient\Profile\AzureDevOpsClient\Profile\Model\CoreProfileAttribute] $coreAttributes The core attributes of this profile.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Profile\Model\CoreProfileAttribute] $coreAttributes The core attributes of this profile.
      *
      * @return $this
      */

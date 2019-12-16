@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * SecurityNamespaceDescription Class Doc Comment
  *
  * @category Class
  * @description Class for describing the details of a TeamFoundationSecurityNamespace.
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SecurityNamespaceDescription implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actions' => '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\ActionDefinition[]',
+        'actions' => '\FrankHouweling\AzureDevOpsClient\Security\Model\ActionDefinition[]',
         'dataspaceCategory' => 'string',
         'displayName' => 'string',
         'elementLength' => 'int',
@@ -286,7 +286,7 @@ class SecurityNamespaceDescription implements ModelInterface, ArrayAccess
     /**
      * Gets actions
      *
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\ActionDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\ActionDefinition[]
      */
     public function getActions()
     {
@@ -296,7 +296,7 @@ class SecurityNamespaceDescription implements ModelInterface, ArrayAccess
     /**
      * Sets actions
      *
-     * @param \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\ActionDefinition[] $actions The list of actions that this Security Namespace is responsible for securing.
+     * @param \FrankHouweling\AzureDevOpsClient\Security\Model\ActionDefinition[] $actions The list of actions that this Security Namespace is responsible for securing.
      *
      * @return $this
      */

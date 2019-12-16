@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseStartMetadata Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifacts' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactMetadata[]',
+        'artifacts' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactMetadata[]',
         'definitionId' => 'int',
         'description' => 'string',
-        'environmentsMetadata' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[]',
+        'environmentsMetadata' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[]',
         'isDraft' => 'bool',
         'manualEnvironments' => 'string[]',
-        'properties' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection',
         'reason' => 'string',
-        'variables' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]'
     ];
 
     /**
@@ -285,7 +285,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets artifacts
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactMetadata[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactMetadata[]
      */
     public function getArtifacts()
     {
@@ -295,7 +295,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets artifacts
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactMetadata[] $artifacts Sets list of artifact to create a release.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactMetadata[] $artifacts Sets list of artifact to create a release.
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets environmentsMetadata
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[]
      */
     public function getEnvironmentsMetadata()
     {
@@ -367,7 +367,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets environmentsMetadata
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[] $environmentsMetadata Sets list of environments meta data.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseStartEnvironmentMetadata[] $environmentsMetadata Sets list of environments meta data.
      *
      * @return $this
      */
@@ -429,7 +429,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection
      */
     public function getProperties()
     {
@@ -439,7 +439,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\PropertiesCollection $properties properties
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\PropertiesCollection $properties properties
      *
      * @return $this
      */
@@ -486,7 +486,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue]
      */
     public function getVariables()
     {
@@ -496,7 +496,7 @@ class ReleaseStartMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Sets list of release variables to be overridden at deployment time.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\ConfigurationVariableValue] $variables Sets list of release variables to be overridden at deployment time.
      *
      * @return $this
      */

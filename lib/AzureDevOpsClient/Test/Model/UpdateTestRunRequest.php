@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * UpdateTestRunRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'attachmentsToAdd' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
-        'attachmentsToDelete' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]',
+        'attachmentsToAdd' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]',
+        'attachmentsToDelete' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]',
         'projectName' => 'string',
         'shouldHyderate' => 'bool',
-        'testRun' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun'
+        'testRun' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun'
     ];
 
     /**
@@ -232,7 +232,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets attachmentsToAdd
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[]
      */
     public function getAttachmentsToAdd()
     {
@@ -242,7 +242,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets attachmentsToAdd
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachment[] $attachmentsToAdd attachmentsToAdd
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachment[] $attachmentsToAdd attachmentsToAdd
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets attachmentsToDelete
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[]
      */
     public function getAttachmentsToDelete()
     {
@@ -266,7 +266,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets attachmentsToDelete
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[] $attachmentsToDelete attachmentsToDelete
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultAttachmentIdentity[] $attachmentsToDelete attachmentsToDelete
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Gets testRun
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun
      */
     public function getTestRun()
     {
@@ -338,7 +338,7 @@ class UpdateTestRunRequest implements ModelInterface, ArrayAccess
     /**
      * Sets testRun
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRun $testRun testRun
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRun $testRun testRun
      *
      * @return $this
      */

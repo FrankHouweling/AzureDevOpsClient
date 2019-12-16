@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\RefsFavoritesApi
+# FrankHouweling\AzureDevOpsClient\Git\RefsFavoritesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **refsFavoritesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite refsFavoritesCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite refsFavoritesCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -23,16 +23,16 @@ Creates a ref favorite
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsFavoritesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsFavoritesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite | The ref favorite to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite | The ref favorite to create.
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -50,13 +50,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)| The ref favorite to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)| The ref favorite to create. |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)
 
 ### Authorization
 
@@ -82,9 +82,9 @@ Deletes the refs favorite specified
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsFavoritesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsFavoritesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **refsFavoritesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite refsFavoritesGet($organization, $project, $favoriteId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite refsFavoritesGet($organization, $project, $favoriteId, $apiVersion)
 
 
 
@@ -140,9 +140,9 @@ Gets the refs favorite for a favorite Id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsFavoritesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsFavoritesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite**](../Model/GitRefFavorite.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **refsFavoritesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[] refsFavoritesList($organization, $project, $apiVersion, $repositoryId, $identityId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[] refsFavoritesList($organization, $project, $apiVersion, $repositoryId, $identityId)
 
 
 
@@ -199,9 +199,9 @@ Gets the refs favorites for a repo and an identity.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\RefsFavoritesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\RefsFavoritesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[]**](../Model/GitRefFavorite.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[]**](../Model/GitRefFavorite.md)
 
 ### Authorization
 

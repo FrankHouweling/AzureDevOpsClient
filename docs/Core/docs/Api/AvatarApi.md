@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Core\AvatarApi
+# FrankHouweling\AzureDevOpsClient\Core\AvatarApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -21,9 +21,9 @@ Removes the avatar for the project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Core\Api\AvatarApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\AvatarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -77,19 +77,19 @@ Sets the avatar for the project.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Core\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Core\Api\AvatarApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Core\Api\AvatarApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar(); // \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar | The avatar blob data object to upload.
+$body = new \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar(); // \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar | The avatar blob data object to upload.
 $projectId = "projectId_example"; // string | The ID or name of the project.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -106,7 +106,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectAvatar**](../Model/ProjectAvatar.md)| The avatar blob data object to upload. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectAvatar**](../Model/ProjectAvatar.md)| The avatar blob data object to upload. |
  **projectId** | **string**| The ID or name of the project. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 

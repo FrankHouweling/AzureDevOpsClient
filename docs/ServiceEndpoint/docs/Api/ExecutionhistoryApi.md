@@ -1,4 +1,4 @@
-# AzureDevOpsClient\ServiceEndpoint\ExecutionhistoryApi
+# FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ExecutionhistoryApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **executionhistoryList**
-> \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionRecord[] executionhistoryList($organization, $project, $endpointId, $apiVersion, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionRecord[] executionhistoryList($organization, $project, $endpointId, $apiVersion, $top, $continuationToken)
 
 
 
@@ -20,12 +20,12 @@ Get service endpoint execution records.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\ServiceEndpoint\Api\ExecutionhistoryApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Api\ExecutionhistoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionRecord[]**](../Model/ServiceEndpointExecutionRecord.md)
+[**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ServiceEndpointExecutionRecord[]**](../Model/ServiceEndpointExecutionRecord.md)
 
 ### Authorization
 

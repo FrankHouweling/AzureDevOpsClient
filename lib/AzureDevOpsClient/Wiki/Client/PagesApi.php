@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Client;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Wiki\ApiException;
-use AzureDevOpsClient\Wiki\Configuration;
-use AzureDevOpsClient\Wiki\HeaderSelector;
-use AzureDevOpsClient\Wiki\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Wiki\ApiException;
+use FrankHouweling\AzureDevOpsClient\Wiki\Configuration;
+use FrankHouweling\AzureDevOpsClient\Wiki\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * PagesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class PagesApi
      * Operation pagesCreateOrUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $path Wiki page path. (required)
@@ -102,9 +102,9 @@ class PagesApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesCreateOrUpdate($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
@@ -116,7 +116,7 @@ class PagesApi
      * Operation pagesCreateOrUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $path Wiki page path. (required)
@@ -127,13 +127,13 @@ class PagesApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesCreateOrUpdateWithHttpInfo($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesCreateOrUpdateRequest($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         try {
@@ -185,7 +185,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class PagesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class PagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $path Wiki page path. (required)
@@ -239,7 +239,7 @@ class PagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $path Wiki page path. (required)
@@ -255,7 +255,7 @@ class PagesApi
      */
     public function pagesCreateOrUpdateAsyncWithHttpInfo($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesCreateOrUpdateRequest($organization, $body, $project, $wikiIdentifier, $path, $version, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         return $this->client
@@ -299,7 +299,7 @@ class PagesApi
      * Create request for operation 'pagesCreateOrUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki create or update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $path Wiki page path. (required)
@@ -510,9 +510,9 @@ class PagesApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesDeletePage($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
@@ -533,13 +533,13 @@ class PagesApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesDeletePageWithHttpInfo($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesDeletePageRequest($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         try {
@@ -591,7 +591,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -649,7 +649,7 @@ class PagesApi
      */
     public function pagesDeletePageAsyncWithHttpInfo($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesDeletePageRequest($organization, $project, $wikiIdentifier, $path, $apiVersion, $comment, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         return $this->client
@@ -880,9 +880,9 @@ class PagesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $comment Comment to be associated with this page delete. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesDeletePageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment = null)
     {
@@ -900,13 +900,13 @@ class PagesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $comment Comment to be associated with this page delete. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesDeletePageByIdWithHttpInfo($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesDeletePageByIdRequest($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment);
 
         try {
@@ -958,7 +958,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1010,7 +1010,7 @@ class PagesApi
      */
     public function pagesDeletePageByIdAsyncWithHttpInfo($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesDeletePageByIdRequest($organization, $project, $wikiIdentifier, $id, $apiVersion, $comment);
 
         return $this->client
@@ -1234,9 +1234,9 @@ class PagesApi
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      * @param  bool $includeContent True to include the content of the page in the response for Json content type. Defaults to false (Optional) (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesGetPage($organization, $project, $wikiIdentifier, $apiVersion, $path = null, $recursionLevel = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null, $includeContent = null)
     {
@@ -1258,13 +1258,13 @@ class PagesApi
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      * @param  bool $includeContent True to include the content of the page in the response for Json content type. Defaults to false (Optional) (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesGetPageWithHttpInfo($organization, $project, $wikiIdentifier, $apiVersion, $path = null, $recursionLevel = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null, $includeContent = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesGetPageRequest($organization, $project, $wikiIdentifier, $apiVersion, $path, $recursionLevel, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType, $includeContent);
 
         try {
@@ -1316,7 +1316,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1376,7 +1376,7 @@ class PagesApi
      */
     public function pagesGetPageAsyncWithHttpInfo($organization, $project, $wikiIdentifier, $apiVersion, $path = null, $recursionLevel = null, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null, $includeContent = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesGetPageRequest($organization, $project, $wikiIdentifier, $apiVersion, $path, $recursionLevel, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType, $includeContent);
 
         return $this->client
@@ -1607,9 +1607,9 @@ class PagesApi
      * @param  string $recursionLevel Recursion level for subpages retrieval. Defaults to &#x60;None&#x60; (Optional). (optional)
      * @param  bool $includeContent True to include the content of the page in the response for Json content type. Defaults to false (Optional) (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesGetPageById($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel = null, $includeContent = null)
     {
@@ -1628,13 +1628,13 @@ class PagesApi
      * @param  string $recursionLevel Recursion level for subpages retrieval. Defaults to &#x60;None&#x60; (Optional). (optional)
      * @param  bool $includeContent True to include the content of the page in the response for Json content type. Defaults to false (Optional) (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesGetPageByIdWithHttpInfo($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel = null, $includeContent = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesGetPageByIdRequest($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel, $includeContent);
 
         try {
@@ -1686,7 +1686,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1740,7 +1740,7 @@ class PagesApi
      */
     public function pagesGetPageByIdAsyncWithHttpInfo($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel = null, $includeContent = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesGetPageByIdRequest($organization, $project, $wikiIdentifier, $id, $apiVersion, $recursionLevel, $includeContent);
 
         return $this->client
@@ -1959,7 +1959,7 @@ class PagesApi
      * Operation pagesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  int $id Wiki page ID. (required)
@@ -1967,9 +1967,9 @@ class PagesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $comment Comment to be associated with the page operation. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage
      */
     public function pagesUpdate($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment = null)
     {
@@ -1981,7 +1981,7 @@ class PagesApi
      * Operation pagesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  int $id Wiki page ID. (required)
@@ -1989,13 +1989,13 @@ class PagesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $comment Comment to be associated with the page operation. (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesUpdateWithHttpInfo($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesUpdateRequest($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment);
 
         try {
@@ -2047,7 +2047,7 @@ class PagesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2063,7 +2063,7 @@ class PagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  int $id Wiki page ID. (required)
@@ -2090,7 +2090,7 @@ class PagesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  int $id Wiki page ID. (required)
@@ -2103,7 +2103,7 @@ class PagesApi
      */
     public function pagesUpdateAsyncWithHttpInfo($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPage';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPage';
         $request = $this->pagesUpdateRequest($organization, $body, $project, $wikiIdentifier, $id, $version, $apiVersion, $comment);
 
         return $this->client
@@ -2147,7 +2147,7 @@ class PagesApi
      * Create request for operation 'pagesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageCreateOrUpdateParameters $body Wiki update operation parameters. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  int $id Wiki page ID. (required)

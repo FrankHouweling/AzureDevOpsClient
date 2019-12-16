@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * MetricsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class MetricsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  \DateTime $minMetricsTime The date from which to calculate metrics. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]
      */
     public function metricsGetDefinitionMetrics($organization, $project, $definitionId, $apiVersion, $minMetricsTime = null)
     {
@@ -115,13 +115,13 @@ class MetricsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  \DateTime $minMetricsTime The date from which to calculate metrics. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[], HTTP status code, HTTP response headers (array of strings)
      */
     public function metricsGetDefinitionMetricsWithHttpInfo($organization, $project, $definitionId, $apiVersion, $minMetricsTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]';
         $request = $this->metricsGetDefinitionMetricsRequest($organization, $project, $definitionId, $apiVersion, $minMetricsTime);
 
         try {
@@ -173,7 +173,7 @@ class MetricsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class MetricsApi
      */
     public function metricsGetDefinitionMetricsAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion, $minMetricsTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]';
         $request = $this->metricsGetDefinitionMetricsRequest($organization, $project, $definitionId, $apiVersion, $minMetricsTime);
 
         return $this->client
@@ -427,9 +427,9 @@ class MetricsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  \DateTime $minMetricsTime The date from which to calculate metrics. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]
      */
     public function metricsGetProjectMetrics($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime = null)
     {
@@ -446,13 +446,13 @@ class MetricsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  \DateTime $minMetricsTime The date from which to calculate metrics. (optional)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[], HTTP status code, HTTP response headers (array of strings)
      */
     public function metricsGetProjectMetricsWithHttpInfo($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]';
         $request = $this->metricsGetProjectMetricsRequest($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime);
 
         try {
@@ -504,7 +504,7 @@ class MetricsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class MetricsApi
      */
     public function metricsGetProjectMetricsAsyncWithHttpInfo($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime = null)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildMetric[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildMetric[]';
         $request = $this->metricsGetProjectMetricsRequest($organization, $project, $metricAggregationType, $apiVersion, $minMetricsTime);
 
         return $this->client

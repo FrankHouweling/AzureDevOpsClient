@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Client;
+namespace FrankHouweling\AzureDevOpsClient\Release\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Release\ApiException;
-use AzureDevOpsClient\Release\Configuration;
-use AzureDevOpsClient\Release\HeaderSelector;
-use AzureDevOpsClient\Release\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Release\ApiException;
+use FrankHouweling\AzureDevOpsClient\Release\Configuration;
+use FrankHouweling\AzureDevOpsClient\Release\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * AttachmentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -102,7 +102,7 @@ class AttachmentsApi
      * @param  string $name Name of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -127,7 +127,7 @@ class AttachmentsApi
      * @param  string $name Name of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -554,9 +554,9 @@ class AttachmentsApi
      * @param  string $type Type of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]
      */
     public function attachmentsGetReleaseTaskAttachments($organization, $project, $releaseId, $environmentId, $attemptId, $planId, $type, $apiVersion)
     {
@@ -576,13 +576,13 @@ class AttachmentsApi
      * @param  string $type Type of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsGetReleaseTaskAttachmentsWithHttpInfo($organization, $project, $releaseId, $environmentId, $attemptId, $planId, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
         $request = $this->attachmentsGetReleaseTaskAttachmentsRequest($organization, $project, $releaseId, $environmentId, $attemptId, $planId, $type, $apiVersion);
 
         try {
@@ -634,7 +634,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -690,7 +690,7 @@ class AttachmentsApi
      */
     public function attachmentsGetReleaseTaskAttachmentsAsyncWithHttpInfo($organization, $project, $releaseId, $environmentId, $attemptId, $planId, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
         $request = $this->attachmentsGetReleaseTaskAttachmentsRequest($organization, $project, $releaseId, $environmentId, $attemptId, $planId, $type, $apiVersion);
 
         return $this->client
@@ -954,7 +954,7 @@ class AttachmentsApi
      * @param  string $name Name of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -978,7 +978,7 @@ class AttachmentsApi
      * @param  string $name Name of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1388,9 +1388,9 @@ class AttachmentsApi
      * @param  string $type Type of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]
      */
     public function attachmentsGetTaskAttachments($organization, $project, $releaseId, $environmentId, $attemptId, $timelineId, $type, $apiVersion)
     {
@@ -1410,13 +1410,13 @@ class AttachmentsApi
      * @param  string $type Type of the attachment. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Release\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Release\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function attachmentsGetTaskAttachmentsWithHttpInfo($organization, $project, $releaseId, $environmentId, $attemptId, $timelineId, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
         $request = $this->attachmentsGetTaskAttachmentsRequest($organization, $project, $releaseId, $environmentId, $attemptId, $timelineId, $type, $apiVersion);
 
         try {
@@ -1468,7 +1468,7 @@ class AttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1524,7 +1524,7 @@ class AttachmentsApi
      */
     public function attachmentsGetTaskAttachmentsAsyncWithHttpInfo($organization, $project, $releaseId, $environmentId, $attemptId, $timelineId, $type, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseTaskAttachment[]';
         $request = $this->attachmentsGetTaskAttachmentsRequest($organization, $project, $releaseId, $environmentId, $attemptId, $timelineId, $type, $apiVersion);
 
         return $this->client

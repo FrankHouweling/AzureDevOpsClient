@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Client;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\MemberEntitlementManagement\ApiException;
-use AzureDevOpsClient\MemberEntitlementManagement\Configuration;
-use AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
-use AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * MembersApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class MembersApi
      * @param  string $memberId Id of the member to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -112,7 +112,7 @@ class MembersApi
      * @param  string $memberId Id of the member to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -381,9 +381,9 @@ class MembersApi
      * @param  int $maxResults Maximum number of results to retrieve. (optional)
      * @param  string $pagingToken Paging Token from the previous page fetched. If the &#39;pagingToken&#39; is null, the results would be fetched from the beginning of the Members List. (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList
      */
     public function membersGet($organization, $groupId, $apiVersion, $maxResults = null, $pagingToken = null)
     {
@@ -400,13 +400,13 @@ class MembersApi
      * @param  int $maxResults Maximum number of results to retrieve. (optional)
      * @param  string $pagingToken Paging Token from the previous page fetched. If the &#39;pagingToken&#39; is null, the results would be fetched from the beginning of the Members List. (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList, HTTP status code, HTTP response headers (array of strings)
      */
     public function membersGetWithHttpInfo($organization, $groupId, $apiVersion, $maxResults = null, $pagingToken = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
         $request = $this->membersGetRequest($organization, $groupId, $apiVersion, $maxResults, $pagingToken);
 
         try {
@@ -458,7 +458,7 @@ class MembersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -508,7 +508,7 @@ class MembersApi
      */
     public function membersGetAsyncWithHttpInfo($organization, $groupId, $apiVersion, $maxResults = null, $pagingToken = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
         $request = $this->membersGetRequest($organization, $groupId, $apiVersion, $maxResults, $pagingToken);
 
         return $this->client
@@ -701,7 +701,7 @@ class MembersApi
      * @param  string $memberId Id of the member to remove. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -718,7 +718,7 @@ class MembersApi
      * @param  string $memberId Id of the member to remove. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Symbol\SymsrvApi
+# FrankHouweling\AzureDevOpsClient\Symbol\SymsrvApi
 
 All URIs are relative to *https://artifacts.dev.azure.com*
 
@@ -20,9 +20,9 @@ Given a client key, returns the best matched debug entry.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\SymsrvApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\SymsrvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

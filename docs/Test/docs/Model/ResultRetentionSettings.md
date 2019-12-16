@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **automatedResultsRetentionDuration** | **int** | Automated test result retention duration in days | [optional] 
-**lastUpdatedBy** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef**](IdentityRef.md) | Last Updated by identity | [optional] 
+**lastUpdatedBy** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef**](IdentityRef.md) | Last Updated by identity | [optional] 
 **lastUpdatedDate** | [**\DateTime**](\DateTime.md) | Last updated date | [optional] 
 **manualResultsRetentionDuration** | **int** | Manual test result retention duration in days | [optional] 
 

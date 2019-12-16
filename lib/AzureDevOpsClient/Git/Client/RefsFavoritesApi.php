@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * RefsFavoritesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class RefsFavoritesApi
      * Operation refsFavoritesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite
      */
     public function refsFavoritesCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class RefsFavoritesApi
      * Operation refsFavoritesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite, HTTP status code, HTTP response headers (array of strings)
      */
     public function refsFavoritesCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite';
         $request = $this->refsFavoritesCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class RefsFavoritesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class RefsFavoritesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class RefsFavoritesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class RefsFavoritesApi
      */
     public function refsFavoritesCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite';
         $request = $this->refsFavoritesCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class RefsFavoritesApi
      * Create request for operation 'refsFavoritesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite $body The ref favorite to create. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class RefsFavoritesApi
      * @param  int $favoriteId The Id of the ref favorite to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class RefsFavoritesApi
      * @param  int $favoriteId The Id of the ref favorite to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -697,9 +697,9 @@ class RefsFavoritesApi
      * @param  int $favoriteId The Id of the requested ref favorite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite
      */
     public function refsFavoritesGet($organization, $project, $favoriteId, $apiVersion)
     {
@@ -715,13 +715,13 @@ class RefsFavoritesApi
      * @param  int $favoriteId The Id of the requested ref favorite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite, HTTP status code, HTTP response headers (array of strings)
      */
     public function refsFavoritesGetWithHttpInfo($organization, $project, $favoriteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite';
         $request = $this->refsFavoritesGetRequest($organization, $project, $favoriteId, $apiVersion);
 
         try {
@@ -773,7 +773,7 @@ class RefsFavoritesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class RefsFavoritesApi
      */
     public function refsFavoritesGetAsyncWithHttpInfo($organization, $project, $favoriteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite';
         $request = $this->refsFavoritesGetRequest($organization, $project, $favoriteId, $apiVersion);
 
         return $this->client
@@ -1020,9 +1020,9 @@ class RefsFavoritesApi
      * @param  string $repositoryId The id of the repository. (optional)
      * @param  string $identityId The id of the identity whose favorites are to be retrieved. If null, the requesting identity is used. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[]
      */
     public function refsFavoritesList($organization, $project, $apiVersion, $repositoryId = null, $identityId = null)
     {
@@ -1039,13 +1039,13 @@ class RefsFavoritesApi
      * @param  string $repositoryId The id of the repository. (optional)
      * @param  string $identityId The id of the identity whose favorites are to be retrieved. If null, the requesting identity is used. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[], HTTP status code, HTTP response headers (array of strings)
      */
     public function refsFavoritesListWithHttpInfo($organization, $project, $apiVersion, $repositoryId = null, $identityId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[]';
         $request = $this->refsFavoritesListRequest($organization, $project, $apiVersion, $repositoryId, $identityId);
 
         try {
@@ -1097,7 +1097,7 @@ class RefsFavoritesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1147,7 +1147,7 @@ class RefsFavoritesApi
      */
     public function refsFavoritesListAsyncWithHttpInfo($organization, $project, $apiVersion, $repositoryId = null, $identityId = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRefFavorite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRefFavorite[]';
         $request = $this->refsFavoritesListRequest($organization, $project, $apiVersion, $repositoryId, $identityId);
 
         return $this->client

@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collection** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference**](TeamProjectCollectionReference.md) | Team Project Collection where this Fork resides | [optional] 
+**collection** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectCollectionReference**](TeamProjectCollectionReference.md) | Team Project Collection where this Fork resides | [optional] 
 **id** | **string** |  | [optional] 
 **isFork** | **bool** | True if the repository was created as a fork | [optional] 
 **name** | **string** |  | [optional] 
-**project** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TeamProjectReference**](TeamProjectReference.md) |  | [optional] 
 **remoteUrl** | **string** |  | [optional] 
 **sshUrl** | **string** |  | [optional] 
 **url** | **string** |  | [optional] 

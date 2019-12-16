@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdministration
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdministration
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdministration\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TokenAdministration\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TokenAdministration\ObjectSerializer;
 
 /**
  * TokenAdminRevocation Class Doc Comment
  *
  * @category Class
  * @description A request to revoke a particular delegated authorization.
- * @package  AzureDevOpsClient\TokenAdministration
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdministration
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

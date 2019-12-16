@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  | [optional] 
-**testResults** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]**](TestCaseResultIdentifier.md) |  | [optional] 
+**testResults** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdentifier[]**](TestCaseResultIdentifier.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

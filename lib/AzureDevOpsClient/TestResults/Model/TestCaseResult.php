@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestCaseResult Class Doc Comment
  *
  * @category Class
  * @description Represents a test result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,53 +59,53 @@ class TestCaseResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'afnStripId' => 'int',
-        'area' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'associatedBugs' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference[]',
+        'area' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'associatedBugs' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference[]',
         'automatedTestId' => 'string',
         'automatedTestName' => 'string',
         'automatedTestStorage' => 'string',
         'automatedTestType' => 'string',
         'automatedTestTypeId' => 'string',
-        'build' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'buildReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'buildReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference',
         'comment' => 'string',
         'completedDate' => '\DateTime',
         'computerName' => 'string',
-        'configuration' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
         'createdDate' => '\DateTime',
-        'customFields' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[]',
+        'customFields' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[]',
         'durationInMs' => 'double',
         'errorMessage' => 'string',
-        'failingSince' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FailingSince',
+        'failingSince' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\FailingSince',
         'failureType' => 'string',
         'id' => 'int',
-        'iterationDetails' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[]',
-        'lastUpdatedBy' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef',
+        'iterationDetails' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[]',
+        'lastUpdatedBy' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef',
         'lastUpdatedDate' => '\DateTime',
         'outcome' => 'string',
-        'owner' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef',
         'priority' => 'int',
-        'project' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'release' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'releaseReference' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'releaseReference' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference',
         'resetCount' => 'int',
         'resolutionState' => 'string',
         'resolutionStateId' => 'int',
         'resultGroupType' => 'string',
         'revision' => 'int',
-        'runBy' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef',
+        'runBy' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef',
         'stackTrace' => 'string',
         'startedDate' => '\DateTime',
         'state' => 'string',
-        'subResults' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[]',
-        'testCase' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'subResults' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[]',
+        'testCase' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
         'testCaseReferenceId' => 'int',
         'testCaseRevision' => 'int',
         'testCaseTitle' => 'string',
-        'testPlan' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'testPoint' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'testRun' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
-        'testSuite' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'testPlan' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'testPoint' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'testRun' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
+        'testSuite' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference',
         'url' => 'string'
     ];
 
@@ -549,7 +549,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets area
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getArea()
     {
@@ -559,7 +559,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets area
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $area Reference to area path of test.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $area Reference to area path of test.
      *
      * @return $this
      */
@@ -573,7 +573,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets associatedBugs
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference[]
      */
     public function getAssociatedBugs()
     {
@@ -583,7 +583,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets associatedBugs
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference[] $associatedBugs Reference to bugs linked to test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference[] $associatedBugs Reference to bugs linked to test result.
      *
      * @return $this
      */
@@ -717,7 +717,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getBuild()
     {
@@ -727,7 +727,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $build Shallow reference to build associated with test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $build Shallow reference to build associated with test result.
      *
      * @return $this
      */
@@ -741,7 +741,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets buildReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference
      */
     public function getBuildReference()
     {
@@ -751,7 +751,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets buildReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference $buildReference Reference to build associated with test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference $buildReference Reference to build associated with test result.
      *
      * @return $this
      */
@@ -837,7 +837,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getConfiguration()
     {
@@ -847,7 +847,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $configuration Reference to test configuration. Type ShallowReference.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $configuration Reference to test configuration. Type ShallowReference.
      *
      * @return $this
      */
@@ -885,7 +885,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets customFields
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[]
      */
     public function getCustomFields()
     {
@@ -895,7 +895,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets customFields
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CustomTestField[] $customFields Additional properties of test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\CustomTestField[] $customFields Additional properties of test result.
      *
      * @return $this
      */
@@ -957,7 +957,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets failingSince
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FailingSince
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\FailingSince
      */
     public function getFailingSince()
     {
@@ -967,7 +967,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets failingSince
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FailingSince $failingSince Information when test results started failing.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\FailingSince $failingSince Information when test results started failing.
      *
      * @return $this
      */
@@ -1029,7 +1029,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets iterationDetails
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[]
      */
     public function getIterationDetails()
     {
@@ -1039,7 +1039,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets iterationDetails
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[] $iterationDetails Test result details of test iterations used only for Manual Testing.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestIterationDetailsModel[] $iterationDetails Test result details of test iterations used only for Manual Testing.
      *
      * @return $this
      */
@@ -1053,7 +1053,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets lastUpdatedBy
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef
      */
     public function getLastUpdatedBy()
     {
@@ -1063,7 +1063,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets lastUpdatedBy
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef $lastUpdatedBy Reference to identity last updated test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef $lastUpdatedBy Reference to identity last updated test result.
      *
      * @return $this
      */
@@ -1125,7 +1125,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -1135,7 +1135,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef $owner Reference to test owner.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef $owner Reference to test owner.
      *
      * @return $this
      */
@@ -1173,7 +1173,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getProject()
     {
@@ -1183,7 +1183,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $project Reference to team project.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $project Reference to team project.
      *
      * @return $this
      */
@@ -1197,7 +1197,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getRelease()
     {
@@ -1207,7 +1207,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $release Shallow reference to release associated with test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $release Shallow reference to release associated with test result.
      *
      * @return $this
      */
@@ -1221,7 +1221,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets releaseReference
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference
      */
     public function getReleaseReference()
     {
@@ -1231,7 +1231,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets releaseReference
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference $releaseReference Reference to release associated with test result.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference $releaseReference Reference to release associated with test result.
      *
      * @return $this
      */
@@ -1374,7 +1374,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets runBy
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef
      */
     public function getRunBy()
     {
@@ -1384,7 +1384,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets runBy
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\IdentityRef $runBy Reference to identity executed the test.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\IdentityRef $runBy Reference to identity executed the test.
      *
      * @return $this
      */
@@ -1470,7 +1470,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets subResults
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[]
      */
     public function getSubResults()
     {
@@ -1480,7 +1480,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets subResults
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestSubResult[] $subResults List of sub results inside a test result, if ResultGroupType is not None, it holds corresponding type sub results.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestSubResult[] $subResults List of sub results inside a test result, if ResultGroupType is not None, it holds corresponding type sub results.
      *
      * @return $this
      */
@@ -1494,7 +1494,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets testCase
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestCase()
     {
@@ -1504,7 +1504,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets testCase
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testCase Reference to the test executed.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testCase Reference to the test executed.
      *
      * @return $this
      */
@@ -1590,7 +1590,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets testPlan
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestPlan()
     {
@@ -1600,7 +1600,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets testPlan
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testPlan Reference to test plan test case workitem is part of.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testPlan Reference to test plan test case workitem is part of.
      *
      * @return $this
      */
@@ -1614,7 +1614,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets testPoint
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestPoint()
     {
@@ -1624,7 +1624,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets testPoint
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testPoint Reference to the test point executed.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testPoint Reference to the test point executed.
      *
      * @return $this
      */
@@ -1638,7 +1638,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets testRun
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestRun()
     {
@@ -1648,7 +1648,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets testRun
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testRun Reference to test run.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testRun Reference to test run.
      *
      * @return $this
      */
@@ -1662,7 +1662,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Gets testSuite
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference
      */
     public function getTestSuite()
     {
@@ -1672,7 +1672,7 @@ class TestCaseResult implements ModelInterface, ArrayAccess
     /**
      * Sets testSuite
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ShallowReference $testSuite Reference to test suite test case workitem is part of.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ShallowReference $testSuite Reference to test suite test case workitem is part of.
      *
      * @return $this
      */

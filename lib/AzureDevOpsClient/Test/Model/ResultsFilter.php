@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultsFilter Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,7 +68,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
         'testCaseReferenceIds' => 'int[]',
         'testPlanId' => 'int',
         'testPointIds' => 'int[]',
-        'testResultsContext' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext',
+        'testResultsContext' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext',
         'trendDays' => 'int'
     ];
 
@@ -548,7 +548,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
     /**
      * Gets testResultsContext
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext
      */
     public function getTestResultsContext()
     {
@@ -558,7 +558,7 @@ class ResultsFilter implements ModelInterface, ArrayAccess
     /**
      * Sets testResultsContext
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
      *
      * @return $this
      */

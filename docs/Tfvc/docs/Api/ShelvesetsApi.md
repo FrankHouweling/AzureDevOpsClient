@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Tfvc\ShelvesetsApi
+# FrankHouweling\AzureDevOpsClient\Tfvc\ShelvesetsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **shelvesetsGet**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset shelvesetsGet($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails, $requestDataIncludeLinks, $requestDataIncludeWorkItems, $requestDataMaxChangeCount, $requestDataMaxCommentLength, $requestDataName, $requestDataOwner)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset shelvesetsGet($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails, $requestDataIncludeLinks, $requestDataIncludeWorkItems, $requestDataMaxChangeCount, $requestDataMaxCommentLength, $requestDataName, $requestDataOwner)
 
 
 
@@ -22,9 +22,9 @@ Get a single deep shelveset.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset**](../Model/TfvcShelveset.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset**](../Model/TfvcShelveset.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shelvesetsGetShelvesetChanges**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[] shelvesetsGetShelvesetChanges($organization, $shelvesetId, $apiVersion, $top, $skip)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[] shelvesetsGetShelvesetChanges($organization, $shelvesetId, $apiVersion, $top, $skip)
 
 
 
@@ -93,9 +93,9 @@ Get changes included in a shelveset.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]**](../Model/TfvcChange.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]**](../Model/TfvcChange.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **shelvesetsGetShelvesetWorkItems**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] shelvesetsGetShelvesetWorkItems($organization, $shelvesetId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] shelvesetsGetShelvesetWorkItems($organization, $shelvesetId, $apiVersion)
 
 
 
@@ -154,9 +154,9 @@ Get work items associated with a shelveset.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ShelvesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]**](../Model/AssociatedWorkItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]**](../Model/AssociatedWorkItem.md)
 
 ### Authorization
 

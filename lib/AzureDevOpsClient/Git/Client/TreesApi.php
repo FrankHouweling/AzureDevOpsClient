@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TreesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class TreesApi
      * @param  string $fileName Name to use if a .zip file is returned. Default is the object ID. (optional)
      * @param  string $format Use \&quot;zip\&quot;. Defaults to the MIME type set in the Accept header. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef
      */
     public function treesGet($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId = null, $recursive = null, $fileName = null, $format = null)
     {
@@ -123,13 +123,13 @@ class TreesApi
      * @param  string $fileName Name to use if a .zip file is returned. Default is the object ID. (optional)
      * @param  string $format Use \&quot;zip\&quot;. Defaults to the MIME type set in the Accept header. (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function treesGetWithHttpInfo($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId = null, $recursive = null, $fileName = null, $format = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef';
         $request = $this->treesGetRequest($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId, $recursive, $fileName, $format);
 
         try {
@@ -181,7 +181,7 @@ class TreesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class TreesApi
      */
     public function treesGetAsyncWithHttpInfo($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId = null, $recursive = null, $fileName = null, $format = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef';
         $request = $this->treesGetRequest($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId, $recursive, $fileName, $format);
 
         return $this->client

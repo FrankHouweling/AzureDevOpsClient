@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * ProxyAuthorization Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class ProxyAuthorization implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'authorizationUrl' => 'string',
         'clientId' => 'string',
-        'identity' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor',
-        'publicKey' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PublicKey'
+        'identity' => '\FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor',
+        'publicKey' => '\FrankHouweling\AzureDevOpsClient\Core\Model\PublicKey'
     ];
 
     /**
@@ -274,7 +274,7 @@ class ProxyAuthorization implements ModelInterface, ArrayAccess
     /**
      * Gets identity
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor
      */
     public function getIdentity()
     {
@@ -284,7 +284,7 @@ class ProxyAuthorization implements ModelInterface, ArrayAccess
     /**
      * Sets identity
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\IdentityDescriptor $identity Gets or sets the user identity to authorize for on-prem.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\IdentityDescriptor $identity Gets or sets the user identity to authorize for on-prem.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class ProxyAuthorization implements ModelInterface, ArrayAccess
     /**
      * Gets publicKey
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PublicKey
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\PublicKey
      */
     public function getPublicKey()
     {
@@ -308,7 +308,7 @@ class ProxyAuthorization implements ModelInterface, ArrayAccess
     /**
      * Sets publicKey
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\PublicKey $publicKey Gets or sets the public key used to verify the identity of this proxy. Only specify on hosted.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\PublicKey $publicKey Gets or sets the public key used to verify the identity of this proxy. Only specify on hosted.
      *
      * @return $this
      */

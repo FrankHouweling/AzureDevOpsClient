@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * Process Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class Process implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks',
         'description' => 'string',
         'id' => 'string',
         'isDefault' => 'bool',
@@ -317,7 +317,7 @@ class Process implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -327,7 +327,7 @@ class Process implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks $links links
      *
      * @return $this
      */

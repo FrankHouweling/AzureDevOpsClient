@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * XamlBuildDefinition Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,22 +62,22 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
         'id' => 'int',
         'name' => 'string',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference',
         'queueStatus' => 'string',
         'revision' => 'int',
         'type' => 'string',
         'uri' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks',
         'batchSize' => 'int',
         'buildArgs' => 'string',
         'continuousIntegrationQuietPeriod' => 'int',
-        'controller' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController',
+        'controller' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController',
         'createdOn' => '\DateTime',
         'defaultDropLocation' => 'string',
         'description' => 'string',
-        'lastBuild' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference',
-        'repository' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository',
+        'lastBuild' => '\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository',
         'supportedReasons' => 'string',
         'triggerType' => 'string'
     ];
@@ -562,7 +562,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -572,7 +572,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project A reference to the project.
      *
      * @return $this
      */
@@ -724,7 +724,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -734,7 +734,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -820,7 +820,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets controller
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController
      */
     public function getController()
     {
@@ -830,7 +830,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets controller
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController $controller The build controller
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController $controller The build controller
      *
      * @return $this
      */
@@ -916,7 +916,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets lastBuild
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference
      */
     public function getLastBuild()
     {
@@ -926,7 +926,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets lastBuild
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildReference $lastBuild The last build on this definition
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildReference $lastBuild The last build on this definition
      *
      * @return $this
      */
@@ -940,7 +940,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository
      */
     public function getRepository()
     {
@@ -950,7 +950,7 @@ class XamlBuildDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository $repository The repository
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * PagedGraphGroups Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PagedGraphGroups implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'continuationToken' => 'string[]',
-        'graphGroups' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]'
+        'graphGroups' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PagedGraphGroups implements ModelInterface, ArrayAccess
     /**
      * Gets graphGroups
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[]
      */
     public function getGraphGroups()
     {
@@ -248,7 +248,7 @@ class PagedGraphGroups implements ModelInterface, ArrayAccess
     /**
      * Sets graphGroups
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphGroup[] $graphGroups The enumerable list of groups found within a page.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphGroup[] $graphGroups The enumerable list of groups found within a page.
      *
      * @return $this
      */

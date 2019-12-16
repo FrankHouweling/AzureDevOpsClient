@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks**](ReferenceLinks.md) | Reference links of task. | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks**](ReferenceLinks.md) | Reference links of task. | [optional] 
 **createdOn** | [**\DateTime**](\DateTime.md) | Data and time when it created. | [optional] 
-**modifiedBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who modified. | [optional] 
+**modifiedBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who modified. | [optional] 
 **modifiedOn** | [**\DateTime**](\DateTime.md) | Data and time when modified. | [optional] 
 **name** | **string** | Name of the task attachment. | [optional] 
 **recordId** | **string** | Record ID of the task. | [optional] 

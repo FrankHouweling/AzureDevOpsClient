@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **endTime** | [**\DateTime**](\DateTime.md) | Time the log ended. | [optional] 
 **id** | **string** | Unique instance identifier. | [optional] 
 **logType** | **string** | Type of information being logged. | [optional] 
-**messages** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) | List of log messages. | [optional] 
+**messages** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]**](NotificationDiagnosticLogMessage.md) | List of log messages. | [optional] 
 **properties** | **map[string,string]** | Dictionary of log properties and settings for the job. | [optional] 
 **source** | **string** | This identifier depends on the logType.  For notification jobs, this will be the job Id. For subscription tracing, this will be a special root Guid with the subscription Id encoded. | [optional] 
 **startTime** | [**\DateTime**](\DateTime.md) | Time the log started. | [optional] 

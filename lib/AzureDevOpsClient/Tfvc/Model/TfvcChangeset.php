@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcChangeset Class Doc Comment
  *
  * @category Class
  * @description A collection of changes.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,22 +58,22 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef',
         'changesetId' => 'int',
-        'checkedInBy' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef',
+        'checkedInBy' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'createdDate' => '\DateTime',
         'url' => 'string',
         'accountId' => 'string',
-        'changes' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
-        'checkinNotes' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\CheckinNote[]',
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
+        'checkinNotes' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\CheckinNote[]',
         'collectionId' => 'string',
         'hasMoreChanges' => 'bool',
-        'policyOverride' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo',
+        'policyOverride' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo',
         'teamProjectIds' => 'string[]',
-        'workItems' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]'
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]'
     ];
 
     /**
@@ -298,7 +298,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -308,7 +308,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -332,7 +332,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef $author Alias or display name of user.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef $author Alias or display name of user.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets checkedInBy
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef
      */
     public function getCheckedInBy()
     {
@@ -380,7 +380,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets checkedInBy
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef $checkedInBy Alias or display name of user.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef $checkedInBy Alias or display name of user.
      *
      * @return $this
      */
@@ -514,7 +514,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
      */
     public function getChanges()
     {
@@ -524,7 +524,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[] $changes List of associated changes.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[] $changes List of associated changes.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets checkinNotes
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\CheckinNote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\CheckinNote[]
      */
     public function getCheckinNotes()
     {
@@ -548,7 +548,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets checkinNotes
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\CheckinNote[] $checkinNotes List of Checkin Notes for the changeset.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\CheckinNote[] $checkinNotes List of Checkin Notes for the changeset.
      *
      * @return $this
      */
@@ -610,7 +610,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets policyOverride
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo
      */
     public function getPolicyOverride()
     {
@@ -620,7 +620,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets policyOverride
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo $policyOverride Policy Override for the changeset.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcPolicyOverrideInfo $policyOverride Policy Override for the changeset.
      *
      * @return $this
      */
@@ -658,7 +658,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
      */
     public function getWorkItems()
     {
@@ -668,7 +668,7 @@ class TfvcChangeset implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] $workItems List of work items associated with the changeset.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] $workItems List of work items associated with the changeset.
      *
      * @return $this
      */

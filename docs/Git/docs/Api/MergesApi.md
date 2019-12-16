@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\MergesApi
+# FrankHouweling\AzureDevOpsClient\Git\MergesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **mergesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge mergesCreate($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge mergesCreate($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks)
 
 
 
@@ -21,16 +21,16 @@ Request a git merge operation. Currently we support merging only 2 commits.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\MergesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\MergesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters | Parents commitIds and merge commit messsage.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters | Parents commitIds and merge commit messsage.
 $project = "project_example"; // string | Project ID or project name
 $repositoryNameOrId = "repositoryNameOrId_example"; // string | The name or ID of the repository.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -50,7 +50,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters**](../Model/GitMergeParameters.md)| Parents commitIds and merge commit messsage. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters**](../Model/GitMergeParameters.md)| Parents commitIds and merge commit messsage. |
  **project** | **string**| Project ID or project name |
  **repositoryNameOrId** | **string**| The name or ID of the repository. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge**](../Model/GitMerge.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge**](../Model/GitMerge.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **mergesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge mergesGet($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge mergesGet($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks)
 
 
 
@@ -84,9 +84,9 @@ Get a specific merge operation's details.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\MergesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\MergesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge**](../Model/GitMerge.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge**](../Model/GitMerge.md)
 
 ### Authorization
 

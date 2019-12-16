@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * CherryPicksApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class CherryPicksApi
      * Operation cherryPicksCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick
      */
     public function cherryPicksCreate($organization, $body, $project, $repositoryId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class CherryPicksApi
      * Operation cherryPicksCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
      */
     public function cherryPicksCreateWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class CherryPicksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class CherryPicksApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class CherryPicksApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class CherryPicksApi
      */
     public function cherryPicksCreateAsyncWithHttpInfo($organization, $body, $project, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksCreateRequest($organization, $body, $project, $repositoryId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class CherryPicksApi
      * Create request for operation 'cherryPicksCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationParameters $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -432,9 +432,9 @@ class CherryPicksApi
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick
      */
     public function cherryPicksGetCherryPick($organization, $project, $cherryPickId, $repositoryId, $apiVersion)
     {
@@ -451,13 +451,13 @@ class CherryPicksApi
      * @param  string $repositoryId ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
      */
     public function cherryPicksGetCherryPickWithHttpInfo($organization, $project, $cherryPickId, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksGetCherryPickRequest($organization, $project, $cherryPickId, $repositoryId, $apiVersion);
 
         try {
@@ -509,7 +509,7 @@ class CherryPicksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -559,7 +559,7 @@ class CherryPicksApi
      */
     public function cherryPicksGetCherryPickAsyncWithHttpInfo($organization, $project, $cherryPickId, $repositoryId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksGetCherryPickRequest($organization, $project, $cherryPickId, $repositoryId, $apiVersion);
 
         return $this->client
@@ -773,9 +773,9 @@ class CherryPicksApi
      * @param  string $refName The GitAsyncRefOperationParameters generatedRefName used for the cherry pick operation. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick
      */
     public function cherryPicksGetCherryPickForRefName($organization, $project, $repositoryId, $refName, $apiVersion)
     {
@@ -792,13 +792,13 @@ class CherryPicksApi
      * @param  string $refName The GitAsyncRefOperationParameters generatedRefName used for the cherry pick operation. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick, HTTP status code, HTTP response headers (array of strings)
      */
     public function cherryPicksGetCherryPickForRefNameWithHttpInfo($organization, $project, $repositoryId, $refName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksGetCherryPickForRefNameRequest($organization, $project, $repositoryId, $refName, $apiVersion);
 
         try {
@@ -850,7 +850,7 @@ class CherryPicksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class CherryPicksApi
      */
     public function cherryPicksGetCherryPickForRefNameAsyncWithHttpInfo($organization, $project, $repositoryId, $refName, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCherryPick';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCherryPick';
         $request = $this->cherryPicksGetCherryPickForRefNameRequest($organization, $project, $repositoryId, $refName, $apiVersion);
 
         return $this->client

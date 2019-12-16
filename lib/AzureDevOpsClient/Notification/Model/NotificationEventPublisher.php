@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationEventPublisher Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the properties of a notification event publisher.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class NotificationEventPublisher implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'subscriptionManagementInfo' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionManagement',
+        'subscriptionManagementInfo' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionManagement',
         'url' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class NotificationEventPublisher implements ModelInterface, ArrayAccess
     /**
      * Gets subscriptionManagementInfo
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionManagement
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionManagement
      */
     public function getSubscriptionManagementInfo()
     {
@@ -254,7 +254,7 @@ class NotificationEventPublisher implements ModelInterface, ArrayAccess
     /**
      * Sets subscriptionManagementInfo
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionManagement $subscriptionManagementInfo subscriptionManagementInfo
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionManagement $subscriptionManagementInfo subscriptionManagementInfo
      *
      * @return $this
      */

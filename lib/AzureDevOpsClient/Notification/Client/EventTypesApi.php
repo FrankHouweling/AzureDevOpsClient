@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Client;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Notification\ApiException;
-use AzureDevOpsClient\Notification\Configuration;
-use AzureDevOpsClient\Notification\HeaderSelector;
-use AzureDevOpsClient\Notification\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Notification\ApiException;
+use FrankHouweling\AzureDevOpsClient\Notification\Configuration;
+use FrankHouweling\AzureDevOpsClient\Notification\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * EventTypesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class EventTypesApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType
      */
     public function eventTypesGet($eventType, $organization, $apiVersion)
     {
@@ -111,13 +111,13 @@ class EventTypesApi
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType, HTTP status code, HTTP response headers (array of strings)
      */
     public function eventTypesGetWithHttpInfo($eventType, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType';
         $request = $this->eventTypesGetRequest($eventType, $organization, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class EventTypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class EventTypesApi
      */
     public function eventTypesGetAsyncWithHttpInfo($eventType, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType';
         $request = $this->eventTypesGetRequest($eventType, $organization, $apiVersion);
 
         return $this->client
@@ -397,9 +397,9 @@ class EventTypesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $publisherId Limit to event types for this publisher (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[]
      */
     public function eventTypesList($organization, $apiVersion, $publisherId = null)
     {
@@ -414,13 +414,13 @@ class EventTypesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $publisherId Limit to event types for this publisher (optional)
      *
-     * @throws \AzureDevOpsClient\Notification\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Notification\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function eventTypesListWithHttpInfo($organization, $apiVersion, $publisherId = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[]';
         $request = $this->eventTypesListRequest($organization, $apiVersion, $publisherId);
 
         try {
@@ -472,7 +472,7 @@ class EventTypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[]',
+                        '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class EventTypesApi
      */
     public function eventTypesListAsyncWithHttpInfo($organization, $apiVersion, $publisherId = null)
     {
-        $returnType = '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationEventType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationEventType[]';
         $request = $this->eventTypesListRequest($organization, $apiVersion, $publisherId);
 
         return $this->client

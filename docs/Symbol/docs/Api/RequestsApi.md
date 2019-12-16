@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Symbol\RequestsApi
+# FrankHouweling\AzureDevOpsClient\Symbol\RequestsApi
 
 All URIs are relative to *https://artifacts.dev.azure.com*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **requestsCreateRequests**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request requestsCreateRequests($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request requestsCreateRequests($organization, $body, $apiVersion)
 
 
 
@@ -27,16 +27,16 @@ Create a new symbol request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request(); // \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request | The symbol request to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request(); // \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request | The symbol request to create.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -53,12 +53,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request to create. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **requestsCreateRequestsRequestIdDebugEntries**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[] requestsCreateRequestsRequestIdDebugEntries($organization, $body, $requestId, $collection, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[] requestsCreateRequestsRequestIdDebugEntries($organization, $body, $requestId, $collection, $apiVersion)
 
 
 
@@ -84,16 +84,16 @@ Create debug entries for a symbol request as specified by its identifier.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch(); // \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch | A batch that contains debug entries to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch(); // \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch | A batch that contains debug entries to create.
 $requestId = "requestId_example"; // string | The symbol request identifier.
 $collection = "collection_example"; // string | A valid debug entry collection name. Must be \"debugentries\".
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -112,14 +112,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch**](../Model/DebugEntryCreateBatch.md)| A batch that contains debug entries to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntryCreateBatch**](../Model/DebugEntryCreateBatch.md)| A batch that contains debug entries to create. |
  **requestId** | **string**| The symbol request identifier. |
  **collection** | **string**| A valid debug entry collection name. Must be \&quot;debugentries\&quot;. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]**](../Model/DebugEntry.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]**](../Model/DebugEntry.md)
 
 ### Authorization
 
@@ -145,9 +145,9 @@ Delete a symbol request by request identifier.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -203,9 +203,9 @@ Delete a symbol request by request name.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -249,7 +249,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **requestsGetRequestsRequestId**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request requestsGetRequestsRequestId($organization, $requestId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request requestsGetRequestsRequestId($organization, $requestId, $apiVersion)
 
 
 
@@ -261,9 +261,9 @@ Get a symbol request by request identifier.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
 
 ### Authorization
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **requestsGetRequestsRequestName**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request requestsGetRequestsRequestName($organization, $requestName, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request requestsGetRequestsRequestName($organization, $requestName, $apiVersion)
 
 
 
@@ -318,9 +318,9 @@ Get a symbol request by request name.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -349,7 +349,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
 
 ### Authorization
 
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **requestsUpdateRequestsRequestId**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request requestsUpdateRequestsRequestId($organization, $body, $requestId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request requestsUpdateRequestsRequestId($organization, $body, $requestId, $apiVersion)
 
 
 
@@ -375,16 +375,16 @@ Update a symbol request by request identifier.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request(); // \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request | The symbol request.
+$body = new \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request(); // \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request | The symbol request.
 $requestId = "requestId_example"; // string | The symbol request identifier.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -402,13 +402,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request. |
  **requestId** | **string**| The symbol request identifier. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **requestsUpdateRequestsRequestName**
-> \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request requestsUpdateRequestsRequestName($organization, $body, $requestName, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request requestsUpdateRequestsRequestName($organization, $body, $requestName, $apiVersion)
 
 
 
@@ -434,16 +434,16 @@ Update a symbol request by request name.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\RequestsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\RequestsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request(); // \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request | The symbol request.
+$body = new \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request(); // \FrankHouweling\AzureDevOpsClient\Symbol\Model\Request | The symbol request.
 $requestName = "requestName_example"; // string | The symbol request name.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -461,13 +461,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)| The symbol request. |
  **requestName** | **string**| The symbol request name. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
+[**\FrankHouweling\AzureDevOpsClient\Symbol\Model\Request**](../Model/Request.md)
 
 ### Authorization
 

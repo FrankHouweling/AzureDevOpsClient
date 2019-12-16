@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\ChartsApi
+# FrankHouweling\AzureDevOpsClient\Work\ChartsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **chartsGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart chartsGet($organization, $project, $board, $name, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart chartsGet($organization, $project, $board, $name, $team, $apiVersion)
 
 
 
@@ -22,9 +22,9 @@ Get a board chart
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\ChartsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\ChartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **chartsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[] chartsList($organization, $project, $board, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[] chartsList($organization, $project, $board, $team, $apiVersion)
 
 
 
@@ -85,9 +85,9 @@ Get board charts
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\ChartsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\ChartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[]**](../Model/BoardChartReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[]**](../Model/BoardChartReference.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **chartsUpdate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart chartsUpdate($organization, $body, $project, $board, $name, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart chartsUpdate($organization, $body, $project, $board, $name, $team, $apiVersion)
 
 
 
@@ -146,16 +146,16 @@ Update a board chart
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\ChartsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\ChartsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart | 
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart(); // \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart | 
 $project = "project_example"; // string | Project ID or project name
 $board = "board_example"; // string | Identifier for board, either board's backlog level name (Eg:\"Stories\") or Id
 $name = "name_example"; // string | The chart name
@@ -176,7 +176,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)|  |
  **project** | **string**| Project ID or project name |
  **board** | **string**| Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id |
  **name** | **string**| The chart name |
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart**](../Model/BoardChart.md)
 
 ### Authorization
 

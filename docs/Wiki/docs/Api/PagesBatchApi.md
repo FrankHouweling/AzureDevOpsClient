@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Wiki\PagesBatchApi
+# FrankHouweling\AzureDevOpsClient\Wiki\PagesBatchApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pagesBatchGet**
-> \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[] pagesBatchGet($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[] pagesBatchGet($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -20,16 +20,16 @@ Returns pageable list of Wiki Pages
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Wiki\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Wiki\Api\PagesBatchApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Wiki\Api\PagesBatchApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest(); // \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest | Wiki batch page request.
+$body = new \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest(); // \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest | Wiki batch page request.
 $project = "project_example"; // string | Project ID or project name
 $wikiIdentifier = "wikiIdentifier_example"; // string | Wiki ID or wiki name.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -51,7 +51,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest**](../Model/WikiPagesBatchRequest.md)| Wiki batch page request. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest**](../Model/WikiPagesBatchRequest.md)| Wiki batch page request. |
  **project** | **string**| Project ID or project name |
  **wikiIdentifier** | **string**| Wiki ID or wiki name. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]**](../Model/WikiPageDetail.md)
+[**\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]**](../Model/WikiPageDetail.md)
 
 ### Authorization
 

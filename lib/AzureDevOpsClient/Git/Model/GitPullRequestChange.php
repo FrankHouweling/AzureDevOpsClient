@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequestChange Class Doc Comment
  *
  * @category Class
  * @description Change made in a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,11 +59,11 @@ class GitPullRequestChange implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'changeId' => 'int',
-        'newContentTemplate' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTemplate',
+        'newContentTemplate' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTemplate',
         'originalPath' => 'string',
         'changeType' => 'string',
         'item' => 'string',
-        'newContent' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent',
+        'newContent' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent',
         'sourceServerItem' => 'string',
         'url' => 'string',
         'changeTrackingId' => 'int'
@@ -329,7 +329,7 @@ class GitPullRequestChange implements ModelInterface, ArrayAccess
     /**
      * Gets newContentTemplate
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTemplate
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitTemplate
      */
     public function getNewContentTemplate()
     {
@@ -339,7 +339,7 @@ class GitPullRequestChange implements ModelInterface, ArrayAccess
     /**
      * Sets newContentTemplate
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTemplate $newContentTemplate New Content template to be used when pushing new changes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitTemplate $newContentTemplate New Content template to be used when pushing new changes.
      *
      * @return $this
      */
@@ -434,7 +434,7 @@ class GitPullRequestChange implements ModelInterface, ArrayAccess
     /**
      * Gets newContent
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent
      */
     public function getNewContent()
     {
@@ -444,7 +444,7 @@ class GitPullRequestChange implements ModelInterface, ArrayAccess
     /**
      * Sets newContent
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ItemContent $newContent Content of the item after the change.
      *
      * @return $this
      */

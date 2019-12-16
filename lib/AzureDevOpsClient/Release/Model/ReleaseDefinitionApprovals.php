@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionApprovals Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ReleaseDefinitionApprovals implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'approvalOptions' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions',
-        'approvals' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[]'
+        'approvalOptions' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions',
+        'approvals' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class ReleaseDefinitionApprovals implements ModelInterface, ArrayAccess
     /**
      * Gets approvalOptions
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions
      */
     public function getApprovalOptions()
     {
@@ -224,7 +224,7 @@ class ReleaseDefinitionApprovals implements ModelInterface, ArrayAccess
     /**
      * Sets approvalOptions
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ApprovalOptions $approvalOptions Gets or sets the approval options.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ApprovalOptions $approvalOptions Gets or sets the approval options.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class ReleaseDefinitionApprovals implements ModelInterface, ArrayAccess
     /**
      * Gets approvals
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[]
      */
     public function getApprovals()
     {
@@ -248,7 +248,7 @@ class ReleaseDefinitionApprovals implements ModelInterface, ArrayAccess
     /**
      * Sets approvals
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[] $approvals Gets or sets the approvals.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionApprovalStep[] $approvals Gets or sets the approvals.
      *
      * @return $this
      */

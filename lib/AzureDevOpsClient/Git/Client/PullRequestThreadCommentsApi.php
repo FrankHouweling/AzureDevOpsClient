@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestThreadCommentsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,16 +91,16 @@ class PullRequestThreadCommentsApi
      * Operation pullRequestThreadCommentsCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Comment
      */
     public function pullRequestThreadCommentsCreate($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
@@ -112,20 +112,20 @@ class PullRequestThreadCommentsApi
      * Operation pullRequestThreadCommentsCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadCommentsCreateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsCreateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         try {
@@ -177,7 +177,7 @@ class PullRequestThreadCommentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class PullRequestThreadCommentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -219,7 +219,7 @@ class PullRequestThreadCommentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -231,7 +231,7 @@ class PullRequestThreadCommentsApi
      */
     public function pullRequestThreadCommentsCreateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsCreateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         return $this->client
@@ -275,7 +275,7 @@ class PullRequestThreadCommentsApi
      * Create request for operation 'pullRequestThreadCommentsCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment to create. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -472,7 +472,7 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -492,7 +492,7 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -814,9 +814,9 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Comment
      */
     public function pullRequestThreadCommentsGet($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
@@ -835,13 +835,13 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadCommentsGetWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsGetRequest($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion);
 
         try {
@@ -893,7 +893,7 @@ class PullRequestThreadCommentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -947,7 +947,7 @@ class PullRequestThreadCommentsApi
      */
     public function pullRequestThreadCommentsGetAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsGetRequest($organization, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion);
 
         return $this->client
@@ -1192,9 +1192,9 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]
      */
     public function pullRequestThreadCommentsList($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
@@ -1212,13 +1212,13 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\Comment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadCommentsListWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]';
         $request = $this->pullRequestThreadCommentsListRequest($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         try {
@@ -1270,7 +1270,7 @@ class PullRequestThreadCommentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1322,7 +1322,7 @@ class PullRequestThreadCommentsApi
      */
     public function pullRequestThreadCommentsListAsyncWithHttpInfo($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment[]';
         $request = $this->pullRequestThreadCommentsListRequest($organization, $repositoryId, $pullRequestId, $threadId, $project, $apiVersion);
 
         return $this->client
@@ -1546,7 +1546,7 @@ class PullRequestThreadCommentsApi
      * Operation pullRequestThreadCommentsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -1554,9 +1554,9 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\Comment
      */
     public function pullRequestThreadCommentsUpdate($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
@@ -1568,7 +1568,7 @@ class PullRequestThreadCommentsApi
      * Operation pullRequestThreadCommentsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -1576,13 +1576,13 @@ class PullRequestThreadCommentsApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\Comment, HTTP status code, HTTP response headers (array of strings)
      */
     public function pullRequestThreadCommentsUpdateWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion);
 
         try {
@@ -1634,7 +1634,7 @@ class PullRequestThreadCommentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1650,7 +1650,7 @@ class PullRequestThreadCommentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -1677,7 +1677,7 @@ class PullRequestThreadCommentsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)
@@ -1690,7 +1690,7 @@ class PullRequestThreadCommentsApi
      */
     public function pullRequestThreadCommentsUpdateAsyncWithHttpInfo($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\Comment';
         $request = $this->pullRequestThreadCommentsUpdateRequest($organization, $body, $repositoryId, $pullRequestId, $threadId, $commentId, $project, $apiVersion);
 
         return $this->client
@@ -1734,7 +1734,7 @@ class PullRequestThreadCommentsApi
      * Create request for operation 'pullRequestThreadCommentsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\Comment $body The comment content that should be updated. Comments can be up to 150,000 characters. (required)
      * @param  string $repositoryId The repository ID of the pull request&#39;s target branch. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  int $threadId ID of the thread that the desired comment is in. (required)

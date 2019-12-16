@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * GraphMembership Class Doc Comment
  *
  * @category Class
  * @description Relationship between a container and a member
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class GraphMembership implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\ReferenceLinks',
         'containerDescriptor' => 'string',
         'memberDescriptor' => 'string'
     ];
@@ -220,7 +220,7 @@ class GraphMembership implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -230,7 +230,7 @@ class GraphMembership implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph membership. These links may be invoked to obtain additional relationships or more detailed information about this graph membership.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\ReferenceLinks $links This field contains zero or more interesting links about the graph membership. These links may be invoked to obtain additional relationships or more detailed information about this graph membership.
      *
      * @return $this
      */

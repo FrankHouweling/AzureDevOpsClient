@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * FileDiffsCriteria Class Doc Comment
  *
  * @category Class
  * @description Provides properties that describe inputs for the file diffs
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class FileDiffsCriteria implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'baseVersionCommit' => 'string',
-        'fileDiffParams' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileDiffParams[]',
+        'fileDiffParams' => '\FrankHouweling\AzureDevOpsClient\Git\Model\FileDiffParams[]',
         'targetVersionCommit' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class FileDiffsCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets fileDiffParams
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileDiffParams[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\FileDiffParams[]
      */
     public function getFileDiffParams()
     {
@@ -254,7 +254,7 @@ class FileDiffsCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets fileDiffParams
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\FileDiffParams[] $fileDiffParams List of parameters for each of the files for which we need to get the file diff
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\FileDiffParams[] $fileDiffParams List of parameters for each of the files for which we need to get the file diff
      *
      * @return $this
      */

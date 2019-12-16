@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * SourceProviderAttributes Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class SourceProviderAttributes implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
         'supportedCapabilities' => 'map[string,bool]',
-        'supportedTriggers' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SupportedTrigger[]'
+        'supportedTriggers' => '\FrankHouweling\AzureDevOpsClient\Build\Model\SupportedTrigger[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class SourceProviderAttributes implements ModelInterface, ArrayAccess
     /**
      * Gets supportedTriggers
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SupportedTrigger[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\SupportedTrigger[]
      */
     public function getSupportedTriggers()
     {
@@ -278,7 +278,7 @@ class SourceProviderAttributes implements ModelInterface, ArrayAccess
     /**
      * Sets supportedTriggers
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\SupportedTrigger[] $supportedTriggers The types of triggers supported by this source provider.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\SupportedTrigger[] $supportedTriggers The types of triggers supported by this source provider.
      *
      * @return $this
      */

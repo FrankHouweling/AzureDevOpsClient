@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultsContext Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class TestResultsContext implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Test\Model\BuildReference',
         'contextType' => 'string',
-        'pipelineReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PipelineReference',
-        'release' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseReference'
+        'pipelineReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\PipelineReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseReference'
     ];
 
     /**
@@ -251,7 +251,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\BuildReference
      */
     public function getBuild()
     {
@@ -261,7 +261,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\BuildReference $build build
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\BuildReference $build build
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Gets pipelineReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PipelineReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\PipelineReference
      */
     public function getPipelineReference()
     {
@@ -318,7 +318,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Sets pipelineReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PipelineReference $pipelineReference pipelineReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\PipelineReference $pipelineReference pipelineReference
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseReference
      */
     public function getRelease()
     {
@@ -342,7 +342,7 @@ class TestResultsContext implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ReleaseReference $release release
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ReleaseReference $release release
      *
      * @return $this
      */

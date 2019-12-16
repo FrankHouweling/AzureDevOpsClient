@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model
+ * @package  FrankHouweling\AzureDevOpsClient\Graph\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model
+ * @package FrankHouweling\AzureDevOpsClient\Graph\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

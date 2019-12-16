@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestPlan\TestSuiteEntryApi
+# FrankHouweling\AzureDevOpsClient\TestPlan\TestSuiteEntryApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **testSuiteEntryList**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[] testSuiteEntryList($organization, $project, $suiteId, $apiVersion, $suiteEntryType)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[] testSuiteEntryList($organization, $project, $suiteId, $apiVersion, $suiteEntryType)
 
 
 
@@ -21,9 +21,9 @@ Get a list of test suite entries in the test suite.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestSuiteEntryApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestSuiteEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]**](../Model/SuiteEntry.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]**](../Model/SuiteEntry.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testSuiteEntryReorderSuiteEntries**
-> \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[] testSuiteEntryReorderSuiteEntries($organization, $body, $project, $suiteId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[] testSuiteEntryReorderSuiteEntries($organization, $body, $project, $suiteId, $apiVersion)
 
 
 
@@ -82,16 +82,16 @@ Reorder test suite entries in the test suite.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestPlan\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestPlan\Api\TestSuiteEntryApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestPlan\Api\TestSuiteEntryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams()); // \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] | List of SuiteEntry to reorder.
+$body = array(new \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams()); // \FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[] | List of SuiteEntry to reorder.
 $project = "project_example"; // string | Project ID or project name
 $suiteId = 56; // int | Id of the parent test suite.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -110,14 +110,14 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[]**](../Model/SuiteEntryUpdateParams.md)| List of SuiteEntry to reorder. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntryUpdateParams[]**](../Model/SuiteEntryUpdateParams.md)| List of SuiteEntry to reorder. |
  **project** | **string**| Project ID or project name |
  **suiteId** | **int**| Id of the parent test suite. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]**](../Model/SuiteEntry.md)
+[**\FrankHouweling\AzureDevOpsClient\TestPlan\Model\SuiteEntry[]**](../Model/SuiteEntry.md)
 
 ### Authorization
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**changeList** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeList**](ChangeList.md) | The Change list (changeset/commit/shelveset) for this point in history | [optional] 
+**changeList** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ChangeList**](ChangeList.md) | The Change list (changeset/commit/shelveset) for this point in history | [optional] 
 **itemChangeType** | **string** | The change made to the item from this change list (only relevant for File history, not folders) | [optional] 
 **serverItem** | **string** | The path of the item at this point in history (only relevant for File history, not folders) | [optional] 
 **encoding** | **int** | The encoding of the item at this point in history (only relevant for File history, not folders) | [optional] 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Client;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TokenAdmin\ApiException;
-use AzureDevOpsClient\TokenAdmin\Configuration;
-use AzureDevOpsClient\TokenAdmin\HeaderSelector;
-use AzureDevOpsClient\TokenAdmin\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\Configuration;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ObjectSerializer;
 
 /**
  * RevocationRulesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,10 +91,10 @@ class RevocationRulesApi
      * Operation revocationRulesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -107,10 +107,10 @@ class RevocationRulesApi
      * Operation revocationRulesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -162,7 +162,7 @@ class RevocationRulesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -184,7 +184,7 @@ class RevocationRulesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -222,7 +222,7 @@ class RevocationRulesApi
      * Create request for operation 'revocationRulesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocationRule $body The revocation rule to create. The rule must specify a space-separated list of scopes, after which preexisting OAuth authorizations that match that any of the scopes will be rejected. For a list of all OAuth scopes supported by VSTS, see: https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/oauth?view&#x3D;vsts#scopes The rule may also specify the time before which to revoke tokens. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

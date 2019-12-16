@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Tfvc\ChangesetsApi
+# FrankHouweling\AzureDevOpsClient\Tfvc\ChangesetsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **changesetsCreate**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef changesetsCreate($organization, $body, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef changesetsCreate($organization, $body, $project, $apiVersion)
 
 
 
@@ -25,16 +25,16 @@ Create a new changeset.  Accepts TfvcChangeset as JSON body
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset(); // \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset | 
+$body = new \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset(); // \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset | 
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.3' to use this version of the api.
 
@@ -52,13 +52,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset**](../Model/TfvcChangeset.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset**](../Model/TfvcChangeset.md)|  |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef**](../Model/TfvcChangesetRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef**](../Model/TfvcChangesetRef.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **changesetsGet**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset changesetsGet($organization, $id, $project, $apiVersion, $maxChangeCount, $includeDetails, $includeWorkItems, $maxCommentLength, $includeSourceRename, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset changesetsGet($organization, $id, $project, $apiVersion, $maxChangeCount, $includeDetails, $includeWorkItems, $maxCommentLength, $includeSourceRename, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId)
 
 
 
@@ -84,9 +84,9 @@ Retrieve a Tfvc Changeset
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangeset**](../Model/TfvcChangeset.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangeset**](../Model/TfvcChangeset.md)
 
 ### Authorization
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **changesetsGetBatchedChangesets**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[] changesetsGetBatchedChangesets($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[] changesetsGetBatchedChangesets($organization, $body, $apiVersion)
 
 
 
@@ -177,16 +177,16 @@ Returns changesets for a given list of changeset Ids.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData(); // \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData | List of changeset IDs.
+$body = new \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData(); // \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData | List of changeset IDs.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -203,12 +203,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData**](../Model/TfvcChangesetsRequestData.md)| List of changeset IDs. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetsRequestData**](../Model/TfvcChangesetsRequestData.md)| List of changeset IDs. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]**](../Model/TfvcChangesetRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]**](../Model/TfvcChangesetRef.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **changesetsGetChangesetChanges**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[] changesetsGetChangesetChanges($organization, $id, $apiVersion, $skip, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[] changesetsGetChangesetChanges($organization, $id, $apiVersion, $skip, $top, $continuationToken)
 
 
 
@@ -234,9 +234,9 @@ Retrieve Tfvc changes for a given changeset.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]**](../Model/TfvcChange.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]**](../Model/TfvcChange.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **changesetsGetChangesetWorkItems**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] changesetsGetChangesetWorkItems($organization, $id, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[] changesetsGetChangesetWorkItems($organization, $id, $apiVersion)
 
 
 
@@ -297,9 +297,9 @@ Retrieves the work items associated with a particular changeset.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]**](../Model/AssociatedWorkItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]**](../Model/AssociatedWorkItem.md)
 
 ### Authorization
 
@@ -342,7 +342,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **changesetsGetChangesets**
-> \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[] changesetsGetChangesets($organization, $project, $apiVersion, $maxCommentLength, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId)
+> \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[] changesetsGetChangesets($organization, $project, $apiVersion, $maxCommentLength, $skip, $top, $orderby, $searchCriteriaAuthor, $searchCriteriaFollowRenames, $searchCriteriaFromDate, $searchCriteriaFromId, $searchCriteriaIncludeLinks, $searchCriteriaItemPath, $searchCriteriaMappings, $searchCriteriaToDate, $searchCriteriaToId)
 
 
 
@@ -354,9 +354,9 @@ Retrieve Tfvc Changesets  Note: This is a new version of the GetChangesets API t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Tfvc\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Tfvc\Api\ChangesetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -411,7 +411,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]**](../Model/TfvcChangesetRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChangesetRef[]**](../Model/TfvcChangesetRef.md)
 
 ### Authorization
 

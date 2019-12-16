@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Client;
+namespace FrankHouweling\AzureDevOpsClient\Security\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Security\ApiException;
-use AzureDevOpsClient\Security\Configuration;
-use AzureDevOpsClient\Security\HeaderSelector;
-use AzureDevOpsClient\Security\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Security\ApiException;
+use FrankHouweling\AzureDevOpsClient\Security\Configuration;
+use FrankHouweling\AzureDevOpsClient\Security\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * SecurityNamespacesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class SecurityNamespacesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $localOnly If true, retrieve only local security namespaces. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]
      */
     public function securityNamespacesQuery($organization, $securityNamespaceId, $apiVersion, $localOnly = null)
     {
@@ -113,13 +113,13 @@ class SecurityNamespacesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $localOnly If true, retrieve only local security namespaces. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[], HTTP status code, HTTP response headers (array of strings)
      */
     public function securityNamespacesQueryWithHttpInfo($organization, $securityNamespaceId, $apiVersion, $localOnly = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]';
         $request = $this->securityNamespacesQueryRequest($organization, $securityNamespaceId, $apiVersion, $localOnly);
 
         try {
@@ -171,7 +171,7 @@ class SecurityNamespacesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]',
+                        '\FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class SecurityNamespacesApi
      */
     public function securityNamespacesQueryAsyncWithHttpInfo($organization, $securityNamespaceId, $apiVersion, $localOnly = null)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\SecurityNamespaceDescription[]';
         $request = $this->securityNamespacesQueryRequest($organization, $securityNamespaceId, $apiVersion, $localOnly);
 
         return $this->client

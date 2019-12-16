@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\StatusesApi
+# FrankHouweling\AzureDevOpsClient\Git\StatusesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **statusesCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus statusesCreate($organization, $body, $commitId, $repositoryId, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus statusesCreate($organization, $body, $commitId, $repositoryId, $project, $apiVersion)
 
 
 
@@ -21,16 +21,16 @@ Create Git commit status.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\StatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\StatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus | Git commit status object to create.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus | Git commit status object to create.
 $commitId = "commitId_example"; // string | ID of the Git commit.
 $repositoryId = "repositoryId_example"; // string | ID of the repository.
 $project = "project_example"; // string | Project ID or project name
@@ -50,7 +50,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus**](../Model/GitStatus.md)| Git commit status object to create. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus**](../Model/GitStatus.md)| Git commit status object to create. |
  **commitId** | **string**| ID of the Git commit. |
  **repositoryId** | **string**| ID of the repository. |
  **project** | **string**| Project ID or project name |
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus**](../Model/GitStatus.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus**](../Model/GitStatus.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **statusesList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[] statusesList($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip, $latestOnly)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[] statusesList($organization, $commitId, $repositoryId, $project, $apiVersion, $top, $skip, $latestOnly)
 
 
 
@@ -84,9 +84,9 @@ Get statuses associated with the Git commit.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\StatusesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\StatusesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]**](../Model/GitStatus.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]**](../Model/GitStatus.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\CapacitiesApi
+# FrankHouweling\AzureDevOpsClient\Work\CapacitiesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **capacitiesGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef capacitiesGet($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef capacitiesGet($organization, $project, $iterationId, $teamMemberId, $team, $apiVersion)
 
 
 
@@ -23,9 +23,9 @@ Get a team member's capacity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\CapacitiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\CapacitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef**](../Model/TeamMemberCapacityIdentityRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef**](../Model/TeamMemberCapacityIdentityRef.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **capacitiesList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] capacitiesList($organization, $project, $iterationId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] capacitiesList($organization, $project, $iterationId, $team, $apiVersion)
 
 
 
@@ -86,9 +86,9 @@ Get a team's capacity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\CapacitiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\CapacitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **capacitiesReplaceCapacitiesWithIdentityRef**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] capacitiesReplaceCapacitiesWithIdentityRef($organization, $body, $project, $iterationId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] capacitiesReplaceCapacitiesWithIdentityRef($organization, $body, $project, $iterationId, $team, $apiVersion)
 
 
 
@@ -147,16 +147,16 @@ Replace a team's capacity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\CapacitiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\CapacitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = array(new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef()); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] | Team capacity to replace
+$body = array(new \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef()); // \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[] | Team capacity to replace
 $project = "project_example"; // string | Project ID or project name
 $iterationId = "iterationId_example"; // string | ID of the iteration
 $team = "team_example"; // string | Team ID or team name
@@ -176,7 +176,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)| Team capacity to replace |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)| Team capacity to replace |
  **project** | **string**| Project ID or project name |
  **iterationId** | [**string**](../Model/.md)| ID of the iteration |
  **team** | **string**| Team ID or team name |
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef[]**](../Model/TeamMemberCapacityIdentityRef.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **capacitiesUpdate**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef capacitiesUpdate($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef capacitiesUpdate($organization, $body, $project, $iterationId, $teamMemberId, $team, $apiVersion)
 
 
 
@@ -210,16 +210,16 @@ Update a team member's capacity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\CapacitiesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\CapacitiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch(); // \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch | Updated capacity
+$body = new \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch(); // \FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch | Updated capacity
 $project = "project_example"; // string | Project ID or project name
 $iterationId = "iterationId_example"; // string | ID of the iteration
 $teamMemberId = "teamMemberId_example"; // string | ID of the team member
@@ -240,7 +240,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CapacityPatch**](../Model/CapacityPatch.md)| Updated capacity |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\CapacityPatch**](../Model/CapacityPatch.md)| Updated capacity |
  **project** | **string**| Project ID or project name |
  **iterationId** | [**string**](../Model/.md)| ID of the iteration |
  **teamMemberId** | [**string**](../Model/.md)| ID of the team member |
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef**](../Model/TeamMemberCapacityIdentityRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\TeamMemberCapacityIdentityRef**](../Model/TeamMemberCapacityIdentityRef.md)
 
 ### Authorization
 

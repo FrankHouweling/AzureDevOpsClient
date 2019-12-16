@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * InputValues Class Doc Comment
  *
  * @category Class
  * @description Information about the possible/allowed values for a given subscription input
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,12 +59,12 @@ class InputValues implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'defaultValue' => 'string',
-        'error' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValuesError',
+        'error' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\InputValuesError',
         'inputId' => 'string',
         'isDisabled' => 'bool',
         'isLimitedToPossibleValues' => 'bool',
         'isReadOnly' => 'bool',
-        'possibleValues' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[]'
+        'possibleValues' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValuesError
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValuesError
      */
     public function getError()
     {
@@ -278,7 +278,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValuesError $error Errors encountered while computing dynamic values.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValuesError $error Errors encountered while computing dynamic values.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Gets possibleValues
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[]
      */
     public function getPossibleValues()
     {
@@ -398,7 +398,7 @@ class InputValues implements ModelInterface, ArrayAccess
     /**
      * Sets possibleValues
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\InputValue[] $possibleValues Possible values that this input can take
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\InputValue[] $possibleValues Possible values that this input can take
      *
      * @return $this
      */

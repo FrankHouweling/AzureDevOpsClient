@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **iconTaskId** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **name** | **string** |  | [optional] 
-**template** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinition32**](BuildDefinition32.md) |  | [optional] 
+**template** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinition32**](BuildDefinition32.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

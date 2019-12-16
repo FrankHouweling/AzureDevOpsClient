@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * ProjectInfo Class Doc Comment
  *
  * @category Class
  * @description Contains information describing a project.
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class ProjectInfo implements ModelInterface, ArrayAccess
         'id' => 'string',
         'lastUpdateTime' => '\DateTime',
         'name' => 'string',
-        'properties' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]',
+        'properties' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]',
         'revision' => 'int',
         'state' => 'string',
         'uri' => 'string',
@@ -444,7 +444,7 @@ class ProjectInfo implements ModelInterface, ArrayAccess
     /**
      * Gets properties
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[]
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[]
      */
     public function getProperties()
     {
@@ -454,7 +454,7 @@ class ProjectInfo implements ModelInterface, ArrayAccess
     /**
      * Sets properties
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ProjectProperty[] $properties A set of name-value pairs storing additional property data related to the project.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ProjectProperty[] $properties A set of name-value pairs storing additional property data related to the project.
      *
      * @return $this
      */

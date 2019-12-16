@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Symbol\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * DebugEntryCreateBatch Class Doc Comment
  *
  * @category Class
  * @description A batch of debug entry to create.
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class DebugEntryCreateBatch implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'createBehavior' => 'string',
-        'debugEntries' => '\AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]'
+        'debugEntries' => '\FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]'
     ];
 
     /**
@@ -272,7 +272,7 @@ class DebugEntryCreateBatch implements ModelInterface, ArrayAccess
     /**
      * Gets debugEntries
      *
-     * @return \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[]
      */
     public function getDebugEntries()
     {
@@ -282,7 +282,7 @@ class DebugEntryCreateBatch implements ModelInterface, ArrayAccess
     /**
      * Sets debugEntries
      *
-     * @param \AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model\DebugEntry[] $debugEntries The debug entries.
+     * @param \FrankHouweling\AzureDevOpsClient\Symbol\Model\DebugEntry[] $debugEntries The debug entries.
      *
      * @return $this
      */

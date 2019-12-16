@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentManualInterventionPendingEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deployment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment',
+        'deployment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment',
         'emailRecipients' => 'string[]',
-        'environmentOwner' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'manualIntervention' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention',
-        'project' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release'
+        'environmentOwner' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'manualIntervention' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Release'
     ];
 
     /**
@@ -238,7 +238,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Gets deployment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment
      */
     public function getDeployment()
     {
@@ -248,7 +248,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Sets deployment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Gets environmentOwner
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getEnvironmentOwner()
     {
@@ -296,7 +296,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Sets environmentOwner
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $environmentOwner environmentOwner
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $environmentOwner environmentOwner
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Gets manualIntervention
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention
      */
     public function getManualIntervention()
     {
@@ -320,7 +320,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Sets manualIntervention
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ManualIntervention $manualIntervention manualIntervention
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ManualIntervention $manualIntervention manualIntervention
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProject()
     {
@@ -344,7 +344,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $project project
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Release
      */
     public function getRelease()
     {
@@ -368,7 +368,7 @@ class DeploymentManualInterventionPendingEvent implements ModelInterface, ArrayA
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Release $release release
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Release $release release
      *
      * @return $this
      */

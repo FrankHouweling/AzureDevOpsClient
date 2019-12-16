@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactContributionDefinition Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,15 +58,15 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactTriggerConfiguration' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration',
+        'artifactTriggerConfiguration' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration',
         'artifactType' => 'string',
         'artifactTypeStreamMapping' => 'map[string,string]',
         'browsableArtifactTypeMapping' => 'map[string,string]',
-        'dataSourceBindings' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBinding[]',
+        'dataSourceBindings' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBinding[]',
         'displayName' => 'string',
         'downloadTaskId' => 'string',
         'endpointTypeId' => 'string',
-        'inputDescriptors' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[]',
+        'inputDescriptors' => '\FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[]',
         'isCommitsTraceabilitySupported' => 'bool',
         'isWorkitemsTraceabilitySupported' => 'bool',
         'name' => 'string',
@@ -286,7 +286,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets artifactTriggerConfiguration
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration
      */
     public function getArtifactTriggerConfiguration()
     {
@@ -296,7 +296,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets artifactTriggerConfiguration
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration $artifactTriggerConfiguration artifactTriggerConfiguration
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration $artifactTriggerConfiguration artifactTriggerConfiguration
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets dataSourceBindings
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBinding[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBinding[]
      */
     public function getDataSourceBindings()
     {
@@ -392,7 +392,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets dataSourceBindings
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBinding[] $dataSourceBindings dataSourceBindings
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBinding[] $dataSourceBindings dataSourceBindings
      *
      * @return $this
      */
@@ -478,7 +478,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets inputDescriptors
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[]
      */
     public function getInputDescriptors()
     {
@@ -488,7 +488,7 @@ class ArtifactContributionDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets inputDescriptors
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[] $inputDescriptors inputDescriptors
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[] $inputDescriptors inputDescriptors
      *
      * @return $this
      */

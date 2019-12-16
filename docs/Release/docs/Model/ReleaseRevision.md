@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**changedBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets or sets the identity who changed. | [optional] 
+**changedBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Gets or sets the identity who changed. | [optional] 
 **changedDate** | [**\DateTime**](\DateTime.md) | Change date of the revision. | [optional] 
 **changeDetails** | **string** | Change details of the revision. | [optional] 
 **changeType** | **string** | Change details of the revision. Typically ChangeDetails values are Add and Update. | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * JObject Class Doc Comment
  *
  * @category Class
  * @description Represents a JSON object.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class JObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'item' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken',
+        'item' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken',
         'type' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class JObject implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken
      */
     public function getItem()
     {
@@ -224,7 +224,7 @@ class JObject implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\JToken $item item
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\JToken $item item
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * MembershipsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to a group that can be the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership
      */
     public function membershipsAdd($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
@@ -113,13 +113,13 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to a group that can be the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership, HTTP status code, HTTP response headers (array of strings)
      */
     public function membershipsAddWithHttpInfo($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership';
         $request = $this->membershipsAddRequest($organization, $subjectDescriptor, $containerDescriptor, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class MembershipsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class MembershipsApi
      */
     public function membershipsAddAsyncWithHttpInfo($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership';
         $request = $this->membershipsAddRequest($organization, $subjectDescriptor, $containerDescriptor, $apiVersion);
 
         return $this->client
@@ -417,7 +417,7 @@ class MembershipsApi
      * @param  string $containerDescriptor The group that is the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -434,7 +434,7 @@ class MembershipsApi
      * @param  string $containerDescriptor The group that is the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -702,9 +702,9 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership
      */
     public function membershipsGet($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
@@ -720,13 +720,13 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership, HTTP status code, HTTP response headers (array of strings)
      */
     public function membershipsGetWithHttpInfo($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership';
         $request = $this->membershipsGetRequest($organization, $subjectDescriptor, $containerDescriptor, $apiVersion);
 
         try {
@@ -778,7 +778,7 @@ class MembershipsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -826,7 +826,7 @@ class MembershipsApi
      */
     public function membershipsGetAsyncWithHttpInfo($organization, $subjectDescriptor, $containerDescriptor, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership';
         $request = $this->membershipsGetRequest($organization, $subjectDescriptor, $containerDescriptor, $apiVersion);
 
         return $this->client
@@ -1025,9 +1025,9 @@ class MembershipsApi
      * @param  string $direction Defaults to Up. (optional)
      * @param  int $depth The maximum number of edges to traverse up or down the membership tree. Currently the only supported value is &#39;1&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[]
      */
     public function membershipsList($organization, $subjectDescriptor, $apiVersion, $direction = null, $depth = null)
     {
@@ -1044,13 +1044,13 @@ class MembershipsApi
      * @param  string $direction Defaults to Up. (optional)
      * @param  int $depth The maximum number of edges to traverse up or down the membership tree. Currently the only supported value is &#39;1&#39;. (optional)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[], HTTP status code, HTTP response headers (array of strings)
      */
     public function membershipsListWithHttpInfo($organization, $subjectDescriptor, $apiVersion, $direction = null, $depth = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[]';
         $request = $this->membershipsListRequest($organization, $subjectDescriptor, $apiVersion, $direction, $depth);
 
         try {
@@ -1102,7 +1102,7 @@ class MembershipsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[]',
+                        '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1152,7 +1152,7 @@ class MembershipsApi
      */
     public function membershipsListAsyncWithHttpInfo($organization, $subjectDescriptor, $apiVersion, $direction = null, $depth = null)
     {
-        $returnType = '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphMembership[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphMembership[]';
         $request = $this->membershipsListRequest($organization, $subjectDescriptor, $apiVersion, $direction, $depth);
 
         return $this->client
@@ -1345,7 +1345,7 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to a group that is the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1362,7 +1362,7 @@ class MembershipsApi
      * @param  string $containerDescriptor A descriptor to a group that is the container in the relationship. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

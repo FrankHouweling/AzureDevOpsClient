@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**idAndRevs** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]**](TestCaseResultIdAndRev.md) |  | [optional] 
+**idAndRevs** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]**](TestCaseResultIdAndRev.md) |  | [optional] 
 **includeActionResults** | **bool** |  | [optional] 
 **projectName** | **string** |  | [optional] 
 

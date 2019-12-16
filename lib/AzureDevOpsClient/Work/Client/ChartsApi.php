@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * ChartsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class ChartsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart
      */
     public function chartsGet($organization, $project, $board, $name, $team, $apiVersion)
     {
@@ -117,13 +117,13 @@ class ChartsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart, HTTP status code, HTTP response headers (array of strings)
      */
     public function chartsGetWithHttpInfo($organization, $project, $board, $name, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart';
         $request = $this->chartsGetRequest($organization, $project, $board, $name, $team, $apiVersion);
 
         try {
@@ -175,7 +175,7 @@ class ChartsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -227,7 +227,7 @@ class ChartsApi
      */
     public function chartsGetAsyncWithHttpInfo($organization, $project, $board, $name, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart';
         $request = $this->chartsGetRequest($organization, $project, $board, $name, $team, $apiVersion);
 
         return $this->client
@@ -456,9 +456,9 @@ class ChartsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[]
      */
     public function chartsList($organization, $project, $board, $team, $apiVersion)
     {
@@ -475,13 +475,13 @@ class ChartsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function chartsListWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[]';
         $request = $this->chartsListRequest($organization, $project, $board, $team, $apiVersion);
 
         try {
@@ -533,7 +533,7 @@ class ChartsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -583,7 +583,7 @@ class ChartsApi
      */
     public function chartsListAsyncWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChartReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChartReference[]';
         $request = $this->chartsListRequest($organization, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -792,16 +792,16 @@ class ChartsApi
      * Operation chartsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id (required)
      * @param  string $name The chart name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart
      */
     public function chartsUpdate($organization, $body, $project, $board, $name, $team, $apiVersion)
     {
@@ -813,20 +813,20 @@ class ChartsApi
      * Operation chartsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id (required)
      * @param  string $name The chart name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart, HTTP status code, HTTP response headers (array of strings)
      */
     public function chartsUpdateWithHttpInfo($organization, $body, $project, $board, $name, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart';
         $request = $this->chartsUpdateRequest($organization, $body, $project, $board, $name, $team, $apiVersion);
 
         try {
@@ -878,7 +878,7 @@ class ChartsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class ChartsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id (required)
      * @param  string $name The chart name (required)
@@ -920,7 +920,7 @@ class ChartsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id (required)
      * @param  string $name The chart name (required)
@@ -932,7 +932,7 @@ class ChartsApi
      */
     public function chartsUpdateAsyncWithHttpInfo($organization, $body, $project, $board, $name, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart';
         $request = $this->chartsUpdateRequest($organization, $body, $project, $board, $name, $team, $apiVersion);
 
         return $this->client
@@ -976,7 +976,7 @@ class ChartsApi
      * Create request for operation 'chartsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardChart $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board Identifier for board, either board&#39;s backlog level name (Eg:\&quot;Stories\&quot;) or Id (required)
      * @param  string $name The chart name (required)

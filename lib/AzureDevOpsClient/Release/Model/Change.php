@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * Change Class Doc Comment
  *
  * @category Class
  * @description Represents a change associated with a build.
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class Change implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'author' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'changeType' => 'string',
         'displayUri' => 'string',
         'id' => 'string',
         'location' => 'string',
         'message' => 'string',
-        'pushedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'pushedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'timestamp' => '\DateTime'
     ];
 
@@ -250,7 +250,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -260,7 +260,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $author The author of the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $author The author of the change.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Gets pushedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getPushedBy()
     {
@@ -404,7 +404,7 @@ class Change implements ModelInterface, ArrayAccess
     /**
      * Sets pushedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $pushedBy The person or process that pushed the change.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $pushedBy The person or process that pushed the change.
      *
      * @return $this
      */

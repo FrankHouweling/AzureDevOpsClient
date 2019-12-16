@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildDefinitionStep Class Doc Comment
  *
  * @category Class
  * @description Represents a step in a build phase.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class BuildDefinitionStep implements ModelInterface, ArrayAccess
         'environment' => 'map[string,string]',
         'inputs' => 'map[string,string]',
         'refName' => 'string',
-        'task' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskDefinitionReference',
+        'task' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TaskDefinitionReference',
         'timeoutInMinutes' => 'int'
     ];
 
@@ -454,7 +454,7 @@ class BuildDefinitionStep implements ModelInterface, ArrayAccess
     /**
      * Gets task
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskDefinitionReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TaskDefinitionReference
      */
     public function getTask()
     {
@@ -464,7 +464,7 @@ class BuildDefinitionStep implements ModelInterface, ArrayAccess
     /**
      * Sets task
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TaskDefinitionReference $task The task associated with this step.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TaskDefinitionReference $task The task associated with this step.
      *
      * @return $this
      */

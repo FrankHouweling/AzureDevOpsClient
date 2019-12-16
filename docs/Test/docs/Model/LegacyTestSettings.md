@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **lastUpdated** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **lastUpdatedBy** | **string** |  | [optional] 
 **lastUpdatedByName** | **string** |  | [optional] 
-**machineRoles** | [**\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]**](TestSettingsMachineRole.md) |  | [optional] 
+**machineRoles** | [**\FrankHouweling\AzureDevOpsClient\Test\Model\TestSettingsMachineRole[]**](TestSettingsMachineRole.md) |  | [optional] 
 **name** | **string** |  | [optional] 
 **revision** | **int** |  | [optional] 
 **settings** | **string** |  | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentCompletedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,9 +64,9 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
         'url' => 'string',
         'comment' => 'string',
         'data' => 'map[string,object]',
-        'deployment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment',
-        'environment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
-        'project' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference'
+        'deployment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment',
+        'environment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference'
     ];
 
     /**
@@ -400,7 +400,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets deployment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment
      */
     public function getDeployment()
     {
@@ -410,7 +410,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets deployment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment $deployment deployment
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets environment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment
      */
     public function getEnvironment()
     {
@@ -434,7 +434,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets environment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironment $environment environment
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironment $environment environment
      *
      * @return $this
      */
@@ -448,7 +448,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProject()
     {
@@ -458,7 +458,7 @@ class DeploymentCompletedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $project project
      *
      * @return $this
      */

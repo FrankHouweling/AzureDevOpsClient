@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * FieldValuesQuery Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class FieldValuesQuery implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'currentValues' => 'map[string,string]',
-        'inputValues' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\FieldInputValues[]',
+        'inputValues' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\FieldInputValues[]',
         'resource' => 'object',
         'scope' => 'string'
     ];
@@ -250,7 +250,7 @@ class FieldValuesQuery implements ModelInterface, ArrayAccess
     /**
      * Gets inputValues
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\FieldInputValues[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\FieldInputValues[]
      */
     public function getInputValues()
     {
@@ -260,7 +260,7 @@ class FieldValuesQuery implements ModelInterface, ArrayAccess
     /**
      * Sets inputValues
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\FieldInputValues[] $inputValues inputValues
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\FieldInputValues[] $inputValues inputValues
      *
      * @return $this
      */

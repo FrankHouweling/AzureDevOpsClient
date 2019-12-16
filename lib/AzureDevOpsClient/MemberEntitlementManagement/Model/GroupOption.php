@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * GroupOption Class Doc Comment
  *
  * @category Class
  * @description Group option to add a user to
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GroupOption implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accessLevel' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
-        'group' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group'
+        'accessLevel' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel',
+        'group' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GroupOption implements ModelInterface, ArrayAccess
     /**
      * Gets accessLevel
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel
      */
     public function getAccessLevel()
     {
@@ -224,7 +224,7 @@ class GroupOption implements ModelInterface, ArrayAccess
     /**
      * Sets accessLevel
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $accessLevel Access Level
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel $accessLevel Access Level
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GroupOption implements ModelInterface, ArrayAccess
     /**
      * Gets group
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group
      */
     public function getGroup()
     {
@@ -248,7 +248,7 @@ class GroupOption implements ModelInterface, ArrayAccess
     /**
      * Sets group
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\Group $group Group
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\Group $group Group
      *
      * @return $this
      */

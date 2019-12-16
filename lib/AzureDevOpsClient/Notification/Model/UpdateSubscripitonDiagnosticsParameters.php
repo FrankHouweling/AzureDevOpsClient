@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * UpdateSubscripitonDiagnosticsParameters Class Doc Comment
  *
  * @category Class
  * @description Parameters to update diagnostics settings for a subscription.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'deliveryResults' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters',
-        'deliveryTracing' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters',
-        'evaluationTracing' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters'
+        'deliveryResults' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters',
+        'deliveryTracing' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters',
+        'evaluationTracing' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters'
     ];
 
     /**
@@ -220,7 +220,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Gets deliveryResults
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
      */
     public function getDeliveryResults()
     {
@@ -230,7 +230,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Sets deliveryResults
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $deliveryResults Diagnostics settings for retaining delivery results.  Used for Service Hooks subscriptions.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $deliveryResults Diagnostics settings for retaining delivery results.  Used for Service Hooks subscriptions.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Gets deliveryTracing
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
      */
     public function getDeliveryTracing()
     {
@@ -254,7 +254,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Sets deliveryTracing
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $deliveryTracing Diagnostics settings for troubleshooting notification delivery.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $deliveryTracing Diagnostics settings for troubleshooting notification delivery.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Gets evaluationTracing
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters
      */
     public function getEvaluationTracing()
     {
@@ -278,7 +278,7 @@ class UpdateSubscripitonDiagnosticsParameters implements ModelInterface, ArrayAc
     /**
      * Sets evaluationTracing
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $evaluationTracing Diagnostics settings for troubleshooting event matching.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\UpdateSubscripitonTracingParameters $evaluationTracing Diagnostics settings for troubleshooting event matching.
      *
      * @return $this
      */

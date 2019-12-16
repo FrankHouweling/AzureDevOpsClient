@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitCommitToCreate Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GitCommitToCreate implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'baseRef' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef',
+        'baseRef' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRef',
         'comment' => 'string',
-        'pathActions' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPathAction[]'
+        'pathActions' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPathAction[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class GitCommitToCreate implements ModelInterface, ArrayAccess
     /**
      * Gets baseRef
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef
      */
     public function getBaseRef()
     {
@@ -230,7 +230,7 @@ class GitCommitToCreate implements ModelInterface, ArrayAccess
     /**
      * Sets baseRef
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRef $baseRef baseRef
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRef $baseRef baseRef
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class GitCommitToCreate implements ModelInterface, ArrayAccess
     /**
      * Gets pathActions
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPathAction[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPathAction[]
      */
     public function getPathActions()
     {
@@ -278,7 +278,7 @@ class GitCommitToCreate implements ModelInterface, ArrayAccess
     /**
      * Sets pathActions
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPathAction[] $pathActions pathActions
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPathAction[] $pathActions pathActions
      *
      * @return $this
      */

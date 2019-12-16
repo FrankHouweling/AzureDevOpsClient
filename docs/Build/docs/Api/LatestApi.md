@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\LatestApi
+# FrankHouweling\AzureDevOpsClient\Build\LatestApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **latestGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build latestGet($organization, $project, $definition, $apiVersion, $branchName)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\Build latestGet($organization, $project, $definition, $apiVersion, $branchName)
 
 
 
@@ -20,9 +20,9 @@ Gets the latest build for a definition, optionally scoped to a specific branch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\LatestApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\LatestApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](../Model/Build.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Client;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Graph\ApiException;
-use AzureDevOpsClient\Graph\Configuration;
-use AzureDevOpsClient\Graph\HeaderSelector;
-use AzureDevOpsClient\Graph\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Graph\ApiException;
+use FrankHouweling\AzureDevOpsClient\Graph\Configuration;
+use FrankHouweling\AzureDevOpsClient\Graph\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * SubjectLookupApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class SubjectLookupApi
      * Operation subjectLookupLookupSubjects
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject]
      */
     public function subjectLookupLookupSubjects($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class SubjectLookupApi
      * Operation subjectLookupLookupSubjectsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Graph\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Graph\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject], HTTP status code, HTTP response headers (array of strings)
+     * @return array of map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject], HTTP status code, HTTP response headers (array of strings)
      */
     public function subjectLookupLookupSubjectsWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = 'map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject]';
+        $returnType = 'map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject]';
         $request = $this->subjectLookupLookupSubjectsRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class SubjectLookupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject]',
+                        'map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class SubjectLookupApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class SubjectLookupApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class SubjectLookupApi
      */
     public function subjectLookupLookupSubjectsAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = 'map[string,\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubject]';
+        $returnType = 'map[string,\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubject]';
         $request = $this->subjectLookupLookupSubjectsRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class SubjectLookupApi
      * Create request for operation 'subjectLookupLookupSubjects'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphSubjectLookup $body A list of descriptors that specifies a subset of subjects to retrieve. Each descriptor uniquely identifies the subject across all instance scopes, but only at a single point in time. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException

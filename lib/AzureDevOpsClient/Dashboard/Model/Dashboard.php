@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * Dashboard Class Doc Comment
  *
  * @category Class
  * @description Model of a Dashboard.
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class Dashboard implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
         'dashboardScope' => 'string',
         'description' => 'string',
         'eTag' => 'string',
@@ -69,7 +69,7 @@ class Dashboard implements ModelInterface, ArrayAccess
         'position' => 'int',
         'refreshInterval' => 'int',
         'url' => 'string',
-        'widgets' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]'
+        'widgets' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class Dashboard implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -309,7 +309,7 @@ class Dashboard implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -572,7 +572,7 @@ class Dashboard implements ModelInterface, ArrayAccess
     /**
      * Gets widgets
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[]
      */
     public function getWidgets()
     {
@@ -582,7 +582,7 @@ class Dashboard implements ModelInterface, ArrayAccess
     /**
      * Sets widgets
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\Widget[] $widgets The set of Widgets on the dashboard.
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\Widget[] $widgets The set of Widgets on the dashboard.
      *
      * @return $this
      */

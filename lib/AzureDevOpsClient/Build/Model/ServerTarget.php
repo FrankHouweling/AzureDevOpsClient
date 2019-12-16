@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ServerTarget Class Doc Comment
  *
  * @category Class
  * @description Represents a phase target that runs on the server.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ServerTarget implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'int',
-        'executionOptions' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions'
+        'executionOptions' => '\FrankHouweling\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ServerTarget implements ModelInterface, ArrayAccess
     /**
      * Gets executionOptions
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions
      */
     public function getExecutionOptions()
     {
@@ -248,7 +248,7 @@ class ServerTarget implements ModelInterface, ArrayAccess
     /**
      * Sets executionOptions
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions $executionOptions The execution options.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\ServerTargetExecutionOptions $executionOptions The execution options.
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# AzureDevOpsClient\TestResults\TestlogApi
+# FrankHouweling\AzureDevOpsClient\TestResults\TestlogApi
 
 All URIs are relative to *https://vstmr.dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **testlogGetTestResultLogs**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[] testlogGetTestResultLogs($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[] testlogGetTestResultLogs($organization, $project, $runId, $resultId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken)
 
 
 
@@ -21,9 +21,9 @@ Get list of test result attachments reference
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]**](../Model/TestLog.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]**](../Model/TestLog.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **testlogGetTestRunLogs**
-> \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[] testlogGetTestRunLogs($organization, $project, $runId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken)
+> \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[] testlogGetTestRunLogs($organization, $project, $runId, $type, $apiVersion, $directoryPath, $fileNamePrefix, $fetchMetaData, $top, $continuationToken)
 
 
 
@@ -94,9 +94,9 @@ Get list of test run attachments reference
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\TestResults\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\TestResults\Api\TestlogApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\TestResults\Api\TestlogApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestLog[]**](../Model/TestLog.md)
+[**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestLog[]**](../Model/TestLog.md)
 
 ### Authorization
 

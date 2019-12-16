@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * InputDescriptor Class Doc Comment
  *
  * @category Class
  * @description Describes an input for subscriptions.
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -69,9 +69,9 @@ class InputDescriptor implements ModelInterface, ArrayAccess
         'properties' => 'map[string,object]',
         'type' => 'string',
         'useInDefaultDescription' => 'bool',
-        'validation' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValidation',
+        'validation' => '\FrankHouweling\AzureDevOpsClient\Release\Model\InputValidation',
         'valueHint' => 'string',
-        'values' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues'
+        'values' => '\FrankHouweling\AzureDevOpsClient\Release\Model\InputValues'
     ];
 
     /**
@@ -592,7 +592,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Gets validation
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValidation
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\InputValidation
      */
     public function getValidation()
     {
@@ -602,7 +602,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Sets validation
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValidation $validation Information to use to validate this input's value
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\InputValidation $validation Information to use to validate this input's value
      *
      * @return $this
      */
@@ -640,7 +640,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\InputValues
      */
     public function getValues()
     {
@@ -650,7 +650,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputValues $values Information about possible values for this input
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\InputValues $values Information about possible values for this input
      *
      * @return $this
      */

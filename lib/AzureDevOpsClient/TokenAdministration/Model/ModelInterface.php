@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdministration\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdministration\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\TokenAdministration\AzureDevOpsClient\TokenAdministration\Model
+ * @package FrankHouweling\AzureDevOpsClient\TokenAdministration\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

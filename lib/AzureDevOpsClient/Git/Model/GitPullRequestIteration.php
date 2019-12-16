@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequestIteration Class Doc Comment
  *
  * @category Class
  * @description Provides properties that describe a Git pull request iteration. Iterations are created as a result of creating and pushing updates to a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,21 +58,21 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
-        'changeList' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[]',
-        'commits' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
-        'commonRefCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
+        'changeList' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[]',
+        'commits' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+        'commonRefCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'hasMoreCommits' => 'bool',
         'id' => 'int',
         'newTargetRefName' => 'string',
         'oldTargetRefName' => 'string',
-        'push' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef',
+        'push' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef',
         'reason' => 'string',
-        'sourceRefCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
-        'targetRefCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'sourceRefCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'targetRefCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'updatedDate' => '\DateTime'
     ];
 
@@ -329,7 +329,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of related REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of related REST reference links.
      *
      * @return $this
      */
@@ -353,7 +353,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAuthor()
     {
@@ -363,7 +363,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $author Author of the pull request iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $author Author of the pull request iteration.
      *
      * @return $this
      */
@@ -377,7 +377,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets changeList
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[]
      */
     public function getChangeList()
     {
@@ -387,7 +387,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets changeList
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestChange[] $changeList Changes included with the pull request iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestChange[] $changeList Changes included with the pull request iteration.
      *
      * @return $this
      */
@@ -401,7 +401,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets commits
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function getCommits()
     {
@@ -411,7 +411,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets commits
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The commits included with the pull request iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The commits included with the pull request iteration.
      *
      * @return $this
      */
@@ -425,7 +425,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets commonRefCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getCommonRefCommit()
     {
@@ -435,7 +435,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets commonRefCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $commonRefCommit The first common Git commit of the source and target refs.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $commonRefCommit The first common Git commit of the source and target refs.
      *
      * @return $this
      */
@@ -593,7 +593,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets push
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef
      */
     public function getPush()
     {
@@ -603,7 +603,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets push
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef $push The Git push information associated with this pull request iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef $push The Git push information associated with this pull request iteration.
      *
      * @return $this
      */
@@ -650,7 +650,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets sourceRefCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getSourceRefCommit()
     {
@@ -660,7 +660,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets sourceRefCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $sourceRefCommit The source Git commit of this iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $sourceRefCommit The source Git commit of this iteration.
      *
      * @return $this
      */
@@ -674,7 +674,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Gets targetRefCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getTargetRefCommit()
     {
@@ -684,7 +684,7 @@ class GitPullRequestIteration implements ModelInterface, ArrayAccess
     /**
      * Sets targetRefCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $targetRefCommit The target Git commit of this iteration.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $targetRefCommit The target Git commit of this iteration.
      *
      * @return $this
      */

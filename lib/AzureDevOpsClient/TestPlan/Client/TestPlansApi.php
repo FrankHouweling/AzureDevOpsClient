@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestPlansApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class TestPlansApi
      * Operation testPlansCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan
      */
     public function testPlansCreate($organization, $body, $project, $apiVersion)
     {
@@ -109,17 +109,17 @@ class TestPlansApi
      * Operation testPlansCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlansCreateWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansCreateRequest($organization, $body, $project, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class TestPlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -187,7 +187,7 @@ class TestPlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -210,7 +210,7 @@ class TestPlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -219,7 +219,7 @@ class TestPlansApi
      */
     public function testPlansCreateAsyncWithHttpInfo($organization, $body, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansCreateRequest($organization, $body, $project, $apiVersion);
 
         return $this->client
@@ -263,7 +263,7 @@ class TestPlansApi
      * Create request for operation 'testPlansCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanCreateParams $body A testPlanCreateParams object.TestPlanCreateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
@@ -412,7 +412,7 @@ class TestPlansApi
      * @param  int $planId ID of the test plan to be deleted. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -429,7 +429,7 @@ class TestPlansApi
      * @param  int $planId ID of the test plan to be deleted. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -697,9 +697,9 @@ class TestPlansApi
      * @param  int $planId ID of the test plan to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan
      */
     public function testPlansGet($organization, $project, $planId, $apiVersion)
     {
@@ -715,13 +715,13 @@ class TestPlansApi
      * @param  int $planId ID of the test plan to get. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlansGetWithHttpInfo($organization, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansGetRequest($organization, $project, $planId, $apiVersion);
 
         try {
@@ -773,7 +773,7 @@ class TestPlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -821,7 +821,7 @@ class TestPlansApi
      */
     public function testPlansGetAsyncWithHttpInfo($organization, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansGetRequest($organization, $project, $planId, $apiVersion);
 
         return $this->client
@@ -1022,9 +1022,9 @@ class TestPlansApi
      * @param  bool $includePlanDetails Get all properties of the test plan (optional)
      * @param  bool $filterActivePlans Get just the active plans (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[]
      */
     public function testPlansList($organization, $project, $apiVersion, $owner = null, $continuationToken = null, $includePlanDetails = null, $filterActivePlans = null)
     {
@@ -1043,13 +1043,13 @@ class TestPlansApi
      * @param  bool $includePlanDetails Get all properties of the test plan (optional)
      * @param  bool $filterActivePlans Get just the active plans (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlansListWithHttpInfo($organization, $project, $apiVersion, $owner = null, $continuationToken = null, $includePlanDetails = null, $filterActivePlans = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[]';
         $request = $this->testPlansListRequest($organization, $project, $apiVersion, $owner, $continuationToken, $includePlanDetails, $filterActivePlans);
 
         try {
@@ -1101,7 +1101,7 @@ class TestPlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1155,7 +1155,7 @@ class TestPlansApi
      */
     public function testPlansListAsyncWithHttpInfo($organization, $project, $apiVersion, $owner = null, $continuationToken = null, $includePlanDetails = null, $filterActivePlans = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan[]';
         $request = $this->testPlansListRequest($organization, $project, $apiVersion, $owner, $continuationToken, $includePlanDetails, $filterActivePlans);
 
         return $this->client
@@ -1354,14 +1354,14 @@ class TestPlansApi
      * Operation testPlansUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan
      */
     public function testPlansUpdate($organization, $body, $project, $planId, $apiVersion)
     {
@@ -1373,18 +1373,18 @@ class TestPlansApi
      * Operation testPlansUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan, HTTP status code, HTTP response headers (array of strings)
      */
     public function testPlansUpdateWithHttpInfo($organization, $body, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansUpdateRequest($organization, $body, $project, $planId, $apiVersion);
 
         try {
@@ -1436,7 +1436,7 @@ class TestPlansApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class TestPlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1476,7 +1476,7 @@ class TestPlansApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -1486,7 +1486,7 @@ class TestPlansApi
      */
     public function testPlansUpdateAsyncWithHttpInfo($organization, $body, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlan';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlan';
         $request = $this->testPlansUpdateRequest($organization, $body, $project, $planId, $apiVersion);
 
         return $this->client
@@ -1530,7 +1530,7 @@ class TestPlansApi
      * Create request for operation 'testPlansUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanUpdateParams $body A testPlanUpdateParams object.TestPlanUpdateParams (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan to be updated. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

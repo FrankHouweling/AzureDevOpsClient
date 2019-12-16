@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * CardrulesettingsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class CardrulesettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings
      */
     public function cardrulesettingsGet($organization, $project, $board, $team, $apiVersion)
     {
@@ -115,13 +115,13 @@ class CardrulesettingsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function cardrulesettingsGetWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
         $request = $this->cardrulesettingsGetRequest($organization, $project, $board, $team, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class CardrulesettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class CardrulesettingsApi
      */
     public function cardrulesettingsGetAsyncWithHttpInfo($organization, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
         $request = $this->cardrulesettingsGetRequest($organization, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -432,15 +432,15 @@ class CardrulesettingsApi
      * Operation cardrulesettingsUpdateBoardCardRuleSettings
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board  (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings
      */
     public function cardrulesettingsUpdateBoardCardRuleSettings($organization, $body, $project, $board, $team, $apiVersion)
     {
@@ -452,19 +452,19 @@ class CardrulesettingsApi
      * Operation cardrulesettingsUpdateBoardCardRuleSettingsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board  (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings, HTTP status code, HTTP response headers (array of strings)
      */
     public function cardrulesettingsUpdateBoardCardRuleSettingsWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
         $request = $this->cardrulesettingsUpdateBoardCardRuleSettingsRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         try {
@@ -516,7 +516,7 @@ class CardrulesettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class CardrulesettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board  (required)
      * @param  string $team Team ID or team name (required)
@@ -557,7 +557,7 @@ class CardrulesettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board  (required)
      * @param  string $team Team ID or team name (required)
@@ -568,7 +568,7 @@ class CardrulesettingsApi
      */
     public function cardrulesettingsUpdateBoardCardRuleSettingsAsyncWithHttpInfo($organization, $body, $project, $board, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings';
         $request = $this->cardrulesettingsUpdateBoardCardRuleSettingsRequest($organization, $body, $project, $board, $team, $apiVersion);
 
         return $this->client
@@ -612,7 +612,7 @@ class CardrulesettingsApi
      * Create request for operation 'cardrulesettingsUpdateBoardCardRuleSettings'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $board  (required)
      * @param  string $team Team ID or team name (required)
@@ -787,12 +787,12 @@ class CardrulesettingsApi
      * Operation cardrulesettingsUpdateTaskboardCardRuleSettings
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -805,12 +805,12 @@ class CardrulesettingsApi
      * Operation cardrulesettingsUpdateTaskboardCardRuleSettingsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -862,7 +862,7 @@ class CardrulesettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -886,7 +886,7 @@ class CardrulesettingsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)
@@ -926,7 +926,7 @@ class CardrulesettingsApi
      * Create request for operation 'cardrulesettingsUpdateTaskboardCardRuleSettings'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\BoardCardRuleSettings $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.2&#39; to use this version of the api. (required)

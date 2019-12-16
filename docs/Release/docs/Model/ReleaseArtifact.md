@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artifactProvider** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactProvider**](ArtifactProvider.md) | Gets or sets the artifact provider of ReleaseArtifact. | [optional] 
+**artifactProvider** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactProvider**](ArtifactProvider.md) | Gets or sets the artifact provider of ReleaseArtifact. | [optional] 
 **artifactType** | **string** | Gets or sets the artifact type of ReleaseArtifact. | [optional] 
 **definitionData** | **string** | Gets or sets the definition json of ReleaseArtifact. | [optional] 
 **definitionId** | **int** | Gets or sets the definition id of ReleaseArtifact. | [optional] 

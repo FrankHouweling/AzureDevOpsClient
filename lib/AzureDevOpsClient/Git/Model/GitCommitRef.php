@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitCommitRef Class Doc Comment
  *
  * @category Class
  * @description Provides properties that describe a Git commit and associated metadata.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,20 +58,20 @@ class GitCommitRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'author' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate',
-        'changeCounts' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary',
-        'changes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'author' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate',
+        'changeCounts' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary',
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]',
         'comment' => 'string',
         'commentTruncated' => 'bool',
         'commitId' => 'string',
-        'committer' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate',
+        'committer' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate',
         'parents' => 'string[]',
-        'push' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef',
+        'push' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef',
         'remoteUrl' => 'string',
-        'statuses' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]',
+        'statuses' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]',
         'url' => 'string',
-        'workItems' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]'
+        'workItems' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]'
     ];
 
     /**
@@ -286,7 +286,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -296,7 +296,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of related REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links A collection of related REST reference links.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets author
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate
      */
     public function getAuthor()
     {
@@ -320,7 +320,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets author
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate $author Author of the commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate $author Author of the commit.
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets changeCounts
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary
      */
     public function getChangeCounts()
     {
@@ -344,7 +344,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets changeCounts
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary $changeCounts Counts of the types of changes (edits, deletes, etc.) included with the commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary $changeCounts Counts of the types of changes (edits, deletes, etc.) included with the commit.
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]
      */
     public function getChanges()
     {
@@ -368,7 +368,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[] $changes An enumeration of the changes included with the commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[] $changes An enumeration of the changes included with the commit.
      *
      * @return $this
      */
@@ -454,7 +454,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets committer
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate
      */
     public function getCommitter()
     {
@@ -464,7 +464,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets committer
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitUserDate $committer Committer of the commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitUserDate $committer Committer of the commit.
      *
      * @return $this
      */
@@ -502,7 +502,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets push
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef
      */
     public function getPush()
     {
@@ -512,7 +512,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets push
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPushRef $push The push associated with this commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPushRef $push The push associated with this commit.
      *
      * @return $this
      */
@@ -550,7 +550,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets statuses
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[]
      */
     public function getStatuses()
     {
@@ -560,7 +560,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets statuses
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatus[] $statuses A list of status metadata from services and extensions that may associate additional information to the commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatus[] $statuses A list of status metadata from services and extensions that may associate additional information to the commit.
      *
      * @return $this
      */
@@ -598,7 +598,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Gets workItems
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]
      */
     public function getWorkItems()
     {
@@ -608,7 +608,7 @@ class GitCommitRef implements ModelInterface, ArrayAccess
     /**
      * Sets workItems
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[] $workItems A list of workitems associated with this commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[] $workItems A list of workitems associated with this commit.
      *
      * @return $this
      */

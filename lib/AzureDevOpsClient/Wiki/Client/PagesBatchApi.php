@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Client;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Wiki\ApiException;
-use AzureDevOpsClient\Wiki\Configuration;
-use AzureDevOpsClient\Wiki\HeaderSelector;
-use AzureDevOpsClient\Wiki\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Wiki\ApiException;
+use FrankHouweling\AzureDevOpsClient\Wiki\Configuration;
+use FrankHouweling\AzureDevOpsClient\Wiki\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * PagesBatchApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class PagesBatchApi
      * Operation pagesBatchGet
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -99,9 +99,9 @@ class PagesBatchApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]
      */
     public function pagesBatchGet($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
@@ -113,7 +113,7 @@ class PagesBatchApi
      * Operation pagesBatchGetWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -121,13 +121,13 @@ class PagesBatchApi
      * @param  string $versionDescriptorVersionOptions Version options - Specify additional modifiers to version (e.g Previous) (optional)
      * @param  string $versionDescriptorVersionType Version type (branch, tag, or commit). Determines how Id is interpreted (optional)
      *
-     * @throws \AzureDevOpsClient\Wiki\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Wiki\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[], HTTP status code, HTTP response headers (array of strings)
      */
     public function pagesBatchGetWithHttpInfo($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]';
         $request = $this->pagesBatchGetRequest($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         try {
@@ -179,7 +179,7 @@ class PagesBatchApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]',
+                        '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -195,7 +195,7 @@ class PagesBatchApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -222,7 +222,7 @@ class PagesBatchApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -235,7 +235,7 @@ class PagesBatchApi
      */
     public function pagesBatchGetAsyncWithHttpInfo($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion = null, $versionDescriptorVersionOptions = null, $versionDescriptorVersionType = null)
     {
-        $returnType = '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageDetail[]';
         $request = $this->pagesBatchGetRequest($organization, $body, $project, $wikiIdentifier, $apiVersion, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType);
 
         return $this->client
@@ -279,7 +279,7 @@ class PagesBatchApi
      * Create request for operation 'pagesBatchGet'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPagesBatchRequest $body Wiki batch page request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $wikiIdentifier Wiki ID or wiki name. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

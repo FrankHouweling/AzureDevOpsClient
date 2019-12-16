@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * PipelineReference Class Doc Comment
  *
  * @category Class
  * @description Pipeline reference
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class PipelineReference implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'jobReference' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JobReference',
-        'phaseReference' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseReference',
+        'jobReference' => '\FrankHouweling\AzureDevOpsClient\Build\Model\JobReference',
+        'phaseReference' => '\FrankHouweling\AzureDevOpsClient\Build\Model\PhaseReference',
         'pipelineId' => 'int',
-        'stageReference' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\StageReference'
+        'stageReference' => '\FrankHouweling\AzureDevOpsClient\Build\Model\StageReference'
     ];
 
     /**
@@ -226,7 +226,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets jobReference
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JobReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\JobReference
      */
     public function getJobReference()
     {
@@ -236,7 +236,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets jobReference
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\JobReference $jobReference Reference of the job
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\JobReference $jobReference Reference of the job
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets phaseReference
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\PhaseReference
      */
     public function getPhaseReference()
     {
@@ -260,7 +260,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets phaseReference
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\PhaseReference $phaseReference Reference of the phase.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\PhaseReference $phaseReference Reference of the phase.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Gets stageReference
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\StageReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\StageReference
      */
     public function getStageReference()
     {
@@ -308,7 +308,7 @@ class PipelineReference implements ModelInterface, ArrayAccess
     /**
      * Sets stageReference
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\StageReference $stageReference Reference of the stage.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\StageReference $stageReference Reference of the stage.
      *
      * @return $this
      */

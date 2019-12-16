@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Client;
+namespace FrankHouweling\AzureDevOpsClient\Test\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Test\ApiException;
-use AzureDevOpsClient\Test\Configuration;
-use AzureDevOpsClient\Test\HeaderSelector;
-use AzureDevOpsClient\Test\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Test\ApiException;
+use FrankHouweling\AzureDevOpsClient\Test\Configuration;
+use FrankHouweling\AzureDevOpsClient\Test\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class ResultsApi
      * Operation resultsAdd
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID into which test results to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]
      */
     public function resultsAdd($organization, $body, $project, $runId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class ResultsApi
      * Operation resultsAddWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID into which test results to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resultsAddWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsAddRequest($organization, $body, $project, $runId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID into which test results to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID into which test results to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class ResultsApi
      */
     public function resultsAddAsyncWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsAddRequest($organization, $body, $project, $runId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class ResultsApi
      * Create request for operation 'resultsAdd'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to add. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID into which test results to add. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
@@ -433,9 +433,9 @@ class ResultsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      * @param  string $detailsToInclude Details to include with test results. Default is None. Other values are Iterations, WorkItems and SubResults. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult
      */
     public function resultsGet($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude = null)
     {
@@ -453,13 +453,13 @@ class ResultsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      * @param  string $detailsToInclude Details to include with test results. Default is None. Other values are Iterations, WorkItems and SubResults. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function resultsGetWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult';
         $request = $this->resultsGetRequest($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude);
 
         try {
@@ -511,7 +511,7 @@ class ResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -563,7 +563,7 @@ class ResultsApi
      */
     public function resultsGetAsyncWithHttpInfo($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult';
         $request = $this->resultsGetRequest($organization, $project, $runId, $testCaseResultId, $apiVersion, $detailsToInclude);
 
         return $this->client
@@ -785,9 +785,9 @@ class ResultsApi
      * @param  int $top Number of test results to return. Maximum is 1000 when detailsToInclude is None and 200 otherwise. (optional)
      * @param  string $outcomes Comma separated list of test outcomes to filter test results. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]
      */
     public function resultsList($organization, $project, $runId, $apiVersion, $detailsToInclude = null, $skip = null, $top = null, $outcomes = null)
     {
@@ -807,13 +807,13 @@ class ResultsApi
      * @param  int $top Number of test results to return. Maximum is 1000 when detailsToInclude is None and 200 otherwise. (optional)
      * @param  string $outcomes Comma separated list of test outcomes to filter test results. (optional)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resultsListWithHttpInfo($organization, $project, $runId, $apiVersion, $detailsToInclude = null, $skip = null, $top = null, $outcomes = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsListRequest($organization, $project, $runId, $apiVersion, $detailsToInclude, $skip, $top, $outcomes);
 
         try {
@@ -865,7 +865,7 @@ class ResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -921,7 +921,7 @@ class ResultsApi
      */
     public function resultsListAsyncWithHttpInfo($organization, $project, $runId, $apiVersion, $detailsToInclude = null, $skip = null, $top = null, $outcomes = null)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsListRequest($organization, $project, $runId, $apiVersion, $detailsToInclude, $skip, $top, $outcomes);
 
         return $this->client
@@ -1135,14 +1135,14 @@ class ResultsApi
      * Operation resultsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID whose test results to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]
      */
     public function resultsUpdate($organization, $body, $project, $runId, $apiVersion)
     {
@@ -1154,18 +1154,18 @@ class ResultsApi
      * Operation resultsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID whose test results to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Test\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Test\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resultsUpdateWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsUpdateRequest($organization, $body, $project, $runId, $apiVersion);
 
         try {
@@ -1217,7 +1217,7 @@ class ResultsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]',
+                        '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1233,7 +1233,7 @@ class ResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID whose test results to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
@@ -1257,7 +1257,7 @@ class ResultsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID whose test results to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)
@@ -1267,7 +1267,7 @@ class ResultsApi
      */
     public function resultsUpdateAsyncWithHttpInfo($organization, $body, $project, $runId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[]';
         $request = $this->resultsUpdateRequest($organization, $body, $project, $runId, $apiVersion);
 
         return $this->client
@@ -1311,7 +1311,7 @@ class ResultsApi
      * Create request for operation 'resultsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResult[] $body List of test results to update. (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $runId Test run ID whose test results to update. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.6&#39; to use this version of the api. (required)

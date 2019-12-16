@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artifactsDownloadInput** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput**](ArtifactsDownloadInput.md) | Artifacts that downloaded during job execution. | [optional] 
-**demands** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Demand[]**](Demand.md) | List demands that needs to meet to execute the job. | [optional] 
+**artifactsDownloadInput** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactsDownloadInput**](ArtifactsDownloadInput.md) | Artifacts that downloaded during job execution. | [optional] 
+**demands** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\Demand[]**](Demand.md) | List demands that needs to meet to execute the job. | [optional] 
 **enableAccessToken** | **bool** | Indicates whether to include access token in deployment job or not. | [optional] 
 **queueId** | **int** | Id of the pool on which job get executed. | [optional] 
 **skipArtifactsDownload** | **bool** | Indicates whether artifacts downloaded while job execution or not. | [optional] 

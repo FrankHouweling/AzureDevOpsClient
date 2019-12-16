@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildServer Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class BuildServer implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'agents' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildAgentReference[]',
-        'controller' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildControllerReference',
+        'agents' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildAgentReference[]',
+        'controller' => '\FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildControllerReference',
         'id' => 'int',
         'isVirtual' => 'bool',
         'messageQueueUrl' => 'string',
@@ -297,7 +297,7 @@ class BuildServer implements ModelInterface, ArrayAccess
     /**
      * Gets agents
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildAgentReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildAgentReference[]
      */
     public function getAgents()
     {
@@ -307,7 +307,7 @@ class BuildServer implements ModelInterface, ArrayAccess
     /**
      * Sets agents
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildAgentReference[] $agents agents
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildAgentReference[] $agents agents
      *
      * @return $this
      */
@@ -321,7 +321,7 @@ class BuildServer implements ModelInterface, ArrayAccess
     /**
      * Gets controller
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildControllerReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildControllerReference
      */
     public function getController()
     {
@@ -331,7 +331,7 @@ class BuildServer implements ModelInterface, ArrayAccess
     /**
      * Sets controller
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\XamlBuildControllerReference $controller controller
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\XamlBuildControllerReference $controller controller
      *
      * @return $this
      */

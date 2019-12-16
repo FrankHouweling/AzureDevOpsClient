@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * MergesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,15 +91,15 @@ class MergesApi
      * Operation mergesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge
      */
     public function mergesCreate($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks = null)
     {
@@ -111,19 +111,19 @@ class MergesApi
      * Operation mergesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge, HTTP status code, HTTP response headers (array of strings)
      */
     public function mergesCreateWithHttpInfo($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge';
         $request = $this->mergesCreateRequest($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks);
 
         try {
@@ -175,7 +175,7 @@ class MergesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -191,7 +191,7 @@ class MergesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -216,7 +216,7 @@ class MergesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -227,7 +227,7 @@ class MergesApi
      */
     public function mergesCreateAsyncWithHttpInfo($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge';
         $request = $this->mergesCreateRequest($organization, $body, $project, $repositoryNameOrId, $apiVersion, $includeLinks);
 
         return $this->client
@@ -271,7 +271,7 @@ class MergesApi
      * Create request for operation 'mergesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeParameters $body Parents commitIds and merge commit messsage. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $repositoryNameOrId The name or ID of the repository. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -442,9 +442,9 @@ class MergesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge
      */
     public function mergesGet($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks = null)
     {
@@ -462,13 +462,13 @@ class MergesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $includeLinks True to include links (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge, HTTP status code, HTTP response headers (array of strings)
      */
     public function mergesGetWithHttpInfo($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge';
         $request = $this->mergesGetRequest($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks);
 
         try {
@@ -520,7 +520,7 @@ class MergesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -572,7 +572,7 @@ class MergesApi
      */
     public function mergesGetAsyncWithHttpInfo($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMerge';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMerge';
         $request = $this->mergesGetRequest($organization, $project, $repositoryNameOrId, $mergeOperationId, $apiVersion, $includeLinks);
 
         return $this->client

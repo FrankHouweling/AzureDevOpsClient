@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseTaskAttachment Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class ReleaseTaskAttachment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks',
         'createdOn' => '\DateTime',
-        'modifiedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
         'recordId' => 'string',
@@ -250,7 +250,7 @@ class ReleaseTaskAttachment implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -260,7 +260,7 @@ class ReleaseTaskAttachment implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReferenceLinks $links Reference links of task.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReferenceLinks $links Reference links of task.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class ReleaseTaskAttachment implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -308,7 +308,7 @@ class ReleaseTaskAttachment implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Identity who modified.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Identity who modified.
      *
      * @return $this
      */

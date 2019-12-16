@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Client;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Tfvc\ApiException;
-use AzureDevOpsClient\Tfvc\Configuration;
-use AzureDevOpsClient\Tfvc\HeaderSelector;
-use AzureDevOpsClient\Tfvc\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ApiException;
+use FrankHouweling\AzureDevOpsClient\Tfvc\Configuration;
+use FrankHouweling\AzureDevOpsClient\Tfvc\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * ShelvesetsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -101,9 +101,9 @@ class ShelvesetsApi
      * @param  string $requestDataName Shelveset name (optional)
      * @param  string $requestDataOwner Owner&#39;s ID. Could be a name or a guid. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset
      */
     public function shelvesetsGet($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails = null, $requestDataIncludeLinks = null, $requestDataIncludeWorkItems = null, $requestDataMaxChangeCount = null, $requestDataMaxCommentLength = null, $requestDataName = null, $requestDataOwner = null)
     {
@@ -125,13 +125,13 @@ class ShelvesetsApi
      * @param  string $requestDataName Shelveset name (optional)
      * @param  string $requestDataOwner Owner&#39;s ID. Could be a name or a guid. (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset, HTTP status code, HTTP response headers (array of strings)
      */
     public function shelvesetsGetWithHttpInfo($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails = null, $requestDataIncludeLinks = null, $requestDataIncludeWorkItems = null, $requestDataMaxChangeCount = null, $requestDataMaxCommentLength = null, $requestDataName = null, $requestDataOwner = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset';
         $request = $this->shelvesetsGetRequest($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails, $requestDataIncludeLinks, $requestDataIncludeWorkItems, $requestDataMaxChangeCount, $requestDataMaxCommentLength, $requestDataName, $requestDataOwner);
 
         try {
@@ -183,7 +183,7 @@ class ShelvesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -243,7 +243,7 @@ class ShelvesetsApi
      */
     public function shelvesetsGetAsyncWithHttpInfo($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails = null, $requestDataIncludeLinks = null, $requestDataIncludeWorkItems = null, $requestDataMaxChangeCount = null, $requestDataMaxCommentLength = null, $requestDataName = null, $requestDataOwner = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShelveset';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShelveset';
         $request = $this->shelvesetsGetRequest($organization, $shelvesetId, $apiVersion, $requestDataIncludeDetails, $requestDataIncludeLinks, $requestDataIncludeWorkItems, $requestDataMaxChangeCount, $requestDataMaxCommentLength, $requestDataName, $requestDataOwner);
 
         return $this->client
@@ -458,9 +458,9 @@ class ShelvesetsApi
      * @param  int $top Max number of changes to return (optional)
      * @param  int $skip Number of changes to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]
      */
     public function shelvesetsGetShelvesetChanges($organization, $shelvesetId, $apiVersion, $top = null, $skip = null)
     {
@@ -477,13 +477,13 @@ class ShelvesetsApi
      * @param  int $top Max number of changes to return (optional)
      * @param  int $skip Number of changes to skip (optional)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[], HTTP status code, HTTP response headers (array of strings)
      */
     public function shelvesetsGetShelvesetChangesWithHttpInfo($organization, $shelvesetId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
         $request = $this->shelvesetsGetShelvesetChangesRequest($organization, $shelvesetId, $apiVersion, $top, $skip);
 
         try {
@@ -535,7 +535,7 @@ class ShelvesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -585,7 +585,7 @@ class ShelvesetsApi
      */
     public function shelvesetsGetShelvesetChangesAsyncWithHttpInfo($organization, $shelvesetId, $apiVersion, $top = null, $skip = null)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcChange[]';
         $request = $this->shelvesetsGetShelvesetChangesRequest($organization, $shelvesetId, $apiVersion, $top, $skip);
 
         return $this->client
@@ -773,9 +773,9 @@ class ShelvesetsApi
      * @param  string $shelvesetId Shelveset&#39;s unique ID (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]
      */
     public function shelvesetsGetShelvesetWorkItems($organization, $shelvesetId, $apiVersion)
     {
@@ -790,13 +790,13 @@ class ShelvesetsApi
      * @param  string $shelvesetId Shelveset&#39;s unique ID (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Tfvc\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Tfvc\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[], HTTP status code, HTTP response headers (array of strings)
      */
     public function shelvesetsGetShelvesetWorkItemsWithHttpInfo($organization, $shelvesetId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
         $request = $this->shelvesetsGetShelvesetWorkItemsRequest($organization, $shelvesetId, $apiVersion);
 
         try {
@@ -848,7 +848,7 @@ class ShelvesetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]',
+                        '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -894,7 +894,7 @@ class ShelvesetsApi
      */
     public function shelvesetsGetShelvesetWorkItemsAsyncWithHttpInfo($organization, $shelvesetId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\AssociatedWorkItem[]';
         $request = $this->shelvesetsGetShelvesetWorkItemsRequest($organization, $shelvesetId, $apiVersion);
 
         return $this->client

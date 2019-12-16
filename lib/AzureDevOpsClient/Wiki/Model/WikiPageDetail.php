@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiPageDetail Class Doc Comment
  *
  * @category Class
  * @description Defines a page with its metedata in a wiki.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class WikiPageDetail implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'path' => 'string',
-        'viewStats' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageStat[]'
+        'viewStats' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageStat[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class WikiPageDetail implements ModelInterface, ArrayAccess
     /**
      * Gets viewStats
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageStat[]
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageStat[]
      */
     public function getViewStats()
     {
@@ -278,7 +278,7 @@ class WikiPageDetail implements ModelInterface, ArrayAccess
     /**
      * Sets viewStats
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\WikiPageStat[] $viewStats Path of the wiki page.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\WikiPageStat[] $viewStats Path of the wiki page.
      *
      * @return $this
      */

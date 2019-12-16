@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class ReleaseSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'complianceSettings' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ComplianceSettings',
-        'retentionSettings' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\RetentionSettings'
+        'complianceSettings' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ComplianceSettings',
+        'retentionSettings' => '\FrankHouweling\AzureDevOpsClient\Release\Model\RetentionSettings'
     ];
 
     /**
@@ -214,7 +214,7 @@ class ReleaseSettings implements ModelInterface, ArrayAccess
     /**
      * Gets complianceSettings
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ComplianceSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ComplianceSettings
      */
     public function getComplianceSettings()
     {
@@ -224,7 +224,7 @@ class ReleaseSettings implements ModelInterface, ArrayAccess
     /**
      * Sets complianceSettings
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ComplianceSettings $complianceSettings Release Compliance settings.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ComplianceSettings $complianceSettings Release Compliance settings.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class ReleaseSettings implements ModelInterface, ArrayAccess
     /**
      * Gets retentionSettings
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\RetentionSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\RetentionSettings
      */
     public function getRetentionSettings()
     {
@@ -248,7 +248,7 @@ class ReleaseSettings implements ModelInterface, ArrayAccess
     /**
      * Sets retentionSettings
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\RetentionSettings $retentionSettings Release retention settings.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\RetentionSettings $retentionSettings Release retention settings.
      *
      * @return $this
      */

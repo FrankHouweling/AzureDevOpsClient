@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Graph\DescriptorsApi
+# FrankHouweling\AzureDevOpsClient\Graph\DescriptorsApi
 
 All URIs are relative to *https://vssps.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **descriptorsGet**
-> \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphDescriptorResult descriptorsGet($storageKey, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphDescriptorResult descriptorsGet($storageKey, $organization, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Resolve a storage key to a descriptor
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Graph\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Graph\Api\DescriptorsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Graph\Api\DescriptorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphDescriptorResult**](../Model/GraphDescriptorResult.md)
+[**\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphDescriptorResult**](../Model/GraphDescriptorResult.md)
 
 ### Authorization
 

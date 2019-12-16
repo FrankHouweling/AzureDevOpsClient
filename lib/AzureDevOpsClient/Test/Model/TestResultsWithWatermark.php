@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultsWithWatermark Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TestResultsWithWatermark implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'changedDate' => '\DateTime',
-        'pointsResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsResults2[]',
+        'pointsResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\PointsResults2[]',
         'resultId' => 'int',
         'runId' => 'int'
     ];
@@ -250,7 +250,7 @@ class TestResultsWithWatermark implements ModelInterface, ArrayAccess
     /**
      * Gets pointsResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsResults2[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\PointsResults2[]
      */
     public function getPointsResults()
     {
@@ -260,7 +260,7 @@ class TestResultsWithWatermark implements ModelInterface, ArrayAccess
     /**
      * Sets pointsResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointsResults2[] $pointsResults pointsResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\PointsResults2[] $pointsResults pointsResults
      *
      * @return $this
      */

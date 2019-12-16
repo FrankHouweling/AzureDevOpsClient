@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **fromId** | **int** | If provided, only include changesets after this changesetID. | [optional] 
 **includeLinks** | **bool** | Whether to include the _links field on the shallow references. | [optional] 
 **itemPath** | **string** | Path of item to search under. | [optional] 
-**mappings** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]**](TfvcMappingFilter.md) |  | [optional] 
+**mappings** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcMappingFilter[]**](TfvcMappingFilter.md) |  | [optional] 
 **toDate** | **string** | If provided, only include changesets created before this date (string). | [optional] 
 **toId** | **int** | If provided, a version descriptor for the latest change list to include. | [optional] 
 

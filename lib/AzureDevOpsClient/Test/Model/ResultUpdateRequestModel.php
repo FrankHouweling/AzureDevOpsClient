@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * ResultUpdateRequestModel Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'actionResultDeletes' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[]',
-        'actionResults' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[]',
-        'parameterDeletes' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
-        'parameters' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
-        'testCaseResult' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel'
+        'actionResultDeletes' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[]',
+        'actionResults' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[]',
+        'parameterDeletes' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
+        'parameters' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]',
+        'testCaseResult' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel'
     ];
 
     /**
@@ -232,7 +232,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Gets actionResultDeletes
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[]
      */
     public function getActionResultDeletes()
     {
@@ -242,7 +242,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Sets actionResultDeletes
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[] $actionResultDeletes actionResultDeletes
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[] $actionResultDeletes actionResultDeletes
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Gets actionResults
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[]
      */
     public function getActionResults()
     {
@@ -266,7 +266,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Sets actionResults
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestActionResultModel[] $actionResults actionResults
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestActionResultModel[] $actionResults actionResults
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Gets parameterDeletes
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
      */
     public function getParameterDeletes()
     {
@@ -290,7 +290,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Sets parameterDeletes
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[] $parameterDeletes parameterDeletes
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[] $parameterDeletes parameterDeletes
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Gets parameters
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[]
      */
     public function getParameters()
     {
@@ -314,7 +314,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Sets parameters
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultParameterModel[] $parameters parameters
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultParameterModel[] $parameters parameters
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Gets testCaseResult
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel
      */
     public function getTestCaseResult()
     {
@@ -338,7 +338,7 @@ class ResultUpdateRequestModel implements ModelInterface, ArrayAccess
     /**
      * Sets testCaseResult
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel $testCaseResult testCaseResult
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultUpdateModel $testCaseResult testCaseResult
      *
      * @return $this
      */

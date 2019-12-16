@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **url** | **string** | URL to get the full operation object. | [optional] 
 **completed** | **bool** | Operation completed with success or failure. | [optional] 
 **haveResultsSucceeded** | **bool** | True if all operations were successful. | [optional] 
-**results** | [**\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]**](GroupOperationResult.md) | List of results for each operation. | [optional] 
+**results** | [**\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOperationResult[]**](GroupOperationResult.md) | List of results for each operation. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

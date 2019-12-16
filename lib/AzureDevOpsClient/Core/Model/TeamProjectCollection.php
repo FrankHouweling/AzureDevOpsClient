@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model;
+namespace FrankHouweling\AzureDevOpsClient\Core\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Core\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Core\ObjectSerializer;
 
 /**
  * TeamProjectCollection Class Doc Comment
  *
  * @category Class
  * @description Data contract for a TeamProjectCollection.
- * @package  AzureDevOpsClient\Core
+ * @package  FrankHouweling\AzureDevOpsClient\Core
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class TeamProjectCollection implements ModelInterface, ArrayAccess
         'id' => 'string',
         'name' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks',
         'description' => 'string',
         'processCustomizationType' => 'string',
         'state' => 'string'
@@ -341,7 +341,7 @@ class TeamProjectCollection implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -351,7 +351,7 @@ class TeamProjectCollection implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\ReferenceLinks $links The links to other objects related to this object.
+     * @param \FrankHouweling\AzureDevOpsClient\Core\Model\ReferenceLinks $links The links to other objects related to this object.
      *
      * @return $this
      */

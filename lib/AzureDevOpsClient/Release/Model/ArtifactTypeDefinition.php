@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ArtifactTypeDefinition Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ArtifactTypeDefinition implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'artifactTriggerConfiguration' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration',
+        'artifactTriggerConfiguration' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration',
         'artifactType' => 'string',
         'displayName' => 'string',
         'endpointTypeId' => 'string',
-        'inputDescriptors' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[]',
+        'inputDescriptors' => '\FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[]',
         'isCommitsTraceabilitySupported' => 'bool',
         'isWorkitemsTraceabilitySupported' => 'bool',
         'name' => 'string',
@@ -256,7 +256,7 @@ class ArtifactTypeDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets artifactTriggerConfiguration
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration
      */
     public function getArtifactTriggerConfiguration()
     {
@@ -266,7 +266,7 @@ class ArtifactTypeDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets artifactTriggerConfiguration
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration $artifactTriggerConfiguration Gets or sets the artifact trigger configuration of artifact type definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration $artifactTriggerConfiguration Gets or sets the artifact trigger configuration of artifact type definition.
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class ArtifactTypeDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets inputDescriptors
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[]
      */
     public function getInputDescriptors()
     {
@@ -362,7 +362,7 @@ class ArtifactTypeDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets inputDescriptors
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[] $inputDescriptors Gets or sets the input descriptors of artifact type definition.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[] $inputDescriptors Gets or sets the input descriptors of artifact type definition.
      *
      * @return $this
      */

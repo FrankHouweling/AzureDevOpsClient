@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\StatusApi
+# FrankHouweling\AzureDevOpsClient\Build\StatusApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -20,12 +20,12 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Build\Api\StatusApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\StatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

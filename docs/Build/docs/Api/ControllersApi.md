@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Build\ControllersApi
+# FrankHouweling\AzureDevOpsClient\Build\ControllersApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **controllersGet**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController controllersGet($organization, $controllerId, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController controllersGet($organization, $controllerId, $apiVersion)
 
 
 
@@ -21,9 +21,9 @@ Gets a controller
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\ControllersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\ControllersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController**](../Model/BuildController.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController**](../Model/BuildController.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **controllersList**
-> \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[] controllersList($organization, $apiVersion, $name)
+> \FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[] controllersList($organization, $apiVersion, $name)
 
 
 
@@ -78,9 +78,9 @@ Gets controller, optionally filtered by name
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Build\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Build\Api\ControllersApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Build\Api\ControllersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildController[]**](../Model/BuildController.md)
+[**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController[]**](../Model/BuildController.md)
 
 ### Authorization
 

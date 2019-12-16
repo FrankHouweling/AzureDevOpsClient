@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'extension' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension',
+        'extension' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension',
         'extensionVersion' => 'string',
-        'host' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost',
-        'links' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls',
-        'modifiedBy' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef',
+        'host' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost',
+        'links' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef',
         'updateType' => 'string'
     ];
 
@@ -271,7 +271,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Gets extension
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension
      */
     public function getExtension()
     {
@@ -281,7 +281,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Sets extension
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension $extension The extension which has been updated
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\PublishedExtension $extension The extension which has been updated
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Gets host
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost
      */
     public function getHost()
     {
@@ -329,7 +329,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Sets host
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost $host Name of the collection for which the extension was requested
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionHost $host Name of the collection for which the extension was requested
      *
      * @return $this
      */
@@ -343,7 +343,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls
      */
     public function getLinks()
     {
@@ -353,7 +353,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls $links Gallery host url
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventUrls $links Gallery host url
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -377,7 +377,7 @@ class ExtensionEvent implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $modifiedBy Represents the user who initiated the update
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\IdentityRef $modifiedBy Represents the user who initiated the update
      *
      * @return $this
      */

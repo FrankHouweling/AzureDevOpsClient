@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * BlobsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class BlobsApi
      * @param  string $format Options: json, zip, text, octetstream. If not set, defaults to the MIME type set in the Accept header. (optional)
      * @param  bool $resolveLfs If true, try to resolve a blob to its LFS contents, if it&#39;s an LFS pointer file. Only compatible with octet-stream Accept headers or $format types (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef
      */
     public function blobsGetBlob($organization, $repositoryId, $sha1, $project, $apiVersion, $download = null, $fileName = null, $format = null, $resolveLfs = null)
     {
@@ -123,13 +123,13 @@ class BlobsApi
      * @param  string $format Options: json, zip, text, octetstream. If not set, defaults to the MIME type set in the Accept header. (optional)
      * @param  bool $resolveLfs If true, try to resolve a blob to its LFS contents, if it&#39;s an LFS pointer file. Only compatible with octet-stream Accept headers or $format types (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef, HTTP status code, HTTP response headers (array of strings)
      */
     public function blobsGetBlobWithHttpInfo($organization, $repositoryId, $sha1, $project, $apiVersion, $download = null, $fileName = null, $format = null, $resolveLfs = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef';
         $request = $this->blobsGetBlobRequest($organization, $repositoryId, $sha1, $project, $apiVersion, $download, $fileName, $format, $resolveLfs);
 
         try {
@@ -181,7 +181,7 @@ class BlobsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef',
+                        '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class BlobsApi
      */
     public function blobsGetBlobAsyncWithHttpInfo($organization, $repositoryId, $sha1, $project, $apiVersion, $download = null, $fileName = null, $format = null, $resolveLfs = null)
     {
-        $returnType = '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitBlobRef';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Git\Model\GitBlobRef';
         $request = $this->blobsGetBlobRequest($organization, $repositoryId, $sha1, $project, $apiVersion, $download, $fileName, $format, $resolveLfs);
 
         return $this->client
@@ -474,7 +474,7 @@ class BlobsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filename  (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -494,7 +494,7 @@ class BlobsApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $filename  (optional)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */

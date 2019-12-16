@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestResultSummary Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class TestResultSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'aggregatedResultsAnalysis' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis',
+        'aggregatedResultsAnalysis' => '\FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis',
         'noConfigRunsCount' => 'int',
-        'teamProject' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TeamProjectReference',
-        'testFailures' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFailuresAnalysis',
-        'testResultsContext' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext',
+        'teamProject' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TeamProjectReference',
+        'testFailures' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestFailuresAnalysis',
+        'testResultsContext' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext',
         'totalRunsCount' => 'int'
     ];
 
@@ -238,7 +238,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Gets aggregatedResultsAnalysis
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis
      */
     public function getAggregatedResultsAnalysis()
     {
@@ -248,7 +248,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Sets aggregatedResultsAnalysis
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis $aggregatedResultsAnalysis aggregatedResultsAnalysis
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\AggregatedResultsAnalysis $aggregatedResultsAnalysis aggregatedResultsAnalysis
      *
      * @return $this
      */
@@ -286,7 +286,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Gets teamProject
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TeamProjectReference
      */
     public function getTeamProject()
     {
@@ -296,7 +296,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Sets teamProject
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TeamProjectReference $teamProject teamProject
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TeamProjectReference $teamProject teamProject
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Gets testFailures
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFailuresAnalysis
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestFailuresAnalysis
      */
     public function getTestFailures()
     {
@@ -320,7 +320,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Sets testFailures
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestFailuresAnalysis $testFailures testFailures
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestFailuresAnalysis $testFailures testFailures
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Gets testResultsContext
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext
      */
     public function getTestResultsContext()
     {
@@ -344,7 +344,7 @@ class TestResultSummary implements ModelInterface, ArrayAccess
     /**
      * Sets testResultsContext
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestResultsContext $testResultsContext testResultsContext
      *
      * @return $this
      */

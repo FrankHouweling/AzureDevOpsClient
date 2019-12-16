@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionTraceEventProcessingLog Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,15 +67,15 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
         'errors' => 'int',
         'id' => 'string',
         'logType' => 'string',
-        'messages' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
+        'messages' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]',
         'properties' => 'map[string,string]',
         'source' => 'string',
         'startTime' => '\DateTime',
         'warnings' => 'int',
         'channel' => 'string',
-        'evaluationIdentities' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities',
-        'optedOut' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]',
-        'processedEvents' => 'map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessedEvent]'
+        'evaluationIdentities' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities',
+        'optedOut' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]',
+        'processedEvents' => 'map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessedEvent]'
     ];
 
     /**
@@ -526,7 +526,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[]
      */
     public function getMessages()
     {
@@ -536,7 +536,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationDiagnosticLogMessage[] $messages messages
      *
      * @return $this
      */
@@ -670,7 +670,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets evaluationIdentities
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities
      */
     public function getEvaluationIdentities()
     {
@@ -680,7 +680,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets evaluationIdentities
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessingIdentities $evaluationIdentities evaluationIdentities
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessingIdentities $evaluationIdentities evaluationIdentities
      *
      * @return $this
      */
@@ -694,7 +694,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets optedOut
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[]
      */
     public function getOptedOut()
     {
@@ -704,7 +704,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets optedOut
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[] $optedOut Which members opted out from receiving notifications from this subscription
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\DiagnosticIdentity[] $optedOut Which members opted out from receiving notifications from this subscription
      *
      * @return $this
      */
@@ -718,7 +718,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Gets processedEvents
      *
-     * @return map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessedEvent]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessedEvent]
      */
     public function getProcessedEvents()
     {
@@ -728,7 +728,7 @@ class SubscriptionTraceEventProcessingLog implements ModelInterface, ArrayAccess
     /**
      * Sets processedEvents
      *
-     * @param map[string,\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\ProcessedEvent] $processedEvents processedEvents
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Notification\Model\ProcessedEvent] $processedEvents processedEvents
      *
      * @return $this
      */

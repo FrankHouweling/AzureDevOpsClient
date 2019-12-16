@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * InputDescriptor Class Doc Comment
  *
  * @category Class
  * @description Describes an input for subscriptions.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -69,9 +69,9 @@ class InputDescriptor implements ModelInterface, ArrayAccess
         'properties' => 'map[string,object]',
         'type' => 'string',
         'useInDefaultDescription' => 'bool',
-        'validation' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation',
+        'validation' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation',
         'valueHint' => 'string',
-        'values' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValues'
+        'values' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValues'
     ];
 
     /**
@@ -592,7 +592,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Gets validation
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation
      */
     public function getValidation()
     {
@@ -602,7 +602,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Sets validation
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation $validation Information to use to validate this input's value
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation $validation Information to use to validate this input's value
      *
      * @return $this
      */
@@ -640,7 +640,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValues
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValues
      */
     public function getValues()
     {
@@ -650,7 +650,7 @@ class InputDescriptor implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValues $values Information about possible values for this input
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValues $values Information about possible values for this input
      *
      * @return $this
      */

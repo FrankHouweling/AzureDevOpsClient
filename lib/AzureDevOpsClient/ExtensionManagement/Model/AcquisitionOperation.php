@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * AcquisitionOperation Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class AcquisitionOperation implements ModelInterface, ArrayAccess
         'operationState' => 'string',
         'operationType' => 'string',
         'reason' => 'string',
-        'reasons' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[]'
+        'reasons' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[]'
     ];
 
     /**
@@ -374,7 +374,7 @@ class AcquisitionOperation implements ModelInterface, ArrayAccess
     /**
      * Gets reasons
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[]
      */
     public function getReasons()
     {
@@ -384,7 +384,7 @@ class AcquisitionOperation implements ModelInterface, ArrayAccess
     /**
      * Sets reasons
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[] $reasons List of reasons indicating why the operation is not allowed.
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\AcquisitionOperationDisallowReason[] $reasons List of reasons indicating why the operation is not allowed.
      *
      * @return $this
      */

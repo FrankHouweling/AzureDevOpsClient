@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * Folder Class Doc Comment
  *
  * @category Class
  * @description Represents a folder that contains build definitions.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class Folder implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'createdBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'createdOn' => '\DateTime',
         'description' => 'string',
-        'lastChangedBy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef',
+        'lastChangedBy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef',
         'lastChangedDate' => '\DateTime',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference'
+        'project' => '\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference'
     ];
 
     /**
@@ -244,7 +244,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -254,7 +254,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $createdBy The process or person who created the folder.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $createdBy The process or person who created the folder.
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Gets lastChangedBy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef
      */
     public function getLastChangedBy()
     {
@@ -326,7 +326,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Sets lastChangedBy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef $lastChangedBy The process or person that last changed the folder.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef $lastChangedBy The process or person that last changed the folder.
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -398,7 +398,7 @@ class Folder implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\TeamProjectReference $project The project.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference $project The project.
      *
      * @return $this
      */

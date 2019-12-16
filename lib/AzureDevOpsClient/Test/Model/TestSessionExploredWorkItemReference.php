@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestSessionExploredWorkItemReference Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestSessionExploredWorkItemReference implements ModelInterface, ArrayAcces
     protected static $swaggerTypes = [
         'id' => 'int',
         'type' => 'string',
-        'associatedWorkItems' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[]',
+        'associatedWorkItems' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[]',
         'endTime' => '\DateTime',
         'startTime' => '\DateTime'
     ];
@@ -280,7 +280,7 @@ class TestSessionExploredWorkItemReference implements ModelInterface, ArrayAcces
     /**
      * Gets associatedWorkItems
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[]
      */
     public function getAssociatedWorkItems()
     {
@@ -290,7 +290,7 @@ class TestSessionExploredWorkItemReference implements ModelInterface, ArrayAcces
     /**
      * Sets associatedWorkItems
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[] $associatedWorkItems Workitem references of workitems filed as a part of the current workitem exploration.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestSessionWorkItemReference[] $associatedWorkItems Workitem references of workitems filed as a part of the current workitem exploration.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildOptionDefinition Class Doc Comment
  *
  * @category Class
  * @description Represents an optional behavior that can be applied to a build definition.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class BuildOptionDefinition implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'description' => 'string',
-        'groups' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[]',
-        'inputs' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[]',
+        'groups' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[]',
+        'inputs' => '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[]',
         'name' => 'string',
         'ordinal' => 'int'
     ];
@@ -286,7 +286,7 @@ class BuildOptionDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets groups
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[]
      */
     public function getGroups()
     {
@@ -296,7 +296,7 @@ class BuildOptionDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets groups
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[] $groups The list of input groups defined for the build option.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionGroupDefinition[] $groups The list of input groups defined for the build option.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class BuildOptionDefinition implements ModelInterface, ArrayAccess
     /**
      * Gets inputs
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[]
      */
     public function getInputs()
     {
@@ -320,7 +320,7 @@ class BuildOptionDefinition implements ModelInterface, ArrayAccess
     /**
      * Sets inputs
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[] $inputs The list of inputs defined for the build option.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\BuildOptionInputDefinition[] $inputs The list of inputs defined for the build option.
      *
      * @return $this
      */

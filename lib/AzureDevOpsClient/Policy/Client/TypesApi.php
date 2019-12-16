@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Client;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Policy\ApiException;
-use AzureDevOpsClient\Policy\Configuration;
-use AzureDevOpsClient\Policy\HeaderSelector;
-use AzureDevOpsClient\Policy\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Policy\ApiException;
+use FrankHouweling\AzureDevOpsClient\Policy\Configuration;
+use FrankHouweling\AzureDevOpsClient\Policy\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * TypesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class TypesApi
      * @param  string $typeId The policy ID. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType
      */
     public function typesGet($organization, $project, $typeId, $apiVersion)
     {
@@ -113,13 +113,13 @@ class TypesApi
      * @param  string $typeId The policy ID. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType, HTTP status code, HTTP response headers (array of strings)
      */
     public function typesGetWithHttpInfo($organization, $project, $typeId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType';
         $request = $this->typesGetRequest($organization, $project, $typeId, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class TypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class TypesApi
      */
     public function typesGetAsyncWithHttpInfo($organization, $project, $typeId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType';
         $request = $this->typesGetRequest($organization, $project, $typeId, $apiVersion);
 
         return $this->client
@@ -416,9 +416,9 @@ class TypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType[]
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType[]
      */
     public function typesList($organization, $project, $apiVersion)
     {
@@ -433,13 +433,13 @@ class TypesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Policy\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Policy\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function typesListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType[]';
         $request = $this->typesListRequest($organization, $project, $apiVersion);
 
         try {
@@ -491,7 +491,7 @@ class TypesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType[]',
+                        '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -537,7 +537,7 @@ class TypesApi
      */
     public function typesListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyType[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyType[]';
         $request = $this->typesListRequest($organization, $project, $apiVersion);
 
         return $this->client

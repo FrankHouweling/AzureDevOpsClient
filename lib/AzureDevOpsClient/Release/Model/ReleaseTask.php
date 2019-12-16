@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseTask Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
         'agentName' => 'string',
         'finishTime' => '\DateTime',
         'id' => 'int',
-        'issues' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[]',
+        'issues' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Issue[]',
         'lineCount' => 'int',
         'logUrl' => 'string',
         'name' => 'string',
@@ -70,7 +70,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
         'resultCode' => 'string',
         'startTime' => '\DateTime',
         'status' => 'string',
-        'task' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTaskReference',
+        'task' => '\FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTaskReference',
         'timelineRecordId' => 'string'
     ];
 
@@ -397,7 +397,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
     /**
      * Gets issues
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Issue[]
      */
     public function getIssues()
     {
@@ -407,7 +407,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
     /**
      * Sets issues
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[] $issues List of issues occurred while execution of task.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Issue[] $issues List of issues occurred while execution of task.
      *
      * @return $this
      */
@@ -622,7 +622,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
     /**
      * Gets task
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTaskReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTaskReference
      */
     public function getTask()
     {
@@ -632,7 +632,7 @@ class ReleaseTask implements ModelInterface, ArrayAccess
     /**
      * Sets task
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\WorkflowTaskReference $task Workflow task reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\WorkflowTaskReference $task Workflow task reference.
      *
      * @return $this
      */

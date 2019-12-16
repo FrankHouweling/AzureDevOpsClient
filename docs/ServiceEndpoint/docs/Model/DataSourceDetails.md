@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dataSourceName** | **string** | Gets or sets the data source name. | [optional] 
 **dataSourceUrl** | **string** | Gets or sets the data source url. | [optional] 
-**headers** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]**](AuthorizationHeader.md) | Gets or sets the request headers. | [optional] 
+**headers** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\AuthorizationHeader[]**](AuthorizationHeader.md) | Gets or sets the request headers. | [optional] 
 **initialContextTemplate** | **string** | Gets or sets the initialization context used for the initial call to the data source | [optional] 
 **parameters** | **map[string,string]** | Gets the parameters of data source. | [optional] 
 **requestContent** | **string** | Gets or sets the data source request content. | [optional] 

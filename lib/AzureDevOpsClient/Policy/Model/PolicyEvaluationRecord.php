@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Policy\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * PolicyEvaluationRecord Class Doc Comment
  *
  * @category Class
  * @description This record encapsulates the current state of a policy as it applies to one specific pull request. Each pull request has a unique PolicyEvaluationRecord for each pull request which the policy applies to.
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks',
         'artifactId' => 'string',
         'completedDate' => '\DateTime',
-        'configuration' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
-        'context' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject',
+        'configuration' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration',
+        'context' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\JObject',
         'evaluationId' => 'string',
         'startedDate' => '\DateTime',
         'status' => 'string'
@@ -281,7 +281,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -291,7 +291,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks $links Links to other related objects
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks $links Links to other related objects
      *
      * @return $this
      */
@@ -353,7 +353,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Gets configuration
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration
      */
     public function getConfiguration()
     {
@@ -363,7 +363,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Sets configuration
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyConfiguration $configuration Contains all configuration data for the policy which is being evaluated.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyConfiguration $configuration Contains all configuration data for the policy which is being evaluated.
      *
      * @return $this
      */
@@ -377,7 +377,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Gets context
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\JObject
      */
     public function getContext()
     {
@@ -387,7 +387,7 @@ class PolicyEvaluationRecord implements ModelInterface, ArrayAccess
     /**
      * Sets context
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject $context Internal context data of this policy evaluation.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\JObject $context Internal context data of this policy evaluation.
      *
      * @return $this
      */

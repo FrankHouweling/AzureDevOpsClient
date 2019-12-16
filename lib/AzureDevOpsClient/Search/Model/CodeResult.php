@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model;
+namespace FrankHouweling\AzureDevOpsClient\Search\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Search\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Search\ObjectSerializer;
 
 /**
  * CodeResult Class Doc Comment
  *
  * @category Class
  * @description Defines the code result containing information of the searched files and its metadata.
- * @package  AzureDevOpsClient\Search
+ * @package  FrankHouweling\AzureDevOpsClient\Search
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,14 +58,14 @@ class CodeResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'collection' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection',
+        'collection' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Collection',
         'contentId' => 'string',
         'fileName' => 'string',
-        'matches' => 'map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Hit[]]',
+        'matches' => 'map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Hit[]]',
         'path' => 'string',
-        'project' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project',
-        'repository' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Repository',
-        'versions' => '\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Version[]'
+        'project' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Project',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Repository',
+        'versions' => '\FrankHouweling\AzureDevOpsClient\Search\Model\Version[]'
     ];
 
     /**
@@ -250,7 +250,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets collection
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Collection
      */
     public function getCollection()
     {
@@ -260,7 +260,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets collection
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Collection $collection Collection of the result file.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Collection $collection Collection of the result file.
      *
      * @return $this
      */
@@ -322,7 +322,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets matches
      *
-     * @return map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Hit[]]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Hit[]]
      */
     public function getMatches()
     {
@@ -332,7 +332,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets matches
      *
-     * @param map[string,\AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Hit[]] $matches Dictionary of field to hit offsets in the result file. Key identifies the area in which hits were found, for ex: file content/file name etc.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Search\Model\Hit[]] $matches Dictionary of field to hit offsets in the result file. Key identifies the area in which hits were found, for ex: file content/file name etc.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Project
      */
     public function getProject()
     {
@@ -380,7 +380,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Project $project Project of the result file.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Project $project Project of the result file.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Repository
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Repository
      */
     public function getRepository()
     {
@@ -404,7 +404,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Repository $repository Repository of the result file.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Repository $repository Repository of the result file.
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Version[]
+     * @return \FrankHouweling\AzureDevOpsClient\Search\Model\Version[]
      */
     public function getVersions()
     {
@@ -428,7 +428,7 @@ class CodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \AzureDevOpsClient\Search\AzureDevOpsClient\Search\Model\Version[] $versions Versions of the result file.
+     * @param \FrankHouweling\AzureDevOpsClient\Search\Model\Version[] $versions Versions of the result file.
      *
      * @return $this
      */

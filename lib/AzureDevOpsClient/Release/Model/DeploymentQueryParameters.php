@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentQueryParameters Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class DeploymentQueryParameters implements ModelInterface, ArrayAccess
         'artifactVersions' => 'string[]',
         'deploymentsPerEnvironment' => 'int',
         'deploymentStatus' => 'string',
-        'environments' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]',
+        'environments' => '\FrankHouweling\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]',
         'expands' => 'string',
         'isDeleted' => 'bool',
         'operationStatus' => 'string',
@@ -539,7 +539,7 @@ class DeploymentQueryParameters implements ModelInterface, ArrayAccess
     /**
      * Gets environments
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[]
      */
     public function getEnvironments()
     {
@@ -549,7 +549,7 @@ class DeploymentQueryParameters implements ModelInterface, ArrayAccess
     /**
      * Sets environments
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[] $environments Query deployments of specified environments.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\DefinitionEnvironmentReference[] $environments Query deployments of specified environments.
      *
      * @return $this
      */

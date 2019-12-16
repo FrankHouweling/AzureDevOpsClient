@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestCaseResultsData Class Doc Comment
  *
  * @category Class
  * @description This data model is used in TestCaseResultsDataProvider and populates the data required for initial page load
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestCaseResultsData implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'contextPoint' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference',
-        'results' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[]',
+        'contextPoint' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference',
+        'results' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[]',
         'testCaseName' => 'string'
     ];
 
@@ -220,7 +220,7 @@ class TestCaseResultsData implements ModelInterface, ArrayAccess
     /**
      * Gets contextPoint
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference
      */
     public function getContextPoint()
     {
@@ -230,7 +230,7 @@ class TestCaseResultsData implements ModelInterface, ArrayAccess
     /**
      * Sets contextPoint
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference $contextPoint Point information from where the execution history was viewed. Used to set initial filters.
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPointDetailedReference $contextPoint Point information from where the execution history was viewed. Used to set initial filters.
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class TestCaseResultsData implements ModelInterface, ArrayAccess
     /**
      * Gets results
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[]
      */
     public function getResults()
     {
@@ -254,7 +254,7 @@ class TestCaseResultsData implements ModelInterface, ArrayAccess
     /**
      * Sets results
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[] $results Use to store the results displayed in the table
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestCaseAssociatedResult[] $results Use to store the results displayed in the table
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * TemplatesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,7 +95,7 @@ class TemplatesApi
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -112,7 +112,7 @@ class TemplatesApi
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -380,9 +380,9 @@ class TemplatesApi
      * @param  string $templateId The ID of the requested template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate
      */
     public function templatesGet($organization, $project, $templateId, $apiVersion)
     {
@@ -398,13 +398,13 @@ class TemplatesApi
      * @param  string $templateId The ID of the requested template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate, HTTP status code, HTTP response headers (array of strings)
      */
     public function templatesGetWithHttpInfo($organization, $project, $templateId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
         $request = $this->templatesGetRequest($organization, $project, $templateId, $apiVersion);
 
         try {
@@ -456,7 +456,7 @@ class TemplatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class TemplatesApi
      */
     public function templatesGetAsyncWithHttpInfo($organization, $project, $templateId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
         $request = $this->templatesGetRequest($organization, $project, $templateId, $apiVersion);
 
         return $this->client
@@ -701,9 +701,9 @@ class TemplatesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]
      */
     public function templatesList($organization, $project, $apiVersion)
     {
@@ -718,13 +718,13 @@ class TemplatesApi
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[], HTTP status code, HTTP response headers (array of strings)
      */
     public function templatesListWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]';
         $request = $this->templatesListRequest($organization, $project, $apiVersion);
 
         try {
@@ -776,7 +776,7 @@ class TemplatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,7 +822,7 @@ class TemplatesApi
      */
     public function templatesListAsyncWithHttpInfo($organization, $project, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate[]';
         $request = $this->templatesListRequest($organization, $project, $apiVersion);
 
         return $this->client
@@ -1001,14 +1001,14 @@ class TemplatesApi
      * Operation templatesSaveTemplate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate
      */
     public function templatesSaveTemplate($organization, $body, $project, $templateId, $apiVersion)
     {
@@ -1020,18 +1020,18 @@ class TemplatesApi
      * Operation templatesSaveTemplateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate, HTTP status code, HTTP response headers (array of strings)
      */
     public function templatesSaveTemplateWithHttpInfo($organization, $body, $project, $templateId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
         $request = $this->templatesSaveTemplateRequest($organization, $body, $project, $templateId, $apiVersion);
 
         try {
@@ -1083,7 +1083,7 @@ class TemplatesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1099,7 +1099,7 @@ class TemplatesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1123,7 +1123,7 @@ class TemplatesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
@@ -1133,7 +1133,7 @@ class TemplatesApi
      */
     public function templatesSaveTemplateAsyncWithHttpInfo($organization, $body, $project, $templateId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate';
         $request = $this->templatesSaveTemplateRequest($organization, $body, $project, $templateId, $apiVersion);
 
         return $this->client
@@ -1177,7 +1177,7 @@ class TemplatesApi
      * Create request for operation 'templatesSaveTemplate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\BuildDefinitionTemplate $body The new version of the template. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $templateId The ID of the template. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)

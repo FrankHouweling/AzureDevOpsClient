@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * RunStatistic Class Doc Comment
  *
  * @category Class
  * @description Test run statistics per outcome.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'count' => 'int',
         'outcome' => 'string',
-        'resolutionState' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResolutionState',
+        'resolutionState' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResolutionState',
         'resultMetadata' => 'string',
         'state' => 'string'
     ];
@@ -303,7 +303,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets resolutionState
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResolutionState
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResolutionState
      */
     public function getResolutionState()
     {
@@ -313,7 +313,7 @@ class RunStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets resolutionState
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResolutionState $resolutionState Test run Resolution State.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResolutionState $resolutionState Test run Resolution State.
      *
      * @return $this
      */

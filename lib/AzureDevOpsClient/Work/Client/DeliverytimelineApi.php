@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * DeliverytimelineApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -98,9 +98,9 @@ class DeliverytimelineApi
      * @param  \DateTime $startDate The start date of timeline (optional)
      * @param  \DateTime $endDate The end date of timeline (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData
      */
     public function deliverytimelineGet($organization, $project, $id, $apiVersion, $revision = null, $startDate = null, $endDate = null)
     {
@@ -119,13 +119,13 @@ class DeliverytimelineApi
      * @param  \DateTime $startDate The start date of timeline (optional)
      * @param  \DateTime $endDate The end date of timeline (optional)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData, HTTP status code, HTTP response headers (array of strings)
      */
     public function deliverytimelineGetWithHttpInfo($organization, $project, $id, $apiVersion, $revision = null, $startDate = null, $endDate = null)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData';
         $request = $this->deliverytimelineGetRequest($organization, $project, $id, $apiVersion, $revision, $startDate, $endDate);
 
         try {
@@ -177,7 +177,7 @@ class DeliverytimelineApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class DeliverytimelineApi
      */
     public function deliverytimelineGetAsyncWithHttpInfo($organization, $project, $id, $apiVersion, $revision = null, $startDate = null, $endDate = null)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData';
         $request = $this->deliverytimelineGetRequest($organization, $project, $id, $apiVersion, $revision, $startDate, $endDate);
 
         return $this->client

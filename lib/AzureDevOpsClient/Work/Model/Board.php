@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * Board Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,14 +61,14 @@ class Board implements ModelInterface, ArrayAccess
         'id' => 'string',
         'name' => 'string',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'allowedMappings' => 'map[string,map[string,string[]]]',
         'canEdit' => 'bool',
-        'columns' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]',
-        'fields' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardFields',
+        'columns' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]',
+        'fields' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardFields',
         'isValid' => 'bool',
         'revision' => 'int',
-        'rows' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardRow[]'
+        'rows' => '\FrankHouweling\AzureDevOpsClient\Work\Model\BoardRow[]'
     ];
 
     /**
@@ -340,7 +340,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -350,7 +350,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -412,7 +412,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Gets columns
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[]
      */
     public function getColumns()
     {
@@ -422,7 +422,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Sets columns
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardColumn[] $columns columns
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BoardColumn[] $columns columns
      *
      * @return $this
      */
@@ -436,7 +436,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Gets fields
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardFields
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardFields
      */
     public function getFields()
     {
@@ -446,7 +446,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Sets fields
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardFields $fields fields
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BoardFields $fields fields
      *
      * @return $this
      */
@@ -508,7 +508,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Gets rows
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardRow[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\BoardRow[]
      */
     public function getRows()
     {
@@ -518,7 +518,7 @@ class Board implements ModelInterface, ArrayAccess
     /**
      * Sets rows
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardRow[] $rows rows
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\BoardRow[] $rows rows
      *
      * @return $this
      */

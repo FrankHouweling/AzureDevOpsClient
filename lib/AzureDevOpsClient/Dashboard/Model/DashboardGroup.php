@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model;
+namespace FrankHouweling\AzureDevOpsClient\Dashboard\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Dashboard\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Dashboard\ObjectSerializer;
 
 /**
  * DashboardGroup Class Doc Comment
  *
  * @category Class
  * @description Describes a list of dashboards associated to an owner. Currently, teams own dashboard groups.
- * @package  AzureDevOpsClient\Dashboard
+ * @package  FrankHouweling\AzureDevOpsClient\Dashboard
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class DashboardGroup implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
-        'dashboardEntries' => '\AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks',
+        'dashboardEntries' => '\FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[]',
         'permission' => 'string',
         'teamDashboardPermission' => 'string',
         'url' => 'string'
@@ -290,7 +290,7 @@ class DashboardGroup implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -300,7 +300,7 @@ class DashboardGroup implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class DashboardGroup implements ModelInterface, ArrayAccess
     /**
      * Gets dashboardEntries
      *
-     * @return \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[]
      */
     public function getDashboardEntries()
     {
@@ -324,7 +324,7 @@ class DashboardGroup implements ModelInterface, ArrayAccess
     /**
      * Sets dashboardEntries
      *
-     * @param \AzureDevOpsClient\Dashboard\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[] $dashboardEntries A list of Dashboards held by the Dashboard Group
+     * @param \FrankHouweling\AzureDevOpsClient\Dashboard\Model\DashboardGroupEntry[] $dashboardEntries A list of Dashboards held by the Dashboard Group
      *
      * @return $this
      */

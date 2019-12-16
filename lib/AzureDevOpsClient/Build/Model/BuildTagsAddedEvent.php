@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildTagsAddedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BuildTagsAddedEvent implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build',
+        'build' => '\FrankHouweling\AzureDevOpsClient\Build\Model\Build',
         'buildId' => 'int',
         'allTags' => 'string[]',
         'newTags' => 'string[]'
@@ -226,7 +226,7 @@ class BuildTagsAddedEvent implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\Build
      */
     public function getBuild()
     {
@@ -236,7 +236,7 @@ class BuildTagsAddedEvent implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\Build $build build
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\Build $build build
      *
      * @return $this
      */

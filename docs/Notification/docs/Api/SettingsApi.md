@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Notification\SettingsApi
+# FrankHouweling\AzureDevOpsClient\Notification\SettingsApi
 
 All URIs are relative to *https://{service}.dev.azure.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **settingsGet**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings settingsGet($organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings settingsGet($organization, $apiVersion)
 
 
 
@@ -21,12 +21,12 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SettingsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings**](../Model/NotificationAdminSettings.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings**](../Model/NotificationAdminSettings.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **settingsUpdate**
-> \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings settingsUpdate($body, $organization, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings settingsUpdate($body, $organization, $apiVersion)
 
 
 
@@ -79,18 +79,18 @@ Name | Type | Description  | Notes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Notification\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Notification\Api\SettingsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Notification\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters(); // \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters | 
+$body = new \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters(); // \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters | 
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
@@ -107,13 +107,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters**](../Model/NotificationAdminSettingsUpdateParameters.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettingsUpdateParameters**](../Model/NotificationAdminSettingsUpdateParameters.md)|  |
  **organization** | **string**| The name of the Azure DevOps organization. |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationAdminSettings**](../Model/NotificationAdminSettings.md)
+[**\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationAdminSettings**](../Model/NotificationAdminSettings.md)
 
 ### Authorization
 

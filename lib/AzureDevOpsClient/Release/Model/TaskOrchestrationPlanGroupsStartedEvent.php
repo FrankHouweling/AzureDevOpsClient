@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * TaskOrchestrationPlanGroupsStartedEvent Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'planGroups' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[]'
+        'planGroups' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
     /**
      * Gets planGroups
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[]
      */
     public function getPlanGroups()
     {
@@ -218,7 +218,7 @@ class TaskOrchestrationPlanGroupsStartedEvent implements ModelInterface, ArrayAc
     /**
      * Sets planGroups
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[] $planGroups planGroups
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TaskOrchestrationPlanGroupReference[] $planGroups planGroups
      *
      * @return $this
      */

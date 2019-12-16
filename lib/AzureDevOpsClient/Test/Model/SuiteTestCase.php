@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * SuiteTestCase Class Doc Comment
  *
  * @category Class
  * @description Test case for the suite.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class SuiteTestCase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'pointAssignments' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointAssignment[]',
-        'testCase' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference'
+        'pointAssignments' => '\FrankHouweling\AzureDevOpsClient\Test\Model\PointAssignment[]',
+        'testCase' => '\FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference'
     ];
 
     /**
@@ -214,7 +214,7 @@ class SuiteTestCase implements ModelInterface, ArrayAccess
     /**
      * Gets pointAssignments
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointAssignment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\PointAssignment[]
      */
     public function getPointAssignments()
     {
@@ -224,7 +224,7 @@ class SuiteTestCase implements ModelInterface, ArrayAccess
     /**
      * Sets pointAssignments
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\PointAssignment[] $pointAssignments Point Assignment for test suite's test case.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\PointAssignment[] $pointAssignments Point Assignment for test suite's test case.
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class SuiteTestCase implements ModelInterface, ArrayAccess
     /**
      * Gets testCase
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference
      */
     public function getTestCase()
     {
@@ -248,7 +248,7 @@ class SuiteTestCase implements ModelInterface, ArrayAccess
     /**
      * Sets testCase
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\WorkItemReference $testCase Test case workItem reference.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\WorkItemReference $testCase Test case workItem reference.
      *
      * @return $this
      */

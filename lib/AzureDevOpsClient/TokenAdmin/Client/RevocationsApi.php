@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Client;
+namespace FrankHouweling\AzureDevOpsClient\TokenAdmin\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TokenAdmin\ApiException;
-use AzureDevOpsClient\TokenAdmin\Configuration;
-use AzureDevOpsClient\TokenAdmin\HeaderSelector;
-use AzureDevOpsClient\TokenAdmin\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\Configuration;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TokenAdmin\ObjectSerializer;
 
 /**
  * RevocationsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TokenAdmin
+ * @package  FrankHouweling\AzureDevOpsClient\TokenAdmin
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class RevocationsApi
      * Operation revocationsRevokeAuthorizations
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -108,11 +108,11 @@ class RevocationsApi
      * Operation revocationsRevokeAuthorizationsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
-     * @throws \AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TokenAdmin\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -164,7 +164,7 @@ class RevocationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
@@ -187,7 +187,7 @@ class RevocationsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *
@@ -226,7 +226,7 @@ class RevocationsApi
      * Create request for operation 'revocationsRevokeAuthorizations'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TokenAdmin\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TokenAdmin\Model\TokenAdminRevocation[] $body The list of objects containing the authorization IDs of the OAuth authorizations, such as session tokens retrieved by listed a users PATs, that should be revoked. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  bool $isPublic Set to false for PAT tokens and true for SSH tokens. (optional)
      *

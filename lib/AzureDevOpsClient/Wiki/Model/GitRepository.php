@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * GitRepository Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class GitRepository implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\ReferenceLinks',
         'defaultBranch' => 'string',
         'id' => 'string',
         'isFork' => 'bool',
         'name' => 'string',
-        'parentRepository' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepositoryRef',
-        'project' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\TeamProjectReference',
+        'parentRepository' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepositoryRef',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\TeamProjectReference',
         'remoteUrl' => 'string',
         'size' => 'int',
         'sshUrl' => 'string',
@@ -280,7 +280,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -290,7 +290,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets parentRepository
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepositoryRef
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepositoryRef
      */
     public function getParentRepository()
     {
@@ -410,7 +410,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets parentRepository
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitRepositoryRef $parentRepository parentRepository
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitRepositoryRef $parentRepository parentRepository
      *
      * @return $this
      */
@@ -424,7 +424,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -434,7 +434,7 @@ class GitRepository implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\TeamProjectReference $project project
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\TeamProjectReference $project project
      *
      * @return $this
      */

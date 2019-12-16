@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestLabelsApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestLabelsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **pullRequestLabelsCreate**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition pullRequestLabelsCreate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion, $projectId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition pullRequestLabelsCreate($organization, $body, $repositoryId, $pullRequestId, $project, $apiVersion, $projectId)
 
 
 
@@ -23,16 +23,16 @@ Create a label for a specified pull request. The only required field is the name
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData | Label to assign to the pull request.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData(); // \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData | Label to assign to the pull request.
 $repositoryId = "repositoryId_example"; // string | The repository ID of the pull request’s target branch.
 $pullRequestId = 56; // int | ID of the pull request.
 $project = "project_example"; // string | Project ID or project name
@@ -53,7 +53,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData**](../Model/WebApiCreateTagRequestData.md)| Label to assign to the pull request. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\WebApiCreateTagRequestData**](../Model/WebApiCreateTagRequestData.md)| Label to assign to the pull request. |
  **repositoryId** | **string**| The repository ID of the pull request’s target branch. |
  **pullRequestId** | **int**| ID of the pull request. |
  **project** | **string**| Project ID or project name |
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition**](../Model/WebApiTagDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition**](../Model/WebApiTagDefinition.md)
 
 ### Authorization
 
@@ -88,9 +88,9 @@ Removes a label from the set of those assigned to the pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -140,7 +140,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestLabelsGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition pullRequestLabelsGet($organization, $repositoryId, $pullRequestId, $labelIdOrName, $project, $apiVersion, $projectId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition pullRequestLabelsGet($organization, $repositoryId, $pullRequestId, $labelIdOrName, $project, $apiVersion, $projectId)
 
 
 
@@ -152,9 +152,9 @@ Retrieves a single label that has been assigned to a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition**](../Model/WebApiTagDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition**](../Model/WebApiTagDefinition.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pullRequestLabelsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition[] pullRequestLabelsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $projectId)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition[] pullRequestLabelsList($organization, $repositoryId, $pullRequestId, $project, $apiVersion, $projectId)
 
 
 
@@ -217,9 +217,9 @@ Get all the labels assigned to a pull request.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]**](../Model/WebApiTagDefinition.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]**](../Model/WebApiTagDefinition.md)
 
 ### Authorization
 

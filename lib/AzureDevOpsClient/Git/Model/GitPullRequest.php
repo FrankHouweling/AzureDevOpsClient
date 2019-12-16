@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitPullRequest Class Doc Comment
  *
  * @category Class
  * @description Represents all the data associated with a pull request.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,40 +58,40 @@ class GitPullRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'artifactId' => 'string',
-        'autoCompleteSetBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
-        'closedBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'autoCompleteSetBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
+        'closedBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'closedDate' => '\DateTime',
         'codeReviewId' => 'int',
-        'commits' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]',
-        'completionOptions' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions',
+        'commits' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]',
+        'completionOptions' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions',
         'completionQueueTime' => '\DateTime',
-        'createdBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'creationDate' => '\DateTime',
         'description' => 'string',
-        'forkSource' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkRef',
+        'forkSource' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitForkRef',
         'isDraft' => 'bool',
-        'labels' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]',
-        'lastMergeCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
-        'lastMergeSourceCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
-        'lastMergeTargetCommit' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'labels' => '\FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]',
+        'lastMergeCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'lastMergeSourceCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
+        'lastMergeTargetCommit' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef',
         'mergeFailureMessage' => 'string',
         'mergeFailureType' => 'string',
         'mergeId' => 'string',
-        'mergeOptions' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions',
+        'mergeOptions' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions',
         'mergeStatus' => 'string',
         'pullRequestId' => 'int',
         'remoteUrl' => 'string',
-        'repository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
-        'reviewers' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
+        'reviewers' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]',
         'sourceRefName' => 'string',
         'status' => 'string',
         'supportsIterations' => 'bool',
         'targetRefName' => 'string',
         'title' => 'string',
         'url' => 'string',
-        'workItemRefs' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]'
+        'workItemRefs' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]'
     ];
 
     /**
@@ -493,7 +493,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -503,7 +503,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Links to other related objects.
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets autoCompleteSetBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getAutoCompleteSetBy()
     {
@@ -551,7 +551,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets autoCompleteSetBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $autoCompleteSetBy If set, auto-complete is enabled for this pull request and this is the identity that enabled it.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $autoCompleteSetBy If set, auto-complete is enabled for this pull request and this is the identity that enabled it.
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets closedBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getClosedBy()
     {
@@ -575,7 +575,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets closedBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $closedBy The user who closed the pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $closedBy The user who closed the pull request.
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets commits
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[]
      */
     public function getCommits()
     {
@@ -647,7 +647,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets commits
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The commits contained in the pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef[] $commits The commits contained in the pull request.
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets completionOptions
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions
      */
     public function getCompletionOptions()
     {
@@ -671,7 +671,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets completionOptions
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions $completionOptions Options which affect how the pull request will be merged when it is completed.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestCompletionOptions $completionOptions Options which affect how the pull request will be merged when it is completed.
      *
      * @return $this
      */
@@ -709,7 +709,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -719,7 +719,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $createdBy The identity of the user who created the pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $createdBy The identity of the user who created the pull request.
      *
      * @return $this
      */
@@ -781,7 +781,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets forkSource
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkRef
      */
     public function getForkSource()
     {
@@ -791,7 +791,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets forkSource
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitForkRef $forkSource If this is a PR from a fork this will contain information about its source.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitForkRef $forkSource If this is a PR from a fork this will contain information about its source.
      *
      * @return $this
      */
@@ -829,7 +829,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets labels
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition[]
      */
     public function getLabels()
     {
@@ -839,7 +839,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets labels
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\WebApiTagDefinition[] $labels The labels associated with the pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\WebApiTagDefinition[] $labels The labels associated with the pull request.
      *
      * @return $this
      */
@@ -853,7 +853,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets lastMergeCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getLastMergeCommit()
     {
@@ -863,7 +863,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets lastMergeCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeCommit The commit of the most recent pull request merge. If empty, the most recent merge is in progress or was unsuccessful.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeCommit The commit of the most recent pull request merge. If empty, the most recent merge is in progress or was unsuccessful.
      *
      * @return $this
      */
@@ -877,7 +877,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets lastMergeSourceCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getLastMergeSourceCommit()
     {
@@ -887,7 +887,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets lastMergeSourceCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeSourceCommit The commit at the head of the source branch at the time of the last pull request merge.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeSourceCommit The commit at the head of the source branch at the time of the last pull request merge.
      *
      * @return $this
      */
@@ -901,7 +901,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets lastMergeTargetCommit
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef
      */
     public function getLastMergeTargetCommit()
     {
@@ -911,7 +911,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets lastMergeTargetCommit
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeTargetCommit The commit at the head of the target branch at the time of the last pull request merge.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitCommitRef $lastMergeTargetCommit The commit at the head of the target branch at the time of the last pull request merge.
      *
      * @return $this
      */
@@ -1006,7 +1006,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets mergeOptions
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions
      */
     public function getMergeOptions()
     {
@@ -1016,7 +1016,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets mergeOptions
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions $mergeOptions Options used when the pull request merge runs. These are separate from completion options since completion happens only once and a new merge will run every time the source branch of the pull request changes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitPullRequestMergeOptions $mergeOptions Options used when the pull request merge runs. These are separate from completion options since completion happens only once and a new merge will run every time the source branch of the pull request changes.
      *
      * @return $this
      */
@@ -1111,7 +1111,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getRepository()
     {
@@ -1121,7 +1121,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $repository The repository containing the target branch of the pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $repository The repository containing the target branch of the pull request.
      *
      * @return $this
      */
@@ -1135,7 +1135,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets reviewers
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[]
      */
     public function getReviewers()
     {
@@ -1145,7 +1145,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets reviewers
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $reviewers A list of reviewers on the pull request along with the state of their votes.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRefWithVote[] $reviewers A list of reviewers on the pull request along with the state of their votes.
      *
      * @return $this
      */
@@ -1312,7 +1312,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Gets workItemRefs
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[]
      */
     public function getWorkItemRefs()
     {
@@ -1322,7 +1322,7 @@ class GitPullRequest implements ModelInterface, ArrayAccess
     /**
      * Sets workItemRefs
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ResourceRef[] $workItemRefs Any work item references associated with this pull request.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ResourceRef[] $workItemRefs Any work item references associated with this pull request.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * RequestedExtension Class Doc Comment
  *
  * @category Class
  * @description A request for an extension (to be installed or have a license assigned)
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class RequestedExtension implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'extensionName' => 'string',
-        'extensionRequests' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[]',
+        'extensionRequests' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[]',
         'publisherDisplayName' => 'string',
         'publisherName' => 'string',
         'requestCount' => 'int'
@@ -256,7 +256,7 @@ class RequestedExtension implements ModelInterface, ArrayAccess
     /**
      * Gets extensionRequests
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[]
      */
     public function getExtensionRequests()
     {
@@ -266,7 +266,7 @@ class RequestedExtension implements ModelInterface, ArrayAccess
     /**
      * Sets extensionRequests
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[] $extensionRequests A list of each request for the extension
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionRequest[] $extensionRequests A list of each request for the extension
      *
      * @return $this
      */

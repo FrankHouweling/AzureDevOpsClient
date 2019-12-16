@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\PullRequestShareApi
+# FrankHouweling\AzureDevOpsClient\Git\PullRequestShareApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -20,16 +20,16 @@ Sends an e-mail notification about a specific pull request to a set of recipient
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\PullRequestShareApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\PullRequestShareApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext | 
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext(); // \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext | 
 $repositoryId = "repositoryId_example"; // string | ID of the git repository.
 $pullRequestId = 56; // int | ID of the pull request.
 $project = "project_example"; // string | Project ID or project name
@@ -48,7 +48,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext**](../Model/ShareNotificationContext.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext**](../Model/ShareNotificationContext.md)|  |
  **repositoryId** | **string**| ID of the git repository. |
  **pullRequestId** | **int**| ID of the pull request. |
  **project** | **string**| Project ID or project name |

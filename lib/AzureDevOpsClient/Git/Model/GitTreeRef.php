@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitTreeRef Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class GitTreeRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
         'objectId' => 'string',
         'size' => 'int',
-        'treeEntries' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeEntryRef[]',
+        'treeEntries' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeEntryRef[]',
         'url' => 'string'
     ];
 
@@ -232,7 +232,7 @@ class GitTreeRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -242,7 +242,7 @@ class GitTreeRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links links
      *
      * @return $this
      */
@@ -304,7 +304,7 @@ class GitTreeRef implements ModelInterface, ArrayAccess
     /**
      * Gets treeEntries
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeEntryRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeEntryRef[]
      */
     public function getTreeEntries()
     {
@@ -314,7 +314,7 @@ class GitTreeRef implements ModelInterface, ArrayAccess
     /**
      * Sets treeEntries
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeEntryRef[] $treeEntries Blobs and trees under this tree
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeEntryRef[] $treeEntries Blobs and trees under this tree
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseDefinitionEnvironmentSummary Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ReleaseDefinitionEnvironmentSummary implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'lastReleases' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference[]',
+        'lastReleases' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference[]',
         'name' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class ReleaseDefinitionEnvironmentSummary implements ModelInterface, ArrayAccess
     /**
      * Gets lastReleases
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference[]
      */
     public function getLastReleases()
     {
@@ -254,7 +254,7 @@ class ReleaseDefinitionEnvironmentSummary implements ModelInterface, ArrayAccess
     /**
      * Sets lastReleases
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference[] $lastReleases List of release shallow reference deployed using this ReleaseDefinition.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference[] $lastReleases List of release shallow reference deployed using this ReleaseDefinition.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitAsyncRefOperationParameters Class Doc Comment
  *
  * @category Class
  * @description Parameters that are provided in the request body when requesting to cherry pick or revert.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class GitAsyncRefOperationParameters implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'generatedRefName' => 'string',
         'ontoRefName' => 'string',
-        'repository' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository',
-        'source' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource'
+        'repository' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository',
+        'source' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource'
     ];
 
     /**
@@ -274,7 +274,7 @@ class GitAsyncRefOperationParameters implements ModelInterface, ArrayAccess
     /**
      * Gets repository
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository
      */
     public function getRepository()
     {
@@ -284,7 +284,7 @@ class GitAsyncRefOperationParameters implements ModelInterface, ArrayAccess
     /**
      * Sets repository
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitRepository $repository The git repository for the cherry pick or revert operation.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitRepository $repository The git repository for the cherry pick or revert operation.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class GitAsyncRefOperationParameters implements ModelInterface, ArrayAccess
     /**
      * Gets source
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource
      */
     public function getSource()
     {
@@ -308,7 +308,7 @@ class GitAsyncRefOperationParameters implements ModelInterface, ArrayAccess
     /**
      * Sets source
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource $source Details about the source of the cherry pick or revert operation (e.g. A pull request or a specific commit).
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitAsyncRefOperationSource $source Details about the source of the cherry pick or revert operation (e.g. A pull request or a specific commit).
      *
      * @return $this
      */

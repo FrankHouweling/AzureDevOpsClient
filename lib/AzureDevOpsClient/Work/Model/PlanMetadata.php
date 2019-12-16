@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * PlanMetadata Class Doc Comment
  *
  * @category Class
  * @description Metadata about a plan definition that is stored in favorites service
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class PlanMetadata implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'createdByIdentity' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef',
+        'createdByIdentity' => '\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef',
         'description' => 'string',
         'modifiedDate' => '\DateTime',
         'userPermissions' => 'string'
@@ -257,7 +257,7 @@ class PlanMetadata implements ModelInterface, ArrayAccess
     /**
      * Gets createdByIdentity
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef
      */
     public function getCreatedByIdentity()
     {
@@ -267,7 +267,7 @@ class PlanMetadata implements ModelInterface, ArrayAccess
     /**
      * Sets createdByIdentity
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef $createdByIdentity Identity of the creator of the plan
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef $createdByIdentity Identity of the creator of the plan
      *
      * @return $this
      */

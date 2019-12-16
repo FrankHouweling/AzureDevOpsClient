@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\BoardcolumnsApi
+# FrankHouweling\AzureDevOpsClient\Work\BoardcolumnsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **boardcolumnsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardSuggestedValue[] boardcolumnsList($organization, $project, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardSuggestedValue[] boardcolumnsList($organization, $project, $apiVersion)
 
 
 
@@ -20,9 +20,9 @@ Get available board columns in a project
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardcolumnsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardcolumnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardSuggestedValue[]**](../Model/BoardSuggestedValue.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardSuggestedValue[]**](../Model/BoardSuggestedValue.md)
 
 ### Authorization
 

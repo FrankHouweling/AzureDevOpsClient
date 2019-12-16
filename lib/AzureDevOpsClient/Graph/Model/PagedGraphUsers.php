@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model;
+namespace FrankHouweling\AzureDevOpsClient\Graph\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Graph\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Graph\ObjectSerializer;
 
 /**
  * PagedGraphUsers Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Graph
+ * @package  FrankHouweling\AzureDevOpsClient\Graph
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PagedGraphUsers implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'continuationToken' => 'string[]',
-        'graphUsers' => '\AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]'
+        'graphUsers' => '\FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PagedGraphUsers implements ModelInterface, ArrayAccess
     /**
      * Gets graphUsers
      *
-     * @return \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[]
+     * @return \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[]
      */
     public function getGraphUsers()
     {
@@ -248,7 +248,7 @@ class PagedGraphUsers implements ModelInterface, ArrayAccess
     /**
      * Sets graphUsers
      *
-     * @param \AzureDevOpsClient\Graph\AzureDevOpsClient\Graph\Model\GraphUser[] $graphUsers The enumerable set of users found within a page.
+     * @param \FrankHouweling\AzureDevOpsClient\Graph\Model\GraphUser[] $graphUsers The enumerable set of users found within a page.
      *
      * @return $this
      */

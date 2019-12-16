@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * UploadAttachmentsRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class UploadAttachmentsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'attachments' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[]',
+        'attachments' => '\FrankHouweling\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[]',
         'requestParams' => 'map[string,string]'
     ];
 
@@ -214,7 +214,7 @@ class UploadAttachmentsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets attachments
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[]
      */
     public function getAttachments()
     {
@@ -224,7 +224,7 @@ class UploadAttachmentsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets attachments
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[] $attachments attachments
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\HttpPostedTcmAttachment[] $attachments attachments
      *
      * @return $this
      */

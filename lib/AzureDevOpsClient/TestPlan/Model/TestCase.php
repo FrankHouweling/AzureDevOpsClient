@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestPlan\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestCase Class Doc Comment
  *
  * @category Class
  * @description Test Case Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class TestCase implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks',
         'order' => 'int',
-        'pointAssignments' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\PointAssignment[]',
-        'project' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
-        'testPlan' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference',
-        'testSuite' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
-        'workItem' => '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItemDetails'
+        'pointAssignments' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\PointAssignment[]',
+        'project' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference',
+        'testPlan' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference',
+        'testSuite' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference',
+        'workItem' => '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItemDetails'
     ];
 
     /**
@@ -244,7 +244,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -254,7 +254,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Reference links
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\ReferenceLinks $links Reference links
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets pointAssignments
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\PointAssignment[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\PointAssignment[]
      */
     public function getPointAssignments()
     {
@@ -302,7 +302,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets pointAssignments
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\PointAssignment[] $pointAssignments List of Points associated with the Test Case
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\PointAssignment[] $pointAssignments List of Points associated with the Test Case
      *
      * @return $this
      */
@@ -316,7 +316,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference
      */
     public function getProject()
     {
@@ -326,7 +326,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Project under which the Test Case is
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TeamProjectReference $project Project under which the Test Case is
      *
      * @return $this
      */
@@ -340,7 +340,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets testPlan
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference
      */
     public function getTestPlan()
     {
@@ -350,7 +350,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets testPlan
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestPlanReference $testPlan Test Plan under which the Test Case is
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestPlanReference $testPlan Test Plan under which the Test Case is
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets testSuite
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference
      */
     public function getTestSuite()
     {
@@ -374,7 +374,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets testSuite
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $testSuite Test Suite under which the Test Case is
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteReference $testSuite Test Suite under which the Test Case is
      *
      * @return $this
      */
@@ -388,7 +388,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Gets workItem
      *
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItemDetails
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItemDetails
      */
     public function getWorkItem()
     {
@@ -398,7 +398,7 @@ class TestCase implements ModelInterface, ArrayAccess
     /**
      * Sets workItem
      *
-     * @param \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\WorkItemDetails $workItem Work Item details of the TestCase
+     * @param \FrankHouweling\AzureDevOpsClient\TestPlan\Model\WorkItemDetails $workItem Work Item details of the TestCase
      *
      * @return $this
      */

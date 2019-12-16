@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * FetchTestResultsRequest Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class FetchTestResultsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'idAndRevs' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]',
+        'idAndRevs' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]',
         'includeActionResults' => 'bool',
         'projectName' => 'string'
     ];
@@ -220,7 +220,7 @@ class FetchTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets idAndRevs
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[]
      */
     public function getIdAndRevs()
     {
@@ -230,7 +230,7 @@ class FetchTestResultsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets idAndRevs
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[] $idAndRevs idAndRevs
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestCaseResultIdAndRev[] $idAndRevs idAndRevs
      *
      * @return $this
      */

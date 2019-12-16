@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * NotificationEventBacklogStatus Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class NotificationEventBacklogStatus implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'eventBacklogStatus' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBacklogStatus[]',
-        'notificationBacklogStatus' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[]'
+        'eventBacklogStatus' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventBacklogStatus[]',
+        'notificationBacklogStatus' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class NotificationEventBacklogStatus implements ModelInterface, ArrayAccess
     /**
      * Gets eventBacklogStatus
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBacklogStatus[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventBacklogStatus[]
      */
     public function getEventBacklogStatus()
     {
@@ -224,7 +224,7 @@ class NotificationEventBacklogStatus implements ModelInterface, ArrayAccess
     /**
      * Sets eventBacklogStatus
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventBacklogStatus[] $eventBacklogStatus eventBacklogStatus
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventBacklogStatus[] $eventBacklogStatus eventBacklogStatus
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class NotificationEventBacklogStatus implements ModelInterface, ArrayAccess
     /**
      * Gets notificationBacklogStatus
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[]
      */
     public function getNotificationBacklogStatus()
     {
@@ -248,7 +248,7 @@ class NotificationEventBacklogStatus implements ModelInterface, ArrayAccess
     /**
      * Sets notificationBacklogStatus
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[] $notificationBacklogStatus notificationBacklogStatus
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationBacklogStatus[] $notificationBacklogStatus notificationBacklogStatus
      *
      * @return $this
      */

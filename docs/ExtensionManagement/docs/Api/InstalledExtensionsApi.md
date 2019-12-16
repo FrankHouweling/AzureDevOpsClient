@@ -1,4 +1,4 @@
-# AzureDevOpsClient\ExtensionManagement\InstalledExtensionsApi
+# FrankHouweling\AzureDevOpsClient\ExtensionManagement\InstalledExtensionsApi
 
 All URIs are relative to *https://extmgmt.dev.azure.com*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **installedExtensionsGet**
-> \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsGet($organization, $publisherName, $extensionName, $apiVersion, $assetTypes)
+> \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsGet($organization, $publisherName, $extensionName, $apiVersion, $assetTypes)
 
 
 
@@ -24,9 +24,9 @@ Get an installed extension by its publisher and extension name.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
+[**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **installedExtensionsInstallExtensionByName**
-> \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsInstallExtensionByName($organization, $publisherName, $extensionName, $version, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsInstallExtensionByName($organization, $publisherName, $extensionName, $version, $apiVersion)
 
 
 
@@ -85,9 +85,9 @@ Install the specified extension into the account / project collection.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
+[**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **installedExtensionsList**
-> \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[] installedExtensionsList($organization, $apiVersion, $includeDisabledExtensions, $includeErrors, $assetTypes, $includeInstallationIssues)
+> \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[] installedExtensionsList($organization, $apiVersion, $includeDisabledExtensions, $includeErrors, $assetTypes, $includeInstallationIssues)
 
 
 
@@ -146,9 +146,9 @@ List the installed extensions in the account / project collection.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]**](../Model/InstalledExtension.md)
+[**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension[]**](../Model/InstalledExtension.md)
 
 ### Authorization
 
@@ -209,9 +209,9 @@ Uninstall the specified extension from the account / project collection.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -259,7 +259,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **installedExtensionsUpdate**
-> \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsUpdate($organization, $body, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension installedExtensionsUpdate($organization, $body, $apiVersion)
 
 
 
@@ -271,16 +271,16 @@ Update an installed extension. Typically this API is used to enable or disable a
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\ExtensionManagement\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\ExtensionManagement\Api\InstalledExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension(); // \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension | 
+$body = new \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension(); // \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension | 
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
 
 try {
@@ -297,12 +297,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)|  |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)|  |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
 
 ### Return type
 
-[**\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
+[**\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\InstalledExtension**](../Model/InstalledExtension.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * BatchNotificationOperation Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class BatchNotificationOperation implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'notificationOperation' => 'string',
-        'notificationQueryConditions' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[]'
+        'notificationQueryConditions' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[]'
     ];
 
     /**
@@ -270,7 +270,7 @@ class BatchNotificationOperation implements ModelInterface, ArrayAccess
     /**
      * Gets notificationQueryConditions
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[]
      */
     public function getNotificationQueryConditions()
     {
@@ -280,7 +280,7 @@ class BatchNotificationOperation implements ModelInterface, ArrayAccess
     /**
      * Sets notificationQueryConditions
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[] $notificationQueryConditions notificationQueryConditions
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationQueryCondition[] $notificationQueryConditions notificationQueryConditions
      *
      * @return $this
      */

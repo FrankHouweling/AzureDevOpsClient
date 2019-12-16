@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Symbol\AzureDevOpsClient\Symbol\Model;
+namespace FrankHouweling\AzureDevOpsClient\Symbol\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Symbol\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Symbol\ObjectSerializer;
 
 /**
  * JsonBlobIdentifier Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Symbol
+ * @package  FrankHouweling\AzureDevOpsClient\Symbol
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

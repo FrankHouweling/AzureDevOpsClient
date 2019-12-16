@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * DockerProcess Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class DockerProcess implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'type' => 'int',
-        'target' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DockerProcessTarget'
+        'target' => '\FrankHouweling\AzureDevOpsClient\Build\Model\DockerProcessTarget'
     ];
 
     /**
@@ -238,7 +238,7 @@ class DockerProcess implements ModelInterface, ArrayAccess
     /**
      * Gets target
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DockerProcessTarget
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DockerProcessTarget
      */
     public function getTarget()
     {
@@ -248,7 +248,7 @@ class DockerProcess implements ModelInterface, ArrayAccess
     /**
      * Sets target
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DockerProcessTarget $target target
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\DockerProcessTarget $target target
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * CodeCoverageData Class Doc Comment
  *
  * @category Class
  * @description Represents the build configuration (platform, flavor) and coverage data for the build
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'buildFlavor' => 'string',
         'buildPlatform' => 'string',
-        'coverageStats' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[]'
+        'coverageStats' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     /**
      * Gets coverageStats
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[]
      */
     public function getCoverageStats()
     {
@@ -278,7 +278,7 @@ class CodeCoverageData implements ModelInterface, ArrayAccess
     /**
      * Sets coverageStats
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[] $coverageStats List of coverage data for the build
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CodeCoverageStatistics[] $coverageStats List of coverage data for the build
      *
      * @return $this
      */

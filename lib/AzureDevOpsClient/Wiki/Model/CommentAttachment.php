@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * CommentAttachment Class Doc Comment
  *
  * @category Class
  * @description Represents an attachment to a comment.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class CommentAttachment implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'url' => 'string',
-        'createdBy' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'id' => 'string'
     ];
@@ -250,7 +250,7 @@ class CommentAttachment implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -260,7 +260,7 @@ class CommentAttachment implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\IdentityRef $createdBy IdentityRef of the creator of the attachment.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\IdentityRef $createdBy IdentityRef of the creator of the attachment.
      *
      * @return $this
      */

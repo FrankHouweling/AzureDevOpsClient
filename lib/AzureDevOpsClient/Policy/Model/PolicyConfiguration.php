@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model;
+namespace FrankHouweling\AzureDevOpsClient\Policy\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Policy\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Policy\ObjectSerializer;
 
 /**
  * PolicyConfiguration Class Doc Comment
  *
  * @category Class
  * @description The full policy configuration with settings.
- * @package  AzureDevOpsClient\Policy
+ * @package  FrankHouweling\AzureDevOpsClient\Policy
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,16 +60,16 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'revision' => 'int',
         'id' => 'int',
-        'type' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef',
+        'type' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef',
         'url' => 'string',
-        'links' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks',
-        'createdBy' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\IdentityRef',
         'createdDate' => '\DateTime',
         'isBlocking' => 'bool',
         'isDeleted' => 'bool',
         'isEnabled' => 'bool',
         'isEnterpriseManaged' => 'bool',
-        'settings' => '\AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject'
+        'settings' => '\FrankHouweling\AzureDevOpsClient\Policy\Model\JObject'
     ];
 
     /**
@@ -322,7 +322,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef
      */
     public function getType()
     {
@@ -332,7 +332,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\PolicyTypeRef $type The policy configuration type.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\PolicyTypeRef $type The policy configuration type.
      *
      * @return $this
      */
@@ -370,7 +370,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -380,7 +380,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\ReferenceLinks $links The links to other objects related to this object.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\ReferenceLinks $links The links to other objects related to this object.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -404,7 +404,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\IdentityRef $createdBy A reference to the identity that created the policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\IdentityRef $createdBy A reference to the identity that created the policy.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject
+     * @return \FrankHouweling\AzureDevOpsClient\Policy\Model\JObject
      */
     public function getSettings()
     {
@@ -548,7 +548,7 @@ class PolicyConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \AzureDevOpsClient\Policy\AzureDevOpsClient\Policy\Model\JObject $settings The policy configuration settings.
+     * @param \FrankHouweling\AzureDevOpsClient\Policy\Model\JObject $settings The policy configuration settings.
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model
+ * @package  FrankHouweling\AzureDevOpsClient\Operations\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model;
+namespace FrankHouweling\AzureDevOpsClient\Operations\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\Operations\AzureDevOpsClient\Operations\Model
+ * @package FrankHouweling\AzureDevOpsClient\Operations\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model;
+namespace FrankHouweling\AzureDevOpsClient\Tfvc\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Tfvc\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Tfvc\ObjectSerializer;
 
 /**
  * TfvcBranch Class Doc Comment
  *
  * @category Class
  * @description Class representing a branch object.
- * @package  AzureDevOpsClient\Tfvc
+ * @package  FrankHouweling\AzureDevOpsClient\Tfvc
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,17 +58,17 @@ class TfvcBranch implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks',
         'createdDate' => '\DateTime',
         'description' => 'string',
         'isDeleted' => 'bool',
-        'owner' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef',
+        'owner' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef',
         'url' => 'string',
         'path' => 'string',
-        'children' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranch[]',
-        'mappings' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[]',
-        'parent' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef',
-        'relatedBranches' => '\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[]'
+        'children' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranch[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[]',
+        'parent' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef',
+        'relatedBranches' => '\FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -278,7 +278,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks $links A collection of REST reference links.
      *
      * @return $this
      */
@@ -364,7 +364,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets owner
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef
      */
     public function getOwner()
     {
@@ -374,7 +374,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets owner
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Alias or display name of user
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\IdentityRef $owner Alias or display name of user
      *
      * @return $this
      */
@@ -436,7 +436,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets children
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranch[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranch[]
      */
     public function getChildren()
     {
@@ -446,7 +446,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets children
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranch[] $children List of children for the branch.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranch[] $children List of children for the branch.
      *
      * @return $this
      */
@@ -460,7 +460,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[]
      */
     public function getMappings()
     {
@@ -470,7 +470,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[] $mappings List of branch mappings.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcBranchMapping[] $mappings List of branch mappings.
      *
      * @return $this
      */
@@ -484,7 +484,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets parent
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef
      */
     public function getParent()
     {
@@ -494,7 +494,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets parent
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef $parent Path of the branch's parent.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef $parent Path of the branch's parent.
      *
      * @return $this
      */
@@ -508,7 +508,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Gets relatedBranches
      *
-     * @return \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[]
      */
     public function getRelatedBranches()
     {
@@ -518,7 +518,7 @@ class TfvcBranch implements ModelInterface, ArrayAccess
     /**
      * Sets relatedBranches
      *
-     * @param \AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[] $relatedBranches List of paths of the related branches.
+     * @param \FrankHouweling\AzureDevOpsClient\Tfvc\Model\TfvcShallowBranchRef[] $relatedBranches List of paths of the related branches.
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Client;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\MemberEntitlementManagement\ApiException;
-use AzureDevOpsClient\MemberEntitlementManagement\Configuration;
-use AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
-use AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Configuration;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * UserEntitlementsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,12 +91,12 @@ class UserEntitlementsApi
      * Operation userEntitlementsAdd
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse
      */
     public function userEntitlementsAdd($organization, $body, $apiVersion)
     {
@@ -108,16 +108,16 @@ class UserEntitlementsApi
      * Operation userEntitlementsAddWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEntitlementsAddWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse';
         $request = $this->userEntitlementsAddRequest($organization, $body, $apiVersion);
 
         try {
@@ -169,7 +169,7 @@ class UserEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -207,7 +207,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -215,7 +215,7 @@ class UserEntitlementsApi
      */
     public function userEntitlementsAddAsyncWithHttpInfo($organization, $body, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPostResponse';
         $request = $this->userEntitlementsAddRequest($organization, $body, $apiVersion);
 
         return $this->client
@@ -259,7 +259,7 @@ class UserEntitlementsApi
      * Create request for operation 'userEntitlementsAdd'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement $body UserEntitlement object specifying License, Extensions and Project/Team groups the user should be added to. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
      * @throws \InvalidArgumentException
@@ -392,7 +392,7 @@ class UserEntitlementsApi
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -408,7 +408,7 @@ class UserEntitlementsApi
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -658,9 +658,9 @@ class UserEntitlementsApi
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement
      */
     public function userEntitlementsGet($organization, $userId, $apiVersion)
     {
@@ -675,13 +675,13 @@ class UserEntitlementsApi
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEntitlementsGetWithHttpInfo($organization, $userId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement';
         $request = $this->userEntitlementsGetRequest($organization, $userId, $apiVersion);
 
         try {
@@ -733,7 +733,7 @@ class UserEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -779,7 +779,7 @@ class UserEntitlementsApi
      */
     public function userEntitlementsGetAsyncWithHttpInfo($organization, $userId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlement';
         $request = $this->userEntitlementsGetRequest($organization, $userId, $apiVersion);
 
         return $this->client
@@ -964,9 +964,9 @@ class UserEntitlementsApi
      * @param  string $filter Equality operators relating to searching user entitlements seperated by and clauses. Valid filters include: licenseId, licenseStatus, userType, and name. licenseId: filters based on license assignment using license names. i.e. licenseId eq &#39;Account-Stakeholder&#39; or licenseId eq &#39;Account-Express&#39;. licenseStatus: filters based on license status. currently only supports disabled. i.e. licenseStatus eq &#39;Disabled&#39;. To get disabled basic licenses, you would pass (licenseId eq &#39;Account-Express&#39; and licenseStatus eq &#39;Disabled&#39;) userType: filters off identity type. Suppored types are member or guest i.e. userType eq &#39;member&#39;. name: filters on if the user&#39;s display name or email contians given input. i.e. get all users with \&quot;test\&quot; in email or displayname is \&quot;name eq &#39;test&#39;\&quot;. A valid query could be: (licenseId eq &#39;Account-Stakeholder&#39; or (licenseId eq &#39;Account-Express&#39; and licenseStatus eq &#39;Disabled&#39;)) and name eq &#39;test&#39; and userType eq &#39;guest&#39;. (optional)
      * @param  string $orderBy PropertyName and Order (separated by a space ( )) to sort on (e.g. lastAccessed desc). Order defaults to ascending. valid properties to order by are dateCreated, lastAccessed, and name (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList
      */
     public function userEntitlementsSearchUserEntitlements($organization, $apiVersion, $continuationToken = null, $select = null, $filter = null, $orderBy = null)
     {
@@ -984,13 +984,13 @@ class UserEntitlementsApi
      * @param  string $filter Equality operators relating to searching user entitlements seperated by and clauses. Valid filters include: licenseId, licenseStatus, userType, and name. licenseId: filters based on license assignment using license names. i.e. licenseId eq &#39;Account-Stakeholder&#39; or licenseId eq &#39;Account-Express&#39;. licenseStatus: filters based on license status. currently only supports disabled. i.e. licenseStatus eq &#39;Disabled&#39;. To get disabled basic licenses, you would pass (licenseId eq &#39;Account-Express&#39; and licenseStatus eq &#39;Disabled&#39;) userType: filters off identity type. Suppored types are member or guest i.e. userType eq &#39;member&#39;. name: filters on if the user&#39;s display name or email contians given input. i.e. get all users with \&quot;test\&quot; in email or displayname is \&quot;name eq &#39;test&#39;\&quot;. A valid query could be: (licenseId eq &#39;Account-Stakeholder&#39; or (licenseId eq &#39;Account-Express&#39; and licenseStatus eq &#39;Disabled&#39;)) and name eq &#39;test&#39; and userType eq &#39;guest&#39;. (optional)
      * @param  string $orderBy PropertyName and Order (separated by a space ( )) to sort on (e.g. lastAccessed desc). Order defaults to ascending. valid properties to order by are dateCreated, lastAccessed, and name (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEntitlementsSearchUserEntitlementsWithHttpInfo($organization, $apiVersion, $continuationToken = null, $select = null, $filter = null, $orderBy = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
         $request = $this->userEntitlementsSearchUserEntitlementsRequest($organization, $apiVersion, $continuationToken, $select, $filter, $orderBy);
 
         try {
@@ -1042,7 +1042,7 @@ class UserEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1094,7 +1094,7 @@ class UserEntitlementsApi
      */
     public function userEntitlementsSearchUserEntitlementsAsyncWithHttpInfo($organization, $apiVersion, $continuationToken = null, $select = null, $filter = null, $orderBy = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\PagedGraphMemberList';
         $request = $this->userEntitlementsSearchUserEntitlementsRequest($organization, $apiVersion, $continuationToken, $select, $filter, $orderBy);
 
         return $this->client
@@ -1278,13 +1278,13 @@ class UserEntitlementsApi
      * Operation userEntitlementsUpdateUserEntitlement
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse
      */
     public function userEntitlementsUpdateUserEntitlement($organization, $body, $userId, $apiVersion)
     {
@@ -1296,17 +1296,17 @@ class UserEntitlementsApi
      * Operation userEntitlementsUpdateUserEntitlementWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEntitlementsUpdateUserEntitlementWithHttpInfo($organization, $body, $userId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse';
         $request = $this->userEntitlementsUpdateUserEntitlementRequest($organization, $body, $userId, $apiVersion);
 
         try {
@@ -1358,7 +1358,7 @@ class UserEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1374,7 +1374,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1397,7 +1397,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1406,7 +1406,7 @@ class UserEntitlementsApi
      */
     public function userEntitlementsUpdateUserEntitlementAsyncWithHttpInfo($organization, $body, $userId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementsPatchResponse';
         $request = $this->userEntitlementsUpdateUserEntitlementRequest($organization, $body, $userId, $apiVersion);
 
         return $this->client
@@ -1450,7 +1450,7 @@ class UserEntitlementsApi
      * Create request for operation 'userEntitlementsUpdateUserEntitlement'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform on the user. (required)
      * @param  string $userId ID of the user. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      *
@@ -1595,13 +1595,13 @@ class UserEntitlementsApi
      * Operation userEntitlementsUpdateUserEntitlements
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $doNotSendInviteForNewUsers Whether to send email invites to new users or not (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference
      */
     public function userEntitlementsUpdateUserEntitlements($organization, $body, $apiVersion, $doNotSendInviteForNewUsers = null)
     {
@@ -1613,17 +1613,17 @@ class UserEntitlementsApi
      * Operation userEntitlementsUpdateUserEntitlementsWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $doNotSendInviteForNewUsers Whether to send email invites to new users or not (optional)
      *
-     * @throws \AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference, HTTP status code, HTTP response headers (array of strings)
      */
     public function userEntitlementsUpdateUserEntitlementsWithHttpInfo($organization, $body, $apiVersion, $doNotSendInviteForNewUsers = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference';
         $request = $this->userEntitlementsUpdateUserEntitlementsRequest($organization, $body, $apiVersion, $doNotSendInviteForNewUsers);
 
         try {
@@ -1675,7 +1675,7 @@ class UserEntitlementsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference',
+                        '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1691,7 +1691,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $doNotSendInviteForNewUsers Whether to send email invites to new users or not (optional)
      *
@@ -1714,7 +1714,7 @@ class UserEntitlementsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $doNotSendInviteForNewUsers Whether to send email invites to new users or not (optional)
      *
@@ -1723,7 +1723,7 @@ class UserEntitlementsApi
      */
     public function userEntitlementsUpdateUserEntitlementsAsyncWithHttpInfo($organization, $body, $apiVersion, $doNotSendInviteForNewUsers = null)
     {
-        $returnType = '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\UserEntitlementOperationReference';
         $request = $this->userEntitlementsUpdateUserEntitlementsRequest($organization, $body, $apiVersion, $doNotSendInviteForNewUsers);
 
         return $this->client
@@ -1767,7 +1767,7 @@ class UserEntitlementsApi
      * Create request for operation 'userEntitlementsUpdateUserEntitlements'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\JsonPatchDocument $body JsonPatchDocument containing the operations to perform. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.3&#39; to use this version of the api. (required)
      * @param  bool $doNotSendInviteForNewUsers Whether to send email invites to new users or not (optional)
      *

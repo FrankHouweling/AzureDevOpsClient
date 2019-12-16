@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TeamMemberCapacityIdentityRef Class Doc Comment
  *
  * @category Class
  * @description Represents capacity for a specific team member
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'activities' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[]',
-        'daysOff' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]',
-        'links' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks',
+        'activities' => '\FrankHouweling\AzureDevOpsClient\Work\Model\Activity[]',
+        'daysOff' => '\FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks',
         'url' => 'string',
-        'teamMember' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef'
+        'teamMember' => '\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef'
     ];
 
     /**
@@ -232,7 +232,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets activities
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Activity[]
      */
     public function getActivities()
     {
@@ -242,7 +242,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets activities
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Activity[] $activities Collection of capacities associated with the team member
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\Activity[] $activities Collection of capacities associated with the team member
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets daysOff
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[]
      */
     public function getDaysOff()
     {
@@ -266,7 +266,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets daysOff
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DateRange[] $daysOff The days off associated with the team member
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\DateRange[] $daysOff The days off associated with the team member
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -290,7 +290,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ReferenceLinks $links Collection of links relevant to resource
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Gets teamMember
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef
      */
     public function getTeamMember()
     {
@@ -338,7 +338,7 @@ class TeamMemberCapacityIdentityRef implements ModelInterface, ArrayAccess
     /**
      * Sets teamMember
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef $teamMember Identity ref of the associated team member
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef $teamMember Identity ref of the associated team member
      *
      * @return $this
      */

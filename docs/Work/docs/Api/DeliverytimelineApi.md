@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\DeliverytimelineApi
+# FrankHouweling\AzureDevOpsClient\Work\DeliverytimelineApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **deliverytimelineGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData deliverytimelineGet($organization, $project, $id, $apiVersion, $revision, $startDate, $endDate)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData deliverytimelineGet($organization, $project, $id, $apiVersion, $revision, $startDate, $endDate)
 
 
 
@@ -20,12 +20,12 @@ Get Delivery View Data
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Work\Api\DeliverytimelineApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\DeliverytimelineApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\DeliveryViewData**](../Model/DeliveryViewData.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\DeliveryViewData**](../Model/DeliveryViewData.md)
 
 ### Authorization
 

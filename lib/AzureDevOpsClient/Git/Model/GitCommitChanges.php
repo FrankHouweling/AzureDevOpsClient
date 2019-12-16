@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitCommitChanges Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class GitCommitChanges implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'changeCounts' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary',
-        'changes' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]'
+        'changeCounts' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary',
+        'changes' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class GitCommitChanges implements ModelInterface, ArrayAccess
     /**
      * Gets changeCounts
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary
      */
     public function getChangeCounts()
     {
@@ -224,7 +224,7 @@ class GitCommitChanges implements ModelInterface, ArrayAccess
     /**
      * Sets changeCounts
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ChangeCountDictionary $changeCounts changeCounts
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ChangeCountDictionary $changeCounts changeCounts
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class GitCommitChanges implements ModelInterface, ArrayAccess
     /**
      * Gets changes
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[]
      */
     public function getChanges()
     {
@@ -248,7 +248,7 @@ class GitCommitChanges implements ModelInterface, ArrayAccess
     /**
      * Sets changes
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitChange[] $changes changes
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitChange[] $changes changes
      *
      * @return $this
      */

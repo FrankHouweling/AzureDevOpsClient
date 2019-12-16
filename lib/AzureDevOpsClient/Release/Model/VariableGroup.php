@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * VariableGroup Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,18 +58,18 @@ class VariableGroup implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'createdBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'createdOn' => '\DateTime',
         'description' => 'string',
         'id' => 'int',
         'isShared' => 'bool',
-        'modifiedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'modifiedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'modifiedOn' => '\DateTime',
         'name' => 'string',
-        'providerData' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProviderData',
+        'providerData' => '\FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProviderData',
         'type' => 'string',
-        'variableGroupProjectReferences' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[]',
-        'variables' => 'map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableValue]'
+        'variableGroupProjectReferences' => '\FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[]',
+        'variables' => 'map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\VariableValue]'
     ];
 
     /**
@@ -274,7 +274,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -284,7 +284,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Gets or sets the identity who created.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $createdBy Gets or sets the identity who created.
      *
      * @return $this
      */
@@ -394,7 +394,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Gets modifiedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getModifiedBy()
     {
@@ -404,7 +404,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Sets modifiedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Gets or sets the identity who modified.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $modifiedBy Gets or sets the identity who modified.
      *
      * @return $this
      */
@@ -466,7 +466,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Gets providerData
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProviderData
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProviderData
      */
     public function getProviderData()
     {
@@ -476,7 +476,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Sets providerData
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProviderData $providerData Gets or sets provider data.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProviderData $providerData Gets or sets provider data.
      *
      * @return $this
      */
@@ -514,7 +514,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Gets variableGroupProjectReferences
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[]
      */
     public function getVariableGroupProjectReferences()
     {
@@ -524,7 +524,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Sets variableGroupProjectReferences
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[] $variableGroupProjectReferences all project references where the variable group is shared with other projects.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\VariableGroupProjectReference[] $variableGroupProjectReferences all project references where the variable group is shared with other projects.
      *
      * @return $this
      */
@@ -538,7 +538,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Gets variables
      *
-     * @return map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableValue]
+     * @return map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\VariableValue]
      */
     public function getVariables()
     {
@@ -548,7 +548,7 @@ class VariableGroup implements ModelInterface, ArrayAccess
     /**
      * Sets variables
      *
-     * @param map[string,\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\VariableValue] $variables Gets and sets the dictionary of variables.
+     * @param map[string,\FrankHouweling\AzureDevOpsClient\Release\Model\VariableValue] $variables Gets and sets the dictionary of variables.
      *
      * @return $this
      */

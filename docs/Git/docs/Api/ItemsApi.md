@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\ItemsApi
+# FrankHouweling\AzureDevOpsClient\Git\ItemsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -21,16 +21,16 @@ Post for retrieving a creating a batch out of a set of items in a repo / project
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = "organization_example"; // string | The name of the Azure DevOps organization.
-$body = new \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData(); // \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData | Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references.
+$body = new \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData(); // \FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData | Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references.
 $repositoryId = "repositoryId_example"; // string | The name or ID of the repository
 $project = "project_example"; // string | Project ID or project name
 $apiVersion = "apiVersion_example"; // string | Version of the API to use.  This should be set to '6.0-preview.1' to use this version of the api.
@@ -49,7 +49,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **string**| The name of the Azure DevOps organization. |
- **body** | [**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItemRequestData**](../Model/GitItemRequestData.md)| Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. |
+ **body** | [**\FrankHouweling\AzureDevOpsClient\Git\Model\GitItemRequestData**](../Model/GitItemRequestData.md)| Request data attributes: ItemDescriptors, IncludeContentMetadata, LatestProcessedChange, IncludeLinks. ItemDescriptors: Collection of items to fetch, including path, version, and recursion level. IncludeContentMetadata: Whether to include metadata for all items LatestProcessedChange: Whether to include shallow ref to commit that last changed each item. IncludeLinks: Whether to include the _links field on the shallow references. |
  **repositoryId** | **string**| The name or ID of the repository |
  **project** | **string**| Project ID or project name |
  **apiVersion** | **string**| Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. |
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **itemsList**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[] itemsList($organization, $repositoryId, $project, $apiVersion, $scopePath, $recursionLevel, $includeContentMetadata, $latestProcessedChange, $download, $includeLinks, $format, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[] itemsList($organization, $repositoryId, $project, $apiVersion, $scopePath, $recursionLevel, $includeContentMetadata, $latestProcessedChange, $download, $includeLinks, $format, $versionDescriptorVersion, $versionDescriptorVersionOptions, $versionDescriptorVersionType)
 
 
 
@@ -82,9 +82,9 @@ Get Item Metadata and/or Content for a collection of items. The download paramet
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\ItemsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\ItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitItem[]**](../Model/GitItem.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitItem[]**](../Model/GitItem.md)
 
 ### Authorization
 

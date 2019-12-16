@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Symbol\AvailabilityApi
+# FrankHouweling\AzureDevOpsClient\Symbol\AvailabilityApi
 
 All URIs are relative to *https://artifacts.dev.azure.com*
 
@@ -20,12 +20,12 @@ Check the availability of symbol service. This includes checking for feature fla
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure HTTP basic authorization: accessToken
-$config = AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()
+$config = FrankHouweling\AzureDevOpsClient\Symbol\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new AzureDevOpsClient\Symbol\Api\AvailabilityApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Symbol\Api\AvailabilityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitStatus Class Doc Comment
  *
  * @category Class
  * @description This class contains the metadata of a service/extension posting a status.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class GitStatus implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'context' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatusContext',
-        'createdBy' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'context' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitStatusContext',
+        'createdBy' => '\FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef',
         'creationDate' => '\DateTime',
         'description' => 'string',
         'id' => 'int',
@@ -287,7 +287,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -297,7 +297,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Reference links.
      *
      * @return $this
      */
@@ -311,7 +311,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Gets context
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatusContext
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatusContext
      */
     public function getContext()
     {
@@ -321,7 +321,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Sets context
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitStatusContext $context Context of the status.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitStatusContext $context Context of the status.
      *
      * @return $this
      */
@@ -335,7 +335,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Gets createdBy
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef
      */
     public function getCreatedBy()
     {
@@ -345,7 +345,7 @@ class GitStatus implements ModelInterface, ArrayAccess
     /**
      * Sets createdBy
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\IdentityRef $createdBy Identity that created the status.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\IdentityRef $createdBy Identity that created the status.
      *
      * @return $this
      */

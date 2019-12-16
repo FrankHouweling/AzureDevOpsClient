@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\ObjectSerializer;
 
 /**
  * UsersSummary Class Doc Comment
  *
  * @category Class
  * @description Summary of licenses and extensions assigned to users in the organization
- * @package  AzureDevOpsClient\MemberEntitlementManagement
+ * @package  FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class UsersSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'availableAccessLevels' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[]',
-        'groupOptions' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[]',
-        'licenses' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[]',
-        'projectRefs' => '\AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[]'
+        'availableAccessLevels' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[]',
+        'groupOptions' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[]',
+        'licenses' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[]',
+        'projectRefs' => '\FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[]'
     ];
 
     /**
@@ -226,7 +226,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Gets availableAccessLevels
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[]
      */
     public function getAvailableAccessLevels()
     {
@@ -236,7 +236,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Sets availableAccessLevels
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[] $availableAccessLevels Available Access Levels
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\AccessLevel[] $availableAccessLevels Available Access Levels
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Gets groupOptions
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[]
      */
     public function getGroupOptions()
     {
@@ -260,7 +260,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Sets groupOptions
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[] $groupOptions Group Options
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\GroupOption[] $groupOptions Group Options
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Gets licenses
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[]
      */
     public function getLicenses()
     {
@@ -284,7 +284,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Sets licenses
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[] $licenses Summary of Licenses in the organization
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\LicenseSummaryData[] $licenses Summary of Licenses in the organization
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Gets projectRefs
      *
-     * @return \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[]
+     * @return \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[]
      */
     public function getProjectRefs()
     {
@@ -308,7 +308,7 @@ class UsersSummary implements ModelInterface, ArrayAccess
     /**
      * Sets projectRefs
      *
-     * @param \AzureDevOpsClient\MemberEntitlementManagement\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[] $projectRefs Summary of Projects in the organization
+     * @param \FrankHouweling\AzureDevOpsClient\MemberEntitlementManagement\Model\ProjectRef[] $projectRefs Summary of Projects in the organization
      *
      * @return $this
      */

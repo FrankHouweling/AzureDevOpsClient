@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Client;
+namespace FrankHouweling\AzureDevOpsClient\Git\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Git\ApiException;
-use AzureDevOpsClient\Git\Configuration;
-use AzureDevOpsClient\Git\HeaderSelector;
-use AzureDevOpsClient\Git\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Git\ApiException;
+use FrankHouweling\AzureDevOpsClient\Git\Configuration;
+use FrankHouweling\AzureDevOpsClient\Git\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * PullRequestShareApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,13 +91,13 @@ class PullRequestShareApi
      * Operation pullRequestShareSharePullRequest
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
      * @param  string $repositoryId ID of the git repository. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -110,13 +110,13 @@ class PullRequestShareApi
      * Operation pullRequestShareSharePullRequestWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
      * @param  string $repositoryId ID of the git repository. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Git\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Git\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -168,7 +168,7 @@ class PullRequestShareApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
      * @param  string $repositoryId ID of the git repository. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -193,7 +193,7 @@ class PullRequestShareApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
      * @param  string $repositoryId ID of the git repository. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)
@@ -234,7 +234,7 @@ class PullRequestShareApi
      * Create request for operation 'pullRequestShareSharePullRequest'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Git\Model\ShareNotificationContext $body  (required)
      * @param  string $repositoryId ID of the git repository. (required)
      * @param  int $pullRequestId ID of the pull request. (required)
      * @param  string $project Project ID or project name (required)

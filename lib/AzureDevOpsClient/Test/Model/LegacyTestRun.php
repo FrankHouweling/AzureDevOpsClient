@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * LegacyTestRun Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
         'buildFlavor' => 'string',
         'buildNumber' => 'string',
         'buildPlatform' => 'string',
-        'buildReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration',
+        'buildReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration',
         'buildUri' => 'string',
         'comment' => 'string',
         'completeDate' => '\DateTime',
@@ -72,13 +72,13 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
         'creationDate' => '\DateTime',
         'csmContent' => 'string',
         'csmParameters' => 'string',
-        'customFields' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[]',
+        'customFields' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[]',
         'dropLocation' => 'string',
-        'dtlAutEnvironment' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'dtlTestEnvironment' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'dtlAutEnvironment' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'dtlTestEnvironment' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'dueDate' => '\DateTime',
         'errorMessage' => 'string',
-        'filter' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunFilter',
+        'filter' => '\FrankHouweling\AzureDevOpsClient\Test\Model\RunFilter',
         'incompleteTests' => 'int',
         'isAutomated' => 'bool',
         'isBvt' => 'bool',
@@ -95,7 +95,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
         'postProcessState' => 'string',
         'publicTestSettingsId' => 'int',
         'releaseEnvironmentUri' => 'string',
-        'releaseReference' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference',
+        'releaseReference' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference',
         'releaseUri' => 'string',
         'revision' => 'int',
         'rowVersion' => 'string[]',
@@ -111,11 +111,11 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
         'teamProjectUri' => 'string',
         'testConfigurationsMapping' => 'string',
         'testEnvironmentId' => 'string',
-        'testMessageLogEntries' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestMessageLogDetails[]',
+        'testMessageLogEntries' => '\FrankHouweling\AzureDevOpsClient\Test\Model\TestMessageLogDetails[]',
         'testMessageLogId' => 'int',
         'testPlanId' => 'int',
         'testRunId' => 'int',
-        'testRunStatistics' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[]',
+        'testRunStatistics' => '\FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[]',
         'testSettingsId' => 'int',
         'title' => 'string',
         'totalTests' => 'int',
@@ -722,7 +722,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets buildReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration
      */
     public function getBuildReference()
     {
@@ -732,7 +732,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets buildReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration $buildReference buildReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyBuildConfiguration $buildReference buildReference
      *
      * @return $this
      */
@@ -938,7 +938,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets customFields
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[]
      */
     public function getCustomFields()
     {
@@ -948,7 +948,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets customFields
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestExtensionField[] $customFields customFields
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestExtensionField[] $customFields customFields
      *
      * @return $this
      */
@@ -986,7 +986,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets dtlAutEnvironment
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDtlAutEnvironment()
     {
@@ -996,7 +996,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets dtlAutEnvironment
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $dtlAutEnvironment dtlAutEnvironment
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $dtlAutEnvironment dtlAutEnvironment
      *
      * @return $this
      */
@@ -1010,7 +1010,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets dtlTestEnvironment
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getDtlTestEnvironment()
     {
@@ -1020,7 +1020,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets dtlTestEnvironment
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $dtlTestEnvironment dtlTestEnvironment
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $dtlTestEnvironment dtlTestEnvironment
      *
      * @return $this
      */
@@ -1082,7 +1082,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets filter
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunFilter
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\RunFilter
      */
     public function getFilter()
     {
@@ -1092,7 +1092,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets filter
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunFilter $filter filter
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\RunFilter $filter filter
      *
      * @return $this
      */
@@ -1495,7 +1495,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets releaseReference
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference
      */
     public function getReleaseReference()
     {
@@ -1505,7 +1505,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets releaseReference
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyReleaseReference $releaseReference releaseReference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyReleaseReference $releaseReference releaseReference
      *
      * @return $this
      */
@@ -1889,7 +1889,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets testMessageLogEntries
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestMessageLogDetails[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\TestMessageLogDetails[]
      */
     public function getTestMessageLogEntries()
     {
@@ -1899,7 +1899,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets testMessageLogEntries
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\TestMessageLogDetails[] $testMessageLogEntries testMessageLogEntries
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\TestMessageLogDetails[] $testMessageLogEntries testMessageLogEntries
      *
      * @return $this
      */
@@ -1985,7 +1985,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Gets testRunStatistics
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[]
      */
     public function getTestRunStatistics()
     {
@@ -1995,7 +1995,7 @@ class LegacyTestRun implements ModelInterface, ArrayAccess
     /**
      * Sets testRunStatistics
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[] $testRunStatistics testRunStatistics
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\LegacyTestRunStatistic[] $testRunStatistics testRunStatistics
      *
      * @return $this
      */

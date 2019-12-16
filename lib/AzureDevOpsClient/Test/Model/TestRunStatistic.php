@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestRunStatistic Class Doc Comment
  *
  * @category Class
  * @description Test run statistics.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class TestRunStatistic implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'run' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
-        'runStatistics' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunStatistic[]'
+        'run' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
+        'runStatistics' => '\FrankHouweling\AzureDevOpsClient\Test\Model\RunStatistic[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class TestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets run
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getRun()
     {
@@ -224,7 +224,7 @@ class TestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets run
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $run run
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $run run
      *
      * @return $this
      */
@@ -238,7 +238,7 @@ class TestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Gets runStatistics
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunStatistic[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\RunStatistic[]
      */
     public function getRunStatistics()
     {
@@ -248,7 +248,7 @@ class TestRunStatistic implements ModelInterface, ArrayAccess
     /**
      * Sets runStatistics
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\RunStatistic[] $runStatistics runStatistics
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\RunStatistic[] $runStatistics runStatistics
      *
      * @return $this
      */

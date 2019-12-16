@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Release\DeploymentsApi
+# FrankHouweling\AzureDevOpsClient\Release\DeploymentsApi
 
 All URIs are relative to *https://vsrm.dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **deploymentsList**
-> \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[] deploymentsList($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $createdBy, $minModifiedTime, $maxModifiedTime, $deploymentStatus, $operationStatus, $latestAttemptsOnly, $queryOrder, $top, $continuationToken, $createdFor, $minStartedTime, $maxStartedTime, $sourceBranch)
+> \FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[] deploymentsList($organization, $project, $apiVersion, $definitionId, $definitionEnvironmentId, $createdBy, $minModifiedTime, $maxModifiedTime, $deploymentStatus, $operationStatus, $latestAttemptsOnly, $queryOrder, $top, $continuationToken, $createdFor, $minStartedTime, $maxStartedTime, $sourceBranch)
 
 
 
@@ -20,9 +20,9 @@ Method | HTTP request | Description
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Release\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Release\Api\DeploymentsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Release\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Deployment[]**](../Model/Deployment.md)
+[**\FrankHouweling\AzureDevOpsClient\Release\Model\Deployment[]**](../Model/Deployment.md)
 
 ### Authorization
 

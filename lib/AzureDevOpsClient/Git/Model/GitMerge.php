@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitMerge Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class GitMerge implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'comment' => 'string',
         'parents' => 'string[]',
-        'links' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks',
-        'detailedStatus' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail',
+        'links' => '\FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks',
+        'detailedStatus' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail',
         'mergeOperationId' => 'int',
         'status' => 'string'
     ];
@@ -315,7 +315,7 @@ class GitMerge implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -325,7 +325,7 @@ class GitMerge implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\ReferenceLinks $links Reference links.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\ReferenceLinks $links Reference links.
      *
      * @return $this
      */
@@ -339,7 +339,7 @@ class GitMerge implements ModelInterface, ArrayAccess
     /**
      * Gets detailedStatus
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail
      */
     public function getDetailedStatus()
     {
@@ -349,7 +349,7 @@ class GitMerge implements ModelInterface, ArrayAccess
     /**
      * Sets detailedStatus
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail $detailedStatus Detailed status of the merge operation.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitMergeOperationStatusDetail $detailedStatus Detailed status of the merge operation.
      *
      * @return $this
      */

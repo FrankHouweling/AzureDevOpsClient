@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model
+ * @package FrankHouweling\AzureDevOpsClient\TestResults\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

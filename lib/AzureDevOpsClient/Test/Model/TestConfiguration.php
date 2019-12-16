@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestConfiguration Class Doc Comment
  *
  * @category Class
  * @description Test configuration
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,18 +58,18 @@ class TestConfiguration implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'area' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'area' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'description' => 'string',
         'id' => 'int',
         'isDefault' => 'bool',
-        'lastUpdatedBy' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef',
+        'lastUpdatedBy' => '\FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef',
         'lastUpdatedDate' => '\DateTime',
         'name' => 'string',
-        'project' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'project' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'revision' => 'int',
         'state' => 'string',
         'url' => 'string',
-        'values' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\NameValuePair[]'
+        'values' => '\FrankHouweling\AzureDevOpsClient\Test\Model\NameValuePair[]'
     ];
 
     /**
@@ -297,7 +297,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets area
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getArea()
     {
@@ -307,7 +307,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets area
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $area Area of the configuration
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $area Area of the configuration
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets lastUpdatedBy
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef
      */
     public function getLastUpdatedBy()
     {
@@ -403,7 +403,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets lastUpdatedBy
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy Last Updated By  Reference
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\IdentityRef $lastUpdatedBy Last Updated By  Reference
      *
      * @return $this
      */
@@ -465,7 +465,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets project
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getProject()
     {
@@ -475,7 +475,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets project
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $project Project to which the configuration belongs
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $project Project to which the configuration belongs
      *
      * @return $this
      */
@@ -570,7 +570,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Gets values
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\NameValuePair[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\NameValuePair[]
      */
     public function getValues()
     {
@@ -580,7 +580,7 @@ class TestConfiguration implements ModelInterface, ArrayAccess
     /**
      * Sets values
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\NameValuePair[] $values Dictionary of Test Variable, Selected Value
      *
      * @return $this
      */

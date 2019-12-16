@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * UpdateTestRunResponse Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class UpdateTestRunResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'attachmentIds' => 'int[]',
-        'updatedProperties' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\UpdatedProperties'
+        'updatedProperties' => '\FrankHouweling\AzureDevOpsClient\Test\Model\UpdatedProperties'
     ];
 
     /**
@@ -238,7 +238,7 @@ class UpdateTestRunResponse implements ModelInterface, ArrayAccess
     /**
      * Gets updatedProperties
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\UpdatedProperties
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\UpdatedProperties
      */
     public function getUpdatedProperties()
     {
@@ -248,7 +248,7 @@ class UpdateTestRunResponse implements ModelInterface, ArrayAccess
     /**
      * Sets updatedProperties
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\UpdatedProperties $updatedProperties updatedProperties
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\UpdatedProperties $updatedProperties updatedProperties
      *
      * @return $this
      */

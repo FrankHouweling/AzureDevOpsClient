@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * SuiteUpdateModel Class Doc Comment
  *
  * @category Class
  * @description Test suite update model.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,11 +58,11 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'defaultConfigurations' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[]',
-        'defaultTesters' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[]',
+        'defaultConfigurations' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[]',
+        'defaultTesters' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[]',
         'inheritDefaultConfigurations' => 'bool',
         'name' => 'string',
-        'parent' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference',
+        'parent' => '\FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference',
         'queryString' => 'string'
     ];
 
@@ -238,7 +238,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets defaultConfigurations
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[]
      */
     public function getDefaultConfigurations()
     {
@@ -248,7 +248,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets defaultConfigurations
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[] $defaultConfigurations Shallow reference of default configurations for the suite.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[] $defaultConfigurations Shallow reference of default configurations for the suite.
      *
      * @return $this
      */
@@ -262,7 +262,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets defaultTesters
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[]
      */
     public function getDefaultTesters()
     {
@@ -272,7 +272,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets defaultTesters
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference[] $defaultTesters Shallow reference of test suite.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference[] $defaultTesters Shallow reference of test suite.
      *
      * @return $this
      */
@@ -334,7 +334,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Gets parent
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference
      */
     public function getParent()
     {
@@ -344,7 +344,7 @@ class SuiteUpdateModel implements ModelInterface, ArrayAccess
     /**
      * Sets parent
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\ShallowReference $parent Shallow reference of the parent.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\ShallowReference $parent Shallow reference of the parent.
      *
      * @return $this
      */

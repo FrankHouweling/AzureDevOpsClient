@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitImportRequestParameters Class Doc Comment
  *
  * @category Class
  * @description Parameters for creating an import request
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class GitImportRequestParameters implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'deleteServiceEndpointAfterImportIsDone' => 'bool',
-        'gitSource' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportGitSource',
+        'gitSource' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportGitSource',
         'serviceEndpointId' => 'string',
-        'tfvcSource' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportTfvcSource'
+        'tfvcSource' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitImportTfvcSource'
     ];
 
     /**
@@ -250,7 +250,7 @@ class GitImportRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Gets gitSource
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportGitSource
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportGitSource
      */
     public function getGitSource()
     {
@@ -260,7 +260,7 @@ class GitImportRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Sets gitSource
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportGitSource $gitSource Source for importing git repository
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportGitSource $gitSource Source for importing git repository
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class GitImportRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Gets tfvcSource
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportTfvcSource
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportTfvcSource
      */
     public function getTfvcSource()
     {
@@ -308,7 +308,7 @@ class GitImportRequestParameters implements ModelInterface, ArrayAccess
     /**
      * Sets tfvcSource
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitImportTfvcSource $tfvcSource Source for importing tfvc repository
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitImportTfvcSource $tfvcSource Source for importing tfvc repository
      *
      * @return $this
      */

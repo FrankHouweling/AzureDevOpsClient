@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**links** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**links** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
 **content** | **string** |  | [optional] 
-**contentMetadata** | [**\AzureDevOpsClient\Tfvc\AzureDevOpsClient\Tfvc\Model\FileContentMetadata**](FileContentMetadata.md) |  | [optional] 
+**contentMetadata** | [**\FrankHouweling\AzureDevOpsClient\Tfvc\Model\FileContentMetadata**](FileContentMetadata.md) |  | [optional] 
 **isFolder** | **bool** |  | [optional] 
 **isSymLink** | **bool** |  | [optional] 
 **path** | **string** |  | [optional] 

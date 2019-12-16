@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestSuiteCloneRequest Class Doc Comment
  *
  * @category Class
  * @description Test suite clone request
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TestSuiteCloneRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cloneOptions' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions',
+        'cloneOptions' => '\FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions',
         'destinationSuiteId' => 'int',
         'destinationSuiteProjectName' => 'string'
     ];
@@ -220,7 +220,7 @@ class TestSuiteCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cloneOptions
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions
      */
     public function getCloneOptions()
     {
@@ -230,7 +230,7 @@ class TestSuiteCloneRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cloneOptions
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\CloneOptions $cloneOptions Clone options for cloning the test suite.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\CloneOptions $cloneOptions Clone options for cloning the test suite.
      *
      * @return $this
      */

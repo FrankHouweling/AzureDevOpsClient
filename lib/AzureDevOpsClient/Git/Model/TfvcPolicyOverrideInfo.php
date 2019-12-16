@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * TfvcPolicyOverrideInfo Class Doc Comment
  *
  * @category Class
  * @description Information on the policy override.
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'comment' => 'string',
-        'policyFailures' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[]'
+        'policyFailures' => '\FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
     /**
      * Gets policyFailures
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[]
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[]
      */
     public function getPolicyFailures()
     {
@@ -248,7 +248,7 @@ class TfvcPolicyOverrideInfo implements ModelInterface, ArrayAccess
     /**
      * Sets policyFailures
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[] $policyFailures Information on the failed policy that was overridden.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\TfvcPolicyFailureInfo[] $policyFailures Information on the failed policy that was overridden.
      *
      * @return $this
      */

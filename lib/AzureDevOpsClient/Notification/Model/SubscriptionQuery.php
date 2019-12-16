@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionQuery Class Doc Comment
  *
  * @category Class
  * @description Notification subscriptions query input.
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SubscriptionQuery implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'conditions' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[]',
+        'conditions' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[]',
         'queryFlags' => 'string'
     ];
 
@@ -245,7 +245,7 @@ class SubscriptionQuery implements ModelInterface, ArrayAccess
     /**
      * Gets conditions
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[]
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[]
      */
     public function getConditions()
     {
@@ -255,7 +255,7 @@ class SubscriptionQuery implements ModelInterface, ArrayAccess
     /**
      * Sets conditions
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[] $conditions One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\SubscriptionQueryCondition[] $conditions One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
      *
      * @return $this
      */

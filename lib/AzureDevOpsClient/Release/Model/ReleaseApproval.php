@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * ReleaseApproval Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,19 +59,19 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'approvalType' => 'string',
-        'approvedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'approver' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'approvedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'approver' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'attempt' => 'int',
         'comments' => 'string',
         'createdOn' => '\DateTime',
-        'history' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[]',
+        'history' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[]',
         'id' => 'int',
         'isAutomated' => 'bool',
         'modifiedOn' => '\DateTime',
         'rank' => 'int',
-        'release' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
-        'releaseDefinition' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
-        'releaseEnvironment' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
+        'release' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference',
+        'releaseDefinition' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference',
+        'releaseEnvironment' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference',
         'revision' => 'int',
         'status' => 'string',
         'url' => 'string'
@@ -397,7 +397,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets approvedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getApprovedBy()
     {
@@ -407,7 +407,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets approvedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $approvedBy Gets the identity who approved.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $approvedBy Gets the identity who approved.
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets approver
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getApprover()
     {
@@ -431,7 +431,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets approver
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets or sets the identity who should approve.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $approver Gets or sets the identity who should approve.
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets history
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[]
      */
     public function getHistory()
     {
@@ -527,7 +527,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets history
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[] $history Gets history which specifies all approvals associated with this approval.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseApprovalHistory[] $history Gets history which specifies all approvals associated with this approval.
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference
      */
     public function getRelease()
     {
@@ -647,7 +647,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets releaseReference which specifies the reference of the release to which this approval is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseShallowReference $release Gets releaseReference which specifies the reference of the release to which this approval is associated.
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDefinition
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference
      */
     public function getReleaseDefinition()
     {
@@ -671,7 +671,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDefinition
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this approval is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDefinitionShallowReference $releaseDefinition Gets releaseDefinitionReference which specifies the reference of the release definition to which this approval is associated.
      *
      * @return $this
      */
@@ -685,7 +685,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Gets releaseEnvironment
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference
      */
     public function getReleaseEnvironment()
     {
@@ -695,7 +695,7 @@ class ReleaseApproval implements ModelInterface, ArrayAccess
     /**
      * Sets releaseEnvironment
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference which specifies the reference of the release environment to which this approval is associated.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseEnvironmentShallowReference $releaseEnvironment Gets releaseEnvironmentReference which specifies the reference of the release environment to which this approval is associated.
      *
      * @return $this
      */

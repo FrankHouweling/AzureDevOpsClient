@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Client;
+namespace FrankHouweling\AzureDevOpsClient\TestPlan\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\TestPlan\ApiException;
-use AzureDevOpsClient\TestPlan\Configuration;
-use AzureDevOpsClient\TestPlan\HeaderSelector;
-use AzureDevOpsClient\TestPlan\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ApiException;
+use FrankHouweling\AzureDevOpsClient\TestPlan\Configuration;
+use FrankHouweling\AzureDevOpsClient\TestPlan\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\TestPlan\ObjectSerializer;
 
 /**
  * TestSuitesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\TestPlan
+ * @package  FrankHouweling\AzureDevOpsClient\TestPlan
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class TestSuitesApi
      * Operation testSuitesCreate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite
      */
     public function testSuitesCreate($organization, $body, $project, $planId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class TestSuitesApi
      * Operation testSuitesCreateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuitesCreateWithHttpInfo($organization, $body, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesCreateRequest($organization, $body, $project, $planId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class TestSuitesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class TestSuitesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class TestSuitesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class TestSuitesApi
      */
     public function testSuitesCreateAsyncWithHttpInfo($organization, $body, $project, $planId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesCreateRequest($organization, $body, $project, $planId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class TestSuitesApi
      * Create request for operation 'testSuitesCreate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteCreateParams $body Parameters for suite creation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -432,7 +432,7 @@ class TestSuitesApi
      * @param  int $suiteId ID of the test suite to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -450,7 +450,7 @@ class TestSuitesApi
      * @param  int $suiteId ID of the test suite to delete. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -737,9 +737,9 @@ class TestSuitesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $expand Include the children suites and testers details (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite
      */
     public function testSuitesGet($organization, $project, $planId, $suiteId, $apiVersion, $expand = null)
     {
@@ -757,13 +757,13 @@ class TestSuitesApi
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      * @param  string $expand Include the children suites and testers details (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuitesGetWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $expand = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesGetRequest($organization, $project, $planId, $suiteId, $apiVersion, $expand);
 
         try {
@@ -815,7 +815,7 @@ class TestSuitesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -867,7 +867,7 @@ class TestSuitesApi
      */
     public function testSuitesGetAsyncWithHttpInfo($organization, $project, $planId, $suiteId, $apiVersion, $expand = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesGetRequest($organization, $project, $planId, $suiteId, $apiVersion, $expand);
 
         return $this->client
@@ -1084,9 +1084,9 @@ class TestSuitesApi
      * @param  int $testCaseId ID of the test case for which suites need to be fetched. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]
      */
     public function testSuitesGetSuitesByTestCaseId($organization, $testCaseId, $apiVersion)
     {
@@ -1101,13 +1101,13 @@ class TestSuitesApi
      * @param  int $testCaseId ID of the test case for which suites need to be fetched. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuitesGetSuitesByTestCaseIdWithHttpInfo($organization, $testCaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
         $request = $this->testSuitesGetSuitesByTestCaseIdRequest($organization, $testCaseId, $apiVersion);
 
         try {
@@ -1159,7 +1159,7 @@ class TestSuitesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1205,7 +1205,7 @@ class TestSuitesApi
      */
     public function testSuitesGetSuitesByTestCaseIdAsyncWithHttpInfo($organization, $testCaseId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
         $request = $this->testSuitesGetSuitesByTestCaseIdRequest($organization, $testCaseId, $apiVersion);
 
         return $this->client
@@ -1387,9 +1387,9 @@ class TestSuitesApi
      * @param  string $continuationToken If the list of suites returned is not complete, a continuation token to query next batch of suites is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test suites. (optional)
      * @param  bool $asTreeView If the suites returned should be in a tree structure. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]
      */
     public function testSuitesGetTestSuitesForPlan($organization, $project, $planId, $apiVersion, $expand = null, $continuationToken = null, $asTreeView = null)
     {
@@ -1408,13 +1408,13 @@ class TestSuitesApi
      * @param  string $continuationToken If the list of suites returned is not complete, a continuation token to query next batch of suites is included in the response header as \&quot;x-ms-continuationtoken\&quot;. Omit this parameter to get the first batch of test suites. (optional)
      * @param  bool $asTreeView If the suites returned should be in a tree structure. (optional)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[], HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuitesGetTestSuitesForPlanWithHttpInfo($organization, $project, $planId, $apiVersion, $expand = null, $continuationToken = null, $asTreeView = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
         $request = $this->testSuitesGetTestSuitesForPlanRequest($organization, $project, $planId, $apiVersion, $expand, $continuationToken, $asTreeView);
 
         try {
@@ -1466,7 +1466,7 @@ class TestSuitesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1520,7 +1520,7 @@ class TestSuitesApi
      */
     public function testSuitesGetTestSuitesForPlanAsyncWithHttpInfo($organization, $project, $planId, $apiVersion, $expand = null, $continuationToken = null, $asTreeView = null)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite[]';
         $request = $this->testSuitesGetTestSuitesForPlanRequest($organization, $project, $planId, $apiVersion, $expand, $continuationToken, $asTreeView);
 
         return $this->client
@@ -1729,15 +1729,15 @@ class TestSuitesApi
      * Operation testSuitesUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  int $suiteId ID of the parent suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite
+     * @return \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite
      */
     public function testSuitesUpdate($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
@@ -1749,19 +1749,19 @@ class TestSuitesApi
      * Operation testSuitesUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  int $suiteId ID of the parent suite. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\TestPlan\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\TestPlan\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite, HTTP status code, HTTP response headers (array of strings)
      */
     public function testSuitesUpdateWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         try {
@@ -1813,7 +1813,7 @@ class TestSuitesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite',
+                        '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1829,7 +1829,7 @@ class TestSuitesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  int $suiteId ID of the parent suite. (required)
@@ -1854,7 +1854,7 @@ class TestSuitesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  int $suiteId ID of the parent suite. (required)
@@ -1865,7 +1865,7 @@ class TestSuitesApi
      */
     public function testSuitesUpdateAsyncWithHttpInfo($organization, $body, $project, $planId, $suiteId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuite';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuite';
         $request = $this->testSuitesUpdateRequest($organization, $body, $project, $planId, $suiteId, $apiVersion);
 
         return $this->client
@@ -1909,7 +1909,7 @@ class TestSuitesApi
      * Create request for operation 'testSuitesUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\TestPlan\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\TestPlan\Model\TestSuiteUpdateParams $body Parameters for suite updation (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $planId ID of the test plan that contains the suites. (required)
      * @param  int $suiteId ID of the parent suite. (required)

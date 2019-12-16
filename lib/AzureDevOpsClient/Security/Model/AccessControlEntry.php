@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model;
+namespace FrankHouweling\AzureDevOpsClient\Security\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Security\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * AccessControlEntry Class Doc Comment
  *
  * @category Class
  * @description Class for encapsulating the allowed and denied permissions for a given IdentityDescriptor.
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,8 +60,8 @@ class AccessControlEntry implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'allow' => 'int',
         'deny' => 'int',
-        'descriptor' => '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\IdentityDescriptor',
-        'extendedInfo' => '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AceExtendedInformation'
+        'descriptor' => '\FrankHouweling\AzureDevOpsClient\Security\Model\IdentityDescriptor',
+        'extendedInfo' => '\FrankHouweling\AzureDevOpsClient\Security\Model\AceExtendedInformation'
     ];
 
     /**
@@ -274,7 +274,7 @@ class AccessControlEntry implements ModelInterface, ArrayAccess
     /**
      * Gets descriptor
      *
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\IdentityDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\IdentityDescriptor
      */
     public function getDescriptor()
     {
@@ -284,7 +284,7 @@ class AccessControlEntry implements ModelInterface, ArrayAccess
     /**
      * Sets descriptor
      *
-     * @param \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\IdentityDescriptor $descriptor The descriptor for the user this AccessControlEntry applies to.
+     * @param \FrankHouweling\AzureDevOpsClient\Security\Model\IdentityDescriptor $descriptor The descriptor for the user this AccessControlEntry applies to.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class AccessControlEntry implements ModelInterface, ArrayAccess
     /**
      * Gets extendedInfo
      *
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AceExtendedInformation
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\AceExtendedInformation
      */
     public function getExtendedInfo()
     {
@@ -308,7 +308,7 @@ class AccessControlEntry implements ModelInterface, ArrayAccess
     /**
      * Sets extendedInfo
      *
-     * @param \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AceExtendedInformation $extendedInfo This value, when set, reports the inherited and effective information for the associated descriptor. This value is only set on AccessControlEntries returned by the QueryAccessControlList(s) call when its includeExtendedInfo parameter is set to true.
+     * @param \FrankHouweling\AzureDevOpsClient\Security\Model\AceExtendedInformation $extendedInfo This value, when set, reports the inherited and effective information for the associated descriptor. This value is only set on AccessControlEntries returned by the QueryAccessControlList(s) call when its includeExtendedInfo parameter is set to true.
      *
      * @return $this
      */

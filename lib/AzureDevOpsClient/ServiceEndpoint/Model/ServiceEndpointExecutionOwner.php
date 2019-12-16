@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * ServiceEndpointExecutionOwner Class Doc Comment
  *
  * @category Class
  * @description Represents execution owner of the service endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ServiceEndpointExecutionOwner implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'links' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks',
+        'links' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks',
         'id' => 'int',
         'name' => 'string'
     ];
@@ -220,7 +220,7 @@ class ServiceEndpointExecutionOwner implements ModelInterface, ArrayAccess
     /**
      * Gets links
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks
      */
     public function getLinks()
     {
@@ -230,7 +230,7 @@ class ServiceEndpointExecutionOwner implements ModelInterface, ArrayAccess
     /**
      * Sets links
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks $links links
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\ReferenceLinks $links links
      *
      * @return $this
      */

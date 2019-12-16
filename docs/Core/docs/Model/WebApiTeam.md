@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **name** | **string** | Team name | [optional] 
 **url** | **string** | Team REST API Url | [optional] 
 **description** | **string** | Team description | [optional] 
-**identity** | [**\AzureDevOpsClient\Core\AzureDevOpsClient\Core\Model\Identity**](Identity.md) | Team identity. | [optional] 
+**identity** | [**\FrankHouweling\AzureDevOpsClient\Core\Model\Identity**](Identity.md) | Team identity. | [optional] 
 **identityUrl** | **string** | Identity REST API Url to this team | [optional] 
 **projectId** | **string** |  | [optional] 
 **projectName** | **string** |  | [optional] 

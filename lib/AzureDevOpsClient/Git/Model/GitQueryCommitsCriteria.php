@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model;
+namespace FrankHouweling\AzureDevOpsClient\Git\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Git\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Git\ObjectSerializer;
 
 /**
  * GitQueryCommitsCriteria Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Git
+ * @package  FrankHouweling\AzureDevOpsClient\Git
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
         'skip' => 'int',
         'top' => 'int',
         'author' => 'string',
-        'compareVersion' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
+        'compareVersion' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
         'excludeDeletes' => 'bool',
         'fromCommitId' => 'string',
         'fromDate' => 'string',
@@ -72,7 +72,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
         'includeUserImageUrl' => 'bool',
         'includeWorkItems' => 'bool',
         'itemPath' => 'string',
-        'itemVersion' => '\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
+        'itemVersion' => '\FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor',
         'showOldestCommitsFirst' => 'bool',
         'toCommitId' => 'string',
         'toDate' => 'string',
@@ -415,7 +415,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets compareVersion
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor
      */
     public function getCompareVersion()
     {
@@ -425,7 +425,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets compareVersion
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor $compareVersion Only applicable when ItemVersion specified. If provided, start walking history starting at this commit.
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor $compareVersion Only applicable when ItemVersion specified. If provided, start walking history starting at this commit.
      *
      * @return $this
      */
@@ -688,7 +688,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
     /**
      * Gets itemVersion
      *
-     * @return \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor
      */
     public function getItemVersion()
     {
@@ -698,7 +698,7 @@ class GitQueryCommitsCriteria implements ModelInterface, ArrayAccess
     /**
      * Sets itemVersion
      *
-     * @param \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitVersionDescriptor $itemVersion If provided, identifies the commit or branch to search
+     * @param \FrankHouweling\AzureDevOpsClient\Git\Model\GitVersionDescriptor $itemVersion If provided, identifies the commit or branch to search
      *
      * @return $this
      */

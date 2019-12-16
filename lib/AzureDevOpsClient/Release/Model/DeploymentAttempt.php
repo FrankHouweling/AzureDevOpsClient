@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * DeploymentAttempt Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,17 +62,17 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
         'deploymentId' => 'int',
         'hasStarted' => 'bool',
         'id' => 'int',
-        'issues' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[]',
-        'lastModifiedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'issues' => '\FrankHouweling\AzureDevOpsClient\Release\Model\Issue[]',
+        'lastModifiedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'lastModifiedOn' => '\DateTime',
         'operationStatus' => 'string',
-        'postDeploymentGates' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates',
-        'preDeploymentGates' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates',
+        'postDeploymentGates' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates',
+        'preDeploymentGates' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates',
         'queuedOn' => '\DateTime',
         'reason' => 'string',
-        'releaseDeployPhases' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[]',
-        'requestedBy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
-        'requestedFor' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef',
+        'releaseDeployPhases' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[]',
+        'requestedBy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
+        'requestedFor' => '\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef',
         'status' => 'string'
     ];
 
@@ -515,7 +515,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets issues
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\Issue[]
      */
     public function getIssues()
     {
@@ -525,7 +525,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets issues
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\Issue[] $issues All the issues related to the deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\Issue[] $issues All the issues related to the deployment.
      *
      * @return $this
      */
@@ -539,7 +539,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets lastModifiedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getLastModifiedBy()
     {
@@ -549,7 +549,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets lastModifiedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $lastModifiedBy Identity who last modified this deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $lastModifiedBy Identity who last modified this deployment.
      *
      * @return $this
      */
@@ -620,7 +620,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets postDeploymentGates
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates
      */
     public function getPostDeploymentGates()
     {
@@ -630,7 +630,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets postDeploymentGates
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates $postDeploymentGates Post deployment gates that executed in this deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates $postDeploymentGates Post deployment gates that executed in this deployment.
      *
      * @return $this
      */
@@ -644,7 +644,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets preDeploymentGates
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates
      */
     public function getPreDeploymentGates()
     {
@@ -654,7 +654,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets preDeploymentGates
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseGates $preDeploymentGates Pre deployment gates that executed in this deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseGates $preDeploymentGates Pre deployment gates that executed in this deployment.
      *
      * @return $this
      */
@@ -725,7 +725,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDeployPhases
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[]
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[]
      */
     public function getReleaseDeployPhases()
     {
@@ -735,7 +735,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDeployPhases
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[] $releaseDeployPhases List of release deployphases executed in this deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ReleaseDeployPhase[] $releaseDeployPhases List of release deployphases executed in this deployment.
      *
      * @return $this
      */
@@ -749,7 +749,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets requestedBy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getRequestedBy()
     {
@@ -759,7 +759,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets requestedBy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy Identity who requested this deployment.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $requestedBy Identity who requested this deployment.
      *
      * @return $this
      */
@@ -773,7 +773,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Gets requestedFor
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef
      */
     public function getRequestedFor()
     {
@@ -783,7 +783,7 @@ class DeploymentAttempt implements ModelInterface, ArrayAccess
     /**
      * Sets requestedFor
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef $requestedFor Identity for this deployment requested.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef $requestedFor Identity for this deployment requested.
      *
      * @return $this
      */

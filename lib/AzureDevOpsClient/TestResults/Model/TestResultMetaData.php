@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * TestResultMetaData Class Doc Comment
  *
  * @category Class
  * @description Represents a Meta Data of a test result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class TestResultMetaData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'automatedTestName' => 'string',
         'automatedTestStorage' => 'string',
-        'flakyIdentifiers' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]',
+        'flakyIdentifiers' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]',
         'owner' => 'string',
         'priority' => 'int',
         'testCaseReferenceId' => 'int',
@@ -292,7 +292,7 @@ class TestResultMetaData implements ModelInterface, ArrayAccess
     /**
      * Gets flakyIdentifiers
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[]
      */
     public function getFlakyIdentifiers()
     {
@@ -302,7 +302,7 @@ class TestResultMetaData implements ModelInterface, ArrayAccess
     /**
      * Sets flakyIdentifiers
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifier for TestCaseReferenceId
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\TestFlakyIdentifier[] $flakyIdentifiers List of Flaky Identifier for TestCaseReferenceId
      *
      * @return $this
      */

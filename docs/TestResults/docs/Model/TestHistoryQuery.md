@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **groupBy** | **string** | Group the result on the basis of TestResultGroupBy. This can be Branch, Environment or null(if results are fetched by BuildDefinitionId) | [optional] 
 **maxCompleteDate** | [**\DateTime**](\DateTime.md) | History to get between time interval MaxCompleteDate and  (MaxCompleteDate - TrendDays). Default is current date time. | [optional] 
 **releaseEnvDefinitionId** | **int** | Get the results history only for this ReleaseEnvDefinitionId. This to get used in query GroupBy should be Environment. | [optional] 
-**resultsForGroup** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]**](TestResultHistoryForGroup.md) | List of TestResultHistoryForGroup which are grouped by GroupBy | [optional] 
+**resultsForGroup** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\TestResultHistoryForGroup[]**](TestResultHistoryForGroup.md) | List of TestResultHistoryForGroup which are grouped by GroupBy | [optional] 
 **testCaseId** | **int** | Get the results history only for this testCaseId. This to get used in query to filter the result along with automatedtestname | [optional] 
 **trendDays** | **int** | Number of days for which history to collect. Maximum supported value is 7 days. Default is 7 days. | [optional] 
 

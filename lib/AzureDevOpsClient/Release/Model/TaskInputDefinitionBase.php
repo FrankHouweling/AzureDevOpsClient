@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * TaskInputDefinitionBase Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,7 +68,7 @@ class TaskInputDefinitionBase implements ModelInterface, ArrayAccess
         'properties' => 'map[string,string]',
         'required' => 'bool',
         'type' => 'string',
-        'validation' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputValidation',
+        'validation' => '\FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputValidation',
         'visibleRule' => 'string'
     ];
 
@@ -514,7 +514,7 @@ class TaskInputDefinitionBase implements ModelInterface, ArrayAccess
     /**
      * Gets validation
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputValidation
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputValidation
      */
     public function getValidation()
     {
@@ -524,7 +524,7 @@ class TaskInputDefinitionBase implements ModelInterface, ArrayAccess
     /**
      * Sets validation
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\TaskInputValidation $validation validation
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\TaskInputValidation $validation validation
      *
      * @return $this
      */

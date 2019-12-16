@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * WorkItemLink Class Doc Comment
  *
  * @category Class
  * @description A link between two work items.
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class WorkItemLink implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'rel' => 'string',
-        'source' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference',
-        'target' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference'
+        'source' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference',
+        'target' => '\FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference'
     ];
 
     /**
@@ -244,7 +244,7 @@ class WorkItemLink implements ModelInterface, ArrayAccess
     /**
      * Gets source
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference
      */
     public function getSource()
     {
@@ -254,7 +254,7 @@ class WorkItemLink implements ModelInterface, ArrayAccess
     /**
      * Sets source
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference $source The source work item.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference $source The source work item.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class WorkItemLink implements ModelInterface, ArrayAccess
     /**
      * Gets target
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference
      */
     public function getTarget()
     {
@@ -278,7 +278,7 @@ class WorkItemLink implements ModelInterface, ArrayAccess
     /**
      * Sets target
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\WorkItemReference $target The target work item.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\WorkItemReference $target The target work item.
      *
      * @return $this
      */

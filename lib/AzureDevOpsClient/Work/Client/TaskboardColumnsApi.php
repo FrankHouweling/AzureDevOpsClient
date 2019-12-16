@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Client;
+namespace FrankHouweling\AzureDevOpsClient\Work\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Work\ApiException;
-use AzureDevOpsClient\Work\Configuration;
-use AzureDevOpsClient\Work\HeaderSelector;
-use AzureDevOpsClient\Work\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Work\ApiException;
+use FrankHouweling\AzureDevOpsClient\Work\Configuration;
+use FrankHouweling\AzureDevOpsClient\Work\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TaskboardColumnsApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class TaskboardColumnsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns
      */
     public function taskboardColumnsGet($organization, $project, $team, $apiVersion)
     {
@@ -113,13 +113,13 @@ class TaskboardColumnsApi
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns, HTTP status code, HTTP response headers (array of strings)
      */
     public function taskboardColumnsGetWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns';
         $request = $this->taskboardColumnsGetRequest($organization, $project, $team, $apiVersion);
 
         try {
@@ -171,7 +171,7 @@ class TaskboardColumnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class TaskboardColumnsApi
      */
     public function taskboardColumnsGetAsyncWithHttpInfo($organization, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns';
         $request = $this->taskboardColumnsGetRequest($organization, $project, $team, $apiVersion);
 
         return $this->client
@@ -413,14 +413,14 @@ class TaskboardColumnsApi
      * Operation taskboardColumnsUpdate
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns
      */
     public function taskboardColumnsUpdate($organization, $body, $project, $team, $apiVersion)
     {
@@ -432,18 +432,18 @@ class TaskboardColumnsApi
      * Operation taskboardColumnsUpdateWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Work\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Work\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns, HTTP status code, HTTP response headers (array of strings)
      */
     public function taskboardColumnsUpdateWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns';
         $request = $this->taskboardColumnsUpdateRequest($organization, $body, $project, $team, $apiVersion);
 
         try {
@@ -495,7 +495,7 @@ class TaskboardColumnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns',
+                        '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -511,7 +511,7 @@ class TaskboardColumnsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -535,7 +535,7 @@ class TaskboardColumnsApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -545,7 +545,7 @@ class TaskboardColumnsApi
      */
     public function taskboardColumnsUpdateAsyncWithHttpInfo($organization, $body, $project, $team, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumns';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumns';
         $request = $this->taskboardColumnsUpdateRequest($organization, $body, $project, $team, $apiVersion);
 
         return $this->client
@@ -589,7 +589,7 @@ class TaskboardColumnsApi
      * Create request for operation 'taskboardColumnsUpdate'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Work\Model\UpdateTaskboardColumn[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  string $team Team ID or team name (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

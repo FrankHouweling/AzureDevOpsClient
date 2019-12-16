@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Work\BoardsApi
+# FrankHouweling\AzureDevOpsClient\Work\BoardsApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **boardsGet**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board boardsGet($organization, $project, $id, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\Board boardsGet($organization, $project, $id, $team, $apiVersion)
 
 
 
@@ -22,9 +22,9 @@ Get board
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Board**](../Model/Board.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\Board**](../Model/Board.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **boardsList**
-> \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[] boardsList($organization, $project, $team, $apiVersion)
+> \FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[] boardsList($organization, $project, $team, $apiVersion)
 
 
 
@@ -83,9 +83,9 @@ Get boards
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\BoardReference[]**](../Model/BoardReference.md)
+[**\FrankHouweling\AzureDevOpsClient\Work\Model\BoardReference[]**](../Model/BoardReference.md)
 
 ### Authorization
 
@@ -142,9 +142,9 @@ Update board options
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Work\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Work\Api\BoardsApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Work\Api\BoardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

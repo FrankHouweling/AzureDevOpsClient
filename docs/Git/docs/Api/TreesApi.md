@@ -1,4 +1,4 @@
-# AzureDevOpsClient\Git\TreesApi
+# FrankHouweling\AzureDevOpsClient\Git\TreesApi
 
 All URIs are relative to *https://dev.azure.com*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **treesGet**
-> \AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef treesGet($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId, $recursive, $fileName, $format)
+> \FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef treesGet($organization, $repositoryId, $sha1, $project, $apiVersion, $projectId, $recursive, $fileName, $format)
 
 
 
@@ -20,9 +20,9 @@ The Tree endpoint returns the collection of objects underneath the specified tre
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = FrankHouweling\AzureDevOpsClient\Git\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new AzureDevOpsClient\Git\Api\TreesApi(
+$apiInstance = new FrankHouweling\AzureDevOpsClient\Git\Api\TreesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\AzureDevOpsClient\Git\AzureDevOpsClient\Git\Model\GitTreeRef**](../Model/GitTreeRef.md)
+[**\FrankHouweling\AzureDevOpsClient\Git\Model\GitTreeRef**](../Model/GitTreeRef.md)
 
 ### Authorization
 

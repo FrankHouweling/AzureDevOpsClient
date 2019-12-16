@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdByIdentity** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4. | [optional] 
+**createdByIdentity** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity that created this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4. | [optional] 
 **createdDate** | [**\DateTime**](\DateTime.md) | Date when the plan was created | [optional] 
 **description** | **string** | Description of the plan | [optional] 
 **id** | **string** | Id of the plan | [optional] 
-**modifiedByIdentity** | [**\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4. | [optional] 
+**modifiedByIdentity** | [**\FrankHouweling\AzureDevOpsClient\Work\Model\IdentityRef**](IdentityRef.md) | Identity that last modified this plan. Defaults to null for records before upgrading to ScaledAgileViewComponent4. | [optional] 
 **modifiedDate** | [**\DateTime**](\DateTime.md) | Date when the plan was last modified. Default to CreatedDate when the plan is first created. | [optional] 
 **name** | **string** | Name of the plan | [optional] 
 **properties** | **object** | The PlanPropertyCollection instance associated with the plan. These are dependent on the type of the plan. For example, DeliveryTimelineView, it would be of type DeliveryViewPropertyCollection. | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model;
+namespace FrankHouweling\AzureDevOpsClient\Build\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Build\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * BuildSettings Class Doc Comment
  *
  * @category Class
  * @description Represents system-wide build settings.
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class BuildSettings implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'daysToKeepDeletedBuildsBeforeDestroy' => 'int',
-        'defaultRetentionPolicy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy',
-        'maximumRetentionPolicy' => '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy'
+        'defaultRetentionPolicy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy',
+        'maximumRetentionPolicy' => '\FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy'
     ];
 
     /**
@@ -244,7 +244,7 @@ class BuildSettings implements ModelInterface, ArrayAccess
     /**
      * Gets defaultRetentionPolicy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy
      */
     public function getDefaultRetentionPolicy()
     {
@@ -254,7 +254,7 @@ class BuildSettings implements ModelInterface, ArrayAccess
     /**
      * Sets defaultRetentionPolicy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy $defaultRetentionPolicy The default retention policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy $defaultRetentionPolicy The default retention policy.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class BuildSettings implements ModelInterface, ArrayAccess
     /**
      * Gets maximumRetentionPolicy
      *
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy
      */
     public function getMaximumRetentionPolicy()
     {
@@ -278,7 +278,7 @@ class BuildSettings implements ModelInterface, ArrayAccess
     /**
      * Sets maximumRetentionPolicy
      *
-     * @param \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\RetentionPolicy $maximumRetentionPolicy The maximum retention policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Build\Model\RetentionPolicy $maximumRetentionPolicy The maximum retention policy.
      *
      * @return $this
      */

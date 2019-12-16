@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model;
+namespace FrankHouweling\AzureDevOpsClient\Notification\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Notification\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Notification\ObjectSerializer;
 
 /**
  * SubscriptionEvaluationResult Class Doc Comment
  *
  * @category Class
  * @description Encapsulates the subscription evaluation results. It defines the Date Interval that was used, number of events evaluated and events and notifications results
- * @package  AzureDevOpsClient\Notification
+ * @package  FrankHouweling\AzureDevOpsClient\Notification
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class SubscriptionEvaluationResult implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'evaluationJobStatus' => 'string',
-        'events' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventsEvaluationResult',
+        'events' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\EventsEvaluationResult',
         'id' => 'string',
-        'notifications' => '\AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult'
+        'notifications' => '\FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult'
     ];
 
     /**
@@ -294,7 +294,7 @@ class SubscriptionEvaluationResult implements ModelInterface, ArrayAccess
     /**
      * Gets events
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventsEvaluationResult
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\EventsEvaluationResult
      */
     public function getEvents()
     {
@@ -304,7 +304,7 @@ class SubscriptionEvaluationResult implements ModelInterface, ArrayAccess
     /**
      * Sets events
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\EventsEvaluationResult $events Subscription evaluation events results.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\EventsEvaluationResult $events Subscription evaluation events results.
      *
      * @return $this
      */
@@ -342,7 +342,7 @@ class SubscriptionEvaluationResult implements ModelInterface, ArrayAccess
     /**
      * Gets notifications
      *
-     * @return \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult
+     * @return \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult
      */
     public function getNotifications()
     {
@@ -352,7 +352,7 @@ class SubscriptionEvaluationResult implements ModelInterface, ArrayAccess
     /**
      * Sets notifications
      *
-     * @param \AzureDevOpsClient\Notification\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult $notifications Subscription evaluation  notification results.
+     * @param \FrankHouweling\AzureDevOpsClient\Notification\Model\NotificationsEvaluationResult $notifications Subscription evaluation  notification results.
      *
      * @return $this
      */

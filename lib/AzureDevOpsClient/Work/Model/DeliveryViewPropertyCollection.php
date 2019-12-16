@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * DeliveryViewPropertyCollection Class Doc Comment
  *
  * @category Class
  * @description Collection of properties, specific to the DeliveryTimelineView
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'cardSettings' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardSettings',
-        'criteria' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[]',
-        'markers' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Marker[]',
-        'teamBacklogMappings' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamBacklogMapping[]'
+        'cardSettings' => '\FrankHouweling\AzureDevOpsClient\Work\Model\CardSettings',
+        'criteria' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[]',
+        'markers' => '\FrankHouweling\AzureDevOpsClient\Work\Model\Marker[]',
+        'teamBacklogMappings' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TeamBacklogMapping[]'
     ];
 
     /**
@@ -226,7 +226,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Gets cardSettings
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardSettings
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\CardSettings
      */
     public function getCardSettings()
     {
@@ -236,7 +236,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Sets cardSettings
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\CardSettings $cardSettings Card settings
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\CardSettings $cardSettings Card settings
      *
      * @return $this
      */
@@ -250,7 +250,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Gets criteria
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[]
      */
     public function getCriteria()
     {
@@ -260,7 +260,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Sets criteria
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FilterClause[] $criteria Field criteria
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FilterClause[] $criteria Field criteria
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Gets markers
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Marker[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\Marker[]
      */
     public function getMarkers()
     {
@@ -284,7 +284,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Sets markers
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\Marker[] $markers Markers. Will be missing/null if there are no markers.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\Marker[] $markers Markers. Will be missing/null if there are no markers.
      *
      * @return $this
      */
@@ -298,7 +298,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Gets teamBacklogMappings
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamBacklogMapping[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TeamBacklogMapping[]
      */
     public function getTeamBacklogMappings()
     {
@@ -308,7 +308,7 @@ class DeliveryViewPropertyCollection implements ModelInterface, ArrayAccess
     /**
      * Sets teamBacklogMappings
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TeamBacklogMapping[] $teamBacklogMappings Team backlog mappings
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TeamBacklogMapping[] $teamBacklogMappings Team backlog mappings
      *
      * @return $this
      */

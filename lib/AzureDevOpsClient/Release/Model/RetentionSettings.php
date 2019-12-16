@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * RetentionSettings Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class RetentionSettings implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'daysToKeepDeletedReleases' => 'int',
-        'defaultEnvironmentRetentionPolicy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy',
-        'maximumEnvironmentRetentionPolicy' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy'
+        'defaultEnvironmentRetentionPolicy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy',
+        'maximumEnvironmentRetentionPolicy' => '\FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy'
     ];
 
     /**
@@ -244,7 +244,7 @@ class RetentionSettings implements ModelInterface, ArrayAccess
     /**
      * Gets defaultEnvironmentRetentionPolicy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy
      */
     public function getDefaultEnvironmentRetentionPolicy()
     {
@@ -254,7 +254,7 @@ class RetentionSettings implements ModelInterface, ArrayAccess
     /**
      * Sets defaultEnvironmentRetentionPolicy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy $defaultEnvironmentRetentionPolicy Specifies the default environment retention policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy $defaultEnvironmentRetentionPolicy Specifies the default environment retention policy.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class RetentionSettings implements ModelInterface, ArrayAccess
     /**
      * Gets maximumEnvironmentRetentionPolicy
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy
      */
     public function getMaximumEnvironmentRetentionPolicy()
     {
@@ -278,7 +278,7 @@ class RetentionSettings implements ModelInterface, ArrayAccess
     /**
      * Sets maximumEnvironmentRetentionPolicy
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy $maximumEnvironmentRetentionPolicy Specifies the maximum environment retention policy.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\EnvironmentRetentionPolicy $maximumEnvironmentRetentionPolicy Specifies the maximum environment retention policy.
      *
      * @return $this
      */

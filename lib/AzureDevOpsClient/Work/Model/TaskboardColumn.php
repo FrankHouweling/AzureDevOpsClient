@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TaskboardColumn Class Doc Comment
  *
  * @category Class
  * @description Represents the taskbord column
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class TaskboardColumn implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-        'mappings' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[]',
+        'mappings' => '\FrankHouweling\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[]',
         'name' => 'string',
         'order' => 'int'
     ];
@@ -250,7 +250,7 @@ class TaskboardColumn implements ModelInterface, ArrayAccess
     /**
      * Gets mappings
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[]
      */
     public function getMappings()
     {
@@ -260,7 +260,7 @@ class TaskboardColumn implements ModelInterface, ArrayAccess
     /**
      * Sets mappings
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[] $mappings Work item type states mapped to this column to support auto state update when column is updated.
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\ITaskboardColumnMapping[] $mappings Work item type states mapped to this column to support auto state update when column is updated.
      *
      * @return $this
      */

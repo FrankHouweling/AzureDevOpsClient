@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model;
+namespace FrankHouweling\AzureDevOpsClient\Release\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Release\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Release\ObjectSerializer;
 
 /**
  * VariableGroupProjectReference Class Doc Comment
  *
  * @category Class
  * @description A variable group reference is a shallow reference to variable group.
- * @package  AzureDevOpsClient\Release
+ * @package  FrankHouweling\AzureDevOpsClient\Release
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class VariableGroupProjectReference implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'description' => 'string',
         'name' => 'string',
-        'projectReference' => '\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference'
+        'projectReference' => '\FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference'
     ];
 
     /**
@@ -268,7 +268,7 @@ class VariableGroupProjectReference implements ModelInterface, ArrayAccess
     /**
      * Gets projectReference
      *
-     * @return \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference
+     * @return \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference
      */
     public function getProjectReference()
     {
@@ -278,7 +278,7 @@ class VariableGroupProjectReference implements ModelInterface, ArrayAccess
     /**
      * Sets projectReference
      *
-     * @param \AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference of the variable group.
+     * @param \FrankHouweling\AzureDevOpsClient\Release\Model\ProjectReference $projectReference Gets or sets project reference of the variable group.
      *
      * @return $this
      */

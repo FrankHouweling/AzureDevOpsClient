@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Build\AzureDevOpsClient\Build\Client;
+namespace FrankHouweling\AzureDevOpsClient\Build\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Build\ApiException;
-use AzureDevOpsClient\Build\Configuration;
-use AzureDevOpsClient\Build\HeaderSelector;
-use AzureDevOpsClient\Build\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Build\ApiException;
+use FrankHouweling\AzureDevOpsClient\Build\Configuration;
+use FrankHouweling\AzureDevOpsClient\Build\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Build\ObjectSerializer;
 
 /**
  * ResourcesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Build
+ * @package  FrankHouweling\AzureDevOpsClient\Build
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,14 +91,14 @@ class ResourcesApi
      * Operation resourcesAuthorizeDefinitionResources
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
      */
     public function resourcesAuthorizeDefinitionResources($organization, $body, $project, $definitionId, $apiVersion)
     {
@@ -110,18 +110,18 @@ class ResourcesApi
      * Operation resourcesAuthorizeDefinitionResourcesWithHttpInfo
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resourcesAuthorizeDefinitionResourcesWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->resourcesAuthorizeDefinitionResourcesRequest($organization, $body, $project, $definitionId, $apiVersion);
 
         try {
@@ -173,7 +173,7 @@ class ResourcesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ResourcesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -213,7 +213,7 @@ class ResourcesApi
      * 
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -223,7 +223,7 @@ class ResourcesApi
      */
     public function resourcesAuthorizeDefinitionResourcesAsyncWithHttpInfo($organization, $body, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->resourcesAuthorizeDefinitionResourcesRequest($organization, $body, $project, $definitionId, $apiVersion);
 
         return $this->client
@@ -267,7 +267,7 @@ class ResourcesApi
      * Create request for operation 'resourcesAuthorizeDefinitionResources'
      *
      * @param  string $organization The name of the Azure DevOps organization. (required)
-     * @param  \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[] $body  (required)
      * @param  string $project Project ID or project name (required)
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -431,9 +431,9 @@ class ResourcesApi
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
+     * @return \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]
      */
     public function resourcesList($organization, $project, $definitionId, $apiVersion)
     {
@@ -449,13 +449,13 @@ class ResourcesApi
      * @param  int $definitionId  (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Build\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Build\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[], HTTP status code, HTTP response headers (array of strings)
      */
     public function resourcesListWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->resourcesListRequest($organization, $project, $definitionId, $apiVersion);
 
         try {
@@ -507,7 +507,7 @@ class ResourcesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
+                        '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -555,7 +555,7 @@ class ResourcesApi
      */
     public function resourcesListAsyncWithHttpInfo($organization, $project, $definitionId, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionResourceReference[]';
         $request = $this->resourcesListRequest($organization, $project, $definitionId, $apiVersion);
 
         return $this->client

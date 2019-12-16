@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who created this folder. | [optional] 
+**createdBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who created this folder. | [optional] 
 **createdOn** | [**\DateTime**](\DateTime.md) | Time when this folder created. | [optional] 
 **description** | **string** | Description of the folder. | [optional] 
-**lastChangedBy** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who last changed this folder. | [optional] 
+**lastChangedBy** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\IdentityRef**](IdentityRef.md) | Identity who last changed this folder. | [optional] 
 **lastChangedDate** | [**\DateTime**](\DateTime.md) | Time when this folder last changed. | [optional] 
 **path** | **string** | path of the folder. | [optional] 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * BoardFields Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class BoardFields implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'columnField' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference',
-        'doneField' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference',
-        'rowField' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference'
+        'columnField' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference',
+        'doneField' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference',
+        'rowField' => '\FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference'
     ];
 
     /**
@@ -220,7 +220,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Gets columnField
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference
      */
     public function getColumnField()
     {
@@ -230,7 +230,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Sets columnField
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference $columnField columnField
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference $columnField columnField
      *
      * @return $this
      */
@@ -244,7 +244,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Gets doneField
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference
      */
     public function getDoneField()
     {
@@ -254,7 +254,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Sets doneField
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference $doneField doneField
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference $doneField doneField
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Gets rowField
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference
      */
     public function getRowField()
     {
@@ -278,7 +278,7 @@ class BoardFields implements ModelInterface, ArrayAccess
     /**
      * Sets rowField
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\FieldReference $rowField rowField
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\FieldReference $rowField rowField
      *
      * @return $this
      */

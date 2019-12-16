@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model;
+namespace FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ExtensionManagement\ObjectSerializer;
 
 /**
  * ExtensionManifest Class Doc Comment
  *
  * @category Class
  * @description Base class for extension properties which are shared by the extension manifest and the extension model
- * @package  AzureDevOpsClient\ExtensionManagement
+ * @package  FrankHouweling\AzureDevOpsClient\ExtensionManagement
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,14 +59,14 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'baseUri' => 'string',
-        'constraints' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[]',
-        'contributions' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\Contribution[]',
-        'contributionTypes' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[]',
+        'constraints' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[]',
+        'contributions' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\Contribution[]',
+        'contributionTypes' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[]',
         'demands' => 'string[]',
-        'eventCallbacks' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection',
+        'eventCallbacks' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection',
         'fallbackBaseUri' => 'string',
         'language' => 'string',
-        'licensing' => '\AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing',
+        'licensing' => '\FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing',
         'manifestVersion' => 'double',
         'restrictedTo' => 'string[]',
         'scopes' => 'string[]',
@@ -304,7 +304,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Gets constraints
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[]
      */
     public function getConstraints()
     {
@@ -314,7 +314,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Sets constraints
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[] $constraints List of shared constraints defined by this extension
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionConstraint[] $constraints List of shared constraints defined by this extension
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Gets contributions
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\Contribution[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\Contribution[]
      */
     public function getContributions()
     {
@@ -338,7 +338,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Sets contributions
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\Contribution[] $contributions List of contributions made by this extension
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\Contribution[] $contributions List of contributions made by this extension
      *
      * @return $this
      */
@@ -352,7 +352,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Gets contributionTypes
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[]
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[]
      */
     public function getContributionTypes()
     {
@@ -362,7 +362,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Sets contributionTypes
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[] $contributionTypes List of contribution types defined by this extension
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ContributionType[] $contributionTypes List of contribution types defined by this extension
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Gets eventCallbacks
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection
      */
     public function getEventCallbacks()
     {
@@ -410,7 +410,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Sets eventCallbacks
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection $eventCallbacks Collection of endpoints that get called when particular extension events occur
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionEventCallbackCollection $eventCallbacks Collection of endpoints that get called when particular extension events occur
      *
      * @return $this
      */
@@ -472,7 +472,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Gets licensing
      *
-     * @return \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing
+     * @return \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing
      */
     public function getLicensing()
     {
@@ -482,7 +482,7 @@ class ExtensionManifest implements ModelInterface, ArrayAccess
     /**
      * Sets licensing
      *
-     * @param \AzureDevOpsClient\ExtensionManagement\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing $licensing How this extension behaves with respect to licensing
+     * @param \FrankHouweling\AzureDevOpsClient\ExtensionManagement\Model\ExtensionLicensing $licensing How this extension behaves with respect to licensing
      *
      * @return $this
      */

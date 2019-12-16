@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Security\AzureDevOpsClient\Security\Client;
+namespace FrankHouweling\AzureDevOpsClient\Security\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use AzureDevOpsClient\Security\ApiException;
-use AzureDevOpsClient\Security\Configuration;
-use AzureDevOpsClient\Security\HeaderSelector;
-use AzureDevOpsClient\Security\ObjectSerializer;
+use FrankHouweling\AzureDevOpsClient\Security\ApiException;
+use FrankHouweling\AzureDevOpsClient\Security\Configuration;
+use FrankHouweling\AzureDevOpsClient\Security\HeaderSelector;
+use FrankHouweling\AzureDevOpsClient\Security\ObjectSerializer;
 
 /**
  * AccessControlEntriesApi Class Doc Comment
  *
  * @category Class
- * @package  AzureDevOpsClient\Security
+ * @package  FrankHouweling\AzureDevOpsClient\Security
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,7 +96,7 @@ class AccessControlEntriesApi
      * @param  string $token The token whose ACL should be modified. (optional)
      * @param  string $descriptors String containing a list of identity descriptors separated by &#39;,&#39; whose entries should be removed. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return bool
      */
@@ -115,7 +115,7 @@ class AccessControlEntriesApi
      * @param  string $token The token whose ACL should be modified. (optional)
      * @param  string $descriptors String containing a list of identity descriptors separated by &#39;,&#39; whose entries should be removed. (optional)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of bool, HTTP status code, HTTP response headers (array of strings)
      */
@@ -411,14 +411,14 @@ class AccessControlEntriesApi
     /**
      * Operation accessControlEntriesSetAccessControlEntries
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\JObject $body  (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[]
+     * @return \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[]
      */
     public function accessControlEntriesSetAccessControlEntries($body, $securityNamespaceId, $organization, $apiVersion)
     {
@@ -429,18 +429,18 @@ class AccessControlEntriesApi
     /**
      * Operation accessControlEntriesSetAccessControlEntriesWithHttpInfo
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\JObject $body  (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
      *
-     * @throws \AzureDevOpsClient\Security\ApiException on non-2xx response
+     * @throws \FrankHouweling\AzureDevOpsClient\Security\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function accessControlEntriesSetAccessControlEntriesWithHttpInfo($body, $securityNamespaceId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[]';
         $request = $this->accessControlEntriesSetAccessControlEntriesRequest($body, $securityNamespaceId, $organization, $apiVersion);
 
         try {
@@ -492,7 +492,7 @@ class AccessControlEntriesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[]',
+                        '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -507,7 +507,7 @@ class AccessControlEntriesApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\JObject $body  (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -530,7 +530,7 @@ class AccessControlEntriesApi
      *
      * 
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\JObject $body  (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)
@@ -540,7 +540,7 @@ class AccessControlEntriesApi
      */
     public function accessControlEntriesSetAccessControlEntriesAsyncWithHttpInfo($body, $securityNamespaceId, $organization, $apiVersion)
     {
-        $returnType = '\AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\AccessControlEntry[]';
+        $returnType = '\FrankHouweling\AzureDevOpsClient\Security\Model\AccessControlEntry[]';
         $request = $this->accessControlEntriesSetAccessControlEntriesRequest($body, $securityNamespaceId, $organization, $apiVersion);
 
         return $this->client
@@ -583,7 +583,7 @@ class AccessControlEntriesApi
     /**
      * Create request for operation 'accessControlEntriesSetAccessControlEntries'
      *
-     * @param  \AzureDevOpsClient\Security\AzureDevOpsClient\Security\Model\JObject $body  (required)
+     * @param  \FrankHouweling\AzureDevOpsClient\Security\Model\JObject $body  (required)
      * @param  string $securityNamespaceId Security namespace identifier. (required)
      * @param  string $organization The name of the Azure DevOps organization. (required)
      * @param  string $apiVersion Version of the API to use.  This should be set to &#39;6.0-preview.1&#39; to use this version of the api. (required)

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **startedDate** | [**\DateTime**](\DateTime.md) | Time when execution started. | [optional] 
 **actionPath** | **string** | Path identifier test step in test case workitem. | [optional] 
 **iterationId** | **int** | Iteration ID of test action result. | [optional] 
-**sharedStepModel** | [**\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\SharedStepModel**](SharedStepModel.md) | Reference to shared step workitem. | [optional] 
+**sharedStepModel** | [**\FrankHouweling\AzureDevOpsClient\TestResults\Model\SharedStepModel**](SharedStepModel.md) | Reference to shared step workitem. | [optional] 
 **stepIdentifier** | **string** | This is step Id of test case. For shared step, it is step Id of shared step in test case workitem; step Id in shared step. Example: TestCase workitem has two steps: 1) Normal step with Id &#x3D; 1 2) Shared Step with Id &#x3D; 2. Inside shared step: a) Normal Step with Id &#x3D; 1 Value for StepIdentifier for First step: \&quot;1\&quot; Second step: \&quot;2;1\&quot; | [optional] 
 **url** | **string** | Url of test action result. | [optional] 
 

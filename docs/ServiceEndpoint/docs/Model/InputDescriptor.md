@@ -14,9 +14,9 @@ Name | Type | Description | Notes
 **properties** | **map[string,object]** | Custom properties for the input which can be used by the service provider | [optional] 
 **type** | **string** | Underlying data type for the input value. When this value is specified, InputMode, Validation and Values are optional. | [optional] 
 **useInDefaultDescription** | **bool** | Gets whether this input is included in the default generated action description. | [optional] 
-**validation** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation**](InputValidation.md) | Information to use to validate this input&#39;s value | [optional] 
+**validation** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValidation**](InputValidation.md) | Information to use to validate this input&#39;s value | [optional] 
 **valueHint** | **string** | A hint for input value. It can be used in the UI as the input placeholder. | [optional] 
-**values** | [**\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\InputValues**](InputValues.md) | Information about possible values for this input | [optional] 
+**values** | [**\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\InputValues**](InputValues.md) | Information about possible values for this input | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

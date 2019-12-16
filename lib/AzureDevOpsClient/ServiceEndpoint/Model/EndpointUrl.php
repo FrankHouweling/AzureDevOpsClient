@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model;
+namespace FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\ObjectSerializer;
 
 /**
  * EndpointUrl Class Doc Comment
  *
  * @category Class
  * @description Represents url of the service endpoint.
- * @package  AzureDevOpsClient\ServiceEndpoint
+ * @package  FrankHouweling\AzureDevOpsClient\ServiceEndpoint
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class EndpointUrl implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'dependsOn' => '\AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn',
+        'dependsOn' => '\FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn',
         'displayName' => 'string',
         'format' => 'string',
         'helpText' => 'string',
@@ -238,7 +238,7 @@ class EndpointUrl implements ModelInterface, ArrayAccess
     /**
      * Gets dependsOn
      *
-     * @return \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn
+     * @return \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn
      */
     public function getDependsOn()
     {
@@ -248,7 +248,7 @@ class EndpointUrl implements ModelInterface, ArrayAccess
     /**
      * Sets dependsOn
      *
-     * @param \AzureDevOpsClient\ServiceEndpoint\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn $dependsOn Gets or sets the dependency bindings.
+     * @param \FrankHouweling\AzureDevOpsClient\ServiceEndpoint\Model\DependsOn $dependsOn Gets or sets the dependency bindings.
      *
      * @return $this
      */

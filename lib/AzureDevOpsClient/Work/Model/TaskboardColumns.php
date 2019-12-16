@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model;
+namespace FrankHouweling\AzureDevOpsClient\Work\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Work\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Work\ObjectSerializer;
 
 /**
  * TaskboardColumns Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\Work
+ * @package  FrankHouweling\AzureDevOpsClient\Work
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class TaskboardColumns implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'columns' => '\AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumn[]',
+        'columns' => '\FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumn[]',
         'isCustomized' => 'bool',
         'isValid' => 'bool',
         'validationMesssage' => 'string'
@@ -226,7 +226,7 @@ class TaskboardColumns implements ModelInterface, ArrayAccess
     /**
      * Gets columns
      *
-     * @return \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumn[]
+     * @return \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumn[]
      */
     public function getColumns()
     {
@@ -236,7 +236,7 @@ class TaskboardColumns implements ModelInterface, ArrayAccess
     /**
      * Sets columns
      *
-     * @param \AzureDevOpsClient\Work\AzureDevOpsClient\Work\Model\TaskboardColumn[] $columns columns
+     * @param \FrankHouweling\AzureDevOpsClient\Work\Model\TaskboardColumn[] $columns columns
      *
      * @return $this
      */

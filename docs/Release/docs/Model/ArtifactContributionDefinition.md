@@ -3,15 +3,15 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artifactTriggerConfiguration** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration**](ArtifactTriggerConfiguration.md) |  | [optional] 
+**artifactTriggerConfiguration** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\ArtifactTriggerConfiguration**](ArtifactTriggerConfiguration.md) |  | [optional] 
 **artifactType** | **string** |  | [optional] 
 **artifactTypeStreamMapping** | **map[string,string]** |  | [optional] 
 **browsableArtifactTypeMapping** | **map[string,string]** |  | [optional] 
-**dataSourceBindings** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\DataSourceBinding[]**](DataSourceBinding.md) |  | [optional] 
+**dataSourceBindings** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\DataSourceBinding[]**](DataSourceBinding.md) |  | [optional] 
 **displayName** | **string** |  | [optional] 
 **downloadTaskId** | **string** |  | [optional] 
 **endpointTypeId** | **string** |  | [optional] 
-**inputDescriptors** | [**\AzureDevOpsClient\Release\AzureDevOpsClient\Release\Model\InputDescriptor[]**](InputDescriptor.md) |  | [optional] 
+**inputDescriptors** | [**\FrankHouweling\AzureDevOpsClient\Release\Model\InputDescriptor[]**](InputDescriptor.md) |  | [optional] 
 **isCommitsTraceabilitySupported** | **bool** |  | [optional] 
 **isWorkitemsTraceabilitySupported** | **bool** |  | [optional] 
 **name** | **string** |  | [optional] 

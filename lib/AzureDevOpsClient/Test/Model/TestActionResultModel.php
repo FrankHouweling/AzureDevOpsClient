@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model;
+namespace FrankHouweling\AzureDevOpsClient\Test\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Test\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Test\ObjectSerializer;
 
 /**
  * TestActionResultModel Class Doc Comment
  *
  * @category Class
  * @description Represents a test step result.
- * @package  AzureDevOpsClient\Test
+ * @package  FrankHouweling\AzureDevOpsClient\Test
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
         'startedDate' => '\DateTime',
         'actionPath' => 'string',
         'iterationId' => 'int',
-        'sharedStepModel' => '\AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\SharedStepModel',
+        'sharedStepModel' => '\FrankHouweling\AzureDevOpsClient\Test\Model\SharedStepModel',
         'stepIdentifier' => 'string',
         'url' => 'string'
     ];
@@ -460,7 +460,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
     /**
      * Gets sharedStepModel
      *
-     * @return \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\SharedStepModel
+     * @return \FrankHouweling\AzureDevOpsClient\Test\Model\SharedStepModel
      */
     public function getSharedStepModel()
     {
@@ -470,7 +470,7 @@ class TestActionResultModel implements ModelInterface, ArrayAccess
     /**
      * Sets sharedStepModel
      *
-     * @param \AzureDevOpsClient\Test\AzureDevOpsClient\Test\Model\SharedStepModel $sharedStepModel Reference to shared step workitem.
+     * @param \FrankHouweling\AzureDevOpsClient\Test\Model\SharedStepModel $sharedStepModel Reference to shared step workitem.
      *
      * @return $this
      */

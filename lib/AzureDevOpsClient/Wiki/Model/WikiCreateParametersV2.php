@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model;
+namespace FrankHouweling\AzureDevOpsClient\Wiki\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\Wiki\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\Wiki\ObjectSerializer;
 
 /**
  * WikiCreateParametersV2 Class Doc Comment
  *
  * @category Class
  * @description Wiki creation parameters.
- * @package  AzureDevOpsClient\Wiki
+ * @package  FrankHouweling\AzureDevOpsClient\Wiki
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class WikiCreateParametersV2 implements ModelInterface, ArrayAccess
         'projectId' => 'string',
         'repositoryId' => 'string',
         'type' => 'string',
-        'version' => '\AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor'
+        'version' => '\FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor'
     ];
 
     /**
@@ -390,7 +390,7 @@ class WikiCreateParametersV2 implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor
+     * @return \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor
      */
     public function getVersion()
     {
@@ -400,7 +400,7 @@ class WikiCreateParametersV2 implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \AzureDevOpsClient\Wiki\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor $version Version of the wiki. Not required for ProjectWiki type.
+     * @param \FrankHouweling\AzureDevOpsClient\Wiki\Model\GitVersionDescriptor $version Version of the wiki. Not required for ProjectWiki type.
      *
      * @return $this
      */

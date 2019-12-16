@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**changedBy** | [**\AzureDevOpsClient\Build\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity of the person or process that changed the definition. | [optional] 
+**changedBy** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity of the person or process that changed the definition. | [optional] 
 **changedDate** | [**\DateTime**](\DateTime.md) | The date and time that the definition was changed. | [optional] 
 **changeType** | **string** | The change type (add, edit, delete). | [optional] 
 **comment** | **string** | The comment associated with the change. | [optional] 

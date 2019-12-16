@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * FailingSince Class Doc Comment
  *
  * @category Class
  * @description Failing since information of a test result.
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,9 +58,9 @@ class FailingSince implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'build' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference',
+        'build' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference',
         'date' => '\DateTime',
-        'release' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference'
+        'release' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference'
     ];
 
     /**
@@ -220,7 +220,7 @@ class FailingSince implements ModelInterface, ArrayAccess
     /**
      * Gets build
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference
      */
     public function getBuild()
     {
@@ -230,7 +230,7 @@ class FailingSince implements ModelInterface, ArrayAccess
     /**
      * Sets build
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\BuildReference $build Build reference since failing.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\BuildReference $build Build reference since failing.
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class FailingSince implements ModelInterface, ArrayAccess
     /**
      * Gets release
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference
      */
     public function getRelease()
     {
@@ -278,7 +278,7 @@ class FailingSince implements ModelInterface, ArrayAccess
     /**
      * Sets release
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\ReleaseReference $release Release reference since failing.
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\ReleaseReference $release Release reference since failing.
      *
      * @return $this
      */

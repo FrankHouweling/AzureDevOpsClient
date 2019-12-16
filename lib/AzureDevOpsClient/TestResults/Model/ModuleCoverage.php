@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model;
+namespace FrankHouweling\AzureDevOpsClient\TestResults\Model;
 
 use \ArrayAccess;
-use \AzureDevOpsClient\TestResults\ObjectSerializer;
+use \FrankHouweling\AzureDevOpsClient\TestResults\ObjectSerializer;
 
 /**
  * ModuleCoverage Class Doc Comment
  *
  * @category Class
  * @description 
- * @package  AzureDevOpsClient\TestResults
+ * @package  FrankHouweling\AzureDevOpsClient\TestResults
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,11 +61,11 @@ class ModuleCoverage implements ModelInterface, ArrayAccess
         'blockCount' => 'int',
         'blockData' => 'string[]',
         'fileUrl' => 'string',
-        'functions' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FunctionCoverage[]',
+        'functions' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\FunctionCoverage[]',
         'name' => 'string',
         'signature' => 'string',
         'signatureAge' => 'int',
-        'statistics' => '\AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CoverageStatistics'
+        'statistics' => '\FrankHouweling\AzureDevOpsClient\TestResults\Model\CoverageStatistics'
     ];
 
     /**
@@ -322,7 +322,7 @@ class ModuleCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets functions
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FunctionCoverage[]
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\FunctionCoverage[]
      */
     public function getFunctions()
     {
@@ -332,7 +332,7 @@ class ModuleCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets functions
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\FunctionCoverage[] $functions functions
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\FunctionCoverage[] $functions functions
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class ModuleCoverage implements ModelInterface, ArrayAccess
     /**
      * Gets statistics
      *
-     * @return \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CoverageStatistics
+     * @return \FrankHouweling\AzureDevOpsClient\TestResults\Model\CoverageStatistics
      */
     public function getStatistics()
     {
@@ -428,7 +428,7 @@ class ModuleCoverage implements ModelInterface, ArrayAccess
     /**
      * Sets statistics
      *
-     * @param \AzureDevOpsClient\TestResults\AzureDevOpsClient\TestResults\Model\CoverageStatistics $statistics statistics
+     * @param \FrankHouweling\AzureDevOpsClient\TestResults\Model\CoverageStatistics $statistics statistics
      *
      * @return $this
      */
