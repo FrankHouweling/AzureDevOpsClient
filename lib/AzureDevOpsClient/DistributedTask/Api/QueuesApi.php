@@ -388,10 +388,14 @@ class QueuesApi
             }
         }
 
-        // this endpoint requires OAuth (access token)
+        // this endpoint requires OAuth (access token) OR HTTP Basic Authentication with personal access token
         if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-        }
+			$headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
+		}
+
+		if ($this->config->getUsername() !== null || $this->config->getPassword() !== null) {
+			$headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+		}
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -673,10 +677,14 @@ class QueuesApi
             }
         }
 
-        // this endpoint requires OAuth (access token)
+        // this endpoint requires OAuth (access token) OR HTTP Basic Authentication with personal access token
         if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-        }
+			$headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
+		}
+
+		if ($this->config->getUsername() !== null || $this->config->getPassword() !== null) {
+			$headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+		}
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1004,10 +1012,14 @@ class QueuesApi
             }
         }
 
-        // this endpoint requires OAuth (access token)
+        // this endpoint requires OAuth (access token) OR HTTP Basic Authentication with personal access token
         if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-        }
+			$headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
+		}
+
+		if ($this->config->getUsername() !== null || $this->config->getPassword() !== null) {
+			$headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+		}
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1331,10 +1343,14 @@ class QueuesApi
             }
         }
 
-        // this endpoint requires OAuth (access token)
+        // this endpoint requires OAuth (access token) OR HTTP Basic Authentication with personal access token
         if ($this->config->getAccessToken() !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-        }
+			$headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
+		}
+
+		if ($this->config->getUsername() !== null || $this->config->getPassword() !== null) {
+			$headers['Authorization'] = 'Basic ' . base64_encode($this->config->getUsername() . ":" . $this->config->getPassword());
+		}
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
