@@ -3222,7 +3222,11 @@ class BuildsApi
                 if ($returnType !== 'string') {
                     $content = json_decode($content);
                 }
-            }
+	    }
+
+
+	    // Fixed issue with count/value stdObject
+	    $content = $content->value;
 
             return [
                 ObjectSerializer::deserialize($content, $returnType, []),
