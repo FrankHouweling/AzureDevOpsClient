@@ -1,0 +1,51 @@
+# TestRun2
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**buildConfigurationId** | **int** |  | [optional] 
+**buildNumber** | **string** |  | [optional] 
+**comment** | **string** |  | [optional] 
+**completeDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**controller** | **string** |  | [optional] 
+**coverageId** | **int** |  | [optional] 
+**creationDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**deletedOn** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**dropLocation** | **string** |  | [optional] 
+**dueDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**errorMessage** | **string** |  | [optional] 
+**incompleteTests** | **int** |  | [optional] 
+**isAutomated** | **bool** |  | [optional] 
+**isBvt** | **bool** |  | [optional] 
+**isMigrated** | **bool** |  | [optional] 
+**iterationId** | **int** |  | [optional] 
+**lastUpdated** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**lastUpdatedBy** | **string** |  | [optional] 
+**legacySharePath** | **string** |  | [optional] 
+**maxReservedResultId** | **int** |  | [optional] 
+**notApplicableTests** | **int** |  | [optional] 
+**owner** | **string** |  | [optional] 
+**passedTests** | **int** |  | [optional] 
+**postProcessState** | **string** |  | [optional] 
+**projectId** | **string** |  | [optional] 
+**publicTestSettingsId** | **int** |  | [optional] 
+**releaseEnvironmentUri** | **string** |  | [optional] 
+**releaseUri** | **string** |  | [optional] 
+**revision** | **int** |  | [optional] 
+**startDate** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**state** | **string** |  | [optional] 
+**testEnvironmentId** | **string** |  | [optional] 
+**testMessageLogId** | **int** |  | [optional] 
+**testPlanId** | **int** |  | [optional] 
+**testRunContextId** | **int** |  | [optional] 
+**testRunId** | **int** |  | [optional] 
+**testSettingsId** | **int** |  | [optional] 
+**title** | **string** |  | [optional] 
+**totalTests** | **int** |  | [optional] 
+**type** | **string** |  | [optional] 
+**unanalyzedTests** | **int** |  | [optional] 
+**version** | **int** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

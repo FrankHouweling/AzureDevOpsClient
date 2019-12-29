@@ -1,0 +1,53 @@
+# Build
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**links** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\ReferenceLinks**](ReferenceLinks.md) |  | [optional] 
+**agentSpecification** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\AgentSpecification**](AgentSpecification.md) | The agent specification for the build. | [optional] 
+**buildNumber** | **string** | The build number/name of the build. | [optional] 
+**buildNumberRevision** | **int** | The build number revision. | [optional] 
+**controller** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildController**](BuildController.md) | The build controller. This is only set if the definition type is Xaml. | [optional] 
+**definition** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\DefinitionReference**](DefinitionReference.md) | The definition associated with the build. | [optional] 
+**deleted** | **bool** | Indicates whether the build has been deleted. | [optional] 
+**deletedBy** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity of the process or person that deleted the build. | [optional] 
+**deletedDate** | [**\DateTime**](\DateTime.md) | The date the build was deleted. | [optional] 
+**deletedReason** | **string** | The description of how the build was deleted. | [optional] 
+**demands** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\Demand[]**](Demand.md) | A list of demands that represents the agent capabilities required by this build. | [optional] 
+**finishTime** | [**\DateTime**](\DateTime.md) | The time that the build was completed. | [optional] 
+**id** | **int** | The ID of the build. | [optional] 
+**keepForever** | **bool** | Indicates whether the build should be skipped by retention policies. | [optional] 
+**lastChangedBy** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity representing the process or person that last changed the build. | [optional] 
+**lastChangedDate** | [**\DateTime**](\DateTime.md) | The date the build was last changed. | [optional] 
+**logs** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildLogReference**](BuildLogReference.md) | Information about the build logs. | [optional] 
+**orchestrationPlan** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference**](TaskOrchestrationPlanReference.md) | The orchestration plan for the build. | [optional] 
+**parameters** | **string** | The parameters for the build. | [optional] 
+**plans** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\TaskOrchestrationPlanReference[]**](TaskOrchestrationPlanReference.md) | Orchestration plans associated with the build (build, cleanup) | [optional] 
+**priority** | **string** | The build&#39;s priority. | [optional] 
+**project** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\TeamProjectReference**](TeamProjectReference.md) | The team project. | [optional] 
+**properties** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\PropertiesCollection**](PropertiesCollection.md) |  | [optional] 
+**quality** | **string** | The quality of the xaml build (good, bad, etc.) | [optional] 
+**queue** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\AgentPoolQueue**](AgentPoolQueue.md) | The queue. This is only set if the definition type is Build. | [optional] 
+**queueOptions** | **string** | Additional options for queueing the build. | [optional] 
+**queuePosition** | **int** | The current position of the build in the queue. | [optional] 
+**queueTime** | [**\DateTime**](\DateTime.md) | The time that the build was queued. | [optional] 
+**reason** | **string** | The reason that the build was created. | [optional] 
+**repository** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRepository**](BuildRepository.md) | The repository. | [optional] 
+**requestedBy** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity that queued the build. | [optional] 
+**requestedFor** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\IdentityRef**](IdentityRef.md) | The identity on whose behalf the build was queued. | [optional] 
+**result** | **string** | The build result. | [optional] 
+**retainedByRelease** | **bool** | Indicates whether the build is retained by a release. | [optional] 
+**sourceBranch** | **string** | The source branch. | [optional] 
+**sourceVersion** | **string** | The source version. | [optional] 
+**startTime** | [**\DateTime**](\DateTime.md) | The time that the build was started. | [optional] 
+**status** | **string** | The status of the build. | [optional] 
+**tags** | **string[]** |  | [optional] 
+**triggeredByBuild** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\Build**](Build.md) | The build that triggered this build via a Build completion trigger. | [optional] 
+**triggerInfo** | **map[string,string]** | Sourceprovider-specific information about what triggered the build | [optional] 
+**uri** | **string** | The URI of the build. | [optional] 
+**url** | **string** | The REST URL of the build. | [optional] 
+**validationResults** | [**\FrankHouweling\AzureDevOpsClient\Build\Model\BuildRequestValidationResult[]**](BuildRequestValidationResult.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
